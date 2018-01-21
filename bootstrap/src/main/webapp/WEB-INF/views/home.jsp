@@ -198,8 +198,9 @@
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-9 mx-auto">
-						<h4 class="mb-4" style="font-size:1.4rem;">자리를 이용해 주시는 분들에게 깊은 감사의 말씀을 드립니다.<br>서비스를 이용 중 불편하시거나 궁금하신 점들을 해결해 드리겠습니다.</h4>
+					<div class="col-xl-9 mx-auto" style="bottom:35px;">
+						<h1 class="mb-4" style="margin-bottom:0.5rem;">자리의 파트너가 되어주세요!</h1>
+						<p style="font-size:20px;">매장 수익성 극대화 방안을 사장님과 함께 고민하겠습니다.</p>
 					</div>
 					<div class="col-xl-9 mx-auto">
 <!-- 					<h3>Responsive Contact Form</h3> -->
@@ -245,7 +246,7 @@
 							<br>
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3" style="postion:relative;left:230px;">
-								<button type="submit" id="submit" name="submit" class="btn-lg btn-primary btn-block" style="display:inline-block; width:100px;" onclick="click();">보내기</button>
+									<button type="submit" id="submit" name="submit" class="btn-lg btn-primary btn-block" style="display:inline-block; width:100px;" onclick="click();">보내기</button>
 								</div>
 							</div>
 						</form>
@@ -271,7 +272,8 @@
 		<footer class="footer bg-light" >
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+					<div style="margin-left:200px;"><img style="height:100px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png" alt=""></div>
+					<div class="col-lg-6 h-100 text-center" style="padding-top:15px;">
 						<!-- <ul class="list-inline mb-2">
 							<li class="list-inline-item">
 								<a href="#">About</a>
@@ -297,8 +299,8 @@
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
 						</p>
 						<p></p>
-						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자리&nbsp;&nbsp;&nbsp;CI</p>
+						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자리&nbsp;&nbsp;&nbsp;CI</p>
 					</div>
 					<!-- <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
 						<ul class="list-inline mb-0">
