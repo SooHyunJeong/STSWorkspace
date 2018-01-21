@@ -44,7 +44,7 @@
 		}
 		
 		function topContact() {
-			$('html, body').stop().animate({scrollTop:'3000'});
+			$('html, body').stop().animate({scrollTop:'4800'});
 		}
 	</script>
 	<body>
@@ -139,25 +139,76 @@
 		<!-- Image Showcases -->
 		<section class="showcase">
 			<div class="container-fluid p-0">
-				<div class="row no-gutters">
-					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/App_Pic(1).png');"></div>
-					<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-						<h2>User Application</h2>
-						<p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+				<div class="row no-gutters" style="background-color: rgb(23,28,97)">
+					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_download.png');background-size: auto;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 order-lg-1 showcase-text" style="padding-right: 0rem; padding-left: 0rem; text-align: center;">
+						<p style="color: white; font-size: 18px;">이제 매번 매장마다 일일이 전화해서 "거기 자리 있어요?" 라고 물어보지 않으셔도 됩니다.</p>
+						<br><br>
+						<p style="color: white; font-size: 18px;">주변 스포츠시설의 실시간 자리현황을 한 눈에 확인하고 간편하게 예약할 수 있습니다.</p>
+						<br><br>
+						<h2 style="color: white;">스크린야구장, 스크린골프장 예약은 자리에서. </h2>
 					</div>
 				</div>
 				<div class="row no-gutters">
-					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/Client_Pic(1).png');"></div>
-					<div class="col-lg-6 my-auto showcase-text">
-						<h2>Client System</h2>
-						<p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_userapp1.png');background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 my-auto showcase-text" style="padding-right: 1rem">
+						<h3>주변의 스포츠 시설 실시간 자리 현황을 확인하고,</h3>
+						<br><br>
+						<h3>간편하게 예약을 완료할 수 있습니다.</h3>
 					</div>
 				</div>
 				<div class="row no-gutters">
-					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/Client_Pic(2).png');"></div>
-					<div class="col-lg-6 order-lg-1 my-auto showcase-text">
-						<h2>Client System</h2>
-						<p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_userapp2.png');background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 order-lg-1 my-auto showcase-text" style="padding-right: 0rem">
+						<h4>생생한 시설 이용후기를 비롯하여 살아있는 상세정볼를 확인하고</h4>
+						<br><br>
+						<h4>한 번에 결제까지! 친구들과 함께 갈 텐데 1/n 결제는 기본이겠죠?</h4>
+						<br><br>
+						<h4>전화로 힘들게 설명하지 마시고, 위치도 간편하게 전송하세요.</h4>
+					</div>
+				</div>
+				<div class="row no-gutters" style="background-color: rgb(23,28,97)">
+					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientmain.png');background-size: auto;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 my-auto showcase-text" style="padding-left: 1rem;text-align: center;">
+						<p style="color: white; font-size: 23px;">스크린야구장 사장님들! 예약관리하기 힘드시죠?</p>
+						<br>
+						<p style="color: white; font-size: 23px;">바쁜 건 좋지만.. 그 와중에 예약문의 전화 계속오면</p>
+						<br>
+						<p style="color: white; font-size: 23px;">나도 정신없고, 손님도 정신 없고..</p>
+						<br>
+						<p style="color: white; font-size: 23px;">게다가 예약해놓고 오지 않는 고객들은 정말 어떡하나요..</p>
+						<br>
+						<p style="color: white; font-size: 23px;">자리가 사장님들을 위해</p>
+						<br>
+						<p style="color: white; font-size: 23px;">무엇을 할 수 있는지 한 번 경험해보시겠어요?</p>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientapp1.png'); background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 order-lg-1 my-auto showcase-text" style="padding-bottom: 0rem;text-align: center;">
+						<p style="font-size: 23px;">자리app을 통해 예약할 경우 예약내용이 자동 기입됩니다.</p>
+						<br>
+						<p style="font-size: 23px;">Drag&Drop 방식으로 예약시간과 룸을 이동하거나 수정할 수 있습니다.</p>
+						<br>
+						<p style="font-size: 23px;">2번의 터치만으로 새로운 예약 혹은 이용 정보를 등록할 수 있습니다.</p>
+						<br>
+						<p style="font-size: 23px;">한 눈에 시설이용현황을 파악할 수 있어 예약전화 응대 시</p>
+						<br>
+						<p style="font-size: 23px;">신속히 예약가능여부를 판단하고, 신규예약을 추가할 수 있습니다.</p>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientapp2.png');background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
+					<div class="col-lg-6 my-auto showcase-text" style="padding-right: 1rem;padding-bottom: 5rem;text-align: center;">
+						<p style="font-size: 23px;">손님들이 중간에 주문하신 음식들만 따로 결제하는 경우도 많고,</p>
+						<br>
+						<p style="font-size: 23px;">최종결제도 1/n로 나눠서 결제하는 경우가 많은데,</p>
+						<br>
+						<p style="font-size: 23px;">지금의 결제시스템은.. 어휴..</p>
+						<br>
+						<p style="font-size: 23px;">누락된 것은 없는지 확인하기도 힘듭니다.</p>
+						<br>
+						<h4>자리 시스템은 부분결제 및 분산결제에 특화되어 있습니다.</h4>
 					</div>
 				</div>
 			</div>
@@ -199,7 +250,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-9 mx-auto" style="bottom:35px;">
-						<h1 class="mb-4" style="margin-bottom:0.5rem;">자리의 파트너가 되어주세요!</h1>
+						<h1 class="mb-4" style="margin-bottom:0rem;">자리의 파트너가 되어주세요!</h1>
 						<p style="font-size:20px;">매장 수익성 극대화 방안을 사장님과 함께 고민하겠습니다.</p>
 					</div>
 					<div class="col-xl-9 mx-auto">
