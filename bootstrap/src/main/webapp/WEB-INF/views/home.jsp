@@ -141,7 +141,7 @@
 			<div class="container-fluid p-0">
 				<div class="row no-gutters" style="background-color: rgb(23,28,97)">
 					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_download.png');background-size: auto;background-repeat:  no-repeat;background-position:  center;"></div>
-					<div class="col-lg-6 order-lg-1 showcase-text" style="padding-right: 0rem; padding-left: 0rem; text-align: center;">
+					<div class="col-lg-6 order-lg-1 showcase-text" style="padding-right: 0rem;">
 						<p style="color: white; font-size: 18px;">이제 매번 매장마다 일일이 전화해서 "거기 자리 있어요?" 라고 물어보지 않으셔도 됩니다.</p>
 						<br><br>
 						<p style="color: white; font-size: 18px;">주변 스포츠시설의 실시간 자리현황을 한 눈에 확인하고 간편하게 예약할 수 있습니다.</p>
@@ -169,7 +169,7 @@
 				</div>
 				<div class="row no-gutters" style="background-color: rgb(23,28,97)">
 					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientmain.png');background-size: auto;background-repeat:  no-repeat;background-position:  center;"></div>
-					<div class="col-lg-6 my-auto showcase-text" style="padding-left: 1rem;text-align: center;">
+					<div class="col-lg-6 my-auto showcase-text" style="padding-left: 1rem;">
 						<p style="color: white; font-size: 23px;">스크린야구장 사장님들! 예약관리하기 힘드시죠?</p>
 						<br>
 						<p style="color: white; font-size: 23px;">바쁜 건 좋지만.. 그 와중에 예약문의 전화 계속오면</p>
@@ -185,7 +185,7 @@
 				</div>
 				<div class="row no-gutters">
 					<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientapp1.png'); background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
-					<div class="col-lg-6 order-lg-1 my-auto showcase-text" style="padding-bottom: 0rem;text-align: center;">
+					<div class="col-lg-6 order-lg-1 my-auto showcase-text" style="padding-bottom: 0rem;">
 						<p style="font-size: 23px;">자리app을 통해 예약할 경우 예약내용이 자동 기입됩니다.</p>
 						<br>
 						<p style="font-size: 23px;">Drag&Drop 방식으로 예약시간과 룸을 이동하거나 수정할 수 있습니다.</p>
@@ -199,7 +199,7 @@
 				</div>
 				<div class="row no-gutters">
 					<div class="col-lg-6 text-white showcase-img" style="background-image: url('${pageContext.request.contextPath}/resources/img/zari_clientapp2.png');background-size: contain;background-repeat:  no-repeat;background-position:  center;"></div>
-					<div class="col-lg-6 my-auto showcase-text" style="padding-right: 1rem;padding-bottom: 5rem;text-align: center;">
+					<div class="col-lg-6 my-auto showcase-text" style="padding-right: 1rem;padding-bottom: 5rem;">
 						<p style="font-size: 23px;">손님들이 중간에 주문하신 음식들만 따로 결제하는 경우도 많고,</p>
 						<br>
 						<p style="font-size: 23px;">최종결제도 1/n로 나눠서 결제하는 경우가 많은데,</p>
