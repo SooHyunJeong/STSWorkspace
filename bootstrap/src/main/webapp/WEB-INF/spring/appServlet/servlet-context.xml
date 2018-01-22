@@ -24,9 +24,9 @@
 	<context:component-scan base-package="com.raizcorp.bootstrap" />
 	
 	<beans:bean id="mailSender" class ="org.springframework.mail.javamail.JavaMailSenderImpl" >
-	    <beans:property name="host" value="smtp.raizcorp.co.kr" />
-	    <beans:property name="port" value="587" />
-	    <beans:property name="username" value="wjdtngus5511@gmail.com" />
+	    <beans:property name="host" value="email-smtp.us-east-1.amazonaws.com" />
+	    <beans:property name="port" value="25" />
+	    <beans:property name="username" value="shjeong@raizcorp.co.kr" />
 	    <beans:property name="password" value="dnflrkwhr12!" />
 	    <beans:property name="javaMailProperties">
 		    <beans:props>

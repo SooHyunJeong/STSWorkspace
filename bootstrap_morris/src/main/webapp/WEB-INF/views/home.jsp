@@ -105,7 +105,7 @@
 <!-- 									<div style="float:left";> -->
 <%-- 										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/android_download.png"/> --%>
 <!-- 									</div> -->
-									<div style="display:inline-block";>
+									<div>
 										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/ios_download.png"/>
 									</div>
 								</div>
@@ -433,7 +433,7 @@
 				
 				<!-- Subscribe -->
 				
-				<section id="subscribe" class="text-center bg-light section" style="padding: 0rem;">
+				<section id="subscribe" class="text-center bg-light section" style="padding-top: 3rem;padding-bottom:  0rem;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 offset-md-3">
@@ -471,7 +471,7 @@
 			
 			<!-- Footer -->
 			
-			<footer id="footer" class="footer text-center">
+			<footer id="footer" class="footer text-center" style="position:relative;">
 				<!-- <div class="container">
 					<div class="social">
 						<a href="#" class="fa fa-2x fa-facebook"></a>
@@ -480,8 +480,26 @@
 						<a href="#" class="fa fa-2x fa-youtube-play"></a>
 					</div>
 				</div> -->
-				<div class="copy">
+				<!-- <div class="copy">
 					© 2016 Brett. All rights reserved by <a href="http://themeforest.net/user/murren20" target="_blank">Murren20</a>
+				</div> -->
+				<div class="row">
+					<div style="margin:auto; margin-right:0px;">
+						<img alt="" style="height: 110px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png">
+<%-- 						<img style="height:100px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png" alt=""> --%>
+					</div>
+					<div style="padding-top:15px; margin:auto; margin-left:0px;">
+						<p class="text-muted small mb-lg-0" style="margin-bottom:1rem;width:max-content;">
+							주식회사&nbsp;&nbsp;라이즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303
+						</p>
+						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">
+							&copy; 사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
+						</p>
+						<p></p>
+						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자리&nbsp;&nbsp;&nbsp;CI</p>
+					</div>
 				</div>
 			</footer>
 		</div>
