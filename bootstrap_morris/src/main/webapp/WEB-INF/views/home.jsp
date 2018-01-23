@@ -7,16 +7,18 @@
 		<title>raíz corp.</title> 
 		
 		<!-- Favicons -->
+
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-		
+
 		<!-- Styles -->
+
 		<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet"  media="screen">
-		
+
 		<!-- Scripts -->
-	
+
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.easypiechart.min.js"></script>
@@ -62,12 +64,12 @@
 							<li class="nav-item">
 								<a class="nav-link" href="#features">Features</a>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link disabled" href="#clients">Clients</a>
-							</li>
-							<li class="nav-item">
+							</li> -->
+							<!-- <li class="nav-item">
 								<a class="nav-link disabled" href="#prices">Pricing</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -78,38 +80,67 @@
 			<main id="home" class="masthead masked">
 				<div class="opener rel-1" style="background-color: rgb(23,28,97)">
 					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-6 mb-5 mb-lg-0" style="padding-left: 5rem;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<div class="col-lg-6">
-								<p class="mb-4" style="font-size:21px">이제 매번 매장마다 일일이 전화해서 "거기 <b>자리</b> 있어요?" 라고 물어보지 않으셔도 됩니다.<br>주변 스포츠시설의 <b>실시간 자리현황</b>을 한 눈에 확인하고 <b>간편하게 예약</b>할 수 있습니다.</p>
-								<p class="text-white mb-3" style="font-size:25px"><b>스크린야구장, 스크린골프장 예약은 <img alt="" class="mw-100" style="width: 63px;" src="${pageContext.request.contextPath}/resources/img/zari.png"/>에서.</b></p>
-								<div class="lead-controls" style="width:200px; float:left">
-									<!-- <a href="#" class="btn-lead btn mr-3">Download now</a>
-									<a href="http://www.youtube.com/watch?v=ANwf8AE3_d0"  data-effect="mfp-zoom-in" class="text-white play js-play">
-										<i class="text-white mr-2 align-middle fa fa-4x fa-play-circle"></i>Watch video
-									</a> -->
-									<div>
-										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/android_download.png"/>
+						<div id="carouselExampleIndicators" class="row align-items-center carousel slide" data-ride="carousel" style="position: initial;">
+							
+							<ol class="carousel-indicators">
+							    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+<!-- 							    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+							</ol>
+						
+							<div class="carousel-inner">
+								<!-- 슬라이더1 -->
+								<div class="carousel-item active">
+									<div class="col-lg-6 mb-5 mb-lg-0">
+										<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
 									</div>
-<!-- 									<div style="display:inline-block";> -->
-<%-- 										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/ios_download.png"/> --%>
-<!-- 									</div> -->
-								</div>
-								<div class="lead-controls" style="width:200px; float:right; margin-right:130px;">
-									<!-- <a href="#" class="btn-lead btn mr-3">Download now</a>
-									<a href="http://www.youtube.com/watch?v=ANwf8AE3_d0"  data-effect="mfp-zoom-in" class="text-white play js-play">
-										<i class="text-white mr-2 align-middle fa fa-4x fa-play-circle"></i>Watch video
-									</a> -->
-<!-- 									<div style="float:left";> -->
-<%-- 										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/android_download.png"/> --%>
-<!-- 									</div> -->
-									<div>
-										<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/ios_download.png"/>
+									<div class="col-lg-6 carousel-caption d-none d-md-block" style="margin-left: 350px; text-align: start;">
+										<p class="mb-4" style="font-size:21px">이제 매번 매장마다 일일이 전화해서 "거기 <b>자리</b> 있어요?" 라고 물어보지 않으셔도 됩니다.<br>주변 스포츠시설의 <b>실시간 자리현황</b>을 한 눈에 확인하고 <b>간편하게 예약</b>할 수 있습니다.</p>
+										<p class="text-white mb-3" style="font-size:25px"><b>스크린야구장, 스크린골프장 예약은 <img alt="" class="mw-100" style="width: 63px;" src="${pageContext.request.contextPath}/resources/img/zari.png"/>에서.</b></p>
+										<div class="lead-controls" style="width:200px; float:left">
+											<div>
+												<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/android_download.png"/>
+											</div>
+										</div>
+										<div class="lead-controls" style="width:200px; float:right; margin-right:130px;">
+											<div>
+												<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/ios_download.png"/>
+											</div>
+										</div>
 									</div>
 								</div>
+
+								<!-- 슬라이더2 -->
+								<div class="carousel-item">
+									<div class="col-lg-6 mb-5 mb-lg-0">
+										<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/zari_clientmain.png">
+									</div>
+									<div class="col-lg-6 carousel-caption d-none d-md-block" style="margin-left: 425px; text-align: start; top: 3px;">
+										<p class="mb-4" style="font-size:21px">스크린야구장 사장님들! 예약관리하기 힘드시죠?<br>바쁜건 좋지만.. 그 와중에 예약문의 전화 계속 오면..<br>나도 정신 없고, 손님도 정신 없고..<br>게다가 예약해놓고 오지 않는 고객들은 정말 어떡하나요?</p>
+										<p class="text-white mb-3" style="font-size:25px"><b>자리가 사장님들을 위해 무엇을 할 수 있는지<br> 한번 경험해보시겠어요?</b></p>
+										<div class="lead-controls" style="width:200px; float:left">
+											<div>
+												<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/android_download.png"/>
+											</div>
+										</div>
+										<div class="lead-controls" style="width:200px; float:right; margin-right:130px;">
+											<div>
+												<img alt="" class="mw-100 d-block" src="${pageContext.request.contextPath}/resources/img/ios_download.png"/>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+							
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="sr-only">이전</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="sr-only">다음</span>
+							</a>
+							
 						</div>
 					</div>
 				</div>
@@ -306,7 +337,7 @@
 				
 				<!-- Reviews -->
 				  
-				<section id="clients" class="reviews text-center section">
+				<%-- <section id="clients" class="reviews text-center section">
 					<div class="container">
 						<div class="row">
 							<div class="text-center col-md-6 offset-md-3">
@@ -345,7 +376,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> --%>
 				
 				<!-- Banner -->
 				
@@ -365,7 +396,7 @@
 				
 				<!-- Prices -->
 				
-				<section id="prices" class="text-cente section">
+				<!-- <section id="prices" class="text-cente section">
 					<div class="container">
 						<div class="row">
 							<header class="text-center col-md-8 offset-md-2">
@@ -429,7 +460,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 				<!-- Subscribe -->
 				
@@ -437,11 +468,11 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 offset-md-3">
-								<h2 class="section-title" style="font-size:42px;">자리의 파트너가 되어주세요!</h2>
-								<p style="font-size:18px;">매장 수익성 극대화 방안을 사장님과 함께 고민하겠습니다.</p>
+								<h2 class="section-title" style="font-size:41px;margin-bottom:0;">자리의 파트너가 되어주세요!</h2>
+								<p style="font-size:20.3px;">매장 수익성 극대화 방안을 사장님과 함께 고민하겠습니다.</p>
 							</div>
 						</div>
-						<div class="mt-5">
+						<div class="mt-5" style="margin-top: 2rem!important;">
 							<div class="row">
 								<div class="col-md-6 offset-md-3">
 									<form id="mc-form">
