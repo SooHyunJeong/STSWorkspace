@@ -8,7 +8,6 @@
 		
 		<!-- Favicons -->
 
-		<link rel="shortcut icon" href="favicon.png">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
@@ -31,6 +30,14 @@
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 	</head>
+	
+	<script type="text/javascript">
+		function raiz_subscribe() {
+			
+		}
+
+	</script>
+	
 	<body>
 		<!-- Loader -->
 		<div class="loader">
@@ -56,17 +63,17 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="#home">Home</a>
+								<a class="nav-link" href="#home">서비스 소개</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
+								<a class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#features">Features</a>
+								<a class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link disabled" href="#clients">Clients</a>
-							</li> -->
+							<li class="nav-item">
+								<a class="nav-link disabled" href="raiz_Notice.do">공지사항</a>
+							</li>
 							<!-- <li class="nav-item">
 								<a class="nav-link disabled" href="#prices">Pricing</a>
 							</li> -->
@@ -82,7 +89,7 @@
 					<div class="container">
 						<div id="carouselExampleIndicators" class="row align-items-center carousel slide" data-ride="carousel" style="position: initial;">
 							
-							<ol class="carousel-indicators">
+							<ol class="carousel-indicators" style="position:fixed">
 							    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 <!-- 							    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
@@ -132,11 +139,11 @@
 								</div>
 							</div>
 							
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="position:fixed">
 							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							    <span class="sr-only">이전</span>
 							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="position:fixed">
 							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							    <span class="sr-only">다음</span>
 							</a>
@@ -176,6 +183,57 @@
 					</div>
 				</section>
 				
+				<!-- Introduce our service -->
+				
+				<section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Services</h3>
+          <h2 class="mb-5">What We Offer</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fa fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+				
 				<!-- About  -->
 				
 				<section class="text-center section">
@@ -202,7 +260,7 @@
 				
 				<!-- Features  -->
 				
-				<section id="features" class="section bg-light">
+				<%-- <section id="features" class="section bg-light">
 					<div class="container">
 						<div class="row align-items-center">  
 							<div class="col-lg-6 mb-5 mb-lg-0 text-center wow fadeInLeft">
@@ -228,12 +286,12 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> --%>
 				
 				
 				<!-- Charts -->
 				
-				<section class="section">
+				<!-- <section class="section">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-left">
@@ -260,7 +318,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<section class="section bg-light">
 					<div class="container">
 						<div class="row align-items-center">
@@ -337,7 +395,7 @@
 				
 				<!-- Reviews -->
 				  
-				<%-- <section id="clients" class="reviews text-center section">
+				<section id="clients" class="reviews text-center section">
 					<div class="container">
 						<div class="row">
 							<div class="text-center col-md-6 offset-md-3">
@@ -376,7 +434,7 @@
 							</div>
 						</div>
 					</div>
-				</section> --%>
+				</section>
 				
 				<!-- Banner -->
 				
@@ -520,15 +578,15 @@
 <%-- 						<img style="height:100px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png" alt=""> --%>
 					</div>
 					<div style="padding-top:15px; margin:auto; margin-left:0px;">
-						<p class="text-muted small mb-lg-0" style="margin-bottom:1rem;width:max-content;">
+						<p class="text-muted small mb-lg-0" style="margin-bottom:1rem;text-align:left;">
 							주식회사&nbsp;&nbsp;라이즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303
 						</p>
-						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">
-							&copy; 사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
+						<p class="text-muted small mb-4 mb-lg-0" style="text-align:left;">
+							사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
 						</p>
 						<p></p>
-						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자리&nbsp;&nbsp;&nbsp;CI</p>
 					</div>
 				</div>

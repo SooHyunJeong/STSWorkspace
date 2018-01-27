@@ -1,4 +1,4 @@
-package com.raizcorp.morris;
+package com.raizcorp.raiz;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -22,7 +22,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "/raiz_Main.do")
 	public String home(Locale locale, Model model) {
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
