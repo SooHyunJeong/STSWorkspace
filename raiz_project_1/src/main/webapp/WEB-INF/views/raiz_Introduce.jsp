@@ -46,6 +46,22 @@
 				font-size : 13px;
 				color: rgb(23,28,97);
 			}
+			
+			li.nav-item {
+				font-family : arial;
+			}
+
+			main {
+				font-family : arial;
+			}
+
+			p {
+				color : rgb(23, 28, 97);
+			}
+
+			th {
+				color : rgb(23, 28, 97);
+			}
 		</style>
 	</head>
 	
@@ -333,12 +349,12 @@
 						<tr>
 							<th class="tg-yw4l" style="font-size: 33px; padding-left: 4%;" colspan="1">Managers</th>
 							<th class="tg-yw4l" style="font-size: 23px; padding-top: 3%; padding-bottom: 1rem;" colspan="3">
-								<div style="margin-left: 5rem; margin-bottom: -0.5rem;">
+								<p style="margin-left: 5rem; margin-bottom: -0.5rem;">
 									"지방에서&nbsp;상경하여&nbsp;직장생활&nbsp;하던&nbsp;형,&nbsp;누나,&nbsp;오빠,&nbsp;언니가<br>
-								</div>
-								<div style="margin-left: 5rem;">
+								</p>
+								<p style="margin-left: 5rem; margin-bottom: 0rem;">
 									직접&nbsp;에스코트하고&nbsp;최적화된&nbsp;매니지먼트를&nbsp;제공합니다."
-								</div>
+								</p>
 							</th>
 						</tr>
 						<tr>

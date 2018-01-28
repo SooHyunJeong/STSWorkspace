@@ -49,6 +49,27 @@
 				position : fixed;
 				bottom : 0px;
 			}
+
+			li.nav-item {
+				font-family : arial;
+			}
+
+			main {
+				font-family : arial;
+			}
+
+			p {
+				color : rgb(23, 28, 97);
+			}
+
+			th {
+				color : rgb(23, 28, 97);
+			}
+			
+			span.example {
+				color : darkgray;
+				font-weight: normal;
+			}
 		</style>
 	</head>
 	<script type="text/javascript">
@@ -109,10 +130,178 @@
 					</div>
 				</div>
 			</nav>
+
+			<!-- 서비스 신청 Process -->
 			
-			<!-- 숙소관련(1) -->
-			
-			<main id="home_1" class="masthead masked">
+			<main class="masthead masked" style="height: 850px;">
+				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
+				
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 55%">
+						<tr>
+							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%;">서비스 신청 Process</th>
+						</tr>
+						<tr style="height: 50%; text-align: center; vertical-align: top; color: rgb(23, 28, 97)">
+							<th style="font-weight: normal;">
+								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
+									1
+								</p>
+								<p style="font-size: 27px;">
+									예약신청
+								</p>
+								<p style="margin-bottom: 0rem;">
+									전화,카카오톡&nbsp;플러스친구,문자
+								</p>
+								<p>
+									혹은&nbsp;e-mail로&nbsp;예약신청&nbsp;해주세요.
+								</p>
+								<table class="tg" style="display: inline;">
+									<tr>
+										<th>
+											<img alt="" style="width: 50px; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/mobile.png">
+										</th>
+										<th>
+											<img alt="" style="width: 50px; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/message.jpg">
+										</th>
+										<th>
+											<img alt="" style="width: 50px; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
+										</th>
+										<th>
+											<img alt="" style="width: 50px; margin-left: 0.7rem; margin-right: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/email.png">
+										</th>
+									</tr>
+								</table>
+							</th>
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
+									2
+								</p>
+								<p style="font-size: 27px;">
+									예약가능여부&nbsp;확인
+								</p>
+								<p style="margin-bottom: 0rem;">
+									매니저가&nbsp;신속히&nbsp;예약가능여부
+								</p>
+								<p style="margin-bottom: 0rem;">
+									확인&nbsp;후&nbsp;연락&nbsp;드리며,
+								</p>
+								<p>
+									입금계좌를&nbsp;안내해드립니다.
+								</p>
+							</th>
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
+									3
+								</p>
+								<p style="font-size: 27px;">
+									결제
+								</p>
+								<p style="margin-bottom: 0rem;">
+									이용하실&nbsp;상품가액을
+								</p>
+								<p>
+									이체해주세요.
+								</p>
+							</th>
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
+									4
+								</p>
+								<p style="font-size: 27px;">
+									예약완료
+								</p>
+								<p style="margin-bottom: 0rem;">
+									입금확인&nbsp;후&nbsp;매니저가
+								</p>
+								<p style="margin-bottom: 0rem;">
+									예약확인&nbsp;연락&nbsp;드립니다.
+								</p>
+								<p style="margin-bottom: 0rem;">
+									문의사항은&nbsp;담당&nbsp;매니저에게
+								</p>
+								<p>
+									언제든&nbsp;편하게&nbsp;연락주세요.
+								</p>
+							</th>
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
+									5
+								</p>
+								<p style="font-size: 27px;">
+									세부일정&nbsp;조율
+								</p>
+								<p style="margin-bottom: 0rem;">
+									상경&nbsp;전&nbsp;매니저가&nbsp;숙소를&nbsp;비롯한
+								</p>
+								<p style="margin-bottom: 0rem;">
+									상세일정을&nbsp;송부&nbsp;드립니다.
+								</p>
+								<p style="margin-bottom: 0rem;">
+									변경/요청사항은&nbsp;언제든
+								</p>
+								<p>
+									편하게&nbsp;연락주세요.
+								</p>
+							</th>
+						</tr>
+					</table>
+					
+				</div>
+			</main>
+
+			<!-- 서비스 신청 예시 -->
+
+			<main class="masthead masked">
+				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
+				
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+						<tr style="vertical-align: top">
+							<th style="width: 40%;">
+								<table class="tg" style="width: 100%;">
+									<tr>
+										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;">서비스신청</th>
+									</tr>
+									<tr>
+										<td class="tg-yw4l">
+											<table style="border: 1px solid; border-radius: 25px; border-collapse: initial; padding: 1.5rem;">
+												<tr>
+													<th class="tg-yw4l">
+														<p>(서비스&nbsp;신청&nbsp;예시)</p>
+														<p style="margin-bottom: 0rem;">1.&nbsp;&nbsp;&nbsp;예약자&nbsp;성함&nbsp;/&nbsp;연락처&nbsp;:&nbsp;<span class="example">형성모&nbsp;/&nbsp;010&nbsp;5435&nbsp;0237</span></p>
+														<p style="margin-bottom: 0rem;">2.&nbsp;&nbsp;&nbsp;오시는&nbsp;분&nbsp;성함&nbsp;/&nbsp;나이&nbsp;/&nbsp;연락처&nbsp;:&nbsp;<span class="example">이유진&nbsp;/&nbsp;17&nbsp;010&nbsp;9436&nbsp;0237</span></p>
+														<p style="margin-bottom: 0rem;">3.&nbsp;&nbsp;&nbsp;오시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.11&nbsp;/&nbsp;06:30&nbsp;/&nbsp;09:00</span></p>
+														<p style="margin-bottom: 0rem;">4.&nbsp;&nbsp;&nbsp;가시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.12&nbsp;/&nbsp;14:00&nbsp;/&nbsp;16:30</span></p>
+														<p style="margin-bottom: 0rem;">5.&nbsp;&nbsp;&nbsp;이용상품&nbsp;:&nbsp;<span class="example">1박&nbsp;2일</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example">(예&nbsp;:&nbsp;2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</span></p>
+														<p style="margin-bottom: 0rem;">6.&nbsp;&nbsp;&nbsp;상경&nbsp;목적&nbsp;:&nbsp;<span class="example">바이올린&nbsp;강습</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example">(예&nbsp;:&nbsp;강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험&nbsp;응시,&nbsp;면접,&nbsp;학원&nbsp;수강,&nbsp;미팅/인터뷰,</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example">박람회/컨퍼런스,&nbsp;공연/콘서트/스포츠&nbsp;관람,&nbsp;진학정보수집,&nbsp;견학&nbsp;등)</span></p>
+														<p style="margin-bottom: 0rem;">7.&nbsp;&nbsp;&nbsp;목적지&nbsp;위치&nbsp;:&nbsp;<span class="example">강남구&nbsp;도곡로2길&nbsp;29</span></p>
+														<p style="margin-bottom: 0rem;">8.&nbsp;&nbsp;&nbsp;요청사항&nbsp;:&nbsp;<span class="example">복용&nbsp;중인&nbsp;약이&nbsp;있으니&nbsp;정시에&nbsp;꼭&nbsp;챙겨주세요.</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example">견과류&nbsp;알레르기가&nbsp;있으니&nbsp;반드시&nbsp;주의해주세요.</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</span></p>
+														<p><span class="example">고기보단&nbsp;야채를&nbsp;좋아하니&nbsp;가급적&nbsp;채식&nbsp;위주의&nbsp;식사로&nbsp;부탁&nbsp;드립니다.</span></p>
+													</th>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</th>
+							<th style="width: 25%;">
+								
+							</th>
+							<th style="width: 35%; text-align: center;">
+								<img alt="" style="width: 430px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
+							</th>
+						</tr>
+					</table>
+					
+				</div>
+			</main>
+
+			<!-- 서비스 신청 - Process -->
+
+			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
 					<table class="tg" style="margin-left: 10%; width: 80%;">
@@ -243,7 +432,8 @@
 					
 					<br><br><br>
 					
-					<!-- <table class="tg" style="margin-left: 10%; width: 80%;">
+					<!-- 위에 이미지를 글로 적어놓은것, 이미지를 안쓸 시 주석 제거
+					<table class="tg" style="margin-left: 10%; width: 80%;">
 						<tr style="height: 85%;">
 							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;" rowspan="2">
 								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p>
@@ -368,16 +558,16 @@
 						<tr></tr>
 					</table> -->
 					
-					<br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br>
 					
-					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 19%; color: rgb(23, 28, 97);">
+					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 16%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" style="vertical-align: middle; width: 41.3%;">
 								<table class="tg" style="margin-left: 3rem;">
 									<tr>
 										<th class="tg-yw4l">
-											<p style="font-size:30px; margin-bottom: -0.5rem; margin-right: 2rem;"><cite><b>raíz corp.</b></cite></p>
-											<p style="font-size:19px; margin-bottom: 2rem;font-weight: normal;">주식회사 라이즈</p>
+											<p style="font-weight: normal; font-size:30px; margin-bottom: -0.5rem; margin-right: 2rem;"><cite><b>raíz corp.</b></cite></p>
+											<p style="font-size:17px; margin-bottom: 2rem;font-weight: normal;">주식회사 라이즈</p>
 										</th>
 										<th class="tg-yw4l">
 											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
@@ -387,10 +577,10 @@
 												사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
 											</p>
 											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
+												main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smheyong@raizcorp.co.kr
 											</p>
 											<p class="small" style="text-align:left;">
-												e-mail&nbsp;&nbsp;smheyong@raizcorp.co.kr
+												Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
 											</p>
 										</th>
 									</tr>
@@ -429,11 +619,21 @@
 							<th class="tg-yw4l" style="vertical-align: middle; border-left: 1px solid #dae0e5;">
 								<table class="tg" style="margin-left: 3rem;">
 									<tr style="font-size:25px;">
-										<th class="tg-yw4l" style="padding-right: 3rem;" rowspan="2">문의전화</th>
-										<th class="tg-yw4l">02&nbsp;0000&nbsp;0237</th>
+										<th class="tg-yw4l" style="padding-right: 3rem;" rowspan="2">
+											<p style="margin-bottom: 0rem;">
+												문의전화
+											</p>
+										</th>
+										<th class="tg-yw4l">
+											<p style="margin-bottom: 0rem;">
+												02&nbsp;0000&nbsp;0237
+											</p>
 									</tr>
 									<tr style="font-size:25px;">
-										<td class="tg-yw4l">010&nbsp;5435&nbsp;0237</td>
+										<td class="tg-yw4l">
+											<p style="margin-bottom: 0rem;">
+												010&nbsp;5435&nbsp;0237
+											</p>
 									</tr>
 								</table>
 							</th>

@@ -29,6 +29,16 @@
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.validate.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
+		
+		<style type="text/css">
+			li.nav-item {
+				font-family : arial;
+			}
+
+			main {
+				font-family : arial;
+			}
+		</style>
 	</head>
 	
 	<script type="text/javascript">
@@ -130,8 +140,16 @@
 						</div>
 					</div>
 					<br><br>
-					<div style="text-align: center; font-size: 30px;">
-						학생이 기차에서 내리는 순간부터, 귀가하는 기차에 탑승하는 순간까지<br>이동, 식사, 숙박 등 모든 것을 1등급 서비스로 안전하게 에스코트합니다.
+					<div style="width: 40%; text-align: center; margin-left: 29.6%; border-left: 0.25px solid #dae0e5; border-right: 0.25px solid #dae0e5;">
+						<p style="font-size: 40px; margin-bottom: 0rem;">
+							자녀 혼자 서울 보낼 땐 <b>서울매니저</b><br>
+						</p>
+						<p style="font-size: 19px; margin-bottom: -0.5rem;">
+							고객이&nbsp;기차에서&nbsp;내리는&nbsp;순간부터,&nbsp;귀가하는&nbsp;기차에&nbsp;탑승하는&nbsp;순간까지<br>
+						</p>
+						<p style="font-size: 19px;">
+							이동,&nbsp;식사,&nbsp;숙박&nbsp;등&nbsp;모든&nbsp;것을&nbsp;1등급&nbsp;서비스로&nbsp;안전하게&nbsp;에스코트합니다.					
+						</p>					
 					</div>
 
 					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:80%;">
@@ -139,22 +157,28 @@
 					<table class="tg" style="margin-left: 11%; width: 90%;">
 						<tr>
 							<th class="tg-yw4l" rowspan="2" style="width: 10%;">
-								<p style="font-size:25px; margin-bottom: 0rem;"><cite><b>raíz corp.</b></cite></p>
+								<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
 								<p style="font-size:15px; font-weight: normal;">주식회사 라이즈</p>
 							</th>
-							<th class="tg-yw4l" style="width: 45%;">
+							<th class="tg-yw4l" style="width: 32%;">
 								<div class="container">
-									<div style="padding-top:15px; margin:auto; margin-left:0px;">
+									<div style="padding-top:15px; margin:auto;">
 										<p class="small" style="margin-bottom:0rem;text-align:left;">
 											서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
+											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+										<p class="small" style="margin-bottom:0rem;text-align:left;">
+											대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
 										</p>
 										<p class="small" style="width:max-content;">
-											main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
 										</p>
 									</div>
 								</div>
+							</th>
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px;">
+								이용 약관
 							</th>
 							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px;">
 								제휴 문의
@@ -162,11 +186,11 @@
 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px;">
 								설명회 문의
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px;">
+							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px;">
 								광고 문의	
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 21px;">
-								문의전화&nbsp;&nbsp;010&nbsp;&nbsp;4507&nbsp;&nbsp;0237
+							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px;">
+								문의전화&nbsp;&nbsp;02&nbsp;&nbsp;0000&nbsp;&nbsp;0237
 							</th>
 						</tr>
 						<tr>
