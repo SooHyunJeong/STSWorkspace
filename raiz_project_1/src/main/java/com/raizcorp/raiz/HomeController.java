@@ -32,6 +32,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "raiz_Main";
+//		return "raiz_ready";
 	}
 	
 	/**

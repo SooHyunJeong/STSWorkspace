@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>raíz corp.</title> 
+		<title>raíz corp.</title>
 		
 		<!-- Favicons -->
 
@@ -117,12 +117,13 @@
 				
 					<table class="tg" style="margin-left: 10%; width: 80%;">
 						<tr style="height: 85%;">
-							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;" rowspan="2">
+							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;">
 								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p>
 								<p style="font-size: 25px; margin-left: 1.3rem;">Price</p>
 							</th>
 							<th class="tg-yw4l" style="padding-top: 2%;" rowspan="2">
-								<table class="tg" style="width: 100%; height: 100%;">
+								<img alt="" style="width: 1100px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/price.png">
+								<!-- <table class="tg" style="width: 100%; height: 100%;">
 									<tr>
 										<th style="text-align: center; border-bottom : 1px solid #dae0e5; color: rgb(23, 28, 97);">
 											<p style="font-size: 28px; margin-bottom: -0.8rem; margin-top: 2rem;">1박 2일</p>
@@ -234,13 +235,15 @@
 											<p style="margin-bottom: 0rem;">*&nbsp;별도&nbsp;요청&nbsp;시&nbsp;예약/티켓팅&nbsp;가능.</p>
 										</td>
 									</tr>
-								</table>
+								</table> -->
 							</th>
 						</tr>
 						<tr></tr>
 					</table>
+					
 					<br><br><br>
-					<table class="tg" style="margin-left: 10%; width: 80%;">
+					
+					<!-- <table class="tg" style="margin-left: 10%; width: 80%;">
 						<tr style="height: 85%;">
 							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;" rowspan="2">
 								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p>
@@ -363,8 +366,10 @@
 							</th>
 						</tr>
 						<tr></tr>
-					</table>
-					<br><br><br><br><br><br><br><br><br>
+					</table> -->
+					
+					<br><br><br><br><br><br><br><br>
+					
 					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 19%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" style="vertical-align: middle; width: 41.3%;">
