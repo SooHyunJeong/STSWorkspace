@@ -62,24 +62,43 @@
 			th {
 				color : rgb(23, 28, 97);
 			}
+			
+			#map {
+				width: 100%;
+				height: 500px;
+				background-color: gray;
+			}
 		</style>
 	</head>
 	
 	<script type="text/javascript">
+		  function initMap() {
+				var uluru = {lat: 37.487867, lng: 127.033604};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+	      }
+
 		 function OnloadImg(url){
-			  var img=new Image();
-			  img.src=url;
-	
-			  var img_width=img.width;
-			  var win_width=img.width+25;
-			  var height=img.height+30;
-	
-			  var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+height+', menubars=no, scrollbars=auto');	
-			  OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
-	
+				var img=new Image();
+				img.src=url;
+				
+				var img_width=img.width;
+				var win_width=img.width+25;
+				var height=img.height+30;
+				
+				var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+height+', menubars=no, scrollbars=auto');	
+				OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
 			 }
 	</script>
 	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAJLWC6t2OcLmFN6sJ80oSwVUUCYip08&callback=initMap"></script>
+
 	<body>
 		<!-- Loader -->
 		<div class="loader">
@@ -191,7 +210,7 @@
 							<td class="tg-yw4l" style="width: 42%;">
 								<p style="font-size: 28px; margin-bottom: -0.7rem; margin-left: 16rem;">모든 이동은 Audi 차량으로.</p>
 								<p style="margin-left: 67%; margin-bottom: 3%; font-size: 11px;">(Audi 차량의 경우 선착순에 한함.)</p>
-								<img alt="" style="width: 260px; margin-left: 45%; margin-top: 1rem; margin-bottom: 0.8rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
+								<img alt="" style="width: 280px; margin-left: 45%; margin-top: 1.5rem; margin-bottom: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
 								<p style="margin-left: 41%; margin-top: 5%; margin-bottom: 0; color: darkgray;">차량번호&nbsp;&nbsp;&nbsp;&nbsp;38고&nbsp;7740</p>
 								<p style="margin-left: 41%; margin-bottom: 0; color: darkgray;"><cite>spec</cite>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A3&nbsp;35&nbsp;TDI&nbsp;|&nbsp;2015연식&nbsp;|&nbsp;5인승&nbsp;|&nbsp;2,000cc</p>
 								<br>
@@ -214,6 +233,7 @@
 								<img onclick="OnloadImg(this.src)" alt="" src="${pageContext.request.contextPath}/resources/img/car_insurance.png" style="margin-left: 9%; margin-bottom: 1rem; margin-top: 1rem; width: 160px; cursor: pointer;">
 								<img onclick="OnloadImg(this.src)" alt="" src="${pageContext.request.contextPath}/resources/img/car_insurance(2).png" style="width: 160px; cursor: pointer;">
 								<img onclick="OnloadImg(this.src)" alt="" src="${pageContext.request.contextPath}/resources/img/car_fee.png" style="width: 160px; cursor: pointer;">
+								<p style="font-size: 11px; text-align: center; color: darkgray;">(상세보기를&nbsp;원하시면&nbsp;이미지를&nbsp;클릭해주세요.)</p>
 								<p style="font-size: 11px; margin-left: 9%;">-&nbsp;DB손해보험의&nbsp;'프로미카다이렉트'&nbsp;상품입니다.&nbsp;1년&nbsp;단위&nbsp;갱신상품으로&nbsp;매&nbsp;년&nbsp;3월&nbsp;갱신합니다.</p>
 								<p style="font-size: 11px; margin-left: 9%;">-&nbsp;가족단위로&nbsp;가입하여&nbsp;보장범위와&nbsp;보장한도가&nbsp;넓으며,&nbsp;더욱&nbsp;믿으실&nbsp;수&nbsp;있습니다.</p>
 								<p style="font-size: 11px; margin-left: 9%;">
@@ -231,13 +251,13 @@
 			
 			<main id="food" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<img alt="" style="width: 1450px; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/meal1.png">
+					<%-- <table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
 						<tr style="height: 10%;">
-							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
+<!-- 							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th> -->
 							<th class="tg-yw4l" style="font-size: 31.3px; padding-top: 2%;" rowspan="2">
 								<div style="margin-bottom: 4rem";>
-									<img alt="" style="width: 1120px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/food_pic.png">								
+									<img alt="" style="width: 1120px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/meal1.png">					
 								</div>
 							</th>
 						</tr>
@@ -247,7 +267,7 @@
 								<p style="margin-left: 5rem;">식사관련</p>
 							</td>
 						</tr>
-					</table>
+					</table> --%>
 					
 				</div>
 			</main>
@@ -256,13 +276,13 @@
 			
 			<main id="home_1" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<img alt="" style="width: 1450px; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/hotel1.png">
+					<%-- <table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
 						<tr style="height: 10%;">
 							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
 							<th class="tg-yw4l" style="font-size: 31.3px; padding-top: 2%;" rowspan="2">
 								<div style="margin-bottom: 4rem";>
-									<img alt="" style="width: 1120px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/home_pic.png">								
+									<img alt="" style="width: 1120px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/hotel1.png">								
 								</div>
 							</th>
 						</tr>
@@ -272,7 +292,7 @@
 								<p style="margin-left: 5rem;">숙소관련</p>
 							</td>
 						</tr>
-					</table>
+					</table> --%>
 					
 				</div>
 			</main>
@@ -319,23 +339,37 @@
 			
 			<main id="map" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<div id="map"></div>
+<%-- 					<img alt="" style="width: 1450px; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/home_loc2.png"> --%>
+					<%-- <table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
 						<tr style="height: 10%;">
-							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
-							<th class="tg-yw4l" style="font-size: 31.3px; padding-top: 2%;" rowspan="2">
-								<div style="margin-bottom: 4rem";>
-									<img alt="" style="width: 1120px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/home_pic.png">								
-								</div>
-							</th>
+							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
 						</tr>
 						<tr>
-							<td class="tg-yw4l" style="width: 30%; font-size: 25px; vertical-align: top;">
-								<img alt="" src="${pageContext.request.contextPath}/resources/img/home_icon.png" style="width: 110px; margin-left: 18%; margin-bottom: 3%; margin-top: 48%;">
-								<p style="margin-left: 5rem;"></p>
+							<td class="tg-yw4l" style="text-align: center; width: 17%; font-size: 25px; vertical-align: top;">
+								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/home_icon.png" style="width: 110px; margin-bottom: 5%; margin-top: 90%;">
+								<p>숙소관련</p>
+							</td>
+							
+							<td class="tg-yw4l" style="width: 44%;">
+								<p style="margin-left: 5rem; font-size: 30px;">현재&nbsp;본&nbsp;회사가&nbsp;보유중인&nbsp;숙소.</p>
+								<img alt="" style="width: 600px; margin-left: 12%; margin-top: 1rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/home_loc.png">								
+								<p style="margin-left:35%;">
+									-&nbsp;아크로파크3차&nbsp;(도곡동)
+								</p>
+								<p style="margin-left:35%;">
+									-&nbsp;2017년&nbsp;준공,&nbsp;첫&nbsp;입주.
+								</p>
+								<p style="margin-left:35%;">
+									-&nbsp;사무실과&nbsp;1분&nbsp;거리에&nbsp;위치.
+								</p>
+							</td>
+							
+							<td class="tg-yw4l">
+								<img alt="" src="${pageContext.request.contextPath}/resources/img/home_loc.png" style="margin-left: 12%; margin-bottom: 5rem;width: 600px;">
 							</td>
 						</tr>
-					</table>
+					</table> --%>
 					
 				</div>
 			</main>

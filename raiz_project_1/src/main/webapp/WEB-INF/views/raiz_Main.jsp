@@ -38,16 +38,27 @@
 			main {
 				font-family : arial;
 			}
+
+			video { 
+			     top: 0px;
+			     left: 0px;
+			     min-width: 100%;
+			     min-height: 100%;
+			     width: auto;
+			     height: auto;
+			     z-index: -1;
+			     overflow: hidden;
+			}
 		</style>
 	</head>
 	
 	<script type="text/javascript">
-		$('html, body').css({'overflow': 'hidden', 'height': '100%'});
+		/* $('html, body').css({'overflow': 'hidden', 'height': '100%'});
 		$('#element').on('scroll touchmove mousewheel', function(event) {
 			  event.preventDefault();
 			  event.stopPropagation();
 			  return false;
-		});
+		}); */
 	</script>
 	
 	<body>
@@ -60,7 +71,8 @@
 		</div>
 		
 		<div id="layout" class="layout">
-		
+			<video src="${pageContext.request.contextPath}/resources/img/SeoulManager_video_version2_180129.mov"
+				poster="${pageContext.request.contextPath}/resources/img/covervideo_img.PNG" loop="loop" autoplay="autoplay"></video>
 			<!-- Header -->
 			
 			<nav class="navbar navbar-expand-lg" data-toggle="affix">
@@ -108,52 +120,23 @@
 			<!-- Home -->
 			
 			<main id="home" class="masthead masked">
-				<div class="opener rel-1" style="background-color: rgb(23,28,97); padding-bottom:10px;">
-				
-					<div class="container" style="max-width:1600px;">
-						<div class="row align-items-center">
-							<div style="width: 300px; padding-right:15px; margin-left:auto;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<div style="width: 300px; padding-right:15px;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<div style="width: 300px; padding-right:15px;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<div style="width: 300px; padding-right:15px;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<div style="width: 300px; padding-right:15px; margin-right:auto;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/user_main.png">
-							</div>
-							<!-- <div class="col-lg-6">
-								<h1 class="text-white mb-3">Simple and Powerful</h1>
-								<p class="lead-text mb-4">There are many variations of passages of Lorem Ipsum<br> available, but the majority have suffered alteration</p>
-								<div class="lead-controls">
-									<a href="#" class="btn-lead btn mr-3">Download now</a>
-									<a href="http://www.youtube.com/watch?v=ANwf8AE3_d0"  data-effect="mfp-zoom-in" class="text-white play js-play">
-										<i class="text-white mr-2 align-middle fa fa-4x fa-play-circle"></i>Watch video
-									</a>
-								</div>
-							</div> -->
-						</div>
-					</div>
-					<br><br>
-					<div style="width: 40%; text-align: center; margin-left: 29.6%; border-left: 0.25px solid #dae0e5; border-right: 0.25px solid #dae0e5;">
-						<p style="font-size: 40px; margin-bottom: 0rem;">
-							자녀 혼자 서울 보낼 땐 <b>서울매니저</b><br>
-						</p>
-						<p style="font-size: 19px; margin-bottom: -0.5rem;">
-							고객이&nbsp;기차에서&nbsp;내리는&nbsp;순간부터,&nbsp;귀가하는&nbsp;기차에&nbsp;탑승하는&nbsp;순간까지<br>
-						</p>
-						<p style="font-size: 19px;">
-							이동,&nbsp;식사,&nbsp;숙박&nbsp;등&nbsp;모든&nbsp;것을&nbsp;1등급&nbsp;서비스로&nbsp;안전하게&nbsp;에스코트합니다.					
-						</p>					
-					</div>
-
+				<div class="opener rel-1" style="height: auto; background-color: rgb(23,28,97); padding: 0;">
+					<table class="tg" align="center">
+						<tr>
+							<th class="tg-yw4l">
+								<img alt="" style="width: 600px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size1.png">		
+							</th>
+							<th class="tg-yw4l">
+								<img alt="" style="width: 365px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size2.png">		
+							</th>
+							<th class="tg-yw4l">
+								<img alt="" style="width: 385px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size3.png">		
+							</th>
+						</tr>
+					</table>
+					
 					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:80%;">
-
+					
 					<table class="tg" style="margin-left: 11%; width: 90%;">
 						<tr>
 							<th class="tg-yw4l" rowspan="2" style="width: 10%;">
@@ -169,7 +152,7 @@
 										</p>
 										<p class="small" style="margin-bottom:0rem;text-align:left;">
 											대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
 										</p>
 										<p class="small" style="width:max-content;">
 											Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
@@ -197,150 +180,10 @@
 							<td class="tg-yw4l"></td>
 						</tr>
 					</table>
-
-					<!-- <div class="container" style="max-width:1600px;">
-						<div style="padding-top:15px; margin:auto; margin-left:0px;">
-							<p class="small" style="margin-bottom:0rem;text-align:left;">
-								서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
-							</p>
-							<p class="small" style="width:max-content;">
-								main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								e-mail&nbsp;&nbsp;smheyong@raizcorp.co.kr
-							</p>
-						</div>
-					</div> -->
 				</div>
 			</main>
-			
-			<!-- Content -->
-			<%-- 
-			<div class="content">
-			
-				<!-- Partners  -->
-				
-				<section id="about" class="partners bg-light">
-					<div class="container">
-						<div class="row">
-							<div class="partners-carousel owl-theme owl-carousel">
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/partners/1.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/partners/2.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/partners/3.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/partners/4.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/partners/5.png">
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				
-				<!-- About  -->
-				
-				<section class="text-center section">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<i class="fa fa-4x fa-wordpress"></i>
-								<h5 class="mt-3">Modern</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-							</div>
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp" data-wow-delay="0.3s">
-								<i class="fa fa-4x fa-code"></i>
-								<h5 class="mt-3">Easy to customize</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-							</div>
-							<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-								<i class="fa fa-4x fa-soundcloud"></i>
-								<h5 class="mt-3">Light</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- Subscribe -->
-				
-				<section id="subscribe" class="text-center bg-light section" style="padding-top: 3rem;padding-bottom:  0rem;">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 offset-md-3">
-								<h2 class="section-title" style="font-size:41px;margin-bottom:0;">자리의 파트너가 되어주세요!</h2>
-								<p style="font-size:20.3px;">매장 수익성 극대화 방안을 사장님과 함께 고민하겠습니다.</p>
-							</div>
-						</div>
-						<div class="mt-5" style="margin-top: 2rem!important;">
-							<div class="row">
-								<div class="col-md-6 offset-md-3">
-									<form id="mc-form">
-										<div class="input-group">
-											<input id="name" type="name" class="form-control b-primary" style="border-radius:30px;" placeholder="Name">
-										</div>
-										<br>
-										<div class="input-group">
-											<input id="phone" type="phone" class="form-control b-primary" style="border-radius:30px;" placeholder="Phone Number">
-										</div>
-										<br>
-										<div class="input-group">
-											<input id="mc-email" type="email" class="form-control b-primary" style="border-radius:30px;" placeholder="Email address">
-											<!-- <span class="input-group-btn">
-											</span> -->
-										</div>
-										<br><br>
-										<button class="btn" type="submit" style="font-size:15px;"><i class="text-white fa fa-envelope"></i> <span class="hidden-xs">보내기</span></button>
-										<p><label for="mc-email" id="mc-notification"></label></p>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			
-			<!-- Footer -->
-			
-			<footer id="footer" class="footer text-center" style="position:relative;">
-				<!-- <div class="container">
-					<div class="social">
-						<a href="#" class="fa fa-2x fa-facebook"></a>
-						<a href="#" class="fa fa-2x fa-twitter"></a>
-						<a href="#" class="fa fa-2x fa-pinterest"></a>
-						<a href="#" class="fa fa-2x fa-youtube-play"></a>
-					</div>
-				</div> -->
-				<!-- <div class="copy">
-					© 2016 Brett. All rights reserved by <a href="http://themeforest.net/user/murren20" target="_blank">Murren20</a>
-				</div> -->
-				<div class="row">
-					<div style="margin:auto; margin-right:0px;">
-						<img alt="" style="height: 110px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png">
-						<img style="height:100px;" src="${pageContext.request.contextPath}/resources/img/raiz_ci.png" alt="">
-					</div>
-					<div style="padding-top:15px; margin:auto; margin-left:0px;">
-						<p class="text-muted small mb-lg-0" style="margin-bottom:1rem;text-align:left;">
-							주식회사&nbsp;&nbsp;라이즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303
-						</p>
-						<p class="text-muted small mb-4 mb-lg-0" style="text-align:left;">
-							사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smhyeong@raizcorp.co.kr
-						</p>
-						<p></p>
-						<p class="text-muted small mb-4 mb-lg-0" style="width:max-content;">이용약관&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제휴문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;광고문의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회사소개서(KR)&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자리&nbsp;&nbsp;&nbsp;CI</p>
-					</div>
-				</div>
-			</footer>
-		 --%>
 		</div>
+		
 		<!-- Modals -->
 		
 		<div id="request" class="modal fade" role="dialog">

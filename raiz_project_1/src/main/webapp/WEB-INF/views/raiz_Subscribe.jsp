@@ -70,6 +70,17 @@
 				color : darkgray;
 				font-weight: normal;
 			}
+
+			p.raiz_terms_left {
+				margin-left: 5.5rem;
+				margin-bottom: 0rem;
+				font-size: 14px;
+			}
+
+			p.raiz_terms_right {
+				margin-bottom: 0rem;
+				font-size: 14px;
+			}
 		</style>
 	</head>
 	<script type="text/javascript">
@@ -138,7 +149,7 @@
 				
 					<table class="tg" style="margin-left: 10%; width: 80%; height: 55%">
 						<tr>
-							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%;">서비스 신청 Process</th>
+							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%;">서비스 신청 프로세스</th>
 						</tr>
 						<tr style="height: 50%; text-align: center; vertical-align: top; color: rgb(23, 28, 97)">
 							<th style="font-weight: normal;">
@@ -179,10 +190,10 @@
 									예약가능여부&nbsp;확인
 								</p>
 								<p style="margin-bottom: 0rem;">
-									매니저가&nbsp;신속히&nbsp;예약가능여부
+									매니저가&nbsp;신속히&nbsp;예약가능
 								</p>
 								<p style="margin-bottom: 0rem;">
-									확인&nbsp;후&nbsp;연락&nbsp;드리며,
+									여부&nbsp;확인&nbsp;후&nbsp;연락&nbsp;드리며,
 								</p>
 								<p>
 									입금계좌를&nbsp;안내해드립니다.
@@ -196,10 +207,13 @@
 									결제
 								</p>
 								<p style="margin-bottom: 0rem;">
-									이용하실&nbsp;상품가액을
+									이용하실&nbsp;상품가액을&nbsp;이체해주세요.
+								</p>
+								<p style="margin-bottom: 0rem;">
+									*&nbsp;신청자명과&nbsp;입금자명이&nbsp;다를&nbsp;경우,
 								</p>
 								<p>
-									이체해주세요.
+									매니저에게&nbsp;문자&nbsp;한통&nbsp;남겨주세요!
 								</p>
 							</th>
 							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
@@ -216,7 +230,7 @@
 									예약확인&nbsp;연락&nbsp;드립니다.
 								</p>
 								<p style="margin-bottom: 0rem;">
-									문의사항은&nbsp;담당&nbsp;매니저에게
+									문의사항은&nbsp;&nbsp;매니저에게
 								</p>
 								<p>
 									언제든&nbsp;편하게&nbsp;연락주세요.
@@ -230,16 +244,16 @@
 									세부일정&nbsp;조율
 								</p>
 								<p style="margin-bottom: 0rem;">
-									상경&nbsp;전&nbsp;매니저가&nbsp;숙소를&nbsp;비롯한
+									전담&nbsp;매니저가&nbsp;숙소를&nbsp;비롯,
 								</p>
 								<p style="margin-bottom: 0rem;">
 									상세일정을&nbsp;송부&nbsp;드립니다.
 								</p>
 								<p style="margin-bottom: 0rem;">
-									변경/요청사항은&nbsp;언제든
+									변경&nbsp;및&nbsp;요청은&nbsp;매니저에게
 								</p>
 								<p>
-									편하게&nbsp;연락주세요.
+									언제든&nbsp;편하게&nbsp;연락주세요.
 								</p>
 							</th>
 						</tr>
@@ -262,7 +276,7 @@
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<table style="border: 1px solid; border-radius: 25px; border-collapse: initial; padding: 1.5rem;">
+											<table style="border: 1px solid; border-radius: 25px; border-collapse: initial; padding: 1.5rem; font-size: 13px;">
 												<tr>
 													<th class="tg-yw4l">
 														<p>(서비스&nbsp;신청&nbsp;예시)</p>
@@ -287,8 +301,46 @@
 									</tr>
 								</table>
 							</th>
-							<th style="width: 25%;">
-								
+							<th style="width: 21%; font-weight: normal;">
+								<table class="tg">
+									<tr>
+										<th>
+											<img alt="" style="width: 80px; margin-top: 5.2rem; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/mobile.png">
+										</th>
+										<th>
+											<p style="margin-top: 5.2rem; margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: bold;">전화</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: normal;">02&nbsp;0000&nbsp;0237</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: normal;">010&nbsp;5435&nbsp;0237</p>
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<img alt="" style="width: 80px; margin-top: 2rem; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
+										</td>
+										<td>
+											<p style="margin-top: 1rem; margin-bottom: 1rem; margin-left: 1rem; font-size: 16px; font-weight: bold;">카카오톡&nbsp;플러스친구</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px;">@서울매니저</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img alt="" style="width: 80px; margin-top: 2rem; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/message.jpg">
+										</td>
+										<td>
+											<p style="margin-top: 1rem; margin-bottom: 1rem; margin-left: 1rem; font-size: 16px; font-weight: bold;">문자메세지</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px;">010&nbsp;5435&nbsp;0237</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img alt="" style="width: 80px; margin-top: 2rem; margin-left: 0.7rem; margin-right: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/email.png">
+										</td>
+										<td>
+											<p style="margin-top: 1rem; margin-bottom: 1rem; margin-left: 1rem; font-size: 16px; font-weight: bold;">e-mail</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px;">sm@raizcorp.co.kr</p>
+										</td>
+									</tr>
+								</table>
 							</th>
 							<th style="width: 35%; text-align: center;">
 								<img alt="" style="width: 430px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
@@ -299,7 +351,7 @@
 				</div>
 			</main>
 
-			<!-- 서비스 신청 - Process -->
+			<!-- 서비스 신청 - price -->
 
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
@@ -557,83 +609,183 @@
 						</tr>
 						<tr></tr>
 					</table> -->
-					
-					<br><br><br><br><br><br>
-					
-					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 16%; color: rgb(23, 28, 97);">
+				</div>
+			</main>
+			
+			<!-- 이용 약관 -->
+			
+			<main id="map" class="masthead masked">
+				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
+				
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+						<tr style="height: 10%;">
+							<th class="tg-yw4l" colspan="2">
+								<p class="raiz_terms" style="font-size: 20px; margin-left: 5.5rem;">이용약관</p>
+							</th>
+						</tr>
+						<tr>
+							<td class="tg-yw4l" style="vertical-align: top;">
+								<p class="raiz_terms" style="text-align: center; margin-right: 6rem; margin-bottom: 0rem; font-size: 18px;">개인정보보호</p>
+								<br>
+								<p class="raiz_terms_left">
+									1.&nbsp;&nbsp;회사는&nbsp;이용자의&nbsp;개인정보&nbsp;수집&nbsp;시&nbsp;서비스제공에&nbsp;필요한&nbsp;범위에서&nbsp;최소한의&nbsp;개인정보를
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									수집합니다.
+								</p>
+								<p class="raiz_terms_left">
+									2.&nbsp;&nbsp;회사는&nbsp;수집된&nbsp;개인정보를&nbsp;목적&nbsp;외의&nbsp;용도로&nbsp;이용할&nbsp;수&nbsp;없으며,&nbsp;새로운&nbsp;이용목적이&nbsp;발생
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									한&nbsp;경우&nbsp;또는&nbsp;제&nbsp;3자에게&nbsp;제공하는&nbsp;경우에는&nbsp;이용&nbsp;및&nbsp;제공단계에서&nbsp;당해&nbsp;이용자에게&nbsp;그
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									목적을&nbsp;고지하고&nbsp;동의를&nbsp;받습니다.&nbsp;다만,&nbsp;관련&nbsp;법령에&nbsp;달리&nbsp;정함이&nbsp;있는&nbsp;경우에는&nbsp;예외로
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									합니다.
+								</p>
+								<p class="raiz_terms_left">
+									3.&nbsp;&nbsp;이용자는&nbsp;언제든지&nbsp;회사가&nbsp;가지고&nbsp;있는&nbsp;자신의&nbsp;개인정보에&nbsp;대해&nbsp;열람&nbsp;및&nbsp;오류정정을&nbsp;요
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									구할&nbsp;수&nbsp;있으며&nbsp;회사는&nbsp;이에&nbsp;대해&nbsp;지체&nbsp;없이&nbsp;필요한&nbsp;조치를&nbsp;취할&nbsp;의무를&nbsp;가집니다.&nbsp;이용자
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									가&nbsp;오류의&nbsp;정정을&nbsp;요구한&nbsp;경우에&nbsp;회사는&nbsp;그&nbsp;오류를&nbsp;정정할&nbsp;때까지&nbsp;당해&nbsp;개인정보를&nbsp;이용
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									하지&nbsp;않습니다.
+								</p>
+								<p class="raiz_terms_left">
+									4.&nbsp;&nbsp;이용자의&nbsp;기존&nbsp;개인정보와&nbsp;이용자가&nbsp;본인&nbsp;인증&nbsp;시&nbsp;인증한&nbsp;개인정보가&nbsp;상이한&nbsp;경우,&nbsp;회사
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									는&nbsp;이용자가&nbsp;본인&nbsp;인증&nbsp;시&nbsp;인증한&nbsp;개인정보로&nbsp;회원정보를&nbsp;수정할&nbsp;수&nbsp;있습니다.
+								</p>
+								<p class="raiz_terms_left">
+									5.&nbsp;&nbsp;회사는&nbsp;개인정보보호를&nbsp;위하여&nbsp;이용자의&nbsp;개인정보를&nbsp;취급하는&nbsp;자를&nbsp;최소한으로&nbsp;제한하
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									여야&nbsp;합니다.
+								</p>
+								<p class="raiz_terms_left">
+									6.&nbsp;&nbsp;회사&nbsp;또는&nbsp;그로부터&nbsp;개인정보를&nbsp;제공받는&nbsp;제&nbsp;3자는&nbsp;개인정보의&nbsp;수집목적&nbsp;또는&nbsp;제공받은
+								</p>
+								<p class="raiz_terms_left" style="margin-left: 6.7rem;">
+									목적을&nbsp;달성한&nbsp;때에는&nbsp;개인정보를&nbsp;지체&nbsp;없이&nbsp;파기합니다.
+								</p>
+							</td>
+							<td class="tg-yw4l" style="vertical-align: top;">
+								<p class="raiz_terms" style="text-align: center; margin-right: 10.5rem; margin-bottom: 0rem; font-size: 18px;">구매계약의&nbsp;취소와&nbsp;환불에&nbsp;관한&nbsp;규정</p>
+								<br>
+								<p class="raiz_terms_right">1.&nbsp;&nbsp;회사는&nbsp;구매계약의&nbsp;취소&nbsp;및&nbsp;환불과&nbsp;관련하여&nbsp;전자상거래&nbsp;등의&nbsp;소비자보호에&nbsp;관한&nbsp;법률</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">등&nbsp;관련법을&nbsp;준수합니다.</p>
+								<p class="raiz_terms_right">2.&nbsp;&nbsp;구매계약&nbsp;시&nbsp;재화&nbsp;또는&nbsp;용역의&nbsp;성격에&nbsp;따라&nbsp;회사는&nbsp;별도의&nbsp;취소&nbsp;및&nbsp;환불&nbsp;규정을&nbsp;정할&nbsp;수</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">있으며,&nbsp;회사는&nbsp;이러한&nbsp;경우&nbsp;개별&nbsp;취소&nbsp;및&nbsp;환불&nbsp;규정을&nbsp;적용할&nbsp;수&nbsp;있습니다.</p>
+								<p class="raiz_terms_right">3.&nbsp;&nbsp;회사는&nbsp;사업자의&nbsp;확인&nbsp;후&nbsp;이용자의&nbsp;구매계약의&nbsp;취소&nbsp;및&nbsp;환불&nbsp;신청을&nbsp;처리하며,&nbsp;회사&nbsp;및&nbsp;판</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">매자의&nbsp;취소&nbsp;및&nbsp;환불&nbsp;규정에&nbsp;따라&nbsp;취소수수료가&nbsp;발생할&nbsp;수&nbsp;있습니다.</p>
+								<p class="raiz_terms_right">4.&nbsp;&nbsp;구매&nbsp;취소&nbsp;시점에&nbsp;따라&nbsp;취소금액의&nbsp;환금&nbsp;방법과&nbsp;환급일은&nbsp;다소&nbsp;차이가&nbsp;있을&nbsp;수&nbsp;있습니다.</p>
+								<p>
+									<table class="tg" align="center" style="width: 70%; text-align: center; margin-left: 1rem;">
+										<tr style="font-size: 13px;">
+											<th class="tg-yw4l" style="width: 55%; font-weight: normal; border-right: 0.25px solid #dae0e5; border-bottom: 1px solid #dae0e5;">구매&nbsp;취소&nbsp;시점</th>
+											<th class="tg-yw4l" style="font-weight: normal; border-bottom: 0.25px solid #dae0e5;">취소&nbsp;수수료</th>
+										</tr>
+										<tr style="font-size: 12px;">
+											<td class="tg-yw4l" style="border-right: 0.25px solid #dae0e5; border-bottom: 1px solid #dae0e5;">서비스&nbsp;이용일로부터&nbsp;3일&nbsp;전&nbsp;까지</td>
+											<td class="tg-yw4l" style="border-bottom: 0.25px solid #dae0e5;">없음.</td>
+										</tr>
+										<tr style="font-size: 12px;">
+											<td class="tg-yw4l" style="border-right: 0.25px solid #dae0e5; border-bottom: 1px solid #dae0e5;">서비스&nbsp;이용일로부터&nbsp;2일&nbsp;전&nbsp;까지</td>
+											<td class="tg-yw4l" style="border-bottom: 0.25px solid #dae0e5;">상품가액의&nbsp;10%</td>
+										</tr>
+										<tr style="font-size: 12px;">
+											<td class="tg-yw4l" style="border-right: 0.25px solid #dae0e5;">서비스&nbsp;이용일로부터&nbsp;1일&nbsp;전</td>
+											<td class="tg-yw4l" >상품가액의&nbsp;30%</td>
+										</tr>
+									</table>
+								</p>
+								<p class="raiz_terms_right">5.&nbsp;&nbsp;회사는&nbsp;선량한&nbsp;사용자의&nbsp;보호를&nbsp;위하여&nbsp;다음에&nbsp;해당하는&nbsp;고객에&nbsp;대해&nbsp;일정한&nbsp;기간을&nbsp;정</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">하여&nbsp;예약제한&nbsp;또는&nbsp;해당&nbsp;예약&nbsp;건에&nbsp;대한&nbsp;예약취소&nbsp;조치를&nbsp;취할&nbsp;수&nbsp;있습니다.</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">1)&nbsp;부정한&nbsp;방법을&nbsp;통한&nbsp;예약의&nbsp;경우</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">2)&nbsp;반복적으로&nbsp;다량의&nbsp;재화&nbsp;또는&nbsp;용역을&nbsp;구매&nbsp;후&nbsp;취소하는&nbsp;경우</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">3)&nbsp;기타&nbsp;이에&nbsp;준하는&nbsp;부정한&nbsp;이용으로&nbsp;판단되는&nbsp;경우</p>
+								<p class="raiz_terms_right">6.&nbsp;&nbsp;기타&nbsp;이&nbsp;약관&nbsp;및&nbsp;서비스의&nbsp;이용안내에&nbsp;규정되지&nbsp;않은&nbsp;취소&nbsp;및&nbsp;환불에&nbsp;대한&nbsp;사항에&nbsp;대해서</p>
+								<p class="raiz_terms_right" style="margin-left: 1.2rem;">는&nbsp;소비자기본법&nbsp;등&nbsp;관련법을&nbsp;따릅니다.</p>
+							</td>
+						</tr>
+					</table>
+
+					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 11%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" style="vertical-align: middle; width: 41.3%;">
 								<table class="tg" style="margin-left: 3rem;">
 									<tr>
 										<th class="tg-yw4l">
 											<p style="font-weight: normal; font-size:30px; margin-bottom: -0.5rem; margin-right: 2rem;"><cite><b>raíz corp.</b></cite></p>
-											<p style="font-size:17px; margin-bottom: 2rem;font-weight: normal;">주식회사 라이즈</p>
+											<p style="font-size:17px; margin-bottom: 1rem;font-weight: normal;">주식회사 라이즈</p>
 										</th>
 										<th class="tg-yw4l">
 											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303
+												서울시&nbsp;강남구&nbsp;도곡로2길&nbsp;29,&nbsp;303
 											</p>
 											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
+												사업자등록번호&nbsp;&nbsp;564&nbsp;88&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
 											</p>
 											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												main&nbsp;&nbsp;mobile&nbsp;&nbsp;010&nbsp;&nbsp;5435&nbsp;&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;smheyong@raizcorp.co.kr
+												mobile&nbsp;&nbsp;010&nbsp;5435&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
 											</p>
-											<p class="small" style="text-align:left;">
+											<p class="small" style="text-align:left; margin-bottom: -0.5rem;">
 												Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
 											</p>
 										</th>
 									</tr>
 								</table>
 							</th>
-							<th class="tg-yw4l" style="vertical-align: middle; width:30%; border-left: 1px solid #dae0e5;">
-								<table class="tg" style="text-aling: center;">
+							<th class="tg-yw4l" style="vertical-align: middle; width:30%; border-left: 1px solid #dae0e5; background-color: rgb(23, 28, 97);">
+								<table class="tg">
 									<tr>
 										<th class="tg-yw4l" rowspan="2">
-											<p style="font-size:25px; margin-bottom: -0.5rem; margin-left: 4rem; margin-right: 2rem;">계좌이체</p>
-											<p style="font-size:16px; margin-bottom: 0rem; margin-left: 4.1rem; font-weight: normal;">입금계좌확인</p>
+											<p style="color: white; font-size:25px; margin-bottom: -0.5rem; margin-left: 2.5rem; margin-right: 2rem;">계좌이체</p>
+											<p style="color: white; font-size:16px; margin-bottom: 0rem; margin-left: 2.6rem; font-weight: normal;">입금계좌확인</p>
 										</th>
 										<th class="tg-yw4l">
-											<p style="font-size:20px; margin-bottom: 0rem; margin-top: 0.2rem;">
+											<p style="color: white; font-size:20px; margin-bottom: 0rem; margin-top: 0.2rem;">
 												우리은행&nbsp;&nbsp;1005&nbsp;-&nbsp;003&nbsp;-&nbsp;377295
 											</p>
 										</th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<p style="font-size:20px; font-size: 16px; margin-top: -0.5rem; margin-left: 2rem; margin-bottom: 0rem; font-weight: normal;">예금주&nbsp;&nbsp;(주)&nbsp;라이즈</p>
-										</td>
-									</tr>
-									<tr>
-										<td class="tg-yw4l" colspan="2">
-											<p style="font-size:13px; margin-left: 6rem; margin-bottom: -0.5rem; font-weight: normal;">
-												*&nbsp;입금확인&nbsp;즉시&nbsp;예약확인문자&nbsp;드립니다.
-											</p>
-											<p style="font-size:13px; margin-left: 6rem; font-weight: normal;">
-												*&nbsp;신청자명과&nbsp;입금자명이&nbsp;다를&nbsp;경우,&nbsp;매니저에게&nbsp;문자주세요!
-											</p>
+											<p style="color: white; font-size:20px; font-size: 16px; margin-top: -0.5rem; margin-left: 2rem; margin-bottom: 0rem; font-weight: normal;">예금주&nbsp;&nbsp;(주)&nbsp;라이즈</p>
 										</td>
 									</tr>
 								</table>
 							</th>
 							<th class="tg-yw4l" style="vertical-align: middle; border-left: 1px solid #dae0e5;">
 								<table class="tg" style="margin-left: 3rem;">
-									<tr style="font-size:25px;">
-										<th class="tg-yw4l" style="padding-right: 3rem;" rowspan="2">
-											<p style="margin-bottom: 0rem;">
+									<tr>
+										<th class="tg-yw4l" style="font-size:25px; padding-right: 3rem;" rowspan="2">
+											<p style="margin-bottom: -0.5rem;">
 												문의전화
 											</p>
-										</th>
-										<th class="tg-yw4l">
-											<p style="margin-bottom: 0rem;">
-												02&nbsp;0000&nbsp;0237
+											<p style="margin-bottom: 0rem; margin-left: 0.2rem; font-size: 18px; font-weight: normal; text-align: center;">
+												유선/휴대폰
 											</p>
+										</th>
+										<th class="tg-yw4l" style="font-size:25px;">
+											<p style="margin-bottom: -1rem; margin-left: 0.9rem;">
+												02&nbsp;6085&nbsp;0237
+											</p>
+										</th>
 									</tr>
 									<tr style="font-size:25px;">
 										<td class="tg-yw4l">
 											<p style="margin-bottom: 0rem;">
 												010&nbsp;5435&nbsp;0237
 											</p>
+										</td>
 									</tr>
 								</table>
 							</th>
