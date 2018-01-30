@@ -14,7 +14,7 @@
 			.open-ready {margin: 0; padding: 80px 0 0 0; font-size: 0, line-height: 0; text-align: center;}
 		</style>
 	</head>
-	<body>
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 		<div class="open-ready">
 			<img src="${pageContext.request.contextPath}/resources/img/ready.gif" alt="">
 		</div>

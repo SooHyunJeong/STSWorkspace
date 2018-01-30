@@ -61,7 +61,12 @@
 		}); */
 	</script>
 	
-	<body>
+	<!-- 
+		- oncontextmenu='return false' - 우클릭방지
+		- onselectstart='return false' - 블럭선택방지
+		- ondragstart='return false' - 드래그방지
+	 -->
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 		<!-- Loader -->
 		<div class="loader">
 			<div class="spinner">
@@ -86,31 +91,31 @@
 						<span class="navbar-toggler-icon"></span>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav" style="margin-left: 48%;">
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
+						<ul class="navbar-nav" style="margin-left: auto;">
+<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid white;"> -->
+								<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="#home">홈</a>
 							</li>
-							<span style="color:white;">|</span>
+<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
-							<span style="color:white;">|</span>
+<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
-							<span style="color:white;">|</span>
+<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
-							<span style="color:white;">|</span>
+<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link disabled" href="raiz_Notice.do">핫이슈</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="raiz_Notice.do">입시정보</a>
 							</li>
-							<span style="color:white;">|</span>
+<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link disabled" href="raiz_Notice.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
 						</ul>
 					</div>

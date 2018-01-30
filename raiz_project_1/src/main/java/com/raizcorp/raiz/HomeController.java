@@ -20,23 +20,30 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
-	 * Simply selects the home view to render by returning its name.
+	 * 홈 Controller START
 	 */
 	@RequestMapping(value = "/raiz_Main.do")
 	public String home(Locale locale, Model model) {
+
+		logger.debug("raiz_Home STARTED");
+		System.out.println("raiz_Home STARTED");
+
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		
+
+		logger.debug("raiz_Home ENDED");
+		System.out.println("raiz_Home ENDED");
+
 		return "raiz_Main";
 //		return "raiz_ready";
 	}
 	
 	/**
-	 * Simply selects the home view to render by returning its name.
+	 * 서비스 소개 Controller START
 	 */
 	@RequestMapping(value = "/raiz_Introduce.do")
 	public String raiz_Introduce(Locale locale, Model model) {
@@ -58,7 +65,7 @@ public class HomeController {
 	}
 	
 	/**
-	 * 서비스 Controller START
+	 * 서비스 신청 Controller START
 	 */
 	@RequestMapping(value = "/raiz_Subscribe.do")
 	public String raiz_Subscribe(Locale locale, Model model) {
@@ -102,7 +109,7 @@ public class HomeController {
 	}
 	
 	/**
-	 * 서비스 신청 실행
+	 * 입시정보 Controller START
 	 */
 	@RequestMapping(value = "/raiz_Notice.do")
 	public String raiz_Notice(Locale locale, Model model) {
@@ -123,4 +130,25 @@ public class HomeController {
 		return "raiz_Notice";
 	}
 
+	/**
+	 * 입시정보 Controller START
+	 */
+	@RequestMapping(value = "/raiz_Partnership.do")
+	public String raiz_Partnership(Locale locale, Model model) {
+		
+		logger.debug("raiz_Partnership STARTED");
+		System.out.println("raiz_Partnership STARTED");
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		logger.debug("raiz_Partnership ENDED");
+		System.out.println("raiz_Partnership ENDED");
+
+		return "raiz_Partnership";
+	}
 }

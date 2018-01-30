@@ -87,7 +87,7 @@
 		
 		 
 	</script>
-	<body>
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 		<!-- Loader -->
 		<div class="loader">
 			<div class="spinner">
@@ -111,31 +111,31 @@
 						<span class="navbar-toggler-icon"></span>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:black">
-						<ul class="navbar-nav" style="margin-left: 47%;">
+						<ul class="navbar-nav" style="margin-left: auto;">
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link" href="raiz_Main.do">홈</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Main.do">홈</a>
 							</li>
-							<span style="color:black;">|</span>
+<!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
-							<span style="color:black;">|</span>
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
+<!-- 							<span style="color:black;">|</span> -->
+<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
-							<span style="color:black;">|</span>
+<!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link" href="raiz_Inquire.do">문의</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
-							<span style="color:black;">|</span>
+<!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link disabled" href="raiz_Notice.do">핫이슈</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">입시정보</a>
 							</li>
-							<span style="color:black;">|</span>
+<!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:black;" class="nav-link disabled" href="raiz_Notice.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
 							</li>
 						</ul>
 					</div>
@@ -743,7 +743,7 @@
 									</tr>
 								</table>
 							</th>
-							<th class="tg-yw4l" style="vertical-align: middle; width:30%; border-left: 1px solid #dae0e5; background-color: rgb(23, 28, 97);">
+							<th class="tg-yw4l" style="vertical-align: middle; width:31%; border-left: 1px solid #dae0e5; background-color: rgb(23, 28, 97);">
 								<table class="tg">
 									<tr>
 										<th class="tg-yw4l" rowspan="2">
@@ -775,14 +775,14 @@
 											</p>
 										</th>
 										<th class="tg-yw4l" style="font-size:25px;">
-											<p style="margin-bottom: -1rem; margin-left: 0.9rem;">
+											<p style="margin-bottom: -1rem; float: right; font-weight: normal;">
 												02&nbsp;6085&nbsp;0237
 											</p>
 										</th>
 									</tr>
 									<tr style="font-size:25px;">
 										<td class="tg-yw4l">
-											<p style="margin-bottom: 0rem;">
+											<p style="margin-bottom: 0rem; float: right; font-weight: normal;">
 												010&nbsp;5435&nbsp;0237
 											</p>
 										</td>

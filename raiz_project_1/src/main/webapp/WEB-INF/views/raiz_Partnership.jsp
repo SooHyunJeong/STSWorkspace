@@ -64,6 +64,16 @@
 			}
 		</style>
 	</head>
+
+	<script type="text/javascript">
+		$('html, body').css({'overflow': 'hidden', 'height': '100%'});
+		$('#element').on('scroll touchmove mousewheel', function(event) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			  return false;
+		});
+	</script>
+
 	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 		<!-- Loader -->
 		<div class="loader">
@@ -102,8 +112,7 @@
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
-<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold;">
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
@@ -111,116 +120,23 @@
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">입시정보</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
+<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; ">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-
-			<!-- 카카오톡 플러스친구 등록 방법 -->
-
+			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend2.png" style="margin-left: 20%; width: 1100px;">				
+					<img alt="" src="${pageContext.request.contextPath}/resources/img/ready_page.jpg" style="width: 770px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 10%;">				
 				</div>
 			</main>
-			
-			<!-- 고객센터 -->
 
-			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-					<table class="tg" align="center" style="width: 65%; height: 70%;">
-						<tr>
-							<th class="tg-yw4l" colspan="4" style="text-align: center; font-size: 30px; border-top: 0.25px solid #dae0e5; border-bottom: 0.25px solid #dae0e5; height: 15%;">
-								고객센터&nbsp;연중무휴,&nbsp;1일&nbsp;24시간
-							</th>
-						</tr>
-						<tr>
-							<td class="tg-yw4l">
-								<table class="tg">
-									<tr>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">유선전화</p>
-											<p>
-												<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/message.jpg">
-											</p>
-											<p style="text-align: center;">02&nbsp;6085&nbsp;0237</p>
-										</th>
-									</tr>
-								</table>
-							</td>
-							<td class="tg-yw4l">
-								<table class="tg">
-									<tr>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">휴대전화</p>
-											<p>
-												<img alt="" style="width: 50px; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/bb.png">
-											</p>
-											<p style="text-align: center;">010&nbsp;5435&nbsp;0237</p>
-										</th>
-									</tr>
-								</table>
-							</td>
-							<td class="tg-yw4l">
-								<table class="tg">
-									<tr>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">e-mail</p>
-											<p>
-												<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/email.png">
-											</p>
-											<p style="text-align: center;">sm@raizcorp.co.kr</p>
-										</th>
-									</tr>
-								</table>
-							</td>
-							<td class="tg-yw4l">
-								<table class="tg">
-									<tr>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">카카오톡&nbsp;플러스친구</p>
-											<p>
-												<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
-											</p>
-											<p style="text-align: center;">@서울매니저</p>
-										</th>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td class="tg-yw4l" colspan="4">
-								<table class="tg">
-									<tr>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">네이버&nbsp;카페</p>
-										</th>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">페이스북</p>
-										</th>
-										<th class="tg-yw4l">
-											<p style="text-align: center;">인스타그램</p>
-										</th>
-									</tr>
-									<tr>
-										<td class="tg-yw4l">
-											<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
-										</td>
-										<td class="tg-yw4l">
-											<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
-										</td>
-										<td class="tg-yw4l">
-											<img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/kakao.png">
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-
+			<main>
+				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black; height: 0%;">
 					<table id="footer" class="tg" style="margin-top: 2.5rem; margin-left: 7%; width: 86%; height: 11%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" style="vertical-align: middle; width: 41.3%;">
