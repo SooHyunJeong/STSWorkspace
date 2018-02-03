@@ -151,4 +151,26 @@ public class HomeController {
 
 		return "raiz_Partnership";
 	}
+	
+	/**
+	 * Post Controller START
+	 */
+	@RequestMapping(value = "/raiz_Post.do")
+	public String raiz_Post(Locale locale, Model model) {
+		
+		logger.debug("raiz_Post STARTED");
+		System.out.println("raiz_Post STARTED");
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		logger.debug("raiz_Post ENDED");
+		System.out.println("raiz_Post ENDED");
+
+		return "raiz_post";
+	}
 }

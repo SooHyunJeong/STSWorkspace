@@ -42,12 +42,16 @@
 				bottom : 0px;
 			}
 
-			li.nav-item {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				li.nav-item {
+					font-family : arial;
+				}			
 			}
 
-			main {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				main {
+					font-family : arial;
+				}
 			}
 
 			p {
@@ -90,8 +94,8 @@
 			<nav class="navbar navbar-expand-lg navbar-fixed animated slideInDown">
 				<div class="container" style="max-width:100%; margin-left:12%; margin-right:7%;">
 					<a class="navbar-brand" href="raiz_Main.do" style="color: rgb(23,28,97)">
-						<p style="font-size:30px; margin-bottom: 0.5rem;"><b>서울 매니저</b></p>
-						<p style="font-size:21px; font-weight: normal;"><cite><b>Seoul Manager</b></cite></p>
+						<p style="font-size:30px; margin-bottom: 0rem;"><b>서울매니저</b></p>
+						<p style="font-size:19px; font-weight: normal; margin-left: 0.2rem;"><cite><b>Seoul Manager</b></cite></p>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -117,7 +121,7 @@
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">입시정보</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">Notice</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 <!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->

@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>raíz corp.</title> 
+		<title>서울매니저</title> 
 		
 		<!-- Favicons -->
 
@@ -30,6 +30,7 @@
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.validate.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.mousewheel.min.js"></script>
 
 		<style type="text/css">
 			table {
@@ -47,12 +48,16 @@
 				color: rgb(23,28,97);
 			}
 			
-			li.nav-item {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				li.nav-item {
+					font-family : arial;
+				}
 			}
 
-			main {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				main {
+					font-family : arial;
+				}			
 			}
 
 			p {
@@ -72,29 +77,29 @@
 	</head>
 	
 	<script type="text/javascript">
-		  function initMap() {
-				var uluru = {lat: 37.487867, lng: 127.033604};
-				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 15,
-					center: uluru
-				});
-				var marker = new google.maps.Marker({
-					position: uluru,
-					map: map
-				});
-	      }
-
-		 function OnloadImg(url){
-				var img=new Image();
-				img.src=url;
+		function initMap() {
+			var uluru = {lat: 37.487867, lng: 127.033604};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+		
+		function OnloadImg(url){
+			var img=new Image();
+			img.src=url;
 				
-				var img_width=img.width;
-				var win_width=img.width+25;
-				var height=img.height+30;
+			var img_width=img.width;
+			var win_width=img.width+25;
+			var height=img.height+30;
 				
-				var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+height+', menubars=no, scrollbars=auto');	
-				OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
-			 }
+			var OpenWindow=window.open('','_blank', 'width='+img_width+', height='+height+', menubars=no, scrollbars=auto');	
+			OpenWindow.document.write("<style>body{margin:0px;}</style><img src='"+url+"' width='"+win_width+"'>");
+		}
 	</script>
 	
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAJLWC6t2OcLmFN6sJ80oSwVUUCYip08&callback=initMap"></script>
@@ -115,8 +120,8 @@
 			<nav class="navbar navbar-expand-lg navbar-fixed animated slideInDown">
 				<div class="container" style="max-width:100%; margin-left:12%; margin-right:7%;">
 					<a class="navbar-brand" href="raiz_Main.do" style="color: rgb(23,28,97)">
-						<p style="font-size:30px; margin-bottom: 0.5rem;"><b>서울 매니저</b></p>
-						<p style="font-size:21px; font-weight: normal;"><cite><b>Seoul Manager</b></cite></p>
+						<p style="font-size:30px; margin-bottom: 0rem;"><b>서울매니저</b></p>
+						<p style="font-size:19px; font-weight: normal; margin-left: 0.2rem;"><cite><b>Seoul Manager</b></cite></p>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
@@ -126,29 +131,31 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:black">
 						<ul class="navbar-nav" style="margin-left: auto;">
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Main.do">홈</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Main.do">홈</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 <!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold; font-weight : bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Inquire.do">문의</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">입시정보</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
+							<!-- 
+							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
 							</li>
+							 -->
 						</ul>
 					</div>
 				</div>
@@ -159,9 +166,10 @@
 			<main id="phone" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="height: 10%;">
-							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
+<!-- 							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th> -->
+							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;"></th>
 							<th class="tg-yw4l" style="font-size: 31.3px; padding-top: 2%;" rowspan="2">
 								<p style="margin-left: 7.5rem; margin-bottom: -0.5rem; font-size: 28px;">
 									무엇보다&nbsp;고객의&nbsp;안전과&nbsp;부모님의&nbsp;안심이&nbsp;최우선입니다.
@@ -169,7 +177,7 @@
 								<p style="margin-bottom: 0rem; margin-left: 7.5rem; font-size: 26.5px;">
 									매&nbsp;이동&nbsp;시&nbsp;연락드리며,&nbsp;언제든&nbsp;연락주세요.&nbsp;물론&nbsp;밤에&nbsp;두요.
 								</p>
-								<p style="font-size: 20px; color: darkgray; margin-left: 8rem;">(야식은&nbsp;저희가&nbsp;책임집니다.&nbsp;저희가&nbsp;수령해서&nbsp;숙소로&nbsp;직접&nbsp;가져다&nbsp;드립니다.)</p>
+								<p style="font-size: 20px; color: rgb(23, 28, 97); margin-left: 8rem; font-weight: normal;">(야식은&nbsp;저희가&nbsp;책임집니다.&nbsp;저희가&nbsp;수령해서&nbsp;숙소로&nbsp;직접&nbsp;가져다&nbsp;드립니다.)</p>
 								<div style="margin-bottom: 4rem";>
 									<img alt="" style="width: 290px; margin-left: 10%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/blackberry_txt.png">
 									<img alt="" style="width: 260px; margin-left: 15%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/iphone_txt.png">								
@@ -178,8 +186,8 @@
 						</tr>
 						<tr>
 							<td class="tg-yw4l" style="width: 30%; font-size: 25px; vertical-align: top;">
-								<img alt="" src="${pageContext.request.contextPath}/resources/img/phone_icon.png" style="width: 110px; margin-left: 17%; margin-bottom: 3%; margin-top: 48%;">
-								<p style="margin-left: 23.5%">연락</p>
+								<img alt="" src="${pageContext.request.contextPath}/resources/img/contact.png" style="width: 110px; margin-left: 17%; margin-bottom: 3%; margin-top: 48%;">
+<!-- 								<p style="margin-left: 23.5%">연락</p> -->
 							</td>
 							
 							<%-- <td class="tg-yw4l">
@@ -195,38 +203,39 @@
 			<!-- 이동관련 -->
 
 			<main id="car" class="masthead masked">
-				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
+				<div class="section opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="height: 10%;">
-							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
+<!-- 							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th> -->
+							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;"></th>
 						</tr>
 						<tr>
 							<td class="tg-yw4l" style="text-align: center; width: 17%; font-size: 25px; vertical-align: top;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/car_icon.png" style="width: 110px; margin-bottom: 5%; margin-top: 55%;">
-								<p>이동관련</p>
+								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/automobility.png" style="width: 110px; margin-bottom: 5%; margin-top: 55%;">
+<!-- 								<p>이동관련</p> -->
 							</td>
 							
 							<td class="tg-yw4l" style="width: 42%;">
 								<p style="font-size: 28px; margin-bottom: -0.7rem; margin-left: 16rem;">모든 이동은 Audi 차량으로.</p>
 								<p style="margin-left: 67%; margin-bottom: 3%; font-size: 11px;">(Audi 차량의 경우 선착순에 한함.)</p>
-								<img alt="" style="width: 280px; margin-left: 45%; margin-top: 1.5rem; margin-bottom: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
+								<img alt="" style="width: 47%; margin-left: 45%; margin-top: 0.9rem; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
 								<p style="margin-left: 41%; margin-top: 5%; margin-bottom: 0; color: darkgray;">차량번호&nbsp;&nbsp;&nbsp;&nbsp;38고&nbsp;7740</p>
-								<p style="margin-left: 41%; margin-bottom: 0; color: darkgray;"><cite>spec</cite>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A3&nbsp;35&nbsp;TDI&nbsp;|&nbsp;2015연식&nbsp;|&nbsp;5인승&nbsp;|&nbsp;2,000cc</p>
+								<p style="margin-left: 45.4%; margin-bottom: 0; color: darkgray;"><cite>spec</cite>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A3&nbsp;35&nbsp;TDI&nbsp;|&nbsp;2015연식&nbsp;|&nbsp;5인승&nbsp;|&nbsp;2,000cc</p>
 								<br>
 								<p style="margin-left: 41%; margin-bottom: 0;">-&nbsp;렌터가/리스차&nbsp;아닙니다.&nbsp;대표이사&nbsp;자차&nbsp;입니다.</p>
 								<p style="margin-left: 41%; margin-bottom: 0;">-&nbsp;정기검사&nbsp;실시하고&nbsp;있으며,&nbsp;사고이력&nbsp;없습니다.</p>
 								<br>
-								<p style="text-align: center; color: darkgray; margin-left: 14rem;">*&nbsp;악기 등 부피가 큰 소지품이 있을 경우<br>4인 이상이 함께할 경우에는<br>SUV 차량을 이용합니다.</p>
+								<p style="text-align: center; color: darkgray; margin-left: 14rem;">*&nbsp;악기 등 부피가 큰 소지품이 있을 경우<br>혹은 4인 이상이 함께할 경우에는<br>SUV 차량을 이용합니다.</p>
 							</td>
 							
 							<td class="tg-yw4l" style="border-left: 1px solid #dae0e5;">
 								<p style="text-align: center; font-size: 25px; margin-bottom: 0.8rem;">그럴 일 없겠지만, 혹시 모르는 유사시에도 확실하게.</p>
 								<p style="margin-left: 25%; margin-bottom: 0rem;"><b>동승자보험</b>&nbsp;|&nbsp;자동차보험&nbsp;|&nbsp;운전자보험</p>
-								<p style="font-size: 11px; margin-left: 28%;">입원비,&nbsp;통원치료비,&nbsp;휴업손해,&nbsp;상해에&nbsp;따른&nbsp;위자료</p>
-								<p style="font-size: 11px; margin-left: 9%;">1.&nbsp;쌍방과실의&nbsp;경우(상대방&nbsp;과실이&nbsp;1이라도&nbsp;인정될&nbsp;경우),&nbsp;'대인보상2'&nbsp;항목에&nbsp;의해&nbsp;보장되며&nbsp;한도는&nbsp;무제한.</p>
-								<p style="font-size: 11px; margin-left: 9%;">2.&nbsp;이외의&nbsp;경우&nbsp;자동차보험의&nbsp;<b>자동차상해(자상)에</b>&nbsp;의해&nbsp;보장되며&nbsp;<b>한도는&nbsp;일억&nbsp;원.</b></p>
-								<p style="color: darkgray; font-size: 10px; margin-left: 9%; margin-bottom: 0;">
+								<p style="font-size: 11px; margin-left: 25.2%;">입원비,&nbsp;통원치료비,&nbsp;휴업손해,&nbsp;상해에&nbsp;따른&nbsp;위자료</p>
+								<p style="font-size: 11px; margin-left: 9%;">1.&nbsp;쌍방과실의&nbsp;경우(상대방&nbsp;과실이&nbsp;1이라도&nbsp;인정될&nbsp;경우),&nbsp;<b>'대인보상2'</b>&nbsp;항목에&nbsp;의해&nbsp;보장되며&nbsp;<b>한도는&nbsp;무제한.</b></p>
+								<p style="font-size: 11px; margin-left: 9%;">2.&nbsp;이외의&nbsp;경우&nbsp;자동차보험의&nbsp;<b>'자동차상해(자상)'에</b>&nbsp;의해&nbsp;보장되며&nbsp;<b>한도는&nbsp;일억&nbsp;원.</b></p>
+								<p style="color: darkgray; font-size: 10px; margin-left: 11%; margin-bottom: 0;">
 									(동승자&nbsp;상황&nbsp;별&nbsp;감액&nbsp;비율이&nbsp;있으나,&nbsp;운전자&nbsp;권유에&nbsp;의해&nbsp;탑승한&nbsp;경우&nbsp;감액비율이&nbsp;0%&nbsp;입니다.<br>
 									보험사에서&nbsp;나왔을&nbsp;때,&nbsp;운전자의&nbsp;권유로&nbsp;차에&nbsp;탑승했다고&nbsp;하시면&nbsp;됩니다.)
 								</p>
@@ -236,8 +245,10 @@
 								<p style="font-size: 11px; text-align: center; color: darkgray;">(상세보기를&nbsp;원하시면&nbsp;이미지를&nbsp;클릭해주세요.)</p>
 								<p style="font-size: 11px; margin-left: 9%;">-&nbsp;DB손해보험의&nbsp;'프로미카다이렉트'&nbsp;상품입니다.&nbsp;1년&nbsp;단위&nbsp;갱신상품으로&nbsp;매&nbsp;년&nbsp;3월&nbsp;갱신합니다.</p>
 								<p style="font-size: 11px; margin-left: 9%;">-&nbsp;가족단위로&nbsp;가입하여&nbsp;보장범위와&nbsp;보장한도가&nbsp;넓으며,&nbsp;더욱&nbsp;믿으실&nbsp;수&nbsp;있습니다.</p>
-								<p style="font-size: 11px; margin-left: 9%;">
+								<p style="font-size: 11px; margin-left: 9%; margin-bottom: 0rem;">
 									-&nbsp;혹시나&nbsp;문제가&nbsp;생겼을&nbsp;때,&nbsp;자동차세금&nbsp;연체내역이&nbsp;있으면&nbsp;보험금&nbsp;수령&nbsp;시&nbsp;곤란해질&nbsp;수&nbsp;있죠.<br>
+								</p>
+								<p style="font-size: 11px; margin-left: 10%;">
 									세금은&nbsp;고지서가&nbsp;날라오는&nbsp;즉시&nbsp;꼬박꼬박&nbsp;납부하고&nbsp;있습니다.
 								</p>
 							</td>
@@ -251,7 +262,7 @@
 			
 			<main id="food" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-					<img alt="" style="width: 1450px; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/meal1.png">
+					<img alt="" style="width: 78%; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/meal1.png">
 					<%-- <table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
 						<tr style="height: 10%;">
 <!-- 							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th> -->
@@ -276,7 +287,7 @@
 			
 			<main id="home_1" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-					<img alt="" style="width: 1450px; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/hotel1.png">
+					<img alt="" style="width: 78%; margin-left: 14rem; " src="${pageContext.request.contextPath}/resources/img/hotel1.png">
 					<%-- <table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
 						<tr style="height: 10%;">
 							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
@@ -302,19 +313,21 @@
 			<main id="car" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="height: 10%;">
-							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th>
+<!-- 							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;">서비스 소개</th> -->
+							<th class="tg-yw4l" colspan="3" style="font-size: 20px; padding-left: 5%; padding-top: 2%;"></th>
 						</tr>
 						<tr>
 							<td class="tg-yw4l" style="text-align: center; width: 17%; font-size: 25px; vertical-align: top;">
-								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/home_icon.png" style="width: 110px; margin-bottom: 5%; margin-top: 90%;">
-								<p>숙소관련</p>
+								<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/bed.png" style="width: 110px; margin-bottom: 5%; margin-top: 90%;">
+<!-- 								<p>숙소관련</p> -->
 							</td>
 							
 							<td class="tg-yw4l" style="width: 44%;">
 								<p style="margin-left: 5rem; font-size: 30px;">현재&nbsp;본&nbsp;회사가&nbsp;보유중인&nbsp;숙소.</p>
-								<img alt="" style="width: 600px; margin-left: 12%; margin-top: 1rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/home_loc.png">								
+								<p style="width: 600px; height: 450px; margin-left: 12%; margin-top: 1rem; margin-bottom: 2rem;"></p>
+<%-- 								<img alt="" style="width: 600px; margin-left: 12%; margin-top: 1rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/home_loc.png"> --%>
 								<p style="margin-left:35%;">
 									-&nbsp;아크로파크3차&nbsp;(도곡동)
 								</p>
@@ -442,6 +455,49 @@
 					
 				</div>
 			</main>
+			
+			<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%; color: #dae0e5; min-width: 1500px;">
+
+			<table id="footer" class="tg" style="margin-left: auto; width: 86%; height: 11%; color: rgb(23, 28, 97);">
+				<tr>
+					<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
+						<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+						<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
+					</th>
+					<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
+						<div class="container">
+							<div style="padding-top:15px; margin:auto;">
+								<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
+									서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</p>
+								<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
+									대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
+								</p>
+								<p class="small" style="width:max-content;">
+									Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
+								</p>
+							</div>
+						</div>
+					</th>
+					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 70px;">
+						<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
+					</th>
+					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 70px;">
+						제휴 문의
+					</th>
+					<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; font-weight: normal; min-width: 80px;">
+						설명회 문의
+					</th>
+					<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; font-weight: normal; min-width: 130px;">
+						광고 문의	
+					</th>
+					<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; font-weight: bold; min-width: 460px;">
+						문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+					</th>
+				</tr>
+			</table>
 			
 		</div>
 

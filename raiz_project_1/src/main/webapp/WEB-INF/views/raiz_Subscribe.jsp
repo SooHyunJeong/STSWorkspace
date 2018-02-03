@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>raíz corp.</title>
+		<title>서울매니저</title>
 		
 		<!-- Favicons -->
 
@@ -50,12 +50,16 @@
 				bottom : 0px;
 			}
 
-			li.nav-item {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				li.nav-item {
+					font-family : arial;
+				}			
 			}
 
-			main {
-				font-family : arial;
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				main {
+					font-family : arial;
+				}
 			}
 
 			p {
@@ -84,7 +88,6 @@
 		</style>
 	</head>
 	<script type="text/javascript">
-		
 		 
 	</script>
 	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
@@ -103,40 +106,42 @@
 			<nav class="navbar navbar-expand-lg navbar-fixed animated slideInDown">
 				<div class="container" style="max-width:100%; margin-left:12%; margin-right:7%;">
 					<a class="navbar-brand" href="raiz_Main.do" style="color: rgb(23,28,97)">
-						<p style="font-size:30px; margin-bottom: 0.5rem;"><b>서울 매니저</b></p>
-						<p style="font-size:21px; font-weight: normal;"><cite><b>Seoul Manager</b></cite></p>
+						<p style="font-size:30px; margin-bottom: 0rem;"><b>서울매니저</b></p>
+						<p style="font-size:19px; font-weight: normal; margin-left: 0.2rem;"><cite><b>Seoul Manager</b></cite></p>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-						<span class="navbar-toggler-icon"></span>
-						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:black">
 						<ul class="navbar-nav" style="margin-left: auto;">
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Main.do">홈</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Main.do">홈</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 <!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link" href="raiz_Inquire.do">문의</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Inquire.do">문의</a>
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Notice.do">입시정보</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
+							<!-- 
+							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
 							</li>
+							 -->
 						</ul>
 					</div>
 				</div>
@@ -144,15 +149,14 @@
 
 			<!-- 서비스 신청 Process -->
 			
-			<main class="masthead masked" style="height: 850px;">
+			<main class="masthead masked" style="height: 650px; background: none;">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
-				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 55%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 55%; min-width: 1530px;">
 						<tr>
-							<th class="tg-yw4l" style="font-size: 20px; padding-left: 5%;">서비스 신청 프로세스</th>
+							<th class="tg-yw4l" style="font-size: 20px; padding-left: 2%;">서비스 신청 프로세스</th>
 						</tr>
 						<tr style="height: 50%; text-align: center; vertical-align: top; color: rgb(23, 28, 97)">
-							<th style="font-weight: normal;">
+							<th style="font-weight: normal; width: 20%;">
 								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
 									1
 								</p>
@@ -165,7 +169,7 @@
 								<p>
 									혹은&nbsp;e-mail로&nbsp;예약신청&nbsp;해주세요.
 								</p>
-								<table class="tg" style="display: inline;">
+								<%-- <table class="tg" style="display: inline;">
 									<tr>
 										<th>
 											<img alt="" style="width: 50px; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/mobile.png">
@@ -180,9 +184,9 @@
 											<img alt="" style="width: 50px; margin-left: 0.7rem; margin-right: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/email.png">
 										</th>
 									</tr>
-								</table>
+								</table> --%>
 							</th>
-							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal; width: 20%;">
 								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
 									2
 								</p>
@@ -199,7 +203,7 @@
 									입금계좌를&nbsp;안내해드립니다.
 								</p>
 							</th>
-							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal; width: 20%;">
 								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
 									3
 								</p>
@@ -209,6 +213,7 @@
 								<p style="margin-bottom: 0rem;">
 									이용하실&nbsp;상품가액을&nbsp;이체해주세요.
 								</p>
+								<br>
 								<p style="margin-bottom: 0rem;">
 									*&nbsp;신청자명과&nbsp;입금자명이&nbsp;다를&nbsp;경우,
 								</p>
@@ -216,7 +221,7 @@
 									매니저에게&nbsp;문자&nbsp;한통&nbsp;남겨주세요!
 								</p>
 							</th>
-							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal; width: 20%;">
 								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
 									4
 								</p>
@@ -236,7 +241,7 @@
 									언제든&nbsp;편하게&nbsp;연락주세요.
 								</p>
 							</th>
-							<th style="border-left : 1px solid #dae0e5; font-weight: normal;">
+							<th style="border-left : 1px solid #dae0e5; font-weight: normal; width: 20%;">
 								<p style="font-size: 50px; margin-bottom: 0rem; font-weight: bold;">
 									5
 								</p>
@@ -264,19 +269,20 @@
 
 			<!-- 서비스 신청 예시 -->
 
-			<main class="masthead masked">
+			<main class="masthead masked" style="height: 650px; background: none;">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="vertical-align: top">
 							<th style="width: 40%;">
 								<table class="tg" style="width: 100%;">
 									<tr>
-										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;">서비스신청</th>
+<!-- 										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;">서비스신청</th> -->
+										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;"></th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<table style="border: 1px solid; border-radius: 25px; border-collapse: initial; padding: 1.5rem; font-size: 13px;">
+											<table style="border: 1px solid; border-radius: 25px; border-collapse: separate; padding: 1.5rem; font-size: 13px;">
 												<tr>
 													<th class="tg-yw4l">
 														<p>(서비스&nbsp;신청&nbsp;예시)</p>
@@ -285,15 +291,15 @@
 														<p style="margin-bottom: 0rem;">3.&nbsp;&nbsp;&nbsp;오시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.11&nbsp;/&nbsp;06:30&nbsp;/&nbsp;09:00</span></p>
 														<p style="margin-bottom: 0rem;">4.&nbsp;&nbsp;&nbsp;가시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.12&nbsp;/&nbsp;14:00&nbsp;/&nbsp;16:30</span></p>
 														<p style="margin-bottom: 0rem;">5.&nbsp;&nbsp;&nbsp;이용상품&nbsp;:&nbsp;<span class="example">1박&nbsp;2일</span></p>
-														<p style="margin-bottom: 0rem;"><span class="example">(예&nbsp;:&nbsp;2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</span></p>
+														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">(예&nbsp;:&nbsp;2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</span></p>
 														<p style="margin-bottom: 0rem;">6.&nbsp;&nbsp;&nbsp;상경&nbsp;목적&nbsp;:&nbsp;<span class="example">바이올린&nbsp;강습</span></p>
-														<p style="margin-bottom: 0rem;"><span class="example">(예&nbsp;:&nbsp;강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험&nbsp;응시,&nbsp;면접,&nbsp;학원&nbsp;수강,&nbsp;미팅/인터뷰,</span></p>
-														<p style="margin-bottom: 0rem;"><span class="example">박람회/컨퍼런스,&nbsp;공연/콘서트/스포츠&nbsp;관람,&nbsp;진학정보수집,&nbsp;견학&nbsp;등)</span></p>
+														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">(예&nbsp;:&nbsp;강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험&nbsp;응시,&nbsp;면접,&nbsp;학원&nbsp;수강,&nbsp;미팅/인터뷰,</span></p>
+														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">박람회/컨퍼런스,&nbsp;공연/콘서트/스포츠&nbsp;관람,&nbsp;진학정보수집,&nbsp;견학&nbsp;등)</span></p>
 														<p style="margin-bottom: 0rem;">7.&nbsp;&nbsp;&nbsp;목적지&nbsp;위치&nbsp;:&nbsp;<span class="example">강남구&nbsp;도곡로2길&nbsp;29</span></p>
 														<p style="margin-bottom: 0rem;">8.&nbsp;&nbsp;&nbsp;요청사항&nbsp;:&nbsp;<span class="example">복용&nbsp;중인&nbsp;약이&nbsp;있으니&nbsp;정시에&nbsp;꼭&nbsp;챙겨주세요.</span></p>
-														<p style="margin-bottom: 0rem;"><span class="example">견과류&nbsp;알레르기가&nbsp;있으니&nbsp;반드시&nbsp;주의해주세요.</span></p>
-														<p style="margin-bottom: 0rem;"><span class="example">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</span></p>
-														<p><span class="example">고기보단&nbsp;야채를&nbsp;좋아하니&nbsp;가급적&nbsp;채식&nbsp;위주의&nbsp;식사로&nbsp;부탁&nbsp;드립니다.</span></p>
+														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">견과류&nbsp;알레르기가&nbsp;있으니&nbsp;반드시&nbsp;주의해주세요.</span></p>
+														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</span></p>
+														<p><span class="example" style="margin-left: 1.3rem;">고기보단&nbsp;야채를&nbsp;좋아하니&nbsp;가급적&nbsp;채식&nbsp;위주의&nbsp;식사로&nbsp;부탁&nbsp;드립니다.</span></p>
 													</th>
 												</tr>
 											</table>
@@ -309,7 +315,7 @@
 										</th>
 										<th>
 											<p style="margin-top: 5.2rem; margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: bold;">전화</p>
-											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: normal;">02&nbsp;0000&nbsp;0237</p>
+											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: normal;">02&nbsp;6085&nbsp;0237</p>
 											<p style="margin-bottom: 0rem; margin-left: 1rem; font-size: 16px; font-weight: normal;">010&nbsp;5435&nbsp;0237</p>
 										</th>
 									</tr>
@@ -343,7 +349,7 @@
 								</table>
 							</th>
 							<th style="width: 35%; text-align: center;">
-								<img alt="" style="width: 430px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
+								<img alt="" style="width: 390px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
 							</th>
 						</tr>
 					</table>
@@ -353,13 +359,14 @@
 
 			<!-- 서비스 신청 - price -->
 
-			<main class="masthead masked">
+			<main class="masthead masked" style="height: 835px; background: none;">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
 					<table class="tg" style="margin-left: 10%; width: 80%;">
 						<tr style="height: 85%;">
 							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;">
-								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p>
+<!-- 								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p> -->
+								<p style="font-size: 20px; margin-bottom: 13rem;"></p>
 								<p style="font-size: 25px; margin-left: 1.3rem;">Price</p>
 							</th>
 							<th class="tg-yw4l" style="padding-top: 2%;" rowspan="2">
@@ -617,10 +624,11 @@
 			<main id="map" class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; vertical-align: top; color:black;">
 				
-					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%">
+					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="height: 10%;">
 							<th class="tg-yw4l" colspan="2">
-								<p class="raiz_terms" style="font-size: 20px; margin-left: 5.5rem;">이용약관</p>
+								<p id="raiz_terms" name="raiz_terms" class="raiz_terms" style="font-size: 20px; margin-left: 5.5rem;">이용약관</p>
+<!-- 								<a id="raiz_terms" name="raiz_terms" class="raiz_terms" style="font-size: 20px; margin-left: 5.5rem;">이용약관</a> -->
 							</th>
 						</tr>
 						<tr>
@@ -722,21 +730,20 @@
 							<th class="tg-yw4l" style="vertical-align: middle; width: 41.3%;">
 								<table class="tg" style="margin-left: 3rem;">
 									<tr>
-										<th class="tg-yw4l">
-											<p style="font-weight: normal; font-size:30px; margin-bottom: -0.5rem; margin-right: 2rem;"><cite><b>raíz corp.</b></cite></p>
-											<p style="font-size:17px; margin-bottom: 1rem;font-weight: normal;">주식회사 라이즈</p>
+										<th class="tg-yw4l" style="min-width: 165px;">
+											<p style="font-weight: normal; font-size:28px; margin-bottom: -0.5rem; margin-right: 2rem; margin-top: 0.9rem;"><cite><b>raíz corp.</b></cite></p>
+											<p style="font-size:16px; margin-bottom: 1rem;font-weight: normal;">주식회사 라이즈</p>
 										</th>
-										<th class="tg-yw4l">
-											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												서울시&nbsp;강남구&nbsp;도곡로2길&nbsp;29,&nbsp;303
+										<th class="tg-yw4l" style="min-width: 490px;">
+											<p class="small" style="margin-bottom:-0.5rem; text-align:left; margin-top: 1.5rem;">
+											서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</p>
-											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												사업자등록번호&nbsp;&nbsp;564&nbsp;88&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표자&nbsp;&nbsp;형성모
+											<p class="small" style="margin-bottom:-0.5rem; text-align:left;">
+												대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
 											</p>
-											<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-												mobile&nbsp;&nbsp;010&nbsp;5435&nbsp;0237&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
-											</p>
-											<p class="small" style="text-align:left; margin-bottom: -0.5rem;">
+											<p class="small" style="width:max-content;">
 												Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
 											</p>
 										</th>
@@ -746,11 +753,11 @@
 							<th class="tg-yw4l" style="vertical-align: middle; width:31%; border-left: 1px solid #dae0e5; background-color: rgb(23, 28, 97);">
 								<table class="tg">
 									<tr>
-										<th class="tg-yw4l" rowspan="2">
+										<th class="tg-yw4l" rowspan="2" style="min-width: 180px;">
 											<p style="color: white; font-size:25px; margin-bottom: -0.5rem; margin-left: 2.5rem; margin-right: 2rem;">계좌이체</p>
 											<p style="color: white; font-size:16px; margin-bottom: 0rem; margin-left: 2.6rem; font-weight: normal;">입금계좌확인</p>
 										</th>
-										<th class="tg-yw4l">
+										<th class="tg-yw4l" style="min-width: 280px;">
 											<p style="color: white; font-size:20px; margin-bottom: 0rem; margin-top: 0.2rem;">
 												우리은행&nbsp;&nbsp;1005&nbsp;-&nbsp;003&nbsp;-&nbsp;377295
 											</p>
@@ -763,18 +770,18 @@
 									</tr>
 								</table>
 							</th>
-							<th class="tg-yw4l" style="vertical-align: middle; border-left: 1px solid #dae0e5;">
+							<th class="tg-yw4l" style="vertical-align: middle; border-left: 1px solid #dae0e5; width: 29.7%;">
 								<table class="tg" style="margin-left: 3rem;">
 									<tr>
-										<th class="tg-yw4l" style="font-size:25px; padding-right: 3rem;" rowspan="2">
+										<th class="tg-yw4l" style="font-size:25px; min-width: 120px;" rowspan="2">
 											<p style="margin-bottom: -0.5rem;">
 												문의전화
 											</p>
-											<p style="margin-bottom: 0rem; margin-left: 0.2rem; font-size: 18px; font-weight: normal; text-align: center;">
+											<p style="margin-bottom: 0rem; margin-left: 0.2rem; font-size: 18px; font-weight: normal;">
 												유선/휴대폰
 											</p>
 										</th>
-										<th class="tg-yw4l" style="font-size:25px;">
+										<th class="tg-yw4l" style="font-size:25px; min-width: 160px;">
 											<p style="margin-bottom: -1rem; float: right; font-weight: normal;">
 												02&nbsp;6085&nbsp;0237
 											</p>
