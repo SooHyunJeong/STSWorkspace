@@ -121,12 +121,9 @@
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<!-- 
-							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
-							 -->
 						</ul>
 					</div>
 				</div>
@@ -140,14 +137,18 @@
 						<tr>
 							<th class="tg-yw4l">
 <%-- 								<img alt="" style="width: 600px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size1.png"> --%>
-								<img alt="" style="width: 435px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size3.png">
+								<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_kakao.png">
 							</th>
 							<th class="tg-yw4l">
 <%-- 								<img alt="" style="width: 365px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size2.png"> --%>
-								<img alt="" style="width: 435px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size3.png">		
+								<a href="https://blog.naver.com/raiz_sm">
+									<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_naver.png">		
+								</a>
 							</th>
 							<th class="tg-yw4l">
-								<img alt="" style="width: 435px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size3.png">		
+								<a href="https://www.facebook.com/seoulmanager/">
+									<img alt="" style="width: 435px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_facebook.png">
+								</a>
 							</th>
 						</tr>
 					</table>
@@ -157,10 +158,10 @@
 					<table class="tg" style="margin-left: 11%; width: 90%;">
 						<tr>
 							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
 								<p style="font-size:15px; font-weight: normal;">주식회사 라이즈</p>
 							</th>
-							<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
+							<th class="tg-yw4l" style="width: 28%; min-width: 490px;">
 								<div class="container">
 									<div style="padding-top:15px; margin:auto;">
 										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
@@ -177,21 +178,24 @@
 									</div>
 								</div>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
 								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
-								제휴 문의
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;">
-								설명회 문의
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 130px;">
-								광고 문의	
+<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;"> -->
+<!-- 								설명회 문의 -->
+<!-- 							</th> -->
+							<th class="tg-yw4l" rowspan="2" style="width: 17%; font-size: 13px; min-width: 130px;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>	
 							</th>
 							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; min-width: 460px;">
 								문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
 							</th>
+							<%-- <th>
+								<img alt="" style="width: 200px;" src="${pageContext.request.contextPath}/resources/img/page_SNS.png">
+							</th> --%>
 						</tr>
 						<tr>
 							<td class="tg-yw4l"></td>

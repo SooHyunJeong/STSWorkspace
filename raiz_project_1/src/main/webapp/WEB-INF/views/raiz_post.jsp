@@ -121,6 +121,9 @@
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -134,7 +137,7 @@
 								<table class="tg" style="width: 1000px; margin-left: 7rem;">
 									<tr>
 										<th class="tg-yw4l">
-											<img alt="" style="width: 855px; float: right; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg1.png">
+											<img alt="" style="width: 830px; float: right; margin-bottom: 1rem; margin-right: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg1.png">
 										</th>
 									</tr>
 								</table>
@@ -144,21 +147,27 @@
 											<table class="tg" style="margin-left: 1rem;">
 												<tr>
 													<th class="tg-yw4l">
-														<p class="ad_1" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">교육부&nbsp;2019학년도&nbsp;대학입학전형</p>
-														<p class="ad_1" style="font-size: 15px; font-weight: bold;">시행계획&nbsp;발표</p>
+														<a style="text-decoration: none;" href="http://moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=71137&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=0503&opType=N">
+															<p class="ad_1" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">교육부&nbsp;2019학년도&nbsp;대학입학전형</p>
+															<p class="ad_1" style="font-size: 15px; font-weight: bold;">시행계획&nbsp;발표</p>
+														</a>
 													</th>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_1" style="text-align: right;">2017.05.01</p>
+														<a style="text-decoration: none;" href="http://moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=71137&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=0503&opType=N">
+															<p class="ad_1" style="text-align: right;">2017.05.01</p>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_1" style="margin-bottom: 0rem;">전국&nbsp;196개&nbsp;4년제&nbsp;대학교의&nbsp;'2019학년</p>
-														<p class="ad_1" style="margin-bottom: 0rem;">도&nbsp;대학입학전형&nbsp;시행계획'을 발표하였다.</p>
-														<p class="ad_1" style="margin-bottom: 0rem;">주요&nbsp;특징은&nbsp;수시모집에서&nbsp;전년&nbsp;대비</p>
-														<p class="ad_1">2.5%p&nbsp;증가한&nbsp;76.2%&nbsp;선발</p>												
+														<a style="text-decoration: none;" href="http://moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=71137&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=0503&opType=N">
+															<p class="ad_1" style="margin-bottom: 0rem;">전국&nbsp;196개&nbsp;4년제&nbsp;대학교의&nbsp;'2019학년</p>
+															<p class="ad_1" style="margin-bottom: 0rem;">도&nbsp;대학입학전형&nbsp;시행계획'을 발표하였다.</p>
+															<p class="ad_1" style="margin-bottom: 0rem;">주요&nbsp;특징은&nbsp;수시모집에서&nbsp;전년&nbsp;대비</p>
+															<p class="ad_1">2.5%p&nbsp;증가한&nbsp;76.2%&nbsp;선발&nbsp;···</p>
+														</a>
 													</td>
 												</tr>
 											</table>
@@ -167,21 +176,27 @@
 											<table class="tg" style="margin-left: 1rem; margin-right: 1rem;">
 												<tr>
 													<th class="tg-yw4l">
-														<p class="ad_2" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">서울대학교&nbsp;2019학년도&nbsp;신입학생</p>
-														<p class="ad_2" style="font-size: 15px; font-weight: bold;">입학전형&nbsp;주요사항&nbsp;보도자료</p>
+														<a style="text-decoration: none;" href="http://admission.snu.ac.kr/under/announcements?bm=v&bbsidx=124217&">
+															<p class="ad_2" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">서울대학교&nbsp;2019학년도&nbsp;신입학생</p>
+															<p class="ad_2" style="font-size: 15px; font-weight: bold;">입학전형&nbsp;주요사항&nbsp;보도자료</p>
+														</a>
 													</th>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_2" style="text-align: right;">2017.04.28</p>
+														<a style="text-decoration: none;" href="http://admission.snu.ac.kr/under/announcements?bm=v&bbsidx=124217&">
+															<p class="ad_2" style="text-align: right;">2017.04.28</p>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_2" style="margin-bottom: 0rem;">서울대학교는&nbsp;고등학교&nbsp;교육과정을&nbsp;성실</p>
-														<p class="ad_2" style="margin-bottom: 0rem;">히&nbsp;수행하며&nbsp;학업역량을&nbsp;길러온&nbsp;창의적&nbsp;인</p>
-														<p class="ad_2" style="margin-bottom: 0rem;">재를&nbsp;선발하고자&nbsp;합니다.&nbsp;서울대학교&nbsp;입학</p>
-														<p class="ad_2">본부는&nbsp;2019학년도에도&nbsp;2018학년도</p>
+														<a style="text-decoration: none;" href="http://admission.snu.ac.kr/under/announcements?bm=v&bbsidx=124217&">
+															<p class="ad_2" style="margin-bottom: 0rem;">서울대학교는&nbsp;고등학교&nbsp;교육과정을&nbsp;성실</p>
+															<p class="ad_2" style="margin-bottom: 0rem;">히&nbsp;수행하며&nbsp;학업역량을&nbsp;길러온&nbsp;창의적&nbsp;인</p>
+															<p class="ad_2" style="margin-bottom: 0rem;">재를&nbsp;선발하고자&nbsp;합니다.&nbsp;서울대학교&nbsp;입학</p>
+															<p class="ad_2">본부는&nbsp;2019학년도에도&nbsp;2018학년도&nbsp;···</p>
+														</a>
 													</td>
 												</tr>
 											</table>
@@ -190,21 +205,27 @@
 											<table class="tg" style="margin-left: 1rem;">
 												<tr>
 													<th class="tg-yw4l">
-														<p class="ad_3" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">내년&nbsp;초등학생&nbsp;코딩교육&nbsp;의무화...사</p>
-														<p class="ad_3" style="font-size: 15px; font-weight: bold;">교육&nbsp;중심지에선&nbsp;이미&nbsp;우후죽순...</p>
+														<a style="text-decoration: none;" href="http://www.dailian.co.kr/news/view/685055">
+															<p class="ad_3" style="font-size: 15px; margin-bottom: -0.3rem; font-weight: bold;">내년&nbsp;초등학생&nbsp;코딩교육&nbsp;의무화···사</p>
+															<p class="ad_3" style="font-size: 15px; font-weight: bold;">교육&nbsp;중심지에선&nbsp;이미&nbsp;우후죽순···</p>
+														</a>
 													</th>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_3" style="text-align: right;">2018.01.14</p>
+														<a style="text-decoration: none;" href="http://www.dailian.co.kr/news/view/685055">
+															<p class="ad_3" style="text-align: right;">2018.01.14</p>
+														</a>
 													</td>
 												</tr>
 												<tr>
 													<td class="tg-yw4l">
-														<p class="ad_3" style="margin-bottom: 0rem;">올해&nbsp;중학생,&nbsp;내년&nbsp;초등학생&nbsp;코딩교육&nbsp;의</p>
-														<p class="ad_3" style="margin-bottom: 0rem;">무화에&nbsp;따라&nbsp;학부모들의&nbsp;관심이&nbsp;높아지고</p>
-														<p class="ad_3" style="margin-bottom: 0rem;">있지만&nbsp;알려진&nbsp;것은&nbsp;많지&nbsp;않다...&nbsp;반면,사</p>
-														<p class="ad_3">교육경쟁이&nbsp;심한&nbsp;지역에서는&nbsp;벌써부터...</p>
+														<a style="text-decoration: none;" href="http://www.dailian.co.kr/news/view/685055">
+															<p class="ad_3" style="margin-bottom: 0rem;">올해&nbsp;중학생,&nbsp;내년&nbsp;초등학생&nbsp;코딩교육&nbsp;의</p>
+															<p class="ad_3" style="margin-bottom: 0rem;">무화에&nbsp;따라&nbsp;학부모들의&nbsp;관심이&nbsp;높아지고</p>
+															<p class="ad_3" style="margin-bottom: 0rem;">있지만&nbsp;알려진&nbsp;것은&nbsp;많지&nbsp;않다···반면,사</p>
+															<p class="ad_3">교육경쟁이&nbsp;심한&nbsp;지역에서는&nbsp;벌써부터···</p>
+														</a>
 													</td>
 												</tr>
 											</table>
@@ -213,20 +234,26 @@
 								</table>
 							</th>
 							<th class="tg-yw4l" style="vertical-align: top; border-right: 0.25px solid #dae0e5;">
-								<table class="tg" style="margin-left: 1rem; margin-right: 1rem;">
+								<table class="tg" style="margin-left: -0.5rem; margin-right: 1rem;">
 									<tr>
 										<th class="tg-yw4l">
-											<img alt="" style="width: 330px; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/post_cardnews1.png">
+											<a style="text-decoration: none;" href="https://blog.naver.com/raiz_sm/221201897596">
+												<img alt="" style="width: 320px; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/post_cardnews1.png">
+											</a>
 										</th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<img alt="" style="width: 330px; margin-bottom: 1.2rem;" src="${pageContext.request.contextPath}/resources/img/post_cardnews2.png">
+											<a style="text-decoration: none;" href="https://blog.naver.com/raiz_sm/221201811041">
+												<img alt="" style="width: 320px; margin-bottom: 1.2rem;" src="${pageContext.request.contextPath}/resources/img/post_cardnews2.png">
+											</a>
 										</td>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<img alt="" style="width: 335px;" src="${pageContext.request.contextPath}/resources/img/post_cardnews3.png">
+											<a style="text-decoration: none;" href="https://blog.naver.com/raiz_sm/221203657509">
+												<img alt="" style="width: 320px; margin-bottom: 1.2rem;" src="${pageContext.request.contextPath}/resources/img/post_cardnews4.png">
+											</a>
 										</td>
 									</tr>
 								</table>
@@ -235,12 +262,14 @@
 								<table class="tg" style="margin-left: 1rem;">
 									<tr>
 										<th class="tg-yw4l" style="border-bottom: 0.25px solid #dae0e5;">
-											<p style="font-size: 15px;">LATEST NEWS</p>
+											<p style="font-size: 15px; min-width: 110px;">LATEST NEWS</p>
 										</th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<p style="font-size: 13px; margin-top: 1rem;"><span style="font-weight: bold;">2018.02.02</span>&nbsp;서울매니저&nbsp;공식&nbsp;홈페이지&nbsp;open</p>
+											<p style="font-size: 13px; min-width: 270px; margin-top: 1rem;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;인스타그램&nbsp;open</p>
+											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;블로그&nbsp;open</p>
+											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.02</span>&nbsp;서울매니저&nbsp;공식&nbsp;홈페이지&nbsp;open</p>
 											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.01</span>&nbsp;서울매니저&nbsp;facebook&nbsp;페이지&nbsp;open</p>
 											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.01.02</span>&nbsp;서울매니저&nbsp;정식&nbsp;서비스&nbsp;런칭</p>
 											<p style="font-size: 13px;"><span style="font-weight: bold;">2017.11.12</span>&nbsp;서울매니저&nbsp;beta&nbsp;서비스&nbsp;release</p>
@@ -251,12 +280,12 @@
 						</tr>
 					</table>
 					
-					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%; color: #dae0e5;">
+					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%; color: #dae0e5; margin-bottom: auto;">
 	
 					<table id="footer" class="tg" style="margin-left: 14%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
 								<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
 							</th>
 							<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
@@ -276,20 +305,34 @@
 									</div>
 								</div>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
 								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
-								제휴 문의
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
+								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;">
-								설명회 문의
+<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;"> -->
+<!-- 								설명회 문의 -->
+<!-- 							</th> -->
+							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 280px;">
+								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 130px;">
-								광고 문의	
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; font-weight: bold; min-width: 460px;">
-								문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+							<!-- <th class="tg-yw4l" rowspan="2" style="width: 340px; font-size: 27px; font-weight: bold; min-width: 260px;">
+								<p style="margin-top: 1rem;">문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</p>
+							</th> -->
+							<th>
+								<span style="margin-right: 2rem;">
+									<a href="https://blog.naver.com/raiz_sm"><img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/blog2.png"></a>
+								</span>
+								<span style="margin-right: 2rem;">
+									<a href="https://www.facebook.com/seoulmanager/"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/facebook_icon.png"></a>
+								</span>
+								<span style="margin-right: 2rem;">
+									<a href="https://www.instagram.com/seoul_manager/"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/ins_icon.png"></a>
+								</span>
+								<span>
+									<a href="https://story.kakao.com/seoulmanager"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/story.png"></a>
+								</span>
 							</th>
 						</tr>
 					</table>

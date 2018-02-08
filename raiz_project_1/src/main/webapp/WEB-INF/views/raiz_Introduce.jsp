@@ -148,14 +148,11 @@
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<!-- 
-							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
-							 -->
 						</ul>
 					</div>
 				</div>
@@ -179,8 +176,8 @@
 								</p>
 								<p style="font-size: 20px; color: rgb(23, 28, 97); margin-left: 8rem; font-weight: normal;">(야식은&nbsp;저희가&nbsp;책임집니다.&nbsp;저희가&nbsp;수령해서&nbsp;숙소로&nbsp;직접&nbsp;가져다&nbsp;드립니다.)</p>
 								<div style="margin-bottom: 4rem";>
-									<img alt="" style="width: 290px; margin-left: 10%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/blackberry_txt.png">
-									<img alt="" style="width: 260px; margin-left: 15%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/iphone_txt.png">								
+									<img alt="" style="width: 290px; margin-left: 11%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/blackberry_txt.png">
+									<img alt="" style="width: 260px; margin-left: 13%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/iphone_txt.png">								
 								</div>
 							</th>
 						</tr>
@@ -219,14 +216,14 @@
 							<td class="tg-yw4l" style="width: 42%;">
 								<p style="font-size: 28px; margin-bottom: -0.7rem; margin-left: 16rem;">모든 이동은 Audi 차량으로.</p>
 								<p style="margin-left: 67%; margin-bottom: 3%; font-size: 11px;">(Audi 차량의 경우 선착순에 한함.)</p>
-								<img alt="" style="width: 47%; margin-left: 45%; margin-top: 0.9rem; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
+								<img alt="" style="width: 47%; margin-left: 45%; margin-top: 2rem; margin-bottom: 1.6rem;" src="${pageContext.request.contextPath}/resources/img/audiA3.png">
 								<p style="margin-left: 41%; margin-top: 5%; margin-bottom: 0; color: darkgray;">차량번호&nbsp;&nbsp;&nbsp;&nbsp;38고&nbsp;7740</p>
 								<p style="margin-left: 45.4%; margin-bottom: 0; color: darkgray;"><cite>spec</cite>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A3&nbsp;35&nbsp;TDI&nbsp;|&nbsp;2015연식&nbsp;|&nbsp;5인승&nbsp;|&nbsp;2,000cc</p>
 								<br>
 								<p style="margin-left: 41%; margin-bottom: 0;">-&nbsp;렌터가/리스차&nbsp;아닙니다.&nbsp;대표이사&nbsp;자차&nbsp;입니다.</p>
 								<p style="margin-left: 41%; margin-bottom: 0;">-&nbsp;정기검사&nbsp;실시하고&nbsp;있으며,&nbsp;사고이력&nbsp;없습니다.</p>
 								<br>
-								<p style="text-align: center; color: darkgray; margin-left: 14rem;">*&nbsp;악기 등 부피가 큰 소지품이 있을 경우<br>혹은 4인 이상이 함께할 경우에는<br>SUV 차량을 이용합니다.</p>
+								<p style="color: darkgray; margin-left: 16.5rem;">*&nbsp;악기 등 부피가 큰 소지품이 있을 경우 혹은 4인<br>이상이 함께할 경우에는 SUV 차량을 이용합니다.</p>
 							</td>
 							
 							<td class="tg-yw4l" style="border-left: 1px solid #dae0e5;">
@@ -461,7 +458,7 @@
 			<table id="footer" class="tg" style="margin-left: auto; width: 86%; height: 11%; color: rgb(23, 28, 97);">
 				<tr>
 					<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-						<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+						<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
 						<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
 					</th>
 					<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
@@ -481,17 +478,17 @@
 							</div>
 						</div>
 					</th>
-					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 70px;">
+					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 100px;">
 						<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
 					</th>
-					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 70px;">
-						제휴 문의
+					<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; font-weight: normal; min-width: 100px;">
+						<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
 					</th>
-					<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; font-weight: normal; min-width: 80px;">
-						설명회 문의
-					</th>
-					<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; font-weight: normal; min-width: 130px;">
-						광고 문의	
+<!-- 					<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; font-weight: normal; min-width: 110px;"> -->
+<!-- 						설명회 문의 -->
+<!-- 					</th> -->
+					<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; font-weight: normal; min-width: 270px;">
+						<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
 					</th>
 					<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; font-weight: bold; min-width: 460px;">
 						문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237

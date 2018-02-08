@@ -31,6 +31,9 @@
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 		
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.battatech.excelexport.js"></script>
+		
 		<style type="text/css">
 			th.tb-info {
 				border-left : 1px solid #dae0e5;
@@ -88,9 +91,29 @@
 		</style>
 	</head>
 	<script type="text/javascript">
-		 
+		function text_copy(elementId){
+		   var aux = document.createElement("input");
+		   
+		   aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+		   document.body.appendChild(aux);
+		   
+		   aux.select();
+		   
+		   document.execCommand("copy");
+		   document.body.removeChild(aux);
+		}
+		
+		$(document).ready(function() {
+			$("#btnExport").click(function() {
+				$("tblExport").battatech_excelexport ({
+					containerid : "tblExport",
+					datatype : "table"
+				});
+			});
+		});
 	</script>
-	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+	<body oncontextmenu='return false' ondragstart='return false'>
 		<!-- Loader -->
 		<div class="loader">
 			<div class="spinner">
@@ -134,14 +157,11 @@
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<!-- 
-							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
-							 -->
 						</ul>
 					</div>
 				</div>
@@ -275,40 +295,114 @@
 					<table class="tg" style="margin-left: 10%; width: 80%; height: 85%; min-width: 1530px;">
 						<tr style="vertical-align: top">
 							<th style="width: 40%;">
-								<table class="tg" style="width: 100%;">
+								<table class="tg" style="width: 100%; margin-left: 4rem; margin-top: 1.5rem;">
 									<tr>
 <!-- 										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;">서비스신청</th> -->
 										<th class="tg-yw4l" style="width: 40%; font-size: 20px; padding-left: 11.5%; padding-bottom: 3rem;"></th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<table style="border: 1px solid; border-radius: 25px; border-collapse: separate; padding: 1.5rem; font-size: 13px;">
+											<table style="border: 1px solid; border-radius: 25px; border-collapse: separate; padding: 1.2rem; font-size: 13px;">
 												<tr>
 													<th class="tg-yw4l">
-														<p>(서비스&nbsp;신청&nbsp;예시)</p>
+														<p>(서비스&nbsp;신청&nbsp;예시&nbsp;-&nbsp;복사해서&nbsp;사용하세요 ^-^)</p>
 														<p style="margin-bottom: 0rem;">1.&nbsp;&nbsp;&nbsp;예약자&nbsp;성함&nbsp;/&nbsp;연락처&nbsp;:&nbsp;<span class="example">형성모&nbsp;/&nbsp;010&nbsp;5435&nbsp;0237</span></p>
 														<p style="margin-bottom: 0rem;">2.&nbsp;&nbsp;&nbsp;오시는&nbsp;분&nbsp;성함&nbsp;/&nbsp;나이&nbsp;/&nbsp;연락처&nbsp;:&nbsp;<span class="example">이유진&nbsp;/&nbsp;17&nbsp;010&nbsp;9436&nbsp;0237</span></p>
 														<p style="margin-bottom: 0rem;">3.&nbsp;&nbsp;&nbsp;오시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.11&nbsp;/&nbsp;06:30&nbsp;/&nbsp;09:00</span></p>
 														<p style="margin-bottom: 0rem;">4.&nbsp;&nbsp;&nbsp;가시는&nbsp;날&nbsp;/&nbsp;출발&nbsp;/&nbsp;도착&nbsp;시간&nbsp;:&nbsp;<span class="example">2017.11.12&nbsp;/&nbsp;14:00&nbsp;/&nbsp;16:30</span></p>
 														<p style="margin-bottom: 0rem;">5.&nbsp;&nbsp;&nbsp;이용상품&nbsp;:&nbsp;<span class="example">1박&nbsp;2일</span></p>
-														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">(예&nbsp;:&nbsp;2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">(예&nbsp;:&nbsp;2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</span></p>
 														<p style="margin-bottom: 0rem;">6.&nbsp;&nbsp;&nbsp;상경&nbsp;목적&nbsp;:&nbsp;<span class="example">바이올린&nbsp;강습</span></p>
-														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">(예&nbsp;:&nbsp;강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험&nbsp;응시,&nbsp;면접,&nbsp;학원&nbsp;수강,&nbsp;미팅/인터뷰,</span></p>
-														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">박람회/컨퍼런스,&nbsp;공연/콘서트/스포츠&nbsp;관람,&nbsp;진학정보수집,&nbsp;견학&nbsp;등)</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">(예&nbsp;:&nbsp;강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험&nbsp;응시,&nbsp;면접,</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">학원&nbsp;수강,&nbsp;미팅/인터뷰,&nbsp;박람회/컨퍼런스,&nbsp;공연/콘서트/스포츠&nbsp;관람,</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">진학정보수집,&nbsp;견학&nbsp;등)</span></p>
 														<p style="margin-bottom: 0rem;">7.&nbsp;&nbsp;&nbsp;목적지&nbsp;위치&nbsp;:&nbsp;<span class="example">강남구&nbsp;도곡로2길&nbsp;29</span></p>
 														<p style="margin-bottom: 0rem;">8.&nbsp;&nbsp;&nbsp;요청사항&nbsp;:&nbsp;<span class="example">복용&nbsp;중인&nbsp;약이&nbsp;있으니&nbsp;정시에&nbsp;꼭&nbsp;챙겨주세요.</span></p>
-														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">견과류&nbsp;알레르기가&nbsp;있으니&nbsp;반드시&nbsp;주의해주세요.</span></p>
-														<p style="margin-bottom: 0rem; margin-left: 1.3rem;"><span class="example">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</span></p>
-														<p><span class="example" style="margin-left: 1.3rem;">고기보단&nbsp;야채를&nbsp;좋아하니&nbsp;가급적&nbsp;채식&nbsp;위주의&nbsp;식사로&nbsp;부탁&nbsp;드립니다.</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">견과류&nbsp;알레르기가&nbsp;있으니&nbsp;반드시&nbsp;주의해주세요.</span></p>
+														<p style="margin-bottom: 0rem;"><span class="example" style="margin-left: 5.3rem;">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</span></p>
+														<p><span class="example" style="margin-left: 5.3rem;">고기보단&nbsp;야채를&nbsp;좋아하니&nbsp;가급적&nbsp;채식&nbsp;위주의&nbsp;식사로&nbsp;부탁&nbsp;드립니다.</span></p>	
 													</th>
 												</tr>
+												<!-- <tr>
+													<div id="wrap">
+														<table id="tblExport" class="tg" style="display: none;">
+														  <tr>
+														    <th class="tg-yw4l">(서비스&nbsp;신청&nbsp;예시)</th>
+														    <th class="tg-yw4l"></th>
+														    <th class="tg-yw4l"></th>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">1.</td>
+														    <td class="tg-yw4l">예약자&nbsp;성함/연락처</td>
+														    <td class="tg-yw4l">형성모/010-5435-0237</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">2.</td>
+														    <td class="tg-yw4l">오시는&nbsp;분&nbsp;성함/나이/연락처</td>
+														    <td class="tg-yw4l">이유진/17/010-9436-0237</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">3.</td>
+														    <td class="tg-yw4l">오시는&nbsp;날/출발/도착&nbsp;시간</td>
+														    <td class="tg-yw4l">2017.11.11/06:30/09:00</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">4.</td>
+														    <td class="tg-yw4l">가시는&nbsp;날/출발/도착&nbsp;시간</td>
+														    <td class="tg-yw4l">2017.11.12/14:00/16:30</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">5.</td>
+														    <td class="tg-yw4l">이용상품</td>
+														    <td class="tg-yw4l">1박2일&nbsp;(예:2일.&nbsp;당일.&nbsp;2일&nbsp;4회&nbsp;패키지)</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">6.</td>
+														    <td class="tg-yw4l">상경&nbsp;목적</td>
+														    <td class="tg-yw4l">바이올린&nbsp;강습(예:강습,&nbsp;멘토링,&nbsp;컨설팅,&nbsp;입시설명회,&nbsp;시험응시,&nbsp;면접,&nbsp;학원수강&nbsp;등)</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">7.</td>
+														    <td class="tg-yw4l">목적지&nbsp;위치</td>
+														    <td class="tg-yw4l">강남구&nbsp;도곡로2길&nbsp;29</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l">8.</td>
+														    <td class="tg-yw4l">요청사항</td>
+														    <td class="tg-yw4l">복용&nbsp;중인&nbsp;약이&nbsp;있으니&nbsp;정시에&nbsp;꼭&nbsp;챙겨주세요</td>
+														  </tr>
+														  <tr>
+														    <td class="tg-yw4l"></td>
+														    <td class="tg-yw4l"></td>
+														    <td class="tg-yw4l">아침&nbsp;잠이&nbsp;많으니&nbsp;아침에&nbsp;꼭&nbsp;모닝콜&nbsp;혹은&nbsp;초인종으로&nbsp;잘&nbsp;깨워주세요.</td>
+														  </tr>
+														</table>
+													</div>
+													<p id="text3" style="display: none;">
+														1. 예약자성함/연락처 : 형성모/01054350237,
+														2. 오시는분성함/나이/연락처 : 이유진/1701094360237,
+														3. 오시는날/출발/도착시간 : 2017.11.11/06:30/09:00,
+														4. 가시는날/출발/도착시간 : 2017.11.12/14:00/16:30,
+														5. 이용상품 : 1박2일,
+														(예:2일.당일.2일4회패키지),
+														6. 상경목적:바이올린강습,
+														(예:강습,멘토링,컨설팅,입시설명회,시험응시,면접,학원수강,미팅/인터뷰,박람회/컨퍼런스,공연/콘서트/스포츠관람,진학정보수집,견학등),
+														7. 목적지위치 : 강남구도곡로2길29,
+														8. 요청사항 : 복용중인약이있으니정시에꼭챙겨주세요.,
+														견과류알레르기가있으니반드시주의해주세요.,
+														아침잠이많으니아침에꼭모닝콜혹은초인종으로잘깨워주세요.,
+														고기보단야채를좋아하니가급적채식위주의식사로부탁드립니다.,
+													</p>
+													<button id="btnExport" onclick="text_copy('text1');">복사하기</button>
+													<button id="btnExport" type="button">Excel 다운로드</button>
+												</tr> -->
 											</table>
 										</td>
 									</tr>
 								</table>
 							</th>
-							<th style="width: 21%; font-weight: normal;">
-								<table class="tg">
+							<th style="width: 22%; font-weight: normal;">
+								<table class="tg" style="margin-left: 4rem;">
 									<tr>
 										<th>
 											<img alt="" style="width: 80px; margin-top: 5.2rem; margin-left: 0.7rem;" src="${pageContext.request.contextPath}/resources/img/mobile.png">
@@ -349,7 +443,7 @@
 								</table>
 							</th>
 							<th style="width: 35%; text-align: center;">
-								<img alt="" style="width: 390px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
+								<img alt="" style="width: 340px; margin-left: 3%; margin-top: 3rem;" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend.png">
 							</th>
 						</tr>
 					</table>
@@ -364,13 +458,13 @@
 				
 					<table class="tg" style="margin-left: 10%; width: 80%;">
 						<tr style="height: 85%;">
-							<th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;">
-<!-- 								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p> -->
+							<!-- <th class="tg-yw4l" style="padding-left: 5%; padding-top: 2.3%; width: 20%; vertical-align: top;">
+								<p style="font-size: 20px; margin-bottom: 13rem;">서비스 신청</p>
 								<p style="font-size: 20px; margin-bottom: 13rem;"></p>
 								<p style="font-size: 25px; margin-left: 1.3rem;">Price</p>
-							</th>
-							<th class="tg-yw4l" style="padding-top: 2%;" rowspan="2">
-								<img alt="" style="width: 1100px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/price.png">
+							</th> -->
+							<th class="tg-yw4l" style="padding-top: 2%;">
+								<img alt="" style="width: 1500px; margin-left: 3%; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/price2.png">
 								<!-- <table class="tg" style="width: 100%; height: 100%;">
 									<tr>
 										<th style="text-align: center; border-bottom : 1px solid #dae0e5; color: rgb(23, 28, 97);">
@@ -695,7 +789,7 @@
 								<p class="raiz_terms_right" style="margin-left: 1.2rem;">매자의&nbsp;취소&nbsp;및&nbsp;환불&nbsp;규정에&nbsp;따라&nbsp;취소수수료가&nbsp;발생할&nbsp;수&nbsp;있습니다.</p>
 								<p class="raiz_terms_right">4.&nbsp;&nbsp;구매&nbsp;취소&nbsp;시점에&nbsp;따라&nbsp;취소금액의&nbsp;환금&nbsp;방법과&nbsp;환급일은&nbsp;다소&nbsp;차이가&nbsp;있을&nbsp;수&nbsp;있습니다.</p>
 								<p>
-									<table class="tg" align="center" style="width: 70%; text-align: center; margin-left: 1rem;">
+									<table class="tg" align="center" style="width: 70%; text-align: center; margin-right: 12rem;">
 										<tr style="font-size: 13px;">
 											<th class="tg-yw4l" style="width: 55%; font-weight: normal; border-right: 0.25px solid #dae0e5; border-bottom: 1px solid #dae0e5;">구매&nbsp;취소&nbsp;시점</th>
 											<th class="tg-yw4l" style="font-weight: normal; border-bottom: 0.25px solid #dae0e5;">취소&nbsp;수수료</th>
@@ -731,7 +825,7 @@
 								<table class="tg" style="margin-left: 3rem;">
 									<tr>
 										<th class="tg-yw4l" style="min-width: 165px;">
-											<p style="font-weight: normal; font-size:28px; margin-bottom: -0.5rem; margin-right: 2rem; margin-top: 0.9rem;"><cite><b>raíz corp.</b></cite></p>
+											<p style="font-weight: normal; font-size:28px; margin-bottom: -1rem; margin-right: 2rem; margin-top: 0.9rem;"><cite><b>raíz corp.</b></cite></p>
 											<p style="font-size:16px; margin-bottom: 1rem;font-weight: normal;">주식회사 라이즈</p>
 										</th>
 										<th class="tg-yw4l" style="min-width: 490px;">
@@ -782,14 +876,14 @@
 											</p>
 										</th>
 										<th class="tg-yw4l" style="font-size:25px; min-width: 160px;">
-											<p style="margin-bottom: -1rem; float: right; font-weight: normal;">
+											<p style="margin-bottom: -1rem; float: right; font-weight: bold;">
 												02&nbsp;6085&nbsp;0237
 											</p>
 										</th>
 									</tr>
 									<tr style="font-size:25px;">
 										<td class="tg-yw4l">
-											<p style="margin-bottom: 0rem; float: right; font-weight: normal;">
+											<p style="margin-bottom: 0rem; float: right; font-weight: bold;">
 												010&nbsp;5435&nbsp;0237
 											</p>
 										</td>

@@ -106,14 +106,11 @@
 							</li>
 <!-- 							<span style="color:black;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<!-- 
-							<span style="color:black;">|</span>
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97);" class="nav-link disabled" href="raiz_Partnership.do">Partnership</a>
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
-							 -->
 						</ul>
 					</div>
 				</div>
@@ -123,13 +120,13 @@
 
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding-bottom:10px; color:black;">
-					<table class="tg" align="center" style="width: 65%; height: 70%; margin-bottom: 7rem;">
+					<table class="tg" align="center" style="width: 65%; height: 50%; margin-bottom: 4rem;">
 						<tr>
 							<th class="tg-yw4l" colspan="4" style="text-align: center; font-size: 30px; border-top: 0.25px solid #dae0e5; border-bottom: 0.25px solid #dae0e5; height: 15%;">
 								고객센터&nbsp;연중무휴,&nbsp;1일&nbsp;24시간
 							</th>
 						</tr>
-						<tr style="border-bottom: solid 0.25px #dae0e5;">
+						<tr>
 							<td class="tg-yw4l" style="text-align: center; width: 25%;">
 								<table class="tg" style="margin-left: auto; margin-right: auto;">
 									<tr>
@@ -183,7 +180,7 @@
 								</table>
 							</td>
 						</tr>
-						<tr>
+						<%-- <tr>
 							<td class="tg-yw4l" colspan="4">
 								<table class="tg" style="margin-left: auto; margin-right: auto; width: 50%;">
 									<tr>
@@ -210,7 +207,7 @@
 									</tr>
 								</table>
 							</td>
-						</tr>
+						</tr> --%>
 					</table>
 				</div>
 			</main>	
@@ -218,7 +215,7 @@
 
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white; padding: 0; height: 500px;">
-					<table class="tg" style="width: 86%; height: 86%;">
+					<table class="tg" style="width: 86%; height: 86%; margin-bottom: 5rem;">
 						<tr>
 							<th>
 								<img alt="" src="${pageContext.request.contextPath}/resources/img/kakao_plus_friend2.png" style="margin-left: 24%; width: 1100px;">						
@@ -231,7 +228,7 @@
 					<table id="footer" class="tg" style="margin-left: 14%; color: rgb(23, 28, 97);">
 						<tr>
 							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
 								<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
 							</th>
 							<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
@@ -251,17 +248,17 @@
 									</div>
 								</div>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
 								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 70px;">
-								제휴 문의
+							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
+								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
 							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;">
-								설명회 문의
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 130px;">
-								광고 문의	
+<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 110px;"> -->
+<!-- 								설명회 문의 -->
+<!-- 							</th> -->
+							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 300px;">
+								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
 							</th>
 							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; font-weight: bold; min-width: 460px;">
 								문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237

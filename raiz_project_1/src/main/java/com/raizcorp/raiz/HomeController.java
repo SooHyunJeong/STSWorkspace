@@ -4,12 +4,17 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.mail.internet.MimeMessage;
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * Handles requests for the application home page.
@@ -19,6 +24,9 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	@Autowired
+	private JavaMailSender mailSender;
+
 	/**
 	 * 홈 Controller START
 	 */
@@ -129,28 +137,6 @@ public class HomeController {
 
 		return "raiz_Notice";
 	}
-
-	/**
-	 * 입시정보 Controller START
-	 */
-	@RequestMapping(value = "/raiz_Partnership.do")
-	public String raiz_Partnership(Locale locale, Model model) {
-		
-		logger.debug("raiz_Partnership STARTED");
-		System.out.println("raiz_Partnership STARTED");
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-
-		logger.debug("raiz_Partnership ENDED");
-		System.out.println("raiz_Partnership ENDED");
-
-		return "raiz_Partnership";
-	}
 	
 	/**
 	 * Post Controller START
@@ -172,5 +158,66 @@ public class HomeController {
 		System.out.println("raiz_Post ENDED");
 
 		return "raiz_post";
+	}
+	
+	/**
+	 * Post Controller START
+	 */
+	@RequestMapping(value = "/raiz_Partnership.do")
+	public String raiz_Partnership(Locale locale, Model model) {
+		
+		logger.debug("raiz_Partnership STARTED");
+		System.out.println("raiz_Partnership STARTED");
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		logger.debug("raiz_Partnership ENDED");
+		System.out.println("raiz_Partnership ENDED");
+
+		return "raiz_Partnership";
+	}
+
+	/**
+	 * Post Controller START
+	 */
+	@RequestMapping(value="/mail.do")
+	public String sendMail(HttpServletRequest request) {
+		try {
+			String inquire = request.getParameter("inquire");
+			String businessArea = request.getParameter("businessArea");
+			String companyName = request.getParameter("companyName");
+			String address = request.getParameter("address");
+			String position = request.getParameter("position");
+			String phone = request.getParameter("phone");
+			String email = request.getParameter("email");
+			String homepage = request.getParameter("homepage");
+			String question = request.getParameter("question");
+			
+			String content = "문의유형 : " + inquire + " | 사업분야 : " + businessArea + " | 사업체명 : " + companyName + " | 주소 : " 
+							+ address + " | 직책/성명 : " + position + " | 연락처 : " + phone + " | 이메일 :  " + email + " | 홈페이지 : "
+							+ homepage + " | 문의내용 : " + question;
+			
+			MimeMessage message = mailSender.createMimeMessage();
+			MimeMessageHelper messageHelper = new MimeMessageHelper(message, true, "UTF-8");
+			
+			System.out.println(content);
+			
+			messageHelper.setTo("sm@raizcorp.co.kr");
+			messageHelper.setText(new String(content.getBytes("UTF-8"), "UTF-8"));
+			messageHelper.setFrom(email);
+//			messageHelper.setSubject(subject);
+			
+			mailSender.send(message);
+		} catch (Exception e) {
+			System.out.println(e);
+			return "error";
+		}
+		
+		return "raiz_Partnership";
 	}
 }
