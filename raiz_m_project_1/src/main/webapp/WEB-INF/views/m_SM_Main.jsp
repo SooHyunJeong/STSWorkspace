@@ -29,6 +29,7 @@
 			
 			.owl-stage-outer {
 				background : rgb(237, 237, 237);
+				margin-top : 2rem;
 			}
 			
 			div.owl-dots {
@@ -161,7 +162,7 @@
 				
 				<!-- 문의  -->
 				
-				<section id="features" class="section bg-light" style="padding-top: 2rem; padding-bottom: 2rem;">
+				<section id="features" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: rgb(237, 237, 237)">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6 mb-lg-0 text-center wow fadeInLeft">
@@ -195,7 +196,117 @@
 					</div>
 				</section>
 				
+				<!-- 파트너쉽  -->
+				
+				<section class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
+					<div class="container">
+						<table class="tg" style="margin-left: auto; margin-right: auto;">
+							<tr>
+								<th style="vertical-align: top;">
+									<img alt="" src="${pageContext.request.contextPath}/resources/img/sm_img/partnership.png" style="width: 330px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1rem;">						
+								</th>
+							</tr>
+							<tr>
+								<th class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px; font-weight: normal;">
+											문의유형(제휴/광고/기타)&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="inquire" name="inquire" style="height: 20px;">
+										</div>
+									</div>
+								</th>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											사업분야&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="businessArea" name="businessArea" style="height: 20px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											사업체명&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="companyName" name="companyName" style="height: 20px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											직책 / 성명&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="position" name="position" style="height: 20px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											연락처&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="phone" name="phone" style="height: 20px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											이메일&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<input type="text" class="form-control" id="email" name="email" style="height: 20px;">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l">
+									<div class="form-group" style="width: 340px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+											문의내용&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
+										</label>
+										<div class="col-sm-9" style="max-width: 100%;">
+											<textarea class="form-control" id="question" name="question" style="height: 90px; width: 100%;"></textarea>
+<!-- 											<input type="text" class="form-control" id="question" name="question" style="height: 110px;"> -->
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l" style="text-align: center;">
+									<div class="form-group">
+										<div style="margin-left: 8rem;">
+											<button type="submit" id="submit" name="submit" class="btn-lg btn-primary btn-block" style="width:85px; font-size: 12px; background-color: white; border: 1px solid black; color: black; cursor: pointer;" onclick="click();">신청하기</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				
 				<!-- Charts -->
+				
+				<%-- 
 				
 				<section class="section">
 					<div class="container">
@@ -453,22 +564,65 @@
 						</div>
 					</div>
 				</section>
+				
+				 --%>
 			</div>
 			
 			<!-- Footer -->
 			
-			<footer id="footer" class="footer text-center">
-				<div class="container">
-					<div class="social">
-						<a href="#" class="fa fa-2x fa-facebook"></a>
-						<a href="#" class="fa fa-2x fa-twitter"></a>
-						<a href="#" class="fa fa-2x fa-pinterest"></a>
-						<a href="#" class="fa fa-2x fa-youtube-play"></a>
-					</div>
+			<footer id="footer" class="footer text-center" style="background-color: rgb(237, 237, 237); padding: 0px;">
+				<div class="container" style="padding-left: 0px; padding-right: 0px;">
+<!-- 					<div class="social"> -->
+<!-- 						<a href="#" class="fa fa-2x fa-facebook"></a> -->
+<!-- 						<a href="#" class="fa fa-2x fa-twitter"></a> -->
+<!-- 						<a href="#" class="fa fa-2x fa-pinterest"></a> -->
+<!-- 						<a href="#" class="fa fa-2x fa-youtube-play"></a> -->
+<!-- 					</div> -->
+					<table class="tg">
+						<tr style="height: 130px;">
+							<th class="tg-yw4l">
+								<table class="tg">
+									<tr>
+										<th class="tg-yw4l">
+											<p style="font-size: 17px; margin-left: 0.2rem; margin-right: 0.2rem; margin-bottom: 0rem; margin-top: 0.7rem;"><b>서울매니저</b></p>
+											<p style="font-size: 18px; margin-left: 0.2rem; margin-right: 0.2rem; margin-bottom: -0.5rem;"><cite><b>raíz corp.</b></cite></p>
+											<p style="font-size: 11px; margin-left: 0.2rem; margin-right: 0.2rem; margin-bottom: 0rem;">주식회사 라이즈</p>
+										</th>
+										<th class="tg-yw4l">
+											<p style="font-size: 5px; text-align: left; margin-bottom: 0rem; margin-top: 1rem;">서울시 강남구 도곡로2길 29, 303</p>
+											<p style="font-size: 5px; text-align: left; margin-bottom: 0rem;">사업자등록번호 564 88 007859</p>
+											<p style="font-size: 5px; text-align: left; margin-bottom: 0rem;">대표자 형성모 t. 02 6085 0237</p>
+											<p style="font-size: 5px; text-align: left; margin-bottom: 0rem;">e. sm@raizcorp.co.kr</p>
+										</th>
+									</tr>
+									<tr style="font-size: 5px;">
+										<td class="tg-yw4l" colspan="2">
+											<p style="text-align: left; margin-left: 0.4rem; margin-bottom: 1rem;">Copyright &copy; raiz corp. All rights reserved.</p>
+										</td>
+									</tr>
+								</table>
+<%-- 								<img style="width: 180px;" alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_company.png"> --%>
+							</th>
+							<!-- <th class="tg-yw4l" style="font-size: 5px; color: rgb(166, 166, 166)">
+								<p style="margin-bottom: 0rem; text-align: left;">이용문의</p>
+								<p style="margin-bottom: 0rem; text-align: left;">제휴문의</p>
+								<p style="margin-bottom: 0rem; text-align: left;">이용약관</p>
+								<p style="margin-bottom: 0rem; text-align: left;">개인정보처리방침</p>
+							</th> -->
+							<th class="tg-yw4l" style="font-size: 5px;">
+								<p style="font-size: 17px; margin-bottom: 0.5rem;">
+									<span>f</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>b</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k
+								</p>
+								<p style="margin-bottom: 0rem; text-align: left;">홈페이지 서울매니저.com</p>
+								<p style="margin-bottom: 0rem; text-align: left;">문의전화 02 6085 0237</p>
+<%-- 								<img style="width: 110px;" alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_company2.png"> --%>
+							</th>
+						</tr>
+					</table>
 				</div>
-				<div class="copy">
-					© 2016 Brett. All rights reserved by <a href="http://themeforest.net/user/murren20" target="_blank">Murren20</a>
-				</div>
+<!-- 				<div class="copy"> -->
+<!-- 					© 2016 Brett. All rights reserved by <a href="http://themeforest.net/user/murren20" target="_blank">Murren20</a> -->
+<!-- 				</div> -->
 			</footer>
 		</div>
 		
