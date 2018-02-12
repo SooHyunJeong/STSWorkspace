@@ -53,7 +53,7 @@
 			
 			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="padding-top: 1.5rem; padding-bottom: 0rem; background: white;">
 				<div class="container" style="height: 30px;">
-					<a class="navbar-brand" href="#" style="color: rgb(23, 28, 97);">
+					<a class="navbar-brand" href="#home" style="color: rgb(23, 28, 97);">
 						<p class="header_Main" style="font-size: 20px;"><b>서울매니저</b></p>
 					</a>
 					<button style="margin-top: 0rem; margin-bottom: 1rem;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,17 +68,17 @@
 								<a class="nav-link" href="#home">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
+								<a class="nav-link" href="#service">서비스 소개</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#features">Features</a>
+								<a class="nav-link" href="#inquire">문의</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled" href="#clients">Clients</a>
+								<a class="nav-link" href="#partnership">Partnership</a>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link disabled" href="#prices">Pricing</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -128,7 +128,7 @@
 				
 				<!-- Service 소개  -->
 				
-				<section class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
+				<section id="service" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
@@ -162,7 +162,7 @@
 				
 				<!-- 문의  -->
 				
-				<section id="features" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: rgb(237, 237, 237)">
+				<section id="inquire" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: rgb(237, 237, 237)">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6 mb-lg-0 text-center wow fadeInLeft">
@@ -198,7 +198,7 @@
 				
 				<!-- 파트너쉽  -->
 				
-				<section class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
+				<section id="partnership" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
 					<div class="container">
 						<table class="tg" style="margin-left: auto; margin-right: auto;">
 							<tr>
@@ -208,8 +208,8 @@
 							</tr>
 							<tr>
 								<th class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px; font-weight: normal;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px; font-weight: normal;">
 											문의유형(제휴/광고/기타)&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -220,8 +220,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											사업분야&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -232,8 +232,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											사업체명&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -244,8 +244,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											직책 / 성명&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -256,8 +256,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											연락처&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -268,8 +268,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											이메일&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -280,8 +280,8 @@
 							</tr>
 							<tr>
 								<td class="tg-yw4l">
-									<div class="form-group" style="width: 340px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 10px;">
+									<div class="form-group" style="width: 340px; margin-bottom: 0.5rem;">
+										<label for="name" style="width: 100%; text-align: left; color: black; margin-left: 1.1rem; margin-bottom: 0rem; font-size: 10px;">
 											문의내용&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">

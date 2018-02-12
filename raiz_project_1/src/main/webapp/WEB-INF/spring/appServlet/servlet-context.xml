@@ -21,6 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- 스프링 설정 파일에 애플리케이션에서 사용할 객체들을 <bean>으로 등록하지 않고 자동으로 생성하기 위한 설정 -->
 	<context:component-scan base-package="com.raizcorp.raiz" />
 	
 	<beans:bean id="mailSender" class ="org.springframework.mail.javamail.JavaMailSenderImpl" >

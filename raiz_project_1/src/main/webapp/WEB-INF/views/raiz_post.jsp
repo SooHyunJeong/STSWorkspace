@@ -137,7 +137,7 @@
 								<table class="tg" style="width: 1000px; margin-left: 7rem;">
 									<tr>
 										<th class="tg-yw4l">
-											<img alt="" style="width: 830px; float: right; margin-bottom: 1rem; margin-right: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg1.png">
+											<img alt="" style="width: 830px; float: right; margin-bottom: 1rem; margin-right: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg2.png">
 										</th>
 									</tr>
 								</table>
