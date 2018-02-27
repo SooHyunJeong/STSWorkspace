@@ -31,9 +31,14 @@
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 		
 		<style type="text/css">
+			@font-face {
+				font-family : 'NanumGothic';
+				src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
+			}
+
 			@media screen and (-webkit-min-device-pixel-ratio:0) {
 				li.nav-item {
-					font-family : arial;
+					font-family : NanumGothic;
 				}			
 			}
 
@@ -79,20 +84,22 @@
 			</div>
 		</div>
 		
-		<div id="layout" class="layout">
+		<div id="layout" class="layout" style="overflow:hidden; background-color: rgb(0, 178, 156)">
 			<div>
-				<video src="${pageContext.request.contextPath}/resources/img/SeoulManager_video_version2_180129.mov"
-				poster="${pageContext.request.contextPath}/resources/img/covervideo_img4.png" loop="loop" autoplay="autoplay"></video>
+				<%-- <video src="${pageContext.request.contextPath}/resources/img/SeoulManager_video_version2_180129.mov"
+				poster="${pageContext.request.contextPath}/resources/img/covervideo_img4.png" loop="loop" autoplay="autoplay"></video> --%>
+				<%-- <video src="${pageContext.request.contextPath}/resources/img/SM_landingpage_covervideo.mp4"
+				poster="${pageContext.request.contextPath}/resources/img/SM_landingpage_coverimg.JPG" loop="loop" autoplay="autoplay" style="width: 100%;"></video> --%>
+				<img alt="" style="width: 85%; margin-top: 3%; margin-bottom: 9%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
 			</div>
 			<!-- <iframe src="https://player.vimeo.com/video/253133438" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<p><a href="https://vimeo.com/253133438">Seoul_Manager_180129</a> from <a href="https://vimeo.com/user79124738">형성모</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 			<!-- Header -->
 			
-			<nav class="navbar navbar-expand-lg" data-toggle="affix">
-				<div class="container" style="max-width:100%; margin-left:12%; margin-right:7%;">
+			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="background-color: rgb(0, 178, 156); height: 11%;">
+				<div class="container" style="max-width:100%; margin-left:3%; margin-right: 3%;">
 					<a class="navbar-brand" href="raiz_Main.do">
-						<p style="font-size:30px; margin-bottom: 0rem;"><b>서울매니저</b></p>
-						<p style="font-size:19px; font-weight: normal; margin-left: 0.2rem;"><cite><b>Seoul Manager</b></cite></p>
+						<p style="font-size:40px; margin-bottom: 0rem; font-family: NanumGothic;"><b>서울매니저</b></p>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -101,28 +108,27 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav" style="margin-left: auto;">
-<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold; border-bottom : 0.25px solid white;"> -->
-								<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight : bold;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Main.do">홈</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px; font-weight : bold;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Main.do">서울매니저는</a>
 							</li>
 <!-- 							<span style="color:white;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
 <!-- 							<span style="color:white;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
 <!-- 							<span style="color:white;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Inquire.do">문의</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Inquire.do">자주 묻는 질문</a>
 							</li>
 <!-- 							<span style="color:white;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
 						</ul>
 					</div>
@@ -132,15 +138,21 @@
 			<!-- Home -->
 			
 			<main id="home" class="masthead masked">
-				<div class="opener rel-1" style="height: auto; background-color: rgb(23,28,97); padding: 0;">
-					<table class="tg" align="center">
+				<div class="opener rel-1" style="height: auto; background-color: white; padding: 0;">
+					<p style="margin-top: 9%; margin-bottom: 15%;">
+						<img alt="" style="width: 80%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home2_1.png">
+					</p>
+					<p style="margin-bottom: 8%;">
+						<img alt="" style="width: 80%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
+					</p>
+					<%-- <table class="tg" align="center">
 						<tr>
 							<th class="tg-yw4l">
-<%-- 								<img alt="" style="width: 600px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size1.png"> --%>
+								<img alt="" style="width: 600px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size1.png">
 								<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_kakao.png">
 							</th>
 							<th class="tg-yw4l">
-<%-- 								<img alt="" style="width: 365px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size2.png"> --%>
+								<img alt="" style="width: 365px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size2.png">
 								<a href="https://blog.naver.com/raiz_sm">
 									<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_naver.png">		
 								</a>
@@ -154,53 +166,100 @@
 					</table>
 					
 					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%;">
-					
-					<table class="tg" style="margin-left: 11%; width: 90%;">
-						<tr>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
-								<p style="font-size:15px; font-weight: normal;">주식회사 라이즈</p>
-							</th>
-							<th class="tg-yw4l" style="width: 28%; min-width: 490px;">
-								<div class="container">
-									<div style="padding-top:15px; margin:auto;">
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										</p>
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
-										</p>
-										<p class="small" style="width:max-content;">
-											Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
-										</p>
-									</div>
-								</div>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
-							</th>
-<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;"> -->
-<!-- 								설명회 문의 -->
-<!-- 							</th> -->
-							<th class="tg-yw4l" rowspan="2" style="width: 17%; font-size: 13px; min-width: 130px;">
-								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>	
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; min-width: 460px;">
-								문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
-							</th>
-							<%-- <th>
-								<img alt="" style="width: 200px;" src="${pageContext.request.contextPath}/resources/img/page_SNS.png">
-							</th> --%>
-						</tr>
-						<tr>
-							<td class="tg-yw4l"></td>
-						</tr>
-					</table>
+					 --%>
+					<div style="width: 100%; background-color: rgb(0, 178, 156); padding-bottom: 2rem;">
+						<table class="tg" style="margin-left: auto; margin-right: auto;">
+							<tr>
+								<th style="width: 15%;">
+								</th>
+<!-- 								<th class="tg-yw4l" style="width: 25%;"> -->
+<!-- 								</th> -->
+								<th class="tg-yw4l" colspan="2">
+									<table class="tg">
+										<tr>
+											<th class="tg-yw4l">
+												<p style="font-size:25px; font-weight: normal; margin-bottom: -1.5rem; margin-top: 0.5rem; margin-right: 1.5rem;">
+													<cite><b>raíz corp.</b></cite>
+												</p>											
+											</th>
+											<th class="tg-yw4l" rowspan="2" style="padding-top: 1.7rem;">
+												<span>
+													<p class="small" style="margin-bottom: -0.5rem;text-align:left;">
+														서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+														사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													</p>
+													<p class="small" style="margin-bottom: -0.5rem;text-align:left;">
+														대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
+													</p>
+													<p class="small" style="margin-bottom: 0rem;">
+														Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
+													</p>
+												</span>
+											</th>
+										</tr>
+										<tr>
+											<td class="tg-yw4l">
+												<p style="font-size:15px; font-weight: normal; margin-bottom: -0.5rem;">주식회사 라이즈</p>
+											</td>
+										</tr>
+									</table>
+								</th>
+								<th style="width: 15%;">
+								</th>
+							<tr/>
+							<tr>
+								<td style="width: 25%;">
+								</td>
+								<td class="tg-yw4l" style="width: 25%; text-align: center;">
+									<!-- <table class="tg">
+										<tr>
+											<td class="tg-yw4l">
+											</td>
+											<td class="tg-yw4l">
+											</td>
+											<td class="tg-yw4l">
+											</td>
+											<td class="tg-yw4l">
+											</td>
+										</tr>
+									</table> -->
+												<img alt="" style="width: 15%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakaotalk_white.png">
+												<img alt="" style="width: 10%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/facebook_white.png">
+												<img alt="" style="width: 14%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/instagram_white.png">
+												<img alt="" style="width: 21%; margin-top: 0.5rem;" src="${pageContext.request.contextPath}/resources/img/naverblog_white.png">
+								</td>
+								<td class="tg-yw4l" style="width: 25%; font-size: 20px;">
+									<b>문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</b>
+								</td>
+								<td style="width: 25%;">
+								</td>
+							</tr>
+							<tr>
+								<td class="tg-yw4l" style="width: 25%;">
+								</td>
+								<td class="tg-yw4l" style="width: 25%; font-size: 80%; text-align: center;">
+									<span style="margin-right: 3.5rem;">
+										<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>									
+									</span>
+									<span>
+										<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do">이용 문의</a>									
+									</span>
+								</td>
+								<td class="tg-yw4l" style="width: 25%; font-size: 80%">
+									<span style="margin-right: 3.5rem;">
+										<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>									
+									</span>
+									<span >
+										<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
+									
+									</span>
+								</td>
+								<td class="tg-yw4l" style="width: 25%;">
+								</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</main>
 		</div>

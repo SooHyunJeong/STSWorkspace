@@ -32,13 +32,18 @@
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 		
 		<style type="text/css">
+			@font-face {
+				font-family : 'NanumGothic';
+				src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
+			}
+			
 			th {
 				font-weight : normal;
 			}
 
 			@media screen and (-webkit-min-device-pixel-ratio:0) {
 				li.nav-item {
-					font-family : arial;
+					font-family : NanumGothic;
 				}			
 			}
 
@@ -75,41 +80,35 @@
 		
 			<!-- Header -->
 			
-			<nav class="navbar navbar-expand-lg navbar-fixed animated slideInDown">
-				<div class="container" style="max-width:100%; margin-left:12%; margin-right:7%;">
-					<a class="navbar-brand" href="raiz_Main.do" style="color: rgb(23,28,97)">
-						<p style="font-size:30px; margin-bottom: 0rem;"><b>서울매니저</b></p>
-						<p style="font-size:19px; font-weight: normal; margin-left: 0.2rem;"><cite><b>Seoul Manager</b></cite></p>
+			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="height: 11%;">
+				<div class="container" style="max-width:100%; margin-left:3%; margin-right: 3%;">
+					<a class="navbar-brand" href="raiz_Main.do">
+						<p style="font-size:40px; margin-bottom: 0rem; font-family: NanumGothic; color: rgb(0 , 178, 156);"><b>서울매니저</b></p>
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
-						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
-						<span class="navbar-toggler-icon" style="background: rgb(23,28,97);"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(0 , 178, 156);"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(0 , 178, 156);"></span>
+						<span class="navbar-toggler-icon" style="background: rgb(0 , 178, 156);"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:black">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav" style="margin-left: auto;">
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Main.do">홈</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Main.do">서울매니저는</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
-<!-- 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold; border-bottom : 0.25px solid rgb(23, 28, 97);"> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-weight: bold;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Inquire.do">문의</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px; font-weight: bold;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Inquire.do">자주 묻는 질문</a>
 							</li>
-<!-- 							<span style="color:black;">|</span> -->
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem;">
-								<a style="padding-top: 0rem; padding-bottom: 0rem; color:rgb(23, 28, 97); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; color: rgb(0 , 178, 156); text-align: right; background:none;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
 						</ul>
 					</div>

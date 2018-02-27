@@ -29,11 +29,6 @@
 			
 			.owl-stage-outer {
 				background : rgb(237, 237, 237);
-				margin-top : 2rem;
-			}
-			
-			div.owl-dots {
-				margin-top : 10px;
 			}
 		</style>
 	</head>
@@ -167,13 +162,16 @@
 						<div class="row">
 							<div class="partners-carousel owl-theme owl-carousel">
 								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner2.png">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner3.png">
 								</div>
 								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner2.png">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner4.png">
 								</div>
 								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner2.png">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner5.png">
+								</div>
+								<div class="partner">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner6.png">
 								</div>
 							</div>
 						</div>

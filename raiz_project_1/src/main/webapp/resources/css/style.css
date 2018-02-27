@@ -543,7 +543,7 @@ a.fa:focus{
 }
 
 .navbar-fixed .navbar-brand{
-  color:#4B4B4C;
+  color: white;
 }
 
 .navbar-fixed .navbar-toggler-icon{
@@ -745,7 +745,7 @@ img.mfp-img{
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots{
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
 
