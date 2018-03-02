@@ -56,18 +56,8 @@
 			p {
 				color : rgb(23, 28, 97);
 			}
-
-			th {
-				color : rgb(23, 28, 97);
-			}
-			
-			span.example {
-				color : darkgray;
-				font-weight: normal;
-			}
 			
 			.ad_1 {
-				margin-left : 15rem;
 				font-size: 13px;
 			}
 			
@@ -132,18 +122,19 @@
 				<div class="opener rel-1" style="background-color: white; padding-bottom: 0rem;">
 					<table class="tg" style="width: 100%; margin-bottom: 4rem;">
 						<tr>
-							<th class="tg-yw4l" style="width: 55%; vertical-align: top;">
-								<table class="tg" style="width: 1000px; margin-left: 7rem;">
+							<th class="tg-yw4l" style="width: 73%; vertical-align: top;">
+								<table class="tg">
 									<tr>
 										<th class="tg-yw4l">
-											<img alt="" style="width: 830px; float: right; margin-bottom: 1rem; margin-right: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg2.png">
+											<img alt="" style="width: 89.5%; margin-left: 4.5rem; margin-bottom: 1rem; margin-right: 1.5rem;" src="${pageContext.request.contextPath}/resources/img/post_mainimg2.png">
 										</th>
 									</tr>
 								</table>
 								<table class="tg" style="width: 100%;">
 									<tr>
-										<th class="tg-yw4l" style="width: 48%; border-right: 0.25px solid #dae0e5;">
-											<table class="tg" style="margin-left: 1rem;">
+										<th style="width: 8%;"></th>
+										<th class="tg-yw4l" style="width: 30%; border-right: 0.25px solid #dae0e5;">
+											<table class="tg" style="margin-left: 1rem; margin-right: 1rem;">
 												<tr>
 													<th class="tg-yw4l">
 														<a style="text-decoration: none;" href="http://moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=71137&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=0503&opType=N">
@@ -171,7 +162,7 @@
 												</tr>
 											</table>
 										</th>
-										<th class="tg-yw4l" style="width: 27%; border-right: 0.25px solid #dae0e5;">
+										<th class="tg-yw4l" style="width: 30%; border-right: 0.25px solid #dae0e5;">
 											<table class="tg" style="margin-left: 1rem; margin-right: 1rem;">
 												<tr>
 													<th class="tg-yw4l">
@@ -278,66 +269,91 @@
 							</th>
 						</tr>
 					</table>
-					
-					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%; color: #dae0e5; margin-bottom: auto;">
-	
-					<table id="footer" class="tg" style="margin-left: 14%; color: rgb(23, 28, 97);">
-						<tr>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
-								<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
-							</th>
-							<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
-								<div class="container">
-									<div style="padding-top:15px; margin:auto;">
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										</p>
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
-										</p>
-										<p class="small" style="width:max-content;">
-											Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
-										</p>
-									</div>
-								</div>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
-							</th>
-<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;"> -->
-<!-- 								설명회 문의 -->
-<!-- 							</th> -->
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 280px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
-							</th>
-							<!-- <th class="tg-yw4l" rowspan="2" style="width: 340px; font-size: 27px; font-weight: bold; min-width: 260px;">
-								<p style="margin-top: 1rem;">문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</p>
-							</th> -->
-							<th>
-								<span style="margin-right: 2rem;">
-									<a href="https://blog.naver.com/raiz_sm"><img alt="" style="width: 50px;" src="${pageContext.request.contextPath}/resources/img/blog2.png"></a>
-								</span>
-								<span style="margin-right: 2rem;">
-									<a href="https://www.facebook.com/seoulmanager/"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/facebook_icon.png"></a>
-								</span>
-								<span style="margin-right: 2rem;">
-									<a href="https://www.instagram.com/seoul_manager/"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/ins_icon.png"></a>
-								</span>
-								<span>
-									<a href="https://story.kakao.com/seoulmanager"><img alt="" style="width: 40px;" src="${pageContext.request.contextPath}/resources/img/story.png"></a>
-								</span>
-							</th>
-						</tr>
-					</table>
 				</div>
 
 			</main>
+			
+			<!-- footer -->
+
+			<div style="width: 100%; background-color: rgb(0, 178, 156); padding-bottom: 2rem;">
+				<table class="tg" style="margin-left: auto; margin-right: auto; width: 69%;">
+					<tr>
+						<th style="width: 15%;"></th>
+						<th class="tg-yw4l" colspan="2">
+							<table class="tg">
+								<tr>
+									<th class="tg-yw4l">
+										<p style="color:white; font-size:25px; font-weight: normal; margin-bottom: -1.5rem; margin-top: 0.5rem; margin-right: 1.5rem;">
+											<cite><b>raíz corp.</b></cite>
+										</p>											
+									</th>
+									<th class="tg-yw4l" rowspan="2" style="padding-top: 1.7rem;">
+										<span>
+											<p class="small" style="margin-bottom: -0.5rem; text-align: left; color: white;">
+												서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</p>
+											<p class="small" style="margin-bottom: -0.5rem;text-align: left; color: white;">
+												대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
+											</p>
+											<p class="small" style="margin-bottom: 0rem; color: white;">
+												Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
+											</p>
+										</span>
+									</th>
+								</tr>
+								<tr>
+									<td class="tg-yw4l">
+										<p style="color: white; font-size:15px; font-weight: normal; margin-bottom: -0.5rem;">주식회사 라이즈</p>
+									</td>
+								</tr>
+							</table>
+						</th>
+						<th style="width: 15%;">
+						</th>
+					<tr/>
+					<tr>
+						<td style="width: 25%;">
+						</td>
+						<td class="tg-yw4l" style="width: 25%; text-align: center;">
+							<a href="https://story.kakao.com/seoulmanager"><img alt="" style="width: 15%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakaotalk_white.png"></a>
+							<a href="https://www.facebook.com/seoulmanager/"><img alt="" style="width: 10%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/facebook_white.png"></a>
+							<a href="https://www.instagram.com/seoul_manager/"><img alt="" style="width: 14%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/instagram_white.png"></a>
+							<a href="https://blog.naver.com/raiz_sm"><img alt="" style="width: 21%; margin-top: 0.5rem;" src="${pageContext.request.contextPath}/resources/img/naverblog_white.png"></a>
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 20px; color: white;">
+							<b>문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</b>
+						</td>
+						<td style="width: 25%;">
+						</td>
+					</tr>
+					<tr>
+						<td class="tg-yw4l" style="width: 25%;">
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 80%; text-align: center;">
+							<span style="margin-right: 3.5rem;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>									
+							</span>
+							<span>
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do">이용 문의</a>									
+							</span>
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 80%">
+							<span style="margin-right: 3.5rem;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>									
+							</span>
+							<span >
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
+							
+							</span>
+						</td>
+						<td class="tg-yw4l" style="width: 25%;">
+						</td>
+					</tr>
+				</table>
+			</div>
+			
 		</div>
 	</body>
 </html>

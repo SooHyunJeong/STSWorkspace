@@ -36,10 +36,6 @@
 				font-family : 'NanumGothic';
 				src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
 			}
-			
-			th {
-				font-weight : normal;
-			}
 
 			@media screen and (-webkit-min-device-pixel-ratio:0) {
 				li.nav-item {
@@ -51,32 +47,6 @@
 				main {
 					font-family : arial;
 				}
-			}
-
-			p {
-				color : rgb(23, 28, 97);
-			}
-
-			th {
-				color : rgb(23, 28, 97);
-			}
-			
-			span.example {
-				color : darkgray;
-				font-weight: normal;
-			}
-			
-			.ad_1 {
-				margin-left : 15rem;
-				font-size: 13px;
-			}
-			
-			.ad_2 {
-				font-size: 13px;
-			}
-			
-			.ad_3 {
-				font-size: 13px;
 			}
 		</style>
 	</head>
@@ -188,7 +158,7 @@
 					<table class="tg" style="width: 100%;">
 						<tr>
 							<th style="vertical-align: top;">
-								<img alt="" src="${pageContext.request.contextPath}/resources/img/partnership.png" style="width: 800px; display: block; margin-left: auto; margin-right: auto; margin-top: 10rem;">						
+								<img alt="" src="${pageContext.request.contextPath}/resources/img/5SM_partnership_1.png" style="width: 800px; display: block; margin-left: auto; margin-right: auto; margin-top: 10rem;">						
 							</th>
 						</tr>
 					</table>
@@ -204,7 +174,7 @@
 							<tr>
 								<th class="tg-yw4l">
 									<div class="form-group" style="width: 700px;">
-										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 14px;">
+										<label for="name" style="color: black; margin-left: 0.9rem; margin-bottom: 0rem; font-size: 14px; font-weight: normal;">
 											문의유형(제휴/광고/기타)&nbsp;&nbsp;<span style="color: rgb(192, 0, 0);">•</span>
 										</label>
 										<div class="col-sm-9" style="max-width: 100%;">
@@ -321,52 +291,90 @@
 							</tr>
 						</table>
 					</div>
-					
-					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%; color: #dae0e5; margin-bottom: auto; margin-top: 7rem;">
-	
-					<table id="footer" class="tg" style="margin-left: 14%; color: rgb(23, 28, 97);">
-						<tr>
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; min-width: 160px;">
-								<p style="font-size:28px; font-weight: normal; margin-bottom: -1rem;"><cite><b>raíz corp.</b></cite></p>
-								<p style="font-size:16px; font-weight: normal;">주식회사 라이즈</p>
-							</th>
-							<th class="tg-yw4l" style="width: 32%; min-width: 490px;">
-								<div class="container">
-									<div style="padding-top:15px; margin:auto;">
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										</p>
-										<p class="small" style="margin-bottom:-0.5rem;text-align:left;">
-											대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
-										</p>
-										<p class="small" style="width:max-content;">
-											Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
-										</p>
-									</div>
-								</div>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: 5%; font-size: 13px; min-width: 100px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>
-							</th>
-<!-- 							<th class="tg-yw4l" rowspan="2" style="width: 6%; font-size: 13px; min-width: 80px;"> -->
-<!-- 								설명회 문의 -->
-<!-- 							</th> -->
-							<th class="tg-yw4l" rowspan="2" style="width: 10%; font-size: 13px; min-width: 230px;">
-								<a style="color: rgb(23, 28, 97); text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
-							</th>
-							<th class="tg-yw4l" rowspan="2" style="width: auto; font-size: 27px; font-weight: bold; min-width: 460px;">
-								<p style="margin-top: 1rem;">문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</p>
-							</th>
-						</tr>
-					</table>
 				</div>
 
 			</main>
+			
+			<!-- footer -->
+
+			<div style="width: 100%; background-color: rgb(0, 178, 156); padding-bottom: 2rem;">
+				<table class="tg" style="margin-left: auto; margin-right: auto; width: 69%;">
+					<tr>
+						<th style="width: 15%;"></th>
+						<th class="tg-yw4l" colspan="2">
+							<table class="tg">
+								<tr>
+									<th class="tg-yw4l">
+										<p style="color:white; font-size:25px; font-weight: normal; margin-bottom: -1.5rem; margin-top: 0.5rem; margin-right: 1.5rem;">
+											<cite><b>raíz corp.</b></cite>
+										</p>											
+									</th>
+									<th class="tg-yw4l" rowspan="2" style="padding-top: 1.7rem;">
+										<span>
+											<p class="small" style="margin-bottom: -0.5rem; text-align: left; color: white;">
+												서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</p>
+											<p class="small" style="margin-bottom: -0.5rem;text-align: left; color: white;">
+												대표자&nbsp;&nbsp;형성모&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tel&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e-mail&nbsp;&nbsp;sm@raizcorp.co.kr
+											</p>
+											<p class="small" style="margin-bottom: 0rem; color: white;">
+												Copyright&nbsp;&copy;&nbsp;2018.&nbsp;raizcorp.&nbsp;All&nbsp;rights&nbsp;reserved.
+											</p>
+										</span>
+									</th>
+								</tr>
+								<tr>
+									<td class="tg-yw4l">
+										<p style="color: white; font-size:15px; font-weight: normal; margin-bottom: -0.5rem;">주식회사 라이즈</p>
+									</td>
+								</tr>
+							</table>
+						</th>
+						<th style="width: 15%;">
+						</th>
+					<tr/>
+					<tr>
+						<td style="width: 25%;">
+						</td>
+						<td class="tg-yw4l" style="width: 25%; text-align: center;">
+							<a href="https://story.kakao.com/seoulmanager"><img alt="" style="width: 15%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakaotalk_white.png"></a>
+							<a href="https://www.facebook.com/seoulmanager/"><img alt="" style="width: 10%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/facebook_white.png"></a>
+							<a href="https://www.instagram.com/seoul_manager/"><img alt="" style="width: 14%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/instagram_white.png"></a>
+							<a href="https://blog.naver.com/raiz_sm"><img alt="" style="width: 21%; margin-top: 0.5rem;" src="${pageContext.request.contextPath}/resources/img/naverblog_white.png"></a>
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 20px; color: white;">
+							<b>문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</b>
+						</td>
+						<td style="width: 25%;">
+						</td>
+					</tr>
+					<tr>
+						<td class="tg-yw4l" style="width: 25%;">
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 80%; text-align: center;">
+							<span style="margin-right: 3.5rem;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do#raiz_terms">이용 약관</a>									
+							</span>
+							<span>
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Subscribe.do">이용 문의</a>									
+							</span>
+						</td>
+						<td class="tg-yw4l" style="width: 25%; font-size: 80%">
+							<span style="margin-right: 3.5rem;">
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">제휴 문의</a>									
+							</span>
+							<span >
+								<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
+							
+							</span>
+						</td>
+						<td class="tg-yw4l" style="width: 25%;">
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>

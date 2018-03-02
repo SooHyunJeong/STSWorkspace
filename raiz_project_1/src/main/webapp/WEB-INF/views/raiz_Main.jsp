@@ -5,12 +5,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>서울매니저</title> 
-		
-		<!-- Favicons -->
-
-		<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png"> -->
 
 		<!-- Styles -->
 
@@ -47,27 +41,11 @@
 	 				font-family : arial;
 				}
 			}
-
-			video { 
-			     top: 0px;
-			     left: 0px;
-			     min-width: 100%;
-			     min-height: 100%;
-			     width: auto;
-			     height: auto;
-			     z-index: -1;
-			     overflow: hidden;
-			}
 		</style>
 	</head>
 	
 	<script type="text/javascript">
-		/* $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-		$('#element').on('scroll touchmove mousewheel', function(event) {
-			  event.preventDefault();
-			  event.stopPropagation();
-			  return false;
-		}); */
+	
 	</script>
 	
 	<!-- 
@@ -84,16 +62,11 @@
 			</div>
 		</div>
 		
-		<div id="layout" class="layout" style="overflow:hidden; background-color: rgb(0, 178, 156)">
+		<div id="layout" class="layout" style="overflow: hidden; background-color: rgb(0, 178, 156)">
 			<div>
-				<%-- <video src="${pageContext.request.contextPath}/resources/img/SeoulManager_video_version2_180129.mov"
-				poster="${pageContext.request.contextPath}/resources/img/covervideo_img4.png" loop="loop" autoplay="autoplay"></video> --%>
-				<%-- <video src="${pageContext.request.contextPath}/resources/img/SM_landingpage_covervideo.mp4"
-				poster="${pageContext.request.contextPath}/resources/img/SM_landingpage_coverimg.JPG" loop="loop" autoplay="autoplay" style="width: 100%;"></video> --%>
 				<img alt="" style="width: 85%; margin-top: 3%; margin-bottom: 9%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
 			</div>
-			<!-- <iframe src="https://player.vimeo.com/video/253133438" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<p><a href="https://vimeo.com/253133438">Seoul_Manager_180129</a> from <a href="https://vimeo.com/user79124738">형성모</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+
 			<!-- Header -->
 			
 			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="background-color: rgb(0, 178, 156); height: 11%;">
@@ -111,19 +84,15 @@
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px; font-weight : bold;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Main.do">서울매니저는</a>
 							</li>
-<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Introduce.do">서비스 소개</a>
 							</li>
-<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Subscribe.do">서비스 신청</a>
 							</li>
-<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Inquire.do">자주 묻는 질문</a>
 							</li>
-<!-- 							<span style="color:white;">|</span> -->
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Post.do">Post</a>
 							</li>
@@ -145,35 +114,11 @@
 					<p style="margin-bottom: 8%;">
 						<img alt="" style="width: 80%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
 					</p>
-					<%-- <table class="tg" align="center">
-						<tr>
-							<th class="tg-yw4l">
-								<img alt="" style="width: 600px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size1.png">
-								<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_kakao.png">
-							</th>
-							<th class="tg-yw4l">
-								<img alt="" style="width: 365px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_size2.png">
-								<a href="https://blog.naver.com/raiz_sm">
-									<img alt="" style="width: 435px; margin-top: 1rem; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_naver.png">		
-								</a>
-							</th>
-							<th class="tg-yw4l">
-								<a href="https://www.facebook.com/seoulmanager/">
-									<img alt="" style="width: 435px; margin-top: 1rem;" src="${pageContext.request.contextPath}/resources/img/banner_facebook.png">
-								</a>
-							</th>
-						</tr>
-					</table>
 					
-					<hr style=" border: solid; border-width: 0.5px; align-content: center; width:85%;">
-					 --%>
 					<div style="width: 100%; background-color: rgb(0, 178, 156); padding-bottom: 2rem;">
-						<table class="tg" style="margin-left: auto; margin-right: auto;">
+						<table class="tg" style="margin-left: auto; margin-right: auto; width: 69%;">
 							<tr>
-								<th style="width: 15%;">
-								</th>
-<!-- 								<th class="tg-yw4l" style="width: 25%;"> -->
-<!-- 								</th> -->
+								<th style="width: 15%;"></th>
 								<th class="tg-yw4l" colspan="2">
 									<table class="tg">
 										<tr>
@@ -212,22 +157,10 @@
 								<td style="width: 25%;">
 								</td>
 								<td class="tg-yw4l" style="width: 25%; text-align: center;">
-									<!-- <table class="tg">
-										<tr>
-											<td class="tg-yw4l">
-											</td>
-											<td class="tg-yw4l">
-											</td>
-											<td class="tg-yw4l">
-											</td>
-											<td class="tg-yw4l">
-											</td>
-										</tr>
-									</table> -->
-												<img alt="" style="width: 15%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakaotalk_white.png">
-												<img alt="" style="width: 10%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/facebook_white.png">
-												<img alt="" style="width: 14%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/instagram_white.png">
-												<img alt="" style="width: 21%; margin-top: 0.5rem;" src="${pageContext.request.contextPath}/resources/img/naverblog_white.png">
+									<a href="https://story.kakao.com/seoulmanager"><img alt="" style="width: 15%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/kakaotalk_white.png"></a>
+									<a href="https://www.facebook.com/seoulmanager/"><img alt="" style="width: 10%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/facebook_white.png"></a>
+									<a href="https://www.instagram.com/seoul_manager/"><img alt="" style="width: 14%; margin-right: 1rem;" src="${pageContext.request.contextPath}/resources/img/instagram_white.png"></a>
+									<a href="https://blog.naver.com/raiz_sm"><img alt="" style="width: 21%; margin-top: 0.5rem;" src="${pageContext.request.contextPath}/resources/img/naverblog_white.png"></a>
 								</td>
 								<td class="tg-yw4l" style="width: 25%; font-size: 20px;">
 									<b>문의전화&nbsp;&nbsp;02&nbsp;&nbsp;6085&nbsp;&nbsp;0237</b>
@@ -264,63 +197,5 @@
 			</main>
 		</div>
 		
-		<!-- Modals -->
-		
-		<div id="request" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header text-center">
-						<span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
-						<h2 class="modal-title text-center">Contact</h2>
-					</div>
-					<div class="modal-body text-center">
-						<form  class="form-request js-ajax-form">
-							<div class="row-fields row">
-								<div class="form-group col-field col-sm-6">
-									<input type="text" class="form-control" name="name" required placeholder="Name *">
-								</div>
-								<div class="form-group col-field col-sm-6">
-									<input type="email" class="form-control" name="email" required placeholder="Email *">
-								</div>
-								<div class="form-group col-field col-sm-12">
-									<textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
-								</div>
-								<div class="col-sm-12">
-									<button type="submit" class="btn" data-text-hover="Submit">Send request</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Modals success -->
-		
-		<div id="success" class="modal modal-message fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-						<h2 class="modal-title">Thank you</h2>
-						<p class="modal-subtitle">Your message is successfully sent...</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Modals error -->
-		
-		<div id="error" class="modal modal-message fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-						<h2 class="modal-title">Sorry</h2>
-						<p class="modal-subtitle"> Something went wrong </p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>
