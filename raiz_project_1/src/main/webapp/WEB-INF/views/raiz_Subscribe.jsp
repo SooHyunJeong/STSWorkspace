@@ -99,7 +99,7 @@
 				</div>
 			</nav>
 
-			<!-- 3SM_order1_1 -->
+			<!-- 3SM_order1_1 - 서비스 신청 -->
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
@@ -107,15 +107,7 @@
 				</div>
 			</main>
 
-			<!-- 3SM_order2_1 -->
-
-			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 90%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/3SM_order2_1.png">
-				</div>
-			</main>
-
-			<!-- 3SM_order3_1 -->
+			<!-- 3SM_order3_1 - 이용약관 -->
 
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white;">

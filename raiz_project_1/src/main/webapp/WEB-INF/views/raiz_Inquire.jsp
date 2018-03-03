@@ -96,15 +96,7 @@
 
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; width: 70%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/4SM_FAQ1_1.png">
-				</div>
-			</main>
-
-			<!-- 자주 묻는 질문 (2) -->
-
-			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; width: 70%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/4SM_FAQ2_1.png">
+					<img alt="" style="overflow:hidden; width: 70%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/4SM_FAQ1_4.PNG">
 				</div>
 			</main>
 			

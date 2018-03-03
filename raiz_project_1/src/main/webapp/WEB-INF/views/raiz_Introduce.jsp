@@ -150,7 +150,7 @@
 				</div>
 			</main>
 
-			<!-- 2SM_service2_1 -->
+			<!-- 2SM_service2_1 - 서울매니저의 서비스 부분 -->
 
 			<main class="masthead masked">
 				<div class="section opener rel-1" style="background-color: white;">
@@ -158,19 +158,43 @@
 				</div>
 			</main>
 			
-			<!-- 2SM_service3_1 -->
-			
-			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 50%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
-				</div>
-			</main>
-			
-			<!-- 2SM_service4_1 -->
+			<!-- 2SM_service4_1 - 서울매니저의 철저함 부분 -->
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white;">
 					<img alt="" style="overflow:hidden; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service4_1.png">
+				</div>
+			</main>
+			
+			<!-- 2SM_service_price1_1 -->
+			
+			<main class="masthead masked">
+				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
+					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price1_1.png">
+				</div>
+			</main>
+			
+			<!-- 2SM_service_price2_1 -->
+			
+			<main class="masthead masked">
+				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
+					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price2_1.png">
+				</div>
+			</main>
+			
+			<!-- 2SM_service_price3_1 -->
+			
+			<main class="masthead masked">
+				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
+					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price3_1.png">
+				</div>
+			</main>
+			
+			<!-- 2SM_service3_1 - 스마일 이미지 있는 부분 -->
+			
+			<main class="masthead masked">
+				<div class="opener rel-1" style="background-color: white;">
+					<img alt="" style="overflow:hidden; width: 47%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
 				</div>
 			</main>
 			
