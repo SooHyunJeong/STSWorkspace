@@ -185,7 +185,6 @@
 									</span>
 									<span >
 										<a style="color: white; text-decoration: none;" href="http://localhost:8080/raiz/raiz_Partnership.do">광고 문의</a>
-									
 									</span>
 								</td>
 								<td class="tg-yw4l" style="width: 25%;">

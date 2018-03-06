@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="ko">
+<html>
 	<head>
-		<meta  charset="utf-8">
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>서울매니저</title> 
 	
@@ -99,13 +99,13 @@
 			
 			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="padding-top: 1.5rem; padding-bottom: 0rem; background: rgba(255, 255, 255, 0.95);">
 				<div class="container">
-					<a class="navbar-brand" href="#home" style="color: rgb(23, 28, 97);">
+					<a class="navbar-brand" href="#home" style="color: rgb(0, 178, 156);">
 						<p class="header_Main" style="font-size: 20px;"><b>서울매니저</b></p>
 					</a>
 					<button style="margin-top: 0rem; margin-bottom: 1rem;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span style="background : rgb(23, 28, 97);" class="navbar-toggler-icon"></span>
-						<span style="background : rgb(23, 28, 97);" class="navbar-toggler-icon"></span>
-						<span style="background : rgb(23, 28, 97);" class="navbar-toggler-icon"></span>
+						<span style="background : rgb(0, 178, 156);" class="navbar-toggler-icon"></span>
+						<span style="background : rgb(0, 178, 156);" class="navbar-toggler-icon"></span>
+						<span style="background : rgb(0, 178, 156);" class="navbar-toggler-icon"></span>
 					</button>
 					
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -133,13 +133,16 @@
 			<!-- Home -->
 			
 			<main id="home" class="masthead masked" style="background : white;">
-				<div class="opener rel-1" style="height: 600px; padding-top: 3.4rem; padding-bottom: 0rem;">
-					<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_home7.png">
-					<div class="container">
-						<div class="row align-items-center" style="background: white;">
-							<div class="col-lg-6 mb-lg-0" style="margin-bottom: 1rem;"></div>
-						</div>
-					</div>
+				<div class="opener rel-1" style="height: 600px; padding-top: 3.4rem; padding-bottom: 0rem; background-color: white;">
+					<p style="background-color: rgb(0, 178, 156);">
+						<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
+					</p>
+					<p style="margin-top: 3rem; margin-bottom: 3rem;">
+						<img alt="" class="mw-100 d-block mx-auto" style="width: 95%;" src="${pageContext.request.contextPath}/resources/img/1SM_home2_1.png">					
+					</p>
+					<p style="margin-top: 3rem; margin-bottom: 3rem;">
+						<img alt="" class="mw-100 d-block mx-auto" style="width: 90%;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
+					</p>
 				</div>
 			</main>
 			
@@ -170,71 +173,65 @@
 					</div>
 				</section>
 				
-				<!-- Service 소개  -->
+				<!-- 서비스 소개  -->
 				
 				<section id="service" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/category_intro.png">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/2SM_service2_1.png">
 							</div>
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/service_intro_contact (3).png">
+								<img alt="" class="mw-100 mx-auto" style="width: 45%;" src="${pageContext.request.contextPath}/resources/img/2SM_service4_1.png">
 							</div>
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp" data-wow-delay="0.3s">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/service_intro_auto (2).png">
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
+								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price1_1.png">
 							</div>
-							<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-								<img style="margin-bottom: 3rem;" alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/service_intro_meal (3).png">
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
+								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price2_1.png">
 							</div>
-							<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/service_intro_hotel (3).png">
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
+								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price3_1.png">
+							</div>
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp">
+								<img alt="" class="mw-100 mx-auto" style="width: 80%; margin-top: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<!-- Service 신청  -->
+				<!-- 서비스 신청 -->
 				
-				<section id="apply" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
+				<section id="apply" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem; background-color: rgb(0, 178, 156);">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/category_process.png">
-							</div>
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/service_apply.png">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/3SM_order1_1.png">
 							</div>
 						</div>
 					</div>
 				</section>
 				
-				<!-- 문의  -->
+				<!-- 자주 묻는 질문 -->
 				
-				<section id="inquires" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: rgb(237, 237, 237)">
+				<section id="inquires" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: white;">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-6 mb-lg-0 text-center wow fadeInLeft">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/category_cs.png">
-							</div>
-							<div class="col-lg-6 mb-5 mb-lg-0 text-center wow fadeInLeft">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_contact.png">
-							</div>
-							<div class="col-lg-6 mb-5 mb-lg-0 text-center wow fadeInLeft">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_kpf.png">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/4SM_FAQ1_4.PNG">
 							</div>
 						</div>
 					</div>
 				</section>
 				
 				<!-- 파트너쉽  -->
-				
+				<%-- 
 				<section id="partnership" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
 					<div class="container">
 						<table class="tg" style="margin-left: auto; margin-right: auto;">
 							<tr>
 								<th style="vertical-align: top;">
-									<img alt="" src="${pageContext.request.contextPath}/resources/img/sm_img/partnership.png" style="width: 330px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1rem;">						
+									<img alt="" src="${pageContext.request.contextPath}/resources/img/5SM_partnership_1.png" style="width: 330px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1rem;">						
 								</th>
 							</tr>
 							<tr>
@@ -333,13 +330,14 @@
 						</table>
 					</div>
 				</section>
+				 --%>
 			</div>
 			
 			<!-- Footer -->
 			
 			<footer id="footer" class="footer text-center" style="background-color: rgb(237, 237, 237); padding: 0px;">
 				<div class="container" style="padding-left: 0px; padding-right: 0px;">
-					<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_company3.png">
+					<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/1SM_home3_3.png">
  				</div>
 			</footer>
 		</div>
