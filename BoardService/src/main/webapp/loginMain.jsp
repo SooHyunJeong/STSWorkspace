@@ -21,12 +21,14 @@
 </head>
 <body>
 	<center>
-		<h1><spring:message code="message.user.login.title"/></h1>
-		<a href="login.do?lang=en">
+		<h1>
+			<spring:message code="message.user.login.title"/>
+		</h1>
+		<a href="loginMain.do?lang=en">
 			<spring:message code="message.user.login.language.en"/>
 		</a>
 		&nbsp;&nbsp;
-		<a href="login.do?lang=ko">
+		<a href="loginMain.do?lang=ko">
 			<spring:message code="message.user.login.language.ko"/>
 		</a>
 		<hr>

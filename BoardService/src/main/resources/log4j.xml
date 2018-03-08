@@ -34,7 +34,8 @@
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="warn" />
+		<!-- warn , info / info 로 바꾸면 console 창에 sql문이 다 나옴  -->
+		<priority value="info" />
 		<appender-ref ref="console" />
 	</root>
 	

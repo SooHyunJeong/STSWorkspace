@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.springbook.biz.BoardService;
-import com.springbook.biz.BoardVO;
+import com.springbook.biz.board.BoardService;
+import com.springbook.biz.board.BoardVO;
 
 @Controller
 @SessionAttributes("board")
