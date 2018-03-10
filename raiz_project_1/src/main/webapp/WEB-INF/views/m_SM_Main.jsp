@@ -33,6 +33,7 @@
 		</style>
 	</head>
 	<script type="text/javascript">
+		/* 파트너쉽 관련 script 소스
 		window.onload = function() {
 			document.getElementById("submit").onclick = function() {
 				var inquire = $("#inquire").val();
@@ -82,6 +83,7 @@
 				});
 			}
 		}
+		 */
 	</script>
 	<body>
 		<!-- Loader -->
@@ -96,7 +98,7 @@
 		<div id="layout" class="layout">
 			
 			<!-- Header -->
-			
+			<!-- 
 			<nav class="navbar navbar-expand-lg" data-toggle="affix" style="padding-top: 1.5rem; padding-bottom: 0rem; background: rgba(255, 255, 255, 0.95);">
 				<div class="container">
 					<a class="navbar-brand" href="#home" style="color: rgb(0, 178, 156);">
@@ -129,19 +131,13 @@
 					</div>
 				</div>
 			</nav>
-			
+			 -->
 			<!-- Home -->
 			
 			<main id="home" class="masthead masked" style="background : white;">
-				<div class="opener rel-1" style="height: 600px; padding-top: 3.4rem; padding-bottom: 0rem; background-color: white;">
-					<p style="background-color: rgb(0, 178, 156);">
-						<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
-					</p>
-					<p style="margin-top: 3rem; margin-bottom: 3rem;">
-						<img alt="" class="mw-100 d-block mx-auto" style="width: 95%;" src="${pageContext.request.contextPath}/resources/img/1SM_home2_1.png">					
-					</p>
-					<p style="margin-top: 3rem; margin-bottom: 3rem;">
-						<img alt="" class="mw-100 d-block mx-auto" style="width: 90%;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
+				<div class="opener rel-1" style="height: 600px; padding-top: 0rem; padding-bottom: 0rem; background-color: white;">
+					<p style="margin-bottom: 0rem;">
+						<img alt="" class="mw-100 d-block mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_1_1.png">
 					</p>
 				</div>
 			</main>
@@ -149,52 +145,23 @@
 			<!-- Content -->
 			
 			<div class="content">
-			
-				<!-- 배너  -->
-				
-				<section id="about" class="partners bg-light" style="padding-top: 0rem; padding-bottom: 0rem;">
-					<div class="container">
-						<div class="row">
-							<div class="partners-carousel owl-theme owl-carousel">
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner3.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner4.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner5.png">
-								</div>
-								<div class="partner">
-									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner6.png">
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
 				
 				<!-- 서비스 소개  -->
 				
-				<section id="service" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem;">
+				<section id="service" class="text-center section" style="padding-top: 3rem; padding-bottom: 0rem;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/2SM_service2_1.png">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_2_1.png">
 							</div>
 							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" style="width: 45%;" src="${pageContext.request.contextPath}/resources/img/2SM_service4_1.png">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_3_1.png">
+							</div>
+							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_4_1.png">
 							</div>
 							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
-								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price1_1.png">
-							</div>
-							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
-								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price2_1.png">
-							</div>
-							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp" style="background-color: rgb(0, 178, 156);">
-								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price3_1.png">
-							</div>
-							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" style="width: 80%; margin-top: 2rem;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
+								<img alt="" class="mw-100 mx-auto" style="width: 90%; margin-top: 2rem; margin-bottom: 2rem;" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_5_1.png">
 							</div>
 						</div>
 					</div>
@@ -202,11 +169,11 @@
 
 				<!-- 서비스 신청 -->
 				
-				<section id="apply" class="text-center section" style="padding-top: 3rem; padding-bottom: 3rem; background-color: rgb(0, 178, 156);">
+				<section id="apply" class="text-center section" style="padding-top: 0rem; padding-bottom: 0rem; background-color: rgb(0, 178, 156);">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 wow fadeInUp">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/3SM_order1_1.png">
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp">
+								<img alt="" class="mw-100 mx-auto" style="width: 100%; margin-top: 0rem; margin-bottom: 1rem;" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_6_1.png">
 							</div>
 						</div>
 					</div>
@@ -214,11 +181,11 @@
 				
 				<!-- 자주 묻는 질문 -->
 				
-				<section id="inquires" class="section" style="padding-top: 2rem; padding-bottom: 2rem; background-color: white;">
+				<section id="inquires" class="section" style="padding-top: 2rem; padding-bottom: 0rem; background-color: white;">
 					<div class="container">
 						<div class="row align-items-center">
-							<div class="col-lg-6 mb-lg-0 text-center wow fadeInLeft">
-								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/4SM_FAQ1_4.PNG">
+							<div class="col-md-6 col-lg-4 mb-lg-0 wow fadeInUp">
+								<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_7_1.png">
 							</div>
 						</div>
 					</div>
@@ -331,74 +298,39 @@
 					</div>
 				</section>
 				 --%>
+				 
+				<!-- 배너  -->
+				
+				<%-- <section id="about" class="partners bg-light" style="padding-top: 0rem; padding-bottom: 0rem;">
+					<div class="container">
+						<div class="row">
+							<div class="partners-carousel owl-theme owl-carousel" style="background-color: white;">
+								<div class="partner">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner3.png">
+								</div>
+								<div class="partner">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner4.png">
+								</div>
+								<div class="partner">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner5.png">
+								</div>
+								<div class="partner">
+									<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/mobile_banner6.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> --%>
+				
 			</div>
 			
 			<!-- Footer -->
 			
-			<footer id="footer" class="footer text-center" style="background-color: rgb(237, 237, 237); padding: 0px;">
+			<footer id="footer" class="footer text-center" style="padding: 2rem 0 0;">
 				<div class="container" style="padding-left: 0px; padding-right: 0px;">
-					<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/1SM_home3_3.png">
+					<img alt="" class="mw-100 mx-auto" src="${pageContext.request.contextPath}/resources/img/sm_img/sm_mobile_7_2.png">
  				</div>
 			</footer>
-		</div>
-		
-		<!-- Modals -->
-		
-		<div id="request" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header text-center">
-						<span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
-						<h2 class="modal-title text-center">Contact</h2>
-					</div>
-					<div class="modal-body text-center">
-						<form  class="form-request js-ajax-form">
-							<div class="row-fields row">
-								<div class="form-group col-field col-sm-6">
-									<input type="text" class="form-control" name="name" required placeholder="Name *">
-								</div>
-								<div class="form-group col-field col-sm-6">
-									<input type="email" class="form-control" name="email" required placeholder="Email *">
-								</div>
-								<div class="form-group col-field col-sm-12">
-									<textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
-								</div>
-								<div class="col-sm-12">
-									<button type="submit" class="btn" data-text-hover="Submit">Send request</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Modals success -->
-		
-		<div id="success" class="modal modal-message fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-						<h2 class="modal-title">Thank you</h2>
-						<p class="modal-subtitle">Your message is successfully sent...</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Modals error -->
-		
-		<div id="error" class="modal modal-message fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-						<h2 class="modal-title">Sorry</h2>
-						<p class="modal-subtitle"> Something went wrong </p>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 		<!-- Scripts -->
