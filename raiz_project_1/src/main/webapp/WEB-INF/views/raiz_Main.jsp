@@ -99,6 +99,9 @@
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
+							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Register.do">회원가입</a>
+							</li>
 						</ul>
 					</div>
 				</div>

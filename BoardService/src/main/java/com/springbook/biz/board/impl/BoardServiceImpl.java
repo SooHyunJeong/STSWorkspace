@@ -5,8 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springbook.biz.BoardService;
-import com.springbook.biz.BoardVO;
+import com.springbook.biz.board.BoardService;
+import com.springbook.biz.board.BoardVO;
+
 
 @Service("boardService")
 public class BoardServiceImpl implements BoardService {

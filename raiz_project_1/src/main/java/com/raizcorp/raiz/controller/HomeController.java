@@ -265,4 +265,26 @@ public class HomeController {
 
 		return "raiz_board";
 	}
+	
+	/**
+	 * 회원가입 Controller START
+	 */
+	@RequestMapping(value = "/raiz_Register.do")
+	public String register (Locale locale, Model model) {
+		
+		logger.debug("raiz_Register STARTED");
+		System.out.println("raiz_Register STARTED");
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		logger.debug("raiz_Register ENDED");
+		System.out.println("raiz_Register ENDED");
+
+		return "raiz_Register";
+	}
 }

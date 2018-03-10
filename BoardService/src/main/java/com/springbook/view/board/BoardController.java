@@ -42,6 +42,7 @@ public class BoardController {
 	
 	// 글 수정
 	@RequestMapping(value="/updateBoard.do")
+	// @ModelAttribute --> updateBoard()가 호출될 떄 스프링 컨테이너는 우선 @ModelAttribute()설정을 해석해 세션에 board라는 이름으로 저장된 데이터가 있는지를 확인함, @SessionAttributes 와 연관됨.
 	public String updateBoard (@ModelAttribute("board") BoardVO vo) {
 		System.out.println("번호 : " + vo.getSeq());
 		System.out.println("제목 : " + vo.getTitle());

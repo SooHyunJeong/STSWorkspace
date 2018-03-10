@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.springbook.biz.BoardVO;
+import com.springbook.biz.board.BoardVO;
 
 public class BoardRowMapper implements RowMapper<BoardVO> {
 	// RowMapper 인터페이스에는 mapRow() 메소드가 있어서 검색결과로 얻어낸 Row 정보를 어떤 VO에 어떻게 매핑할 것인지 구현해주면 됨
