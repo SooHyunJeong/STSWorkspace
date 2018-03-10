@@ -7,36 +7,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>서울매니저</title> 
 
-		<!-- Styles -->
-
-		<link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-		<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" media="screen">
-
 		<!-- font awesome -->
 	    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/font-awesome.min.css" media="screen" charset="utf-8">
+	    
+		<!-- Styles -->
+
+		<link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet"  media="screen">
 
 		<!-- Scripts -->
-		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.easypiechart.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/smoothscroll.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/wow.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.magnific-popup.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/owl.carousel.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.validate.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 	</head>
 	
 	<script type="text/javascript">
+// 		window.onload = function() {
 		$(document).ready(function(){
-			$("#member_ok").onclick() {
-				alert(1);
-			}
+			$("#member_ok").click(function() {
+				$.ajax({
+					type : "POST",
+					dataType : "text",
+					data : {
+					},
+					url : "insertMember.do",
+					success : function(a) {
+						alert("회원가입이 완료 되었습니다.");
+						location.replace("raiz_Main.do");
+					},
+					error : function() {
+						alert("에러발생");
+					}
+				})
+			})
 			
-			$("#member_cancel").onclick() {
-				alert(2);
-			}
+			$("#member_cancel").click(function() {
+				location.replace("raiz_Main.do");
+			})
 		})
 	</script>
-	
-	<!-- 
-		- oncontextmenu='return false' - 우클릭방지
-		- onselectstart='return false' - 블럭선택방지
-		- ondragstart='return false' - 드래그방지
-	 -->
+
 	<body>
 		<main class="container">
 		
@@ -77,8 +94,8 @@
 				</div>
 					
 				<div class="form-group text-center">
-					<button id="member_ok" type="submit" class="btn btn-info" onclick="#">회원가입</button>
-					<button id="member_cancel" type="submit" class="btn btn-warning" onclick="#">가입취소</button>
+					<button id="member_ok" type="submit" class="btn btn-info">회원가입</button>
+					<button id="member_cancel" type="submit" class="btn btn-warning">가입취소</button>
 				</div>
 			</div>
 		

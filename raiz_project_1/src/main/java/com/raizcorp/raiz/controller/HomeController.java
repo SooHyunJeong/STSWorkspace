@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Handles requests for the application home page.
@@ -48,7 +49,6 @@ public class HomeController {
 		System.out.println("raiz_Home ENDED");
 
 		return "raiz_Main";
-//		return "raiz_ready";
 	}
 	
 	/**
@@ -208,7 +208,7 @@ public class HomeController {
 	/**
 	 * Post Controller START
 	 */
-	@RequestMapping(value="/mail.do")
+	@RequestMapping(value = "/mail.do")
 	public String sendMail(HttpServletRequest request) {
 		try {
 			String inquire = request.getParameter("inquire");
@@ -286,5 +286,28 @@ public class HomeController {
 		System.out.println("raiz_Register ENDED");
 
 		return "raiz_Register";
+	}
+	
+	/**
+	 * insertMember START
+	 */
+	@RequestMapping(value = "/insertMember.do")
+	@ResponseBody
+	public String insertMember (Locale locale, Model model) {
+
+		logger.debug("insertMember STARTED");
+		System.out.println("insertMember STARTED");
+
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+
+		logger.debug("insertMember ENDED");
+		System.out.println("insertMember ENDED");
+		
+		return "success";
 	}
 }
