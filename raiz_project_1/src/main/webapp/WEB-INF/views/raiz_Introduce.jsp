@@ -208,13 +208,13 @@
 							<table class="tg">
 								<tr>
 									<th class="tg-yw4l">
-										<p style="color:white; font-size:25px; font-weight: normal; margin-bottom: -1.5rem; margin-top: 0.5rem; margin-right: 1.5rem;">
+										<p style="color:white; font-size:25px; font-weight: normal; margin-bottom: -1.5rem; margin-top: 0.5rem; margin-right: 1.5rem; margin-left: 1rem; width: 100%;">
 											<cite><b>raíz corp.</b></cite>
 										</p>											
 									</th>
 									<th class="tg-yw4l" rowspan="2" style="padding-top: 1.7rem; color: white;">
 										<span>
-											<p class="small" style="margin-bottom: -0.5rem;text-align:left;">
+											<p class="small" style="margin-bottom: -0.5rem;text-align:left; width: 115%;">
 												서울시&nbsp;&nbsp;강남구&nbsp;&nbsp;도곡로2길&nbsp;&nbsp;29,&nbsp;&nbsp;303&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 												사업자등록번호&nbsp;&nbsp;564&nbsp;&nbsp;88&nbsp;&nbsp;00759&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											</p>
@@ -230,7 +230,7 @@
 								</tr>
 								<tr>
 									<td class="tg-yw4l">
-										<p style="color: white; font-size:15px; font-weight: normal; margin-bottom: -0.5rem;">주식회사 라이즈</p>
+										<p style="color: white; font-size:15px; font-weight: normal; margin-bottom: -0.5rem; margin-left: 1rem;">주식회사 라이즈</p>
 									</td>
 								</tr>
 							</table>

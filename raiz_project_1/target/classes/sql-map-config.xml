@@ -7,12 +7,12 @@
 	
 	<!-- Alias 설정 -->
 	<typeAliases>
-		<typeAlias alias="board" type="com.raizcorp.raiz.board.BoardVO"></typeAlias>
+		<typeAlias alias="member" type="com.raizcorp.raiz.member.MemberVO"></typeAlias>
 	</typeAliases>
 	
 	<!-- Sql Mapper 설정 -->
 	<mappers>
-		<mapper resource="mappings/board-mapping.xml" />
+		<mapper resource="mappings/member-mapping.xml" />
 	</mappers>
 	<!-- mapper 를 이용해 SQL 명령어들이 저장된 SQL 파일들을 등록할 수 있다. -->
 </configuration>

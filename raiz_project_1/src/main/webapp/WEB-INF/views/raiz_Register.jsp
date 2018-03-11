@@ -29,13 +29,39 @@
 	</head>
 	
 	<script type="text/javascript">
-// 		window.onload = function() {
 		$(document).ready(function(){
+			
 			$("#member_ok").click(function() {
+				var id = $("#Id").val();
+				var password = $("#Password").val();
+				var password2 = $("#Password2").val();
+				var name = $("#Name").val();
+				var phonenum = $("#PhoneNum").val();
+				var email = $("#Email").val();
+				
+				if (id == "" || id == null || password == "" || password == null || password2 == "" || password2 == null || name == "" || name == null ||
+						phonenum == "" || phonenum == null || email == "" || email == null) {
+					alert("항목을 모두 입력해주세요");
+					
+					return;
+				}
+				
+				if (password != password2) {
+					alert("비밀번호를 확인해주세요");
+					
+					return;
+				}
+				
 				$.ajax({
 					type : "POST",
 					dataType : "text",
 					data : {
+						id 			: id,
+						password 	: password,
+						password2 	: password2,
+						name 		: name,
+						phonenum 	: phonenum,
+						email 		: email
 					},
 					url : "insertMember.do",
 					success : function(a) {

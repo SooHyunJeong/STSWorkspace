@@ -2,22 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="BoardDAO">
+<mapper namespace="MemberDAO">
 
-	<resultMap id="boardResult" type="board">
+	<!-- <resultMap id="boardResult" type="board">
 		<id property="seq"		column="SEQ"></id>
 		<result property="title"	column="TITLE"></result>
 		<result property="writer"	column="WRITER"></result>
 		<result property="content"	column="CONTENT"></result>
 		<result property="regDate"	column="REGDATE"></result>
 		<result property="cnt"		column="CNT"></result>
-	</resultMap>
+	</resultMap> -->
 
-	<insert id="insertBoard">
-		insert into board (seq, title, writer, content) values ((select ifnull(max(seq) + 1, 100) from board a), #{title}, #{writer}, #{content})
+	<insert id="insertMember">
+		insert into members (id, password, password2, name, phonenum, email) values (#{id}, #{password}, #{password}, #{name}, #{phonenum}, #{email})
 	</insert>
 
-	<update id="updateBoard">
+	<!-- <update id="updateBoard">
 		update board set title = #{title}, content = #{content} 
 		where seq = #{seq}
 	</update>
@@ -36,5 +36,5 @@
 		where title 
 		like concat('%', #{searchKeyword}, '%') 
 		order by seq desc
-	</select>
+	</select> -->
 </mapper>

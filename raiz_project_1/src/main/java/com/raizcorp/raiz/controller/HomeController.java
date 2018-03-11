@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.raizcorp.raiz.board.BoardService;
+import com.raizcorp.raiz.member.MemberService;
+
 /**
  * Handles requests for the application home page.
  */
@@ -28,6 +31,8 @@ public class HomeController {
 	
 	@Autowired
 	private JavaMailSender mailSender;
+	@Autowired
+	private MemberService memberService;
 
 	/**
 	 * Ȩ Controller START
@@ -290,21 +295,24 @@ public class HomeController {
 	
 	/**
 	 * insertMember START
+	 * @throws Exception 
 	 */
 	@RequestMapping(value = "/insertMember.do")
 	@ResponseBody
-	public String insertMember (Locale locale, Model model) {
+	public String insertMember (HttpServletRequest request) throws Exception {
 
 		logger.debug("insertMember STARTED");
 		System.out.println("insertMember STARTED");
 
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		String password2 = request.getParameter("password2");
+		String name = request.getParameter("name");
+		String phonenum = request.getParameter("phonenum");
+		String email = request.getParameter("email");
 		
-		String formattedDate = dateFormat.format(date);
+		memberService.insertMember(id, password, password2, name, phonenum, email);
 		
-		model.addAttribute("serverTime", formattedDate );
-
 		logger.debug("insertMember ENDED");
 		System.out.println("insertMember ENDED");
 		
