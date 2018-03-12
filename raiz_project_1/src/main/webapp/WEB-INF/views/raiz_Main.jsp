@@ -45,7 +45,7 @@
 	</head>
 	
 	<script type="text/javascript">
-	
+		
 	</script>
 	
 	<!-- 
@@ -63,6 +63,9 @@
 		</div>
 		
 		<div id="layout" class="layout" style="overflow: hidden; background-color: rgb(0, 178, 156)">
+			<div style="margin-top: 6.5rem; text-align: right;">
+				<a style="padding-top: 0rem; padding-bottom: 0rem; padding-right: 6rem; color: white;" href="raiz_Register.do">회원가입</a>
+			</div>
 			<div>
 				<img alt="" style="width: 85%; margin-top: 3%; margin-bottom: 9%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
 			</div>
@@ -99,9 +102,9 @@
 							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Partnership.do">Partnership</a>
 							</li>
-							<li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
+							<!-- <li class="nav-item" style="margin-right: 1rem; margin-left: 1rem; font-size: 20px;">
 								<a style="padding-top: 0rem; padding-bottom: 0rem; text-align: right; background:none; color: white;" class="nav-link" href="raiz_Register.do">회원가입</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>

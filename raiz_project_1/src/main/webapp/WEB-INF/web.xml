@@ -60,7 +60,9 @@
   	하지만 Controller 객체들이 생성되기 전에 누군가 먼저 applicationContext.xml 파일을 읽어 비즈니스 컴포넌트들을 메모리에 생성해야한다.
   	이때 사용하는 클래스가 스프링에서 제공하는 ContextLoaderListener 다.  -->
   	<!-- ContextLoaderListener 클래스는 서블릿 컨테이너가 web.xml 파일을 읽어 구동될 때 자동으로 메모리에 생성된다. 
-  	즉, ContextLoaderListener는 클라이언트의 요청이 없어도 컨테이너가 구동될 때 미리 로딩 되는 객체다. -->	
+  	즉, ContextLoaderListener는 클라이언트의 요청이 없어도 컨테이너가 구동될 때 미리 로딩 되는 객체다. 
+  	ContextLoaderListener 객체는 <context-param>으로 등록된 contextConfigLocation 파라미터 정보를 읽어 스프링 컨테이너를 구동하도록 프로그램되어 있다.
+  	-->	
   	<listener>
   		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   	</listener>
