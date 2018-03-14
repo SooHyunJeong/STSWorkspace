@@ -30,45 +30,7 @@
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.validate.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.ajaxchimp.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
-		
-		<style type="text/css">
-			@font-face {
-				font-family : 'NanumGothic';
-				src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
-			}
-			
-			th {
-				font-weight : normal;
-			}
 
-			@media screen and (-webkit-min-device-pixel-ratio:0) {
-				li.nav-item {
-					font-family : NanumGothic;
-				}			
-			}
-
-			@media screen and (-webkit-min-device-pixel-ratio:0) {
-				main {
-					font-family : arial;
-				}
-			}
-
-			p {
-				color : rgb(23, 28, 97);
-			}
-			
-			.ad_1 {
-				font-size: 13px;
-			}
-			
-			.ad_2 {
-				font-size: 13px;
-			}
-			
-			.ad_3 {
-				font-size: 13px;
-			}
-		</style>
 	</head>
 	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 		<!-- Loader -->

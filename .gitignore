@@ -2,3 +2,9 @@
 .recommenders/
 RemoteSystemsTempFiles/
 Servers/
+
+
+BoardService/target/m2e-wtp/web-resources/META-INF/maven/com.springbook/biz/pom.properties
+bootstrap_morris/target/m2e-wtp/web-resources/META-INF/maven/com.raizcorp/morris/pom.properties
+raiz_m_project_1/target/m2e-wtp/web-resources/META-INF/maven/com.seoulmanager/mobile/pom.properties
+raiz_project_1/target/m2e-wtp/web-resources/META-INF/maven/com.raizcorp/morris/pom.properties

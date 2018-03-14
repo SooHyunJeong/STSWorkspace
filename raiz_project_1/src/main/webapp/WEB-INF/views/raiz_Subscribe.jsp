@@ -26,25 +26,7 @@
 		<script src="${pageContext.request.contextPath}/resources/js/interface.js"></script>
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="${pageContext.request.contextPath}/resources/js/jquery.battatech.excelexport.js"></script>
-		
-		<style type="text/css">
-			@font-face {
-				font-family : 'NanumGothic';
-				src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
-			}
 
-			@media screen and (-webkit-min-device-pixel-ratio:0) {
-				li.nav-item {
-					font-family : NanumGothic;
-				}			
-			}
-
-			@media screen and (-webkit-min-device-pixel-ratio:0) {
-				main {
-					font-family : arial;
-				}
-			}
-		</style>
 	</head>
 	
 	<script type="text/javascript">

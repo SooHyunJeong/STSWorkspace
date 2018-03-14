@@ -968,6 +968,58 @@ img.mfp-img{
   }
 }
 
+<!-- sh_style.css -->
 
+@font-face {
+	font-family : 'NanumGothic';
+	src : url(${pageContext.request.contextPath}/resources/fonts/NanumGothicExtraBold.ttf) format('turetype');
+}
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	li.nav-item {
+		font-family : NanumGothic;
+	}			
+}
 
+	<!-- 서비스 소개 page 관련 css -->
+	
+table {
+	border-collapse : collapse; 
+}
+
+video { 
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     overflow: hidden;
+}
+
+	<!-- 서비스 소개 page 관련 css END -->
+	
+	<!-- post page 관련 css -->
+	
+th {
+	font-weight : normal;
+}
+
+p {
+	color : rgb(23, 28, 97);
+}
+
+.ad_1 {
+	font-size: 13px;
+}
+
+.ad_2 {
+	font-size: 13px;
+}
+
+.ad_3 {
+	font-size: 13px;
+}
+
+	<!-- post page 관련 css END -->
