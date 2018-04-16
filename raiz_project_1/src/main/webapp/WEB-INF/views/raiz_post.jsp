@@ -214,17 +214,17 @@
 								<table class="tg" style="margin-left: 1rem;">
 									<tr>
 										<th class="tg-yw4l" style="border-bottom: 0.25px solid #dae0e5;">
-											<p style="font-size: 15px; min-width: 110px;">LATEST NEWS</p>
+											<p class="news" style="font-size: 15px; min-width: 110px;">LATEST NEWS</p>
 										</th>
 									</tr>
 									<tr>
 										<td class="tg-yw4l">
-											<p style="font-size: 13px; min-width: 270px; margin-top: 1rem;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;인스타그램&nbsp;open</p>
-											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;블로그&nbsp;open</p>
-											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.02</span>&nbsp;서울매니저&nbsp;공식&nbsp;홈페이지&nbsp;open</p>
-											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.02.01</span>&nbsp;서울매니저&nbsp;facebook&nbsp;페이지&nbsp;open</p>
-											<p style="font-size: 13px;"><span style="font-weight: bold;">2018.01.02</span>&nbsp;서울매니저&nbsp;정식&nbsp;서비스&nbsp;런칭</p>
-											<p style="font-size: 13px;"><span style="font-weight: bold;">2017.11.12</span>&nbsp;서울매니저&nbsp;beta&nbsp;서비스&nbsp;release</p>
+											<p class="news" style="font-size: 13px; min-width: 270px; margin-top: 1rem;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;인스타그램&nbsp;open</p>
+											<p class="news" style="font-size: 13px;"><span style="font-weight: bold;">2018.02.04</span>&nbsp;서울매니저&nbsp;블로그&nbsp;open</p>
+											<p class="news" style="font-size: 13px;"><span style="font-weight: bold;">2018.02.02</span>&nbsp;서울매니저&nbsp;공식&nbsp;홈페이지&nbsp;open</p>
+											<p class="news" style="font-size: 13px;"><span style="font-weight: bold;">2018.02.01</span>&nbsp;서울매니저&nbsp;facebook&nbsp;페이지&nbsp;open</p>
+											<p class="news" style="font-size: 13px;"><span style="font-weight: bold;">2018.01.02</span>&nbsp;서울매니저&nbsp;정식&nbsp;서비스&nbsp;런칭</p>
+											<p class="news" style="font-size: 13px;"><span style="font-weight: bold;">2017.11.12</span>&nbsp;서울매니저&nbsp;beta&nbsp;서비스&nbsp;release</p>
 										</td>
 									</tr>
 								</table>

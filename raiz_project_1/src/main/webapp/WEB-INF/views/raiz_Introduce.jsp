@@ -120,16 +120,16 @@
 			<!-- 2SM_service2_1 - 서울매니저의 서비스 부분 -->
 
 			<main class="masthead masked">
-				<div class="section opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; width: 85%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service2_1.png">
+				<div class="section opener rel-1" style="background-color: white; height: 85vh; padding: 0;">
+					<img alt="" style="overflow:hidden; width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service2_1.png">
 				</div>
 			</main>
 			
 			<!-- 2SM_service4_1 - 서울매니저의 철저함 부분 -->
 			
 			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service4_1.png">
+				<div class="opener rel-1" style="background-color: white; height: 60vh; padding-bottom: 8rem;">
+					<img alt="" style="overflow:hidden; width: 25%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service4_1.png">
 				</div>
 			</main>
 			
@@ -137,7 +137,7 @@
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price1_1.png">
+					<img alt="" style="overflow:hidden; width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price1_1.png">
 				</div>
 			</main>
 			
@@ -145,7 +145,7 @@
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price2_1.png">
+					<img alt="" style="overflow:hidden; width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price2_1.png">
 				</div>
 			</main>
 			
@@ -153,7 +153,7 @@
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 72%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price3_1.png">
+					<img alt="" style="overflow:hidden; width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service_price3_1.png">
 				</div>
 			</main>
 			
@@ -161,7 +161,7 @@
 			
 			<main class="masthead masked">
 				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; width: 47%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
+					<img alt="" style="overflow:hidden; width: 35%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/2SM_service3_1.png">
 				</div>
 			</main>
 			

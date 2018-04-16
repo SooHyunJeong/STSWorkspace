@@ -84,16 +84,16 @@
 			<!-- 3SM_order1_1 - 서비스 신청 -->
 			
 			<main class="masthead masked">
-				<div class="opener rel-1" style="background-color: rgb(0, 178, 156);">
-					<img alt="" style="overflow:hidden; width: 58%; margin-top: 1rem; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/3SM_order1_1.png">
+				<div class="opener rel-1" style="background-color: rgb(0, 178, 156); padding: 8rem 0 4rem 0;">
+					<img alt="" style="overflow:hidden; width: 42%; margin-top: 1rem; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/3SM_order1_1.png">
 				</div>
 			</main>
 
 			<!-- 3SM_order3_1 - 이용약관 -->
 
 			<main id="raiz_terms" class="masthead masked">
-				<div class="opener rel-1" style="background-color: white;">
-					<img alt="" style="overflow:hidden; width: 90%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/3SM_order3_terms_1.png">
+				<div class="opener rel-1" style="background-color: white; height: 83vh;">
+					<img alt="" style="overflow:hidden; width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/3SM_order3_terms_1.png">
 				</div>
 			</main>
 			

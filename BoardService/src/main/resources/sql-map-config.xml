@@ -7,7 +7,7 @@
 	
 	<!-- Alias 설정 -->
 	<typeAliases>
-		<typeAlias alias="board" type="com.springbook.biz.BoardVO"></typeAlias>
+		<typeAlias alias="board" type="com.springbook.biz.board.BoardVO"></typeAlias>
 	</typeAliases>
 	
 	<!-- Sql Mapper 설정 -->

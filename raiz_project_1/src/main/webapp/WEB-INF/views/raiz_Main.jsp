@@ -48,8 +48,9 @@
 			<div style="margin-top: 6.5rem; text-align: right;">
 				<a style="padding-top: 0rem; padding-bottom: 0rem; padding-right: 6rem; color: white;" href="raiz_Register.do">회원가입</a>
 			</div>
+
 			<div>
-				<img alt="" style="width: 85%; margin-top: 3%; margin-bottom: 9%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
+				<img alt="" style="width: 60%; margin-bottom: 12.5%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home1_1.png">
 			</div>
 
 			<!-- Header -->
@@ -97,10 +98,10 @@
 			<main id="home" class="masthead masked">
 				<div class="opener rel-1" style="height: auto; background-color: white; padding: 0;">
 					<p style="margin-top: 9%; margin-bottom: 15%;">
-						<img alt="" style="width: 80%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home2_1.png">
+						<img alt="" style="width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home2_1.png">
 					</p>
 					<p style="margin-bottom: 8%;">
-						<img alt="" style="width: 80%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
+						<img alt="" style="width: 60%; margin-left: auto; margin-right: auto; display: block;" src="${pageContext.request.contextPath}/resources/img/1SM_home3_1.png">					
 					</p>
 					
 					<div style="width: 100%; background-color: rgb(0, 178, 156); padding-bottom: 2rem;">
