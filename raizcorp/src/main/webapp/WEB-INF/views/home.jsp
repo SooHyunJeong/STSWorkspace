@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
-        <c:set var="contextPath" value="${pageContext.request.contextPath}"/>        
+        <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
         <title>raíz corp.</title>
 
