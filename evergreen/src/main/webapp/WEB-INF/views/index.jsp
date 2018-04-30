@@ -65,6 +65,14 @@
     	$(document).ready(function() {
     		$("img[usemap]").rwdImageMaps();
     	})
+    	
+    	function openSideMenu() {
+    	  document.getElementById('side-menu').style.width = '250px';
+    	}
+
+    	function closeSideMenu() {
+    	  document.getElementById('side-menu').style.width = '0';
+    	}
     </script>
     <body id="page_top" class="body-sunshine">
 
@@ -73,10 +81,17 @@
             <!-- Start Navigation -->
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top hornbill-navbar">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="#page_top">EVERGREEN</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span>
-                    </button>
+                    <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
+
+                	<span class="open-slide">
+						<a href="#" onclick="openSideMenu()">
+							<svg width="30" height="30">
+								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
+								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
+								<path d="M0,23, 30,23" stroke="#fff" stroke-width="5" />
+							</svg>
+						</a>
+					</span>
 
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
@@ -84,10 +99,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product.do">Product</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company.do">Company</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -95,7 +110,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.do">Contact</a>
                             </li>
-                            <li class="nav-item-last"></li>
                         </ul>
                     </div>
                 </div>
@@ -104,6 +118,28 @@
         </header>
         <!-- END HEADER -->
 
+		<!-- Side Menu Start -->
+        <div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product_coating_solution.do">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="company_ceo_message.do">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="research_development.do">R&D</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.do">Contact</a>
+                </li>
+            </ul>
+		</div>
+		<!-- End of Side Menu -->
 
         <!-- MAIN SECTION START -->
         <main class="main-section">

@@ -44,6 +44,15 @@
     </head>
     
     <style>
+    	#mainNav>div {
+			width: 75%;
+		}
+		
+		.navbar-brand {
+			width: 140px !important;
+			margin-right: 0;
+		}
+
     	.col-lg-4 {
 			flex: 0 0 100%;
 			max-width: 100%;	
@@ -53,6 +62,7 @@
 			.navbar {
 				background: rgb(0, 125, 140) !important;
 				padding: 13px 0;
+				z-index: 1;
 			}
 			
 			.sup {
@@ -114,14 +124,33 @@
 					margin-top: 82px;
 					background: rgb(237, 237, 237);
 				}
+				
+				.sub-menu>div {
+					display: table;
+					margin: 0 auto;
+				}
+				
+				.hornbill-nav {
+					background-color: rgb(0, 125, 140) !important;
+					box-shadow: none !important;
+				}
+				
+				.dropdown-product-1 {
+					display: none;
+				}
+				
+				.dropdown-product-2 {
+					display: block;
+				}
 	
 				.dropbtn {
-				    background-color: #4CAF50;
-				    color: black;
+				    background: rgb(237, 237, 237);
+				    color: rgb(0, 125, 140);
 				    padding: 16px 70px;
 				    font-size: 17px;
 				    border: none;
 				    cursor: pointer;
+				    border-radius: 0;
 				}
 				
 				.dropdown {
@@ -132,19 +161,20 @@
 				.dropdown-content {
 				    display: none;
 				    position: absolute;
-				    right: 50px;
 				    background-color: #f9f9f9;
 				    min-width: 160px;
-				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 				    z-index: 1;
+				    top: 58px;
+				    right: 21px;
 				}
 				
 				.dropdown-content a {
-				    color: black;
+				    color: #787878;
 				    padding: 12px 16px;
 				    text-decoration: none;
 				    display: block;
-				    font-size: 15px;
+				    font-size: 14px;
+				    text-align: center;
 				}
 				
 				.dropdown-content a:hover {background-color: #f1f1f1}
@@ -154,8 +184,42 @@
 				}
 				
 				.dropdown:hover .dropbtn {
-				    background-color: #3e8e41;
+				    background-color: rgb(237, 237, 237);
 				}
+				
+					.dropdown-submenu {
+					    position: relative;
+					}
+					
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					    -webkit-border-radius: 0 6px 6px 6px;
+					    -moz-border-radius: 0 6px 6px;
+					    border-radius: 0 6px 6px 6px;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
 			/* dropdown 관련 소스 End */
 		
 		/* Footer Section */
@@ -178,7 +242,67 @@
 			margin-bottom: 0;
 		}
 		
+		/* Side Menu */
+		.mainNav .open-slide a {
+		  float: right;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		.mainNav a:hover {
+		  background: #ddd;
+		  color: #000;
+		}
+		
+		.side-nav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 5;
+		  top: 0;
+		  right: 0;
+		  background: #111;
+		  opacity: 0.9;
+		  overflow: hidden;
+		  padding-top: 60px;
+		  transition: 0.5s;
+		  display: block;
+		}
+		
+		.side-nav ul li a {
+		  padding: 10px 10px 10px 30px;
+		  text-decoration: none;
+		  font-size: 22px;
+		  color: #ccc;
+		  display: block;
+		  transition: 0.3s;
+		}
+		
+		.side-nav ul li a:hover {
+		  color: #fff;
+		}
+		
+		.side-nav .btn-close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  font-size: 36px;
+		  color: #ccc;
+		}
+		
 		@media all and (min-width: 576px) {
+			#mainNav>div {
+				width: 71%;
+			}
+			
+			.navbar-brand {
+				width: 168px !important;
+				margin-right: 1rem;
+			}
+
 			.col-lg-4 {
 				flex: 0 0 50%;
 				max-width: 50%;	
@@ -188,6 +312,7 @@
 				.navbar {
 					background: rgb(0, 125, 140) !important;
 					padding: 13px 0;
+					z-index: 1;
 				}
 				
 				.sup {
@@ -207,14 +332,33 @@
 						margin-top: 72px;
 						background: rgb(237, 237, 237);
 					}
+					
+					.sub-menu>div {
+						display: table;
+						margin: 0 auto;
+					}
+					
+					.hornbill-nav {
+						background-color: rgb(0, 125, 140) !important;
+						box-shadow: none !important;
+					}
+					
+					.dropdown-product-1 {
+						display: none;
+					}
+					
+					.dropdown-product-2 {
+						display: block;
+					}
 		
 					.dropbtn {
-					    background-color: #4CAF50;
-					    color: black;
+					    background: rgb(237, 237, 237);
+					    color: rgb(0, 125, 140);
 					    padding: 16px 70px;
 					    font-size: 17px;
 					    border: none;
 					    cursor: pointer;
+					    border-radisu: 0;
 					}
 					
 					.dropdown {
@@ -225,19 +369,20 @@
 					.dropdown-content {
 					    display: none;
 					    position: absolute;
-					    right: 50px;
 					    background-color: #f9f9f9;
 					    min-width: 160px;
-					    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 					    z-index: 1;
+					    top: 58px;
+				    	right: 21px;
 					}
 					
 					.dropdown-content a {
-					    color: black;
+					    color: #787878;
 					    padding: 12px 16px;
 					    text-decoration: none;
 					    display: block;
-					    font-size: 15px;
+					    font-size: 14px;
+				    	text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -247,8 +392,42 @@
 					}
 					
 					.dropdown:hover .dropbtn {
-					    background-color: #3e8e41;
+					    background-color: rgb(237, 237, 237);
 					}
+
+						.dropdown-submenu {
+						    position: relative;
+						}
+						
+						.dropdown-submenu>.dropdown-menu {
+						    top: 0;
+						    left: 100%;
+						    margin-top: -6px;
+						    margin-left: -1px;
+						    -webkit-border-radius: 0 6px 6px 6px;
+						    -moz-border-radius: 0 6px 6px;
+						    border-radius: 0 6px 6px 6px;
+						}
+						
+						.dropdown-submenu:hover>.dropdown-menu {
+						    display: block;
+						}
+						
+						.dropdown-submenu:hover>a:after {
+						    border-left-color: #fff;
+						}
+						
+						.dropdown-submenu.pull-left {
+						    float: none;
+						}
+						
+						.dropdown-submenu.pull-left>.dropdown-menu {
+						    left: -100%;
+						    margin-left: 10px;
+						    -webkit-border-radius: 6px 0 6px 6px;
+						    -moz-border-radius: 6px 0 6px 6px;
+						    border-radius: 6px 0 6px 6px;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
@@ -271,7 +450,6 @@
 					
 					.banner-section-div-1 {
 						width: 71%;
-						margin: 8rem auto 0 auto;
 						display: block;
 						padding-right: 15px;
 						padding-left: 15px;
@@ -293,7 +471,7 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
-			
+
 			/* Footer Section */
 			.footer-section {
 				background: rgb(0, 125, 140);
@@ -313,16 +491,67 @@
 			.footer-p-2 {
 				margin-bottom: 0;
 			}
+			
+			/* Side Menu */
+			.mainNav .open-slide a {
+			  float: right;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			
+			.mainNav a:hover {
+			  background: #ddd;
+			  color: #000;
+			}
+			
+			.side-nav {
+			  height: 100%;
+			  width: 0;
+			  position: fixed;
+			  z-index: 5;
+			  top: 0;
+			  right: 0;
+			  background: #111;
+			  opacity: 0.9;
+			  overflow: hidden;
+			  padding-top: 60px;
+			  transition: 0.5s;
+			  display: block;
+			}
+			
+			.side-nav ul li a {
+			  padding: 10px 10px 10px 30px;
+			  text-decoration: none;
+			  font-size: 22px;
+			  color: #ccc;
+			  display: block;
+			  transition: 0.3s;
+			}
+			
+			.side-nav ul li a:hover {
+			  color: #fff;
+			}
+			
+			.side-nav .btn-close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  font-size: 36px;
+			  color: #ccc;
+			}
 		}
 		
 		@media all and (min-width: 768px) {
-			.navbar-toggler {
-				padding: .25rem 7.95rem .25rem .75rem;
+			#mainNav>div {
+				width: 71%;
 			}
 			
-			.navbar-toggler .navbar-toggler-icon {
-				font-size: 28px;
-				margin-top: 4px;
+			.navbar-brand {
+				width: 168px !important;;
+				margin-right: 1rem;
 			}
 
 			.col-lg-4 {
@@ -331,9 +560,15 @@
 			}
 			
 			/* Header Section */
+				.nav-link {
+					padding-right: 0;
+					padding-left: 4rem;
+				}
+
 				.navbar {
 					background: rgb(0, 125, 140) !important;
 					padding: 13px 0;
+					z-index: 1;
 				}
 				
 				.sup {
@@ -383,7 +618,7 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
-				
+
 				/* dropdown 관련 소스 Start */
 					.header-section {
 						position: relative;
@@ -396,6 +631,11 @@
 						background: rgb(237, 237, 237);
 					}
 					
+					.sub-menu>div {
+						display: table;
+						margin: 0 auto;
+					}
+					
 					.dropdown-product-1 {
 						display: none;
 					}
@@ -405,12 +645,13 @@
 					}
 		
 					.dropbtn {
-					    background-color: #4CAF50;
-					    color: black;
+					    background: rgb(237, 237, 237);
+					    color: rgb(0, 125, 140);
 					    padding: 16px 70px;
 					    font-size: 17px;
 					    border: none;
 					    cursor: pointer;
+					    border-radius: 0;
 					}
 					
 					.dropdown {
@@ -421,19 +662,20 @@
 					.dropdown-content {
 					    display: none;
 					    position: absolute;
-					    right: 50px;
 					    background-color: #f9f9f9;
 					    min-width: 160px;
-					    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 					    z-index: 1;
+					    top: 58px;
+				    	right: 21px;
 					}
 					
 					.dropdown-content a {
-					    color: black;
+					    color: #787878;
 					    padding: 12px 16px;
 					    text-decoration: none;
 					    display: block;
-					    font-size: 15px;
+					    font-size: 14px;
+				    	text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -443,7 +685,7 @@
 					}
 					
 					.dropdown:hover .dropbtn {
-					    background-color: #3e8e41;
+					    background-color: rgb(237, 237, 237);
 					}
 					
 						
@@ -463,20 +705,6 @@
 						
 						.dropdown-submenu:hover>.dropdown-menu {
 						    display: block;
-						}
-						
-						.dropdown-submenu>a:after {
-						    display: block;
-						    content: " ";
-						    float: right;
-						    width: 0;
-						    height: 0;
-						    border-color: transparent;
-						    border-style: solid;
-						    border-width: 5px 0 5px 5px;
-						    border-left-color: #ccc;
-						    margin-top: 5px;
-						    margin-right: -10px;
 						}
 						
 						.dropdown-submenu:hover>a:after {
@@ -515,15 +743,67 @@
 			.footer-p-2 {
 				margin-bottom: 0;
 			}
+
+			/* Side Menu */
+			.mainNav .open-slide a {
+			  float: right;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			
+			.mainNav a:hover {
+			  background: #ddd;
+			  color: #000;
+			}
+			
+			.side-nav {
+			  height: 100%;
+			  width: 0;
+			  position: fixed;
+			  z-index: 5;
+			  top: 0;
+			  right: 0;
+			  background: #111;
+			  opacity: 0.9;
+			  overflow: hidden;
+			  padding-top: 60px;
+			  transition: 0.5s;
+			  display: block;
+			}
+			
+			.side-nav ul li a {
+			  padding: 10px 10px 10px 30px;
+			  text-decoration: none;
+			  font-size: 22px;
+			  color: #ccc;
+			  display: block;
+			  transition: 0.3s;
+			}
+			
+			.side-nav ul li a:hover {
+			  color: #fff;
+			}
+			
+			.side-nav .btn-close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  font-size: 36px;
+			  color: #ccc;
+			}
 		}
 		
 		@media all and (min-width: 992px) {
-			.navbar-brand {
-				margin-left: 17rem;
+			#mainNav>div {
+				width: 71%;
 			}
-
-			.nav-item-last {
-				margin-right: 15rem;
+			
+			.navbar-brand {
+				width: 195px !important;;
+				margin-right: 1rem;
 			}
 
 			.col-lg-4 {
@@ -532,74 +812,6 @@
 			}
 			
 			/* Header Section */
-				/* dropdown 관련 소스 Start */
-					.header-section {
-						position: relative;
-						z-index: 2;
-					}
-		
-					.dropbtn {
-					    background-color: #4CAF50;
-					    color: black;
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					}
-					
-					.sub-menu {
-						display: block;
-						margin-top: 92px;
-						background: rgb(237, 237, 237);
-					}
-					
-					.dropdown-product-1 {
-						display: table;
-					}
-					
-					.dropdown-product-2 {
-						display: none;
-					}
-					
-					.dropdown {
-					    position: relative;
-					    display: inline-block;
-					}
-					
-					.dropdown-content {
-					    display: none;
-					    position: absolute;
-					    right: 50px;
-					    background-color: #f9f9f9;
-					    min-width: 160px;
-					    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-					    z-index: 1;
-					}
-					
-					.dropdown-content a {
-					    color: black;
-					    padding: 12px 16px;
-					    text-decoration: none;
-					    display: block;
-					    font-size: 15px;
-					}
-					
-					.dropdown-content a:hover {background-color: #f1f1f1}
-					
-					.dropdown:hover .dropdown-content {
-					    display: block;
-					}
-					
-					.dropdown:hover .dropbtn {
-					    background-color: #3e8e41;
-					}
-				/* dropdown 관련 소스 End */
-				
-				.sup {
-					font-size: 100%;
-					font-weight: normal;
-					top: 0;
-				}
 
 				/* Banner Section Start */
 					.banner-section-div {
@@ -642,7 +854,95 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
-			
+				
+				/* dropdown 관련 소스 Start */
+					.nav-link {
+						padding-right: 0 !important;
+						padding-left: 2rem !important;
+					}
+
+					.header-section {
+						position: relative;
+						z-index: 2;
+					}
+					
+					.dropbtn {
+					    background: rgb(237, 237, 237);
+					    color: rgb(0, 125, 140);
+					    padding: 16px 70px;
+					    font-size: 17px;
+					    border: none;
+					    cursor: pointer;
+					    border-radius: 0;
+					}
+					
+					.sub-menu {
+						display: block;
+						margin-top: 92px;
+						background: rgb(237, 237, 237);
+					}
+					
+					.sub-menu>div {
+						display: table;
+						margin: 0 auto;
+					}
+					
+					.dropdown-product-1 {
+						display: table;
+					}
+					
+					.dropdown-product-2 {
+						display: none;
+					}
+					
+					.dropdown {
+					    position: relative;
+					    display: inline-block;
+					}
+					
+					.dropdown-content {
+					    display: none;
+					    position: absolute;
+					    background-color: #f9f9f9;
+					    min-width: 160px;
+					    z-index: 1;
+					    top: 58px;
+					}
+					
+					.dropbtn-sub-1 {
+						right: 25px;
+					}
+					
+					.dropbtn-sub-2 {
+						right: 32px;
+					}
+					
+					.dropdown-content a {
+					    color: #787878;
+					    padding: 12px 16px;
+					    text-decoration: none;
+					    display: block;
+					    font-size: 14px;
+				    	text-align: center;
+					}
+					
+					.dropdown-content a:hover {background-color: #f1f1f1}
+					
+					.dropdown:hover .dropdown-content {
+					    display: block;
+					}
+					
+					.dropdown:hover .dropbtn {
+					    background-color: rgb(237, 237, 237);
+					}
+				/* dropdown 관련 소스 End */
+				
+				.sup {
+					font-size: 100%;
+					font-weight: normal;
+					top: 0;
+				}
+
 			.navbar {
 				background: rgb(0, 125, 140) !important;
 				padding: 13px 0;
@@ -667,15 +967,25 @@
 			.footer-p-2 {
 				margin-bottom: 0;
 			}
+			
+			/* Side Menu */
+			.open-slide {
+				display: none;
+			}
+			
+			.side-nav {
+				display: none;
+			}
 		}
 		
 		@media all and (min-width: 1200px) {
-			.navbar-brand {
-				margin-left: 17rem;
+			#mainNav>div {
+				width: 71%;
 			}
-
-			.nav-item-last {
-				margin-right: 15rem;
+			
+			.navbar-brand {
+				width: 195px !important;;
+				margin-right: 1rem;
 			}
 
 			.col-lg-4 {
@@ -684,76 +994,7 @@
 			}
 			
 			/* Header Section */
-				/* dropdown 관련 소스 Start */
-					.header-section {
-						position: relative;
-						z-index: 2;
-					}
-					
-					.sub-menu {
-						display: block;
-						margin-top: 92px;
-						background: rgb(237, 237, 237);
-					}
-					
-					.dropdown-product-1 {
-						display: table;
-					}
-					
-					.dropdown-product-2 {
-						display: none;
-					}
-		
-					.dropbtn {
-					    background-color: #4CAF50;
-					    color: black;
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					}
-					
-					.dropdown {
-					    position: relative;
-					    display: inline-block;
-					}
-					
-					.dropdown-content {
-					    display: none;
-					    position: absolute;
-					    right: 30px;
-					    background-color: #f9f9f9;
-					    min-width: 160px;
-					    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-					    z-index: 1;
-					}
-					
-					.dropdown-content a {
-					    color: black;
-					    padding: 12px 16px;
-					    text-decoration: none;
-					    display: block;
-					    font-size: 15px;
-					}
-					
-					.dropdown-content a:hover {background-color: #f1f1f1}
-					
-					.dropdown:hover .dropdown-content {
-					    display: block;
-					}
-					
-					.dropdown:hover .dropbtn {
-					    background-color: #3e8e41;
-					}
-					
-				/* dropdown 관련 소스 End */
-				
-				.sup {
-					font-size: 100%;
-					font-weight: normal;
-					top: 0;
-				}
-				
+
 				/* Banner Section Start */
 					.banner-section-div {
 						width: 100%;
@@ -795,6 +1036,95 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+
+				/* dropdown 관련 소스 Start */
+					.nav-link {
+						padding-right: 0 !important;
+						padding-left: 4rem !important;
+					}
+
+					.header-section {
+						position: relative;
+						z-index: 2;
+					}
+					
+					.sub-menu {
+						display: block;
+						margin-top: 92px;
+						background: rgb(237, 237, 237);
+					}
+					
+					.sub-menu>div {
+						display: table;
+						margin: 0 auto;
+					}
+					
+					.dropdown-product-1 {
+						display: table;
+					}
+					
+					.dropdown-product-2 {
+						display: none;
+					}
+		
+					.dropbtn {
+					    background: rgb(237, 237, 237);
+					    color: rgb(0, 125, 140);
+					    padding: 16px 70px;
+					    font-size: 17px;
+					    border: none;
+					    cursor: pointer;
+					    border-radius: 0;
+					}
+					
+					.dropdown {
+					    position: relative;
+					    display: inline-block;
+					}
+					
+					.dropdown-content {
+					    display: none;
+					    position: absolute;
+					    background-color: #f9f9f9;
+					    min-width: 160px;
+					    z-index: 1;
+					    top: 58px;
+					}
+					
+					.dropbtn-sub-1 {
+						right: 25px;
+					}
+					
+					.dropbtn-sub-2 {
+						right: 32px;
+					}
+					
+					.dropdown-content a {
+					    color: #787878;
+					    padding: 12px 16px;
+					    text-decoration: none;
+					    display: block;
+					    font-size: 14px;
+				    	text-align: center;
+					}
+					
+					.dropdown-content a:hover {background-color: #f1f1f1}
+					
+					.dropdown:hover .dropdown-content {
+					    display: block;
+					}
+					
+					.dropdown:hover .dropbtn {
+					    background-color: rgb(237, 237, 237);
+					}
+					
+				/* dropdown 관련 소스 End */
+				
+				.sup {
+					font-size: 100%;
+					font-weight: normal;
+					top: 0;
+				}
 			
 			.navbar {
 				background: rgb(0, 125, 140) !important;
@@ -820,8 +1150,26 @@
 			.footer-p-2 {
 				margin-bottom: 0;
 			}
+			
+			/* Side Menu */
+			.open-slide {
+				display: none;
+			}
+			
+			.side-nav {
+				display: none;
+			}
 		}
     </style>
+    <script>
+    	function openSideMenu() {
+    	  document.getElementById('side-menu').style.width = '250px';
+    	}
+
+    	function closeSideMenu() {
+    	  document.getElementById('side-menu').style.width = '0';
+    	}
+    </script>
     <body id="page_top" class="body-sunshine">
 
         <!-- HEADER START -->
@@ -829,22 +1177,28 @@
             <!-- Start Navigation -->
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top hornbill-navbar">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="#page_top">EVERGREEN</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span>
-                    </button>
+                    <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
+
+                	<span class="open-slide">
+						<a href="#" onclick="openSideMenu()">
+							<svg width="30" height="30">
+								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
+								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
+								<path d="M0,23, 30,23" stroke="#fff" stroke-width="5" />
+							</svg>
+						</a>
+					</span>
 
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            
                             <li class="nav-item dropdown-product-1">
-                                <a class="nav-link" href="product.do">Product</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item dropdown-product-2 dropdown-submenu">
-                                <a tabindex="-1" class="nav-link" href="product.do">Product</a>
+                                <a tabindex="-1" class="nav-link" href="product_coating_solution.do">Product</a>
                                 <ul class="dropdown-menu">
                                 	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
                                 	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
@@ -852,7 +1206,7 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="company.do">Company</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -860,43 +1214,75 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.do">Contact</a>
                             </li>
-                            <li class="nav-item-last"></li>
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
             <!-- End of Navigation -->
+
+			<!-- Side Menu Start -->
+            <div id="side-menu" class="side-nav">
+				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown-product-1">
+                        <a href="product_coating_solution.do">Product</a>
+                    </li>
+                    <li class="nav-item dropdown-product-2 dropdown-submenu">
+                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="research_development.do">R&D</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.do">Contact</a>
+                    </li>
+                </ul>
+			</div>
+			<!-- End of Side Menu -->
             
-            <!-- Sub Menu Section Start -->
+            <!-- Sub Menu Start -->
         	<div class="fadeIn sub-menu">
-        		<div style="display: table; margin: 0 auto;">
+        		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" style="border-radius: 0; background: rgb(237, 237, 237); color: rgb(0, 125, 140);">PROCAM<sup class="sup">®</sup></button>
-	                   	<div class="dropdown-content" style="top: 58px; right: 21px;">
-						    <a onclick="tab_edu2()">Coating solution</a>
-						    <a onclick="tab_edu3()">Functional Monomer</a>
-						    <a onclick="tab_edu3()">Hydrophobic</a>
+	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">®</sup></button>
+	                   	<div class="dropdown-content dropbtn-sub-1">
+						    <a href="product_coating_solution.do">Coating Solution</a>
+						    <a href="product_monomer.do">Functional Monomer</a>
+						    <a href="product_hydrophobic.do">Hydrophobic</a>
 	                   	</div>	                
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" style="border-radius: 0; background: rgb(237, 237, 237); color: rgb(0, 125, 140);">EVERSEAL<sup class="sup">®</sup></button>
-	                   	<div class="dropdown-content" style="top: 58px; right: 32px;">
-						    <a onclick="tab_edu2()">Impregnation</a>
-						    <a onclick="tab_edu3()">Organic Sealant</a>
+	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<div class="dropdown-content dropbtn-sub-2">
+						    <a href="product_impregnation.do">Impregnation</a>
+						    <a href="product_organic_sealant.do">Organic Sealant</a>
+						    <a href="product_others.do">Others</a>
 	                   	</div>	                
 	                </div>
 	                        		
         		</div>
 		    </div>
-		    <!-- Sub Menu Section End -->
+		    <!-- End of Sub Menu-->
         </header>
         <!-- END HEADER -->
 
         <!-- MAIN SECTION START -->
         <main class="main-section">
-            
-            <!-- Banner Section Start -->
+
+        	<!-- Banner Section Start -->
             <div class="banner-section banner-ten">
 				<div class="container">
                     <div class="row">
@@ -919,24 +1305,22 @@
                 </div>
             </div>
             <!-- END of Banner Section -->
-
-            <!-- Hard Coating Solution Section Start -->
-            <div id="hard-coating" class="hard-coating-section p-top-50 p-bot-50">
+            
+            <!-- Monomer Image Section Start -->
+            <div id="hard-coating" class="monomer-image-section p-top-50 p-bot-50">
                 <div class="container">
 
                     <section class="row" style="margin: 0 auto; width: 71%;">
                         <div class="fadeIn">
-                        	<p class="myriad-bold" style="font-size: 2.3rem; color: rgb(0, 125, 140); margin-bottom: 0;">PROCAM<sup class="sup">®</sup></p>
-                        	<p style="color: rgb(0, 125, 140);">Hard Coating Solution</p>
                             <div>
-                                <img src="${contextPath}/resources/img/product/procam_product_hardcoating.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/monomer/monomer_main.png" alt="img" class="img-fluid ml-auto d-block">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Hard Coating Solution Section -->
+            <!-- END of Monomer Image Section -->			
             
             <!-- Classification Section Start -->
             <div id="classification" class="p-top-50 p-bot-50">
@@ -951,18 +1335,18 @@
 	                                		<h3 class="classification-header" style="color: black; margin-bottom: 3rem;">Classification</h3>
 	                                	</th>
                                 	</tr>
-                                	<tr style="text-align: center; margin">
-                                		<td>
-                                			Index matching hard coating
+                                	<tr style="text-align: center;">
+                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
+                                			Photochromic Gray
                                 		</td>
-                                		<td>
-                                			Primer & Primer free
+                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
+                                			Photochromic Brown
                                 		</td>
-                                		<td>
-                                			Tintable & Non-Tintable
+                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
+                                			Photochromic Orange-Gray
                                 		</td>
-                                		<td>
-                                			Thermal & UV cure
+                                		<td style="width: 33%;">
+                                			Photochromic Gray for 1.60 Reflective Index
                                 		</td>
                                 	</tr>
                                 </table>
@@ -974,7 +1358,7 @@
             </div>
             <!-- END of Classification Section -->
             
-            <!-- Coating Features Section Start -->
+            <!-- Features Section Start -->
             <div id="coating-features" class="p-top-50 p-bot-50">
                 <div class="container">
 
@@ -984,27 +1368,18 @@
                                 <table style="width: 100%;">
                                 	<tr>
 	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header" style="color: black; margin-bottom: 3rem;">Coating Features</h3>
+	                                		<h3 class="coating-features-header" style="color: black;">Features</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr style="text-align: center;">
                                 		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
+                                			<img src="${contextPath}/resources/img/monomer/monomer_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
                                 		</td>
                                 		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
+                                			<img src="${contextPath}/resources/img/monomer/monomer_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
                                 		</td>
                                 		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features4.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features5.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features6.png" alt="img" class="img-fluid fadeInUp" style="width: 50%;">
+                                			<img src="${contextPath}/resources/img/monomer/monomer_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
                                 		</td>
                                 	</tr>
                                 </table>
@@ -1014,28 +1389,9 @@
 
                 </div>
             </div>
-            <!-- END of Coating Features Section -->
+            <!-- END of Features Section -->
             
-            <!-- Product Properties - Hard Coating Section Start -->
-            <div id="hard-coating" class="hard-coating-section p-top-50 p-bot-50">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                        	<div>
-                        		<h3 class="product-properties-header" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
-                        	</div>
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hardcoating_table.png" alt="img" class="img-fluid fadeInUp">
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Product Properties - Hard Coating Section -->
-            
-            <!-- Product Properties - Primer Coating Solution Section Start -->
+            <!-- Optical Monomer Section Start -->
             <div id="hard-coating" class="hard-coating-section p-top-50 p-bot-150">
                 <div class="container">
 
@@ -1045,14 +1401,14 @@
                         		<h3 class="product-properties-header" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Product Properties - Primer Coating Section -->
+            <!-- END of Optical Monomer Section -->
 
         </main>
         <!-- END MAIN SECTION -->

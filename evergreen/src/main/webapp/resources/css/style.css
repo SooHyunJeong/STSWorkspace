@@ -716,7 +716,7 @@ ul, ol {
     padding: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); }
   .hornbill-navbar .navbar-brand {
-    width: 220px;
+    width: 195px;
     background: url(../img/banner/evergreen_ci.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -729,16 +729,10 @@ ul, ol {
     text-transform: capitalize; }
     .hornbill-navbar .hornbill-nav li a.active, .hornbill-navbar .hornbill-nav li a:hover {
       color: #fff; }
-  .hornbill-navbar.navbar-expand-lg .hornbill-nav li a {
-    padding-right: 2rem;
-    padding-left: 2rem; }
   .hornbill-navbar.fixed-top {
     background: transparent; }
     .hornbill-navbar.fixed-top:hover, .hornbill-navbar.fixed-top:focus {
       background: transparent; }
-  .hornbill-navbar.background .navbar-brand {
-    width: 220px;
-    transition: all 0.2s ease-in-out; }
   .hornbill-navbar.bg-damn .hornbill-nav li a.active, .hornbill-navbar.bg-damn .hornbill-nav li a:hover, .hornbill-navbar.bg-damn.background .hornbill-nav li a.active, .hornbill-navbar.bg-damn.background .hornbill-nav li a:hover {
     background: #5d4eb7; }
   .hornbill-navbar.bg-victoria .hornbill-nav li a.active, .hornbill-navbar.bg-victoria .hornbill-nav li a:hover, .hornbill-navbar.bg-victoria.background .hornbill-nav li a.active, .hornbill-navbar.bg-victoria.background .hornbill-nav li a:hover {
@@ -2538,11 +2532,6 @@ body.body-wine .features-list.hover-none .single-feature:hover {
   body.victoria .hornbill-nav {
     background-color: #534886;
     margin-top: 5px; }
-
-  .hornbill-navbar .navbar-brand {
-    max-width: 120px;
-    margin-left: 10px;
-    margin-top: 10px; }
 
   .hornbill-navbar .hornbill-nav li a {
     padding: 12px; }
