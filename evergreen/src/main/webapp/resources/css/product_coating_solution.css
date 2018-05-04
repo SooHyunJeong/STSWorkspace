@@ -86,10 +86,6 @@ section.row {
 			margin-bottom: 0;
 		}
 		
-		#hard-coating-solution p:nth-child(1) {
-			color: rgb(0, 125, 140);
-		}
-		
 	/* Classification Section Start */
 		#classification .row div {
 			width: 100%;
@@ -176,11 +172,11 @@ section.row {
 			box-shadow: none !important;
 		}
 		
-		.dropdown-product-1 {
+		.dropdown-sidemenu-1 {
 			display: none;
 		}
 		
-		.dropdown-product-2 {
+		.dropdown-sidemenu-2 {
 			display: block;
 		}
 
@@ -237,9 +233,8 @@ section.row {
 			    left: 100%;
 			    margin-top: -6px;
 			    margin-left: -1px;
-			    -webkit-border-radius: 0 6px 6px 6px;
-			    -moz-border-radius: 0 6px 6px;
-			    border-radius: 0 6px 6px 6px;
+			    background-color: rgb(0, 125, 140);
+			    border-radius: 0;
 			}
 			
 			.dropdown-submenu:hover>.dropdown-menu {
@@ -262,6 +257,10 @@ section.row {
 			    border-radius: 6px 0 6px 6px;
 			}
 	/* dropdown 관련 소스 End */
+
+.hard-coating-solution-p {
+	color: rgb(0, 125, 140);
+}
 
 /* Footer Section */
 .footer-section {
@@ -384,11 +383,11 @@ section.row {
 				box-shadow: none !important;
 			}
 			
-			.dropdown-product-1 {
+			.dropdown-sidemenu-1 {
 				display: none;
 			}
 			
-			.dropdown-product-2 {
+			.dropdown-sidemenu-2 {
 				display: block;
 			}
 
@@ -445,9 +444,6 @@ section.row {
 				    left: 100%;
 				    margin-top: -6px;
 				    margin-left: -1px;
-				    -webkit-border-radius: 0 6px 6px 6px;
-				    -moz-border-radius: 0 6px 6px;
-				    border-radius: 0 6px 6px 6px;
 				}
 				
 				.dropdown-submenu:hover>.dropdown-menu {
@@ -677,11 +673,11 @@ section.row {
 				margin: 0 auto;
 			}
 			
-			.dropdown-product-1 {
+			.dropdown-sidemenu-1 {
 				display: none;
 			}
 			
-			.dropdown-product-2 {
+			.dropdown-sidemenu-2 {
 				display: block;
 			}
 
@@ -739,9 +735,6 @@ section.row {
 				    left: 100%;
 				    margin-top: -6px;
 				    margin-left: -1px;
-				    -webkit-border-radius: 0 6px 6px 6px;
-				    -moz-border-radius: 0 6px 6px;
-				    border-radius: 0 6px 6px 6px;
 				}
 				
 				.dropdown-submenu:hover>.dropdown-menu {
@@ -885,11 +878,11 @@ section.row {
 				margin: 0 auto;
 			}
 			
-			.dropdown-product-1 {
+			.dropdown-sidemenu-1 {
 				display: table;
 			}
 			
-			.dropdown-product-2 {
+			.dropdown-sidemenu-2 {
 				display: none;
 			}
 			
@@ -1056,11 +1049,11 @@ section.row {
 				margin: 0 auto;
 			}
 			
-			.dropdown-product-1 {
+			.dropdown-sidemenu-1 {
 				display: table;
 			}
 			
-			.dropdown-product-2 {
+			.dropdown-sidemenu-2 {
 				display: none;
 			}
 

@@ -197,9 +197,17 @@ body {
   line-height: 26px;
   color: #787878;
   overflow-x: hidden; }
-  
+
+.myraid-regular {
+	font-family: MyraidPro-Regular	
+}
+
 .myriad-bold {
 	font-family: MyriadPro-Bold;
+}
+
+.dropdown-menu li a {
+	font-size: 16px !important;
 }
 
 a:hover,
@@ -2166,27 +2174,6 @@ body.body-sky .single-team-member.panel .back {
 body.body-sky #faq_accordion .item a.collapsed {
   color: #585b60; }
 body.body-sky .section-heading.text-white h2 {
-  color: #fff; }
-body.body-sunshine .single-service:hover,
-body.body-sunshine .features-list .single-feature:hover,
-body.body-sunshine .contact-style-two {
-  border-color: rgb(0, 125, 140); }
-body.body-sunshine .section-heading h2,
-body.body-sunshine .heading-lines span.bi,
-body.body-sunshine #faq_accordion .item a,
-body.body-sunshine .more-features-list .more-single-feature .icon,
-body.body-sunshine .features-list .single-feature .feature-icon span.bi,
-body.body-sunshine .video .play-video-icon,
-body.body-sunshine .single-price .price {
-  color: #FB7993; }
-body.body-sunshine .heading-lines span.line,
-body.body-sunshine .pulse {
-  background: #FB7993; }
-body.body-sunshine .pulse:after {
-  box-shadow: 0 0 10px 8px #FB7993; }
-body.body-sunshine #faq_accordion .item a.collapsed {
-  color: #585b60; }
-body.body-sunshine .section-heading.text-white h2 {
   color: #fff; }
 body.body-ripe .single-service:hover,
 body.body-ripe .features-list .single-feature:hover,

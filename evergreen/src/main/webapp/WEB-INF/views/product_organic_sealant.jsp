@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="${contextPath}/resources/plugins/bicon/css/bicon.min.css"/>
         <link rel="stylesheet" href="${contextPath}/resources/plugins/swiper/css/swiper.min.css"/>
         <link rel="stylesheet" href="${contextPath}/resources/css/style.css"/>
+        <link rel="stylesheet" href="${contextPath}/resources/css/product_coating_solution.css"/>
         <!-- EndInput -->
         
         <!-- Input:js -->
@@ -47,12 +48,17 @@
 			width: 75%;
 		}
 		
+		section.row {
+			margin: 0 auto;
+			width: 71%;
+		}
+		
 		.navbar-brand {
 			width: 140px !important;
 			margin-right: 0;
 		}
-
-    	.col-lg-4 {
+		
+		.col-lg-4 {
 			flex: 0 0 100%;
 			max-width: 100%;	
 		}
@@ -99,7 +105,7 @@
 				.dropdown-sidemenu-2 {
 					display: block;
 				}
-	
+		
 				.dropbtn {
 				    background: rgb(237, 237, 237);
 				    color: rgb(0, 125, 140);
@@ -177,56 +183,6 @@
 					    border-radius: 6px 0 6px 6px;
 					}
 			/* dropdown 관련 소스 End */
-			
-			/* Banner Section Start */
-				.banner-section-div {
-					width: 100%;
-				}
-
-				.banner-section-div-0 {
-					position: relative;
-					width: 310px;
-					height: 100px;
-					top: 9.5rem;
-					text-align: right;
-					padding: 1.8rem 6.2rem 0 0 ;
-					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-					font-size: 1.7rem;
-					color: white;
-				}
-				
-				.banner-section-div-1 {
-					width: 71%;
-					margin: 5rem auto 0 auto;
-					display: block;
-					padding-right: 15px;
-					padding-left: 15px;
-					background: none;
-				}
-				
-				.banner-section-div-0>p:nth-child(1) {
-					margin-bottom: -0.5rem;
-				}
-				
-				.banner-section-div-0>p:nth-child(2) {
-					font-size: 0.5rem;
-				}
-				
-				.banner-section-div-1>img {
-					width: 75%;
-					margin: 0 auto;
-					display: block !important;
-				}
-				
-				.banner-section-div-1>div {
-					max-width: 100%;
-					padding-bottom: 3rem;
-				}
-				
-				.procam-explanation {
-					color: rgb(0, 125, 140);
-				}
-			/* Banner Section End */
 		
 		/* Footer Section */
 		.footer-section {
@@ -308,7 +264,7 @@
 				width: 168px !important;
 				margin-right: 1rem;
 			}
-
+		
 			.col-lg-4 {
 				flex: 0 0 50%;
 				max-width: 50%;	
@@ -388,7 +344,7 @@
 					    text-decoration: none;
 					    display: block;
 					    font-size: 14px;
-				    	text-align: center;
+					    text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -400,7 +356,7 @@
 					.dropdown:hover .dropbtn {
 					    background-color: rgb(237, 237, 237);
 					}
-
+		
 						.dropdown-submenu {
 						    position: relative;
 						}
@@ -432,56 +388,6 @@
 						    border-radius: 6px 0 6px 6px;
 						}
 				/* dropdown 관련 소스 End */
-				
-				/* Banner Section Start */
-					.banner-section-div {
-						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 425px;
-						height: 100px;
-						top: 9.5rem;
-						left: -7rem;
-						text-align: right;
-						padding: 1.8rem 1.5rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 71%;
-						display: block;
-						padding-right: 15px;
-						padding-left: 15px;
-						background: none;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						width: 70%;
-						margin: 0 auto;
-						display: block !important;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 100%;
-						padding-bottom: 3rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
-					}
-				/* Banner Section End */
 
 			/* Footer Section */
 			.footer-section {
@@ -564,7 +470,7 @@
 				width: 168px !important;;
 				margin-right: 1rem;
 			}
-
+		
 			.col-lg-4 {
 				flex: 0 0 50%;
 				max-width: 50%;	
@@ -575,7 +481,7 @@
 					padding-right: 0;
 					padding-left: 4rem;
 				}
-
+		
 				.navbar {
 					background: rgb(0, 125, 140) !important;
 					padding: 13px 0;
@@ -644,7 +550,7 @@
 					    text-decoration: none;
 					    display: block;
 					    font-size: 14px;
-				    	text-align: center;
+					    text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -689,58 +595,6 @@
 						    border-radius: 6px 0 6px 6px;
 						}
 				/* dropdown 관련 소스 End */
-				
-				/* Banner Section Start */
-					.banner-section-div {
-						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 393px;
-						height: 100px;
-						top: 9.5rem;
-						left: -6rem;
-						text-align: right;
-						padding: 1.8rem 1.5rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 35%;
-						margin: 6rem auto 0 auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -368px;
-						width: 38%;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 60%;
-						padding-bottom: 4rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
-					}
-				/* Banner Section End */
 			
 			/* Footer Section */
 			.footer-section {
@@ -823,7 +677,7 @@
 				width: 195px !important;;
 				margin-right: 1rem;
 			}
-
+		
 			.col-lg-4 {
 				flex: 0 0 25%;
 				max-width: 25%;	
@@ -835,7 +689,7 @@
 						padding-right: 0 !important;
 						padding-left: 2rem !important;
 					}
-
+		
 					.header-section {
 						position: relative;
 						z-index: 2;
@@ -898,7 +752,7 @@
 					    text-decoration: none;
 					    display: block;
 					    font-size: 14px;
-				    	text-align: center;
+					    text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -911,58 +765,6 @@
 					    background-color: rgb(237, 237, 237);
 					}
 				/* dropdown 관련 소스 End */
-				
-				/* Banner Section Start */
-					.banner-section-div {
-						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 495px;
-						height: 100px;
-						top: 9.5rem;
-						left: -9rem;
-						text-align: right;
-						padding: 1.8rem 0.6rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 35%;
-						margin: 8rem auto 2rem auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -380px;
-						width: 35%;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 60%;
-						padding-bottom: 4rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
-					}
-				/* Banner Section End */
 				
 				.sup {
 					font-size: 100%;
@@ -995,7 +797,7 @@
 				margin-bottom: 0;
 			}
 			
-			/* Side Menu */ 
+			/* Side Menu */
 			.open-slide {
 				display: none;
 			}
@@ -1014,7 +816,7 @@
 				width: 195px !important;;
 				margin-right: 1rem;
 			}
-
+		
 			.col-lg-4 {
 				flex: 0 0 25%;
 				max-width: 25%;	
@@ -1026,7 +828,7 @@
 						padding-right: 0 !important;
 						padding-left: 4rem !important;
 					}
-
+		
 					.header-section {
 						position: relative;
 						z-index: 2;
@@ -1089,7 +891,7 @@
 					    text-decoration: none;
 					    display: block;
 					    font-size: 14px;
-				    	text-align: center;
+					    text-align: center;
 					}
 					
 					.dropdown-content a:hover {background-color: #f1f1f1}
@@ -1104,64 +906,12 @@
 					
 				/* dropdown 관련 소스 End */
 				
-				/* Banner Section Start */
-					.banner-section-div {
-						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 803px;
-						height: 100px;
-						top: 9.5rem;
-						left: -20.5rem;
-						text-align: right;
-						padding: 1.8rem 1.6rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 18%;
-						margin: 8rem auto 0 auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -305px;
-						width: 25%;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 75%;
-						padding-bottom: 1rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
-					}
-				/* Banner Section End */
-				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
 					top: 0;
 				}
-			
+
 			.navbar {
 				background: rgb(0, 125, 140) !important;
 				padding: 13px 0;
@@ -1262,8 +1012,8 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
                         </ul>
                     </li>
 
@@ -1320,186 +1070,124 @@
         <main class="main-section">
             
             <!-- Banner Section Start -->
-            <div class="banner-section banner-ten">
+            <div class="banner-section p-top-150">
 				<div class="container">
-                    <div class="row">
-                        <div class="fadeIn banner-section-div">
-                        	<div class="banner-section-div-0">
-                        		<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
-                        		<p>Super Hydrophobic Solution</p>
-                        	</div>
-                            <div class="p-top-100 banner-section-div-1">
-<!--                             	<p style="position: relative; top: 9.6rem; left: 18rem; font-size: 2.3rem; font-weight: bold; z-index: 2; color: white;">PROCAM<sup class="sup">®</sup></p> -->
-<%--                             	<img src="${contextPath}/resources/img/product/product_background.png" alt="img" class="img-fluid mr-auto d-block" style="position: relative; width: 28.6%; top: 5rem;"> --%>
-                            	<div>
-	                            	<span class="procam-explanation">Hydrophobic chemicals are used in water and oil repellent coating of various surface</span>.<br>
-	                            	It is <span class="procam-explanation">coated by vacuum evaporation machine</span> for surface to repel water, dust and oil on optical lens.<br>
-	                            	<span class="procam-explanation">Lens stay clear longer </span> and the coating helps make <span class="procam-explanation">cleaning easy</span>, resulting in <span class="procam-explanation">cleaner vision and easier maintenance</span>.
-                            	</div>
-                            	<img src="${contextPath}/resources/img/product/hydrophobic_productimg.png" alt="img" class="img-fluid ml-auto d-block">
-                            </div>
+                    <div class="row" style="width: 71%; margin: 0 auto;">
+                        <div class="fadeIn">
+                        	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 2.5rem; margin-bottom: 0.5rem;">
+                        		EVERSEAL<sup class="sup">®</sup>
+                        	</p>
+                        	<p style="color: rgb(0, 125, 140); font-size: 1.25rem;">Organic Sealant</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END of Banner Section -->
             
-            <!-- Hydrophobic Image Section Start -->
-            <div id="hard-coating" class="monomer-image-section p-top-50 p-bot-50">
+            <!-- One-way Type - Process Section Start -->
+            <div id="one-way-process" class="p-top-50 p-bot-100">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
-                        	<p class="myriad-bold" style="font-size: 2.3rem; color: rgb(0, 125, 140); margin-bottom: 0;">PROCAM<sup class="sup">®</sup></p>
-                        	<p style="color: rgb(0, 125, 140);">Hydrophobic & Vacuum Coating</p>
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_img.png" alt="img" class="img-fluid ml-auto d-block">
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Hydrophobic Image Section -->	
-            
-            <!-- Classification Section Start -->
-            <div id="classification" class="p-top-50 p-bot-50">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="4">
-	                                		<h3 class="classification-header myriad-bold" style="color: black; margin-bottom: 3rem;">Classification</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
-                                			Hydrophobic
-                                		</td>
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
-                                			Super-Hydrophobic
-                                		</td>
-                                		<td style="width: 24%;">
-                                			Vacuum Coating Materials
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Classification Section -->
-            
-            <!-- Features Section Start -->
-            <div id="coating-features" class="p-top-50 p-bot-50">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myriad-bold" style="color: black; margin-bottom: 2rem;">Features</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features4.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features5.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Features Section -->
-            
-            <!-- Hydrophobic Chemicals Section Start -->
-            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section p-top-50 p-bot-150">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                        	<div>
-                        		<h3 class="product-properties-header myriad-bold" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        	<div class="p-bot-50">
+                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
+                        			<i style="margin-right: 1rem;">One-way Type</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
+                        		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ow_2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Hydrophobic Chemicals Section -->
+            <!-- END of One-way type - Process Section -->
             
-            <!-- Vacuum Coating Section Start -->
-            <div id="vacuum-coating" class="vacuum-coating-section p-top-50 p-bot-50">
+			<!-- One-way Type - Product Features & Properties Section Start -->
+            <div id="one-way-product-features" class="p-top-50 p-bot-100">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
+                        	<div class="p-bot-50">
+                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
+                        			<i style="margin-right: 1rem;">One-way Type</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Product features & Properties</i></span>
+                        		</div>
+                        	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table2.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ow_3.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Vacuum-Coating Section -->
+            <!-- END of One-way type - Product Features & Properties Section -->
             
-            <!-- Vacuum Coating Materials Section Start -->
-            <div id="vacuum-coating-materials" class="vacuum-coating-materials-section p-top-50 p-bot-50">
+            <!-- Eco-friendly Recycle - Process Section Start -->
+            <div id="eco-friendly-recycle-process" class="p-top-50 p-bot-100">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
+                        	<div class="p-bot-50">
+                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
+                        			<i style="margin-right: 1rem;">Eco-friendly Recycle</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
+                        		</div>
+                        	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table3.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ef_1.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Vacuum Coating Materials Section -->
+            <!-- END of Eco-friendly Recycle - Process Section -->
             
-            <!-- Vacuum Coating Consumable Section Start -->
-            <div id="vacuum-coating-consumable" class="vacuum-coating-consumable-section p-top-50 p-bot-150">
+            <!-- Eco-friendly Recycle - Product features & Properties Section Start -->
+            <div id="eco-friendly-recycle-features" class="p-top-50 p-bot-100">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
+                        	<div>
+                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
+                        			<i style="margin-right: 1rem;">Eco-friendly Recycle</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Product features & Properties</i></span>
+                        		</div>
+                        	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table4.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ef_2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Vacuum Coating Materials Section -->
+            <!-- END of Eco-friendly Recycle - Eco-friendly Recycle - Product features & Properties Section -->
+            
+            <!-- Others Section Start -->
+            <div id="others" class="p-top-50 p-bot-100">
+                <div class="container">
+
+                    <section class="row">
+                        <div class="fadeIn">
+                        	<div>
+                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;">
+                        			<i>Others</i>
+                        		</div>
+                        	</div>
+                            <div>
+                                <img src="${contextPath}/resources/img/product/product_everseal_others2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!-- END of Others Section -->
 
         </main>
         <!-- END MAIN SECTION -->

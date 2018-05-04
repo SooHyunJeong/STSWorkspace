@@ -100,6 +100,14 @@
 					background-color: rgb(0, 125, 140) !important;
 					box-shadow: none !important;
 				}
+				
+				.dropdown-sidemenu-1 {
+					display: none;
+				}
+				
+				.dropdown-sidemenu-2 {
+					display: block;
+				}
 	
 				.dropbtn {
 				    background: rgb(237, 237, 237);
@@ -115,33 +123,69 @@
 				    position: relative;
 				    display: inline-block;
 				}
+				
+				.dropdown-submenu {
+				    position: relative;
+				}
+				
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					    background-color: rgb(0, 125, 140);
+					    border-radius: 0;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
 			/* dropdown 관련 소스 End */
 		
 		/* History Image Section Start */
-			#history-image section {
+			#history-banner section {
 				margin: 3rem auto 0 auto;
 				width: 71%;
 				background-image: linear-gradient(to right, white, rgb(0, 125, 140));
 				text-align: center;
 				color: white;
-				padding: 3rem 0;
+				padding: 4rem 0;
+				height: 25%;
 			}
 			
-			#history-image section>div {
+			#history-banner section>div {
 				width: 100%;
 			}
 			
-			#history-image p:nth-child(1) {
+			#history-banner p:nth-child(1) {
+				font-size: 2.2rem;
+				margin-bottom: 0;
+			}
+			
+			#history-banner p:nth-child(2) {
+				font-size: 1.45rem;
+				margin-bottom: 1.8rem;
+			}
+			
+			#history-banner p:nth-child(3) {
 				font-size: 2.5rem;
-				margin-bottom: 0.5rem;
-			}
-			
-			#history-image p:nth-child(2) {
-				font-size: 1.65rem;
-			}
-			
-			#history-image p:nth-child(3) {
-				font-size: 2rem; margin-bottom: 0;
+				margin-bottom: 0;
 			}
 
 		/* Footer Section */
@@ -369,6 +413,14 @@
 						background-color: rgb(0, 125, 140) !important;
 						box-shadow: none !important;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: none;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -384,33 +436,67 @@
 					    position: relative;
 					    display: inline-block;
 					}
+					
+					.dropdown-submenu {
+					    position: relative;
+					}
+					
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
 				/* dropdown 관련 소스 End */
 
 			/* History Image Section Start */
-				#history-image section {
+				#history-banner section {
 					margin: 3rem auto 0 auto;
 					width: 71%;
 					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
 					text-align: center;
 					color: white;
-					padding: 3rem 0;
+					padding: 4rem 0;
+					height: 25%;
 				}
 				
-				#history-image section>div {
+				#history-banner section>div {
 					width: 100%;
 				}
 				
-				#history-image p:nth-child(1) {
+				#history-banner p:nth-child(1) {
+					font-size: 2.2rem;
+					margin-bottom: 0;
+				}
+				
+				#history-banner p:nth-child(2) {
+					font-size: 1.45rem;
+					margin-bottom: 1.8rem;
+				}
+				
+				#history-banner p:nth-child(3) {
 					font-size: 2.5rem;
-					margin-bottom: 0.5rem;
-				}
-				
-				#history-image p:nth-child(2) {
-					font-size: 1.65rem;
-				}
-				
-				#history-image p:nth-child(3) {
-					font-size: 2rem; margin-bottom: 0;
+					margin-bottom: 0;
 				}
 
 			/* Footer Section */
@@ -618,6 +704,14 @@
 						display: table;
 						margin: 0 auto;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: none;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -633,33 +727,67 @@
 					    position: relative;
 					    display: inline-block;
 					}
+					
+						.dropdown-submenu {
+						    position: relative;
+						}
+						
+						.dropdown-submenu>.dropdown-menu {
+						    top: 0;
+						    left: 100%;
+						    margin-top: -6px;
+						    margin-left: -1px;
+						}
+						
+						.dropdown-submenu:hover>.dropdown-menu {
+						    display: block;
+						}
+						
+						.dropdown-submenu:hover>a:after {
+						    border-left-color: #fff;
+						}
+						
+						.dropdown-submenu.pull-left {
+						    float: none;
+						}
+						
+						.dropdown-submenu.pull-left>.dropdown-menu {
+						    left: -100%;
+						    margin-left: 10px;
+						    -webkit-border-radius: 6px 0 6px 6px;
+						    -moz-border-radius: 6px 0 6px 6px;
+						    border-radius: 6px 0 6px 6px;
+						}
 				/* dropdown 관련 소스 End */
 				
 			/* History Image Section Start */
-				#history-image section {
+				#history-banner section {
 					margin: 3rem auto 0 auto;
 					width: 71%;
 					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
 					text-align: center;
 					color: white;
-					padding: 3rem 0;
+					padding: 4rem 0;
+					height: 25%;
 				}
 				
-				#history-image section>div {
+				#history-banner section>div {
 					width: 100%;
 				}
 				
-				#history-image p:nth-child(1) {
+				#history-banner p:nth-child(1) {
+					font-size: 2.2rem;
+					margin-bottom: 0;
+				}
+				
+				#history-banner p:nth-child(2) {
+					font-size: 1.45rem;
+					margin-bottom: 1.8rem;
+				}
+				
+				#history-banner p:nth-child(3) {
 					font-size: 2.5rem;
-					margin-bottom: 0.5rem;
-				}
-				
-				#history-image p:nth-child(2) {
-					font-size: 1.65rem;
-				}
-				
-				#history-image p:nth-child(3) {
-					font-size: 2rem; margin-bottom: 0;
+					margin-bottom: 0;
 				}
 			
 			/* Footer Section */
@@ -827,6 +955,14 @@
 						z-index: 2;
 					}
 					
+					.dropdown-sidemenu-1 {
+						display: table;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: none;
+					}
+					
 					.dropbtn {
 					    background: rgb(237, 237, 237);
 					    color: rgb(0, 125, 140);
@@ -886,30 +1022,33 @@
 				}
 			
 			/* History Image Section Start */
-				#history-image section {
+				#history-banner section {
 					margin: 0 auto;
 					width: 71%;
 					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
 					text-align: center;
 					color: white;
-					padding: 3rem 0;
+					padding: 4rem 0;
+					height: 25%;
 				}
 				
-				#history-image section>div {
+				#history-banner section>div {
 					width: 100%;
 				}
 				
-				#history-image p:nth-child(1) {
+				#history-banner p:nth-child(1) {
+					font-size: 2.2rem;
+					margin-bottom: 0;
+				}
+				
+				#history-banner p:nth-child(2) {
+					font-size: 1.45rem;
+					margin-bottom: 1.8rem;
+				}
+				
+				#history-banner p:nth-child(3) {
 					font-size: 2.5rem;
-					margin-bottom: 0.5rem;
-				}
-				
-				#history-image p:nth-child(2) {
-					font-size: 1.65rem;
-				}
-				
-				#history-image p:nth-child(3) {
-					font-size: 2rem; margin-bottom: 0;
+					margin-bottom: 0;
 				}
 			
 			/* Side Menu */
@@ -1017,6 +1156,14 @@
 						display: table;
 						margin: 0 auto;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: table;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: none;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -1045,31 +1192,34 @@
 				padding: 13px 0;
 			}
 			
-			/* History Image Section Start */
-				#history-image section {
+			/* History banner Section Start */
+				#history-banner section {
 					margin: 0 auto;
 					width: 71%;
 					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
 					text-align: center;
 					color: white;
-					padding: 3rem 0;
+					padding: 4rem 0;
+					height: 25%;
 				}
 				
-				#history-image section>div {
+				#history-banner section>div {
 					width: 100%;
 				}
 				
-				#history-image p:nth-child(1) {
+				#history-banner p:nth-child(1) {
+					font-size: 2.2rem;
+					margin-bottom: 0;
+				}
+				
+				#history-banner p:nth-child(2) {
+					font-size: 1.45rem;
+					margin-bottom: 1.8rem;
+				}
+				
+				#history-banner p:nth-child(3) {
 					font-size: 2.5rem;
-					margin-bottom: 0.5rem;
-				}
-				
-				#history-image p:nth-child(2) {
-					font-size: 1.65rem;
-				}
-				
-				#history-image p:nth-child(3) {
-					font-size: 2rem; margin-bottom: 0;
+					margin-bottom: 0;
 				}
 				
 			/* Footer Section */
@@ -1193,7 +1343,7 @@
 			document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top" class="body-sunshine">
+    <body id="page_top">
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1242,12 +1392,31 @@
                     <li class="nav-item">
                         <a href="/">Home</a>
                     </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="product_coating_solution.do">Product</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="company_ceo_message.do">Company</a>
                     </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item">
                         <a href="research_development.do">R&D</a>
                     </li>
@@ -1274,7 +1443,7 @@
 	                </div>
 	                
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'">Global office & factory</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'">Global office & Factory</button>
 	                </div>        		
         		</div>
 		    </div>
@@ -1285,8 +1454,8 @@
         <!-- MAIN SECTION START -->
         <main class="main-section">
 			
-			<!-- History Image Section Start -->
-            <div id="history-image" class="p-top-50">
+			<!-- History banner Section Start -->
+            <div id="history-banner" class="p-top-50">
                 <div class="container">
 
                     <section class="row">
@@ -1294,14 +1463,14 @@
                             <div>
                                 <p class="myriad-bold">evergreen</p>
                                 <p>C&T corporation</p>
-                                <p class="myriad-bold">History</p>
+                                <p class="myriad-bold" style="font-family: italic">History</p>
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Monomer Image Section -->
+            <!-- END of History banner Section -->
             
 			<!-- History Section Start -->
             <div class="history-section">

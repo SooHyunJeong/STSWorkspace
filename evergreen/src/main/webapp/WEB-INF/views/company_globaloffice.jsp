@@ -92,6 +92,14 @@
 					background-color: rgb(0, 125, 140) !important;
 					box-shadow: none !important;
 				}
+				
+				.dropdown-sidemenu-1 {
+					display: none;
+				}
+				
+				.dropdown-sidemenu-2 {
+					display: block;
+				}
 	
 				.dropbtn {
 				    background: rgb(237, 237, 237);
@@ -107,8 +115,50 @@
 				    position: relative;
 				    display: inline-block;
 				}
+				
+					.dropdown-submenu {
+					    position: relative;
+					}
+					
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					    background-color: rgb(0, 125, 140);
+					    border-radius: 0;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
 			/* dropdown 관련 소스 End */
 		
+		/* Global Office banner Section Start */
+			#global-office-banner {
+				padding-top: 100px;
+			}
+
+			.global-office-section img:nth-child(1) {
+				margin-bottom: 1rem;
+			}
+
 		/* Footer Section */
 		.footer-section {
 			background: rgb(0, 125, 140);
@@ -229,6 +279,14 @@
 						background-color: rgb(0, 125, 140) !important;
 						box-shadow: none !important;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: none;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -244,7 +302,47 @@
 					    position: relative;
 					    display: inline-block;
 					}
+					
+						.dropdown-submenu {
+						    position: relative;
+						}
+						
+						.dropdown-submenu>.dropdown-menu {
+						    top: 0;
+						    left: 100%;
+						    margin-top: -6px;
+						    margin-left: -1px;
+						}
+						
+						.dropdown-submenu:hover>.dropdown-menu {
+						    display: block;
+						}
+						
+						.dropdown-submenu:hover>a:after {
+						    border-left-color: #fff;
+						}
+						
+						.dropdown-submenu.pull-left {
+						    float: none;
+						}
+						
+						.dropdown-submenu.pull-left>.dropdown-menu {
+						    left: -100%;
+						    margin-left: 10px;
+						    -webkit-border-radius: 6px 0 6px 6px;
+						    -moz-border-radius: 6px 0 6px 6px;
+						    border-radius: 6px 0 6px 6px;
+						}
 				/* dropdown 관련 소스 End */
+
+			/* Global Office banner Section Start */
+				#global-office-banner {
+					padding-top: 100px;
+				}
+
+				.global-office-section img:nth-child(1) {
+					margin-bottom: 1rem;
+				}
 
 			/* Footer Section */
 			.footer-section {
@@ -367,6 +465,14 @@
 						display: table;
 						margin: 0 auto;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: none;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -382,8 +488,79 @@
 					    position: relative;
 					    display: inline-block;
 					}
+					
+						.dropdown-submenu {
+						    position: relative;
+						}
+						
+						.dropdown-submenu>.dropdown-menu {
+						    top: 0;
+						    left: 100%;
+						    margin-top: -6px;
+						    margin-left: -1px;
+						}
+						
+						.dropdown-submenu:hover>.dropdown-menu {
+						    display: block;
+						}
+						
+						.dropdown-submenu:hover>a:after {
+						    border-left-color: #fff;
+						}
+						
+						.dropdown-submenu.pull-left {
+						    float: none;
+						}
+						
+						.dropdown-submenu.pull-left>.dropdown-menu {
+						    left: -100%;
+						    margin-left: 10px;
+						    -webkit-border-radius: 6px 0 6px 6px;
+						    -moz-border-radius: 6px 0 6px 6px;
+						    border-radius: 6px 0 6px 6px;
+						}
+						
+						.dropdown-submenu {
+						    position: relative;
+						}
+						
+						.dropdown-submenu>.dropdown-menu {
+						    top: 0;
+						    left: 100%;
+						    margin-top: -6px;
+						    margin-left: -1px;
+						}
+						
+						.dropdown-submenu:hover>.dropdown-menu {
+						    display: block;
+						}
+						
+						.dropdown-submenu:hover>a:after {
+						    border-left-color: #fff;
+						}
+						
+						.dropdown-submenu.pull-left {
+						    float: none;
+						}
+						
+						.dropdown-submenu.pull-left>.dropdown-menu {
+						    left: -100%;
+						    margin-left: 10px;
+						    -webkit-border-radius: 6px 0 6px 6px;
+						    -moz-border-radius: 6px 0 6px 6px;
+						    border-radius: 6px 0 6px 6px;
+						}
 				/* dropdown 관련 소스 End */
 			
+			/* Global Office banner Section Start */
+				#global-office-banner {
+					padding-top: 100px;
+				}
+
+				.global-office-section img:nth-child(1) {
+					margin-bottom: 2rem;
+				}
+
 			/* Footer Section */
 			.footer-section {
 				background: rgb(0, 125, 140);
@@ -483,6 +660,14 @@
 						z-index: 2;
 					}
 					
+					.dropdown-sidemenu-1 {
+						display: table;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: none;
+					}
+					
 					.dropbtn {
 					    background: rgb(237, 237, 237);
 					    color: rgb(0, 125, 140);
@@ -521,6 +706,15 @@
 				padding: 13px 0;
 			}
 			
+			/* Global Office banner Section Start */
+				#global-office-banner {
+					padding-top: 50px;
+				}
+
+				.global-office-section img:nth-child(1) {
+					margin-bottom: 3rem;
+				}
+
 			/* Footer Section */
 			.footer-section {
 				background: rgb(0, 125, 140);
@@ -588,6 +782,14 @@
 						display: table;
 						margin: 0 auto;
 					}
+					
+					.dropdown-sidemenu-1 {
+						display: table;
+					}
+					
+					.dropdown-sidemenu-2 {
+						display: none;
+					}
 		
 					.dropbtn {
 					    background: rgb(237, 237, 237);
@@ -616,6 +818,15 @@
 				padding: 13px 0;
 			}
 			
+			/* Global Office banner Section Start */
+				#global-office-banner {
+					padding-top: 50px;
+				}
+
+				.global-office-section img:nth-child(1) {
+					margin-bottom: 3rem;
+				}
+
 			/* Footer Section */
 			.footer-section {
 				background: rgb(0, 125, 140);
@@ -655,7 +866,7 @@
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top" class="body-sunshine">
+    <body id="page_top">
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -704,12 +915,31 @@
                     <li class="nav-item">
                         <a href="/">Home</a>
                     </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="product_coating_solution.do">Product</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="company_ceo_message.do">Company</a>
                     </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item">
                         <a href="research_development.do">R&D</a>
                     </li>
@@ -736,7 +966,7 @@
 	                </div>
 	                
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'">Global office & factory</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'">Global office & Factory</button>
 	                </div>        		
         		</div>
 		    </div>
@@ -747,35 +977,41 @@
         <!-- MAIN SECTION START -->
         <main class="main-section">
 
-			<!-- Banner Section Start -->
-            <div class="banner-section">
+			<!-- Global Office banner Section Start -->
+            <div id="global-office-banner" class="p-top-50">
+                <div class="container">
+                    <section class="row">
+                        <div class="fadeIn" style="width: 71%; margin: 0 auto; display: block;">
+							<img src="${contextPath}/resources/img/company/global_office&factory/companymenu_office1.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- END of Organization banner Section -->
+
+			<!-- Global Office Section Start -->
+            <div class="global-office-section">
 				<div class="container">
                     <div class="row">
                         <div class="fadeIn" style="width: 100%;">
                             <div class="p-top-100 p-bot-100" style="width: 71%; margin: 0 auto; display: block;">
-                            	<span style="display: inline-block; width: 69%;">
-                            		<p>
-                            			<h2 class="myriad-bold" style="color: rgb(0, 125, 140); padding-left: 1%;">CEO Message</h2>                            			
-	                            		<hr style="width: 89%; float: left; border-color: rgb(0, 125, 140); margin-top: 0;">
-                            		</p>
-                            		<p style="background: url(../../resources/img/product/product_background.png) left/89% 57% no-repeat; color: white; padding: 4.5% 4.5% 4.5% 1.5%; font-size: 20px;">
-                            			To be a world best in fine chemistry! Future oriented & High-technology
-                            		</p>
-                            		<p style="padding: 1.5%; color: black;">
-                            			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in Februra 1998,<br>
-                            			we have been manufacturing in Optical material (PROCAM<sup class="sup">®</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup">®</sup>)<br>
-                            			and providing all around world. We founded our own R&D Center in 2007.
-                            			<br><br>
-                            			Then, we have tried to our best toward the world's leading technology company through developing coating material<br>
-                            			and synthesizing raw materials. As the clear vision of, "Respecting the basic and principle", we have devoted ourselves<br>
-                            			to provide customers with better products and services. Based on the technology and capability accumulated so far,<br>
-                            			Evergreen C&T Corporation aims to become a hidden champions and a more trustworthy company in severe global market.
-                            		</p>
-                            	</span>
-                            	<span style="display: inline-block; width: 30%; text-align: right; position: relative; top: -80px; color: black;">
-                            		<p><span style="font-size: 18px;">CEO&nbsp;&nbsp;&nbsp;</span><span style="font-size: 32px;">Jang Daeil</span></p>
-	                            	<img src="${contextPath}/resources/img/company/ceo_message/sign2.png" alt="img" class="img-fluid ml-auto d-block" style="width: 45%">                            	
-                            	</span>
+                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic1.png" alt="img" class="img-fluid fadeInUp">
+                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic2.png" alt="img" class="img-fluid fadeInUp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Section End -->
+            
+            <!-- Global Office Section Start -->
+            <div class="global-office-section">
+				<div class="container">
+                    <div class="row">
+                        <div class="fadeIn" style="width: 100%;">
+                            <div class="p-top-100 p-bot-150" style="width: 71%; margin: 0 auto; display: block;">
+                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas1.png" alt="img" class="img-fluid fadeInUp">
+                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </div>

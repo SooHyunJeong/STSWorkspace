@@ -135,11 +135,11 @@
 					box-shadow: none !important;
 				}
 				
-				.dropdown-product-1 {
+				.dropdown-sidemenu-1 {
 					display: none;
 				}
 				
-				.dropdown-product-2 {
+				.dropdown-sidemenu-2 {
 					display: block;
 				}
 	
@@ -196,9 +196,8 @@
 					    left: 100%;
 					    margin-top: -6px;
 					    margin-left: -1px;
-					    -webkit-border-radius: 0 6px 6px 6px;
-					    -moz-border-radius: 0 6px 6px;
-					    border-radius: 0 6px 6px 6px;
+					    background-color: rgb(0, 125, 140);
+					    border-radius: 0;
 					}
 					
 					.dropdown-submenu:hover>.dropdown-menu {
@@ -221,6 +220,10 @@
 					    border-radius: 6px 0 6px 6px;
 					}
 			/* dropdown 관련 소스 End */
+			
+		.functional-monomer-p {
+			color: rgb(0, 125, 140);
+		}
 		
 		/* Footer Section */
 		.footer-section {
@@ -293,6 +296,16 @@
 		  color: #ccc;
 		}
 		
+		#hard-coating p:nth-child(1) {
+			font-size: 2.3rem;
+			color: rgb(0, 125, 140);
+			margin-bottom: 0;
+		}
+		
+		#hard-coating p:nth-child(2) {
+			font-size: 1.05rem;
+		}
+		
 		@media all and (min-width: 576px) {
 			#mainNav>div {
 				width: 71%;
@@ -343,11 +356,11 @@
 						box-shadow: none !important;
 					}
 					
-					.dropdown-product-1 {
+					.dropdown-sidemenu-1 {
 						display: none;
 					}
 					
-					.dropdown-product-2 {
+					.dropdown-sidemenu-2 {
 						display: block;
 					}
 		
@@ -404,9 +417,6 @@
 						    left: 100%;
 						    margin-top: -6px;
 						    margin-left: -1px;
-						    -webkit-border-radius: 0 6px 6px 6px;
-						    -moz-border-radius: 0 6px 6px;
-						    border-radius: 0 6px 6px 6px;
 						}
 						
 						.dropdown-submenu:hover>.dropdown-menu {
@@ -636,11 +646,11 @@
 						margin: 0 auto;
 					}
 					
-					.dropdown-product-1 {
+					.dropdown-sidemenu-1 {
 						display: none;
 					}
 					
-					.dropdown-product-2 {
+					.dropdown-sidemenu-2 {
 						display: block;
 					}
 		
@@ -698,9 +708,6 @@
 						    left: 100%;
 						    margin-top: -6px;
 						    margin-left: -1px;
-						    -webkit-border-radius: 0 6px 6px 6px;
-						    -moz-border-radius: 0 6px 6px;
-						    border-radius: 0 6px 6px 6px;
 						}
 						
 						.dropdown-submenu:hover>.dropdown-menu {
@@ -887,11 +894,11 @@
 						margin: 0 auto;
 					}
 					
-					.dropdown-product-1 {
+					.dropdown-sidemenu-1 {
 						display: table;
 					}
 					
-					.dropdown-product-2 {
+					.dropdown-sidemenu-2 {
 						display: none;
 					}
 					
@@ -1059,11 +1066,11 @@
 						margin: 0 auto;
 					}
 					
-					.dropdown-product-1 {
+					.dropdown-sidemenu-1 {
 						display: table;
 					}
 					
-					.dropdown-product-2 {
+					.dropdown-sidemenu-2 {
 						display: none;
 					}
 		
@@ -1170,7 +1177,7 @@
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top" class="body-sunshine">
+    <body id="page_top">
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1194,17 +1201,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <li class="nav-item dropdown-product-1">
+                            <li class="nav-item">
                                 <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
-                            <li class="nav-item dropdown-product-2 dropdown-submenu">
-                                <a tabindex="-1" class="nav-link" href="product_coating_solution.do">Product</a>
-                                <ul class="dropdown-menu">
-                                	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
-                                	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
-                                </ul>
-                            </li>
-                            
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
@@ -1228,20 +1227,31 @@
                     <li class="nav-item">
                         <a href="/">Home</a>
                     </li>
-                    <li class="nav-item dropdown-product-1">
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="product_coating_solution.do">Product</a>
                     </li>
-                    <li class="nav-item dropdown-product-2 dropdown-submenu">
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
                         </ul>
                     </li>
-                    
-                    <li class="nav-item">
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="company_ceo_message.do">Company</a>
                     </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item">
                         <a href="research_development.do">R&D</a>
                     </li>
@@ -1256,7 +1266,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -1265,11 +1275,10 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
-						    <a href="product_others.do">Others</a>
 	                   	</div>	                
 	                </div>
 	                        		
@@ -1291,11 +1300,9 @@
                         		<span>PROCAM<sup class="sup">®</sup></span>
                         	</div>
                             <div class="p-top-100 banner-section-div-1">
-<!--                             	<p style="position: relative; top: 9.6rem; left: 18rem; font-size: 2.3rem; font-weight: bold; z-index: 2; color: white;">PROCAM<sup class="sup">®</sup></p> -->
-<%--                             	<img src="${contextPath}/resources/img/product/product_background.png" alt="img" class="img-fluid mr-auto d-block" style="position: relative; width: 28.6%; top: 5rem;"> --%>
                             	<div>
 	                            	We have various functional coating products <span class="procam-explanation">using nano-particle sol</span>.<br>
-	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> {scratch & hardness} and <span class="procam-explanation">own surface property for optical lens.</span> sunglasses and other substrates.<br>
+	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens.</span> sunglasses and other substrates.<br>
 	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses. They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
                             	</div>
                             	<img src="${contextPath}/resources/img/product/procam_product.png" alt="img" class="img-fluid ml-auto d-block">
@@ -1312,6 +1319,8 @@
 
                     <section class="row" style="margin: 0 auto; width: 71%;">
                         <div class="fadeIn">
+                        	<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
+                        	<p class="functional-monomer-p">Functional Monomer</p>
                             <div>
                                 <img src="${contextPath}/resources/img/monomer/monomer_main.png" alt="img" class="img-fluid ml-auto d-block">
                             </div>
@@ -1332,7 +1341,7 @@
                                 <table style="width: 100%;">
                                 	<tr>
 	                                	<th colspan="4">
-	                                		<h3 class="classification-header" style="color: black; margin-bottom: 3rem;">Classification</h3>
+	                                		<h3 class="classification-header myriad-bold" style="color: black; margin-bottom: 3rem;">Classification</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr style="text-align: center;">
@@ -1368,7 +1377,7 @@
                                 <table style="width: 100%;">
                                 	<tr>
 	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header" style="color: black;">Features</h3>
+	                                		<h3 class="coating-features-header myriad-bold" style="color: black;">Features</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr style="text-align: center;">
@@ -1398,7 +1407,7 @@
                     <section class="row" style="margin: 0 auto; width: 71%;">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        		<h3 class="product-properties-header myriad-bold" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">

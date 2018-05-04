@@ -74,7 +74,7 @@
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top" class="body-sunshine">
+    <body id="page_top">
 
         <!-- HEADER START -->
         <header class="header-section clearfix">

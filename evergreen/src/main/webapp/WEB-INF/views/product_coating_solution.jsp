@@ -52,7 +52,7 @@
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top" class="body-sunshine">
+    <body id="page_top">
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -76,18 +76,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            
-                            <li class="nav-item dropdown-product-1">
+                            <li class="nav-item">
                                 <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
-                            <li class="nav-item dropdown-product-2 dropdown-submenu">
-                                <a tabindex="-1" class="nav-link" href="product_coating_solution.do">Product</a>
-                                <ul class="dropdown-menu">
-                                	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
-                                	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
-                                </ul>
-                            </li>
-                            
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
@@ -110,20 +101,31 @@
                     <li class="nav-item">
                         <a href="/">Home</a>
                     </li>
-                    <li class="nav-item dropdown-product-1">
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="product_coating_solution.do">Product</a>
                     </li>
-                    <li class="nav-item dropdown-product-2 dropdown-submenu">
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
+                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
                         </ul>
                     </li>
-                    
-                    <li class="nav-item">
+
+                    <li class="nav-item dropdown-sidemenu-1">
                         <a href="company_ceo_message.do">Company</a>
                     </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item">
                         <a href="research_development.do">R&D</a>
                     </li>
@@ -138,7 +140,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -147,11 +149,10 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
-						    <a href="product_others.do">Others</a>
 	                   	</div>	                
 	                </div>
 	                        		
@@ -175,7 +176,7 @@
                             <div class="p-top-100 banner-section-div-1">
                             	<div>
 	                            	We have various functional coating products <span class="procam-explanation">using nano-particle sol</span>.<br>
-	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> {scratch & hardness} and <span class="procam-explanation">own surface property for optical lens.</span> sunglasses and other substrates.<br>
+	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens.</span> sunglasses and other substrates.<br>
 	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses. They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
                             	</div>
                             	<img src="${contextPath}/resources/img/product/procam_product.png" alt="img" class="img-fluid ml-auto d-block">
@@ -193,7 +194,7 @@
                     <section class="row">
                         <div class="fadeIn">
                         	<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
-                        	<p>Hard Coating Solution</p>
+                        	<p class="hard-coating-solution-p">Hard Coating Solution</p>
                             <div>
                                 <img src="${contextPath}/resources/img/product/procam_product_hardcoating.png" alt="img" class="img-fluid fadeInUp">
                             </div>
@@ -214,7 +215,7 @@
                                 <table>
                                 	<tr>
 	                                	<th colspan="4">
-	                                		<h3 class="classification-header">Classification</h3>
+	                                		<h3 class="classification-header myraid-regular">Classification</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr>
@@ -250,7 +251,7 @@
                                 <table>
                                 	<tr>
 	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header">Coating Features</h3>
+	                                		<h3 class="coating-features-header myraid-regular">Coating Features</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr>
@@ -289,7 +290,7 @@
                     <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header">Product Properties</h3>
+                        		<h3 class="product-properties-header myraid-regular">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/product/hardcoating_table.png" alt="img" class="img-fluid fadeInUp">
@@ -307,9 +308,6 @@
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<div>
-                        		<h3 class="product-properties-header">Product Properties</h3>
-                        	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
                             </div>

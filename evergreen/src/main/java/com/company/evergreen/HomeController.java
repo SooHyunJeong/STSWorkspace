@@ -61,13 +61,6 @@ public class HomeController {
 		return "product_organic_sealant";
 	}
 	
-	@RequestMapping(value = "/product_others.do", method = RequestMethod.GET)
-	public String product_others (Locale locale, Model model) {
-		logger.info("Product others Start");
-		
-		return "product_others";
-	}
-	
 	@RequestMapping(value = "/company_ceo_message.do", method = RequestMethod.GET)
 	public String company_ceo_message (Locale locale, Model model) {
 		logger.info("Company CEO message Start");

@@ -47,12 +47,27 @@
 			width: 75%;
 		}
 		
+		section.row {
+			margin: 0 auto;
+			width: 71%;
+		}
+		
 		.navbar-brand {
 			width: 140px !important;
 			margin-right: 0;
 		}
 
     	.col-lg-4 {
+			flex: 0 0 100%;
+			max-width: 100%;	
+		}
+		
+		.col-imp-1 {
+			flex: 0 0 100%;
+			max-width: 100%;	
+		}
+		
+		.col-imp-2 {
 			flex: 0 0 100%;
 			max-width: 100%;	
 		}
@@ -179,55 +194,78 @@
 			/* dropdown 관련 소스 End */
 			
 			/* Banner Section Start */
-				.banner-section-div {
+					.banner-section {
+						padding-top: 150px;
+					}
+					
+					.banner-span-3 {
+						display: inline-block;
+						width: 100%;
+						padding: 0;
+					}
+					
+					.banner-span-3 img {
+						vertical-align: bottom;
+						width: 50%;
+						margin: 2rem auto;
+						display: block;
+					}
+					
+					.banner-span-4 {
+						display: inline-block;
+						width: 100%;
+						padding: 0;
+						vertical-align: top;
+						line-height: 1.75;
+						font-size: 18px;
+					}
+					
+					.banner-span-4 span:nth-child(1) {
+						color: rgb(0, 125, 140);
+						font-size: 20px;
+					}
+
+					.banner-span-4 span br {
+						display: none;
+					}
+			/* Banner Section End */
+			
+			/* Impregnating for aluminum die casting Section Start */
+				.impregnating-div-0 {
+					width: 71%;
+					margin: 0 auto;
+					display: block;
+				}
+				
+				.col-imp-1 div {
+					padding: 1.5rem 0;
+					font-size: 18px;
+					line-height: 1.5
+				}
+				
+				.col-imp-1 span br {
+					display: none;
+				}
+				
+				.col-imp-2 div {
+					padding-top: 10px;
+				}
+				
+				.col-imp-2 img {
+					margin: 0 auto;
+					display: block;
 					width: 100%;
 				}
+			/* Impregnating for aluminum die casting Section End */
 
-				.banner-section-div-0 {
-					position: relative;
-					width: 310px;
-					height: 100px;
-					top: 9.5rem;
-					text-align: right;
-					padding: 1.8rem 6.2rem 0 0 ;
-					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-					font-size: 1.7rem;
-					color: white;
-				}
-				
-				.banner-section-div-1 {
-					width: 71%;
-					margin: 5rem auto 0 auto;
-					display: block;
-					padding-right: 15px;
-					padding-left: 15px;
-					background: none;
-				}
-				
-				.banner-section-div-0>p:nth-child(1) {
-					margin-bottom: -0.5rem;
-				}
-				
-				.banner-section-div-0>p:nth-child(2) {
-					font-size: 0.5rem;
-				}
-				
-				.banner-section-div-1>img {
-					width: 75%;
-					margin: 0 auto;
-					display: block !important;
-				}
-				
-				.banner-section-div-1>div {
+			/* Classification of Pore Section Start */
+				.col-classification-1 {
+					flex: 0 0 100%;
 					max-width: 100%;
-					padding-bottom: 3rem;
 				}
 				
-				.procam-explanation {
-					color: rgb(0, 125, 140);
-				}
-			/* Banner Section End */
-		
+			/* Classification of Pore Section End */
+
 		/* Footer Section */
 		.footer-section {
 			background: rgb(0, 125, 140);
@@ -312,6 +350,16 @@
 			.col-lg-4 {
 				flex: 0 0 50%;
 				max-width: 50%;	
+			}
+			
+			.col-imp-1 {
+				flex: 0 0 100%;
+				max-width: 100%;	
+			}
+			
+			.col-imp-2 {
+				flex: 0 0 100%;
+				max-width: 100%;	
 			}
 			
 			/* Header Section */
@@ -434,54 +482,77 @@
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
-					.banner-section-div {
+					.banner-section {
+						padding-top: 150px;
+					}
+					
+					.banner-span-3 {
+						display: inline-block;
 						width: 100%;
+						padding: 0;
+					}
+					
+					.banner-span-3 img {
+						vertical-align: bottom;
+						width: 50%;
+						margin: 2rem auto;
+						display: block;
+					}
+					
+					.banner-span-4 {
+						display: inline-block;
+						width: 100%;
+						padding: 0;
+						vertical-align: top;
+						line-height: 1.75;
+						font-size: 18px;
+					}
+					
+					.banner-span-4 span:nth-child(1) {
+						color: rgb(0, 125, 140);
+						font-size: 20px;
 					}
 
-					.banner-section-div-0 {
-						position: relative;
-						width: 425px;
-						height: 100px;
-						top: 9.5rem;
-						left: -7rem;
-						text-align: right;
-						padding: 1.8rem 1.5rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 71%;
-						display: block;
-						padding-right: 15px;
-						padding-left: 15px;
-						background: none;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						width: 70%;
-						margin: 0 auto;
-						display: block !important;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 100%;
-						padding-bottom: 3rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
+					.banner-span-4 span br {
+						display: none;
 					}
 				/* Banner Section End */
+
+				/* Impregnating for aluminum die casting Section Start */
+					.impregnating-div-0 {
+						width: 71%;
+						margin: 0 auto;
+						display: block;
+					}
+					
+					.col-imp-1 div {
+						padding: 1.5rem;
+						font-size: 18px;
+						line-height: 1.5
+					}
+					
+					.col-imp-1 span br {
+						display: none;
+					}
+					
+					.col-imp-2 div {
+						padding-top: 10px;
+					}
+					
+					.col-imp-2 img {
+						margin: 0 auto;
+						display: block;
+						width: 60%;
+					}
+				/* Impregnating for aluminum die casting Section End */
+
+				/* Classification of Pore Section Start */
+					.col-classification-1 {
+						flex: 0 0 100%;
+						max-width: 100%;
+					}
+					
+				/* Classification of Pore Section End */
 
 			/* Footer Section */
 			.footer-section {
@@ -568,6 +639,16 @@
 			.col-lg-4 {
 				flex: 0 0 50%;
 				max-width: 50%;	
+			}
+			
+			.col-imp-1 {
+				flex: 0 0 100%;
+				max-width: 100%;	
+			}
+			
+			.col-imp-2 {
+				flex: 0 0 100%;
+				max-width: 100%;	
 			}
 			
 			/* Header Section */
@@ -691,56 +772,77 @@
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
-					.banner-section-div {
+					.banner-section {
+						padding-top: 150px;
+					}
+					
+					.banner-span-3 {
+						display: inline-block;
 						width: 100%;
+						padding: 0;
+					}
+					
+					.banner-span-3 img {
+						vertical-align: bottom;
+						width: 50%;
+						margin: 2rem auto;
+						display: block;
+					}
+					
+					.banner-span-4 {
+						display: inline-block;
+						width: 100%;
+						padding: 0;
+						vertical-align: top;
+						line-height: 1.75;
+						font-size: 18px;
+					}
+					
+					.banner-span-4 span:nth-child(1) {
+						color: rgb(0, 125, 140);
+						font-size: 20px;
 					}
 
-					.banner-section-div-0 {
-						position: relative;
-						width: 393px;
-						height: 100px;
-						top: 9.5rem;
-						left: -6rem;
-						text-align: right;
-						padding: 1.8rem 1.5rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 35%;
-						margin: 6rem auto 0 auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -368px;
-						width: 38%;
-					}
-					
-					.banner-section-div-1>div {
-						max-width: 60%;
-						padding-bottom: 4rem;
-					}
-					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
+					.banner-span-4 span br {
+						display: none;
 					}
 				/* Banner Section End */
+				
+				/* Impregnating for aluminum die casting Section Start */
+					.impregnating-div-0 {
+						width: 71%;
+						margin: 0 auto;
+						display: block;
+					}
+					
+					.col-imp-1 div {
+						padding: 1.5rem;
+						font-size: 18px;
+						line-height: 1.5
+					}
+					
+					.col-imp-1 span br {
+						display: none;
+					}
+					
+					.col-imp-2 div {
+						padding-top: 10px;
+					}
+					
+					.col-imp-2 img {
+						margin: 0 auto;
+						display: block;
+						width: 60%;
+					}
+				/* Impregnating for aluminum die casting Section End */
+				
+				/* Classification of Pore Section Start */
+					.col-classification-1 {
+						flex: 0 0 100%;
+						max-width: 100%;
+					}
+					
+				/* Classification of Pore Section End */
 			
 			/* Footer Section */
 			.footer-section {
@@ -829,6 +931,16 @@
 				max-width: 25%;	
 			}
 			
+			.col-imp-1 {
+				flex: 0 0 60%;
+				max-width: 60%;	
+			}
+			
+			.col-imp-2 {
+				flex: 0 0 40%;
+				max-width: 40%;	
+			}
+			
 			/* Header Section */
 				/* dropdown 관련 소스 Start */
 					.nav-link {
@@ -913,57 +1025,72 @@
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
-					.banner-section-div {
+					.banner-section {
+						padding-top: 100px;
+					}
+					
+					.banner-span-3 {
+						display: inline-block;
+						width: 43%;
+						padding: 3.5rem 0 2.5rem 0.5rem;
+					}
+					
+					.banner-span-3 img {
+						vertical-align: bottom;
 						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 495px;
-						height: 100px;
-						top: 9.5rem;
-						left: -9rem;
-						text-align: right;
-						padding: 1.8rem 0.6rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 35%;
-						margin: 8rem auto 2rem auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
 						margin: 0;
-						position: relative;
-						top: -380px;
-						width: 35%;
+						display: block;
 					}
 					
-					.banner-section-div-1>div {
-						max-width: 60%;
-						padding-bottom: 4rem;
+					.banner-span-4 {
+						display: inline-block;
+						width: 56%;
+						padding: 3.2rem 0 1rem 1rem;
+						vertical-align: top;
+						line-height: 1.75;
+						font-size: 18px;
 					}
 					
-					.procam-explanation {
-						color: rgb(0, 125, 140);
+					.banner-span-4 span br {
+						display: none;
 					}
 				/* Banner Section End */
 				
+				/* Impregnating for aluminum die casting Section Start */
+					.impregnating-div-0 {
+						width: 71%;
+						margin: 0 auto;
+						display: block;
+					}
+					
+					.col-imp-1 div {
+						padding: 1.5rem;
+						font-size: 18px;
+						line-height: 1.5
+					}
+					
+					.col-imp-1 span br {
+						display: block;
+					}
+					
+					.col-imp-2 div {
+						padding-top: 10px;
+					}
+					
+					.col-imp-2 img {
+						margin: 0 auto;
+						display: block;
+						width: 100%;
+					}
+				/* Impregnating for aluminum die casting Section End */
+
+				/* Classification of Pore Section Start */
+					.col-classification-1 {
+						flex: 0 0 50%;
+						max-width: 50%;
+					}
+					
+				/* Classification of Pore Section End */
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1018,6 +1145,16 @@
 			.col-lg-4 {
 				flex: 0 0 25%;
 				max-width: 25%;	
+			}
+			
+			.col-imp-1 {
+				flex: 0 0 60%;
+				max-width: 60%;	
+			}
+			
+			.col-imp-2 {
+				flex: 0 0 40%;
+				max-width: 40%;	
 			}
 			
 			/* Header Section */
@@ -1105,57 +1242,78 @@
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
-					.banner-section-div {
+					.banner-section {
+						padding-top: 100px;
+					}
+					
+					.banner-span-3 {
+						display: inline-block;
+						width: 27%;
+						padding: 3.5rem 0 2.5rem 0.5rem;
+					}
+					
+					.banner-span-3 img {
+						vertical-align: bottom;
 						width: 100%;
-					}
-
-					.banner-section-div-0 {
-						position: relative;
-						width: 803px;
-						height: 100px;
-						top: 9.5rem;
-						left: -20.5rem;
-						text-align: right;
-						padding: 1.8rem 1.6rem 0 0 ;
-						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-						font-size: 2.3rem;
-						color: white;
-					}
-					
-					.banner-section-div-1 {
-						width: 70%;
-						height: 18%;
-						margin: 8rem auto 0 auto;
-						display: block;
-						padding-right: 15px;
-						padding-left: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(1) {
-						margin-bottom: 0;
-					}
-					
-					.banner-section-div-0>p:nth-child(2) {
-						font-size: 0.85rem;
-					}
-					
-					.banner-section-div-1>img {
 						margin: 0;
-						position: relative;
-						top: -305px;
-						width: 25%;
+						display: block;
 					}
 					
-					.banner-section-div-1>div {
-						max-width: 75%;
-						padding-bottom: 1rem;
+					.banner-span-4 {
+						display: inline-block;
+						width: 70%;
+						padding: 3.2rem 0 1rem 3rem;
+						vertical-align: top;
+						line-height: 1.75;
+						font-size: 18px;
 					}
 					
-					.procam-explanation {
+					.banner-span-4 span:nth-child(1) {
 						color: rgb(0, 125, 140);
+						font-size: 20px;
+					}
+					
+					.banner-span-4 span br {
+						display: none;
 					}
 				/* Banner Section End */
-				
+
+				/* Impregnating for aluminum die casting Section Start */
+					.impregnating-div-0 {
+						width: 71%;
+						margin: 0 auto;
+						display: block;
+					}
+					
+					.col-imp-1 div {
+						padding: 1.5rem;
+						font-size: 18px;
+						line-height: 2
+					}
+					
+					.col-imp-1 span br {
+						display: block;
+					}
+					
+					.col-imp-2 div {
+						padding-top: 10px;
+					}
+					
+					.col-imp-2 img {
+						margin: 0 auto;
+						display: block;
+						width: 100%;
+					}
+				/* Impregnating for aluminum die casting Section End */
+
+				/* Classification of Pore Section Start */
+					.col-classification-1 {
+						flex: 0 0 50%;
+						max-width: 50%;
+					}
+					
+				/* Classification of Pore Section End */
+
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1197,6 +1355,7 @@
 			}
 		}
     </style>
+        
     <script>
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
@@ -1294,7 +1453,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -1303,7 +1462,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">®</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
@@ -1320,186 +1479,138 @@
         <main class="main-section">
             
             <!-- Banner Section Start -->
-            <div class="banner-section banner-ten">
+            <div class="banner-section p-bot-50">
 				<div class="container">
-                    <div class="row">
-                        <div class="fadeIn banner-section-div">
-                        	<div class="banner-section-div-0">
-                        		<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
-                        		<p>Super Hydrophobic Solution</p>
-                        	</div>
-                            <div class="p-top-100 banner-section-div-1">
-<!--                             	<p style="position: relative; top: 9.6rem; left: 18rem; font-size: 2.3rem; font-weight: bold; z-index: 2; color: white;">PROCAM<sup class="sup">®</sup></p> -->
-<%--                             	<img src="${contextPath}/resources/img/product/product_background.png" alt="img" class="img-fluid mr-auto d-block" style="position: relative; width: 28.6%; top: 5rem;"> --%>
-                            	<div>
-	                            	<span class="procam-explanation">Hydrophobic chemicals are used in water and oil repellent coating of various surface</span>.<br>
-	                            	It is <span class="procam-explanation">coated by vacuum evaporation machine</span> for surface to repel water, dust and oil on optical lens.<br>
-	                            	<span class="procam-explanation">Lens stay clear longer </span> and the coating helps make <span class="procam-explanation">cleaning easy</span>, resulting in <span class="procam-explanation">cleaner vision and easier maintenance</span>.
-                            	</div>
-                            	<img src="${contextPath}/resources/img/product/hydrophobic_productimg.png" alt="img" class="img-fluid ml-auto d-block">
-                            </div>
+
+                    <section class="row">
+                        <div class="fadeIn">
+                        	<div>
+		                    	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro0.png" alt="img" class="img-fluid">
+		                    </div>
+
+                            <span class="banner-span-3">
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro3.png" alt="img" class="img-fluid fadeInUp">
+                            </span>
+                            <span class="banner-span-4">
+	                        	<span>
+	                        		It is a kind of sealants for porous materials such as aluminum die casting products mainly used<br> in automobile field.
+	                        	</span>
+	                        	<br><br>
+	                        	<span>
+	                        		Impregnation is in fusing an impregnant into surface of porous materials to fill invisible holes and unintended absences<br>
+	                        		of material. Porosity is unavoidable in the metal casting process but it causes leaks and faulty products.
+	                        	</span>
+	                        	<br><br>
+	                        	<span>
+	                        		Impregnation technology helps to minimize loss due to porosity.<br>
+	                        		The technology is not only used for metal casting but also used for sintered metals, iron casting, woods, paper, electronic<br>
+	                        		components and etc.
+	                        	</span>
+	                        	               
+                            </span>
                         </div>
-                    </div>
+                    </section>
+
                 </div>
             </div>
             <!-- END of Banner Section -->
-            
-            <!-- Hydrophobic Image Section Start -->
-            <div id="hard-coating" class="monomer-image-section p-top-50 p-bot-50">
-                <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                        	<p class="myriad-bold" style="font-size: 2.3rem; color: rgb(0, 125, 140); margin-bottom: 0;">PROCAM<sup class="sup">®</sup></p>
-                        	<p style="color: rgb(0, 125, 140);">Hydrophobic & Vacuum Coating</p>
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_img.png" alt="img" class="img-fluid ml-auto d-block">
+            <!-- Applications Section Start -->
+            <div id="applications" class="p-top-50 p-bot-50">
+                <div class="container">
+                    <section class="row">
+                        <div class="fadeInUp">
+                            <div class="icon p-bot-30">
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_applications0.png" alt="img" class="img-fluid applications-img">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- END of Applications Section -->
+            
+            <!-- Impregnating for aluminum die casting Section Start -->
+            <div id="impregnating" class="p-top-50 p-bot-50">
+                <div class="container">
+                    <div class="impregnating-div-0">
+                    	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro5.png" alt="img" class="img-fluid">
+                    </div>
+                    <section class="row">
+                        <div class="col-imp-1 col-md-6 fadeInUp">
+                            <div class="icon p-bot-30">
+                                <span>
+                                	Products made from aluminum alloy are very porous and has rough surfaces because volume<br>
+                                	contraction partially occurs in the cooling process of die casing.
+                                </span>
+                                <br>
+                                <span>
+                                	Impregnation is needed to improve surfaces of ADC products and to prevent the leakage of air,<br>
+                                	gases, oils or liquid sand.
+                                </span>
+                                <br><br>
+                                <span>
+                                	ADC mainly used in automobile industry demands the best impregnation technology.<br>
+                                </span>
+                                <span>
+                                	Automobile parts must be completely sealed and given sufficient durability because these parts<br>
+                                	must endure high temperature and pressure.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-imp-2 col-md-6 fadeInUp">
+                            <div class="icon p-bot-30">
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro6.png" alt="img" class="img-fluid">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Hydrophobic Image Section -->	
+            <!-- END of Impregnating for aluminum die casting Section -->
             
-            <!-- Classification Section Start -->
-            <div id="classification" class="p-top-50 p-bot-50">
+            <!-- Classification of pore Section Start -->
+            <div id="classification_of_pore" class="p-top-50 p-bot-50">
                 <div class="container">
+                    <section class="row">
+                        <div class="col-classification-1 col-md-6 fadeInUp">
+                            <div class="icon" style="padding-bottom: 30px;">
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro8.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="4">
-	                                		<h3 class="classification-header myriad-bold" style="color: black; margin-bottom: 3rem;">Classification</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
-                                			Hydrophobic
-                                		</td>
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
-                                			Super-Hydrophobic
-                                		</td>
-                                		<td style="width: 24%;">
-                                			Vacuum Coating Materials
-                                		</td>
-                                	</tr>
-                                </table>
+                        <div class="col-classification-1 col-md-6 fadeInUp">
+                            <div class="icon p-bot-30">
+                            	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 1.6rem; margin-left: 0.5rem;">Pore Size</p>
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro9.png" alt="img" class="img-fluid" style="margin: 0 auto; display: block;">
+                            </div>
+                            
+                            <div class="icon p-bot-30">
+                            	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 1.6rem; margin-left: 0.5rem;">The Shape of Pore</p>
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro10.png" alt="img" class="img-fluid">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Classification Section -->
+            <!-- END of Classification of pore Section -->
             
-            <!-- Features Section Start -->
-            <div id="coating-features" class="p-top-50 p-bot-50">
+            <!-- Product Properties - Hard Coating Section Start -->
+            <div id="hard-coating" class="p-top-50 p-bot-150">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myriad-bold" style="color: black; margin-bottom: 2rem;">Features</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features4.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features5.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Features Section -->
-            
-            <!-- Hydrophobic Chemicals Section Start -->
-            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section p-top-50 p-bot-150">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                        	<div>
-                        		<h3 class="product-properties-header myriad-bold" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
-                        	</div>
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Hydrophobic Chemicals Section -->
-            
-            <!-- Vacuum Coating Section Start -->
-            <div id="vacuum-coating" class="vacuum-coating-section p-top-50 p-bot-50">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table2.png" alt="img" class="img-fluid fadeInUp">
+                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro12.png" alt="img" class="img-fluid">
                             </div>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <!-- END of Vacuum-Coating Section -->
-            
-            <!-- Vacuum Coating Materials Section Start -->
-            <div id="vacuum-coating-materials" class="vacuum-coating-materials-section p-top-50 p-bot-50">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table3.png" alt="img" class="img-fluid fadeInUp">
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Vacuum Coating Materials Section -->
-            
-            <!-- Vacuum Coating Consumable Section Start -->
-            <div id="vacuum-coating-consumable" class="vacuum-coating-consumable-section p-top-50 p-bot-150">
-                <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div class="fadeIn">
-                            <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table4.png" alt="img" class="img-fluid fadeInUp">
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-            <!-- END of Vacuum Coating Materials Section -->
+            <!-- END of Product Properties - Hard Coating Section -->
 
         </main>
         <!-- END MAIN SECTION -->
