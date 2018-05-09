@@ -37,18 +37,19 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -67,6 +68,52 @@
 			}
 			
 			/* dropdown 관련 소스 Start */
+				.dropdown-sidemenu-1 {
+					display: none;
+				}
+				
+				.dropdown-sidemenu-2 {
+					display: block;
+				}
+				
+				.dropdown-submenu {
+				    position: relative;
+				}
+				
+				.dropdown-submenu>.dropdown-menu {
+				    top: 0;
+				    left: 100%;
+				    margin-top: -6px;
+				    margin-left: -1px;
+				    background-color: rgb(0, 125, 140);
+					border-radius: 0;
+				}
+				
+				.dropdown-submenu:hover>.dropdown-menu {
+				    display: block;
+				}
+				
+				.dropdown-submenu:hover>a:after {
+				    border-left-color: #fff;
+				}
+				
+				.dropdown-submenu.pull-left {
+				    float: none;
+				}
+				
+				.dropdown-submenu.pull-left>.dropdown-menu {
+				    left: -100%;
+				    margin-left: 10px;
+				    -webkit-border-radius: 6px 0 6px 6px;
+				    -moz-border-radius: 6px 0 6px 6px;
+				    border-radius: 6px 0 6px 6px;
+				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}	
+			/* dropdown 관련 소스 End */
 				.header-section {
 					position: relative;
 					z-index: 2;
@@ -76,27 +123,19 @@
 					background-color: rgb(0, 125, 140) !important;
 					box-shadow: none !important;
 				}
-	
-				.dropbtn {
-				    background: rgb(237, 237, 237);
-				    color: rgb(0, 125, 140);
-				    padding: 16px 70px;
-				    font-size: 17px;
-				    border: none;
-				    cursor: pointer;
-				    border-radius: 0;
-				}
-				
-				.dropdown {
-				    position: relative;
-				    display: inline-block;
-				}
-			/* dropdown 관련 소스 End */
 
 		/* R&D Section Start */
 			.col-rnd-1 {
 				flex: 0 0 100%;
 				max-width: 100%;
+			}
+			
+			.applications-div-1 {
+				padding: 0;
+			}
+			
+			.applications-div-2 {
+				padding: 0;
 			}
 		/* R&D Section End */
 
@@ -121,6 +160,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -204,20 +251,51 @@
 						background-color: rgb(0, 125, 140) !important;
 						box-shadow: none !important;
 					}
-		
-					.dropbtn {
-					    background: rgb(237, 237, 237);
-					    color: rgb(0, 125, 140);
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					    border-radisu: 0;
+					
+					.dropdown-sidemenu-1 {
+						display: none;
 					}
 					
-					.dropdown {
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
+					
+					.dropdown-submenu {
 					    position: relative;
-					    display: inline-block;
+					}
+					
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					    background-color: rgb(0, 125, 140);
+						border-radius: 0;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
 					}
 				/* dropdown 관련 소스 End */
 
@@ -225,6 +303,14 @@
 				.col-rnd-1 {
 					flex: 0 0 100%;
 					max-width: 100%;
+				}
+				
+				.applications-div-1 {
+					padding: 0;
+				}
+				
+				.applications-div-2 {
+					padding: 0;
 				}
 			/* R&D Section End */
 
@@ -333,61 +419,66 @@
 						position: relative;
 						z-index: 2;
 					}
-		
-					.dropbtn {
-					    background: rgb(237, 237, 237);
-					    color: rgb(0, 125, 140);
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					    border-radius: 0;
+					
+					.dropdown-sidemenu-1 {
+						display: none;
 					}
 					
-					.dropdown {
+					.dropdown-sidemenu-2 {
+						display: block;
+					}
+					
+					.dropdown-submenu {
 					    position: relative;
-					    display: inline-block;
 					}
 					
-						.dropdown-submenu {
-						    position: relative;
-						}
-						
-						.dropdown-submenu>.dropdown-menu {
-						    top: 0;
-						    left: 100%;
-						    margin-top: -6px;
-						    margin-left: -1px;
-						    -webkit-border-radius: 0 6px 6px 6px;
-						    -moz-border-radius: 0 6px 6px;
-						    border-radius: 0 6px 6px 6px;
-						}
-						
-						.dropdown-submenu:hover>.dropdown-menu {
-						    display: block;
-						}
-						
-						.dropdown-submenu:hover>a:after {
-						    border-left-color: #fff;
-						}
-						
-						.dropdown-submenu.pull-left {
-						    float: none;
-						}
-						
-						.dropdown-submenu.pull-left>.dropdown-menu {
-						    left: -100%;
-						    margin-left: 10px;
-						    -webkit-border-radius: 6px 0 6px 6px;
-						    -moz-border-radius: 6px 0 6px 6px;
-						    border-radius: 6px 0 6px 6px;
-						}
+					.dropdown-submenu>.dropdown-menu {
+					    top: 0;
+					    left: 100%;
+					    margin-top: -6px;
+					    margin-left: -1px;
+					    background-color: rgb(0, 125, 140);
+						border-radius: 0;
+					}
+					
+					.dropdown-submenu:hover>.dropdown-menu {
+					    display: block;
+					}
+					
+					.dropdown-submenu:hover>a:after {
+					    border-left-color: #fff;
+					}
+					
+					.dropdown-submenu.pull-left {
+					    float: none;
+					}
+					
+					.dropdown-submenu.pull-left>.dropdown-menu {
+					    left: -100%;
+					    margin-left: 10px;
+					    -webkit-border-radius: 6px 0 6px 6px;
+					    -moz-border-radius: 6px 0 6px 6px;
+					    border-radius: 6px 0 6px 6px;
+					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 				/* dropdown 관련 소스 End */
 
 			/* R&D Section Start */
 				.col-rnd-1 {
 					flex: 0 0 100%;
 					max-width: 100%;
+				}
+				
+				.applications-div-1 {
+					padding: 0;
+				}
+				
+				.applications-div-2 {
+					padding: 0;
 				}
 			/* R&D Section End */
 
@@ -485,19 +576,12 @@
 						z-index: 2;
 					}
 					
-					.dropbtn {
-					    background: rgb(237, 237, 237);
-					    color: rgb(0, 125, 140);
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					    border-radius: 0;
+					.dropdown-sidemenu-1 {
+						display: none;
 					}
 					
-					.dropdown {
-					    position: relative;
-					    display: inline-block;
+					.dropdown-sidemenu-2 {
+						display: block;
 					}
 				/* dropdown 관련 소스 End */
 				
@@ -516,6 +600,14 @@
 				.col-rnd-1 {
 					flex: 0 0 50%;
 					max-width: 50%;
+				}
+				
+				.applications-div-1 {
+					padding: 0;
+				}
+				
+				.applications-div-2 {
+					padding: 0;
 				}
 			/* R&D Section End */
 
@@ -570,20 +662,13 @@
 						position: relative;
 						z-index: 2;
 					}
-		
-					.dropbtn {
-					    background: rgb(237, 237, 237);
-					    color: rgb(0, 125, 140);
-					    padding: 16px 70px;
-					    font-size: 17px;
-					    border: none;
-					    cursor: pointer;
-					    border-radius: 0;
+					
+					.dropdown-sidemenu-1 {
+						display: none;
 					}
 					
-					.dropdown {
-					    position: relative;
-					    display: inline-block;
+					.dropdown-sidemenu-2 {
+						display: block;
 					}
 				/* dropdown 관련 소스 End */
 				
@@ -602,6 +687,14 @@
 				.col-rnd-1 {
 					flex: 0 0 50%;
 					max-width: 50%;
+				}
+
+				.applications-div-1 {
+					padding: 0 0 0 0.95rem;
+				}
+				
+				.applications-div-2 {
+					padding: 0 0.95rem 0 0 ;
 				}
 			/* R&D Section End */
 
@@ -636,6 +729,16 @@
 		}
     </style>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -654,7 +757,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -675,10 +778,10 @@
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="research_development.do">R&D</a>
+                                <a class="active nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -687,25 +790,64 @@
             <!-- End of Navigation -->
             
             <!-- Side Menu Start -->
-            <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+	        <div id="side-menu" class="side-nav">
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="/">Home</a>
+					<li class="nav-item">
+	                    <a href="/">Home</a>
+	                </li>
+	
+	                <li class="nav-item dropdown-sidemenu-1">
+	                    <a href="product_coating_solution.do">Product</a>
+	                </li>
+	                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <ul class="dropdown-menu">
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="product_coating_solution.do">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="research_development.do">R&D</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.do">Contact</a>
-                    </li>
-                </ul>
+	
+	                <li class="nav-item dropdown-sidemenu-1">
+	                    <a href="company_ceo_message.do">Company</a>
+	                </li>
+	                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+	                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
+	                    <ul class="dropdown-menu">
+	                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+	                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
+	                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+	                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+	                    </ul>
+	                </li>
+	
+	                <li class="nav-item">
+	                    <a href="research_development.do">R&D</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="contact.do">Contact</a>
+	                </li>
+	            </ul>
 			</div>
 			<!-- End of Side Menu -->
 
@@ -731,13 +873,13 @@
             <div id="rnd" class="p-bot-100">
                 <div class="container">
                     <section class="row" style="width: 72.8%; margin: 0 auto;">
-                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-1" style="padding: 0 0 0 0.95rem;">
+                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-1">
                             <div class="icon">
                                 <img src="${contextPath}/resources/img/R&D/company_rnd_img1.jpg" alt="img" class="img-fluid applications-img">
                             </div>
                         </div>
 
-                        <div class="col-rnd-1 col-md-6 fadeInUp" style="padding: 0 0.95rem 0 0;">
+                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-2">
                             <div class="icon" style="width: 90%; margin: 2.55rem auto; color: black;">
                                 <div>
                                 	We founded our own R&D Center 2007.<br>
@@ -747,32 +889,31 @@
                                 <div style="font-weight: bold; font-size: 16px;">
                                 	As the clear vision of "Cost-effectiveness and Eco-friendly",
                                 </div>
-                                <br>
                                 <div>
                                 	we conducted a variety of research activities in order to achieve the following objectives.
                                 </div>
                                 <br>
                                 <div>
-                                	We have spread the research field based on specific capability and technology of our<br>
-                                	R&D Center and tried to jump up to be a global leading Chemical company through<br>
+                                	We have spread the research field based on specific capability and technology of our
+                                	R&D Center and tried to jump up to be a global leading Chemical company through
                                 	achieving outstanding results.
                                 </div>
                                 <br>
                                 <div>
-                                	Product Development through analysis on new product and new technology Possesses<br>
-                                	unrivaled technological power based on the high-capability Technology development<br>
+                                	Product Development through analysis on new product and new technology Possesses
+                                	unrivaled technological power based on the high-capability Technology development
                                 	by co-work with research team of the authorized institutes.
                                 </div>
                             </div>
                         </div>
 						
-                        <div class="col-rnd-1 col-md-6 fadeInUp" style="padding: 0 0 0 0.95rem;">
+                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-1">
                             <div class="icon">
                                 <img src="${contextPath}/resources/img/R&D/company_rnd_img2.png" alt="img" class="img-fluid">
                             </div>
                         </div>
 
-                        <div class="col-rnd-1 col-md-6 fadeInUp" style="padding: 0 0.95rem 0 0;">
+                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-2">
                             <div class="icon">
                                 <img src="${contextPath}/resources/img/R&D/company_rnd_img3.png" alt="img" class="img-fluid">
                             </div>
@@ -795,7 +936,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

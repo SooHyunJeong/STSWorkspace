@@ -177,14 +177,26 @@
  * UTILITY CSS 
  * ============================= */
 /* À¥ÆùÆ® CSS */
-@font-face{font-family:'MyriadPro-Bold'; src:url(../plugins/font/MyriadPro-Bold.otf)}
+@font-face{font-family:'MyriadPro-Bold'; 
+			src:url(../plugins/font/MyriadPro-Bold.otf);
+			src:url(../plugins/font/MyriadPro-Bold.woff);
+			src:url(../plugins/font/MyriadPro-Bold.ttf);
+			}
 @font-face{font-family:'MyriadPro-BoldCond'; src:url(../plugins/font/MyriadPro-BoldCond.otf)}
 @font-face{font-family:'MyriadPro-BoldCondlt'; src:url(../plugins/font/MyriadPro-BoldCondlt.otf)}
-@font-face{font-family:'MyriadPro-Boldlt'; src:url(../plugins/font/MyriadPro-Boldlt.otf)}
+@font-face{font-family:'MyriadPro-Boldlt'; 
+			src:url(../plugins/font/MyriadPro-BoldIt.otf);
+			src:url(../plugins/font/MyriadPro-BoldIt.woff);
+			src:url(../plugins/font/MyriadPro-BoldIt.ttf);
+			}
 @font-face{font-family:'MyriadPro-Cond'; src:url(../plugins/font/MyriadPro-Cond.otf)}
 @font-face{font-family:'MyriadPro-Condlt'; src:url(../plugins/font/MyriadPro-Condlt.otf)}
 @font-face{font-family:'MyriadPro-lt'; src:url(../plugins/font/MyriadPro-lt.otf)}
-@font-face{font-family:'MyriadPro-Regular'; src:url(../plugins/font/MyriadPro-Regular.otf)}
+@font-face{font-family:'MyriadPro-Regular'; 
+			src:url(../plugins/font/MyriadPro-Regular.otf);
+			src:url(../plugins/font/MyriadPro-Regular.woff);
+			src:url(../plugins/font/MyriadPro-Regular.ttf);
+			}
 @font-face{font-family:'MyriadPro-Semibold'; src:url(../plugins/font/MyriadPro-Semibold.otf)}
 
 html, body {
@@ -204,6 +216,10 @@ body {
 
 .myriad-bold {
 	font-family: MyriadPro-Bold;
+}
+
+.myriad-boldlt {
+	font-family: MyriadPro-Boldlt;
 }
 
 .dropdown-menu li a {
@@ -736,7 +752,17 @@ ul, ol {
     font-weight: 300;
     text-transform: capitalize; }
     .hornbill-navbar .hornbill-nav li a.active, .hornbill-navbar .hornbill-nav li a:hover {
-      color: #fff; }
+      color: #fff;
+      font-weight: 900; }
+    .hornbill-navbar .hornbill-nav li a.active, .hornbill-navbar .hornbill-nav li.active a:hover,
+    .hornbill-navbar .hornbill-nav li a.active, .hornbill-navbar .hornbill-nav li.active a:focus,
+    .hornbill-navbar .hornbill-nav li a.active, .hornbill-navbar .hornbill-nav li.active a:active {
+      color: #fff;
+      font-weight: 900; }
+     li.active a {
+     	color: #fff !important;
+     	font-weight: 900 !important;
+     }
   .hornbill-navbar.fixed-top {
     background: transparent; }
     .hornbill-navbar.fixed-top:hover, .hornbill-navbar.fixed-top:focus {
@@ -1109,7 +1135,7 @@ ul, ol {
   transition: all 0.1s ease-in-out; }
   .single-service:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    border-color: #7f67f3;
+    border-color: rgb(0, 125, 140);
     border-radius: 6px; }
   .single-service p {
     margin: 0; }
@@ -1445,7 +1471,7 @@ ul, ol {
     position: absolute; 
     border-radius: 40px;}
     .contact-style-three .left-info .heading h2 {
-      margin-bottom: 30px; }
+      margin-bottom: 35px; }
     .contact-style-three .left-info ul.social {
       position: absolute;
       bottom: 10%;
@@ -1485,7 +1511,7 @@ ul, ol {
 .footer-widget {
   border-right: 1px solid #E3E3E3;
   text-align: center;
-  padding: 0 30px;
+  padding: 0;
   margin: 0 auto; }
   .footer-widget.no-border, .footer-widget:last-child {
     border: none; }
@@ -2850,7 +2876,7 @@ body.body-wine .features-list.hover-none .single-feature:hover {
     padding-top: 20%; }
 
   .footer-widget {
-    margin-bottom: 45px; }
+    margin-bottom: 0; }
     .footer-widget h3 {
       margin-bottom: 0; }
     .footer-widget .discount {
@@ -2979,7 +3005,7 @@ body.body-wine .features-list.hover-none .single-feature:hover {
 
   .banner-ten {
     margin-bottom: 0;
-    padding-bottom: 70px; }
+    padding-bottom: 0; }
     .banner-ten:before {
       height: 50px; }
 

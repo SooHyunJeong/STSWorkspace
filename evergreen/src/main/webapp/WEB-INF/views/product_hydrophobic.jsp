@@ -37,17 +37,27 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
+		}
+		
+		section.row {
+			margin: 0 auto;
+			width: 71%;
+		}
+		
+		.fadeIn {
+			width: 100%;
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -176,6 +186,11 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 			/* dropdown 관련 소스 End */
 			
 			/* Banner Section Start */
@@ -212,12 +227,6 @@
 					font-size: 0.5rem;
 				}
 				
-				.banner-section-div-1>img {
-					width: 75%;
-					margin: 0 auto;
-					display: block !important;
-				}
-				
 				.banner-section-div-1>div {
 					max-width: 100%;
 					padding-bottom: 3rem;
@@ -227,6 +236,59 @@
 					color: rgb(0, 125, 140);
 				}
 			/* Banner Section End */
+			
+			/* Hydrophobic Section Start */
+				.hydrophobic-image-p-0 {
+					font-size: 2.3rem;
+					color: rgb(0, 125, 140);
+					margin-bottom: 0;
+				}
+				
+				.hydrophobic-image-p-1 {
+					color: rgb(0, 125, 140);
+				}
+			/* Hydrophobic Section End */
+			
+			/* Classification Section Start */
+				#classification .row div {
+					width: 100%;
+				}
+				
+				#classification .row {
+					margin: 0 auto;
+					width: 71%;
+				}
+				
+				.classification-header {
+					color: black;
+					margin-bottom: 3rem;
+				}
+				
+				.col-c-1 {
+					text-align: center;
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				
+				#classification .row div:nth-child(2) {
+					padding: 2rem;
+					border-right: none;
+				}
+				
+				#classification .row div:nth-child(4) {
+					padding: 2rem;
+					border-right: none;
+				}
+				
+				#classification .row div:nth-child(6) {
+					padding: 2rem;
+				}
+				
+				hr {
+					width: 33%;
+					border: 0.5px solid #dbdbdb;
+				}
+			/* Classification Section End */
 		
 		/* Footer Section */
 		.footer-section {
@@ -249,6 +311,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -431,6 +501,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
@@ -467,12 +542,6 @@
 						font-size: 0.85rem;
 					}
 					
-					.banner-section-div-1>img {
-						width: 70%;
-						margin: 0 auto;
-						display: block !important;
-					}
-					
 					.banner-section-div-1>div {
 						max-width: 100%;
 						padding-bottom: 3rem;
@@ -482,6 +551,47 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 33%;
+						max-width: 33%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 0;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 
 			/* Footer Section */
 			.footer-section {
@@ -688,6 +798,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
@@ -725,13 +840,6 @@
 						font-size: 0.85rem;
 					}
 					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -368px;
-						width: 38%;
-					}
-					
 					.banner-section-div-1>div {
 						max-width: 60%;
 						padding-bottom: 4rem;
@@ -741,6 +849,47 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 33%;
+						max-width: 33%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 0;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 			
 			/* Footer Section */
 			.footer-section {
@@ -947,13 +1096,6 @@
 						font-size: 0.85rem;
 					}
 					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -380px;
-						width: 35%;
-					}
-					
 					.banner-section-div-1>div {
 						max-width: 60%;
 						padding-bottom: 4rem;
@@ -963,6 +1105,47 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 33%;
+						max-width: 33%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 0;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 				
 				.sup {
 					font-size: 100%;
@@ -1139,13 +1322,6 @@
 						font-size: 0.85rem;
 					}
 					
-					.banner-section-div-1>img {
-						margin: 0;
-						position: relative;
-						top: -305px;
-						width: 25%;
-					}
-					
 					.banner-section-div-1>div {
 						max-width: 75%;
 						padding-bottom: 1rem;
@@ -1155,6 +1331,47 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 33%;
+						max-width: 33%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 0;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 				
 				.sup {
 					font-size: 100%;
@@ -1198,6 +1415,16 @@
 		}
     </style>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -1216,7 +1443,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()" style="cursor: pointer;">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -1230,7 +1457,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="active nav-item">
                                 <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
@@ -1240,7 +1467,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1250,7 +1477,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()" style="cursor: pointer;">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1262,8 +1489,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -1329,14 +1576,11 @@
                         		<p>Super Hydrophobic Solution</p>
                         	</div>
                             <div class="p-top-100 banner-section-div-1">
-<!--                             	<p style="position: relative; top: 9.6rem; left: 18rem; font-size: 2.3rem; font-weight: bold; z-index: 2; color: white;">PROCAM<sup class="sup">®</sup></p> -->
-<%--                             	<img src="${contextPath}/resources/img/product/product_background.png" alt="img" class="img-fluid mr-auto d-block" style="position: relative; width: 28.6%; top: 5rem;"> --%>
                             	<div>
 	                            	<span class="procam-explanation">Hydrophobic chemicals are used in water and oil repellent coating of various surface</span>.<br>
 	                            	It is <span class="procam-explanation">coated by vacuum evaporation machine</span> for surface to repel water, dust and oil on optical lens.<br>
 	                            	<span class="procam-explanation">Lens stay clear longer </span> and the coating helps make <span class="procam-explanation">cleaning easy</span>, resulting in <span class="procam-explanation">cleaner vision and easier maintenance</span>.
                             	</div>
-                            	<img src="${contextPath}/resources/img/product/hydrophobic_productimg.png" alt="img" class="img-fluid ml-auto d-block">
                             </div>
                         </div>
                     </div>
@@ -1345,13 +1589,13 @@
             <!-- END of Banner Section -->
             
             <!-- Hydrophobic Image Section Start -->
-            <div id="hard-coating" class="monomer-image-section p-top-50 p-bot-50">
+            <div id="hydrophobic-image" class="hydrophobic-image p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
-                        	<p class="myriad-bold" style="font-size: 2.3rem; color: rgb(0, 125, 140); margin-bottom: 0;">PROCAM<sup class="sup">®</sup></p>
-                        	<p style="color: rgb(0, 125, 140);">Hydrophobic & Vacuum Coating</p>
+                        	<p class="myriad-bold hydrophobic-image-p-0">PROCAM<sup class="sup">®</sup></p>
+                        	<p class="hydrophobic-image-p-1">Hydrophobic & Vacuum Coating</p>
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_img.png" alt="img" class="img-fluid ml-auto d-block">
                             </div>
@@ -1366,28 +1610,46 @@
             <div id="classification" class="p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
+
+                    <!-- <section class="row">
+                        <div>
                             <div class="fadeIn">
-                                <table style="width: 100%;">
+                                <table>
                                 	<tr>
-	                                	<th colspan="4">
-	                                		<h3 class="classification-header myriad-bold" style="color: black; margin-bottom: 3rem;">Classification</h3>
+	                                	<th colspan="3">
+	                                		<h3 class="classification-header myraid-regular">Classification</h3>
 	                                	</th>
                                 	</tr>
-                                	<tr style="text-align: center;">
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
+                                	<tr class="classification-tr">
+                                		<td class="classification-td-0">
                                 			Hydrophobic
                                 		</td>
-                                		<td style="border-right: 1px solid #dbdbdb; width: 20%;">
+                                		<td class="classification-td-0">
                                 			Super-Hydrophobic
                                 		</td>
-                                		<td style="width: 24%;">
+                                		<td class="classification-td-1">
                                 			Vacuum Coating Materials
                                 		</td>
                                 	</tr>
                                 </table>
                             </div>
+                        </div>
+                    </section> -->
+                    
+                    <section class="row">
+                       	<div>
+                       		<h3 class="classification-header myraid-regular">Classification</h3>
+                       	</div>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Hydrophobic
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Super-Hydrophobic
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Vacuum Coating Materials
                         </div>
                     </section>
 
@@ -1399,13 +1661,13 @@
             <div id="coating-features" class="p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div style="width: 100%;">
                             <div class="fadeIn">
                                 <table style="width: 100%;">
                                 	<tr>
 	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myriad-bold" style="color: black; margin-bottom: 2rem;">Features</h3>
+	                                		<h3 class="coating-features-header myraid-regular" style="color: black; margin-bottom: 2rem;">Features</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr style="text-align: center;">
@@ -1435,13 +1697,13 @@
             <!-- END of Features Section -->
             
             <!-- Hydrophobic Chemicals Section Start -->
-            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section p-top-50 p-bot-150">
+            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section p-top-50 p-bot-100">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header myriad-bold" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        		<h3 class="product-properties-header myraid-regular" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
@@ -1457,7 +1719,7 @@
             <div id="vacuum-coating" class="vacuum-coating-section p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_table2.png" alt="img" class="img-fluid fadeInUp">
@@ -1473,7 +1735,7 @@
             <div id="vacuum-coating-materials" class="vacuum-coating-materials-section p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_table3.png" alt="img" class="img-fluid fadeInUp">
@@ -1489,7 +1751,7 @@
             <div id="vacuum-coating-consumable" class="vacuum-coating-consumable-section p-top-50 p-bot-150">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_table4.png" alt="img" class="img-fluid fadeInUp">
@@ -1513,7 +1775,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

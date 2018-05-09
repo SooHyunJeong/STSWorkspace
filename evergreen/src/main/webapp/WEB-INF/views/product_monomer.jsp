@@ -37,18 +37,23 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
+		}
+		
+		.fadeIn {
+			width: 100%;
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -219,7 +224,45 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 			/* dropdown 관련 소스 End */
+			
+			/* Classification Section Start */
+				#classification .row div {
+					width: 100%;
+				}
+				
+				#classification .row {
+					margin: 0 auto;
+					width: 71%;
+				}
+				
+				.classification-header {
+					color: black;
+					margin-bottom: 3rem;
+				}
+				
+				.col-c-1 {
+					text-align: center;
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+		
+				#classification .row .col-c-1 {
+					padding: 2rem;
+					border-right: none;
+					border-bottom: none;
+				}
+				
+				hr {
+					width: 33%;
+					border: 0.5px solid #dbdbdb;
+				}
+			/* Classification Section End */
 			
 		.functional-monomer-p {
 			color: rgb(0, 125, 140);
@@ -246,6 +289,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -438,6 +489,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
@@ -481,6 +537,57 @@
 						color: rgb(0, 125, 140);
 					}
 				/* Banner Section End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 50%;
+						max-width: 50%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 2rem;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 2rem;
+						border-right: none;
+						border-bottom: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 2rem;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(8) {
+						padding: 2rem;
+						border-right: none;
+						border-bottom: none;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 
 			/* Footer Section */
 			.footer-section {
@@ -729,7 +836,63 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+					
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 50%;
+						max-width: 50%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 2rem;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 2rem;
+						border-right: none;
+						border-bottom: 1px solid #dbdbdb;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 2rem;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(8) {
+						padding: 2rem;
+						border-right: none;
+						border-bottom: none;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 			
 			/* Footer Section */
 			.footer-section {
@@ -949,6 +1112,57 @@
 					font-weight: normal;
 					top: 0;
 				}
+				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+					
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 25%;
+						max-width: 25%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(8) {
+						padding: 0;
+						border-right: none;
+						border-bottom: none;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
 
 			.navbar {
 				background: rgb(0, 125, 140) !important;
@@ -1127,6 +1341,57 @@
 					
 				/* dropdown 관련 소스 End */
 				
+				/* Classification Section Start */
+					#classification .row div {
+						width: 100%;
+					}
+					
+					#classification .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.classification-header {
+						color: black;
+						margin-bottom: 3rem;
+					}
+					
+					.col-c-1 {
+						text-align: center;
+						flex: 0 0 25%;
+						max-width: 25%;
+					}
+			
+					#classification .row div:nth-child(2) {
+						padding-top: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(4) {
+						padding-top: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(6) {
+						padding-top: 0;
+						border-right: 1px solid #dbdbdb;
+						border-bottom: none;
+					}
+					
+					#classification .row div:nth-child(8) {
+						padding: 0;
+						border-right: none;
+						border-bottom: none;
+					}
+					
+					hr {
+						width: 0;
+						border: none;
+					}
+				/* Classification Section End */
+				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1169,6 +1434,16 @@
 		}
     </style>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -1187,7 +1462,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -1202,7 +1477,7 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
@@ -1211,7 +1486,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1222,7 +1497,7 @@
 
 			<!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1234,8 +1509,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -1334,32 +1629,25 @@
             <!-- Classification Section Start -->
             <div id="classification" class="p-top-50 p-bot-50">
                 <div class="container">
-
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="4">
-	                                		<h3 class="classification-header myriad-bold" style="color: black; margin-bottom: 3rem;">Classification</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
-                                			Photochromic Gray
-                                		</td>
-                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
-                                			Photochromic Brown
-                                		</td>
-                                		<td style="border-right: 1px solid #dbdbdb; width: 22%;">
-                                			Photochromic Orange-Gray
-                                		</td>
-                                		<td style="width: 33%;">
-                                			Photochromic Gray for 1.60 Reflective Index
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
+                    
+                    <section class="row">
+                       	<div class="icon">
+                       		<h3 class="classification-header myraid-regular">Classification</h3>
+                       	</div>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Photochromic Gray
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Photochromic Brown
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Photochromic Orange-Gray
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Photochromic Gray for 1.60 Reflective Index
                         </div>
                     </section>
 
@@ -1377,7 +1665,7 @@
                                 <table style="width: 100%;">
                                 	<tr>
 	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myriad-bold" style="color: black;">Features</h3>
+	                                		<h3 class="coating-features-header myraid-regular" style="color: black;">Features</h3>
 	                                	</th>
                                 	</tr>
                                 	<tr style="text-align: center;">
@@ -1407,7 +1695,7 @@
                     <section class="row" style="margin: 0 auto; width: 71%;">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header myriad-bold" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        		<h3 class="product-properties-header myraid-regular" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">
@@ -1431,7 +1719,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

@@ -292,14 +292,14 @@
 		 ===============================================*/
 		$('[data-toggle="tooltip"]').tooltip(); 
 		var hoverElement = document.querySelectorAll('.hover');
-        hoverElement.forEach( function(el){
+       /* hoverElement.forEach( function(el){
             el.addEventListener('mouseenter' , function(){
                 this.classList.add('flip');
             })
             el.addEventListener('mouseleave' , function(){
                 this.classList.remove('flip');
             });
-        } );
+        } );*/
 
 
 })(jQuery);

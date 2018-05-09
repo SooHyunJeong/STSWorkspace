@@ -37,18 +37,19 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -235,6 +236,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+		
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -283,6 +292,11 @@
 		  right: 35px;
 		  font-size: 36px;
 		  color: #ccc;
+		}
+		
+		.sidemenu {
+			margin-left: 10px;
+			font-size: 0.8rem;
 		}
 		
 		@media all and (min-width: 576px) {
@@ -388,6 +402,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 
 			/* CEO Message Section Start */
@@ -404,7 +423,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 69%;
+					width: 61%;
 				}
 				
 				.ceo-message-h2 {
@@ -413,14 +432,14 @@
 				}
 				
 				.ceo-message-hr {
-					width: 89%;
+					width: 100%;
 					float: left;
 					border-color: rgb(0, 125, 140);
 					margin-top: 0;
 				}
 				
 				.ceo-message-p1 {
-					background: url(../../resources/img/product/product_background.png) left/89% 100% no-repeat;
+					background: url(../../resources/img/product/product_background.png) left/100% 100% no-repeat;
 					color: white;
 					padding: 4.5% 12.5% 4.5% 1.5%;
 					font-size: 18px;
@@ -629,6 +648,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 
 			/* CEO Message Section Start */
@@ -645,7 +669,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 69%;
+					width: 61%;
 				}
 				
 				.ceo-message-h2 {
@@ -654,14 +678,14 @@
 				}
 				
 				.ceo-message-hr {
-					width: 89%;
+					width: 100%;
 					float: left;
 					border-color: rgb(0, 125, 140);
 					margin-top: 0;
 				}
 				
 				.ceo-message-p1 {
-					background: url(../../resources/img/product/product_background.png) left/89% 57% no-repeat;
+					background: url(../../resources/img/product/product_background.png) left/100% 57% no-repeat;
 					color: white;
 					padding: 4.5% 13.5% 4.5% 1.5%;
 					font-size: 18px;
@@ -854,7 +878,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 69%;
+					width: 61%;
 				}
 				
 				.ceo-message-h2 {
@@ -863,14 +887,14 @@
 				}
 				
 				.ceo-message-hr {
-					width: 89%;
+					width: 100%;
 					float: left;
 					border-color: rgb(0, 125, 140);
 					margin-top: 0;
 				}
 				
 				.ceo-message-p1 {
-					background: url(../../resources/img/product/product_background.png) left/89% 57% no-repeat;
+					background: url(../../resources/img/product/product_background.png) left/100% 57% no-repeat;
 					color: white;
 					padding: 4.5% 12.5% 4.5% 1.5%;
 					font-size: 20px;
@@ -1021,7 +1045,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 69%;
+					width: 61%;
 				}
 				
 				.ceo-message-h2 {
@@ -1030,14 +1054,14 @@
 				}
 				
 				.ceo-message-hr {
-					width: 89%;
+					width: 100%;
 					float: left;
 					border-color: rgb(0, 125, 140);
 					margin-top: 0;
 				}
 				
 				.ceo-message-p1 {
-					background: url(../../resources/img/product/product_background.png) left/89% 57% no-repeat;
+					background: url(../../resources/img/product/product_background.png) left/100% 57% no-repeat;
 					color: white;
 					padding: 4.5% 12.5% 4.5% 1.5%;
 					font-size: 20px;
@@ -1103,6 +1127,17 @@
 		}
     </style>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+	
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+	    		$(".procam-sup").css("top", "-4px");
+	    		$(".everseal-sup").css("top", "-4px");
+	    	}
+	
+		});
+	
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -1121,7 +1156,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -1139,13 +1174,13 @@
                                 <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1155,7 +1190,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1167,8 +1202,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -1237,13 +1292,13 @@
                             			To be a world best in fine chemistry! Future oriented & High-technology
                             		</p>
                             		<p>
-                            			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in Februra 1998,<br>
-                            			we have been manufacturing in Optical material (PROCAM<sup class="sup">®</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup">®</sup>)<br>
+                            			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in Februra 1998,
+                            			we have been manufacturing in Optical material (PROCAM<sup class="sup">®</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup">®</sup>)
                             			and providing all around world. We founded our own R&D Center in 2007.
                             			<br><br>
-                            			Then, we have tried to our best toward the world's leading technology company through developing coating material<br>
-                            			and synthesizing raw materials. As the clear vision of, "Respecting the basic and principle", we have devoted ourselves<br>
-                            			to provide customers with better products and services. Based on the technology and capability accumulated so far,<br>
+                            			Then, we have tried to our best toward the world's leading technology company through developing coating material
+                            			and synthesizing raw materials. As the clear vision of, "Respecting the basic and principle", we have devoted ourselves
+                            			to provide customers with better products and services. Based on the technology and capability accumulated so far,
                             			Evergreen C&T Corporation aims to become a hidden champions and a more trustworthy company in severe global market.
                             		</p>
                             	</span>
@@ -1270,7 +1325,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

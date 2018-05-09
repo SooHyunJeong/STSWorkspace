@@ -6,7 +6,7 @@
  ===============================================*/
 
 #mainNav>div {
-	width: 75%;
+	width: 79%;
 }
 
 section.row {
@@ -14,7 +14,12 @@ section.row {
 	width: 71%;
 }
 
+.fadeIn {
+	width: 100%;
+}
+
 .navbar-brand {
+	height: 37px;
 	width: 140px !important;
 	margin-right: 0;
 }
@@ -85,42 +90,6 @@ section.row {
 			color: rgb(0, 125, 140);
 			margin-bottom: 0;
 		}
-		
-	/* Classification Section Start */
-		#classification .row div {
-			width: 100%;
-		}
-		
-		#classification .row div table {
-			width: 100%;
-		}
-		
-		.classification-header {
-			color: black;
-			margin-bottom: 3rem;
-		}
-		
-		#classification tr:nth-child(2) {
-			text-align: center;
-		}
-
-		#classification tr:nth-child(2) td:nth-child(1) {
-			border-right: 1px solid #dbdbdb; width: 25%;
-		}
-		
-		#classification tr:nth-child(2) td:nth-child(2) {
-			border-right: 1px solid #dbdbdb; width: 22%;
-		}
-		
-		#classification tr:nth-child(2) td:nth-child(3) {
-			border-right: 1px solid #dbdbdb; width: 22%;
-		}
-		
-		#classification tr:nth-child(2) td:nth-child(4) {
-			width: 22%;
-		}
-		
-	/* Classification Section End */
 		
 	/* Coating Features Section Start */
 		#coating-features .row div {
@@ -256,7 +225,40 @@ section.row {
 			    -moz-border-radius: 6px 0 6px 6px;
 			    border-radius: 6px 0 6px 6px;
 			}
+			
+			.sidemenu {
+				margin-left: 10px;
+				font-size: 0.8rem;
+			}
 	/* dropdown 包访 家胶 End */
+	
+	/* Classification Section Start */
+		#classification .row div {
+			width: 100%;
+		}
+		
+		.classification-header {
+			color: black;
+			margin-bottom: 3rem;
+		}
+		
+		.col-c-1 {
+			text-align: center;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		#classification .row .col-c-1 {
+			padding: 2rem;
+			border-right: none;
+			border-bottom: none;
+		}
+		
+		hr {
+			width: 33%;
+			border: 0.5px solid #dbdbdb;
+		}
+	/* Classification Section End */
 
 .hard-coating-solution-p {
 	color: rgb(0, 125, 140);
@@ -283,6 +285,14 @@ section.row {
 }
 
 /* Side Menu */
+.open-slide a {
+	cursor: pointer
+}
+
+.btn-close {
+	cursor: pointer
+}
+		
 .mainNav .open-slide a {
   float: right;
   display: block;
@@ -465,6 +475,11 @@ section.row {
 				    -moz-border-radius: 6px 0 6px 6px;
 				    border-radius: 6px 0 6px 6px;
 				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}
 		/* dropdown 包访 家胶 End */
 		
 		/* Banner Section Start */
@@ -508,6 +523,52 @@ section.row {
 				color: rgb(0, 125, 140);
 			}
 		/* Banner Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			.classification-header {
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
 	
 	/* Footer Section */
 	.footer-section {
@@ -634,7 +695,7 @@ section.row {
 			
 			.banner-section-div-1 {
 				width: 70%;
-				margin: 8rem auto 0 auto;
+				margin: 6rem auto 0 auto;
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
@@ -756,7 +817,58 @@ section.row {
 				    -moz-border-radius: 6px 0 6px 6px;
 				    border-radius: 6px 0 6px 6px;
 				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}
 		/* dropdown 包访 家胶 End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			.classification-header {
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
 	
 	/* Footer Section */
 	.footer-section {
@@ -954,7 +1066,7 @@ section.row {
 			
 			.banner-section-div-1 {
 				width: 70%;
-				margin: 8rem auto 0 auto;
+				margin: 6rem auto 0 auto;
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
@@ -975,6 +1087,52 @@ section.row {
 				color: rgb(0, 125, 140);
 			}
 		/* Banner Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			.classification-header {
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+			
+			#classification .row div:nth-child(2) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 0;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
 	
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1136,7 +1294,7 @@ section.row {
 			
 			.banner-section-div-1 {
 				width: 70%;
-				margin: 8rem auto 0 auto;
+				margin: 6rem auto 0 auto;
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
@@ -1157,6 +1315,52 @@ section.row {
 				color: rgb(0, 125, 140);
 			}
 		/* Banner Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			.classification-header {
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 0;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
 	
 	.navbar {
 		background: rgb(0, 125, 140) !important;

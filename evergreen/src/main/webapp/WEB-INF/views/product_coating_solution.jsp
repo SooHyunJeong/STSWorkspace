@@ -38,12 +38,22 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -62,7 +72,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -77,7 +87,7 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
@@ -86,7 +96,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -96,7 +106,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -108,8 +118,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -210,30 +240,23 @@
                 <div class="container">
 
                     <section class="row">
-                        <div>
-                            <div class="fadeIn">
-                                <table>
-                                	<tr>
-	                                	<th colspan="4">
-	                                		<h3 class="classification-header myraid-regular">Classification</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr>
-                                		<td>
-                                			Index matching hard coating
-                                		</td>
-                                		<td>
-                                			Primer & Primer free
-                                		</td>
-                                		<td>
-                                			Tintable & Non-Tintable
-                                		</td>
-                                		<td>
-                                			Thermal & UV cure
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
+                       	<div class="icon">
+                       		<h3 class="classification-header myraid-regular">Classification</h3>
+                       	</div>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Index matching hard coating
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Primer & Primer free
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Tintable & Non-Tintable
+                        </div>
+                        <hr>
+                        <div class="col-c-1 col-md-6 fadeIn">
+                            Thermal & UV cure
                         </div>
                     </section>
 

@@ -37,14 +37,14 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
 		}
 		
 		section.row {
@@ -52,7 +52,12 @@
 			width: 71%;
 		}
 		
+		.fadeIn {
+			width: 100%;
+		}
+		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -191,11 +196,16 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 			/* dropdown 관련 소스 End */
 			
 			/* Banner Section Start */
 					.banner-section {
-						padding-top: 150px;
+						padding-top: 62px;
 					}
 					
 					.banner-span-3 {
@@ -265,6 +275,10 @@
 				}
 				
 			/* Classification of Pore Section End */
+			
+		.impregnating-span-0 {
+			color: rgb(0, 125, 140);
+		}
 
 		/* Footer Section */
 		.footer-section {
@@ -287,6 +301,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -479,11 +501,16 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
 					.banner-section {
-						padding-top: 150px;
+						padding-top: 62px;
 					}
 					
 					.banner-span-3 {
@@ -769,11 +796,16 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 				/* Banner Section Start */
 					.banner-section {
-						padding-top: 150px;
+						padding-top: 62px;
 					}
 					
 					.banner-span-3 {
@@ -1026,13 +1058,13 @@
 				
 				/* Banner Section Start */
 					.banner-section {
-						padding-top: 100px;
+						padding-top: 0;
 					}
 					
 					.banner-span-3 {
 						display: inline-block;
 						width: 43%;
-						padding: 3.5rem 0 2.5rem 0.5rem;
+						padding: 3.5rem 0 2.5rem 0;
 					}
 					
 					.banner-span-3 img {
@@ -1243,13 +1275,13 @@
 				
 				/* Banner Section Start */
 					.banner-section {
-						padding-top: 100px;
+						padding-top: 0;
 					}
 					
 					.banner-span-3 {
 						display: inline-block;
 						width: 27%;
-						padding: 3.5rem 0 2.5rem 0.5rem;
+						padding: 3.5rem 0 2.5rem 0;
 					}
 					
 					.banner-span-3 img {
@@ -1357,6 +1389,16 @@
     </style>
         
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -1375,7 +1417,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -1390,7 +1432,7 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
@@ -1399,7 +1441,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1409,7 +1451,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1421,8 +1463,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -1514,12 +1576,14 @@
                 </div>
             </div>
             <!-- END of Banner Section -->
+            
+            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
 
             <!-- Applications Section Start -->
             <div id="applications" class="p-top-50 p-bot-50">
                 <div class="container">
                     <section class="row">
-                        <div class="fadeInUp">
+                        <div class="fadeIn">
                             <div class="icon p-bot-30">
                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_applications0.png" alt="img" class="img-fluid applications-img">
                             </div>
@@ -1528,6 +1592,8 @@
                 </div>
             </div>
             <!-- END of Applications Section -->
+            
+            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
             
             <!-- Impregnating for aluminum die casting Section Start -->
             <div id="impregnating" class="p-top-50 p-bot-50">
@@ -1543,12 +1609,12 @@
                                 	contraction partially occurs in the cooling process of die casing.
                                 </span>
                                 <br>
-                                <span>
+                                <span class="impregnating-span-0">
                                 	Impregnation is needed to improve surfaces of ADC products and to prevent the leakage of air,<br>
                                 	gases, oils or liquid sand.
                                 </span>
                                 <br><br>
-                                <span>
+                                <span class="impregnating-span-0">
                                 	ADC mainly used in automobile industry demands the best impregnation technology.<br>
                                 </span>
                                 <span>
@@ -1568,6 +1634,8 @@
                 </div>
             </div>
             <!-- END of Impregnating for aluminum die casting Section -->
+            
+            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
             
             <!-- Classification of pore Section Start -->
             <div id="classification_of_pore" class="p-top-50 p-bot-50">
@@ -1624,7 +1692,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

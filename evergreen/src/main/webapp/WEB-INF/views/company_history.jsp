@@ -37,18 +37,19 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -156,6 +157,11 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 			/* dropdown 관련 소스 End */
 		
 		/* History Image Section Start */
@@ -209,6 +215,14 @@
 			}
 		
 		/* Side Menu */
+			.open-slide a {
+				cursor: pointer
+			}
+			
+			.btn-close {
+				cursor: pointer
+			}
+		
 			.mainNav .open-slide a {
 			  float: right;
 			  display: block;
@@ -270,7 +284,7 @@
 			  width: 6px;
 			  margin: 0 auto;
 			  padding-top: 50px;
-			  background: #868e96;
+			  background: rgb(237, 237, 237);
 			}
 			
 			.timeline ul li::after {
@@ -314,7 +328,7 @@
 			}
 			
 			.timeline ul li.in-view::after {
-			  background: #14B2B5;
+			  background: rgb(0, 125, 140);
 			}
 			
 			.timeline ul li div {
@@ -467,6 +481,11 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 				/* dropdown 관련 소스 End */
 
 			/* History Image Section Start */
@@ -581,7 +600,7 @@
 				  width: 6px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: #868e96;
+				  background: rgb(237, 237, 237);
 				}
 				
 				.timeline ul li::after {
@@ -617,6 +636,11 @@
 				  font-size: 1.2rem;
 				  font-weight: bold;
 				  margin-bottom: 8px;
+				  margin-left: 8px;
+				}
+				
+				.in-view p {
+					margin-left: 8px;
 				}
 				
 				.timeline ul li {
@@ -624,7 +648,7 @@
 				}
 	
 				.timeline ul li div {
-				    width: calc(100vw - 175px);
+				    width: calc(100vw - 190px);
 				}
 	
 				.timeline ul li:nth-child(even) div {
@@ -758,6 +782,11 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
 				
 			/* History Image Section Start */
@@ -872,7 +901,7 @@
 				  width: 6px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: #868e96;
+				  background: rgb(237, 237, 237);
 				}
 				
 				.timeline ul li::after {
@@ -908,6 +937,11 @@
 				  font-size: 1.2rem;
 				  font-weight: bold;
 				  margin-bottom: 8px;
+				  margin-left: 8px;
+				}
+				
+				.in-view p {
+					margin-left: 8px;
 				}
 				
 				.timeline ul li div {
@@ -1072,7 +1106,7 @@
 				  width: 6px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: #868e96;
+				  background: rgb(237, 237, 237);
 				}
 				
 				.timeline ul li::after {
@@ -1108,6 +1142,11 @@
 				  font-size: 1.2rem;
 				  font-weight: bold;
 				  margin-bottom: 8px;
+				  margin-left: 8px;
+				}
+				
+				.in-view p {
+					margin-left: 8px;
 				}
 		}
 		
@@ -1263,7 +1302,7 @@
 				  width: 6px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: #868e96;
+				  background: rgb(237, 237, 237);
 				}
 				
 				.timeline ul li::after {
@@ -1281,7 +1320,7 @@
 				.timeline ul li div {
 				  position: relative;
 				  bottom: 0;
-				  width: 400px;
+				  width: 450px;
 				  padding: 15px;
 				  background: rgb(0, 125, 140);
 				}
@@ -1291,7 +1330,7 @@
 				}
 				
 				.timeline ul li:nth-child(even) div {
-				  left: -439px;
+				  left: -489px;
 				}
 				
 				time {
@@ -1299,6 +1338,11 @@
 				  font-size: 1.2rem;
 				  font-weight: bold;
 				  margin-bottom: 8px;
+				  margin-left: 8px;
+				}
+				
+				.in-view p {
+					margin-left: 8px;
 				}
 		}
     </style>
@@ -1333,6 +1377,13 @@
 			window.addEventListener("resize", callbackFunc);
 			window.addEventListener("scroll", callbackFunc);
 
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+	
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+	    		$(".procam-sup").css("top", "-4px");
+	    		$(".everseal-sup").css("top", "-4px");
+	    	}
 		};
 		
 		function openSideMenu() {
@@ -1353,7 +1404,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -1371,13 +1422,13 @@
                                 <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1387,7 +1438,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1399,8 +1450,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
                     
@@ -1463,7 +1534,7 @@
                             <div>
                                 <p class="myriad-bold">evergreen</p>
                                 <p>C&T corporation</p>
-                                <p class="myriad-bold" style="font-family: italic">History</p>
+                                <p class="myriad-boldlt">History</p>
                             </div>
                         </div>
                     </section>
@@ -1483,62 +1554,55 @@
 									<ul>
 										<li>
 											<div>
-												<time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+												<time>1998 ~ 2003</time>
+												<p>1998. 02. Founded Evergreen Moolsan</p>
+												<p>2001. 12. Changed to Evergreen Co. Ltd.</p>
+												<p>2003. 10. Acquired ISO 9001/14001</p>
 											</div>
 										</li>
 										<li>
 											<div>
-												<time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+												<time>2004 ~ 2008</time>
+												<p>2007. 02. Founded PROCAM R&D Center</p>
+												<p>2008. 03. Developed Hard coating solution H-150 Series</p>
 											</div>
 										</li>
 										<li>
 											<div>
-												<time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+												<time>2009 ~ 2011</time>
+												<p>2009. 05. Developed hard coating solution H-156 Series</p>
+												<p>2009. 06. PROCAM registration of trade mark.</p>
+												<p>2009. 11. Developed Hydrophilic Impregnation Sealant</p>
+												<p>2009. 12. Changed to Evergreen C&T Corp</p>
+												<p>2010. 10. Developed HPR-Series Primer coating solution</p>
+												<p>2011. 05. EVERSEAL registration of trade mark.</p>
 											</div>
 										</li>
 										<li>
 											<div>
-												<time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+												<time>2012 ~ 2013</time>
+												<p>2012. 04. Developed Hydrophobic chemicals</p>
+												<p>2012. 06. Developed Hard coating solution H-160 Series</p>
+												<p>2013. 11. Developed Hydrophobic Impregnation Sealant</p>
 											</div>
 										</li>
 										<li>
 											<div>
-												<time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+												<time>2014 ~ 2015</time>
+												<p>2014. 01. Developed Super-Hydrophobic Chemicals</p>
+												<p>2014. 06. Developed Photochromic monomer M-156G</p>
+												<p>2014. 08. Developed Optical monomer M-156 Series</p>
+												<p>2015. 09. Developed Recycle Impregnation Sealant</p>
 											</div>
 										</li>
 										<li>
 											<div>
-												<time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-											</div>
-										</li>
-										<li>
-											<div>
-												<time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+												<time>2016 ~ 2018</time>
+												<p>2016. 07. Developed High vacuum coating materials</p>
+												<p>2016. 10. Developed UV curable Hard coating solution</p>
+												<p>2017. 10. Developed Optical monomer M-160 Series</p>
+												<p>2017. 11. Established branch in Indea</p>
+												<p>2018. 02. Developed Photochromic monomer M-160PG</p>
 											</div>
 										</li>
 									</ul>
@@ -1562,7 +1626,7 @@
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

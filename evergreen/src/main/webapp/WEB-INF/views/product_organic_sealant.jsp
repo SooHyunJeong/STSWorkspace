@@ -38,14 +38,14 @@
         <script src="${contextPath}/resources/plugins/swiper/js/swiper.min.js"></script>
         <script src="${contextPath}/resources/plugins/scrollreveal/scrollreveal.min.js"></script>
         <script src="${contextPath}/resources/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/custom.js"></script>
+        <script src="${contextPath}/resources/contact/contact.js"></script>
         <!-- EndInput -->
         
     </head>
     <style>
     	#mainNav>div {
-			width: 75%;
+			width: 79%;
 		}
 		
 		section.row {
@@ -54,6 +54,7 @@
 		}
 		
 		.navbar-brand {
+			height: 37px;
 			width: 140px !important;
 			margin-right: 0;
 		}
@@ -182,7 +183,49 @@
 					    -moz-border-radius: 6px 0 6px 6px;
 					    border-radius: 6px 0 6px 6px;
 					}
+					
+					.sidemenu {
+						margin-left: 10px;
+						font-size: 0.8rem;
+					}
 			/* dropdown 관련 소스 End */
+			
+			/* Banner Section Start */
+				.banner-section-div {
+					width: 100%;
+				}
+
+				.banner-section-div-0 {
+					position: relative;
+					width: 247px;
+					height: 100px;
+					top: 0;
+					text-align: right;
+					padding: 2rem 1.5rem 0 0 ;
+					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+					font-size: 1.7rem;
+					color: white;
+				}
+				
+				.banner-section-div-1 {
+					width: 71%;
+					margin: 5rem auto 0 auto;
+					display: block;
+					padding-right: 15px;
+					padding-left: 15px;
+					background: none;
+				}
+				
+				.banner-section-div-0>p:nth-child(1) {
+					margin-bottom: -0.5rem;
+				}
+				
+				.banner-section-div-0>p:nth-child(2) {
+					font-size: 0.8rem;
+					margin-right: 3.2rem;
+				}
+			/* Banner Section End */
+
 		
 		/* Footer Section */
 		.footer-section {
@@ -205,6 +248,14 @@
 		}
 		
 		/* Side Menu */
+		.open-slide a {
+			cursor: pointer
+		}
+		
+		.btn-close {
+			cursor: pointer
+		}
+
 		.mainNav .open-slide a {
 		  float: right;
 		  display: block;
@@ -387,7 +438,40 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
+				
+				/* Banner Section Start */
+					.banner-section-div {
+						width: 100%;
+					}
+
+					.banner-section-div-0 {
+						position: relative;
+						width: 425px;
+						height: 100px;
+						top: 0;
+						left: -7rem;
+						text-align: right;
+						padding: 1.8rem 1.5rem 0 0 ;
+						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+						font-size: 2rem;
+						color: white;
+					}
+
+					.banner-section-div-0>p:nth-child(1) {
+						margin-bottom: 0;
+					}
+					
+					.banner-section-div-0>p:nth-child(2) {
+						font-size: 1.2rem;
+						margin-right: 2.1rem;
+					}
+				/* Banner Section End */
 
 			/* Footer Section */
 			.footer-section {
@@ -594,7 +678,40 @@
 						    -moz-border-radius: 6px 0 6px 6px;
 						    border-radius: 6px 0 6px 6px;
 						}
+						
+						.sidemenu {
+							margin-left: 10px;
+							font-size: 0.8rem;
+						}
 				/* dropdown 관련 소스 End */
+				
+				/* Banner Section Start */
+					.banner-section-div {
+						width: 100%;
+					}
+
+					.banner-section-div-0 {
+						position: relative;
+						width: 425px;
+						height: 100px;
+						top: 0;
+						left: -6rem;
+						text-align: right;
+						padding: 1.8rem 1.5rem 0 0 ;
+						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+						font-size: 2.2rem;
+						color: white;
+					}
+					
+					.banner-section-div-0>p:nth-child(1) {
+						margin-bottom: 0;
+					}
+					
+					.banner-section-div-0>p:nth-child(2) {
+						font-size: 1.1rem;
+						margin-right: 3.6rem;
+					}
+				/* Banner Section End */
 			
 			/* Footer Section */
 			.footer-section {
@@ -766,6 +883,34 @@
 					}
 				/* dropdown 관련 소스 End */
 				
+				/* Banner Section Start */
+					.banner-section-div {
+						width: 100%;
+					}
+
+					.banner-section-div-0 {
+						position: relative;
+						width: 495px;
+						height: 100px;
+						top: 0;
+						left: -9rem;
+						text-align: right;
+						padding: 1.8rem 0.6rem 0 0 ;
+						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+						font-size: 2.2rem;
+						color: white;
+					}
+
+					.banner-section-div-0>p:nth-child(1) {
+						margin-bottom: 0;
+					}
+					
+					.banner-section-div-0>p:nth-child(2) {
+						font-size: 1.1rem;
+						margin-right: 3.6rem;
+					}
+				/* Banner Section End */
+				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -906,6 +1051,34 @@
 					
 				/* dropdown 관련 소스 End */
 				
+				/* Banner Section Start */
+					.banner-section-div {
+						width: 100%;
+					}
+
+					.banner-section-div-0 {
+						position: relative;
+						width: 803px;
+						height: 100px;
+						top: 0;
+						left: -19.5rem;
+						text-align: right;
+						padding: 1.8rem 1.6rem 0 0 ;
+						background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+						font-size: 2.2rem;
+						color: white;
+					}
+
+					.banner-section-div-0>p:nth-child(1) {
+						margin-bottom: 0;
+					}
+					
+					.banner-section-div-0>p:nth-child(2) {
+						font-size: 1.1rem;
+						margin-right: 3.6rem;
+					}
+				/* Banner Section End */
+
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -915,6 +1088,10 @@
 			.navbar {
 				background: rgb(0, 125, 140) !important;
 				padding: 13px 0;
+			}
+			
+			.organic-sealant-div-0 {
+			
 			}
 			
 			/* Footer Section */
@@ -948,6 +1125,17 @@
 		}
     </style>
     <script>
+	    $(document).ready(function() {
+			// IE 일때 다른 CSS를 적용하기 위해 추가.
+			var agent = navigator.userAgent.toLowerCase();
+		
+			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+				$(".procam-sup").css("top", "-4px");
+				$(".everseal-sup").css("top", "-4px");
+				$(".sup").css("top", "-4px");
+			}
+		});
+
     	function openSideMenu() {
     	  document.getElementById('side-menu').style.width = '250px';
     	}
@@ -966,7 +1154,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -981,7 +1169,7 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
@@ -990,7 +1178,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -1000,7 +1188,7 @@
             
             <!-- Side Menu Start -->
             <div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
@@ -1012,8 +1200,28 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="#">PROCAM<sup class="sup">®</sup></a></li>
-                        	<li><a tabindex="-1" href="#">EVERSEAL<sup class="sup">®</sup></a></li>
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        	</li>
+                        	<li class="sidemenu">
+                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        	</li>
+                        	
+                        	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="everseal-sup">®</sup></a>
+                        	</li>
+	                       	<li class="sidemenu">
+	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       	</li>
+	                       	<li class="sidemenu">
+				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+	                       	</li>
                         </ul>
                     </li>
 
@@ -1070,14 +1278,14 @@
         <main class="main-section">
             
             <!-- Banner Section Start -->
-            <div class="banner-section p-top-150">
+            <div class="banner-section p-top-100">
 				<div class="container">
-                    <div class="row" style="width: 71%; margin: 0 auto;">
-                        <div class="fadeIn">
-                        	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 2.5rem; margin-bottom: 0.5rem;">
-                        		EVERSEAL<sup class="sup">®</sup>
-                        	</p>
-                        	<p style="color: rgb(0, 125, 140); font-size: 1.25rem;">Organic Sealant</p>
+                    <div class="row">
+                        <div class="fadeIn banner-section-div">
+                        	<div class="banner-section-div-0">
+                        		<p class="myriad-bold">EVERSEAL<sup class="sup">®</sup></p>
+                        		<p>Organic Sealant</p>
+                        	</div>
                         </div>
                     </div>
                 </div>
@@ -1085,7 +1293,7 @@
             <!-- END of Banner Section -->
             
             <!-- One-way Type - Process Section Start -->
-            <div id="one-way-process" class="p-top-50 p-bot-100">
+            <div id="one_way_process" class="p-top-50 p-bot-100">
                 <div class="container">
 
                     <section class="row">
@@ -1106,7 +1314,7 @@
             <!-- END of One-way type - Process Section -->
             
 			<!-- One-way Type - Product Features & Properties Section Start -->
-            <div id="one-way-product-features" class="p-top-50 p-bot-100">
+            <div id="one_way_product_features" class="p-top-50 p-bot-100">
                 <div class="container">
 
                     <section class="row">
@@ -1127,7 +1335,7 @@
             <!-- END of One-way type - Product Features & Properties Section -->
             
             <!-- Eco-friendly Recycle - Process Section Start -->
-            <div id="eco-friendly-recycle-process" class="p-top-50 p-bot-100">
+            <div id="eco_friendly_recycle_process" class="p-top-50 p-bot-100">
                 <div class="container">
 
                     <section class="row">
@@ -1148,7 +1356,7 @@
             <!-- END of Eco-friendly Recycle - Process Section -->
             
             <!-- Eco-friendly Recycle - Product features & Properties Section Start -->
-            <div id="eco-friendly-recycle-features" class="p-top-50 p-bot-100">
+            <div id="eco_friendly_recycle_features" class="p-top-50 p-bot-100">
                 <div class="container">
 
                     <section class="row">

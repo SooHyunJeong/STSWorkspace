@@ -64,6 +64,15 @@
     <script>
     	$(document).ready(function() {
     		$("img[usemap]").rwdImageMaps();
+    		
+    		// IE 일때 다른 CSS를 적용하기 위해 추가.
+    		var agent = navigator.userAgent.toLowerCase();
+
+    		if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+        		$(".procam-sup").css("top", "-4px");
+        		$(".everseal-sup").css("top", "-4px");
+        	}
+
     	})
     	
     	function openSideMenu() {
@@ -72,6 +81,77 @@
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
+    	}
+    	
+    	function mailSend() {
+    		var company = $("#company").val();
+			var name = $("#name").val();
+			var email = $("#email").val();
+			var tel = $("#tel").val();
+			var message = $("#message").val();
+
+			if (name == "" || name == null || email == "" || email == null || tel == "" || tel == null || message == "" || message == null) {
+				alert("필수항목을 입력해주세요.");
+				return false;
+			}
+
+			if (email.indexOf("@") == -1) {
+				alert("메일주소를 다시 입력해 주세요.");
+				return false;
+			}
+
+			if ($.trim(company) == "" || $.trim(name) == "" || $.trim(email) == "" || $.trim(tel) == "" || $.trim(message) == "") {
+				alert("공백은 입력할 수 없습니다.");
+				return false;
+			}
+
+				$.ajax({
+					type : "POST",
+					dataType : "text",
+					data : {
+							company : company,
+							name : name,
+							email : email,
+							tel : tel,
+							message : message
+					},
+					url : "/mail.do",
+					success : function() {
+						alert("메일을 전송하였습니다.");	
+						window.location.reload();
+				},
+				error : function() {
+					alert("메일 전송을 실패하였습니다.");
+				}
+			});
+    	}
+    	
+    	function Coating_solution() {
+    		location.href = "http://localhost:8080/product_coating_solution.do"
+    	}
+    	
+    	function Functional_monomer() {
+    		location.href = "http://localhost:8080/product_monomer.do";	
+    	}
+    	
+    	function Hydrophobic() {
+    		location.href = "http://localhost:8080/product_hydrophobic.do";
+    	}
+    	
+    	function RND() {
+    		location.href = "http://localhost:8080/research_development.do";
+    	}
+    	
+    	function Impregnation() {
+    		location.href = "http://localhost:8080/product_impregnation.do";
+    	}
+    	
+		function Organic_sealant() {
+			location.href = "http://localhost:8080/product_organic_sealant.do#one_way_process";
+    	}
+    	
+    	function Eco_friendly_recycle_features() {
+    		location.href = "http://localhost:8080/product_organic_sealant.do#eco_friendly_recycle_features";
     	}
     </script>
     <body id="page_top">
@@ -84,7 +164,7 @@
                     <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
 
                 	<span class="open-slide">
-						<a href="#" onclick="openSideMenu()">
+						<a onclick="openSideMenu()">
 							<svg width="30" height="30">
 								<path d="M0,5, 30,5" stroke="#fff" stroke-width="5" />
 								<path d="M0,14, 30,14" stroke="#fff" stroke-width="5" />
@@ -95,7 +175,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
-                            <li class="nav-item">
+                            <li class="active nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
@@ -108,7 +188,7 @@
                                 <a class="nav-link" href="research_development.do">R&D</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.do">Contact</a>
+                                <a class="nav-link" href="/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -120,17 +200,56 @@
 
 		<!-- Side Menu Start -->
         <div id="side-menu" class="side-nav">
-			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 			<ul class="navbar-nav">
 				<li class="nav-item">
                     <a href="/">Home</a>
                 </li>
-                <li class="nav-item">
+
+                <li class="nav-item dropdown-sidemenu-1">
                     <a href="product_coating_solution.do">Product</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                    <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                    <ul class="dropdown-menu">
+                    	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                    		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                    	</li>
+                    	<li class="sidemenu">
+                    		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                    	</li>
+                    	<li class="sidemenu">
+                    		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                    	</li>
+                    	<li class="sidemenu">
+                    		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                    	</li>
+                    	
+                    	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                    		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                    	</li>
+                    	<li class="sidemenu">
+                    		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+                    	</li>
+                    	<li class="sidemenu">
+    						<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+                    	</li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown-sidemenu-1">
                     <a href="company_ceo_message.do">Company</a>
                 </li>
+                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                    <ul class="dropdown-menu">
+                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a href="research_development.do">R&D</a>
                 </li>
@@ -144,7 +263,7 @@
         <!-- MAIN SECTION START -->
         <main class="main-section">
             <!-- Banner Section Start -->
-            <div class="banner-section banner-ten" style="margin-top: 65px;">
+            <div class="banner-section banner-ten">
 				<div class="container relative">
                     <div class="row">
                         <div class="fadeIn">
@@ -202,15 +321,15 @@
             <!-- END of Features Section -->
 
             <!-- Vision Section Start -->
-            <div id="vision" class="vision-section p-top-50">
+            <div id="vision" class="vision-section p-top-100">
                 <div class="container">
 
                     <section class="row">
                         <div>
                             <div>
-                                <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="map">
-                            	<map name="map">
-	                            	<area shape="rect" alt="" coords="1154, 816, 1356, 879" href="company.do" target="_self">
+                                <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="#map">
+                            	<map id="map" name="map">
+	                            	<area shape="rect" alt="" coords="1154, 816, 1356, 879" href="company_ceo_message.do" target="_self">
                             	</map>
                             </div>
                         </div>
@@ -221,10 +340,10 @@
             <!-- END of Vision Section -->
             
             <!-- Worldwide Section Start -->
-            <div id="worldwide" class="p-top-50">
+            <div id="worldwide" class="p-top-100">
                 <div class="container">
 
-                    <section class="row m-bot-150 m-sm-bot-100 worldwide-section">
+                    <section class="row m-bot-100 m-sm-bot-100 worldwide-section">
                         <div>
                             <div class="m-top-30 m-sm-top-60">
                                 <img src="${contextPath}/resources/img/gallery/home_global.png" alt="img" class="img-fluid fadeInUp">
@@ -245,8 +364,8 @@
                         <div class="col-md-6">
                             <div class="promo-heading text-lg-left">
                                 <div class="fadeIn procam-div-0">
-                                	<div><h2>PROCAM<sup class="procam-sup">®</sup></h2></div>
-	                                <p>High Performance Coating Solution<br>Super Hydrophobic Solution<br>High Functional Monomer</p>
+                                	<div><h2 class="myriad-bold">PROCAM<sup class="procam-sup">®</sup></h2></div>
+	                                <p>High Performance Coating Solution<br>High Functional Monomer<br>Super Hydrophobic Solution</p>
                                 </div>
                             </div>
                         </div>
@@ -255,25 +374,25 @@
                             <div class="procam-images m-sm-top-60">
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_hc.jpg" alt="img" class="img-fluid fadeInUp">
-                            		<figcaption>
+                            		<figcaption onclick="Coating_solution();">
                             			<h4>Hard coating for optical lens</h4>
                             		</figcaption>
                             	</figure>
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_hp.jpg" alt="img" class="img-fluid fadeInUp">
-                            		<figcaption>
+                            		<figcaption onclick="Hydrophobic();">
                             			<h4>Hydrophobic Chemicals</h4>
                             		</figcaption>
                             	</figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_pm.jpg" alt="img" class="img-fluid fadeInLeft">
-                                	<figcaption>
+                                	<figcaption onclick="Functional_monomer();">
                             			<h4>Functional Monomer</h4>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_rnd.jpg" alt="img" class="img-fluid fadeInRight">
-                                	<figcaption>
+                                	<figcaption onclick="RND();">
                             			<h4>R&D</h4>
                             		</figcaption>
                                 </figure>
@@ -295,7 +414,7 @@
                         <div class="col-md-6">
                             <div class="everseal-heading text-lg-left">
                                 <div class="fadeIn everseal-div-0">
-                                	<div><h2>EVERSEAL<sup class="everseal-sup">®</sup></h2></div>
+                                	<div><h2 class="myriad-bold">EVERSEAL<sup class="everseal-sup">®</sup></h2></div>
 	                                <p>Organic Sealant for perfect impregnation.<br>Out Everseal is not only used for metal<br>casting but also used for sintered metals,<br>
 	                                iron casting, woods, paper, electronic<br>components and especially aluminum<br>die casting.</p>
                                 </div>
@@ -306,38 +425,40 @@
                             <div class="everseal-images m-sm-top-60">
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_imp.jpg" alt="img" class="img-fluid fadeInUp">	                                
-                                	<figcaption>
+                                	<figcaption onclick="Impregnation();">
                             			<h4>Impregnation</h4>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip1000.png" alt="img" class="img-fluid fadeInLeft">
-                                	<figcaption>
-                            			<h4>One-way type</h4>
+                                	<figcaption onclick="Organic_sealant();">
+                            			<h5>One-way type</h5>
                             			<h3>IP-1000</h3>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip2000.png" alt="img" class="img-fluid fadeInRight">
-                                	<figcaption>
-                            			<h4>One-way type</h4>
+                                	<figcaption onclick="Organic_sealant();">
+                            			<h5>One-way type</h5>
                             			<h3>IP-2000</h3>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip4000.png" alt="img" class="img-fluid fadeInLeft">
-                                	<figcaption>
-                            			<h4>One-way type</h4>
+                                	<figcaption onclick="Organic_sealant();">
+                            			<h4>One-way type</h5>
                             			<h3>IP-4000</h3>
                             		</figcaption>
                                 </figure>
+                                
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip7000r.png" alt="img" class="img-fluid fadeInRight">
-                                	<figcaption>
-                            			<h4>Eco-friendly Recycle</h4>
+                                	<figcaption onclick="Eco_friendly_recycle_features();">
+                            			<h5>Eco-friendly Recycle</h5>
                             			<h3>IP-7000R</h3>
                             		</figcaption>
                                 </figure>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -364,12 +485,12 @@
                     <div class="contact-style-three clearfix">
                     
 	                    <div class="left-info fadeInLeft contact-info">
-	                        <div class="heading m-bot-50">
+	                        <div class="heading m-bot-40">
 	                            <h2>Contact Us</h2>
-	                            <p style="font-weight: bold;">Seoul Headquarters, R&D center</p>
+	                            <p>Seoul Headquarters, R&D center</p>
 	                        </div> 
 	                        <ul class="map-info-list">
-	                            <li><span class="bi bi-map-pointer"></span> IS Biz Tower 1003, 147, Seongsui-ro<br>Seongdonggu, Seoul, Korea<br>04795</li>
+	                            <li><span class="bi bi-map-pointer"></span> #1003 IS Biz Tower, 147, Seongsui-ro<br>Seongdonggu, Seoul, Korea<br>04795</li>
 	                            <li><span class="bi bi-phone"></span> +82 2 720 1066</li>
 	                            <li><span class="bi bi-printer"></span> +82 2 720 1069</li>
 	                            <li><span class="bi bi-envelop"></span> info@ievergreen.com</li>
@@ -377,35 +498,35 @@
 	                    </div>
                     </div>
 
-                    <div class="card contact" style="background: rgb(237, 237, 237);">
+                    <div class="card contact">
                         <div class="mini-container p-top-150 p-bot-125 p-sm-top-80 p-sm-bot-80">
 
-                            <form action="contact.php" method="POST" class="hornbill-contact-form fadeInRight" id="contact-form" >
+                            <div class="hornbill-contact-form fadeInRight">
                                 <div class="messages"></div>
                                 <div class="form-group">
-                                    <input type="text"  name="company" class="form-control input-circle" id="company" placeholder="Company" required="required" data-error="회사명을 입력해주세요.">
+                                    <input type="text"  name="company" class="form-control input-circle" id="company" placeholder="Company">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text"  name="name" class="form-control input-circle" id="name" placeholder="Name" required="required" data-error="이름을 입력해주세요.">
+                                    <input type="text"  name="name" class="form-control input-circle" id="name" placeholder="*&nbsp;&nbsp;&nbsp;Name">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control input-circle" id="email" placeholder="Email" required="required" data-error="이메일을 입력해주세요.">
+                                    <input type="text" name="email" class="form-control input-circle" id="email" placeholder="*&nbsp;&nbsp;&nbsp;Email">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text"  name="tel" class="form-control input-circle" id="tel" placeholder="Tel" required="required" data-error="전화번호를 입력해주세요.">
+                                    <input type="text"  name="tel" class="form-control input-circle" id="tel" placeholder="*&nbsp;&nbsp;&nbsp;Tel">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea  name="message" class="form-control input-circle" id="message" placeholder="Message" required="required" data-error="메세지를 입력해주세요."></textarea>
+                                    <textarea  name="message" class="form-control input-circle" id="message" placeholder="Message"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <div class="form-group text-right">
-                                    <button class="btn btn-circle btn-send text-white hover-glass" type="submit">Send</button>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-circle btn-send text-white hover-glass" type="submit" onclick="mailSend();">Send</button>
                                 </div>
-                            </form>
+                            </div>
                             
                         </div>
                     </div>
@@ -419,14 +540,14 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-top-80">
+            <div class="footer-top p-bot-30">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>
@@ -438,6 +559,23 @@
                 </div>
             </div>
             <!-- end footer top -->
+            
+            <div class="footer-bottom" id="ocean">
+                <div class="container">
+                    <div class="row">
+                        <div class="go-to-top text-center fadeIn">
+                            <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
+                            	<p class="p-bot-10">
+	                            	<i class="fa fa-angle-up"></i><br>
+	                                <span>Go to top</span>
+                            	</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of footer bottom -->
+            
 
         </footer>
         <!-- END FOOTER -->
