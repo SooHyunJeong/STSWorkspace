@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -83,11 +83,11 @@
 
 				.banner-section-div-0 {
 					position: relative;
-					width: 212px;
+					width: 177px;
 					height: 79px;
 					top: 9.5rem;
 					text-align: right;
-					padding: 1.8rem 0.6rem 0 0 ;
+					padding: 1.6rem 0.6rem 0 0 ;
 					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 					font-size: 1.5rem;
 					color: white;
@@ -231,6 +231,18 @@
 					}
 			/* dropdown 관련 소스 End */
 			
+			/* Hard-coating Section Start */
+				#hard-coating p:nth-child(1) {
+					font-size: 1.5rem;
+					color: rgb(0, 125, 140);
+					margin-bottom: 0;
+				}
+				
+				#hard-coating p:nth-child(2) {
+					font-size: 0.75rem;
+				}
+			/* Hard-coating Section End */
+			
 			/* Classification Section Start */
 				#classification .row div {
 					width: 100%;
@@ -242,6 +254,7 @@
 				}
 				
 				.classification-header {
+					font-size: 1.2rem;
 					color: black;
 					margin-bottom: 3rem;
 				}
@@ -260,33 +273,96 @@
 				
 				hr {
 					width: 33%;
+					margin: 0 auto;
 					border: 0.5px solid #dbdbdb;
 				}
 			/* Classification Section End */
+
+			/* Coating Features Section Start */
+				#coating-features {
+					width: 100%;
+				}
+				
+				#coating-features .row {
+					margin: 0 auto;
+					width: 71%;
+				}
+				
+				#coating-features .icon {
+					width: 100%;
+				}
+				
+				.coating-features-header {
+					font-size: 1.2rem;
+					color: black;
+					margin-bottom: 2rem;
+				}
+				
+				.col-c-2 {
+					text-align: center;
+					flex: 0 0 100%;
+					max-width: 100%;
+					padding: 2rem;
+				}
+				
+				.col-c-2 img {
+					width: 65%;
+				}
+				
+				.coating-hr {
+					width: 33%;
+					margin: 0 auto;
+					border: 0.5px solid #dbdbdb;
+				}
+			/* Coating Features Section End */
+			
+			/* Optical Monomer Section Start */
+				#optical-monomer {
+					padding-top: 0;
+					padding-bottom: 50px;
+				}
+
+				#optical-monomer .row {
+					width: 71%;
+					margin: 0 auto;
+				}
+				
+				.product-properties-header {
+					font-size: 1.2rem;
+					color: black;
+					margin-bottom: 2rem;
+				}
+			/* Optical Monomer Section End */
 			
 		.functional-monomer-p {
 			color: rgb(0, 125, 140);
 		}
 		
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -347,15 +423,7 @@
 		  color: #ccc;
 		}
 		
-		#hard-coating p:nth-child(1) {
-			font-size: 2.3rem;
-			color: rgb(0, 125, 140);
-			margin-bottom: 0;
-		}
 		
-		#hard-coating p:nth-child(2) {
-			font-size: 1.05rem;
-		}
 		
 		@media all and (min-width: 576px) {
 			#mainNav>div {
@@ -496,6 +564,18 @@
 						}
 				/* dropdown 관련 소스 End */
 				
+				/* Hard-coating Section Start */
+					#hard-coating p:nth-child(1) {
+						font-size: 2.3rem;
+						color: rgb(0, 125, 140);
+						margin-bottom: 0;
+					}
+					
+					#hard-coating p:nth-child(2) {
+						font-size: 1.05rem;
+					}
+				/* Hard-coating Section End */
+				
 				/* Banner Section Start */
 					.banner-section-div {
 						width: 100%;
@@ -549,6 +629,7 @@
 					}
 
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -588,26 +669,77 @@
 						border: none;
 					}
 				/* Classification Section End */
+				
+				/* Coating Features Section Start */
+					#coating-features {
+						width: 100%;
+					}
+					
+					#coating-features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.coating-features-header {
+						font-size: 1.75rem;
+						color: black;
+						margin-bottom: 2rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 100%;
+						max-width: 100%;
+						padding: 2rem;
+					}
+					
+					.col-c-2 img {
+						width: 65%;
+					}
+					
+					.coating-hr {
+						width: 33%;
+						margin: 0 auto;
+						border: 0.5px solid #dbdbdb;
+					}
+				/* Coating Features Section End */
+				
+				/* Optical Monomer Section Start */
+					#optical-monomer {
+						padding-top: 50px;
+						padding-bottom: 150px;
+					}
+
+					.product-properties-header {
+						font-size: 1.75rem;
+					}
+				/* Optical Monomer Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -843,6 +975,18 @@
 						}
 				/* dropdown 관련 소스 End */
 				
+				/* Hard-coating Section Start */
+					#hard-coating p:nth-child(1) {
+						font-size: 2.3rem;
+						color: rgb(0, 125, 140);
+						margin-bottom: 0;
+					}
+					
+					#hard-coating p:nth-child(2) {
+						font-size: 1.05rem;
+					}
+				/* Hard-coating Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -854,6 +998,7 @@
 					}
 					
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -893,26 +1038,77 @@
 						border: none;
 					}
 				/* Classification Section End */
+				
+				/* Coating Features Section Start */
+					#coating-features {
+						width: 100%;
+					}
+					
+					#coating-features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.coating-features-header {
+						font-size: 1.75rem;
+						color: black;
+						margin-bottom: 2rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 100%;
+						max-width: 100%;
+						padding: 2rem;
+					}
+					
+					.col-c-2 img {
+						width: 65%;
+					}
+					
+					.coating-hr {
+						width: 33%;
+						margin: 0 auto;
+						border: 0.5px solid #dbdbdb;
+					}
+				/* Coating Features Section End */
+
+				/* Optical Monomer Section Start */
+					#optical-monomer {
+						padding-top: 50px;
+						padding-bottom: 150px;
+					}
+
+					.product-properties-header {
+						font-size: 1.75rem;
+					}
+				/* Optical Monomer Section End */
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -1107,6 +1303,18 @@
 					}
 				/* dropdown 관련 소스 End */
 				
+				/* Hard-coating Section Start */
+					#hard-coating p:nth-child(1) {
+						font-size: 2.3rem;
+						color: rgb(0, 125, 140);
+						margin-bottom: 0;
+					}
+					
+					#hard-coating p:nth-child(2) {
+						font-size: 1.05rem;
+					}
+				/* Hard-coating Section End */
+				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1124,6 +1332,7 @@
 					}
 					
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -1163,6 +1372,44 @@
 						border: none;
 					}
 				/* Classification Section End */
+				
+				/* Coating Features Section Start */
+					#coating-features {
+						width: 100%;
+					}
+					
+					.coating-features-header {
+						font-size: 1.75rem;
+						color: black;
+						margin-bottom: 2rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 33.3333%;
+						max-width: 33.3333%;
+					}
+					
+					.col-c-2 img {
+						width: 65%;
+					}
+					
+					.coating-hr {
+						width: 0;
+						border: none;
+					}
+				/* Coating Features Section End */
+
+				/* Optical Monomer Section Start */
+					#optical-monomer {
+						padding-top: 50px;
+						padding-bottom: 150px;
+					}
+
+					.product-properties-header {
+						font-size: 1.75rem;
+					}
+				/* Optical Monomer Section End */
 
 			.navbar {
 				background: rgb(0, 125, 140) !important;
@@ -1170,24 +1417,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1341,6 +1594,18 @@
 					
 				/* dropdown 관련 소스 End */
 				
+				/* Hard-coating Section Start */
+					#hard-coating p:nth-child(1) {
+						font-size: 2.3rem;
+						color: rgb(0, 125, 140);
+						margin-bottom: 0;
+					}
+					
+					#hard-coating p:nth-child(2) {
+						font-size: 1.05rem;
+					}
+				/* Hard-coating Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -1352,6 +1617,7 @@
 					}
 					
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -1392,6 +1658,44 @@
 					}
 				/* Classification Section End */
 				
+				/* Coating Features Section Start */
+					#coating-features {
+						width: 100%;
+					}
+					
+					.coating-features-header {
+						font-size: 1.75rem;
+						color: black;
+						margin-bottom: 2rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 33.3333%;
+						max-width: 33.3333%;
+					}
+					
+					.col-c-2 img {
+						width: 65%;
+					}
+					
+					.coating-hr {
+						width: 0;
+						border: none;
+					}
+				/* Coating Features Section End */
+				
+				/* Optical Monomer Section Start */
+					#optical-monomer {
+						padding-top: 50px;
+						padding-bottom: 150px;
+					}
+
+					.product-properties-header {
+						font-size: 1.75rem;
+					}
+				/* Optical Monomer Section End */
+				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1404,24 +1708,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1445,14 +1755,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1477,10 +1787,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1501,6 +1811,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
                     
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1531,19 +1854,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1659,28 +1969,20 @@
             <div id="coating-features" class="p-top-50 p-bot-50">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myraid-regular" style="color: black;">Features</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td>
-                                			<img src="${contextPath}/resources/img/monomer/monomer_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/monomer/monomer_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/monomer/monomer_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 65%;">
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
+                    <section class="row">
+                       	<div class="icon">
+                       		<h3 class="coating-features-header myraid-regular">Features</h3>
+                       	</div>
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/monomer/monomer_features1.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/monomer/monomer_features2.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/monomer/monomer_features3.png" alt="img" class="img-fluid fadeInUp">
                         </div>
                     </section>
 
@@ -1689,13 +1991,13 @@
             <!-- END of Features Section -->
             
             <!-- Optical Monomer Section Start -->
-            <div id="hard-coating" class="hard-coating-section p-top-50 p-bot-150">
+            <div id="optical-monomer" class="optical-monomer-section">
                 <div class="container">
 
-                    <section class="row" style="margin: 0 auto; width: 71%;">
+                    <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header myraid-regular" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        		<h3 class="product-properties-header myraid-regular">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">
@@ -1712,8 +2014,8 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

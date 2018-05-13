@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -210,30 +210,36 @@
 			}
 			
 			.ceo-message-img {
-				width: 45%;
+				width: 75%;
 			}
 
 		/* CEO Message Section End */
 
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -423,7 +429,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 61%;
+					width: 100%;
 				}
 				
 				.ceo-message-h2 {
@@ -449,13 +455,13 @@
 					padding: 1.5%;
 					color: black;
 				}
-				
+
 				.ceo-message-span2 {
 					display: inline-block;
-					width: 30%;
-					text-align: right;
+					width: 100%;
+					text-align: center;
 					position: relative;
-					top: -5px;
+					top: 20px;
 					color: black;
 				}
 				
@@ -468,30 +474,36 @@
 				}
 				
 				.ceo-message-img {
-					width: 45%;
+					width: 50%;
 				}
 
 			/* CEO Message Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -669,7 +681,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 61%;
+					width: 100%;
 				}
 				
 				.ceo-message-h2 {
@@ -695,13 +707,13 @@
 					padding: 1.5%;
 					color: black;
 				}
-				
+
 				.ceo-message-span2 {
 					display: inline-block;
-					width: 30%;
-					text-align: right;
+					width: 100%;
+					text-align: center;
 					position: relative;
-					top: -5px;
+					top: 20px;
 					color: black;
 				}
 				
@@ -714,30 +726,36 @@
 				}
 				
 				.ceo-message-img {
-					width: 45%;
+					width: 50%;
 				}
 
 			/* CEO Message Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -878,7 +896,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 61%;
+					width: 66%;
 				}
 				
 				.ceo-message-h2 {
@@ -905,13 +923,15 @@
 					color: black;
 				}
 				
+				
 				.ceo-message-span2 {
 					display: inline-block;
 					width: 30%;
-					text-align: right;
+					text-align: left;
 					position: relative;
 					top: -5px;
 					color: black;
+					margin-left: 1.5rem;
 				}
 				
 				.ceo-message-span3 {
@@ -923,30 +943,36 @@
 				}
 				
 				.ceo-message-img {
-					width: 45%;
+					width: 75%;
 				}
 
 			/* CEO Message Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1045,7 +1071,7 @@
 				
 				.ceo-message-span1 {
 					display: inline-block;
-					width: 61%;
+					width: 66%;
 				}
 				
 				.ceo-message-h2 {
@@ -1075,10 +1101,11 @@
 				.ceo-message-span2 {
 					display: inline-block;
 					width: 30%;
-					text-align: right;
+					text-align: left;
 					position: relative;
 					top: -5px;
 					color: black;
+					margin-left: 1.5rem;
 				}
 				
 				.ceo-message-span3 {
@@ -1090,31 +1117,37 @@
 				}
 				
 				.ceo-message-img {
-					width: 45%;
+					width: 75%;
 				}
 
 			/* CEO Message Section End */
 			
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1134,19 +1167,20 @@
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
 	    		$(".procam-sup").css("top", "-4px");
 	    		$(".everseal-sup").css("top", "-4px");
+	    		$(".sup").css("top", "-2px");
 	    	}
 	
 		});
 	
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1171,10 +1205,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1194,6 +1228,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1224,19 +1271,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1304,7 +1338,7 @@
                             	</span>
                             	<span class="ceo-message-span2">
                             		<p><span class="ceo-message-span3">CEO&nbsp;&nbsp;&nbsp;</span><span class="ceo-message-span4">Jang Daeil</span></p>
-	                            	<img class="ceo-message-img" src="${contextPath}/resources/img/company/ceo_message/sign2.png" alt="img" class="img-fluid ml-auto d-block">                            	
+	                            	<img class="ceo-message-img" src="${contextPath}/resources/img/company/ceo_message/sign.png" alt="img" class="img-fluid ml-auto d-block">                            	
                             	</span>
                             </div>
                         </div>
@@ -1318,8 +1352,8 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

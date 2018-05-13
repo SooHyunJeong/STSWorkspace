@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="${contextPath}/resources/plugins/bicon/css/bicon.min.css"/>
         <link rel="stylesheet" href="${contextPath}/resources/plugins/swiper/css/swiper.min.css"/>
         <link rel="stylesheet" href="${contextPath}/resources/css/style.css"/>
-        <link rel="stylesheet" href="${contextPath}/resources/css/product_coating_solution.css"/>
         <!-- EndInput -->
         
         <!-- Input:js -->
@@ -51,6 +50,10 @@
 		section.row {
 			margin: 0 auto;
 			width: 71%;
+		}
+		
+		.fadeIn {
+			width: 100%;
 		}
 		
 		.navbar-brand {
@@ -197,23 +200,22 @@
 
 				.banner-section-div-0 {
 					position: relative;
-					width: 247px;
+					width: 200px;
 					height: 100px;
 					top: 0;
 					text-align: right;
-					padding: 2rem 1.5rem 0 0 ;
+					padding: 1.9rem 1rem 0 0 ;
 					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 					font-size: 1.7rem;
 					color: white;
 				}
 				
 				.banner-section-div-1 {
-					width: 71%;
-					margin: 5rem auto 0 auto;
+					font-size: 1rem;
+					width: 70%;
+					margin: 1rem auto 1rem auto;
 					display: block;
-					padding-right: 15px;
-					padding-left: 15px;
-					background: none;
+					color: rgb(0, 125, 140);
 				}
 				
 				.banner-section-div-0>p:nth-child(1) {
@@ -225,27 +227,142 @@
 					margin-right: 3.2rem;
 				}
 			/* Banner Section End */
+			
+			/* one-way-process-header Section Start */
+				.padding-div {
+					padding-top: 50px;
+					padding-bottom: 0;
+				}
+
+				#one-way-process .row {
+					width: 78%;
+				}				
+				
+				#one_way_product_features .row {
+					width: 78%;
+				}
+				
+				#eco_friendly_recycle_process .row {
+					width: 78%;
+				}
+				
+				#eco_friendly_recycle_features .row {
+					width: 78%;
+				}
+				
+				#others .row {
+					width: 78%;
+				}
+				
+				.one-way-process-div {
+					padding-bottom: 25px;
+				}
+				
+				.one-way-process-header {
+					color: white;
+					padding: 2%;
+					font-size: 13px;
+					background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 30px no-repeat;
+				}
+				
+				.one-way-process-header i {
+					margin-right: 1rem;
+				}
+				
+				.one-way-process-header span {
+					color: rgb(92, 238, 235);
+				}
+				
+				.one-way-process-header-features {
+					color: white;
+					padding: 2%;
+					font-size: 13px;
+					background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 50px no-repeat;
+				}
+				
+				.one-way-process-header-2 {
+					color: white;
+					padding: 2%;
+					font-size: 13px;
+					background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;
+				}
+				
+				.one-way-process-header-features i {
+					margin-right: 1rem;
+				}
+				
+				.one-way-process-header-features br {
+					display: block;
+				}
+				
+				.one-way-process-header-features span {
+					color: rgb(92, 238, 235);
+				}
+				
+				#one-way-process img {
+					padding: 2% 5%;
+				}
+				
+				#one_way_product_features i {
+					margin-right: 1rem;
+				}
+				
+				#one_way_product_features span {
+					color: rgb(92, 238, 235);
+				}
+				
+				#one_way_product_features img {
+					padding: 2% 5%;
+				}
+				
+				#eco_friendly_recycle_process i {
+					margin-right: 1rem;
+				}
+				
+				#eco_friendly_recycle_process span {
+					color: rgb(92, 238, 235);
+				}
+				
+				#eco_friendly_recycle_process img {
+					padding: 2% 5%;
+				}
+				
+				#eco_friendly_recycle_features img {
+					padding: 2% 5%;
+				}
+				
+				#others {
+					padding-top: 50px;
+					padding-bottom: 50px;
+				}
+			/* one-way-process-header Section End */
 
 		
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -462,6 +579,14 @@
 						font-size: 2rem;
 						color: white;
 					}
+					
+					.banner-section-div-1 {
+						font-size: 1rem;
+						width: 70%;
+						margin: 4.5rem auto 1rem auto;
+						display: block;
+						color: rgb(0, 125, 140);
+					}
 
 					.banner-section-div-0>p:nth-child(1) {
 						margin-bottom: 0;
@@ -472,26 +597,101 @@
 						margin-right: 2.1rem;
 					}
 				/* Banner Section End */
+				
+				/* one-way-process-header Section Start */
+					.padding-div {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+
+					#one-way-process .row {
+						width: 71%;
+					}
+					
+					#one_way_product_features .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_process .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_features .row {
+						width: 71%;
+					}
+					
+					#others .row {
+						width: 71%;
+					}
+					
+					.one-way-process-div {
+						padding-bottom: 50px;
+					}
+					
+					.one-way-process-header {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header i {
+						margin-right: 1rem;
+					}
+					
+					.one-way-process-header span {
+						color: rgb(92, 238, 235);
+					}
+					
+					.one-way-process-header-features {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 50px no-repeat;
+					}
+					
+					.one-way-process-header-2 {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header-features br {
+						display: none;
+					}
+					
+					#others {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+				/* one-way-process-header Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -703,6 +903,14 @@
 						color: white;
 					}
 					
+					.banner-section-div-1 {
+						font-size: 1rem;
+						width: 70%;
+						margin: 4.5rem auto 1rem auto;
+						display: block;
+						color: rgb(0, 125, 140);
+					}
+					
 					.banner-section-div-0>p:nth-child(1) {
 						margin-bottom: 0;
 					}
@@ -712,26 +920,101 @@
 						margin-right: 3.6rem;
 					}
 				/* Banner Section End */
+				
+				/* one-way-process-header Section Start */
+					.padding-div {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+
+					#one-way-process .row {
+						width: 71%;
+					}
+					
+					#one_way_product_features .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_process .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_features .row {
+						width: 71%;
+					}
+					
+					#others .row {
+						width: 71%;
+					}
+					
+					.one-way-process-div {
+						padding-bottom: 50px;
+					}
+					
+					.one-way-process-header {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header i {
+						margin-right: 1rem;
+					}
+					
+					.one-way-process-header span {
+						color: rgb(92, 238, 235);
+					}
+					
+					.one-way-process-header-features {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 50px no-repeat;
+					}
+					
+					.one-way-process-header-2 {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header-features br {
+						display: none;
+					}
+					
+					#others {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+				/* one-way-process-header Section End */
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -900,6 +1183,14 @@
 						font-size: 2.2rem;
 						color: white;
 					}
+					
+					.banner-section-div-1 {
+						font-size: 1rem;
+						width: 70%;
+						margin: 4.5rem auto 1rem auto;
+						display: block;
+						color: rgb(0, 125, 140);
+					}
 
 					.banner-section-div-0>p:nth-child(1) {
 						margin-bottom: 0;
@@ -910,6 +1201,75 @@
 						margin-right: 3.6rem;
 					}
 				/* Banner Section End */
+				
+				/* one-way-process-header Section Start */
+					.padding-div {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+
+					#one-way-process .row {
+						width: 71%;
+					}
+					
+					#one_way_product_features .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_process .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_features .row {
+						width: 71%;
+					}
+					
+					#others .row {
+						width: 71%;
+					}
+					
+					.one-way-process-div {
+						padding-bottom: 50px;
+					}
+					
+					.one-way-process-header {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header i {
+						margin-right: 1rem;
+					}
+					
+					.one-way-process-header span {
+						color: rgb(92, 238, 235);
+					}
+					
+					.one-way-process-header-features {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 50px no-repeat;
+					}
+					
+					.one-way-process-header-2 {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header-features br {
+						display: none;
+					}
+					
+					#others {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+				/* one-way-process-header Section End */
 				
 				.sup {
 					font-size: 100%;
@@ -923,24 +1283,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1068,6 +1434,14 @@
 						font-size: 2.2rem;
 						color: white;
 					}
+					
+					.banner-section-div-1 {
+						font-size: 1rem;
+						width: 70%;
+						margin: 4.5rem auto 1rem auto;
+						display: block;
+						color: rgb(0, 125, 140);
+					}
 
 					.banner-section-div-0>p:nth-child(1) {
 						margin-bottom: 0;
@@ -1078,6 +1452,75 @@
 						margin-right: 3.6rem;
 					}
 				/* Banner Section End */
+				
+				/* one-way-process-header Section Start */
+					.padding-div {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+
+					#one-way-process .row {
+						width: 71%;
+					}
+					
+					#one_way_product_features .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_process .row {
+						width: 71%;
+					}
+					
+					#eco_friendly_recycle_features .row {
+						width: 71%;
+					}
+					
+					#others .row {
+						width: 71%;
+					}
+					
+					.one-way-process-div {
+						padding-bottom: 50px;
+					}
+					
+					.one-way-process-header {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header i {
+						margin-right: 1rem;
+					}
+					
+					.one-way-process-header span {
+						color: rgb(92, 238, 235);
+					}
+					
+					.one-way-process-header-features {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 50px no-repeat;
+					}
+					
+					.one-way-process-header-2 {
+						color: white;
+						padding: 2%;
+						font-size: 20px;
+						background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;
+					}
+					
+					.one-way-process-header-features br {
+						display: none;
+					}
+					
+					#others {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+				/* one-way-process-header Section End */
 
 				.sup {
 					font-size: 100%;
@@ -1095,24 +1538,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1137,14 +1586,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1169,10 +1618,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1192,6 +1641,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1222,19 +1684,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1282,9 +1731,15 @@
 				<div class="container">
                     <div class="row">
                         <div class="fadeIn banner-section-div">
-                        	<div class="banner-section-div-0">
-                        		<p class="myriad-bold">EVERSEAL<sup class="sup">®</sup></p>
-                        		<p>Organic Sealant</p>
+                        	<div>
+                        		<div class="banner-section-div-0">
+	                        		<p class="myriad-bold">EVERSEAL<sup class="sup">®</sup></p>
+	                        		<p>Organic Sealant</p>                        		
+                        		</div>
+                        		<div class="banner-section-div-1" class="p-top-50">
+	                            	EVERSEAL is a kind of sealants for porous materials such as aluminum die casting products mainly used in automobile field.<br>
+	                            	Our EVERSEAL is not only used for metal casting but also used for sintered metals, iron casting, woods, paper, electronic components and especially aluminum die casting.
+	                            </div>
                         	</div>
                         </div>
                     </div>
@@ -1293,18 +1748,18 @@
             <!-- END of Banner Section -->
             
             <!-- One-way Type - Process Section Start -->
-            <div id="one_way_process" class="p-top-50 p-bot-100">
+            <div id="one-way-process" class="padding-div">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<div class="p-bot-50">
-                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
-                        			<i style="margin-right: 1rem;">One-way Type</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
+                        	<div class="one-way-process-div">
+                        		<div class="one-way-process-header">
+                        			<i>One-way Type</i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ow_2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ow_2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>
@@ -1314,18 +1769,18 @@
             <!-- END of One-way type - Process Section -->
             
 			<!-- One-way Type - Product Features & Properties Section Start -->
-            <div id="one_way_product_features" class="p-top-50 p-bot-100">
+            <div id="one_way_product_features" class="padding-div">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<div class="p-bot-50">
-                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
-                        			<i style="margin-right: 1rem;">One-way Type</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Product features & Properties</i></span>
+                        	<div class="one-way-process-div">
+                        		<div class="one-way-process-header-features">
+                        			<i>One-way Type</i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><i>Product features & Properties</i></span>
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ow_3.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ow_3.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>
@@ -1335,18 +1790,18 @@
             <!-- END of One-way type - Product Features & Properties Section -->
             
             <!-- Eco-friendly Recycle - Process Section Start -->
-            <div id="eco_friendly_recycle_process" class="p-top-50 p-bot-100">
+            <div id="eco_friendly_recycle_process" class="padding-div">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<div class="p-bot-50">
-                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
-                        			<i style="margin-right: 1rem;">Eco-friendly Recycle</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
+                        	<div class="one-way-process-div">
+                        		<div class="one-way-process-header">
+                        			<i>Eco-friendly Recycle</i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Process</i></span>
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ef_1.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ef_1.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>
@@ -1356,18 +1811,18 @@
             <!-- END of Eco-friendly Recycle - Process Section -->
             
             <!-- Eco-friendly Recycle - Product features & Properties Section Start -->
-            <div id="eco_friendly_recycle_features" class="p-top-50 p-bot-100">
+            <div id="eco_friendly_recycle_features" class="padding-div">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_ow_1.png) left/100% 60px no-repeat;">
-                        			<i style="margin-right: 1rem;">Eco-friendly Recycle</i><span style="color: rgb(92, 238, 235);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Product features & Properties</i></span>
+                        		<div class="one-way-process-header-features">
+                        			<i>Eco-friendly Recycle</i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><i>Product features & Properties</i></span>
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ef_2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                                <img src="${contextPath}/resources/img/product/product_everseal_ef_2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>
@@ -1377,13 +1832,13 @@
             <!-- END of Eco-friendly Recycle - Eco-friendly Recycle - Product features & Properties Section -->
             
             <!-- Others Section Start -->
-            <div id="others" class="p-top-50 p-bot-100">
+            <div id="others">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<div style="color: white; padding: 2%; font-size: 20px; background: url(../../resources/img/product/product_everseal_others1.png) left/100% 60px no-repeat;">
+                        		<div class="one-way-process-header-2">
                         			<i>Others</i>
                         		</div>
                         	</div>
@@ -1402,14 +1857,14 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>

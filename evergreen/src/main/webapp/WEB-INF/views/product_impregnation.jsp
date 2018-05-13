@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -202,45 +202,63 @@
 						font-size: 0.8rem;
 					}
 			/* dropdown 관련 소스 End */
-			
-			/* Banner Section Start */
-					.banner-section {
-						padding-top: 62px;
-					}
-					
-					.banner-span-3 {
-						display: inline-block;
-						width: 100%;
-						padding: 0;
-					}
-					
-					.banner-span-3 img {
-						vertical-align: bottom;
-						width: 50%;
-						margin: 2rem auto;
-						display: block;
-					}
-					
-					.banner-span-4 {
-						display: inline-block;
-						width: 100%;
-						padding: 0;
-						vertical-align: top;
-						line-height: 1.75;
-						font-size: 18px;
-					}
-					
-					.banner-span-4 span:nth-child(1) {
-						color: rgb(0, 125, 140);
-						font-size: 20px;
-					}
 
-					.banner-span-4 span br {
-						display: none;
-					}
+			hr {
+				width: 30%;
+				margin-bottom: 3.7rem;
+				color: rgb(237, 237, 237);
+			}
+
+			/* Banner Section Start */
+				.banner-section {
+					padding-top: 62px;
+				}
+				
+				.banner-span-3 {
+					display: inline-block;
+					width: 100%;
+					padding: 0;
+				}
+				
+				.banner-span-3 img {
+					vertical-align: bottom;
+					width: 50%;
+					margin: 2rem auto;
+					display: block;
+				}
+				
+				.banner-span-4 {
+					display: inline-block;
+					width: 100%;
+					padding: 0;
+					vertical-align: top;
+					line-height: 1.75;
+					font-size: 18px;
+				}
+				
+				.banner-span-4 span:nth-child(1) {
+					color: rgb(0, 125, 140);
+					font-size: 20px;
+				}
+
+				.banner-span-4 span br {
+					display: none;
+				}
 			/* Banner Section End */
 			
+			/* Applications Section Start */
+				#applications {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+			/* Applications Section End */
+			
 			/* Impregnating for aluminum die casting Section Start */
+				#impregnating {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+
 				.impregnating-div-0 {
 					width: 71%;
 					margin: 0 auto;
@@ -269,36 +287,68 @@
 			/* Impregnating for aluminum die casting Section End */
 
 			/* Classification of Pore Section Start */
+				#classification_of_pore {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+				
+				#classification_of_pore .icon {
+					padding-bottom: 30px;
+				}
+				
+				#classification_of_pore p {
+					font-size: 1.2rem;
+					margin-left: 0;
+					color: rgb(0, 125, 140);
+				}
+
 				.col-classification-1 {
 					flex: 0 0 100%;
 					max-width: 100%;
 				}
 				
+				.classification-of-pore-img {
+					width: 100%;
+					margin: 0 auto;
+					display: block;
+				}
 			/* Classification of Pore Section End */
+			
+			/* Impregnation Process Section Start */
+				#impregnation-process {
+					padding-bottom: 50px;
+				}
+			/* Impregnation Process Section End */
 			
 		.impregnating-span-0 {
 			color: rgb(0, 125, 140);
 		}
 
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -544,8 +594,20 @@
 						display: none;
 					}
 				/* Banner Section End */
+				
+				/* Applications Section Start */
+					#applications {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+				/* Applications Section End */
 
 				/* Impregnating for aluminum die casting Section Start */
+					#impregnating {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.impregnating-div-0 {
 						width: 71%;
 						margin: 0 auto;
@@ -574,32 +636,55 @@
 				/* Impregnating for aluminum die casting Section End */
 
 				/* Classification of Pore Section Start */
+					#classification_of_pore {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.col-classification-1 {
 						flex: 0 0 100%;
 						max-width: 100%;
 					}
 					
+					#classification_of_pore p {
+						font-size: 1.6rem;
+						margin-left: 0.5rem;
+						color: rgb(0, 125, 140);
+					}
+					
 				/* Classification of Pore Section End */
+				
+				/* Impregnation Process Section Start */
+					#impregnation-process {
+						padding-bottom: 150px;
+					}
+				/* Impregnation Process Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -840,7 +925,19 @@
 					}
 				/* Banner Section End */
 				
+				/* Applications Section Start */
+					#applications {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+				/* Applications Section End */
+				
 				/* Impregnating for aluminum die casting Section Start */
+					#impregnating {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.impregnating-div-0 {
 						width: 71%;
 						margin: 0 auto;
@@ -869,32 +966,55 @@
 				/* Impregnating for aluminum die casting Section End */
 				
 				/* Classification of Pore Section Start */
+					#classification_of_pore {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.col-classification-1 {
 						flex: 0 0 100%;
 						max-width: 100%;
 					}
 					
+					#classification_of_pore p {
+						font-size: 1.6rem;
+						margin-left: 0.5rem;
+						color: rgb(0, 125, 140);
+					}
+					
 				/* Classification of Pore Section End */
+				
+				/* Impregnation Process Section Start */
+					#impregnation-process {
+						padding-bottom: 150px;
+					}
+				/* Impregnation Process Section End */
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -1088,7 +1208,19 @@
 					}
 				/* Banner Section End */
 				
+				/* Applications Section Start */
+					#applications {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+				/* Applications Section End */
+				
 				/* Impregnating for aluminum die casting Section Start */
+					#impregnating {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.impregnating-div-0 {
 						width: 71%;
 						margin: 0 auto;
@@ -1117,12 +1249,30 @@
 				/* Impregnating for aluminum die casting Section End */
 
 				/* Classification of Pore Section Start */
+					#classification_of_pore {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.col-classification-1 {
 						flex: 0 0 50%;
 						max-width: 50%;
 					}
 					
+					#classification_of_pore p {
+						font-size: 1.6rem;
+						margin-left: 0.5rem;
+						color: rgb(0, 125, 140);
+					}
+					
 				/* Classification of Pore Section End */
+				
+				/* Impregnation Process Section Start */
+					#impregnation-process {
+						padding-bottom: 150px;
+					}
+				/* Impregnation Process Section End */
+
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1135,24 +1285,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */ 
 			.open-slide {
@@ -1309,8 +1465,20 @@
 						display: none;
 					}
 				/* Banner Section End */
+				
+				/* Applications Section Start */
+					#applications {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+				/* Applications Section End */
 
 				/* Impregnating for aluminum die casting Section Start */
+					#impregnating {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.impregnating-div-0 {
 						width: 71%;
 						margin: 0 auto;
@@ -1339,12 +1507,29 @@
 				/* Impregnating for aluminum die casting Section End */
 
 				/* Classification of Pore Section Start */
+					#classification_of_pore {
+						padding-top: 50px;
+						padding-bottom: 50px;
+					}
+
 					.col-classification-1 {
 						flex: 0 0 50%;
 						max-width: 50%;
 					}
 					
+					#classification_of_pore p {
+						font-size: 1.6rem;
+						margin-left: 0.5rem;
+						color: rgb(0, 125, 140);
+					}
+					
 				/* Classification of Pore Section End */
+				
+				/* Impregnation Process Section Start */
+					#impregnation-process {
+						padding-bottom: 150px;
+					}
+				/* Impregnation Process Section End */
 
 				.sup {
 					font-size: 100%;
@@ -1358,24 +1543,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1400,14 +1591,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1432,10 +1623,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1455,6 +1646,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1485,19 +1689,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1577,10 +1768,10 @@
             </div>
             <!-- END of Banner Section -->
             
-            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
+            <hr>
 
             <!-- Applications Section Start -->
-            <div id="applications" class="p-top-50 p-bot-50">
+            <div id="applications">
                 <div class="container">
                     <section class="row">
                         <div class="fadeIn">
@@ -1593,10 +1784,10 @@
             </div>
             <!-- END of Applications Section -->
             
-            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
+            <hr>
             
             <!-- Impregnating for aluminum die casting Section Start -->
-            <div id="impregnating" class="p-top-50 p-bot-50">
+            <div id="impregnating">
                 <div class="container">
                     <div class="impregnating-div-0">
                     	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro5.png" alt="img" class="img-fluid">
@@ -1635,26 +1826,26 @@
             </div>
             <!-- END of Impregnating for aluminum die casting Section -->
             
-            <hr style="width: 30%; margin-bottom: 3.7rem; color: rgb(237, 237, 237)">
+            <hr>
             
             <!-- Classification of pore Section Start -->
-            <div id="classification_of_pore" class="p-top-50 p-bot-50">
+            <div id="classification_of_pore">
                 <div class="container">
                     <section class="row">
                         <div class="col-classification-1 col-md-6 fadeInUp">
-                            <div class="icon" style="padding-bottom: 30px;">
+                            <div class="icon">
                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro8.png" alt="img" class="img-fluid">
                             </div>
                         </div>
 
                         <div class="col-classification-1 col-md-6 fadeInUp">
                             <div class="icon p-bot-30">
-                            	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 1.6rem; margin-left: 0.5rem;">Pore Size</p>
-                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro9.png" alt="img" class="img-fluid" style="margin: 0 auto; display: block;">
+                            	<p class="myriad-bold">Pore Size</p>
+                                <img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/impregnation_intro9.png" alt="img" class="img-fluid">
                             </div>
                             
                             <div class="icon p-bot-30">
-                            	<p class="myriad-bold" style="color: rgb(0, 125, 140); font-size: 1.6rem; margin-left: 0.5rem;">The Shape of Pore</p>
+                            	<p class="myriad-bold">The Shape of Pore</p>
                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro10.png" alt="img" class="img-fluid">
                             </div>
                         </div>
@@ -1664,8 +1855,8 @@
             </div>
             <!-- END of Classification of pore Section -->
             
-            <!-- Product Properties - Hard Coating Section Start -->
-            <div id="hard-coating" class="p-top-50 p-bot-150">
+            <!-- Impregnation Process Section Start -->
+            <div id="impregnation-process" class="p-top-50 p-bot-150">
                 <div class="container">
 
                     <section class="row">
@@ -1678,15 +1869,15 @@
 
                 </div>
             </div>
-            <!-- END of Product Properties - Hard Coating Section -->
+            <!-- END of Impregnation Process Section -->
 
         </main>
         <!-- END MAIN SECTION -->
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

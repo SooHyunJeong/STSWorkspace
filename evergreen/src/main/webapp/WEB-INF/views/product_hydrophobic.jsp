@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -200,11 +200,11 @@
 
 				.banner-section-div-0 {
 					position: relative;
-					width: 310px;
+					width: 208px;
 					height: 100px;
 					top: 9.5rem;
 					text-align: right;
-					padding: 1.8rem 6.2rem 0 0 ;
+					padding: 1.8rem 1.6rem 0 0 ;
 					background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 					font-size: 1.7rem;
 					color: white;
@@ -239,12 +239,13 @@
 			
 			/* Hydrophobic Section Start */
 				.hydrophobic-image-p-0 {
-					font-size: 2.3rem;
+					font-size: 1.5rem;
 					color: rgb(0, 125, 140);
 					margin-bottom: 0;
 				}
 				
 				.hydrophobic-image-p-1 {
+					font-size: 0.6rem;
 					color: rgb(0, 125, 140);
 				}
 			/* Hydrophobic Section End */
@@ -260,6 +261,7 @@
 				}
 				
 				.classification-header {
+					font-size: 1.2rem;
 					color: black;
 					margin-bottom: 3rem;
 				}
@@ -286,30 +288,94 @@
 				
 				hr {
 					width: 33%;
+					margin: 0 auto;
 					border: 0.5px solid #dbdbdb;
 				}
 			/* Classification Section End */
+			
+			/* Features Section Start */
+				#features {
+					width: 100%;
+				}
+				
+				#features .row {
+					margin: 0 auto;
+					width: 71%;
+				}
+				
+				#features .icon {
+					width: 100%;
+				}
+				
+				.features-header {
+					font-size: 1.2rem;
+					color: black;
+					margin-bottom: 2rem;
+				}
+				
+				.col-c-2 {
+					text-align: center;
+					flex: 0 0 100%;
+					max-width: 100%;
+					padding: 2rem;
+				}
+				
+				.col-c-2 img {
+					width: 65%;
+				}
+				
+				.coating-hr {
+					width: 33%;
+					margin: 0 auto;
+					border: 0.5px solid #dbdbdb;
+				}
+			/* Coating Features Section End */
+			
+			/* Hydrophobic Chemicals Section Start */
+				#hydrophobic-chemicals {
+					padding-top: 0;
+					padding-bottom: 50px;
+				}
+				
+				.hydrophobic-chemicals-header {
+					font-size: 1.2rem;
+					color: black;
+					margin-bottom: 2rem;
+				}
+			/* Hydrophobic Chemicals Section End */
+			
+			/* Vacuum Coating Consumable Section Start */
+				#vacuum-coating-consumable {
+					padding-bottom: 50px;
+				}
+			/* Vacuum Coating Consumable Section End */
 		
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
-		
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
+
 		/* Side Menu */
 		.open-slide a {
 			cursor: pointer
@@ -552,6 +618,16 @@
 					}
 				/* Banner Section End */
 				
+				/* Hydrophobic Section Start */
+					.hydrophobic-image-p-0 {
+						font-size: 2.3rem;
+					}
+					
+					.hydrophobic-image-p-1 {
+						font-size: 16px;
+					}
+				/* Hydrophobic Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -563,6 +639,7 @@
 					}
 
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -592,26 +669,81 @@
 						border: none;
 					}
 				/* Classification Section End */
+				
+				/* Features Section Start */
+					#features {
+						width: 100%;
+					}
+					
+					#features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.features-header {
+						font-size: 1.75rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 100%;
+						max-width: 100%;
+						padding: 2rem;
+					}
+					
+					.col-c-2 img {
+						width: 65%;
+					}
+					
+					.coating-hr {
+						width: 33%;
+						margin: 0 auto;
+						border: 0.5px solid #dbdbdb;
+					}
+				/* Coating Features Section End */
+				
+				/* Hydrophobic Chemicals Section Start */
+					#hydrophobic-chemicals {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+					
+					.hydrophobic-chemicals-header {
+						font-size: 1.75rem;
+					}
+				/* Hydrophobic Chemicals Section End */
+				
+				/* Vacuum Coating Consumable Section Start */
+					#vacuum-coating-consumable {
+						padding-bottom: 150px;
+					}
+				/* Vacuum Coating Consumable Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -850,6 +982,16 @@
 					}
 				/* Banner Section End */
 				
+				/* Hydrophobic Section Start */
+					.hydrophobic-image-p-0 {
+						font-size: 2.3rem;
+					}
+					
+					.hydrophobic-image-p-1 {
+						font-size: 16px;
+					}
+				/* Hydrophobic Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -861,6 +1003,7 @@
 					}
 
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -890,26 +1033,80 @@
 						border: none;
 					}
 				/* Classification Section End */
+				
+				/* Features Section Start */
+					#features {
+						width: 100%;
+					}
+					
+					#features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.features-header {
+						font-size: 1.75rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 50%;
+						max-width: 50%;
+						padding: 2rem;
+					}
+
+					.col-c-2 img {
+						width: 65%;
+					}
+
+					.coating-hr {
+						width: 0;
+						border: none;
+					}
+				/* Coating Features Section End */
+				
+				/* Hydrophobic Chemicals Section Start */
+					#hydrophobic-chemicals {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+					
+					.hydrophobic-chemicals-header {
+						font-size: 1.75rem;
+					}
+				/* Hydrophobic Chemicals Section End */
+				
+				/* Vacuum Coating Consumable Section Start */
+					#vacuum-coating-consumable {
+						padding-bottom: 150px;
+					}
+				/* Vacuum Coating Consumable Section End */
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -1106,6 +1303,16 @@
 					}
 				/* Banner Section End */
 				
+				/* Hydrophobic Section Start */
+					.hydrophobic-image-p-0 {
+						font-size: 2.3rem;
+					}
+					
+					.hydrophobic-image-p-1 {
+						font-size: 16px;
+					}
+				/* Hydrophobic Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -1117,6 +1324,7 @@
 					}
 
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -1147,6 +1355,54 @@
 					}
 				/* Classification Section End */
 				
+				/* Features Section Start */
+					#features {
+						width: 100%;
+					}
+					
+					#features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.features-header {
+						font-size: 1.75rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 20%;
+						max-width: 20%;
+					}
+					
+					.col-c-2 img {
+						width: 60%;
+						padding: 0;
+					}
+					
+					.coating-hr {
+						width: 0;
+						border: none;
+					}
+				/* Coating Features Section End */
+				
+				/* Hydrophobic Chemicals Section Start */
+					#hydrophobic-chemicals {
+						padding-top: 50px;
+						padding-bottom: 100px;
+					}
+					
+					.hydrophobic-chemicals-header {
+						font-size: 1.75rem;
+					}
+				/* Hydrophobic Chemicals Section End */
+				
+				/* Vacuum Coating Consumable Section Start */
+					#vacuum-coating-consumable {
+						padding-bottom: 150px;
+					}
+				/* Vacuum Coating Consumable Section End */
+				
 				.sup {
 					font-size: 100%;
 					font-weight: normal;
@@ -1159,24 +1415,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */ 
 			.open-slide {
@@ -1332,6 +1594,16 @@
 					}
 				/* Banner Section End */
 				
+				/* Hydrophobic Section Start */
+					.hydrophobic-image-p-0 {
+						font-size: 2.3rem;
+					}
+					
+					.hydrophobic-image-p-1 {
+						font-size: 16px;
+					}
+				/* Hydrophobic Section End */
+				
 				/* Classification Section Start */
 					#classification .row div {
 						width: 100%;
@@ -1343,6 +1615,7 @@
 					}
 
 					.classification-header {
+						font-size: 1.75rem;
 						color: black;
 						margin-bottom: 3rem;
 					}
@@ -1373,11 +1646,59 @@
 					}
 				/* Classification Section End */
 				
-				.sup {
-					font-size: 100%;
-					font-weight: normal;
-					top: 0;
+				/* Features Section Start */
+					#features {
+						width: 100%;
+					}
+					
+					#features .row {
+						margin: 0 auto;
+						width: 71%;
+					}
+					
+					.features-header {
+						font-size: 1.75rem;
+					}
+					
+					.col-c-2 {
+						text-align: center;
+						flex: 0 0 20%;
+						max-width: 20%;
+					}
+					
+					.col-c-2 img {
+						width: 60%;
+						padding: 0;
+					}
+					
+					.coating-hr {
+						width: 0;
+						border: none;
+					}
+			/* Coating Features Section End */
+			
+			/* Hydrophobic Chemicals Section Start */
+				#hydrophobic-chemicals {
+					padding-top: 50px;
+					padding-bottom: 100px;
 				}
+				
+				.hydrophobic-chemicals-header {
+					font-size: 1.75rem;
+				}
+			/* Hydrophobic Chemicals Section End */
+
+			/* Vacuum Coating Consumable Section Start */
+				#vacuum-coating-consumable {
+					padding-bottom: 150px;
+				}
+			/* Vacuum Coating Consumable Section End */
+				
+			.sup {
+				font-size: 100%;
+				font-weight: normal;
+				top: 0;
+			}
 			
 			.navbar {
 				background: rgb(0, 125, 140) !important;
@@ -1385,24 +1706,30 @@
 			}
 			
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -1426,14 +1753,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1457,11 +1784,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <li class="active nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="company_ceo_message.do">Company</a>
+                            </li>
+                            <li class="active nav-item">
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1481,6 +1808,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1511,19 +1851,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1610,32 +1937,6 @@
             <div id="classification" class="p-top-50 p-bot-50">
                 <div class="container">
 
-
-                    <!-- <section class="row">
-                        <div>
-                            <div class="fadeIn">
-                                <table>
-                                	<tr>
-	                                	<th colspan="3">
-	                                		<h3 class="classification-header myraid-regular">Classification</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr class="classification-tr">
-                                		<td class="classification-td-0">
-                                			Hydrophobic
-                                		</td>
-                                		<td class="classification-td-0">
-                                			Super-Hydrophobic
-                                		</td>
-                                		<td class="classification-td-1">
-                                			Vacuum Coating Materials
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
-                        </div>
-                    </section> -->
-                    
                     <section class="row">
                        	<div>
                        		<h3 class="classification-header myraid-regular">Classification</h3>
@@ -1658,37 +1959,31 @@
             <!-- END of Classification Section -->
             
             <!-- Features Section Start -->
-            <div id="coating-features" class="p-top-50 p-bot-50">
+            <div id="features" class="p-top-50 p-bot-50">
                 <div class="container">
-
+                    
                     <section class="row">
-                        <div style="width: 100%;">
-                            <div class="fadeIn">
-                                <table style="width: 100%;">
-                                	<tr>
-	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myraid-regular" style="color: black; margin-bottom: 2rem;">Features</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr style="text-align: center;">
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features1.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features2.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features3.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features4.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/hydrophobic_features5.png" alt="img" class="img-fluid fadeInUp" style="width: 60%;">
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
+                       	<div class="icon">
+                       		<h3 class="features-header myraid-regular">Features</h3>
+                       	</div>
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/hydrophobic_features1.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/hydrophobic_features2.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/hydrophobic_features3.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/hydrophobic_features4.png" alt="img" class="img-fluid fadeInUp">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/hydrophobic_features5.png" alt="img" class="img-fluid fadeInUp">
                         </div>
                     </section>
 
@@ -1697,13 +1992,13 @@
             <!-- END of Features Section -->
             
             <!-- Hydrophobic Chemicals Section Start -->
-            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section p-top-50 p-bot-100">
+            <div id="hydrophobic-chemicals" class="hydrophobic-chemicals-section">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
                         	<div>
-                        		<h3 class="product-properties-header myraid-regular" style="color: black; margin-bottom: 2rem;">Product Properties</h3>
+                        		<h3 class="hydrophobic-chemicals-header myraid-regular">Product Properties</h3>
                         	</div>
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
@@ -1748,7 +2043,7 @@
             <!-- END of Vacuum Coating Materials Section -->
             
             <!-- Vacuum Coating Consumable Section Start -->
-            <div id="vacuum-coating-consumable" class="vacuum-coating-consumable-section p-top-50 p-bot-150">
+            <div id="vacuum-coating-consumable" class="vacuum-coating-consumable-section p-top-50">
                 <div class="container">
 
                     <section class="row">
@@ -1768,8 +2063,8 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

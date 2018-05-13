@@ -8,14 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
-        
-        <title>evergreen</title>
-        
+
+        <title>evergreen C&T</title>
+
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-        
+
         <!-- Favicon icon -->
         <link rel="icon" type="image/png" href="${contextPath}/resources/img/favicon.png"/>
-        
+
         <!-- Input:Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
         
@@ -76,7 +76,7 @@
     	})
     	
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
@@ -127,34 +127,34 @@
     	}
     	
     	function Coating_solution() {
-    		location.href = "http://localhost:8080/product_coating_solution.do"
+    		location.href = "http://13.124.197.132/product_coating_solution.do"
     	}
     	
     	function Functional_monomer() {
-    		location.href = "http://localhost:8080/product_monomer.do";	
+    		location.href = "http://13.124.197.132/product_monomer.do";	
     	}
     	
     	function Hydrophobic() {
-    		location.href = "http://localhost:8080/product_hydrophobic.do";
+    		location.href = "http://13.124.197.132/product_hydrophobic.do";
     	}
     	
     	function RND() {
-    		location.href = "http://localhost:8080/research_development.do";
+    		location.href = "http://13.124.197.132/research_development.do";
     	}
     	
     	function Impregnation() {
-    		location.href = "http://localhost:8080/product_impregnation.do";
+    		location.href = "http://13.124.197.132/product_impregnation.do";
     	}
     	
 		function Organic_sealant() {
-			location.href = "http://localhost:8080/product_organic_sealant.do#one_way_process";
+			location.href = "http://13.124.197.132/product_organic_sealant.do#one_way_process";
     	}
     	
     	function Eco_friendly_recycle_features() {
-    		location.href = "http://localhost:8080/product_organic_sealant.do#eco_friendly_recycle_features";
+    		location.href = "http://13.124.197.132/product_organic_sealant.do#eco_friendly_recycle_features";
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -179,10 +179,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -204,6 +204,19 @@
 			<ul class="navbar-nav">
 				<li class="nav-item">
                     <a href="/">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown-sidemenu-1">
+                    <a href="company_ceo_message.do">Company</a>
+                </li>
+                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                    <ul class="dropdown-menu">
+                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item dropdown-sidemenu-1">
@@ -237,19 +250,6 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown-sidemenu-1">
-                    <a href="company_ceo_message.do">Company</a>
-                </li>
-                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                    <ul class="dropdown-menu">
-                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
-                    </ul>
-                </li>
-
                 <li class="nav-item">
                     <a href="research_development.do">R&D</a>
                 </li>
@@ -278,12 +278,12 @@
 
 
             <!-- Features Section Start -->
-            <section id="features" class="features-section p-top-100">
+            <section id="features" class="features-section">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
-                            <div class="icon p-bot-30">
+                            <div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;">
                             </div>
                             <h3 class="p-bot-10">Long-term know-how</h3>
@@ -291,7 +291,7 @@
                          </div>
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
-                            <div class="icon p-bot-30">
+                            <div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/globe3_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">Global technology</h3>
@@ -299,7 +299,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
-                        	<div class="icon p-bot-30">
+                        	<div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/bond_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">R&D investment</h3>
@@ -307,7 +307,7 @@
                         </div>
                         
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
-                        	<div class="icon p-bot-30">
+                        	<div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/shield_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">Trust in quality</h3>
@@ -321,7 +321,7 @@
             <!-- END of Features Section -->
 
             <!-- Vision Section Start -->
-            <div id="vision" class="vision-section p-top-100">
+            <div id="vision" class="vision-section">
                 <div class="container">
 
                     <section class="row">
@@ -340,10 +340,10 @@
             <!-- END of Vision Section -->
             
             <!-- Worldwide Section Start -->
-            <div id="worldwide" class="p-top-100">
+            <div id="worldwide">
                 <div class="container">
 
-                    <section class="row m-bot-100 m-sm-bot-100 worldwide-section">
+                    <section class="row worldwide-section">
                         <div>
                             <div class="m-top-30 m-sm-top-60">
                                 <img src="${contextPath}/resources/img/gallery/home_global.png" alt="img" class="img-fluid fadeInUp">
@@ -446,7 +446,7 @@
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip4000.png" alt="img" class="img-fluid fadeInLeft">
                                 	<figcaption onclick="Organic_sealant();">
-                            			<h4>One-way type</h5>
+                            			<h5>One-way type</h5>
                             			<h3>IP-4000</h3>
                             		</figcaption>
                                 </figure>
@@ -458,7 +458,6 @@
                             			<h3>IP-7000R</h3>
                             		</figcaption>
                                 </figure>
-                                </a>
                             </div>
                         </div>
                     </section>

@@ -17,6 +17,10 @@
 	width: 100%;
 }
 
+figure {
+	margin-bottom: 2px !important;
+}
+
 .navbar-brand {
 	height: 37px;
 	width: 140px !important;
@@ -33,6 +37,12 @@
 	background: rgb(0, 125, 140) !important;
 	padding: 13px 0;
 	z-index: 1;
+}
+
+.sup {
+	font-size: 100%;
+	font-weight: normal;
+	top: 0;
 }
 
 .hornbill-nav {
@@ -89,13 +99,39 @@
 	margin-top: 64px;
 }
 
+/* Features Section */
+	.features-section {
+		padding-top: 0;
+	}
+	
+	.features-section .icon {
+		padding-bottom: 0;
+	}
+	
+	.features-section h3 {
+		font-size: 23px;
+	}
+	
+	.features-section p {
+		font-size: 13px;
+	}
+	
 /* Vision Section */
+	.vision-section {
+		padding-top: 0;
+	}
+	
 	.vision-section img {
 		width: 100%;
 	}
-
+	
 /* Worldwide Section */
+	#worldwide {
+		padding-top: 0;
+	}
+
 	.worldwide-section {
+		padding-bottom: 50px;
 		display: block;
 	}
 	
@@ -123,7 +159,11 @@
 	}
 	
 	.procam-div-0>div>h2 {
-		font-size: 35px;
+		font-size: 30px;
+	}
+	
+	.procam-div-0 {
+		font-size: 13px;
 	}
 	
 	.procam-sup {
@@ -208,8 +248,12 @@
 	}
 	
 	.everseal-div-0>div>h2 {
-
+		font-size: 30px;
 		top: 0;
+	}
+	
+	.everseal-div-0 p {
+		font-size: 13px;
 	}
 	
 	.everseal-sup {
@@ -339,7 +383,7 @@
 	
 	.contact-info p {
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	.contact-section .contact {
@@ -351,6 +395,7 @@
 	}
 	
 	.map-info-list li {
+		font-size: 13px;
 		text-align: center;
 	}
 	
@@ -377,7 +422,7 @@
 	}
 	
 	.form-group {
-		width: 65%;
+		width: 70%;
 		margin: 0 auto 1rem auto;
 	}
 	
@@ -389,20 +434,26 @@
 .footer-section {
 	background: rgb(0, 125, 140);
 	color: white;
+	padding-top: 45px;
 }
 
 .footer-p-0 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 .footer-p-1 {
-	font-size: 1.85rem;
+	font-size: 1.55rem;
 	margin-bottom: 2rem;
 }
 
 .footer-p-2 {
+	font-size: 13px;
 	margin-bottom: 0;
+}
+
+.footer-p-3 {
+	font-size: 13px;
 }
 
 .footer-bottom .go-to-top {
@@ -546,9 +597,36 @@
 		margin-left: 10px;
 		font-size: 0.8rem;
 	}
-	
+
+	/* Features Section */
+		.features-section {
+			padding-top: 50px;
+		}
+		
+		.features-section .icon {
+			padding-bottom: 30px;
+		}
+		
+		.features-section h3 {
+			font-size: 28px;
+		}
+		
+		.features-section p {
+			font-size: 16px;
+		}
+		
 	/* Vision Section */
+		.vision-section {
+			padding-top: 50px;
+		}
+		
+	/* Worldwide Section */
+		#worldwide {
+			padding-top: 50px;
+		}
+	
 		.worldwide-section {
+			padding-bottom: 100px;
 			display: block;
 		}
 		
@@ -577,6 +655,10 @@
 		
 		.procam-div-0>div>h2 {
 			font-size: 40px;
+		}
+		
+		.procam-div-0 {
+			font-size: 16px;
 		}
 		
 		.procam-sup {
@@ -667,6 +749,10 @@
 		.everseal-div-0>div>h2 {
 			font-size: 35px;
 			top: 0;
+		}
+		
+		.everseal-div-0 p {
+			font-size: 16px;
 		}
 		
 		.everseal-sup {
@@ -794,11 +880,17 @@
 			text-align: left;
 		}
 		
+		.contact-info p {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
 		.map-info-list {
 			margin-left: 10px;
 		}
 		
 		.map-info-list li {
+			font-size: 16px;
 			text-align: left;
 		}
 		
@@ -832,6 +924,7 @@
 	.footer-section {
 		background: rgb(0, 125, 140);
 		color: white;
+		padding-top: 70px;
 	}
 	
 	.footer-p-0 {
@@ -845,7 +938,12 @@
 	}
 	
 	.footer-p-2 {
+		font-size: 16px;
 		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 16px;
 	}
 	
 	/* Side Menu */
@@ -974,8 +1072,35 @@
 		font-size: 0.8rem;
 	}
 
+	/* Features Section */
+		.features-section {
+			padding-top: 50px;
+		}
+		
+		.features-section .icon {
+			padding-bottom: 30px;
+		}
+		
+		.features-section h3 {
+			font-size: 28px;
+		}
+		
+		.features-section p {
+			font-size: 16px;
+		}
+
 	/* Vision Section */
+		.vision-section {
+			padding-top: 100px;
+		}
+		
+	/* Worldwide Section */
+		#worldwide {
+			padding-top: 100px;
+		}
+	
 		.worldwide-section {
+			padding-bottom: 100px;
 			display: block;
 		}
 		
@@ -1006,6 +1131,10 @@
 		.procam-div-0>div>h2 {
 			font-size: 40px;
 			margin-bottom: 2rem;
+		}
+		
+		.procam-div-0 {
+			font-size: 16px;
 		}
 		
 		.procam-sup {
@@ -1101,8 +1230,12 @@
 		}
 		
 		.everseal-div-0>div>h2 {
-			font-size:40px;
+			font-size: 40px;
 			top: 0;
+		}
+		
+		.everseal-div-0 p {
+			font-size: 16px;
 		}
 		
 		.everseal-sup {
@@ -1236,11 +1369,17 @@
 			text-align: left;
 		}
 		
+		.contact-info p {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
 		.map-info-list {
 			margin-left: 10px;
 		}
 		
 		.map-info-list li {
+			font-size: 16px;
 			text-align: left;
 		}
 		
@@ -1262,7 +1401,7 @@
 		}
 		
 		.form-group {
-			width: 100%;
+			width: 90%;
 			margin: 0 0 1rem 0;
 		}
 		
@@ -1274,6 +1413,7 @@
 	.footer-section {
 		background: rgb(0, 125, 140);
 		color: white;
+		padding-top: 70px;
 	}
 	
 	.footer-p-0 {
@@ -1287,7 +1427,12 @@
 	}
 	
 	.footer-p-2 {
+		font-size: 16px;
 		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 16px;
 	}
 	
 	/* Side Menu */
@@ -1381,9 +1526,36 @@
 	.dropdown-sidemenu-2 {
 		display: block;
 	}
-	
+
+	/* Features Section */
+		.features-section {
+			padding-top: 100px;
+		}
+		
+		.features-section .icon {
+			padding-bottom: 30px;
+		}
+		
+		.features-section h3 {
+			font-size: 28px;
+		}
+		
+		.features-section p {
+			font-size: 16px;
+		}
+
 	/* Vision Section */
+		.vision-section {
+			padding-top: 100px;
+		}
+		
+	/* Worldwide Section */
+		#worldwide {
+			padding-top: 100px;
+		}
+	
 		.worldwide-section {
+			padding-bottom: 100px;
 			display: block;
 		}
 		
@@ -1414,6 +1586,10 @@
 		.procam-div-0>div>h2 {
 			font-size: 40px;
 			margin-bottom: 2rem;
+		}
+		
+		.procam-div-0 {
+			font-size: 16px;
 		}
 
 		.procam-sup {
@@ -1509,8 +1685,12 @@
 		}
 		
 		.everseal-div-0>div>h2 {
-			font-size:40px;
+			font-size: 40px;
 			top: 0;
+		}
+		
+		.everseal-div-0 p {
+			font-size: 16px;
 		}
 		
 		.everseal-sup {
@@ -1644,11 +1824,17 @@
 			text-align: left;
 		}
 		
+		.contact-info p {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
 		.map-info-list {
 			margin-left: 10px;
 		}
 		
 		.map-info-list li {
+			font-size: 16px;
 			text-align: left;
 		}
 		
@@ -1670,7 +1856,7 @@
 		}
 		
 		.form-group {
-			width: 100%;
+			width: 90%;
 			margin: 0 0 1rem 0;
 		}
 		
@@ -1682,6 +1868,7 @@
 	.footer-section {
 		background: rgb(0, 125, 140);
 		color: white;
+		padding-top: 70px;
 	}
 	
 	.footer-p-0 {
@@ -1695,7 +1882,12 @@
 	}
 	
 	.footer-p-2 {
+		font-size: 16px;
 		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 16px;
 	}
 	
 	/* Side Menu */
@@ -1747,9 +1939,36 @@
 	.dropdown-sidemenu-2 {
 		display: block;
 	}
-	
+
+	/* Features Section */
+		.features-section {
+			padding-top: 100px;
+		}
+		
+		.features-section .icon {
+			padding-bottom: 30px;
+		}
+		
+		.features-section h3 {
+			font-size: 28px;
+		}
+		
+		.features-section p {
+			font-size: 16px;
+		}
+
 	/* Vision Section */
+		.vision-section {
+			padding-top: 100px;
+		}
+		
+	/* Worldwide Section */
+		#worldwide {
+			padding-top: 100px;
+		}
+	
 		.worldwide-section {
+			padding-bottom: 100px;
 			display: block;
 		}
 		
@@ -1782,6 +2001,10 @@
 		
 		.procam-div-0>div>h2 {
 			font-size: 40px;
+		}
+		
+		.procam-div-0 {
+			font-size: 16px;
 		}
 		
 		.procam-sup {
@@ -1876,7 +2099,11 @@
 		}
 		
 		.everseal-div-0>div>h2 {
-			font-size:40px;
+			font-size: 40px;
+		}
+		
+		.everseal-div-0 p {
+			font-size: 16px;
 		}
 		
 		.everseal-sup {
@@ -2010,11 +2237,17 @@
 			text-align: left;
 		}
 		
+		.contact-info p {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
 		.map-info-list {
 			margin-left: 10px;
 		}
 		
 		.map-info-list li {
+			font-size: 16px;
 			text-align: left;
 		}
 		
@@ -2036,7 +2269,7 @@
 		}
 		
 		.form-group {
-			width: 100%;
+			width: 90%;
 			margin: 0 0 1rem 0;
 		}
 		
@@ -2048,6 +2281,7 @@
 	.footer-section {
 		background: rgb(0, 125, 140);
 		color: white;
+		padding-top: 70px;
 	}
 	
 	.footer-p-0 {
@@ -2061,7 +2295,12 @@
 	}
 	
 	.footer-p-2 {
+		font-size: 16px;
 		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 16px;
 	}
 
 	/* Side Menu */

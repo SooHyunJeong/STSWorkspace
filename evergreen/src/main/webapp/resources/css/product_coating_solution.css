@@ -49,11 +49,11 @@ section.row {
 
 		.banner-section-div-0 {
 			position: relative;
-			width: 212px;
+			width: 177px;
 			height: 79px;
 			top: 9.5rem;
 			text-align: right;
-			padding: 1.8rem 0.6rem 0 0 ;
+			padding: 1.6rem 0.6rem 0 0 ;
 			background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 			font-size: 1.5rem;
 			color: white;
@@ -86,38 +86,15 @@ section.row {
 	
 	/* Hard Coating Solution Section Start */
 		#hard-coating-solution p:nth-child(1) {
-			font-size: 2.3rem;
+			font-size: 1.5rem;
 			color: rgb(0, 125, 140);
 			margin-bottom: 0;
 		}
 		
-	/* Coating Features Section Start */
-		#coating-features .row div {
-			width: 100%;
+		.hard-coating-solution-p {
+			font-size: 11px;
+			color: rgb(0, 125, 140);
 		}
-		
-		#coating-features .row div table {
-			width: 100%;
-		}
-		
-		#coating-features tr:nth-child(2) {
-			text-align: center;
-		}
-		
-		.coating-features-header {
-			color: black;
-			margin-bottom: 3rem;
-		}
-		
-		.features-width {
-			width: 65%;
-		}
-	/* Coating Features Section End */
-	
-	.product-properties-header {
-		color: black;
-		margin-bottom: 2rem
-	}
 	
 	/* dropdown 包访 家胶 Start */
 		.header-section {
@@ -238,8 +215,9 @@ section.row {
 		}
 		
 		.classification-header {
+			font-size: 1.2rem;
 			color: black;
-			margin-bottom: 3rem;
+			margin-bottom: 1rem;
 		}
 		
 		.col-c-1 {
@@ -256,32 +234,83 @@ section.row {
 		
 		hr {
 			width: 33%;
+			margin: 0 auto;
 			border: 0.5px solid #dbdbdb;
 		}
 	/* Classification Section End */
-
-.hard-coating-solution-p {
-	color: rgb(0, 125, 140);
-}
+	
+	/* Coating Features Section Start */
+		#coating-features {
+			width: 100%;
+		}
+		
+		#coating-features .icon {
+			width: 100%;
+		}
+		
+		.coating-features-header {
+			color: black;
+			font-size: 1.2rem;
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		
+		.col-c-2 {
+			text-align: center;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		
+		.features-width {
+			width: 45%;
+		}
+		
+		.coating-hr {
+			width: 33%;
+			margin: 0 auto;
+			border: 0.5px solid #dbdbdb;
+		}
+	/* Coating Features Section End */
+	
+	/* Product Properties Section Start */
+		.product-properties-header {
+			font-size: 1.2rem;
+			color: black;
+			margin-bottom: 2rem
+		}
+	/* Product Properties Section End */
+	
+	/* Primer-Coating Section Start */
+		#primer-coating {
+			padding-top: 0;
+			padding-bottom: 50px;
+		}
+	/* Primer-Coating Section End */
 
 /* Footer Section */
 .footer-section {
 	background: rgb(0, 125, 140);
 	color: white;
+	padding-top: 45px;
 }
 
 .footer-p-0 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 .footer-p-1 {
-	font-size: 1.85rem;
+	font-size: 1.55rem;
 	margin-bottom: 2rem;
 }
 
 .footer-p-2 {
+	font-size: 13px;
 	margin-bottom: 0;
+}
+
+.footer-p-3 {
+	font-size: 13px;
 }
 
 /* Side Menu */
@@ -524,12 +553,25 @@ section.row {
 			}
 		/* Banner Section End */
 		
+		/* Hard Coating Solution Section Start */
+			#hard-coating-solution p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			.hard-coating-solution-p {
+				font-size: 16px;
+				color: rgb(0, 125, 140);
+			}
+		
 		/* Classification Section Start */
 			#classification .row div {
 				width: 100%;
 			}
 			
 			.classification-header {
+				font-size: 1.75rem;
 				color: black;
 				margin-bottom: 3rem;
 			}
@@ -569,26 +611,76 @@ section.row {
 				border: none;
 			}
 		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				color: black;
+				font-size: 1.75rem;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			
+			.features-width {
+				width: 45%;
+			}
+			
+			.coating-hr {
+				width: 33%;
+				margin: 0 auto;
+				border: 0.5px solid #dbdbdb;
+			}
+		/* Coating Features Section End */
+		
+		/* Product Properties Section Start */
+			.product-properties-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem
+			}
+		/* Product Properties Section End */
+		
+		/* Primer-Coating Section Start */
+			#primer-coating {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+		/* Primer-Coating Section End */
 	
 	/* Footer Section */
-	.footer-section {
-		background: rgb(0, 125, 140);
-		color: white;
-	}
-	
-	.footer-p-0 {
-		font-size: 3rem;
-		font-weight: bold;
-	}
-	
-	.footer-p-1 {
-		font-size: 1.85rem;
-		margin-bottom: 2rem;
-	}
-	
-	.footer-p-2 {
-		margin-bottom: 0;
-	}
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
 	
 	/* Side Menu */
 	.mainNav .open-slide a {
@@ -717,6 +809,18 @@ section.row {
 			}
 		/* Banner Section End */
 		
+		/* Hard Coating Solution Section Start */
+			#hard-coating-solution p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			.hard-coating-solution-p {
+				font-size: 16px;
+				color: rgb(0, 125, 140);
+			}
+		
 		/* dropdown 包访 家胶 Start */
 			.header-section {
 				position: relative;
@@ -830,6 +934,7 @@ section.row {
 			}
 			
 			.classification-header {
+				font-size: 1.75rem;
 				color: black;
 				margin-bottom: 3rem;
 			}
@@ -869,26 +974,75 @@ section.row {
 				border: none;
 			}
 		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				color: black;
+				font-size: 1.75rem;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			
+			.features-width {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 0;
+				border: none;
+			}
+		/* Coating Features Section End */
+		
+		/* Product Properties Section Start */
+			.product-properties-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem
+			}
+		/* Product Properties Section End */
+		
+		/* Primer-Coating Section Start */
+			#primer-coating {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+		/* Primer-Coating Section End */
 	
 	/* Footer Section */
-	.footer-section {
-		background: rgb(0, 125, 140);
-		color: white;
-	}
-	
-	.footer-p-0 {
-		font-size: 3rem;
-		font-weight: bold;
-	}
-	
-	.footer-p-1 {
-		font-size: 1.85rem;
-		margin-bottom: 2rem;
-	}
-	
-	.footer-p-2 {
-		margin-bottom: 0;
-	}
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
 	
 	/* Side Menu */
 	.mainNav .open-slide a {
@@ -1088,12 +1242,25 @@ section.row {
 			}
 		/* Banner Section End */
 		
+		/* Hard Coating Solution Section Start */
+			#hard-coating-solution p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			.hard-coating-solution-p {
+				font-size: 16px;
+				color: rgb(0, 125, 140);
+			}
+		
 		/* Classification Section Start */
 			#classification .row div {
 				width: 100%;
 			}
 			
 			.classification-header {
+				font-size: 1.75rem;
 				color: black;
 				margin-bottom: 3rem;
 			}
@@ -1133,6 +1300,49 @@ section.row {
 				border: none;
 			}
 		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				color: black;
+				font-size: 1.75rem;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 33.3333%;
+				max-width: 33.3333%;
+			}
+			
+			.features-width {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 0;
+				border: none;
+			}
+		/* Coating Features Section End */
+		
+		/* Product Properties Section Start */
+			.product-properties-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem
+			}
+		/* Product Properties Section End */
+		
+		/* Primer-Coating Section Start */
+			#primer-coating {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+		/* Primer-Coating Section End */
 	
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1140,24 +1350,30 @@ section.row {
 	}
 	
 	/* Footer Section */
-	.footer-section {
-		background: rgb(0, 125, 140);
-		color: white;
-	}
-	
-	.footer-p-0 {
-		font-size: 3rem;
-		font-weight: bold;
-	}
-	
-	.footer-p-1 {
-		font-size: 1.85rem;
-		margin-bottom: 2rem;
-	}
-	
-	.footer-p-2 {
-		margin-bottom: 0;
-	}
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
 	
 	/* Side Menu */
 	.open-slide {
@@ -1316,12 +1532,25 @@ section.row {
 			}
 		/* Banner Section End */
 		
+		/* Hard Coating Solution Section Start */
+			#hard-coating-solution p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			.hard-coating-solution-p {
+				font-size: 16px;
+				color: rgb(0, 125, 140);
+			}
+		
 		/* Classification Section Start */
 			#classification .row div {
 				width: 100%;
 			}
 			
 			.classification-header {
+				font-size: 1.75rem;
 				color: black;
 				margin-bottom: 3rem;
 			}
@@ -1361,6 +1590,49 @@ section.row {
 				border: none;
 			}
 		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				color: black;
+				font-size: 1.75rem;
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 16.666666%;
+				max-width: 16.666666%;
+			}
+			
+			.features-width {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 0;
+				border: none;
+			}
+		/* Coating Features Section End */
+		
+		/* Product Properties Section Start */
+			.product-properties-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem
+			}
+		/* Product Properties Section End */
+		
+		/* Primer-Coating Section Start */
+			#primer-coating {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+		/* Primer-Coating Section End */
 	
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1368,24 +1640,30 @@ section.row {
 	}
 	
 	/* Footer Section */
-	.footer-section {
-		background: rgb(0, 125, 140);
-		color: white;
-	}
-	
-	.footer-p-0 {
-		font-size: 3rem;
-		font-weight: bold;
-	}
-	
-	.footer-p-1 {
-		font-size: 1.85rem;
-		margin-bottom: 2rem;
-	}
-	
-	.footer-p-2 {
-		margin-bottom: 0;
-	}
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
 	
 	/* Side Menu */
 	.open-slide {

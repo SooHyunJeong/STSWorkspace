@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -130,6 +130,11 @@
 				max-width: 100%;
 			}
 			
+			.col-rnd-2 {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			
 			.applications-div-1 {
 				padding: 0;
 			}
@@ -137,27 +142,58 @@
 			.applications-div-2 {
 				padding: 0;
 			}
+			
+			#global-office-banner {
+				width: 70%;
+				margin: 3.9rem auto 0 auto;
+				display: block;
+			}
+			
+			#rnd {
+				padding-bottom: 50px;
+			}
+			
+			#rnd .row {
+				width: 72.8%;
+				margin: 0 auto;
+			}
+			
+			#rnd .icon {
+				width: 95%;
+				margin: 2rem auto;
+				line-height: 22px;
+				color: rgb(0, 125, 140);
+				border-left: 2px solid rgb(0, 125, 140);
+				padding: 0 1rem;
+				font-size: 10px;
+			}
 		/* R&D Section End */
 
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -305,6 +341,11 @@
 					max-width: 100%;
 				}
 				
+				.col-rnd-2 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				
 				.applications-div-1 {
 					padding: 0;
 				}
@@ -312,27 +353,53 @@
 				.applications-div-2 {
 					padding: 0;
 				}
+				
+				#global-office-banner {
+					width: 70%;
+					margin: 0 auto;
+					display: block;
+				}
+				
+				#rnd {
+					padding-bottom: 100px;
+				}
+				
+				#rnd .icon {
+					width: 80%;
+					margin: 5rem auto;
+					line-height: 22px;
+					color: rgb(0, 125, 140);
+					border-left: 6px solid rgb(0, 125, 140);
+					padding: 0 2rem;
+					font-size: 16px;
+				}
 			/* R&D Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -473,6 +540,11 @@
 					max-width: 100%;
 				}
 				
+				.col-rnd-2 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				
 				.applications-div-1 {
 					padding: 0;
 				}
@@ -480,27 +552,53 @@
 				.applications-div-2 {
 					padding: 0;
 				}
+				
+				#global-office-banner {
+					width: 70%;
+					margin: 0 auto;
+					display: block;
+				}
+				
+				#rnd {
+					padding-bottom: 100px;
+				}
+				
+				#rnd .icon {
+					width: 80%;
+					margin: 5rem auto;
+					line-height: 22px;
+					color: rgb(0, 125, 140);
+					border-left: 6px solid rgb(0, 125, 140);
+					padding: 0 2rem;
+					font-size: 16px;
+				}
 			/* R&D Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -602,6 +700,11 @@
 					max-width: 50%;
 				}
 				
+				.col-rnd-2 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+				
 				.applications-div-1 {
 					padding: 0;
 				}
@@ -609,27 +712,53 @@
 				.applications-div-2 {
 					padding: 0;
 				}
+				
+				#global-office-banner {
+					width: 70%;
+					margin: 0 auto;
+					display: block;
+				}
+				
+				#rnd {
+					padding-bottom: 100px;
+				}
+				
+				#rnd .icon {
+					width: 80%;
+					margin: 5rem auto;
+					line-height: 22px;
+					color: rgb(0, 125, 140);
+					border-left: 6px solid rgb(0, 125, 140);
+					padding: 0 2rem;
+					font-size: 16px;
+				}
 			/* R&D Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -688,6 +817,11 @@
 					flex: 0 0 50%;
 					max-width: 50%;
 				}
+				
+				.col-rnd-2 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
 
 				.applications-div-1 {
 					padding: 0 0 0 0.95rem;
@@ -696,27 +830,53 @@
 				.applications-div-2 {
 					padding: 0 0.95rem 0 0 ;
 				}
+				
+				#global-office-banner {
+					width: 70%;
+					margin: 0 auto;
+					display: block;
+				}
+				
+				#rnd {
+					padding-bottom: 100px;
+				}
+				
+				#rnd .icon {
+					width: 80%;
+					margin: 5rem auto;
+					line-height: 22px;
+					color: rgb(0, 125, 140);
+					border-left: 6px solid rgb(0, 125, 140);
+					padding: 0 2rem;
+					font-size: 16px;
+				}
 			/* R&D Section End */
 
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -740,14 +900,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -772,10 +932,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="active nav-link" href="research_development.do">R&D</a>
@@ -795,6 +955,19 @@
 				<ul class="navbar-nav">
 					<li class="nav-item">
 	                    <a href="/">Home</a>
+	                </li>
+	                
+	                <li class="nav-item dropdown-sidemenu-1">
+	                    <a href="company_ceo_message.do">Company</a>
+	                </li>
+	                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+	                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
+	                    <ul class="dropdown-menu">
+	                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+	                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
+	                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+	                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+	                    </ul>
 	                </li>
 	
 	                <li class="nav-item dropdown-sidemenu-1">
@@ -827,20 +1000,7 @@
 	                       	</li>
                         </ul>
                     </li>
-	
-	                <li class="nav-item dropdown-sidemenu-1">
-	                    <a href="company_ceo_message.do">Company</a>
-	                </li>
-	                <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-	                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
-	                    <ul class="dropdown-menu">
-	                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-	                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
-	                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-	                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
-	                    </ul>
-	                </li>
-	
+
 	                <li class="nav-item">
 	                    <a href="research_development.do">R&D</a>
 	                </li>
@@ -861,7 +1021,7 @@
             <div id="global-office-banner">
                 <div class="container">
                     <section class="row">
-                        <div class="fadeIn" style="width: 70%; margin: 0 auto; display: block;">
+                        <div class="fadeIn">
 							<img src="${contextPath}/resources/img/R&D/RD.png" alt="img" class="img-fluid fadeInUp">
                         </div>
                     </section>
@@ -872,49 +1032,39 @@
 			<!-- Global Office Section Start -->
             <div id="rnd" class="p-bot-100">
                 <div class="container">
-                    <section class="row" style="width: 72.8%; margin: 0 auto;">
-                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-1">
-                            <div class="icon">
-                                <img src="${contextPath}/resources/img/R&D/company_rnd_img1.jpg" alt="img" class="img-fluid applications-img">
-                            </div>
-                        </div>
-
-                        <div class="col-rnd-1 col-md-6 fadeInUp applications-div-2">
-                            <div class="icon" style="width: 90%; margin: 2.55rem auto; color: black;">
+                    <section class="row">
+                        <div class="col-rnd-2 col-md-6 fadeInUp applications-div-2">
+                            <div class="icon" style="">
                                 <div>
-                                	We founded our own R&D Center 2007.<br>
+                                	We founded our own R&D Center 2007.&nbsp;
                                 	We are continually improving our product range to suit customer needs.
                                 </div>
                                 <br>
-                                <div style="font-weight: bold; font-size: 16px;">
-                                	As the clear vision of "Cost-effectiveness and Eco-friendly",
-                                </div>
                                 <div>
+                                	<span style="font-weight: bold;">As the clear vision of "Cost-effectiveness and Eco-friendly"</span>,&nbsp;
                                 	we conducted a variety of research activities in order to achieve the following objectives.
                                 </div>
                                 <br>
                                 <div>
-                                	We have spread the research field based on specific capability and technology of our
-                                	R&D Center and tried to jump up to be a global leading Chemical company through
-                                	achieving outstanding results.
+                                	We have spread the research field based on specific capability and technology of our R&D Center and tried to jump up to be a global leading Chemical
+                                	company through achieving outstanding results.
                                 </div>
                                 <br>
                                 <div>
-                                	Product Development through analysis on new product and new technology Possesses
-                                	unrivaled technological power based on the high-capability Technology development
-                                	by co-work with research team of the authorized institutes.
+                                	Product Development through analysis on new product and new technology Possesses unrivaled technological power based on the high-capability
+                                	Technology development by co-work with research team of the authorized institutes.
                                 </div>
                             </div>
                         </div>
 						
                         <div class="col-rnd-1 col-md-6 fadeInUp applications-div-1">
-                            <div class="icon">
+                            <div>
                                 <img src="${contextPath}/resources/img/R&D/company_rnd_img2.png" alt="img" class="img-fluid">
                             </div>
                         </div>
 
                         <div class="col-rnd-1 col-md-6 fadeInUp applications-div-2">
-                            <div class="icon">
+                            <div>
                                 <img src="${contextPath}/resources/img/R&D/company_rnd_img3.png" alt="img" class="img-fluid">
                             </div>
                         </div>
@@ -929,8 +1079,8 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

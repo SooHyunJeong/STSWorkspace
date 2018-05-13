@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -160,30 +160,56 @@
 			#global-office-banner {
 				padding-top: 100px;
 			}
+			
+			#global-office-banner .fadeIn {
+				width: 71%;
+				margin: 0 auto;
+				display: block;
+			}
 
 			.global-office-section img:nth-child(1) {
 				margin-bottom: 1rem;
 			}
-
+			
+			.global-office-section .fadeIn {
+				width: 100%;
+			}
+			
+			.global-office-section .fadeIn div {
+				width: 71%;
+				margin: 0 auto;
+				display: block;
+				padding-top: 50px;
+			}
+			
+			.global-office-div {
+				padding-bottom: 50px;
+			}
 		/* Footer Section */
-		.footer-section {
-			background: rgb(0, 125, 140);
-			color: white;
-		}
-		
-		.footer-p-0 {
-			font-size: 3rem;
-			font-weight: bold;
-		}
-		
-		.footer-p-1 {
-			font-size: 1.85rem;
-			margin-bottom: 2rem;
-		}
-		
-		.footer-p-2 {
-			margin-bottom: 0;
-		}
+			.footer-section {
+				background: rgb(0, 125, 140);
+				color: white;
+				padding-top: 45px;
+			}
+			
+			.footer-p-0 {
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			
+			.footer-p-1 {
+				font-size: 1.55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.footer-p-2 {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
+			}
 		
 		/* Side Menu */
 		.open-slide a {
@@ -362,26 +388,40 @@
 				.global-office-section img:nth-child(1) {
 					margin-bottom: 1rem;
 				}
-
+				
+				.global-office-section .fadeIn div {
+					padding-top: 100px;
+					padding-bottom: 100px;
+				}
+				
+				.global-office-div {
+					padding-bottom: 100px;
+				}
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -584,26 +624,40 @@
 				.global-office-section img:nth-child(1) {
 					margin-bottom: 2rem;
 				}
-
+				
+				.global-office-section .fadeIn div {
+					padding-top: 100px;
+					padding-bottom: 100px;
+				}
+				
+				.global-office-div {
+					padding-bottom: 100px;
+				}
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.mainNav .open-slide a {
@@ -738,26 +792,40 @@
 				.global-office-section img:nth-child(1) {
 					margin-bottom: 3rem;
 				}
-
+				
+				.global-office-section .fadeIn div {
+					padding-top: 100px;
+					padding-bottom: 100px;
+				}
+				
+				.global-office-div {
+					padding-bottom: 100px;
+				}
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -850,26 +918,40 @@
 				.global-office-section img:nth-child(1) {
 					margin-bottom: 3rem;
 				}
-
+				
+				.global-office-section .fadeIn div {
+					padding-top: 100px;
+					padding-bottom: 100px;
+				}
+				
+				.global-office-div {
+					padding-bottom: 100px;
+				}
 			/* Footer Section */
-			.footer-section {
-				background: rgb(0, 125, 140);
-				color: white;
-			}
-			
-			.footer-p-0 {
-				font-size: 3rem;
-				font-weight: bold;
-			}
-			
-			.footer-p-1 {
-				font-size: 1.85rem;
-				margin-bottom: 2rem;
-			}
-			
-			.footer-p-2 {
-				margin-bottom: 0;
-			}
+				.footer-section {
+					background: rgb(0, 125, 140);
+					color: white;
+					padding-top: 70px;
+				}
+				
+				.footer-p-0 {
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				
+				.footer-p-1 {
+					font-size: 1.85rem;
+					margin-bottom: 2rem;
+				}
+				
+				.footer-p-2 {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
+				}
 			
 			/* Side Menu */
 			.open-slide {
@@ -894,14 +976,14 @@
 		});
     
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -926,10 +1008,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -949,6 +1031,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -979,19 +1074,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1036,7 +1118,7 @@
             <div id="global-office-banner" class="p-top-50">
                 <div class="container">
                     <section class="row">
-                        <div class="fadeIn" style="width: 71%; margin: 0 auto; display: block;">
+                        <div class="fadeIn">
 							<img src="${contextPath}/resources/img/company/global_office&factory/companymenu_office1.png" alt="img" class="img-fluid fadeInUp">
                         </div>
                     </section>
@@ -1048,8 +1130,8 @@
             <div class="global-office-section">
 				<div class="container">
                     <div class="row">
-                        <div class="fadeIn" style="width: 100%;">
-                            <div class="p-top-100 p-bot-100" style="width: 71%; margin: 0 auto; display: block;">
+                        <div class="fadeIn">
+                            <div>
                             	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic1.png" alt="img" class="img-fluid fadeInUp">
                             	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
@@ -1063,8 +1145,8 @@
             <div class="global-office-section">
 				<div class="container">
                     <div class="row">
-                        <div class="fadeIn" style="width: 100%;">
-                            <div class="p-top-100 p-bot-150" style="width: 71%; margin: 0 auto; display: block;">
+                        <div class="fadeIn">
+                            <div class="global-office-div">
                             	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas1.png" alt="img" class="img-fluid fadeInUp">
                             	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
@@ -1079,8 +1161,8 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

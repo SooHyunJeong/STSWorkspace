@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -168,10 +168,10 @@
 			#history-banner section {
 				margin: 3rem auto 0 auto;
 				width: 71%;
-				background-image: linear-gradient(to right, white, rgb(0, 125, 140));
+				background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
 				text-align: center;
 				color: white;
-				padding: 4rem 0;
+				padding: 1rem 0;
 				height: 25%;
 			}
 			
@@ -180,17 +180,17 @@
 			}
 			
 			#history-banner p:nth-child(1) {
-				font-size: 2.2rem;
+				font-size: 1.7rem;
 				margin-bottom: 0;
 			}
 			
 			#history-banner p:nth-child(2) {
-				font-size: 1.45rem;
+				font-size: 1.1rem;
 				margin-bottom: 1.8rem;
 			}
 			
 			#history-banner p:nth-child(3) {
-				font-size: 2.5rem;
+				font-size: 2.3rem;
 				margin-bottom: 0;
 			}
 
@@ -198,20 +198,26 @@
 			.footer-section {
 				background: rgb(0, 125, 140);
 				color: white;
+				padding-top: 45px;
 			}
 			
 			.footer-p-0 {
-				font-size: 3rem;
+				font-size: 2.5rem;
 				font-weight: bold;
 			}
 			
 			.footer-p-1 {
-				font-size: 1.85rem;
+				font-size: 1.55rem;
 				margin-bottom: 2rem;
 			}
 			
 			.footer-p-2 {
+				font-size: 13px;
 				margin-bottom: 0;
+			}
+			
+			.footer-p-3 {
+				font-size: 13px;
 			}
 		
 		/* Side Menu */
@@ -275,27 +281,28 @@
 		
 		/* Timeline */
 			.timeline ul {
-			  padding: 50px 0;
+			  padding: 0;
 			}
 			
 			.timeline ul li {
 			  list-style-type: none;
 			  position: relative;
-			  width: 6px;
+			  width: 1px;
 			  margin: 0 auto;
 			  padding-top: 50px;
-			  background: rgb(237, 237, 237);
+			  background: rgb(0, 125, 140);
 			}
-			
+
 			.timeline ul li::after {
 			  content: '';
 			  position: absolute;
 			  left: 50%;
 			  bottom: 0;
 			  transform: translateX(-50%);
-			  width: 30px;
-			  height: 30px;
+			  width: 20px;
+			  height: 20px;
 			  border-radius: 50%;
+			  border: 2px solid rgb(0, 125, 140);
 			  background: inherit;
 			}
 			
@@ -317,9 +324,13 @@
 			
 			time {
 			  display: block;
-			  font-size: 1.2rem;
+			  font-size: 1rem;
 			  font-weight: bold;
-			  margin-bottom: 8px;
+			  margin-bottom: 1rem;
+			}
+			
+			.in-view p {
+				font-size: 10px;
 			}
 		
 		/* Effects */
@@ -328,7 +339,7 @@
 			}
 			
 			.timeline ul li.in-view::after {
-			  background: rgb(0, 125, 140);
+			  background: white;
 			}
 			
 			.timeline ul li div {
@@ -492,7 +503,7 @@
 				#history-banner section {
 					margin: 3rem auto 0 auto;
 					width: 71%;
-					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
+					background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
 					text-align: center;
 					color: white;
 					padding: 4rem 0;
@@ -522,6 +533,7 @@
 				.footer-section {
 					background: rgb(0, 125, 140);
 					color: white;
+					padding-top: 70px;
 				}
 				
 				.footer-p-0 {
@@ -535,7 +547,12 @@
 				}
 				
 				.footer-p-2 {
+					font-size: 16px;
 					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
 				}
 			
 			/* Side Menu */
@@ -591,30 +608,31 @@
 			
 			/* Timeline */
 				.timeline ul {
-				  padding: 50px 0;
+				  padding: 0;
 				}
 				
 				.timeline ul li {
 				  list-style-type: none;
 				  position: relative;
-				  width: 6px;
+				  width: 1px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: rgb(237, 237, 237);
+				  background: rgb(0, 125, 140);
 				}
-				
+
 				.timeline ul li::after {
 				  content: '';
 				  position: absolute;
 				  left: 50%;
 				  bottom: 0;
 				  transform: translateX(-50%);
-				  width: 30px;
-				  height: 30px;
+				  width: 20px;
+				  height: 20px;
 				  border-radius: 50%;
+				  border: 2px solid rgb(0, 125, 140);
 				  background: inherit;
 				}
-				
+
 				.timeline ul li div {
 				  position: relative;
 				  bottom: 0;
@@ -633,13 +651,14 @@
 				
 				time {
 				  display: block;
-				  font-size: 1.2rem;
+				  font-size: 1.5rem;
 				  font-weight: bold;
-				  margin-bottom: 8px;
+				  margin-bottom: 1rem;
 				  margin-left: 8px;
 				}
 				
 				.in-view p {
+					font-size: 16px;
 					margin-left: 8px;
 				}
 				
@@ -793,7 +812,7 @@
 				#history-banner section {
 					margin: 3rem auto 0 auto;
 					width: 71%;
-					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
+					background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
 					text-align: center;
 					color: white;
 					padding: 4rem 0;
@@ -823,6 +842,7 @@
 				.footer-section {
 					background: rgb(0, 125, 140);
 					color: white;
+					padding-top: 70px;
 				}
 				
 				.footer-p-0 {
@@ -836,7 +856,12 @@
 				}
 				
 				.footer-p-2 {
+					font-size: 16px;
 					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
 				}
 			
 			/* Side Menu */
@@ -892,16 +917,16 @@
 			
 			/* Timeline */
 				.timeline ul {
-				  padding: 50px 0;
+				  padding: 0;
 				}
 				
 				.timeline ul li {
 				  list-style-type: none;
 				  position: relative;
-				  width: 6px;
+				  width: 1px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: rgb(237, 237, 237);
+				  background: rgb(0, 125, 140);
 				}
 				
 				.timeline ul li::after {
@@ -910,9 +935,10 @@
 				  left: 50%;
 				  bottom: 0;
 				  transform: translateX(-50%);
-				  width: 30px;
-				  height: 30px;
+				  width: 20px;
+				  height: 20px;
 				  border-radius: 50%;
+				  border: 2px solid rgb(0, 125, 140);
 				  background: inherit;
 				}
 				
@@ -934,13 +960,14 @@
 				
 				time {
 				  display: block;
-				  font-size: 1.2rem;
+				  font-size: 1.5rem;
 				  font-weight: bold;
-				  margin-bottom: 8px;
+				  margin-bottom: 1rem;
 				  margin-left: 8px;
 				}
 				
 				.in-view p {
+					font-size: 16px;
 					margin-left: 8px;
 				}
 				
@@ -1039,6 +1066,7 @@
 				.footer-section {
 					background: rgb(0, 125, 140);
 					color: white;
+					padding-top: 70px;
 				}
 				
 				.footer-p-0 {
@@ -1052,14 +1080,19 @@
 				}
 				
 				.footer-p-2 {
+					font-size: 16px;
 					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
 				}
 			
 			/* History Image Section Start */
 				#history-banner section {
 					margin: 0 auto;
 					width: 71%;
-					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
+					background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
 					text-align: center;
 					color: white;
 					padding: 4rem 0;
@@ -1097,16 +1130,16 @@
 			/* Timeline */
 			
 				.timeline ul {
-				  padding: 50px 0;
+				  padding: 0;
 				}
 				
 				.timeline ul li {
 				  list-style-type: none;
 				  position: relative;
-				  width: 6px;
+				  width: 1px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: rgb(237, 237, 237);
+				  background: rgb(0, 125, 140);
 				}
 				
 				.timeline ul li::after {
@@ -1115,9 +1148,10 @@
 				  left: 50%;
 				  bottom: 0;
 				  transform: translateX(-50%);
-				  width: 30px;
-				  height: 30px;
+				  width: 20px;
+				  height: 20px;
 				  border-radius: 50%;
+				  border: 2px solid rgb(0, 125, 140);
 				  background: inherit;
 				}
 				
@@ -1139,13 +1173,14 @@
 				
 				time {
 				  display: block;
-				  font-size: 1.2rem;
+				  font-size: 1.5rem;
 				  font-weight: bold;
-				  margin-bottom: 8px;
+				  margin-bottom: 1rem;
 				  margin-left: 8px;
 				}
 				
 				.in-view p {
+					font-size: 16px;
 					margin-left: 8px;
 				}
 		}
@@ -1235,7 +1270,7 @@
 				#history-banner section {
 					margin: 0 auto;
 					width: 71%;
-					background-image: linear-gradient(to right, white, rgb(0, 125, 140));
+					background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
 					text-align: center;
 					color: white;
 					padding: 4rem 0;
@@ -1265,6 +1300,7 @@
 				.footer-section {
 					background: rgb(0, 125, 140);
 					color: white;
+					padding-top: 70px;
 				}
 				
 				.footer-p-0 {
@@ -1278,7 +1314,12 @@
 				}
 				
 				.footer-p-2 {
+					font-size: 16px;
 					margin-bottom: 0;
+				}
+				
+				.footer-p-3 {
+					font-size: 16px;
 				}
 			
 			/* Side Menu */
@@ -1293,16 +1334,16 @@
 			/* Timeline */
 			
 				.timeline ul {
-				  padding: 50px 0;
+				  padding: 0;
 				}
 				
 				.timeline ul li {
 				  list-style-type: none;
 				  position: relative;
-				  width: 6px;
+				  width: 1px;
 				  margin: 0 auto;
 				  padding-top: 50px;
-				  background: rgb(237, 237, 237);
+				  background: rgb(0, 125, 140);
 				}
 				
 				.timeline ul li::after {
@@ -1311,9 +1352,10 @@
 				  left: 50%;
 				  bottom: 0;
 				  transform: translateX(-50%);
-				  width: 30px;
-				  height: 30px;
+				  width: 20px;
+				  height: 20px;
 				  border-radius: 50%;
+				  border: 2px solid rgb(0, 125, 140);
 				  background: inherit;
 				}
 				
@@ -1335,13 +1377,14 @@
 				
 				time {
 				  display: block;
-				  font-size: 1.2rem;
+				  font-size: 1.5rem;
 				  font-weight: bold;
-				  margin-bottom: 8px;
+				  margin-bottom: 1rem;
 				  margin-left: 8px;
 				}
 				
 				.in-view p {
+					font-size: 16px;
 					margin-left: 8px;
 				}
 		}
@@ -1387,14 +1430,14 @@
 		};
 		
 		function openSideMenu() {
-			document.getElementById('side-menu').style.width = '250px';
+			document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
 			document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -1419,10 +1462,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -1442,6 +1485,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -1472,19 +1528,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -1528,7 +1571,6 @@
 			<!-- History banner Section Start -->
             <div id="history-banner" class="p-top-50">
                 <div class="container">
-
                     <section class="row">
                         <div class="fadeIn">
                             <div>
@@ -1548,7 +1590,7 @@
 				<div class="container">
                     <div class="row">
                         <div class="fadeIn" style="width: 100%;">
-                            <div class="p-top-50 p-bot-100" style="width: 71%; margin: 0 auto; display: block;">
+                            <div class="p-bot-100" style="width: 71%; margin: 0 auto; display: block;">
 
 								<section class="timeline">
 									<ul>
@@ -1597,7 +1639,7 @@
 										</li>
 										<li>
 											<div>
-												<time>2016 ~ 2018</time>
+												<time>2016 ~ </time>
 												<p>2016. 07. Developed High vacuum coating materials</p>
 												<p>2016. 10. Developed UV curable Hard coating solution</p>
 												<p>2017. 10. Developed Optical monomer M-160 Series</p>
@@ -1613,14 +1655,13 @@
                 </div>
             </div>
             <!-- Banner Section End -->
-
         </main>
         <!-- END MAIN SECTION -->
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">

@@ -8,7 +8,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen</title>
+        <title>evergreen C&T</title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -55,14 +55,14 @@
 		});
 
     	function openSideMenu() {
-    	  document.getElementById('side-menu').style.width = '250px';
+    	  document.getElementById('side-menu').style.width = '230px';
     	}
 
     	function closeSideMenu() {
     	  document.getElementById('side-menu').style.width = '0';
     	}
     </script>
-    <body id="page_top">
+    <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
 
         <!-- HEADER START -->
         <header class="header-section clearfix">
@@ -87,10 +87,10 @@
                                 <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="company_ceo_message.do">Company</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="research_development.do">R&D</a>
@@ -110,6 +110,19 @@
 				<ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown-sidemenu-1">
+                        <a href="company_ceo_message.do">Company</a>
+                    </li>
+                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
+                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <ul class="dropdown-menu">
+                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
+                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
+                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
@@ -140,19 +153,6 @@
 	                       	<li class="sidemenu">
 				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
 	                       	</li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
-                    </li>
-                    <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
-                        <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
                         </ul>
                     </li>
 
@@ -269,36 +269,31 @@
                 <div class="container">
 
                     <section class="row">
-                        <div>
-                            <div class="fadeIn">
-                                <table>
-                                	<tr>
-	                                	<th colspan="6">
-	                                		<h3 class="coating-features-header myraid-regular">Coating Features</h3>
-	                                	</th>
-                                	</tr>
-                                	<tr>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features1.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features2.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features3.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features4.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features5.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                		<td>
-                                			<img src="${contextPath}/resources/img/product/procam_features6.png" alt="img" class="img-fluid fadeInUp features-width">
-                                		</td>
-                                	</tr>
-                                </table>
-                            </div>
+                       	<div class="icon">
+                       		<h3 class="coating-features-header myraid-regular">Coating Features</h3>
+                       	</div>
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features1.png" alt="img" class="img-fluid fadeInUp features-width">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features2.png" alt="img" class="img-fluid fadeInUp features-width">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features3.png" alt="img" class="img-fluid fadeInUp features-width">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features4.png" alt="img" class="img-fluid fadeInUp features-width">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features5.png" alt="img" class="img-fluid fadeInUp features-width">
+                        </div>
+                        <hr class="coating-hr">
+                        <div class="col-c-2 col-md-6 fadeIn">
+                            <img src="${contextPath}/resources/img/product/procam_features6.png" alt="img" class="img-fluid fadeInUp features-width">
                         </div>
                     </section>
 
@@ -326,7 +321,7 @@
             <!-- END of Product Properties - Hard Coating Section -->
             
             <!-- Product Properties - Primer Coating Solution Section Start -->
-            <div id="primer-coating" class="p-top-50 p-bot-150">
+            <div id="primer-coating">
                 <div class="container">
 
                     <section class="row">
@@ -346,14 +341,14 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-50 p-bot-50">
-            <div class="footer-top p-top-50 p-bot-50">
+        <footer class="footer-section p-bot-50">
+            <div class="footer-top">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
                             <p class="footer-p-0">evergreen</p>
                             <p class="footer-p-1">C&T corporation</p>
-                            <p class="footer-p-2">IS Biz Tower 1003, 147, Seongsui-ro,</p>
+                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
                             <p class="footer-p-3">e. info@ievergreen.com</p>
