@@ -1,0 +1,1347 @@
+/*==============================================
+  Project:   EVERGREEN - Company History
+  Build:     Bootstrap 4.0.0
+  Author:    ThemeShef
+  Version:   1.0
+ ===============================================*/
+
+#mainNav>div {
+	width: 79%;
+}
+
+.navbar-brand {
+	height: 37px;
+	width: 140px !important;
+	margin-right: 0;
+}
+
+.navbar-toggler {
+	padding: 0;
+}
+
+.navbar-toggler-icon {
+	font-size: 19px;
+}
+
+  	.col-lg-4 {
+	flex: 0 0 100%;
+	max-width: 100%;	
+}
+
+/* Header Section */
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+		z-index: 1;
+	}
+	
+	.sup {
+		font-size: 100%;
+		font-weight: normal;
+		top: 0;
+	}
+	
+	/* dropdown 包访 家胶 Start */
+		.header-section {
+			position: relative;
+			z-index: 2;
+		}
+		
+		.sub-menu {
+			display: none;
+			margin-top: 82px;
+			background: rgb(237, 237, 237);
+		}
+		
+		.sub-menu>div {
+			display: table;
+			margin: 0 auto;
+		}
+		
+		.hornbill-nav {
+			background-color: rgb(0, 125, 140) !important;
+			box-shadow: none !important;
+		}
+		
+		.dropdown-sidemenu-1 {
+			display: none;
+		}
+		
+		.dropdown-sidemenu-2 {
+			display: block;
+		}
+
+		.dropbtn {
+		    background: rgb(237, 237, 237);
+		    color: rgb(0, 125, 140);
+		    padding: 16px 70px;
+		    font-size: 17px;
+		    border: none;
+		    cursor: pointer;
+		    border-radius: 0;
+		}
+		
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+		
+		.dropdown-submenu {
+		    position: relative;
+		}
+		
+			.dropdown-submenu>.dropdown-menu {
+			    top: 0;
+			    left: 100%;
+			    margin-top: -6px;
+			    margin-left: -1px;
+			    background-color: rgb(0, 125, 140);
+			    border-radius: 0;
+			}
+			
+			.dropdown-submenu:hover>.dropdown-menu {
+			    display: block;
+			}
+			
+			.dropdown-submenu:hover>a:after {
+			    border-left-color: #fff;
+			}
+			
+			.dropdown-submenu.pull-left {
+			    float: none;
+			}
+			
+			.dropdown-submenu.pull-left>.dropdown-menu {
+			    left: -100%;
+			    margin-left: 10px;
+			    -webkit-border-radius: 6px 0 6px 6px;
+			    -moz-border-radius: 6px 0 6px 6px;
+			    border-radius: 6px 0 6px 6px;
+			}
+			
+			.sidemenu {
+				margin-left: 10px;
+				font-size: 0.8rem;
+			}
+	/* dropdown 包访 家胶 End */
+
+/* History Image Section Start */
+	#history-banner section {
+		margin: 3rem auto 0 auto;
+		width: 71%;
+		background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+		text-align: center;
+		color: white;
+		padding: 1rem 0;
+		height: 240px;
+	}
+	
+	#history-banner section>div {
+		width: 100%;
+	}
+	
+	#history-banner p:nth-child(1) {
+		font-size: 1.7rem;
+		margin-bottom: 0;
+	}
+	
+	#history-banner p:nth-child(2) {
+		font-size: 1.1rem;
+		margin-bottom: 1.8rem;
+	}
+	
+	#history-banner p:nth-child(3) {
+		font-size: 2.3rem;
+		margin-bottom: 0;
+	}
+
+/* Footer Section */
+	.footer-section {
+		background: rgb(0, 125, 140);
+		color: white;
+		padding-top: 45px;
+	}
+	
+	.footer-p-0 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	
+	.footer-p-1 {
+		font-size: 1.55rem;
+		margin-bottom: 2rem;
+	}
+	
+	.footer-p-2 {
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 13px;
+	}
+
+/* Side Menu */
+	.open-slide a {
+		cursor: pointer
+	}
+	
+	.btn-close {
+		cursor: pointer
+	}
+
+	.mainNav .open-slide a {
+	  float: right;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	.mainNav a:hover {
+	  background: #ddd;
+	  color: #000;
+	}
+	
+	.side-nav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 5;
+	  top: 0;
+	  right: 0;
+	  background: #111;
+	  opacity: 0.9;
+	  overflow: hidden;
+	  padding-top: 60px;
+	  transition: 0.5s;
+	  display: block;
+	}
+	
+	.side-nav ul li a {
+	  padding: 10px 10px 10px 30px;
+	  text-decoration: none;
+	  font-size: 22px;
+	  color: #ccc;
+	  display: block;
+	  transition: 0.3s;
+	}
+	
+	.side-nav ul li a:hover {
+	  color: #fff;
+	}
+	
+	.side-nav .btn-close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  font-size: 36px;
+	  color: #ccc;
+	}
+
+/* Timeline */
+	.timeline ul {
+	  padding: 0;
+	}
+	
+	.timeline ul li {
+	  list-style-type: none;
+	  position: relative;
+	  width: 1px;
+	  margin: 0 auto;
+	  padding-top: 50px;
+	  background: rgb(0, 125, 140);
+	}
+
+	.timeline ul li::after {
+	  content: '';
+	  position: absolute;
+	  left: 50%;
+	  bottom: 0;
+	  transform: translateX(-50%);
+	  width: 20px;
+	  height: 20px;
+	  border-radius: 50%;
+	  border: 2px solid rgb(0, 125, 140);
+	  background: inherit;
+	}
+	
+	.timeline ul li div {
+	  position: relative;
+	  bottom: 0;
+	  width: 400px;
+	  padding: 15px;
+	  background: rgb(0, 125, 140);
+	}
+	
+	.timeline ul li:nth-child(odd) div {
+	  left: 45px;
+	}
+	
+	.timeline ul li:nth-child(even) div {
+	  left: -439px;
+	}
+	
+	time {
+	  display: block;
+	  font-size: 1rem;
+	  font-weight: bold;
+	  margin-bottom: 1rem;
+	}
+	
+	.in-view p {
+		font-size: 10px;
+	}
+
+/* Effects */
+	.timeline ul li::after {
+	  transition: background .5s ease-in-out;
+	}
+	
+	.timeline ul li.in-view::after {
+	  background: white;
+	}
+	
+	.timeline ul li div {
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: all .5s ease-in-out;
+	}
+	
+	.timeline ul li:nth-child(odd) div {
+	  transform: translate3d(200px, 0, 0);
+	}
+	
+	.timeline ul li:nth-child(even) div {
+	  transform: translate3d(-200px, 0, 0);
+	}
+	
+	.timeline ul li.in-view div {
+	  transform: none;
+	  visibility: visible;
+	  opacity: 1;
+	  color: white;
+	}
+	
+	.timeline ul li {
+	    margin-left: 20px;
+	}
+
+	.timeline ul li div {
+	    width: calc(100vw - 190px);
+	}
+
+	.timeline ul li:nth-child(even) div {
+	    left: 45px;
+	}
+
+	.timeline ul li:nth-child(even) div::before {
+	    left: -15px;
+	    border-width: 8px 16px 8px 0;
+	    border-color: transparent #14B2B5 transparent transparent;
+	}
+
+@media all and (min-width: 576px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 168px !important;
+		margin-right: 1rem;
+	}
+	
+	.navbar-toggler {
+		padding: .25rem .75rem;
+	}
+	
+	.navbar-toggler-icon {
+		font-size: 28px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 50%;
+		max-width: 50%;	
+	}
+	
+	/* Header Section */
+		.navbar {
+			background: rgb(0, 125, 140) !important;
+			padding: 13px 0;
+			z-index: 1;
+		}
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+		
+		/* dropdown 包访 家胶 Start */
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: none;
+				margin-top: 72px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.hornbill-nav {
+				background-color: rgb(0, 125, 140) !important;
+				box-shadow: none !important;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: none;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: block;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radisu: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+			.dropdown-submenu {
+			    position: relative;
+			}
+			
+			.dropdown-submenu>.dropdown-menu {
+			    top: 0;
+			    left: 100%;
+			    margin-top: -6px;
+			    margin-left: -1px;
+			}
+			
+			.dropdown-submenu:hover>.dropdown-menu {
+			    display: block;
+			}
+			
+			.dropdown-submenu:hover>a:after {
+			    border-left-color: #fff;
+			}
+			
+			.dropdown-submenu.pull-left {
+			    float: none;
+			}
+			
+			.dropdown-submenu.pull-left>.dropdown-menu {
+			    left: -100%;
+			    margin-left: 10px;
+			    -webkit-border-radius: 6px 0 6px 6px;
+			    -moz-border-radius: 6px 0 6px 6px;
+			    border-radius: 6px 0 6px 6px;
+			}
+			
+			.sidemenu {
+				margin-left: 10px;
+				font-size: 0.8rem;
+			}
+		/* dropdown 包访 家胶 End */
+
+	/* History Image Section Start */
+		#history-banner section {
+			margin: 3rem auto 0 auto;
+			width: 71%;
+			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			text-align: center;
+			color: white;
+			padding: 4rem 0;					
+		}
+		
+		#history-banner section>div {
+			width: 100%;
+		}
+		
+		#history-banner p:nth-child(1) {
+			font-size: 2.2rem;
+			margin-bottom: 0;
+		}
+		
+		#history-banner p:nth-child(2) {
+			font-size: 1.45rem;
+			margin-bottom: 1.8rem;
+		}
+		
+		#history-banner p:nth-child(3) {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+		.mainNav .open-slide a {
+		  float: right;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		.mainNav a:hover {
+		  background: #ddd;
+		  color: #000;
+		}
+		
+		.side-nav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 5;
+		  top: 0;
+		  right: 0;
+		  background: #111;
+		  opacity: 0.9;
+		  overflow: hidden;
+		  padding-top: 60px;
+		  transition: 0.5s;
+		  display: block;
+		}
+		
+		.side-nav ul li a {
+		  padding: 10px 10px 10px 30px;
+		  text-decoration: none;
+		  font-size: 22px;
+		  color: #ccc;
+		  display: block;
+		  transition: 0.3s;
+		}
+		
+		.side-nav ul li a:hover {
+		  color: #fff;
+		}
+		
+		.side-nav .btn-close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  font-size: 36px;
+		  color: #ccc;
+		}
+	
+	/* Timeline */
+		.timeline ul {
+		  padding: 0;
+		}
+		
+		.timeline ul li {
+		  list-style-type: none;
+		  position: relative;
+		  width: 1px;
+		  margin: 0 auto;
+		  padding-top: 50px;
+		  background: rgb(0, 125, 140);
+		}
+
+		.timeline ul li::after {
+		  content: '';
+		  position: absolute;
+		  left: 50%;
+		  bottom: 0;
+		  transform: translateX(-50%);
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border: 2px solid rgb(0, 125, 140);
+		  background: inherit;
+		}
+
+		.timeline ul li div {
+		  position: relative;
+		  bottom: 0;
+		  width: 400px;
+		  padding: 15px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li:nth-child(odd) div {
+		  left: 45px;
+		}
+		
+		.timeline ul li:nth-child(even) div {
+		  left: -439px;
+		}
+		
+		time {
+		  display: block;
+		  font-size: 1.5rem;
+		  font-weight: bold;
+		  margin-bottom: 1rem;
+		  margin-left: 8px;
+		}
+		
+		.in-view p {
+			font-size: 16px;
+			margin-left: 8px;
+		}
+		
+		.timeline ul li {
+		    margin-left: 20px;
+		}
+
+		.timeline ul li div {
+		    width: calc(100vw - 190px);
+		}
+
+		.timeline ul li:nth-child(even) div {
+		    left: 45px;
+		}
+
+		.timeline ul li:nth-child(even) div::before {
+		    left: -15px;
+		    border-width: 8px 16px 8px 0;
+		    border-color: transparent #14B2B5 transparent transparent;
+		}
+}
+
+@media all and (min-width: 768px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 168px !important;;
+		margin-right: 1rem;
+	}
+	
+	.navbar-toggler {
+		padding: .25rem .75rem;
+	}
+	
+	.navbar-toggler-icon {
+		font-size: 28px;
+	}
+
+	.navbar-toggler {
+		padding: .25rem 0 .25rem .75rem;
+	}
+	
+	.navbar-toggler .navbar-toggler-icon {
+		font-size: 28px;
+		margin-top: 4px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 50%;
+		max-width: 50%;	
+	}
+	
+	/* Header Section */
+		.nav-link {
+			padding-right: 0;
+			padding-left: 4rem;
+		}
+
+		.navbar {
+			background: rgb(0, 125, 140) !important;
+			padding: 13px 0;
+			z-index: 1;
+		}
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+
+		/* dropdown 包访 家胶 Start */
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: none;
+				margin-top: 82px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: none;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: block;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+				.dropdown-submenu {
+				    position: relative;
+				}
+				
+				.dropdown-submenu>.dropdown-menu {
+				    top: 0;
+				    left: 100%;
+				    margin-top: -6px;
+				    margin-left: -1px;
+				}
+				
+				.dropdown-submenu:hover>.dropdown-menu {
+				    display: block;
+				}
+				
+				.dropdown-submenu:hover>a:after {
+				    border-left-color: #fff;
+				}
+				
+				.dropdown-submenu.pull-left {
+				    float: none;
+				}
+				
+				.dropdown-submenu.pull-left>.dropdown-menu {
+				    left: -100%;
+				    margin-left: 10px;
+				    -webkit-border-radius: 6px 0 6px 6px;
+				    -moz-border-radius: 6px 0 6px 6px;
+				    border-radius: 6px 0 6px 6px;
+				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}
+		/* dropdown 包访 家胶 End */
+		
+	/* History Image Section Start */
+		#history-banner section {
+			margin: 3rem auto 0 auto;
+			width: 71%;
+			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			text-align: center;
+			color: white;
+			padding: 4rem 0;
+		}
+		
+		#history-banner section>div {
+			width: 100%;
+		}
+		
+		#history-banner p:nth-child(1) {
+			font-size: 2.2rem;
+			margin-bottom: 0;
+		}
+		
+		#history-banner p:nth-child(2) {
+			font-size: 1.45rem;
+			margin-bottom: 1.8rem;
+		}
+		
+		#history-banner p:nth-child(3) {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+	
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+		.mainNav .open-slide a {
+		  float: right;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		.mainNav a:hover {
+		  background: #ddd;
+		  color: #000;
+		}
+		
+		.side-nav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 5;
+		  top: 0;
+		  right: 0;
+		  background: #111;
+		  opacity: 0.9;
+		  overflow: hidden;
+		  padding-top: 60px;
+		  transition: 0.5s;
+		  display: block;
+		}
+		
+		.side-nav ul li a {
+		  padding: 10px 10px 10px 30px;
+		  text-decoration: none;
+		  font-size: 22px;
+		  color: #ccc;
+		  display: block;
+		  transition: 0.3s;
+		}
+		
+		.side-nav ul li a:hover {
+		  color: #fff;
+		}
+		
+		.side-nav .btn-close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  font-size: 36px;
+		  color: #ccc;
+		}
+	
+	/* Timeline */
+		.timeline ul {
+		  padding: 0;
+		}
+		
+		.timeline ul li {
+		  list-style-type: none;
+		  position: relative;
+		  width: 1px;
+		  margin: 0 auto;
+		  padding-top: 50px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li::after {
+		  content: '';
+		  position: absolute;
+		  left: 50%;
+		  bottom: 0;
+		  transform: translateX(-50%);
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border: 2px solid rgb(0, 125, 140);
+		  background: inherit;
+		}
+		
+		.timeline ul li div {
+		  position: relative;
+		  bottom: 0;
+		  width: 400px;
+		  padding: 15px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li:nth-child(odd) div {
+		  left: 45px;
+		}
+		
+		.timeline ul li:nth-child(even) div {
+		  left: -439px;
+		}
+		
+		time {
+		  display: block;
+		  font-size: 1.5rem;
+		  font-weight: bold;
+		  margin-bottom: 1rem;
+		  margin-left: 8px;
+		}
+		
+		.in-view p {
+			font-size: 16px;
+			margin-left: 8px;
+		}
+		
+		.timeline ul li div {
+		    width: 250px;
+		}
+
+		.timeline ul li:nth-child(even) div {
+		    left: -289px;
+		    /*250+45-6*/
+		}
+}
+
+@media all and (min-width: 992px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 195px !important;;
+		margin-right: 1rem;
+	}
+	
+	.navbar-toggler {
+		padding: .25rem .75rem;
+	}
+	
+	.navbar-toggler-icon {
+		font-size: 28px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 25%;
+		max-width: 25%;	
+	}
+	
+	/* Header Section */
+		/* dropdown 包访 家胶 Start */
+			.nav-link {
+				padding-right: 0 !important;
+				padding-left: 2rem !important;
+			}
+
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: table;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: none;
+			}
+			
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.sub-menu {
+				display: block;
+				margin-top: 92px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+		/* dropdown 包访 家胶 End */
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+	}
+	
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* History Image Section Start */
+		#history-banner section {
+			margin: 0 auto;
+			width: 71%;
+			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			text-align: center;
+			color: white;
+			padding: 4rem 0;
+		}
+		
+		#history-banner section>div {
+			width: 100%;
+		}
+		
+		#history-banner p:nth-child(1) {
+			font-size: 2.2rem;
+			margin-bottom: 0;
+		}
+		
+		#history-banner p:nth-child(2) {
+			font-size: 1.45rem;
+			margin-bottom: 1.8rem;
+		}
+		
+		#history-banner p:nth-child(3) {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+	
+	/* Side Menu */
+		.open-slide {
+			display: none;
+		}
+		
+		.side-nav {
+			display: none;
+		}
+	
+	/* Timeline */
+	
+		.timeline ul {
+		  padding: 0;
+		}
+		
+		.timeline ul li {
+		  list-style-type: none;
+		  position: relative;
+		  width: 1px;
+		  margin: 0 auto;
+		  padding-top: 50px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li::after {
+		  content: '';
+		  position: absolute;
+		  left: 50%;
+		  bottom: 0;
+		  transform: translateX(-50%);
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border: 2px solid rgb(0, 125, 140);
+		  background: inherit;
+		}
+		
+		.timeline ul li div {
+		  position: relative;
+		  bottom: 0;
+		  width: 400px;
+		  padding: 15px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li:nth-child(odd) div {
+		  left: 45px;
+		}
+		
+		.timeline ul li:nth-child(even) div {
+		  left: -439px;
+		}
+		
+		time {
+		  display: block;
+		  font-size: 1.5rem;
+		  font-weight: bold;
+		  margin-bottom: 1rem;
+		  margin-left: 8px;
+		}
+		
+		.in-view p {
+			font-size: 16px;
+			margin-left: 8px;
+		}
+}
+
+@media all and (min-width: 1200px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 195px !important;;
+		margin-right: 1rem;
+	}
+	
+	.navbar-toggler {
+		padding: .25rem .75rem;
+	}
+	
+	.navbar-toggler-icon {
+		font-size: 28px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 25%;
+		max-width: 25%;	
+	}
+	
+	/* Header Section */
+		/* dropdown 包访 家胶 Start */
+			.nav-link {
+				padding-right: 0 !important;
+				padding-left: 4rem !important;
+			}
+
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: block;
+				margin-top: 92px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: table;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: none;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+		/* dropdown 包访 家胶 End */
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+	
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+	}
+	
+	/* History banner Section Start */
+		#history-banner section {
+			margin: 0 auto;
+			width: 71%;
+			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			text-align: center;
+			color: white;
+			padding: 4rem 0;
+		}
+		
+		#history-banner section>div {
+			width: 100%;
+		}
+		
+		#history-banner p:nth-child(1) {
+			font-size: 2.2rem;
+			margin-bottom: 0;
+		}
+		
+		#history-banner p:nth-child(2) {
+			font-size: 1.45rem;
+			margin-bottom: 1.8rem;
+		}
+		
+		#history-banner p:nth-child(3) {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+		
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+		.open-slide {
+			display: none;
+		}
+		
+		.side-nav {
+			display: none;
+		}
+	
+	/* Timeline */
+	
+		.timeline ul {
+		  padding: 0;
+		}
+		
+		.timeline ul li {
+		  list-style-type: none;
+		  position: relative;
+		  width: 1px;
+		  margin: 0 auto;
+		  padding-top: 50px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li::after {
+		  content: '';
+		  position: absolute;
+		  left: 50%;
+		  bottom: 0;
+		  transform: translateX(-50%);
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border: 2px solid rgb(0, 125, 140);
+		  background: inherit;
+		}
+		
+		.timeline ul li div {
+		  position: relative;
+		  bottom: 0;
+		  width: 450px;
+		  padding: 15px;
+		  background: rgb(0, 125, 140);
+		}
+		
+		.timeline ul li:nth-child(odd) div {
+		  left: 45px;
+		}
+		
+		.timeline ul li:nth-child(even) div {
+		  left: -489px;
+		}
+		
+		time {
+		  display: block;
+		  font-size: 1.5rem;
+		  font-weight: bold;
+		  margin-bottom: 1rem;
+		  margin-left: 8px;
+		}
+		
+		.in-view p {
+			font-size: 16px;
+			margin-left: 8px;
+		}
+}

@@ -1,0 +1,1705 @@
+/*==============================================
+  Project:   EVERGREEN - Product Monomer
+  Build:     Bootstrap 4.0.0
+  Author:    ThemeShef
+  Version:   1.0
+ ===============================================*/
+
+#mainNav>div {
+	width: 79%;
+}
+
+.fadeIn {
+	width: 100%;
+}
+
+.navbar-brand {
+	height: 37px;
+	width: 140px !important;
+	margin-right: 0;
+}
+
+  	.col-lg-4 {
+	flex: 0 0 100%;
+	max-width: 100%;	
+}
+
+/* Header Section */
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+		z-index: 1;
+	}
+	
+	.sup {
+		font-size: 100%;
+		font-weight: normal;
+		top: 0;
+	}
+	
+	/* Banner Section Start */
+		.banner-section-div {
+			width: 100%;
+		}
+
+		.banner-section-div-0 {
+			position: relative;
+			width: 177px;
+			height: 79px;
+			top: 9.5rem;
+			text-align: right;
+			padding: 1.6rem 0.6rem 0 0 ;
+			background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+			font-size: 1.5rem;
+			color: white;
+		}
+		
+		.banner-section-div-1 {
+			width: 71%;
+			margin: 5rem auto 0 auto;
+			display: block;
+			padding-right: 15px;
+			padding-left: 15px;
+			background: none;
+		}
+		
+		.banner-section-div-1>img {
+			width: 75%;
+			margin: 0 auto;
+			display: block !important;
+		}
+		
+		.banner-section-div-1>div {
+			max-width: 100%;
+			padding-bottom: 3rem;
+		}
+		
+		.procam-explanation {
+			color: rgb(0, 125, 140);
+		}
+	/* Banner Section End */
+	
+	/* dropdown 包访 家胶 Start */
+		.header-section {
+			position: relative;
+			z-index: 2;
+		}
+		
+		.sub-menu {
+			display: none;
+			margin-top: 82px;
+			background: rgb(237, 237, 237);
+		}
+		
+		.sub-menu>div {
+			display: table;
+			margin: 0 auto;
+		}
+		
+		.hornbill-nav {
+			background-color: rgb(0, 125, 140) !important;
+			box-shadow: none !important;
+		}
+		
+		.dropdown-sidemenu-1 {
+			display: none;
+		}
+		
+		.dropdown-sidemenu-2 {
+			display: block;
+		}
+
+		.dropbtn {
+		    background: rgb(237, 237, 237);
+		    color: rgb(0, 125, 140);
+		    padding: 16px 70px;
+		    font-size: 17px;
+		    border: none;
+		    cursor: pointer;
+		    border-radius: 0;
+		}
+		
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+		
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    z-index: 1;
+		    top: 58px;
+		    right: 21px;
+		}
+		
+		.dropdown-content a {
+		    color: #787878;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		    font-size: 14px;
+		    text-align: center;
+		}
+		
+		.dropdown-content a:hover {background-color: #f1f1f1}
+		
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+		
+		.dropdown:hover .dropbtn {
+		    background-color: rgb(237, 237, 237);
+		}
+		
+			.dropdown-submenu {
+			    position: relative;
+			}
+			
+			.dropdown-submenu>.dropdown-menu {
+			    top: 0;
+			    left: 100%;
+			    margin-top: -6px;
+			    margin-left: -1px;
+			    background-color: rgb(0, 125, 140);
+			    border-radius: 0;
+			}
+			
+			.dropdown-submenu:hover>.dropdown-menu {
+			    display: block;
+			}
+			
+			.dropdown-submenu:hover>a:after {
+			    border-left-color: #fff;
+			}
+			
+			.dropdown-submenu.pull-left {
+			    float: none;
+			}
+			
+			.dropdown-submenu.pull-left>.dropdown-menu {
+			    left: -100%;
+			    margin-left: 10px;
+			    -webkit-border-radius: 6px 0 6px 6px;
+			    -moz-border-radius: 6px 0 6px 6px;
+			    border-radius: 6px 0 6px 6px;
+			}
+			
+			.sidemenu {
+				margin-left: 10px;
+				font-size: 0.8rem;
+			}
+	/* dropdown 包访 家胶 End */
+	
+	/* Hard-coating Section Start */
+		#hard-coating p:nth-child(1) {
+			font-size: 1.5rem;
+			color: rgb(0, 125, 140);
+			margin-bottom: 0;
+		}
+		
+		#hard-coating p:nth-child(2) {
+			font-size: 0.75rem;
+		}
+	/* Hard-coating Section End */
+	
+	/* Classification Section Start */
+		#classification .row div {
+			width: 100%;
+		}
+		
+		#classification .row {
+			margin: 0 auto;
+			width: 71%;
+		}
+		
+		.classification-header {
+			font-size: 1.2rem;
+			color: black;
+			margin-bottom: 3rem;
+		}
+		
+		.col-c-1 {
+			text-align: center;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		#classification .row .col-c-1 {
+			padding: 2rem;
+			border-right: none;
+			border-bottom: none;
+		}
+		
+		hr {
+			width: 33%;
+			margin: 0 auto;
+			border: 0.5px solid #dbdbdb;
+		}
+	/* Classification Section End */
+
+	/* Coating Features Section Start */
+		#coating-features {
+			width: 100%;
+		}
+		
+		#coating-features .row {
+			margin: 0 auto;
+			width: 71%;
+		}
+		
+		#coating-features .icon {
+			width: 100%;
+		}
+		
+		.coating-features-header {
+			font-size: 1.2rem;
+			color: black;
+			margin-bottom: 2rem;
+		}
+		
+		.col-c-2 {
+			text-align: center;
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding: 2rem;
+		}
+		
+		.col-c-2 img {
+			width: 65%;
+		}
+		
+		.coating-hr {
+			width: 33%;
+			margin: 0 auto;
+			border: 0.5px solid #dbdbdb;
+		}
+	/* Coating Features Section End */
+	
+	/* Optical Monomer Section Start */
+		#optical-monomer {
+			padding-top: 0;
+			padding-bottom: 50px;
+		}
+
+		#optical-monomer .row {
+			width: 71%;
+			margin: 0 auto;
+		}
+		
+		.product-properties-header {
+			font-size: 1.2rem;
+			color: black;
+			margin-bottom: 2rem;
+		}
+	/* Optical Monomer Section End */
+	
+.functional-monomer-p {
+	color: rgb(0, 125, 140);
+}
+
+/* Footer Section */
+	.footer-section {
+		background: rgb(0, 125, 140);
+		color: white;
+		padding-top: 45px;
+	}
+	
+	.footer-p-0 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	
+	.footer-p-1 {
+		font-size: 1.55rem;
+		margin-bottom: 2rem;
+	}
+	
+	.footer-p-2 {
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+	
+	.footer-p-3 {
+		font-size: 13px;
+	}
+
+/* Side Menu */
+.open-slide a {
+	cursor: pointer
+}
+
+.btn-close {
+	cursor: pointer
+}
+
+.mainNav .open-slide a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainNav a:hover {
+  background: #ddd;
+  color: #000;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background: #111;
+  opacity: 0.9;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: block;
+}
+
+.side-nav ul li a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav ul li a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 36px;
+  color: #ccc;
+}
+
+
+
+@media all and (min-width: 576px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 168px !important;
+		margin-right: 1rem;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 50%;
+		max-width: 50%;	
+	}
+	
+	/* Header Section */
+		.navbar {
+			background: rgb(0, 125, 140) !important;
+			padding: 13px 0;
+			z-index: 1;
+		}
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+		
+		/* dropdown 包访 家胶 Start */
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: none;
+				margin-top: 72px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.hornbill-nav {
+				background-color: rgb(0, 125, 140) !important;
+				box-shadow: none !important;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: none;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: block;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radisu: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f9f9f9;
+			    min-width: 160px;
+			    z-index: 1;
+			    top: 58px;
+		    	right: 21px;
+			}
+			
+			.dropdown-content a {
+			    color: #787878;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			    font-size: 14px;
+		    	text-align: center;
+			}
+			
+			.dropdown-content a:hover {background-color: #f1f1f1}
+			
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+			    background-color: rgb(237, 237, 237);
+			}
+
+				.dropdown-submenu {
+				    position: relative;
+				}
+				
+				.dropdown-submenu>.dropdown-menu {
+				    top: 0;
+				    left: 100%;
+				    margin-top: -6px;
+				    margin-left: -1px;
+				}
+				
+				.dropdown-submenu:hover>.dropdown-menu {
+				    display: block;
+				}
+				
+				.dropdown-submenu:hover>a:after {
+				    border-left-color: #fff;
+				}
+				
+				.dropdown-submenu.pull-left {
+				    float: none;
+				}
+				
+				.dropdown-submenu.pull-left>.dropdown-menu {
+				    left: -100%;
+				    margin-left: 10px;
+				    -webkit-border-radius: 6px 0 6px 6px;
+				    -moz-border-radius: 6px 0 6px 6px;
+				    border-radius: 6px 0 6px 6px;
+				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}
+		/* dropdown 包访 家胶 End */
+		
+		/* Hard-coating Section Start */
+			#hard-coating p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			#hard-coating p:nth-child(2) {
+				font-size: 1.05rem;
+			}
+		/* Hard-coating Section End */
+		
+		/* Banner Section Start */
+			.banner-section-div {
+				width: 100%;
+			}
+
+			.banner-section-div-0 {
+				position: relative;
+				width: 295px;
+				height: 79px;
+				top: 9.5rem;
+				left: 0;
+				text-align: right;
+				padding: 1.8rem 0.6rem 0 0 ;
+				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+				font-size: 2.3rem;
+				color: white;
+			}
+			
+			.banner-section-div-1 {
+				width: 71%;
+				display: block;
+				padding-right: 15px;
+				padding-left: 15px;
+				background: none;
+			}
+			
+			.banner-section-div-1>img {
+				width: 75%;
+				margin: 0 auto;
+				display: block !important;
+			}
+			
+			.banner-section-div-1>div {
+				max-width: 100%;
+				padding-bottom: 3rem;
+			}
+			
+			.procam-explanation {
+				color: rgb(0, 125, 140);
+			}
+		/* Banner Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+
+			#classification .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+
+			.classification-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			#coating-features .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+			
+			.coating-features-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding: 2rem;
+			}
+			
+			.col-c-2 img {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 33%;
+				margin: 0 auto;
+				border: 0.5px solid #dbdbdb;
+			}
+		/* Coating Features Section End */
+		
+		/* Optical Monomer Section Start */
+			#optical-monomer {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+
+			.product-properties-header {
+				font-size: 1.75rem;
+			}
+		/* Optical Monomer Section End */
+
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+	.mainNav .open-slide a {
+	  float: right;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	.mainNav a:hover {
+	  background: #ddd;
+	  color: #000;
+	}
+	
+	.side-nav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 5;
+	  top: 0;
+	  right: 0;
+	  background: #111;
+	  opacity: 0.9;
+	  overflow: hidden;
+	  padding-top: 60px;
+	  transition: 0.5s;
+	  display: block;
+	}
+	
+	.side-nav ul li a {
+	  padding: 10px 10px 10px 30px;
+	  text-decoration: none;
+	  font-size: 22px;
+	  color: #ccc;
+	  display: block;
+	  transition: 0.3s;
+	}
+	
+	.side-nav ul li a:hover {
+	  color: #fff;
+	}
+	
+	.side-nav .btn-close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  font-size: 36px;
+	  color: #ccc;
+	}
+}
+
+@media all and (min-width: 768px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 168px !important;;
+		margin-right: 1rem;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 50%;
+		max-width: 50%;	
+	}
+	
+	/* Header Section */
+		.nav-link {
+			padding-right: 0;
+			padding-left: 4rem;
+		}
+
+		.navbar {
+			background: rgb(0, 125, 140) !important;
+			padding: 13px 0;
+			z-index: 1;
+		}
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+		
+		/* Banner Section Start */
+			.banner-section-div {
+				width: 100%;
+			}
+
+			.banner-section-div-0 {
+				position: relative;
+				width: 393px;
+				height: 79px;
+				top: 9.5rem;
+				left: -5rem;
+				text-align: right;
+				padding: 1.8rem 0.6rem 0 0 ;
+				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+				font-size: 2.3rem;
+				color: white;
+			}
+			
+			.banner-section-div-1 {
+				width: 70%;
+				margin: 8rem auto 0 auto;
+				display: block;
+				padding-right: 15px;
+				padding-left: 0;
+				background: url(../../resources/img/product/procam_product.png) right/27vw no-repeat;
+			}
+			
+			.banner-section-div-1>img {
+				margin: 0;
+				display: none !important;
+			}
+			
+			.banner-section-div-1>div {
+				max-width: 60%;
+				padding-bottom: 4rem;
+			}
+			
+			.procam-explanation {
+				color: rgb(0, 125, 140);
+			}
+		/* Banner Section End */
+
+		/* dropdown 包访 家胶 Start */
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: none;
+				margin-top: 82px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: none;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: block;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f9f9f9;
+			    min-width: 160px;
+			    z-index: 1;
+			    top: 58px;
+		    	right: 21px;
+			}
+			
+			.dropdown-content a {
+			    color: #787878;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			    font-size: 14px;
+		    	text-align: center;
+			}
+			
+			.dropdown-content a:hover {background-color: #f1f1f1}
+			
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+			    background-color: rgb(237, 237, 237);
+			}
+			
+				
+				.dropdown-submenu {
+				    position: relative;
+				}
+				
+				.dropdown-submenu>.dropdown-menu {
+				    top: 0;
+				    left: 100%;
+				    margin-top: -6px;
+				    margin-left: -1px;
+				}
+				
+				.dropdown-submenu:hover>.dropdown-menu {
+				    display: block;
+				}
+				
+				.dropdown-submenu:hover>a:after {
+				    border-left-color: #fff;
+				}
+				
+				.dropdown-submenu.pull-left {
+				    float: none;
+				}
+				
+				.dropdown-submenu.pull-left>.dropdown-menu {
+				    left: -100%;
+				    margin-left: 10px;
+				    -webkit-border-radius: 6px 0 6px 6px;
+				    -moz-border-radius: 6px 0 6px 6px;
+				    border-radius: 6px 0 6px 6px;
+				}
+				
+				.sidemenu {
+					margin-left: 10px;
+					font-size: 0.8rem;
+				}
+		/* dropdown 包访 家胶 End */
+		
+		/* Hard-coating Section Start */
+			#hard-coating p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			#hard-coating p:nth-child(2) {
+				font-size: 1.05rem;
+			}
+		/* Hard-coating Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			#classification .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+			
+			.classification-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: 1px solid #dbdbdb;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 2rem;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 2rem;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			#coating-features .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+			
+			.coating-features-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding: 2rem;
+			}
+			
+			.col-c-2 img {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 33%;
+				margin: 0 auto;
+				border: 0.5px solid #dbdbdb;
+			}
+		/* Coating Features Section End */
+
+		/* Optical Monomer Section Start */
+			#optical-monomer {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+
+			.product-properties-header {
+				font-size: 1.75rem;
+			}
+		/* Optical Monomer Section End */
+	
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+
+	/* Side Menu */
+	.mainNav .open-slide a {
+	  float: right;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	.mainNav a:hover {
+	  background: #ddd;
+	  color: #000;
+	}
+	
+	.side-nav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 5;
+	  top: 0;
+	  right: 0;
+	  background: #111;
+	  opacity: 0.9;
+	  overflow: hidden;
+	  padding-top: 60px;
+	  transition: 0.5s;
+	  display: block;
+	}
+	
+	.side-nav ul li a {
+	  padding: 10px 10px 10px 30px;
+	  text-decoration: none;
+	  font-size: 22px;
+	  color: #ccc;
+	  display: block;
+	  transition: 0.3s;
+	}
+	
+	.side-nav ul li a:hover {
+	  color: #fff;
+	}
+	
+	.side-nav .btn-close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  font-size: 36px;
+	  color: #ccc;
+	}
+}
+
+@media all and (min-width: 992px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 195px !important;;
+		margin-right: 1rem;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 25%;
+		max-width: 25%;	
+	}
+	
+	/* Header Section */
+
+		/* Banner Section Start */
+			.banner-section-div {
+				width: 100%;
+			}
+
+			.banner-section-div-0 {
+				position: relative;
+				width: 495px;
+				height: 79px;
+				top: 9.5rem;
+				left: -9rem;
+				text-align: right;
+				padding: 1.8rem 0.6rem 0 0 ;
+				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+				font-size: 2.3rem;
+				color: white;
+			}
+			
+			.banner-section-div-1 {
+				width: 70%;
+				margin: 8rem auto 0 auto;
+				display: block;
+				padding-right: 15px;
+				padding-left: 0;
+				background: url(../../resources/img/product/procam_product.png) right/27vw no-repeat;
+			}
+			
+			.banner-section-div-1>img {
+				margin: 0;
+				display: none !important;
+			}
+			
+			.banner-section-div-1>div {
+				max-width: 60%;
+				padding-bottom: 4rem;
+			}
+			
+			.procam-explanation {
+				color: rgb(0, 125, 140);
+			}
+		/* Banner Section End */
+		
+		/* dropdown 包访 家胶 Start */
+			.nav-link {
+				padding-right: 0 !important;
+				padding-left: 2rem !important;
+			}
+
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.sub-menu {
+				display: block;
+				margin-top: 92px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: table;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: none;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f9f9f9;
+			    min-width: 160px;
+			    z-index: 1;
+			    top: 58px;
+			}
+			
+			.dropbtn-sub-1 {
+				right: 25px;
+			}
+			
+			.dropbtn-sub-2 {
+				right: 32px;
+			}
+			
+			.dropdown-content a {
+			    color: #787878;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			    font-size: 14px;
+		    	text-align: center;
+			}
+			
+			.dropdown-content a:hover {background-color: #f1f1f1}
+			
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+			    background-color: rgb(237, 237, 237);
+			}
+		/* dropdown 包访 家胶 End */
+		
+		/* Hard-coating Section Start */
+			#hard-coating p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			#hard-coating p:nth-child(2) {
+				font-size: 1.05rem;
+			}
+		/* Hard-coating Section End */
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			#classification .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+			
+			.classification-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 0;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 33.3333%;
+				max-width: 33.3333%;
+			}
+			
+			.col-c-2 img {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 0;
+				border: none;
+			}
+		/* Coating Features Section End */
+
+		/* Optical Monomer Section Start */
+			#optical-monomer {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+
+			.product-properties-header {
+				font-size: 1.75rem;
+			}
+		/* Optical Monomer Section End */
+
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+	}
+	
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+	.open-slide {
+		display: none;
+	}
+	
+	.side-nav {
+		display: none;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	#mainNav>div {
+		width: 71%;
+	}
+	
+	.navbar-brand {
+		width: 195px !important;;
+		margin-right: 1rem;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 25%;
+		max-width: 25%;	
+	}
+	
+	/* Header Section */
+
+		/* Banner Section Start */
+			.banner-section-div {
+				width: 100%;
+			}
+
+			.banner-section-div-0 {
+				position: relative;
+				width: 803px;
+				height: 79px;
+				top: 9.5rem;
+				left: -21.5rem;
+				text-align: right;
+				padding: 1.8rem 0.6rem 0 0 ;
+				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
+				font-size: 2.3rem;
+				color: white;
+			}
+			
+			.banner-section-div-1 {
+				width: 70%;
+				margin: 8rem auto 0 auto;
+				display: block;
+				padding-right: 15px;
+				padding-left: 0;
+				background: url(../../resources/img/product/procam_product.png) right/20vw no-repeat;
+			}
+			
+			.banner-section-div-1>img {
+				margin: 0;
+				display: none !important;
+			}
+			
+			.banner-section-div-1>div {
+				max-width: 80%;
+				padding-bottom: 1rem;
+			}
+			
+			.procam-explanation {
+				color: rgb(0, 125, 140);
+			}
+		/* Banner Section End */
+
+		/* dropdown 包访 家胶 Start */
+			.nav-link {
+				padding-right: 0 !important;
+				padding-left: 4rem !important;
+			}
+
+			.header-section {
+				position: relative;
+				z-index: 2;
+			}
+			
+			.sub-menu {
+				display: block;
+				margin-top: 92px;
+				background: rgb(237, 237, 237);
+			}
+			
+			.sub-menu>div {
+				display: table;
+				margin: 0 auto;
+			}
+			
+			.dropdown-sidemenu-1 {
+				display: table;
+			}
+			
+			.dropdown-sidemenu-2 {
+				display: none;
+			}
+
+			.dropbtn {
+			    background: rgb(237, 237, 237);
+			    color: rgb(0, 125, 140);
+			    padding: 16px 70px;
+			    font-size: 17px;
+			    border: none;
+			    cursor: pointer;
+			    border-radius: 0;
+			}
+			
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+			
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f9f9f9;
+			    min-width: 160px;
+			    z-index: 1;
+			    top: 58px;
+			}
+			
+			.dropbtn-sub-1 {
+				right: 25px;
+			}
+			
+			.dropbtn-sub-2 {
+				right: 32px;
+			}
+			
+			.dropdown-content a {
+			    color: #787878;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			    font-size: 14px;
+		    	text-align: center;
+			}
+			
+			.dropdown-content a:hover {background-color: #f1f1f1}
+			
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+			    background-color: rgb(237, 237, 237);
+			}
+			
+		/* dropdown 包访 家胶 End */
+		
+		/* Hard-coating Section Start */
+			#hard-coating p:nth-child(1) {
+				font-size: 2.3rem;
+				color: rgb(0, 125, 140);
+				margin-bottom: 0;
+			}
+			
+			#hard-coating p:nth-child(2) {
+				font-size: 1.05rem;
+			}
+		/* Hard-coating Section End */
+		
+		/* Classification Section Start */
+			#classification .row div {
+				width: 100%;
+			}
+			
+			#classification .row {
+				margin: 0 auto;
+				width: 71%;
+			}
+			
+			.classification-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 3rem;
+			}
+			
+			.col-c-1 {
+				text-align: center;
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+	
+			#classification .row div:nth-child(2) {
+				padding-top: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(4) {
+				padding-top: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(6) {
+				padding-top: 0;
+				border-right: 1px solid #dbdbdb;
+				border-bottom: none;
+			}
+			
+			#classification .row div:nth-child(8) {
+				padding: 0;
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			hr {
+				width: 0;
+				border: none;
+			}
+		/* Classification Section End */
+		
+		/* Coating Features Section Start */
+			#coating-features {
+				width: 100%;
+			}
+			
+			.coating-features-header {
+				font-size: 1.75rem;
+				color: black;
+				margin-bottom: 2rem;
+			}
+			
+			.col-c-2 {
+				text-align: center;
+				flex: 0 0 33.3333%;
+				max-width: 33.3333%;
+			}
+			
+			.col-c-2 img {
+				width: 65%;
+			}
+			
+			.coating-hr {
+				width: 0;
+				border: none;
+			}
+		/* Coating Features Section End */
+		
+		/* Optical Monomer Section Start */
+			#optical-monomer {
+				padding-top: 50px;
+				padding-bottom: 150px;
+			}
+
+			.product-properties-header {
+				font-size: 1.75rem;
+			}
+		/* Optical Monomer Section End */
+		
+		.sup {
+			font-size: 100%;
+			font-weight: normal;
+			top: 0;
+		}
+	
+	.navbar {
+		background: rgb(0, 125, 140) !important;
+		padding: 13px 0;
+	}
+	
+	/* Footer Section */
+		.footer-section {
+			background: rgb(0, 125, 140);
+			color: white;
+			padding-top: 70px;
+		}
+		
+		.footer-p-0 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-p-1 {
+			font-size: 1.85rem;
+			margin-bottom: 2rem;
+		}
+		
+		.footer-p-2 {
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+		
+		.footer-p-3 {
+			font-size: 16px;
+		}
+	
+	/* Side Menu */
+	.open-slide {
+		display: none;
+	}
+	
+	.side-nav {
+		display: none;
+	}
+}
