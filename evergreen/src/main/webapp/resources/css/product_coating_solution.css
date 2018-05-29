@@ -65,13 +65,20 @@ section.row {
 			display: block;
 			padding-right: 15px;
 			padding-left: 15px;
-			background: none;
 		}
 		
-		.banner-section-div-1>img {
-			width: 75%;
+		.banner-section-div-2 {
+			width: 71%;
+			height: auto;
+			position: relative;
+			text-align: center;
 			margin: 0 auto;
-			display: block !important;
+			top: -30px;
+			left: 0px;
+		}
+		
+		.banner-section-div-2>img {
+			width: 60%;
 		}
 		
 		.banner-section-div-1>div {
@@ -291,7 +298,25 @@ section.row {
 .footer-section {
 	background: rgb(0, 125, 140);
 	color: white;
-	padding-top: 45px;
+	padding-top: 30px;
+}
+
+.footer-widget table {
+	color: white;
+	margin: 0 auto;
+}
+
+.td_img {
+	width: 30%;
+	text-align: right;
+}
+
+.td_img img {
+	width: 50%;
+}
+
+.footer_td {
+	text-align: left;
 }
 
 .footer-p-0 {
@@ -302,6 +327,7 @@ section.row {
 .footer-p-1 {
 	font-size: 1.55rem;
 	margin-bottom: 2rem;
+	margin-left: 2px;
 }
 
 .footer-p-2 {
@@ -311,6 +337,15 @@ section.row {
 
 .footer-p-3 {
 	font-size: 13px;
+}
+
+.footer-bottom .go-to-top {
+	width: 100%;
+}
+
+.footer-bottom .go-to-top p {
+	color: white;
+	margin-bottom: 0;
 }
 
 /* Side Menu */
@@ -534,15 +569,22 @@ section.row {
 				display: block;
 				padding-right: 15px;
 				padding-left: 15px;
-				background: none;
 			}
 			
-			.banner-section-div-1>img {
-				width: 75%;
+			.banner-section-div-2 {
+				width: 71%;
+				height: auto;
+				position: relative;
+				text-align: center;
 				margin: 0 auto;
-				display: block !important;
+				top: -30px;
+				left: 0px;
 			}
 			
+			.banner-section-div-2>img {
+				width: 60%;
+			}
+
 			.banner-section-div-1>div {
 				max-width: 100%;
 				padding-bottom: 3rem;
@@ -660,16 +702,16 @@ section.row {
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -791,16 +833,24 @@ section.row {
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
-				background: url(../../resources/img/product/procam_product.png) right/27vw no-repeat;
 			}
 			
-			.banner-section-div-1>img {
-				margin: 0;
-				display: none !important;
+			.banner-section-div-2 {
+				width: 71%;
+				height: auto;
+				position: relative;
+				text-align: center;
+				margin: 0 auto;
+				top: -30px;
+				left: 0px;
 			}
 			
+			.banner-section-div-2>img {
+				width: 60%;
+			}
+
 			.banner-section-div-1>div {
-				max-width: 60%;
+				max-width: 100%;
 				padding-bottom: 4rem;
 			}
 			
@@ -1022,16 +1072,16 @@ section.row {
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -1224,16 +1274,24 @@ section.row {
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
-				background: url(../../resources/img/product/procam_product.png) right/27vw no-repeat;
 			}
 			
-			.banner-section-div-1>img {
-				margin: 0;
-				display: none !important;
+			.banner-section-div-2 {
+				width: 71%;
+				height: auto;
+				position: relative;
+				text-align: center;
+				margin: 0 auto;
+				top: -30px;
+				left: 0px;
 			}
 			
+			.banner-section-div-2>img {
+				width: 60%;
+			}
+
 			.banner-section-div-1>div {
-				max-width: 60%;
+				max-width: 100%;
 				padding-bottom: 4rem;
 			}
 			
@@ -1353,16 +1411,16 @@ section.row {
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -1514,16 +1572,24 @@ section.row {
 				display: block;
 				padding-right: 15px;
 				padding-left: 0;
-				background: url(../../resources/img/product/procam_product.png) right/20vw no-repeat;
 			}
 			
-			.banner-section-div-1>img {
-				margin: 0;
-				display: none !important;
+			.banner-section-div-2 {
+				width: 71%;
+				position: relative;
+				text-align: right;
+				margin: 0 auto;
+				top: -184px;
+				left: -25px;
+				height: 65px;
 			}
 			
+			.banner-section-div-2>img {
+				width: 35%;
+			}
+
 			.banner-section-div-1>div {
-				max-width: 80%;
+				max-width: 60%;
 				padding-bottom: 1rem;
 			}
 			
@@ -1643,16 +1709,16 @@ section.row {
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		

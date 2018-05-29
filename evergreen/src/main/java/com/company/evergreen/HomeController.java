@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Handles requests for the application home page.
@@ -113,7 +114,8 @@ public class HomeController {
 	/**
 	 * Post Controller START
 	 */
-	@RequestMapping(value = "/mail.do")
+	@RequestMapping(value = "/mail.do", method = RequestMethod.POST)
+	@ResponseBody
 	public String sendMail(HttpServletRequest request) {
 		try {
 			String company = request.getParameter("company");
@@ -129,7 +131,7 @@ public class HomeController {
 			
 			System.out.println(content);
 			
-			messageHelper.setTo("shjeong@raizcorp.co.kr");
+			messageHelper.setTo("info@ievergreen.com");
 			messageHelper.setText(new String(content.getBytes("UTF-8"), "UTF-8"));
 			messageHelper.setFrom(email);
 			

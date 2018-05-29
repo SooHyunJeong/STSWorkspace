@@ -180,7 +180,25 @@
 	.footer-section {
 		background: rgb(0, 125, 140);
 		color: white;
-		padding-top: 45px;
+		padding-top: 30px;
+	}
+	
+	.footer-widget table {
+		color: white;
+		margin: 0 auto;
+	}
+	
+	.td_img {
+		width: 30%;
+		text-align: right;
+	}
+	
+	.td_img img {
+		width: 50%;
+	}
+	
+	.footer_td {
+		text-align: left;
 	}
 	
 	.footer-p-0 {
@@ -191,6 +209,7 @@
 	.footer-p-1 {
 		font-size: 1.55rem;
 		margin-bottom: 2rem;
+		margin-left: 2px;
 	}
 	
 	.footer-p-2 {
@@ -200,6 +219,15 @@
 	
 	.footer-p-3 {
 		font-size: 13px;
+	}
+	
+	.footer-bottom .go-to-top {
+		width: 100%;
+	}
+	
+	.footer-bottom .go-to-top p {
+		color: white;
+		margin-bottom: 0;
 	}
 
 /* Side Menu */
@@ -444,16 +472,16 @@
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -696,16 +724,16 @@
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -913,16 +941,16 @@
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		
@@ -1088,16 +1116,16 @@
 		.footer-section {
 			background: rgb(0, 125, 140);
 			color: white;
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		
 		.footer-p-0 {
-			font-size: 3rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 		}
 		
 		.footer-p-1 {
-			font-size: 1.85rem;
+			font-size: 1.65rem;
 			margin-bottom: 2rem;
 		}
 		

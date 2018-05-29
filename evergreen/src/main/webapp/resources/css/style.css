@@ -178,24 +178,18 @@
  * ============================= */
 /* À¥ÆùÆ® CSS */
 @font-face{font-family:'MyriadPro-Bold'; 
-			src:url(../plugins/font/MyriadPro-Bold.otf);
-			src:url(../plugins/font/MyriadPro-Bold.woff);
-			src:url(../plugins/font/MyriadPro-Bold.ttf);
+			src: url(../plugins/font/MyriadPro-Bold.woff), url(../plugins/font/MyriadPro-Bold.ttf), url(../plugins/font/MyriadPro-Bold.otf);
 			}
 @font-face{font-family:'MyriadPro-BoldCond'; src:url(../plugins/font/MyriadPro-BoldCond.otf)}
 @font-face{font-family:'MyriadPro-BoldCondlt'; src:url(../plugins/font/MyriadPro-BoldCondlt.otf)}
 @font-face{font-family:'MyriadPro-Boldlt'; 
-			src:url(../plugins/font/MyriadPro-BoldIt.otf);
-			src:url(../plugins/font/MyriadPro-BoldIt.woff);
-			src:url(../plugins/font/MyriadPro-BoldIt.ttf);
+			src: url(../plugins/font/MyriadPro-BoldIt.woff), url(../plugins/font/MyriadPro-BoldIt.ttf);
 			}
 @font-face{font-family:'MyriadPro-Cond'; src:url(../plugins/font/MyriadPro-Cond.otf)}
 @font-face{font-family:'MyriadPro-Condlt'; src:url(../plugins/font/MyriadPro-Condlt.otf)}
 @font-face{font-family:'MyriadPro-lt'; src:url(../plugins/font/MyriadPro-lt.otf)}
 @font-face{font-family:'MyriadPro-Regular'; 
-			src:url(../plugins/font/MyriadPro-Regular.otf);
-			src:url(../plugins/font/MyriadPro-Regular.woff);
-			src:url(../plugins/font/MyriadPro-Regular.ttf);
+			src: url(../plugins/font/MyriadPro-Regular.woff), url(../plugins/font/MyriadPro-Regular.eot), url(../plugins/font/MyriadPro-Regular.ttf);
 			}
 @font-face{font-family:'MyriadPro-Semibold'; src:url(../plugins/font/MyriadPro-Semibold.otf)}
 
@@ -211,7 +205,7 @@ body {
   overflow-x: hidden; }
 
 .myraid-regular {
-	font-family: MyraidPro-Regular	
+	font-family: MyraidPro-Regular, sans-serif;
 }
 
 .myriad-bold {

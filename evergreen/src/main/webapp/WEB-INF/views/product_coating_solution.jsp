@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="utf-8">
@@ -206,10 +207,12 @@
                             <div class="p-top-100 banner-section-div-1">
                             	<div>
 	                            	We have various functional coating products <span class="procam-explanation">using nano-particle sol</span>.<br>
-	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens.</span> sunglasses and other substrates.<br>
-	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses. They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
+	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens.</span><br>sunglasses and other substrates.
+	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses.<br>They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
                             	</div>
-                            	<img src="${contextPath}/resources/img/product/procam_product.png" alt="img" class="img-fluid ml-auto d-block">
+                            </div>
+                           	<div class="banner-section-div-2">
+	                            <img src="${contextPath}/resources/img/product/procam_product.jpg" alt="img">                            
                             </div>
                         </div>
                     </div>
@@ -341,13 +344,26 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-bot-50">
-            <div class="footer-top">
+        <footer class="footer-section">
+            <div class="footer-top p-bot-30">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
-                            <p class="footer-p-0">evergreen</p>
-                            <p class="footer-p-1">C&T corporation</p>
+                            <table>
+                            	<tr>
+                            		<td class="td_img" rowspan="2">	                            		
+			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
+                            		</td>
+                            		<td class="footer_td">
+		                            	<span class="footer-p-0">evergreen</span>
+                            		</td>
+                            	</tr>
+                            	<tr>
+                            		<td class="footer_td">
+			                            <span class="footer-p-1">C&T corporation</span>	                            		
+                            		</td>
+                            	</tr>
+                            </table>
                             <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
@@ -360,6 +376,22 @@
                 </div>
             </div>
             <!-- end footer top -->
+            
+            <div class="footer-bottom" id="ocean">
+                <div class="container">
+                    <div class="row">
+                        <div class="go-to-top text-center fadeIn">
+                            <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
+                            	<p class="p-bot-10">
+	                            	<i class="fa fa-angle-up"></i><br>
+	                                <span>Go to top</span>
+                            	</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of footer bottom -->
 
         </footer>
         <!-- END FOOTER -->

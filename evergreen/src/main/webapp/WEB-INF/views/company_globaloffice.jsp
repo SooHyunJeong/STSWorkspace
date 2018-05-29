@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="utf-8">
@@ -241,13 +242,26 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-bot-50">
-            <div class="footer-top">
+        <footer class="footer-section">
+            <div class="footer-top p-bot-30">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
-                            <p class="footer-p-0">evergreen</p>
-                            <p class="footer-p-1">C&T corporation</p>
+                            <table>
+                            	<tr>
+                            		<td class="td_img" rowspan="2">	                            		
+			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
+                            		</td>
+                            		<td class="footer_td">
+		                            	<span class="footer-p-0">evergreen</span>
+                            		</td>
+                            	</tr>
+                            	<tr>
+                            		<td class="footer_td">
+			                            <span class="footer-p-1">C&T corporation</span>	                            		
+                            		</td>
+                            	</tr>
+                            </table>
                             <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
@@ -260,6 +274,22 @@
                 </div>
             </div>
             <!-- end footer top -->
+            
+            <div class="footer-bottom" id="ocean">
+                <div class="container">
+                    <div class="row">
+                        <div class="go-to-top text-center fadeIn">
+                            <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
+                            	<p class="p-bot-10">
+	                            	<i class="fa fa-angle-up"></i><br>
+	                                <span>Go to top</span>
+                            	</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of footer bottom -->
 
         </footer>
         <!-- END FOOTER -->

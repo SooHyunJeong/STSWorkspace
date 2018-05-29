@@ -117,11 +117,11 @@
 					},
 					url : "/mail.do",
 					success : function() {
-						alert("메일을 전송하였습니다.");	
+						alert("Your message is delivered to our mail box.");	
 						window.location.reload();
 				},
 				error : function() {
-					alert("메일 전송을 실패하였습니다.");
+					alert("Failed to send mail.");
 				}
 			});
     	}
@@ -254,7 +254,7 @@
                     <a href="research_development.do">R&D</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.do">Contact</a>
+                    <a href="/#contact">Contact</a>
                 </li>
             </ul>
 		</div>
@@ -539,13 +539,26 @@
 
 
         <!-- FOOTER START -->
-        <footer class="footer-section p-top-80">
+        <footer class="footer-section">
             <div class="footer-top p-bot-30">
                 <div class="container">
                     <div class="row">
                         <div class="footer-widget fadeIn">
-                            <p class="footer-p-0">evergreen</p>
-                            <p class="footer-p-1">C&T corporation</p>
+                            <table>
+                            	<tr>
+                            		<td class="td_img" rowspan="2">	                            		
+			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
+                            		</td>
+                            		<td class="footer_td">
+		                            	<span class="footer-p-0">evergreen</span>
+                            		</td>
+                            	</tr>
+                            	<tr>
+                            		<td class="footer_td">
+			                            <span class="footer-p-1">C&T corporation</span>	                            		
+                            		</td>
+                            	</tr>
+                            </table>
                             <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
                             <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
                             <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
