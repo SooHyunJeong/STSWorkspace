@@ -40,9 +40,9 @@ figure {
 }
 
 .sup {
-	font-size: 100%;
+	font-size: 10px;
 	font-weight: normal;
-	top: 0;
+	top: -4px;
 }
 
 .hornbill-nav {
@@ -167,8 +167,9 @@ figure {
 	}
 	
 	.procam-sup {
-		font-size: 100%;
-		top: 0;
+		font-size: 15px;
+		font-weight: normal;
+		top: -17px;
 	}
 	
 	.procam-images h4 {
@@ -257,8 +258,9 @@ figure {
 	}
 	
 	.everseal-sup {
-		font-size: 100%;
-		top: 0;
+		font-size: 15px;
+		font-weight: normal;
+		top: -17px;
 	}
 	
 	.everseal-section div.col-md-6:nth-child(2) {
@@ -678,12 +680,7 @@ figure {
 		.procam-div-0 {
 			font-size: 16px;
 		}
-		
-		.procam-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
+
 		figcaption {
 			cursor: pointer;
 		}
@@ -771,11 +768,6 @@ figure {
 		
 		.everseal-div-0 p {
 			font-size: 16px;
-		}
-		
-		.everseal-sup {
-			font-size: 100%;
-			top: 0;
 		}
 		
 		.everseal-section div.col-md-6:nth-child(2) {
@@ -1154,12 +1146,7 @@ figure {
 		.procam-div-0 {
 			font-size: 16px;
 		}
-		
-		.procam-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
+
 		.procam-section div.col-md-6:nth-child(2) {
 			margin: 0;
 		}
@@ -1255,12 +1242,7 @@ figure {
 		.everseal-div-0 p {
 			font-size: 16px;
 		}
-		
-		.everseal-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
+
 		.everseal-section div.col-md-6:nth-child(2) {
 			margin: 0;
 		}
@@ -1610,11 +1592,6 @@ figure {
 			font-size: 16px;
 		}
 
-		.procam-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
 		.procam-section div.col-md-6:nth-child(2) {
 			margin: 0;
 		}
@@ -1709,11 +1686,6 @@ figure {
 		
 		.everseal-div-0 p {
 			font-size: 16px;
-		}
-		
-		.everseal-sup {
-			font-size: 100%;
-			top: 0;
 		}
 		
 		.everseal-images {
@@ -2024,12 +1996,7 @@ figure {
 		.procam-div-0 {
 			font-size: 16px;
 		}
-		
-		.procam-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
+
 		.procam-section div.col-md-6:nth-child(2) {
 			margin: 0;
 		}
@@ -2123,12 +2090,7 @@ figure {
 		.everseal-div-0 p {
 			font-size: 16px;
 		}
-		
-		.everseal-sup {
-			font-size: 100%;
-			top: 0;
-		}
-		
+
 		.everseal-images {
 			width: 70%;
 			position: relative;

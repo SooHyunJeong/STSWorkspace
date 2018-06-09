@@ -50,9 +50,8 @@
 			var agent = navigator.userAgent.toLowerCase();
 	
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-	    		$(".procam-sup").css("top", "-4px");
-	    		$(".everseal-sup").css("top", "-4px");
-	    		$(".sup").css("top", "-2px");
+	    		$(".sup").css("top", "-4.5px");
+	    		$(".sup_body").css("top", "-5px");
 	    	}
 	
 		});
@@ -135,7 +134,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -148,7 +147,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -212,7 +211,7 @@
                             		</p>
                             		<p>
                             			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in Februra 1998,
-                            			we have been manufacturing in Optical material (PROCAM<sup class="sup">®</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup">®</sup>)
+                            			we have been manufacturing in Optical material (PROCAM<sup class="sup_body">TM</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup_body">TM</sup>)
                             			and providing all around world. We founded our own R&D Center in 2007.
                             			<br><br>
                             			Then, we have tried to our best toward the world's leading technology company through developing coating material

@@ -37,9 +37,21 @@ section.row {
 	}
 	
 	.sup {
-		font-size: 100%;
+		font-size: 10px;
 		font-weight: normal;
-		top: 0;
+		top: -4px;
+	}
+	
+	.sup_title {
+		font-size: 13px;
+		font-weight: normal;
+		top: -15px;
+	}
+	
+	.sup_body {
+		font-size: 10px;
+		font-weight: normal;
+		top: -4.5px;
 	}
 	
 	/* dropdown 包访 家胶 Start */
@@ -274,7 +286,7 @@ section.row {
 		}
 		
 		#one_way_product_features img {
-			padding: 2% 5%;
+			padding: 2% 0;
 		}
 		
 		#eco_friendly_recycle_process i {
@@ -290,12 +302,16 @@ section.row {
 		}
 		
 		#eco_friendly_recycle_features img {
-			padding: 2% 5%;
+			padding: 2% 0;
 		}
 		
 		#others {
 			padding-top: 50px;
 			padding-bottom: 50px;
+		}
+		
+		#others img {
+			padding: 2% 0;
 		}
 	/* one-way-process-header Section End */
 
@@ -434,13 +450,7 @@ section.row {
 			padding: 13px 0;
 			z-index: 1;
 		}
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
-		
+
 		/* dropdown 包访 家胶 Start */
 			.header-section {
 				position: relative;
@@ -760,12 +770,6 @@ section.row {
 			background: rgb(0, 125, 140) !important;
 			padding: 13px 0;
 			z-index: 1;
-		}
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
 		}
 
 		/* dropdown 包访 家胶 Start */
@@ -1260,12 +1264,6 @@ section.row {
 				padding-bottom: 100px;
 			}
 		/* one-way-process-header Section End */
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
 
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1511,12 +1509,6 @@ section.row {
 				padding-bottom: 100px;
 			}
 		/* one-way-process-header Section End */
-
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
 
 	.navbar {
 		background: rgb(0, 125, 140) !important;

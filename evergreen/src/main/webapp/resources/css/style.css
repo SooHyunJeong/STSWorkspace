@@ -1090,7 +1090,7 @@ ul, ol {
 .banner-ten {
   position: relative;
   padding-bottom: 0;
-  margin-bottom: 50px; }
+}
 
 .banner-twelve .img-twelve-bubbles {
   position: absolute;
@@ -1304,7 +1304,7 @@ ul, ol {
     height: 100%;
     width: 100%; }
   .map.default .map-inner .map-pin {
-    top: 20%; }
+    top: 23%; }
   .map.full #google_map {
     height: 800px;
     width: 100%; }
@@ -2313,7 +2313,7 @@ body.body-wine .features-list.hover-none .single-feature:hover {
   position: relative;
   margin: 0 auto;
   transform: rotateX(55deg); }
-  .pulse:after {
+  /* .pulse::after {
     content: "";
     border-radius: 50%;
     height: 60px;
@@ -2324,14 +2324,14 @@ body.body-wine .features-list.hover-none .single-feature:hover {
     animation-iteration-count: infinite;
     opacity: 0;
     box-shadow: 0 0 10px 8px #9789f0;
-    animation-delay: 1.1s; }
+    animation-delay: 1.1s; } */
 
 .map.full .pulse {
   background: #453C6E; }
   .map.full .pulse:after {
     box-shadow: 0 0 10px 8px #9789f0; }
 
-.animate-pulse-down {
+/* .animate-pulse-down {
   animation-name: pulse-down;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -2341,7 +2341,7 @@ body.body-wine .features-list.hover-none .single-feature:hover {
   animation-name: pulse;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear; } */
 
 .color-unlimited {
   color: #f35626;

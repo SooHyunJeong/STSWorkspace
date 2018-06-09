@@ -37,11 +37,23 @@ section.row {
 	}
 	
 	.sup {
-		font-size: 100%;
+		font-size: 10px;
 		font-weight: normal;
-		top: 0;
+		top: -4px;
 	}
 	
+	.sup_title {
+		font-size: 10px;
+		font-weight: normal;
+		top: -9px;
+	}
+	
+	.sup_title2 {
+		font-size: 10px;
+		font-weight: normal;
+		top: -9px;
+	}
+
 	/* dropdown 包访 家胶 Start */
 		.header-section {
 			position: relative;
@@ -168,13 +180,13 @@ section.row {
 
 		.banner-section-div-0 {
 			position: relative;
-			width: 208px;
-			height: 100px;
+			width: 230px;
+			height: 79px;
 			top: 9.5rem;
 			text-align: right;
-			padding: 1.8rem 1.6rem 0 0 ;
+			padding: 1.6rem 1.3rem 0 0 ;
 			background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
-			font-size: 1.7rem;
+			font-size: 1.5rem;
 			color: white;
 		}
 		
@@ -204,11 +216,8 @@ section.row {
 		}
 		
 		.banner-section-div-0>p:nth-child(1) {
+			margin-right: 0.6rem;
 			margin-bottom: -0.5rem;
-		}
-		
-		.banner-section-div-0>p:nth-child(2) {
-			font-size: 0.5rem;
 		}
 		
 		.banner-section-div-1>div {
@@ -469,12 +478,18 @@ section.row {
 			z-index: 1;
 		}
 		
-		.sup {
-			font-size: 100%;
+		.sup_title {
+			font-size: 10px;
 			font-weight: normal;
-			top: 0;
+			top: -14.5px;
 		}
 		
+		.sup_title2 {
+			font-size: 10px;
+			font-weight: normal;
+			top: -17px;
+		}
+
 		/* dropdown 包访 家胶 Start */
 			.header-section {
 				position: relative;
@@ -597,12 +612,12 @@ section.row {
 
 			.banner-section-div-0 {
 				position: relative;
-				width: 425px;
-				height: 100px;
+				width: 295px;
+				height: 79px;
 				top: 9.5rem;
-				left: -7rem;
+				left: 0;
 				text-align: right;
-				padding: 1.8rem 1.5rem 0 0 ;
+				padding: 1.8rem 2.3rem 0 0 ;
 				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 				font-size: 2.3rem;
 				color: white;
@@ -627,15 +642,12 @@ section.row {
 			}
 			
 			.banner-section-div-2 img {
-				width: 240px;
+				width: 200px;
 			}
 			
 			.banner-section-div-0>p:nth-child(1) {
+				margin-right: 1.3rem;
 				margin-bottom: 0;
-			}
-			
-			.banner-section-div-0>p:nth-child(2) {
-				font-size: 0.85rem;
 			}
 			
 			.banner-section-div-1>div {
@@ -654,7 +666,7 @@ section.row {
 			}
 			
 			.hydrophobic-image-p-1 {
-				font-size: 16px;
+				font-size: 13px;
 			}
 		/* Hydrophobic Section End */
 		
@@ -847,17 +859,23 @@ section.row {
 			padding-right: 0;
 			padding-left: 4rem;
 		}
+		
+		.sup_title {
+			font-size: 13px;
+			font-weight: normal;
+			top: -15.5px;
+		}
+		
+		.sup_title2 {
+			font-size: 13px;
+			font-weight: normal;
+			top: -15.5px;
+		}
 
 		.navbar {
 			background: rgb(0, 125, 140) !important;
 			padding: 13px 0;
 			z-index: 1;
-		}
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
 		}
 
 		/* dropdown 包访 家胶 Start */
@@ -974,56 +992,51 @@ section.row {
 
 			.banner-section-div {
 				width: 100%;
-				height: 500px;
 			}
 
 			.banner-section-div-0 {
 				position: relative;
 				width: 393px;
-				height: 100px;
+				height: 79px;
 				top: 9.5rem;
-				left: -6rem;
+				left: -5rem;
 				text-align: right;
-				padding: 1.8rem 1.5rem 0 0 ;
+				padding: 1.8rem 2.2rem 0 0 ;
 				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 				font-size: 2.3rem;
 				color: white;
 			}
 			
 			.banner-section-div-1 {
-				width: 70%;
-				height: 35%;
-				margin: 6rem auto 0 auto;
+				width: 71%;
 				display: block;
 				padding-right: 15px;
-				padding-left: 0;
+				padding-left: 15px;
+				background: none;
 			}
 			
 			.banner-section-div-2 {
 				width: 71%;
-				height: 20px;
+				height: auto;
 				position: relative;
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				top: -175px;
-				left: -7px;
+				top: -30px;
+				left: 0px;
 			}
 			
 			.banner-section-div-2 img {
-				width: 220px;
+				width: 200px;
 			}
 			
 			.banner-section-div-0>p:nth-child(1) {
+				margin-right: 0;
 				margin-bottom: 0;
 			}
 			
-			.banner-section-div-0>p:nth-child(2) {
-				font-size: 0.85rem;
-			}
-			
 			.banner-section-div-1>div {
-				max-width: 60%;
-				padding-bottom: 4rem;
+				max-width: 100%;
+				padding-bottom: 3rem;
 			}
 			
 			.procam-explanation {
@@ -1314,56 +1327,51 @@ section.row {
 
 			.banner-section-div {
 				width: 100%;
-				height: 500px;
 			}
 
 			.banner-section-div-0 {
 				position: relative;
 				width: 495px;
-				height: 100px;
+				height: 79px;
 				top: 9.5rem;
 				left: -9rem;
 				text-align: right;
-				padding: 1.8rem 0.6rem 0 0 ;
+				padding: 1.8rem 2.6rem 0 0 ;
 				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 				font-size: 2.3rem;
 				color: white;
 			}
 			
 			.banner-section-div-1 {
-				width: 70%;
-				height: 35%;
-				margin: 6rem auto 0 auto;
+				width: 71%;
 				display: block;
 				padding-right: 15px;
-				padding-left: 0;
+				padding-left: 15px;
+				background: none;
 			}
 			
 			.banner-section-div-2 {
 				width: 71%;
-				height: 0;
+				height: auto;
 				position: relative;
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				top: -200px;
-				left: -40px;
+				top: -30px;
+				left: 0px;
 			}
 			
 			.banner-section-div-2 img {
-				width: 240px;
+				width: 200px;
 			}
 			
 			.banner-section-div-0>p:nth-child(1) {
+				margin-right: 0;
 				margin-bottom: 0;
 			}
 			
-			.banner-section-div-0>p:nth-child(2) {
-				font-size: 0.85rem;
-			}
-			
 			.banner-section-div-1>div {
-				max-width: 60%;
-				padding-bottom: 4rem;
+				max-width: 100%;
+				padding-bottom: 3rem;
 			}
 			
 			.procam-explanation {
@@ -1470,12 +1478,6 @@ section.row {
 				padding-bottom: 150px;
 			}
 		/* Vacuum Coating Consumable Section End */
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
 
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1619,22 +1621,21 @@ section.row {
 		
 		/* Banner Section Start */
 			.banner-ten {
-				margin-bottom: 50px;
+				margin-bottom: 20px;
 			}
 
 			.banner-section-div {
 				width: 100%;
-				height: 468px;
 			}
 
 			.banner-section-div-0 {
 				position: relative;
 				width: 803px;
-				height: 100px;
+				height: 79px;
 				top: 9.5rem;
-				left: -20.5rem;
+				left: -21.5rem;
 				text-align: right;
-				padding: 1.8rem 1.6rem 0 0 ;
+				padding: 1.8rem 0.6rem 0 0 ;
 				background: url(../../resources/img/product/product_background.png) right/100% no-repeat;
 				font-size: 2.3rem;
 				color: white;
@@ -1660,15 +1661,13 @@ section.row {
 			}
 			
 			.banner-section-div-2 img {
-				width: 240px;
+				width: 200px;
+				margin-top: 35px;
 			}
 			
 			.banner-section-div-0>p:nth-child(1) {
+				margin-right: 0;
 				margin-bottom: 0;
-			}
-			
-			.banner-section-div-0>p:nth-child(2) {
-				font-size: 0.85rem;
 			}
 			
 			.banner-section-div-1>div {
@@ -1780,13 +1779,7 @@ section.row {
 			padding-bottom: 150px;
 		}
 	/* Vacuum Coating Consumable Section End */
-		
-	.sup {
-		font-size: 100%;
-		font-weight: normal;
-		top: 0;
-	}
-	
+
 	.navbar {
 		background: rgb(0, 125, 140) !important;
 		padding: 13px 0;

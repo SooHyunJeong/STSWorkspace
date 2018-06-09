@@ -50,8 +50,21 @@
 			var agent = navigator.userAgent.toLowerCase();
 		
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-				$(".procam-sup").css("top", "-4px");
-				$(".everseal-sup").css("top", "-4px");
+				$(".sup").css("top", "-4.5px");
+				
+				$(window).resize(function (){
+					var width_size = window.outerWidth;
+					
+					if (width_size < 592) {
+						$(".sup_title").css("font-size", "10px");
+						$(".sup_title").css("top", "-11.5px");
+					} else if ((width_size >= 592) && (width_size <= 768)) {
+						$(".sup_title").css("font-size", "13px");
+						$(".sup_title").css("top", "-17px");
+					} else {
+						$(".sup_title").css("top", "-17px");
+					}
+				});
 			}
 		});
 
@@ -133,7 +146,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -146,7 +159,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -171,7 +184,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -180,7 +193,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
@@ -202,13 +215,13 @@
                     <div class="row">
                         <div class="fadeIn banner-section-div">
                         	<div class="myriad-bold banner-section-div-0">
-                        		<span>PROCAM<sup class="sup">®</sup></span>
+                        		<span>PROCAM<sup class="sup_title">TM</sup></span>
                         	</div>
                             <div class="p-top-100 banner-section-div-1">
                             	<div>
 	                            	We have various functional coating products <span class="procam-explanation">using nano-particle sol</span>.<br>
-	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens.</span><br>sunglasses and other substrates.
-	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses.<br>They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
+	                            	They are designed <span class="procam-explanation">to enhance abrasive resistance</span> scratch & hardness and <span class="procam-explanation">own surface property for optical lens,</span> sunglasses and other substrates.
+	                            	Our main items are <span class="procam-explanation">coating materials</span> and <span class="procam-explanation">optical monomers</span> for spectacle lenses. They can apply to <span class="procam-explanation">various refractive index as well as tinting/non-tinting lens.</span>
                             	</div>
                             </div>
                            	<div class="banner-section-div-2">
@@ -221,12 +234,12 @@
             <!-- END of Banner Section -->
 
             <!-- Hard Coating Solution Section Start -->
-            <div id="hard-coating-solution" class="p-top-50 p-bot-50">
+            <div id="hard-coating-solution" class="p-bot-50">
                 <div class="container">
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
+                        	<p class="myriad-bold">PROCAM<sup class="sup_title">TM</sup></p>
                         	<p class="hard-coating-solution-p">Hard Coating Solution</p>
                             <div>
                                 <img src="${contextPath}/resources/img/product/procam_product_hardcoating.png" alt="img" class="img-fluid fadeInUp">

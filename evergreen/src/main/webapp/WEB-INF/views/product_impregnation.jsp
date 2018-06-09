@@ -50,8 +50,7 @@
 			var agent = navigator.userAgent.toLowerCase();
 		
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-				$(".procam-sup").css("top", "-4px");
-				$(".everseal-sup").css("top", "-4px");
+				$(".sup").css("top", "-4.5px");
 			}
 		});
 
@@ -133,7 +132,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -146,7 +145,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -171,7 +170,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -180,7 +179,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
@@ -261,20 +260,20 @@
                         <div class="col-imp-1 col-md-6 fadeInUp">
                             <div class="icon p-bot-30">
                                 <span>
-                                	Products made from aluminum alloy are very porous and has rough surfaces because volume<br>
+                                	Products made from aluminum alloy are very porous and has rough surfaces because volume
                                 	contraction partially occurs in the cooling process of die casing.
                                 </span>
                                 <br>
                                 <span class="impregnating-span-0">
-                                	Impregnation is needed to improve surfaces of ADC products and to prevent the leakage of air,<br>
+                                	Impregnation is needed to improve surfaces of ADC products and to prevent the leakage of air,
                                 	gases, oils or liquid sand.
                                 </span>
                                 <br><br>
                                 <span class="impregnating-span-0">
-                                	ADC mainly used in automobile industry demands the best impregnation technology.<br>
+                                	ADC mainly used in automobile industry demands the best impregnation technology.
                                 </span>
                                 <span>
-                                	Automobile parts must be completely sealed and given sufficient durability because these parts<br>
+                                	Automobile parts must be completely sealed and given sufficient durability because these parts
                                 	must endure high temperature and pressure.
                                 </span>
                             </div>

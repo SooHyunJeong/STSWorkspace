@@ -30,11 +30,11 @@
 		padding: 13px 0;
 		z-index: 1;
 	}
-	
+
 	.sup {
-		font-size: 100%;
+		font-size: 10px;
 		font-weight: normal;
-		top: 0;
+		top: -4px;
 	}
 
 /* dropdown 包访 家胶 Start */
@@ -262,11 +262,6 @@
 		padding: 13px 0;
 		z-index: 1;
 	}
-	.sup {
-		font-size: 100%;
-		font-weight: normal;
-		top: 0;
-	}
 
 	/* dropdown 包访 家胶 Start */
 		.header-section {
@@ -444,11 +439,6 @@
 			background: rgb(0, 125, 140) !important;
 			padding: 13px 0;
 			z-index: 1;
-		}
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
 		}
 
 	/* dropdown 包访 家胶 Start */
@@ -652,11 +642,7 @@
 			display: inline-block;
 		}
 	/* dropdown 包访 家胶 End */
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
+
 		.navbar {
 			background: rgb(0, 125, 140) !important;
 			padding: 13px 0;
@@ -774,12 +760,7 @@
 			padding-bottom: 100px;
 		}
 	/* Organization Section End */
-	
-	.sup {
-		font-size: 100%;
-		font-weight: normal;
-		top: 0;
-	}
+
 	.navbar {
 		background: rgb(0, 125, 140) !important;
 		padding: 13px 0;

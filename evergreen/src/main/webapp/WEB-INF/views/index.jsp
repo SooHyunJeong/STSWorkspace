@@ -69,8 +69,10 @@
     		var agent = navigator.userAgent.toLowerCase();
 
     		if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-        		$(".procam-sup").css("top", "-4px");
-        		$(".everseal-sup").css("top", "-4px");
+        		$(".procam-sup").css("top", "-18px");
+        		$(".everseal-sup").css("top", "-18px");
+        		
+        		$(".sup").css("top", "-4.5px");
         	}
 
     	})
@@ -127,31 +129,31 @@
     	}
     	
     	function Coating_solution() {
-    		location.href = "http://13.124.197.132/product_coating_solution.do"
+    		location.href = "http://www.ievergreen.com/product_coating_solution.do";
     	}
     	
     	function Functional_monomer() {
-    		location.href = "http://13.124.197.132/product_monomer.do";	
+    		location.href = "http://www.ievergreen.com/product_monomer.do";	
     	}
     	
     	function Hydrophobic() {
-    		location.href = "http://13.124.197.132/product_hydrophobic.do";
+    		location.href = "http://www.ievergreen.com/product_hydrophobic.do";
     	}
     	
     	function RND() {
-    		location.href = "http://13.124.197.132/research_development.do";
+    		location.href = "http://www.ievergreen.com/research_development.do";
     	}
     	
     	function Impregnation() {
-    		location.href = "http://13.124.197.132/product_impregnation.do";
+    		location.href = "http://www.ievergreen.com/product_impregnation.do";
     	}
     	
 		function Organic_sealant() {
-			location.href = "http://13.124.197.132/product_organic_sealant.do#one_way_process";
+			location.href = "http://www.ievergreen.com/product_organic_sealant.do#one_way_process";
     	}
     	
     	function Eco_friendly_recycle_features() {
-    		location.href = "http://13.124.197.132/product_organic_sealant.do#eco_friendly_recycle_features";
+    		location.href = "http://www.ievergreen.com/product_organic_sealant.do#eco_friendly_recycle_features";
     	}
     </script>
     <body id="page_top" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
@@ -226,7 +228,7 @@
                     <a tabindex="-1" href="product_coating_solution.do">Product</a>
                     <ul class="dropdown-menu">
                     	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                    		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                     	</li>
                     	<li class="sidemenu">
                     		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -239,7 +241,7 @@
                     	</li>
                     	
                     	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                    		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                     	</li>
                     	<li class="sidemenu">
                     		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -364,7 +366,7 @@
                         <div class="col-md-6">
                             <div class="promo-heading text-lg-left">
                                 <div class="fadeIn procam-div-0">
-                                	<div><h2 class="myriad-bold">PROCAM<sup class="procam-sup">®</sup></h2></div>
+                                	<div><h2 class="myriad-bold">PROCAM<sup class="procam-sup">TM</sup></h2></div>
 	                                <p>High Performance Coating Solution<br>High Functional Monomer<br>Super Hydrophobic Solution</p>
                                 </div>
                             </div>
@@ -414,9 +416,9 @@
                         <div class="col-md-6">
                             <div class="everseal-heading text-lg-left">
                                 <div class="fadeIn everseal-div-0">
-                                	<div><h2 class="myriad-bold">EVERSEAL<sup class="everseal-sup">®</sup></h2></div>
-	                                <p>Organic Sealant for perfect impregnation.<br>Out Everseal is not only used for metal<br>casting but also used for sintered metals,<br>
-	                                iron casting, woods, paper, electronic<br>components and especially aluminum<br>die casting.</p>
+                                	<div><h2 class="myriad-bold">EVERSEAL<sup class="everseal-sup">TM</sup></h2></div>
+	                                <p>Organic Sealant for perfect impregnation.<br>Not only used for metal casting but also<br>used for sintered metals, iron casting,<br>
+	                                woods, paper, electronic components<br>and especially aluminum die casting.</p>
                                 </div>
                             </div>
                         </div>
@@ -476,7 +478,7 @@
                         <div class="map-inner">
                             <div class="map-pin fadeInLeft">
                                 <img src="${contextPath}/resources/img/icons/map-pin-sunshine.png" alt="img" class="img-fluid animate-pulse-down">
-                                <div class='pulse'></div>
+<!--                                 <div class='pulse'></div> -->
                             </div>
                         </div>
                     </div>

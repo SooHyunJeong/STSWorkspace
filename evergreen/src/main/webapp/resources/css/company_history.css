@@ -36,9 +36,9 @@
 	}
 	
 	.sup {
-		font-size: 100%;
+		font-size: 10px;
 		font-weight: normal;
-		top: 0;
+		top: -4px;
 	}
 	
 	/* dropdown 包访 家胶 Start */
@@ -129,7 +129,7 @@
 	#history-banner section {
 		margin: 3rem auto 0 auto;
 		width: 71%;
-		background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+		background-image: linear-gradient(to right, white 5%, rgb(0, 155, 176), rgb(0, 125, 140));
 		text-align: center;
 		color: white;
 		padding: 1rem 0;
@@ -399,13 +399,7 @@
 			padding: 13px 0;
 			z-index: 1;
 		}
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
-		
+
 		/* dropdown 包访 家胶 Start */
 			.header-section {
 				position: relative;
@@ -492,7 +486,7 @@
 		#history-banner section {
 			margin: 3rem auto 0 auto;
 			width: 71%;
-			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			background-image: linear-gradient(to right, white 5%, rgb(0, 155, 176), rgb(0, 125, 140));
 			text-align: center;
 			color: white;
 			padding: 4rem 0;					
@@ -712,12 +706,6 @@
 			padding: 13px 0;
 			z-index: 1;
 		}
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
 
 		/* dropdown 包访 家胶 Start */
 			.header-section {
@@ -800,7 +788,7 @@
 		#history-banner section {
 			margin: 3rem auto 0 auto;
 			width: 71%;
-			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			background-image: linear-gradient(to right, white 5%, rgb(0, 155, 176), rgb(0, 125, 140));
 			text-align: center;
 			color: white;
 			padding: 4rem 0;
@@ -1037,12 +1025,6 @@
 			    display: inline-block;
 			}
 		/* dropdown 包访 家胶 End */
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
 
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1079,7 +1061,7 @@
 		#history-banner section {
 			margin: 0 auto;
 			width: 71%;
-			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			background-image: linear-gradient(to right, white 5%, rgb(0, 155, 176), rgb(0, 125, 140));
 			text-align: center;
 			color: white;
 			padding: 4rem 0;
@@ -1240,13 +1222,7 @@
 			    display: inline-block;
 			}
 		/* dropdown 包访 家胶 End */
-		
-		.sup {
-			font-size: 100%;
-			font-weight: normal;
-			top: 0;
-		}
-	
+
 	.navbar {
 		background: rgb(0, 125, 140) !important;
 		padding: 13px 0;
@@ -1256,7 +1232,7 @@
 		#history-banner section {
 			margin: 0 auto;
 			width: 71%;
-			background-image: linear-gradient(to right, white 5%, rgb(35, 195, 176), rgb(0, 125, 140));
+			background-image: linear-gradient(to right, white 5%, rgb(0, 155, 176), rgb(0, 125, 140));
 			text-align: center;
 			color: white;
 			padding: 4rem 0;

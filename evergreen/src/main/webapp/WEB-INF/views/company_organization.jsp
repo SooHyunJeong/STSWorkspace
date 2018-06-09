@@ -50,8 +50,7 @@
 			var agent = navigator.userAgent.toLowerCase();
 		
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-				$(".procam-sup").css("top", "-4px");
-				$(".everseal-sup").css("top", "-4px");
+				$(".sup").css("top", "-4.5px");
 			}
 		});
 	
@@ -132,7 +131,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -145,7 +144,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>

@@ -50,9 +50,8 @@
 			var agent = navigator.userAgent.toLowerCase();
 		
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-				$(".procam-sup").css("top", "-4px");
-				$(".everseal-sup").css("top", "-4px");
-				$(".sup").css("top", "-4px");
+				$(".sup").css("top", "-4.5px");
+				$(".sup_title").css("top", "-16px");
 			}
 		});
 
@@ -134,7 +133,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -147,7 +146,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="everseal-sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="everseal-sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -172,7 +171,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -181,7 +180,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
@@ -204,12 +203,12 @@
                         <div class="fadeIn banner-section-div">
                         	<div>
                         		<div class="banner-section-div-0">
-	                        		<p class="myriad-bold">EVERSEAL<sup class="sup">®</sup></p>
+	                        		<p class="myriad-bold">EVERSEAL<sup class="sup_title">TM</sup></p>
 	                        		<p>Organic Sealant</p>                        		
                         		</div>
                         		<div class="banner-section-div-1" class="p-top-50">
-	                            	EVERSEAL is a kind of sealants for porous materials such as aluminum die casting products mainly used in automobile field.<br>
-	                            	Our EVERSEAL is not only used for metal casting but also used for sintered metals, iron casting, woods, paper, electronic components and especially aluminum die casting.
+	                            	EVERSEAL<sup class="sup_body">TM</sup> is a kind of sealants for porous materials such as aluminum die casting products mainly used in automobile field.<br>
+	                            	Our EVERSEAL<sup class="sup_body">TM</sup> is not only used for metal casting but also used for sintered metals, iron casting, woods, paper, electronic components and especially aluminum die casting.
 	                            </div>
                         	</div>
                         </div>
@@ -314,7 +313,7 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_others2.png" alt="img" class="img-fluid fadeInUp" style="padding: 2% 5%;">
+                                <img src="${contextPath}/resources/img/product/product_everseal_others2.png" alt="img" class="img-fluid fadeInUp">
                             </div>
                         </div>
                     </section>

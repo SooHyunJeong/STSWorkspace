@@ -48,10 +48,29 @@
 	    $(document).ready(function() {
 			// IE 일때 다른 CSS를 적용하기 위해 추가.
 			var agent = navigator.userAgent.toLowerCase();
-		
+
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
-				$(".procam-sup").css("top", "-4px");
-				$(".everseal-sup").css("top", "-4px");
+				$(".sup").css("top", "-4.5px");
+				
+				$(window).resize(function (){
+					var width_size = window.outerWidth;
+					
+					if (width_size < 592) {
+						$(".sup_title").css("font-size", "10px");
+						$(".sup_title").css("top", "-11px");
+						$(".banner-section-div-0>p:nth-child(2)").css("margin-right", "0");
+						$(".banner-section-div-0>p:nth-child(2)").css("font-size", "0.61rem");
+					} else if ((width_size >= 592) && (width_size < 768)) {
+						$(".sup_title").css("font-size", "13px");
+						$(".sup_title").css("top", "-14px");
+						$(".banner-section-div-0>p:nth-child(2)").css("margin-right", "0");
+						$(".banner-section-div-0>p:nth-child(2)").css("font-size", "0.85rem");
+					} else {
+						$(".sup_title").css("top", "-17px");
+						$(".banner-section-div-0>p:nth-child(2)").css("margin-right", "0");
+						$(".banner-section-div-0>p:nth-child(2)").css("font-size", "0.85rem");
+					}
+				});
 			}
 		});
 
@@ -133,7 +152,7 @@
                         <a tabindex="-1" href="product_coating_solution.do">Product</a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
                         	</li>
                         	<li class="sidemenu">
                         		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
@@ -146,7 +165,7 @@
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">®</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
                         	</li>
 	                       	<li class="sidemenu">
 	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
@@ -171,7 +190,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -180,7 +199,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">®</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>
@@ -202,14 +221,13 @@
                     <div class="row">
                         <div class="fadeIn banner-section-div">
                         	<div class="banner-section-div-0">
-                        		<p class="myriad-bold">PROCAM<sup class="sup">®</sup></p>
-                        		<p>Super Hydrophobic Solution</p>
+                        		<p class="myriad-bold">PROCAM<sup class="sup_title">TM</sup></p>
                         	</div>
                             <div class="p-top-100 banner-section-div-1">
                             	<div>
 	                            	<span class="procam-explanation">Hydrophobic chemicals are used in water and oil repellent coating of various surface</span>.<br>
 	                            	It is <span class="procam-explanation">coated by vacuum evaporation machine</span> for surface to repel water, dust and oil on optical lens.<br>
-	                            	<span class="procam-explanation">Lens stay clear longer </span> and the coating helps make <span class="procam-explanation">cleaning easy</span>, resulting in <span class="procam-explanation">cleaner vision and easier maintenance</span>.
+	                            	<span class="procam-explanation">Lens stay clear longer </span> and the coating helps make <span class="procam-explanation">cleaning easy</span>, resulting in <span class="procam-explanation">clear vision and easier maintenance</span>.
                             	</div>
                             </div>
                             <div class="banner-section-div-2">
@@ -227,7 +245,7 @@
 
                     <section class="row">
                         <div class="fadeIn">
-                        	<p class="myriad-bold hydrophobic-image-p-0">PROCAM<sup class="sup">®</sup></p>
+                        	<p class="myriad-bold hydrophobic-image-p-0">PROCAM<sup class="sup_title2">TM</sup></p>
                         	<p class="hydrophobic-image-p-1">Hydrophobic & Vacuum Coating</p>
                             <div>
                                 <img src="${contextPath}/resources/img/product/hydrophobic_img.png" alt="img" class="img-fluid ml-auto d-block">
