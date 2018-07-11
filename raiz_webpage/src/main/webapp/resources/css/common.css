@@ -1,0 +1,97 @@
+body {
+	font-family: nanumsquareR;
+	word-break: keep-all;
+}
+
+.font-eng {
+	font-family: myraid-regular;
+}
+
+.raiz-container {
+  width:100%;
+}
+
+.raiz-container .cover-image {
+  max-width:250px;
+}
+
+.raiz-container ul {
+  list-style:none;
+  margin-top:50px;
+}
+
+li {
+  font-size:1.0em;
+  margin:15px 0;
+  color:blue;
+}
+
+.desc {
+  margin-top:40px;
+  text-align:center;
+}
+
+p {
+  font-size:1.0em;
+}
+
+.row .art {
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+#raiz-section {
+	height: 1500px;
+}
+
+/* -------------- FONTS START --------------- */
+
+	@font-face{
+		font-family:'MyriadPro-Regular'; 
+		src: url(../font/MyriadPro-Regular.woff), url(../font/MyriadPro-Regular.eot), url(../font/MyriadPro-Regular.ttf);
+	}
+	@font-face{
+		font-family:'MyriadPro-Bold'; 
+		src: url(../font/MyriadPro-Bold.woff), url(../font/MyriadPro-Bold.eot), url(../font/MyriadPro-Bold.ttf);
+	}
+	@font-face{
+		font-family:'MyriadPro-BoldIt'; 
+		src: url(../font/MyriadPro-BoldIt.woff), url(../font/MyriadPro-BoldIt.eot), url(../font/MyriadPro-BoldIt.ttf);
+	}
+	@font-face{
+		font-family:'NanumSquareEB'; 
+		src: url(../font/NanumSquareEB.woff), url(../font/NanumSquareEB.eot), url(../font/NanumSquareEB.ttf);
+	}
+	@font-face{
+		font-family:'NanumSquareR'; 
+		src: url(../font/NanumSquareR.woff), url(../font/NanumSquareR.eot), url(../font/NanumSquareR.ttf);
+	}
+
+	.myraid-regular {
+		font-family: MyriadPro-Regular, sans-serif;
+	}
+	
+	.myraid-bold {
+		font-family: MyriadPro-Bold, sans-serif;
+	}
+	
+	.myraid-boldIt {
+		font-family: MyriadPro-BoldIt, sans-serif;
+	}
+
+	.nanumsquareEB {
+		font-family: NanumSquareEB, sans-serif;
+	}
+
+	.nanumsquareR {
+		font-family: NanumSquareR, sans-serif;
+	}
+/* -------------- FONTS END --------------- */

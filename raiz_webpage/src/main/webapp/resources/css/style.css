@@ -1,0 +1,925 @@
+/* -------------- raiz-one SECTION START  -------------- */
+	
+	#raiz_main h1 {
+	  font-size: 10rem;
+	  font-weight: bold;
+	  text-align: left;
+	  margin: 150px 30px 0 30px;
+	  color: #6F7478;
+	}
+
+	#raiz_main .sub_title {
+	  font-size: 2.08rem;
+	  margin: 10px 30px;
+	  height: 15px;
+	  color: #6F7478;
+	  position: relative;
+	  top: -25px;
+	}
+
+	p.accent {
+	  font-size: 2.7rem;
+	}
+	.desc p:nth-child(2) {
+	  font-size: 1.9rem;	
+	}
+	span.accent_imp {
+	  font-family: nanumsquareEB;
+	}
+	
+/* -------------- raiz-one SECTION END -------------- */
+
+/* -------------- raiz-important SECTION START -------------- */
+
+	#raiz-important .container {
+		text-align: center;
+	}
+
+	#raiz-important .container span { 
+		display: inline-block;
+		width: 33%;
+	}
+
+/* -------------- raiz-important SECTION END -------------- */
+/* 
+-------------- raiz-list SECTION START --------------
+
+	#raiz-list .row {
+	  height:70px;
+	  padding:5px;
+	}
+
+	#raiz-list .row:nth-child(1) {
+		margin: 0;
+		background: url('../images/basic/webpage_basic_bg1.png') no-repeat 100%;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+
+-------------- raiz-list SECTION END --------------
+ */
+/* -------------- raiz-communication SECTION START -------------- */
+
+	#raiz-communication .container {
+		height: 100%;
+		display: table;
+		background: url('../images/comm/communication_bg.png') no-repeat 100%;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	
+	.communication-text {
+		display: table-cell;
+		padding: 0 10rem;
+		vertical-align: middle;
+	}
+
+/* -------------- raiz-communication SECTION END -------------- */
+
+
+/* -------------- raiz-section SECTION START -------------- */
+	
+	#raiz-section {
+		height: 1500px;
+	}
+	
+	.raiz-section-web {
+		margin-top: 5rem;
+	}
+
+	.raiz-section-text {
+		padding: 0;
+		background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
+		background-color: #E8E9ED;
+	}
+	
+	.raiz-section-p-0 {
+		font-size: 2.3rem;
+		text-align: center;
+		padding: 6rem 2rem 0 2rem;
+		margin: 0;
+	}
+	
+	.raiz-section-p-1 {
+		font-size: 2.3rem;
+		text-align: center;
+		margin: 0 auto 3rem auto;
+		background: #6E7379;
+		color: #E8E9ED;
+		width: 130px;
+	}
+	
+	.raiz-section-p-2 {
+		font-size: 1.5rem;
+		padding: 0 3.5rem;
+		font-weight: bold;
+		margin-bottom: 3rem;
+	}
+	
+	.raiz-section-div {
+		padding-bottom: 6rem;
+	}
+
+	.raiz-section-p-3 {
+		font-size: 1.5rem;
+		margin: 0.5rem 4rem;
+		padding-left: 2rem;
+		border-left: solid 5px #74747C;
+	}
+
+	.raiz-section-img {
+		display: none;
+		padding: 0;
+	}
+	
+	.raiz-section-img img {
+		width: 575px;
+	}
+	
+	/* -------------- raiz-section-art SECTION START -------------- */
+
+	.raiz-section-art {
+		background: #B10E23;
+		color: white;
+		margin-top: 5rem;
+		word-break: keep-all;
+	}
+	
+	.raiz-section-art img {
+		padding: 10rem 2rem 5rem 2rem;
+		width: 350px;
+	}
+	
+	.raiz-section-art-p-0 {
+		font-size: 2rem;
+		margin: 0 30px 40px;
+		font-weight: bold;
+	}
+	
+	.raiz-section-art-p-1 {
+		font-size: 1.5rem;
+		margin: 0 38px 40px;
+	}
+
+	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* -------------- raiz-section-multilan SECTION START -------------- */
+
+	.raiz-section-multilan {
+		height: 624px;
+		margin-top: 5rem;
+	}
+	
+	.raiz-section-multilan-div-0 {
+		height: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		display: table;
+	}
+	
+	.raiz-section-multilan-div-1 {
+		background: #EDEDED;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	.raiz-section-multilan-div-1>h3 {
+		margin: 0;
+	}
+	
+	.raiz-section-multilan-div-2 {
+		height: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		display: table;
+		margin-top: 5rem;
+	}
+	
+	.raiz-section-multilan-div-3 {
+		background: #6E7379;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	.raiz-section-multilan-div-3>h3 {
+		margin: 0;
+	}
+	
+	/* -------------- raiz-section-multilan SECTION END -------------- */
+	
+	/* -------------- raiz-section-design SECTION START -------------- */
+
+	.raiz-section-design {
+		margin-top: 5rem;
+	}
+	
+	.raiz-section-design-div-0 {
+		height: 624px;
+		padding-left: 0;
+		padding-right: 0;
+		display: table;
+		margin-top: 5rem;
+	}
+	
+	.raiz-section-design-div-1 {
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.raiz-section-design-div-1>img {
+		width: 50%;
+	}
+	
+	.raiz-section-design-div-1>h1 {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	
+	.raiz-section-design-p-0 {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	
+	.raiz-section-design-p-1 {
+		font-size: 1.5rem;
+		padding: 4rem;
+	}
+	
+	.raiz-section-design-div-2 {
+		height: 624px;
+		padding-right: 0;
+		padding-left: 0;
+		display: table;
+		margin-top: 5rem;
+	}
+	
+	.raiz-section-design-div-3 {
+		background: #171C61;
+		color: white;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	/* -------------- raiz-section-design SECTION END -------------- */
+
+/* -------------- raiz-section SECTION END -------------- */
+
+/* CONTACT SECTION START */
+	#raiz-contact {
+		background: rgb(237, 237, 237);
+	}
+
+	#google_map {
+		height: 450px;
+		z-index: 10;
+	}
+	
+	.contact {
+		height: 450px;
+		background-color: rgb(237, 237, 237);
+	}
+	
+	.contact .mini-container {
+/* 		padding: 3rem 0; */
+    }
+    
+    .map {
+    	height: auto;
+    }
+    
+    .map .map-inner .map-pin {
+        margin: -85px auto;
+        z-index: 10;
+    }
+    
+    .contact-front {
+    	position: relative;
+    	width: 100%;
+    	height: 35rem;
+    }
+/* CONTACT SECTION END */
+
+/* FOOTER SECTION START */
+	.footer-section {
+		color: white;
+		background: url('../images/test/footer_back.jpg') no-repeat 100%;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+
+	.footer-area {
+		width: fit-content;
+		background: rgba(0, 0, 0, 0.6);
+		margin: 0 auto 22rem auto;
+		padding: 3rem;
+	}
+	
+	.footer-area>div:nth-child(1) {
+		float: none;
+		padding: 0 2rem 2rem 0;
+		font-size: 3rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.footer-support {
+		display: inline-block;
+		font-size: 1.5rem;
+		padding-top: 0.3rem;
+	}
+	
+	.footer-text {
+		text-align: right;
+		padding-right: 2rem;
+		display: inline-block;
+		width: 90px;
+	}
+
+	.footer-corporate {
+		width: fit-content;
+		margin: 3rem auto 0 auto;
+	}
+
+	.footer-corporate>p {
+		margin-bottom: 0;
+	}
+
+	.footer-corporate>p:nth-child(1) {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	.footer-corporate .footer-info {
+		font-size: 10.8px;
+	}
+	
+	.footer-rights {
+		font-size: 10.8px;
+		margin-left: 0;
+		text-align: center;
+	}
+/* FOOTER SECTION END */
+
+
+@media all and (min-width: 576px) {
+
+	/* -------------- raiz-section SECTION START -------------- */
+
+		.raiz-section-text {
+			padding: 0;
+			background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
+			background-color: #E8E9ED;
+		}
+		
+		.raiz-section-p-0 {
+			font-size: 2.7rem;
+			text-align: center;
+			padding: 6rem 11rem 0 11rem;
+			margin: 0;
+		}
+		
+		.raiz-section-p-1 {
+			font-size: 2.7rem;
+			text-align: center;
+			margin: 0 auto 3rem auto;
+			background: #6E7379;
+			color: #E8E9ED;
+			width: 151px;
+		}
+		
+		.raiz-section-p-2 {
+			font-size: 1.8rem;
+			padding: 0 7.5rem;
+			font-weight: bold;
+			margin-bottom: 3rem;
+		}
+		
+		.raiz-section-div {
+			padding-bottom: 6rem;
+		}
+		
+		.raiz-section-p-3 {
+			font-size: 1.8rem;
+			margin: 0.5rem 6.8rem;
+			padding-left: 2rem;
+			border-left: solid 5px #74747C;
+		}
+
+		.raiz-section-img {
+			display: none;
+			padding: 0;
+		}
+		
+		.raiz-section-img img {
+			width: 100%;
+		}
+		
+		/* -------------- raiz-section-art SECTION START -------------- */
+
+		.raiz-section-art {
+			background: #B10E23;
+			color: white;
+			margin-top: 5rem;			
+		}
+		
+		.raiz-section-art img {
+			padding: 10rem;
+			width: 700px;
+		}
+		
+		.raiz-section-art-p-0 {
+			font-size: 2rem;
+			margin: 0 0 40px;
+			font-weight: bold;
+		}
+		
+		.raiz-section-art-p-1 {
+			font-size: 1.5rem;
+			margin: 0 0 40px;
+		}
+
+		/* -------------- raiz-section SECTION END -------------- */
+		
+		/* -------------- raiz-section-design SECTION START -------------- */
+
+		.raiz-section-design-p-1 {
+			padding: 0;
+		}
+		
+		.map .map-inner .map-pin {
+			margin: -6.5rem auto;
+	    }
+		
+		.contact .mini-container {
+	    	width: 65%;
+/* 			margin: 0 auto; */
+	    }
+		/* -------------- raiz-section-design SECTION END -------------- */
+
+	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* FOOTER SECTION START */
+		.footer-area {
+			width: fit-content;
+			background: rgba(0, 0, 0, 0.6);
+			margin: 0 auto 22rem auto;
+			padding: 3rem 4rem;
+		}
+		
+		.footer-area>div:nth-child(1) {
+			float: left;
+			padding: 0 2rem 0 0;
+			font-size: 3rem;
+			font-weight: bold;
+			text-align: left;
+		}
+		
+		.footer-support {
+			display: inline-block;
+			font-size: 1.5rem;
+			padding-top: 0.3rem;
+		}
+		
+		.footer-text {
+			text-align: right;
+			padding-right: 2rem;
+			display: inline-block;
+			width: 90px;
+		}
+		
+		.footer-corporate {
+			width: fit-content;
+			margin: 3rem auto 0 auto;
+		}
+	/* FOOTER SECTION END */
+
+}
+
+@media all and (min-width: 768px) {
+
+	/* -------------- raiz-section SECTION START -------------- */
+
+		.raiz-section-text {
+			padding: 0;
+			background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
+			background-color: #E8E9ED;
+		}
+		
+		.raiz-section-p-0 {
+			font-size: 3rem;
+			text-align: center;
+			padding: 6rem 11rem 0 11rem;
+			margin: 0;
+		}
+		
+		.raiz-section-p-1 {
+			font-size: 3rem;
+			text-align: center;
+			margin: 0 29rem 2rem 29rem;
+			background: #6E7379;
+			color: #E8E9ED;
+			width: auto;
+		}
+		
+		.raiz-section-p-2 {
+			font-size: 2rem;
+			padding: 0 10rem;
+			font-weight: bold;
+			margin-bottom: 4rem;
+		}
+		
+		.raiz-section-div {
+			padding-bottom: 6rem;
+		}
+		
+		.raiz-section-p-3 {
+			font-size: 1.95rem;
+			margin: 0.5rem 10rem;
+			padding-left: 2rem;
+			border-left: solid 5px #74747C;
+		}
+
+		.raiz-section-img {
+			display: none;
+			padding: 0;
+		}
+		
+		/* -------------- raiz-section-art SECTION START -------------- */
+
+		.raiz-section-art {
+			background: #B10E23;
+			color: white;
+			margin-top: 5rem;
+		}
+		
+		.raiz-section-art img {
+			padding: 10rem;
+			width: 784px
+		}
+		
+		.raiz-section-art-p-0 {
+			font-size: 2.3rem;
+			margin: 0 0 40px;
+			font-weight: bold;
+		}
+		
+		.raiz-section-art-p-1 {
+			font-size: 1.75rem;
+			margin: 0 0 40px;
+		}
+
+		/* -------------- raiz-section SECTION END -------------- */
+
+	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* CONTACT SECTION START */
+		#google_map {
+			height: 450px;
+			z-index: 10;
+		}
+
+		.map .map-inner .map-pin {
+			margin: -2.5rem auto;
+	    }
+
+	    .contact .mini-container {
+	    	width: 85%;
+/* 			padding: 18.5rem 0 18rem 25%; */
+	    }
+	/* CONTACT SECTION END */
+	
+	/* FOOTER SECTION START */
+		.footer-corporate {
+			width: fit-content;
+			margin: 3rem 0 0 36rem;
+		}
+
+		.footer-area {
+			width: fit-content;
+			background: rgba(0, 0, 0, 0.6);
+			margin: 0 auto 22rem auto;
+			padding: 3rem 4rem;
+		}
+		
+		.footer-area>div:nth-child(1) {
+			float: left;
+			padding: 0 2rem 0 0;
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		
+		.footer-support {
+			display: inline-block;
+			font-size: 1.5rem;
+			padding-top: 0.3rem;
+		}
+		
+		.footer-text {
+			text-align: right;
+			padding-right: 2rem;
+			display: inline-block;
+			width: 90px;
+		}
+		
+		.footer-rights {
+			margin-left: 335px;
+			text-align: left;
+		}
+	/* FOOTER SECTION END */
+}
+
+@media all and (min-width: 992px) {
+
+	/* -------------- raiz-section SECTION START -------------- */
+
+		.raiz-section-text {
+			padding: 0;
+			background: #E8E9ED;
+		}
+		
+		.raiz-section-p-0 {
+			font-size: 3rem;
+			text-align: center;
+			padding: 6rem 11rem 0 11rem;
+			margin: 0;
+		}
+		
+		.raiz-section-p-1 {
+			font-size: 2.7rem;
+			text-align: center;
+			margin: 0 16.5rem 2rem 16.5rem;
+			background: #6E7379;
+			color: #E8E9ED;
+			width: auto;
+		}
+		
+		.raiz-section-p-2 {
+			font-size: 1.8rem;
+			padding: 0 3.2rem;
+			font-weight: bold;
+		}
+		
+		.raiz-section-div {
+			margin-bottom: 2.7rem;
+			padding-bottom: 0;
+		}
+		
+		.raiz-section-p-3 {
+			font-size: 1.7rem;
+			margin: 0.5rem 5rem;
+			padding-left: 2rem;
+			border-left: solid 5px #74747C;
+		}
+
+		.raiz-section-img {
+			display: block;
+			padding: 0;
+		}
+		
+		/* -------------- raiz-section-art SECTION START -------------- */
+
+		.raiz-section-art {
+			background: #B10E23;
+			color: white;
+			margin-top: 5rem;
+		}
+		
+		.raiz-section-art img {
+			padding: 10rem;
+			width: 784px
+		}
+		
+		.raiz-section-art-p-0 {
+			font-size: 2.3rem;
+			margin: 0 0 40px;
+			font-weight: bold;
+		}
+		
+		.raiz-section-art-p-1 {
+			font-size: 1.75rem;
+			margin: 0 0 40px;
+		}
+
+		/* -------------- raiz-section SECTION END -------------- */
+		
+		/* -------------- raiz-section-multilan SECTION START -------------- */
+
+		.raiz-section-multilan-div-0 {
+			padding-right: 2.5rem;
+		}
+
+		.raiz-section-multilan-div-2 {
+			padding-left: 2.5rem;
+			margin-top: 0;
+		}
+
+		/* -------------- raiz-section-multilan SECTION END -------------- */
+		
+		/* -------------- raiz-section-design SECTION END -------------- */
+
+		.raiz-section-design-div-0 {
+			padding-right: 2.5rem;
+			margin-top: 0;
+		}
+
+		.raiz-section-design-div-1>h1 {
+			font-size: 36px;
+			font-weight: bold;
+		}
+		
+		.raiz-section-design-p-0 {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+		
+		.raiz-section-design-p-1 {
+			font-size: 2rem;
+		}
+
+		.raiz-section-design-div-2 {
+			padding-left: 2.5rem;
+			margin-top: 0;
+		}
+
+		/* -------------- raiz-section-design SECTION END -------------- */
+
+	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* CONTACT SECTION START */
+		#google_map {
+			height: 849px;
+			z-index: 10;
+		}
+		
+		.contact {
+			height: 849px;
+		}
+
+	    .map {
+	    	height: 849px;
+	    }
+	    
+	    .map .map-inner .map-pin {
+	      margin: 14rem auto;
+	    }
+
+	    .contact .mini-container {
+	    	width: 500px;
+/* 			padding: 18.5rem 0 18rem 25%; */
+	    }
+	    
+	    .contact-front {
+	    	position: relative;
+	    	z-index: 15;
+	    	width: 25rem;
+	    	height: 35rem;
+	    }
+	/* CONTACT SECTION END */
+
+}
+
+@media all and (min-width: 1200px) {
+
+	.container {
+		width: 1280px;
+	}
+	
+	/* -------------- raiz-section SECTION START -------------- */
+		
+		.raiz-section-text {
+			padding: 0;
+			background: #E8E9ED;
+		}
+
+		.raiz-section-p-0 {
+			font-size: 3rem;
+			text-align: center;
+			padding: 11rem 11rem 0 11rem;
+			margin: 0;
+		}
+		
+		.raiz-section-p-1 {
+			font-size: 3rem;
+			text-align: center;
+			margin: 0 23.5rem 2rem 23.5rem;
+			background: #6E7379;
+			color: #E8E9ED;
+			width: auto;
+		}
+		
+		.raiz-section-p-2 {
+			font-size: 2rem;
+			padding: 0 5rem;
+			font-weight: bold;
+		}
+		
+		.raiz-section-div {
+			margin-bottom: 12.7rem;
+			padding-bottom: 0;
+		}
+		
+		.raiz-section-p-3 {
+			font-size: 2rem;
+			margin: 0.5rem 5rem;
+			padding-left: 2rem;
+			border-left: solid 5px #74747C;
+		}
+
+		.raiz-section-img {
+			display: block;
+			padding: 0;
+		}
+	
+		/* -------------- raiz-section-art SECTION START -------------- */
+
+		.raiz-section-art {
+			background: #B10E23;
+			color: white;
+			margin-top: 5rem;
+		}
+		
+		.raiz-section-art img {
+			padding: 10rem;
+			width: 784px
+		}
+		
+		.raiz-section-art-p-0 {
+			font-size: 3rem;
+			margin: 0 0 40px;
+			font-weight: bold;
+		}
+		
+		.raiz-section-art-p-1 {
+			font-size: 2.25rem;
+			margin: 0 0 40px;
+		}
+
+		/* -------------- raiz-section SECTION END -------------- */
+		
+		/* -------------- raiz-section-multilan SECTION START -------------- */
+
+		.raiz-section-multilan-div-0 {
+			padding-right: 2.5rem;
+		}
+
+		.raiz-section-multilan-div-2 {
+			padding-left: 2.5rem;
+			margin-top: 0;
+		}
+
+		/* -------------- raiz-section-multilan SECTION END -------------- */
+		
+		/* -------------- raiz-section-design SECTION END -------------- */
+
+		.raiz-section-design-div-0 {
+			padding-right: 2.5rem;
+			margin-top: 0;
+		}
+		.raiz-section-design-div-2 {
+			padding-left: 2.5rem;
+			margin-top: 0;
+		}
+
+		/* -------------- raiz-section-design SECTION END -------------- */
+		
+		/* CONTACT SECTION START */
+			#google_map {
+				height: 849px;
+				z-index: 10;
+			}
+			
+			.contact {
+				height: 849px;
+			}
+			
+			.map .map-inner .map-pin {
+		      margin: 14rem auto;
+		    }
+		    
+		    .contact .mini-container {
+		    	width: 59%;
+				padding: 5.5rem 0 18rem 0;
+				margin: 0 auto;
+		    }
+		    
+		    .contact-front {
+		    	position: relative;
+		    	z-index: 15;
+		    	width: 25rem;
+		    	height: 35rem;
+		    }
+		/* CONTACT SECTION END */
+	
+	/* -------------- raiz-section SECTION END -------------- */
+	
+}
