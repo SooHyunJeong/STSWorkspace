@@ -38,7 +38,7 @@
 	<script>
 		$(document).ready(function() {
 			$("#fullpage").fullpage({
-				anchors:["raiz_home", "raiz_important", "raiz_communication", "raiz_section", "raiz_portfolio", "raiz_member", "raiz_contact"],
+				anchors:["raiz_home", "raiz_important", "raiz_section", "raiz_edit", "raiz_communication", "raiz_portfolio", "raiz_contact"],
 				menu: "#topMenu",
 				navigation: true,
 				scrollOverflow: true
@@ -118,6 +118,11 @@
 				});
 			// CONTACT POP-UP 관련 소스 END
 			
+			// SEND MAIL
+			function sendMail() {
+				alert(11);
+			}
+			
 		});
 
 		// Google map apis
@@ -188,7 +193,7 @@
 			</div>
 		</nav> --%>	
 		<div class="quick-group" style="right: 30px; bottom: 30px; position: fixed; z-index: 200;">
-			<a href="#test-form" class="popup-with-form" style="color: black; font-weight: bold; padding: 2rem 0; text-decoration: none;">
+			<a href="#test-form" class="popup-with-form" style="color: black; font-weight: bold; padding: 2rem 0; text-decoration: none; outline: none;">
 				<img src="${contextPath}/resources/images/test/envelop.svg" style="background: white; position: relative; left: 34px; top: -10px;">
 				<span style="position: relative; top: 18px; right: 24px;">CONTACT</span>
 			</a>
@@ -201,52 +206,53 @@
 					<div class="title_container">
 						<h2>상담문의</h2>
 					</div>
-					<form>
-						<div class="row clearfix">
-							<div class="col_half">
-								<label>First name</label>
-								<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-									<input type="text" name="first_name" placeholder="John" required />
-								</div>
-							</div>
-							<div class="col_half">
-								<label>Last name</label>
-								<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-									<input type="text" name="last_name" placeholder="Doe" />
-								</div>
+
+					<div class="row clearfix"><!-- 회사명, 이메일, 이름, 연락처,  -->
+						<div class="col_half">
+							<label>Company</label>
+							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-building"></i></span>
+								<input type="text" name="first_name" placeholder="회사명" required />
 							</div>
 						</div>
-						<div class="row clearfix">
-							<div class="col_half">
-								<label>Email</label>
-								<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-									<input type="email" name="email" placeholder="johndoe@gmail.com" required />
-								</div>
-							</div>
-							<div class="col_half">
-								<label>Phone</label>
-								<div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
-									<input type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
-								</div>
+						<div class="col_half">
+							<label>Name</label>
+							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+								<input type="text" name="last_name" placeholder="이름" />
 							</div>
 						</div>
-						<div class="row clearfix">
-							<div>
-								<label>Comments</label>
-								<div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
-									<textarea cols="46" rows="3" name="comments"></textarea>
-								</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col_half">
+							<label>Email</label>
+							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+								<input type="email" name="email" placeholder="이메일" required />
 							</div>
 						</div>
-						<input class="button" type="submit" value="Sumbit" />
-					</form>
+						<div class="col_half">
+							<label>Phone</label>
+							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+								<input type="tel" name="phone" placeholder="연락처" pattern="[0-9]{10}" />
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div>
+							<label>Comments</label>
+							<div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+								<textarea cols="46" rows="3" name="comments" style="resize: none;"></textarea>
+							</div>
+						</div>
+					</div>
+					<input class="button" type="submit" value="Sumbit" onclick="sendMail();"/>
+
 				</div>
 			</div>
 		</form>
 
 		<div id="fullpage">
-			<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home" style="background: url('resources/images/main/raiz_web_bg2.png') 95% / 55% no-repeat;">				
-				<div class="container">
+<!-- 			<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home" style="background: url('resources/images/main/raiz_main1.png') 95% / 55% no-repeat;">				 -->
+				<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home">
+				<div class="container" style="background: url('resources/images/test2/raiz_main1.png') no-repeat; height: 100%; background-size: cover;" >
 					<h1 class="myraid-boldIt">raíz corp.</h1>
 					<div class="sub_title">[라이즈] 뿌리, 근원</div>
 					<div style="text-align: left; margin-left: 30px;">
@@ -356,22 +362,6 @@
 					</div>
 				</div>
 			</div> --%>
-			
-			<div id="raiz-communication" class="raiz-container section" data-anchor="raiz_communication">
-				<div class="container">
-					<div class="communication-text">
-						<div style="font-size: 4rem;">
-							커뮤니케이션
-						</div>
-						<br><br>
-						<p style="font-size: 1.7rem;">
-							원활한 커뮤니케이션은 프로젝트에서 산출물 만큼이나 중요한 요소입니다.<br>
-							전담 멤버를 배치하여 핫라인을 구축하는 것은 물론, 지속적으로 진행과정을 보고드립니다.<br>
-							또한 24시간 언제든 고객님의 말씀을 들을 수 있는 다양한 채널이 열려있습니다.
-						</p>					
-					</div>
-				</div>
-			</div>
 
 			<!-- <div id="raiz-six" class="raiz-container section" data-anchor="raiz_six" style="background: url('resources/images/comm/multimedia_bg1.png') 0% 0% / cover no-repeat;">
 				<div class="container" style="color: white;">
@@ -402,7 +392,7 @@
 				<div class="container">
 
 					<div class="row raiz-section-web">
-						<div class="col-lg-6 col-md-6 raiz-section-text">
+						<div class="raiz-section-text">
 							<p class="raiz-section-p-0">웹페이지 개발</p>
 							<p class="raiz-section-p-1">BASIC</p>
 							<br>
@@ -420,12 +410,12 @@
 								</p>							
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 raiz-section-img" style="">
+						<%--@@@ <div class="col-lg-6 col-md-6 raiz-section-img" style="">
 							<img src="${contextPath}/resources/images/test/webpage_basic_bg2.png">
-						</div>
+						</div> --%>
 					</div>
 
-					<div class="row raiz-section-art">
+					<div class="row raiz-section-art" style="background: url('resources/images/test2/web_art1.png') no-repeat;">
 						<div class="text-center">
 							<p>
 								<img src="${contextPath}/resources/images/test/webpage_art_1.png">
@@ -441,11 +431,25 @@
 					</div>
 
 					<div class="row text-center raiz-section-multilan">
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-0">
+						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-0">
+							<img src="${contextPath}/resources/images/test2/app_design_1.png" style="width: 100%;">
+							<%--@@@ <div class="raiz-section-design-div-1">
+								<img src="${contextPath}/resources/images/test/app_design_img1.png">
+								<h1>App UI 디자인</h1>
+								<br>
+								<p class="raiz-section-design-p-0">
+									클라이언트와 사용자.
+								</p>
+								<p class="raiz-section-design-p-1">
+									양 쪽의 관점에서 서비스를 바라보고, 전달해야 하는 내용들의 우선순위를 도출한 후, 가장 중요한 것을 가장 효과적으로 전달할 수 있도록 서비스에 최적화된 디자인을 구현합니다.
+								</p>
+							</div> --%>
+						</div>
+						<!-- @@@ <div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-0">
 							<div class="raiz-section-multilan-div-1">
 								<h3>다국어홈페이지개발</h3>
 							</div>
-						</div>
+						</div> -->
 						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-2">
 							<div class="raiz-section-multilan-div-3">
 								<h3>웹페이지유지보수</h3>
@@ -454,7 +458,12 @@
 					</div>
 					
 					<div class="row text-center raiz-section-design">
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-0">
+						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-0">
+							<div class="raiz-section-multilan-div-1">
+								<h3>다국어홈페이지개발</h3>
+							</div>
+						</div>
+						<%-- @@@ <div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-0">
 							<div class="raiz-section-design-div-1">
 								<img src="${contextPath}/resources/images/test/app_design_img1.png">
 								<h1>App UI 디자인</h1>
@@ -466,19 +475,19 @@
 									양 쪽의 관점에서 서비스를 바라보고, 전달해야 하는 내용들의 우선순위를 도출한 후, 가장 중요한 것을 가장 효과적으로 전달할 수 있도록 서비스에 최적화된 디자인을 구현합니다.
 								</p>
 							</div>
-						</div>
+						</div> --%>
 						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-2">
 							<div class="raiz-section-design-div-3">
-								<h1>상표 개발 & 디자인</h1>
+								<!-- @@@ <h1>상표 개발 & 디자인</h1>
 								<br>
 								<p class="raiz-section-design-p-1">
 									서비스의 본질을 토대로, 고객들에게 어떤 이미지를 각인시키는 것이 효과적일 지 분석한 후 철저한 리서치를 기반으로 디자인&개발 합니다.
-								</p>
+								</p> -->
 							</div>
 						</div>
 					</div>
 					
-					<div class="row" style="background: url('resources/images/comm/multimedia_bg1.png') 0% 0% / cover no-repeat; color: white; margin-top: 5rem; height: 624px;">
+					<!-- <div class="row" style="background: url('resources/images/test2/pic_video.png') 0% 0% / cover no-repeat; color: white; margin-top: 5rem; height: 624px;">
 						<div>
 							<p style="background: rgba(225, 227, 229, 0.5); width: 40rem; font-size: 4rem; padding: 1rem 2rem;">
 								사진 촬영 및 편집
@@ -499,7 +508,7 @@
 								홈페이지 영상부터, 서비스 소개, 인터뷰까지 1~5분 내외의 영상 촬영 및 편집.
 							</p>
 						</div>
-					</div>
+					</div> -->
 
 					<!-- <div class="row">
 						
@@ -561,6 +570,28 @@
 				</div>
 			</div>
 			
+			<div id="raiz-edit" class="raiz-container section" data-anchor="raiz_edit">
+				<div class="container" style="background: url('resources/images/test2/pic_video.png') no-repeat; background-size: cover; height: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="raiz-communication" class="raiz-container section" data-anchor="raiz_communication">
+				<div class="container">
+					<div class="communication-text">
+						<div style="font-size: 4rem;">
+							커뮤니케이션
+						</div>
+						<br><br>
+						<p style="font-size: 1.7rem;">
+							원활한 커뮤니케이션은 프로젝트에서 산출물 만큼이나 중요한 요소입니다.<br>
+							전담 멤버를 배치하여 핫라인을 구축하는 것은 물론, 지속적으로 진행과정을 보고드립니다.<br>
+							또한 24시간 언제든 고객님의 말씀을 들을 수 있는 다양한 채널이 열려있습니다.
+						</p>					
+					</div>
+				</div>
+			</div>
+
 			<div id="raiz-portfolio" class="raiz-container section" data-anchor="raiz_portfolio">
 				<div class="container">
 					<div>
@@ -597,7 +628,7 @@
 				</div>
 			</div>
 			
-			<div id="raiz-member" class="raiz-container section" data-anchor="raiz_member">
+			<%-- <div id="raiz-member" class="raiz-container section" data-anchor="raiz_member">
 				<div class="container">
 					<div style="font-size: 2.2rem; background: url('${contextPath}/resources/images/member/member_title.png') no-repeat; background-size: 300px; width: 452px; height: 65px; padding: 15px 0 13px 55px;">
 						라이즈 멤버
@@ -623,7 +654,7 @@
 					  </tr>
 					</table>
 				</div>
-			</div>
+			</div> --%>
 			
 			<div id="raiz-contact" class="raiz-container section fp-auto-height" data-anchor="raiz_contact">
 				<div class="container">

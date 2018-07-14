@@ -175,14 +175,16 @@
 	}
 	
 	.raiz-section-multilan-div-0 {
-		height: 100%;
+/*@@@ 		height: 100%; */
+		height: 624px;
 		padding-left: 0;
 		padding-right: 0;
 		display: table;
 	}
 	
 	.raiz-section-multilan-div-1 {
-		background: #EDEDED;
+/*@@@ 		background: #EDEDED; */
+		background: url('../images/test2/web_multilanguage.png') no-repeat;
 		height: 100%;
 		display: table-cell;
 		vertical-align: middle;
@@ -201,7 +203,8 @@
 	}
 	
 	.raiz-section-multilan-div-3 {
-		background: #6E7379;
+/*@@@ 		background: #6E7379; */
+		background: url('../images/test2/web_maintenance.png') no-repeat;
 		height: 100%;
 		display: table-cell;
 		vertical-align: middle;
@@ -261,7 +264,8 @@
 	}
 	
 	.raiz-section-design-div-3 {
-		background: #171C61;
+/*@@@ 		background: #171C61; */
+		background: url('../images/test2/design.png') no-repeat;
 		color: white;
 		height: 100%;
 		display: table-cell;
@@ -798,7 +802,9 @@
 		
 		.raiz-section-text {
 			padding: 0;
-			background: #E8E9ED;
+/*@@@ 			background: #E8E9ED; */
+			background: url('../images/test2/web_basic.png') no-repeat;
+			height: 100%;
 		}
 
 		.raiz-section-p-0 {
