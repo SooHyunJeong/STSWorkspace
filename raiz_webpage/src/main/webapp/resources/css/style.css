@@ -1,280 +1,498 @@
-/* -------------- raiz-one SECTION START  -------------- */
+/* -------------- raiz_main SECTION START  -------------- */
 	
+	#raiz_main .container {
+		background: url('../images/test2/mainpage_img.png') no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	#raiz_main .content-wrap {
+		width: 450px;
+		position: relative;
+		top: 27%;
+		display: block;
+		margin: 0 auto;
+		color: rgb(237, 237, 237);
+	}
+	
+	#raiz_main .content-wrap img {
+		width: 10px;
+		height: 110px;
+		position: relative;
+		top: -77px;
+	}
+
+	#raiz_main .title {
+		display: block;
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
 	#raiz_main h1 {
-	  font-size: 10rem;
-	  font-weight: bold;
-	  text-align: left;
-	  margin: 150px 30px 0 30px;
-	  color: #6F7478;
+		font-size: 12rem;
 	}
 
 	#raiz_main .sub_title {
-	  font-size: 2.08rem;
-	  margin: 10px 30px;
-	  height: 15px;
-	  color: #6F7478;
-	  position: relative;
-	  top: -25px;
+		font-size: 2.5rem;
+		position: relative;
+		top: -30px;
+	}
+	
+	#raiz_main img {
+		display: none;
+	}
+
+	#raiz_main .desc {
+		display: block;
+		padding-left: 0;
+		position: relative;
+		top: -30px;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	p.accent {
 	  font-size: 2.7rem;
+	  width: 450px;
 	}
-	.desc p:nth-child(2) {
-	  font-size: 1.9rem;	
+
+	#raiz_main .desc p:nth-child(2) {
+	  font-size: 1.91rem;
+	  width: 450px;
 	}
-	span.accent_imp {
+
+	div.accent_imp {
 	  font-family: nanumsquareEB;
 	}
 	
-/* -------------- raiz-one SECTION END -------------- */
+/* -------------- raiz_main SECTION END -------------- */
 
 /* -------------- raiz-important SECTION START -------------- */
 
-	#raiz-important .container {
-		text-align: center;
+	#raiz-important .important-list-top {
+		height: 400px;
+		margin-bottom: 15px;
 	}
 
-	#raiz-important .container span { 
-		display: inline-block;
-		width: 33%;
+	#raiz-important .important-list-bottom {
+		height: 400px;
+		margin-top: 15px;
+	}
+
+	#raiz-important .inner-wrap {
+		width: 400px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: white;
+	}
+
+	#raiz-important .inner-wrap-top {
+		width: 400px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #171C60;
+		color: white;
+	}
+
+	#raiz-important .inner-wrap-bottom {
+		width: 400px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #A80F23;
+		color: white;
+	}
+
+	#raiz-important img {
+		width: auto;
+	}
+
+	#raiz-important .text-wrap {
+		height: 0;
+		position: relative;
+		top: -135px;
+	}
+
+	#raiz-important .text-wrap h3 {
+		font-weight: bold;
 	}
 
 /* -------------- raiz-important SECTION END -------------- */
-/* 
--------------- raiz-list SECTION START --------------
-
-	#raiz-list .row {
-	  height:70px;
-	  padding:5px;
-	}
-
-	#raiz-list .row:nth-child(1) {
-		margin: 0;
-		background: url('../images/basic/webpage_basic_bg1.png') no-repeat 100%;
-		-webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	}
-
--------------- raiz-list SECTION END --------------
- */
-/* -------------- raiz-communication SECTION START -------------- */
-
-	#raiz-communication .container {
-		height: 100%;
-		display: table;
-		background: url('../images/comm/communication_bg.png') no-repeat 100%;
-		-webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
-	}
-	
-	.communication-text {
-		display: table-cell;
-		padding: 0 10rem;
-		vertical-align: middle;
-	}
-
-/* -------------- raiz-communication SECTION END -------------- */
-
 
 /* -------------- raiz-section SECTION START -------------- */
-	
+
 	#raiz-section {
 		height: 1500px;
 	}
-	
-	.raiz-section-web {
-		margin-top: 5rem;
-	}
 
-	.raiz-section-text {
-		padding: 0;
-		background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
-		background-color: #E8E9ED;
-	}
+	/* ===== web SECTION START ===== */
+		
+		.raiz-section-web {
+			margin-top: 5rem;
+			background: url('../images/test2/web_basic_img.png') no-repeat;
+		}
 	
-	.raiz-section-p-0 {
-		font-size: 2.3rem;
-		text-align: center;
-		padding: 6rem 2rem 0 2rem;
-		margin: 0;
-	}
-	
-	.raiz-section-p-1 {
-		font-size: 2.3rem;
-		text-align: center;
-		margin: 0 auto 3rem auto;
-		background: #6E7379;
-		color: #E8E9ED;
-		width: 130px;
-	}
-	
-	.raiz-section-p-2 {
-		font-size: 1.5rem;
-		padding: 0 3.5rem;
-		font-weight: bold;
-		margin-bottom: 3rem;
-	}
-	
-	.raiz-section-div {
-		padding-bottom: 6rem;
-	}
+		.web-inner-wrap {
+			width: 262px;
+			height: 853px;
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+			padding: 20rem 0;
+		}
+		
+		.raiz-section-art .title-wrap h1 {
+			font-size: 30px;
+		}
 
-	.raiz-section-p-3 {
-		font-size: 1.5rem;
-		margin: 0.5rem 4rem;
-		padding-left: 2rem;
-		border-left: solid 5px #74747C;
-	}
+		.sub-title-wrap {
+			font-size: 30px;
+			font-weight: bold;
+			color: #6E7479;
+			background-color: white;
+			margin: 0 2.5rem 4rem 2.5rem;
+		}
+		
+		.web-inner-wrap .desc {
+			font-size: 18px;
+		}
+		
+		.web-inner-wrap .desc-main {
+			padding: 0 1rem 2rem 1rem;
+		}
+		
+		.web-inner-wrap .desc-sub {
+			margin-bottom: 2rem;
+		}
+		
+		.web-desc-body-0 {
+			font-size: 0.8em;
+		}
+		
+		.web-desc-body-1 {
+			font-size: 0.87em;
+		}
 
-	.raiz-section-img {
-		display: none;
-		padding: 0;
-	}
-	
-	.raiz-section-img img {
-		width: 575px;
-	}
-	
-	/* -------------- raiz-section-art SECTION START -------------- */
+		.web-desc-body-2 {
+			font-size: 0.87em;
+		}
 
-	.raiz-section-art {
-		background: #B10E23;
-		color: white;
-		margin-top: 5rem;
-		word-break: keep-all;
-	}
-	
-	.raiz-section-art img {
-		padding: 10rem 2rem 5rem 2rem;
-		width: 350px;
-	}
-	
-	.raiz-section-art-p-0 {
-		font-size: 2rem;
-		margin: 0 30px 40px;
-		font-weight: bold;
-	}
-	
-	.raiz-section-art-p-1 {
-		font-size: 1.5rem;
-		margin: 0 38px 40px;
-	}
+		.web-desc-body-3 {
+			font-size: 0.81em;
+		}
 
-	/* -------------- raiz-section SECTION END -------------- */
-	
-	/* -------------- raiz-section-multilan SECTION START -------------- */
+		.web-inner-wrap .desc p:nth-child(2) {
+			font-size: 0.8em;
+		}
+		
+		.web-inner-wrap .desc p:nth-child(3) {
+			font-size: 0.8em;
+		}
 
-	.raiz-section-multilan {
-		height: 624px;
-		margin-top: 5rem;
-	}
-	
-	.raiz-section-multilan-div-0 {
-/*@@@ 		height: 100%; */
-		height: 624px;
-		padding-left: 0;
-		padding-right: 0;
-		display: table;
-	}
-	
-	.raiz-section-multilan-div-1 {
-/*@@@ 		background: #EDEDED; */
-		background: url('../images/test2/web_multilanguage.png') no-repeat;
-		height: 100%;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	
-	.raiz-section-multilan-div-1>h3 {
-		margin: 0;
-	}
-	
-	.raiz-section-multilan-div-2 {
-		height: 100%;
-		padding-right: 0;
-		padding-left: 0;
-		display: table;
-		margin-top: 5rem;
-	}
-	
-	.raiz-section-multilan-div-3 {
-/*@@@ 		background: #6E7379; */
-		background: url('../images/test2/web_maintenance.png') no-repeat;
-		height: 100%;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	
-	.raiz-section-multilan-div-3>h3 {
-		margin: 0;
-	}
-	
-	/* -------------- raiz-section-multilan SECTION END -------------- */
-	
-	/* -------------- raiz-section-design SECTION START -------------- */
+	/* ===== web SECTION END ===== */
 
-	.raiz-section-design {
-		margin-top: 5rem;
-	}
-	
-	.raiz-section-design-div-0 {
-		height: 624px;
-		padding-left: 0;
-		padding-right: 0;
-		display: table;
-		margin-top: 5rem;
-	}
-	
-	.raiz-section-design-div-1 {
-		height: 100%;
-		display: table-cell;
-		vertical-align: middle;
-	}
+	/* ===== art SECTION START ===== */
 
-	.raiz-section-design-div-1>img {
-		width: 50%;
-	}
-	
-	.raiz-section-design-div-1>h1 {
-		font-size: 25px;
-		font-weight: bold;
-	}
-	
-	.raiz-section-design-p-0 {
-		font-size: 1.5rem;
-		font-weight: bold;
-	}
-	
-	.raiz-section-design-p-1 {
-		font-size: 1.5rem;
-		padding: 4rem;
-	}
-	
-	.raiz-section-design-div-2 {
-		height: 624px;
-		padding-right: 0;
-		padding-left: 0;
-		display: table;
-		margin-top: 5rem;
-	}
-	
-	.raiz-section-design-div-3 {
-/*@@@ 		background: #171C61; */
-		background: url('../images/test2/design.png') no-repeat;
-		color: white;
-		height: 100%;
-		display: table-cell;
-		vertical-align: middle;
-	}
+		.raiz-section-art {
+			background: url('../images/test2/web_art_img.png') no-repeat;
+			height: 853px;
+			margin-top: 5rem;
+		}
 
-	/* -------------- raiz-section-design SECTION END -------------- */
+		.art-inner-wrap {
+			width: 412px;
+			margin: 23rem auto;
+		}
+
+		.raiz-section-art .title-img {
+			margin-bottom: 3rem;
+		}
+		
+		.raiz-section-art .title-img img {
+			width: 100%;
+		}
+		
+		.raiz-section-art .title-wrap h2 {
+			font-size: 23px;
+		}
+
+		.raiz-section-art .title-wrap {
+			margin-bottom: 4rem;
+			color: white;
+		}
+
+		.art-color {
+			color: #B3273A;
+		}
+		
+		.art-inner-wrap .desc {
+			font-size: 22px;
+			color: white;
+		}
+		
+		.art-inner-wrap .desc {
+			font-size: 17px;
+		}
+
+	/* ===== art SECTION END ===== */
+	
+	/* -------------- raiz-cardlist-top SECTION START -------------- */
+
+		.raiz-cardlist-top {
+			margin-top: 5rem;
+		}
+
+		/* ===== app SECTION START ===== */
+
+			.app-inner-wrap {
+				height: 550px;
+				margin-bottom: 30px;
+				background-color: white;
+				min-width: 400px;
+			}
+			
+			.app-inner-wrap .title-img {
+				padding-top: 45px;
+			}
+			
+			.app-inner-wrap img {
+				width: 265px;
+			}
+			
+			.app-inner-wrap .title-wrap h1 {
+				color: black;
+				font-size: 36px;
+			} 
+			
+			.app-inner-wrap .desc {
+				width: 390px;
+				margin: 0 auto;
+			}
+			
+			.app-inner-wrap .desc-main {
+				font-size: 20px;
+				margin-bottom: 2rem;
+			}
+			
+			.app-inner-wrap .desc-sub {
+				font-size: 17px;
+				line-height: 1.2
+			}
+
+		/* ===== app SECTION END ===== */
+
+		/* ===== maintenance SECTION START ===== */
+
+			.maintenance-inner-wrap {
+				background: url('../images/test2/web_maintenance_img.png') no-repeat 100%;
+				height: 550px;
+				min-width: 400px;
+				color: white;
+				background-size: cover;
+			}
+
+			.maintenance-inner-wrap h1 {
+				width: 170px;
+				font-weight: bold;
+				border-width: 3px;
+				border-bottom: 1px solid;
+				padding-bottom: 2rem;
+				margin: 0 auto 2rem auto;
+			}
+
+			.maintenance-inner-wrap .title-wrap {
+				padding-top: 33rem;
+			}
+
+			.maintenance-inner-wrap .desc {
+				width: 188px;
+				margin: 0 auto;
+				font-size: 15px;
+			}
+			
+			.maintenance-desc-sub {
+				letter-spacing: 0.4px;
+			}
+
+		/* ===== maintenance SECTION END ===== */
+	
+	/* -------------- raiz-cardlist-top SECTION END -------------- */
+
+	/* -------------- raiz-cardlist-bottom SECTION START -------------- */
+
+		.raiz-cardlist-bottom {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		/* ===== multilanguage SECTION START ===== */
+
+			.multilan-inner-wrap {
+				background: url('../images/test2/multilanguage_bg.png') no-repeat;
+				height: 550px;
+				min-width: 400px;
+				margin-bottom: 30px;
+				background-size: cover;
+			}
+			
+			.multilan-inner-wrap .title-wrap {
+				text-align: center;
+				padding-top: 9rem;
+			}
+			
+			.multilan-inner-wrap .title-wrap img {
+				width: 280px;
+			}
+			
+		/* ===== multilanguage SECTION END ===== */
+
+		/* ===== trademark SECTION START ===== */
+			.trademark-inner-wrap {
+				height: 610px;
+				background-color: #B00E23;
+				color: white;
+			}
+			
+			.trademark-inner-wrap .title-img {
+				padding-top: 10rem;
+			}
+			
+			.trademark-inner-wrap .title-img img {
+				width: 145px;
+			}
+			
+			.trademark-inner-wrap .title-wrap h1 {
+				font-weight: bold;
+				font-size: 39px;
+				margin-top: 0;
+				padding-top: 3rem;
+			}
+			
+			.trademark-inner-wrap .desc {
+				font-size: 15px;
+			}
+			
+			.trademark-inner-wrap .desc-body-0 {
+				letter-spacing: 2px;
+			}
+			
+			.trademark-inner-wrap .desc-body-1 {
+				letter-spacing: 1.9px;
+			}
+			
+			.trademark-inner-wrap .desc-body-2 {
+				letter-spacing: 0.7px;
+			}
+			
+			.trademark-inner-wrap .desc-body-3 {
+				letter-spacing: 1.6px;
+			}
+			
+			.trademark-inner-wrap .desc-body-4 {
+				letter-spacing: 0
+			}
+			
+		/* ===== trademark SECTION END ===== */
+
+	/* -------------- raiz-cardlist-bottom SECTION START -------------- */
 
 /* -------------- raiz-section SECTION END -------------- */
+
+/* -------------- raiz-edit SECTION START -------------- */
+
+	#raiz-edit .container {
+		background: url('../images/test2/pic_video_img.png') no-repeat;
+		background-size: cover;
+		height: 100%;
+		color: white;
+	}
+	
+	#raiz-edit .content-wrap-top {
+		width: 600px;
+		padding-top: 21rem;
+		padding-left: 6rem;
+	}
+	
+	#raiz-edit .content-wrap-top h1 {
+		padding-bottom: 3rem;
+		font-size: 32px;
+		font-weight: bold;
+	}
+	
+	#raiz-edit .content-wrap-top .desc {
+		font-size: 15px;
+		padding-bottom: 6rem;
+	}
+	
+	#raiz-edit .content-wrap-top .desc div:nth-child(1) {
+		padding-bottom: 1.5rem;
+	}
+	
+	#raiz-edit .content-wrap-top .desc div:nth-child(2) {
+		padding-bottom: 1.5rem;
+	}
+	
+	.divide-line {
+		width: 280px;
+		margin-left: 6rem;
+		border: 1px solid;
+	}
+	
+	#raiz-edit .content-wrap-bottom {
+		width: 650px;
+		padding-top: 6rem;
+		padding-left: 6rem;
+	}
+	
+	#raiz-edit .content-wrap-bottom h1 {
+		font-size: 32px;
+		font-weight: bold;
+		padding-bottom: 3rem;
+		margin-top: 0;
+	}
+	
+	#raiz-edit .content-wrap-bottom .desc {
+		font-size: 15px;
+	}
+	
+	#raiz-edit .content-wrap-bottom .desc div:nth-child(1) {
+		padding-bottom: 1.5rem;
+	}
+
+/* -------------- raiz-edit SECTION END -------------- */
+
+/* -------------- raiz-portfolio SECTION START -------------- */
+
+	#raiz-portfolio .container {
+		min-width: 460px;
+	}
+	
+	#raiz-portfolio .title-wrap {
+		width: 165px;
+		text-align: center;
+		border-bottom: solid 1px;
+		margin: 0 auto;
+	}
+
+	#raiz-portfolio ul {
+		padding: 0;
+	}
+
+	#raiz-portfolio ul li {
+		text-align: center;
+		padding: 0;
+	}
+	
+	#raiz-portfolio ul li img {
+		width: 100%;
+		opacity: 1;
+	}
+	
+	#raiz-portfolio ul li h4 {
+		padding: 18.2rem 2rem;
+	}
+
+/* -------------- raiz-portfolio SECTION END -------------- */
 
 /* CONTACT SECTION START */
 	#raiz-contact {
@@ -322,7 +540,7 @@
 	}
 
 	.footer-area {
-		width: fit-content;
+		width: 420px;
 		background: rgba(0, 0, 0, 0.6);
 		margin: 0 auto 22rem auto;
 		padding: 3rem;
@@ -334,6 +552,10 @@
 		font-size: 3rem;
 		font-weight: bold;
 		text-align: center;
+	}
+	
+	.footer-area img {
+		display: none;
 	}
 	
 	.footer-support {
@@ -350,7 +572,7 @@
 	}
 
 	.footer-corporate {
-		width: fit-content;
+		width: 180px;
 		margin: 3rem auto 0 auto;
 	}
 
@@ -379,105 +601,74 @@
 
 	/* -------------- raiz-section SECTION START -------------- */
 
-		.raiz-section-text {
-			padding: 0;
-			background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
-			background-color: #E8E9ED;
-		}
-		
-		.raiz-section-p-0 {
-			font-size: 2.7rem;
-			text-align: center;
-			padding: 6rem 11rem 0 11rem;
-			margin: 0;
-		}
-		
-		.raiz-section-p-1 {
-			font-size: 2.7rem;
-			text-align: center;
-			margin: 0 auto 3rem auto;
-			background: #6E7379;
-			color: #E8E9ED;
-			width: 151px;
-		}
-		
-		.raiz-section-p-2 {
-			font-size: 1.8rem;
-			padding: 0 7.5rem;
-			font-weight: bold;
-			margin-bottom: 3rem;
-		}
-		
-		.raiz-section-div {
-			padding-bottom: 6rem;
-		}
-		
-		.raiz-section-p-3 {
-			font-size: 1.8rem;
-			margin: 0.5rem 6.8rem;
-			padding-left: 2rem;
-			border-left: solid 5px #74747C;
-		}
+		/* -------------- raiz-cardlist-top SECTION START -------------- */
 
-		.raiz-section-img {
-			display: none;
-			padding: 0;
-		}
-		
-		.raiz-section-img img {
-			width: 100%;
-		}
-		
-		/* -------------- raiz-section-art SECTION START -------------- */
+			/* ===== app SECTION START ===== */
+	
+				.app-inner-wrap {
+					height: 610px;
+				}
+				
+				.app-inner-wrap img {
+					width: 310px;
+				}
 
-		.raiz-section-art {
-			background: #B10E23;
-			color: white;
-			margin-top: 5rem;			
-		}
-		
-		.raiz-section-art img {
-			padding: 10rem;
-			width: 700px;
-		}
-		
-		.raiz-section-art-p-0 {
-			font-size: 2rem;
-			margin: 0 0 40px;
-			font-weight: bold;
-		}
-		
-		.raiz-section-art-p-1 {
-			font-size: 1.5rem;
-			margin: 0 0 40px;
-		}
+			/* ===== app SECTION END ===== */
 
-		/* -------------- raiz-section SECTION END -------------- */
-		
-		/* -------------- raiz-section-design SECTION START -------------- */
+			/* ===== maintenance SECTION START ===== */
 
-		.raiz-section-design-p-1 {
-			padding: 0;
-		}
+				.maintenance-inner-wrap {
+					height: 610px;
+				}
+
+				.maintenance-inner-wrap h1 {
+					font-size: 47px;
+				}
+				
+				.maintenance-inner-wrap .title-wrap {
+					padding-top: 38rem;
+				}
+	
+			/* ===== maintenance SECTION END ===== */
 		
-		.map .map-inner .map-pin {
-			margin: -6.5rem auto;
-	    }
+		/* -------------- raiz-cardlist-top SECTION END -------------- */
 		
-		.contact .mini-container {
-	    	width: 65%;
-/* 			margin: 0 auto; */
-	    }
-		/* -------------- raiz-section-design SECTION END -------------- */
+		/* -------------- raiz-cardlist-bottom SECTION START -------------- */
+
+			/* ===== multilanguage SECTION START ===== */
+
+				.multilan-inner-wrap {
+					height: 610px;
+				}
+				
+				.multilan-inner-wrap .title-wrap {
+					padding-top: 6rem;
+				}
+				
+				.multilan-inner-wrap .title-wrap img {
+					width: auto;
+				}
+			
+			/* ===== multilanguage SECTION END ===== */
+
+			/* ===== trademark SECTION START ===== */
+			
+				.trademark-inner-wrap .title-img img {
+					width: 155px;
+				}
+
+			/* ===== trademark SECTION END ===== */
+	
+		/* -------------- raiz-cardlist-bottom SECTION START -------------- */
 
 	/* -------------- raiz-section SECTION END -------------- */
 	
 	/* FOOTER SECTION START */
 		.footer-area {
-			width: fit-content;
+			width: 560px;
 			background: rgba(0, 0, 0, 0.6);
 			margin: 0 auto 22rem auto;
-			padding: 3rem 4rem;
+			padding: 4.2rem 4rem 1.8rem 4rem;
 		}
 		
 		.footer-area>div:nth-child(1) {
@@ -486,6 +677,10 @@
 			font-size: 3rem;
 			font-weight: bold;
 			text-align: left;
+		}
+		
+		.footer-area img {
+			display: inline;
 		}
 		
 		.footer-support {
@@ -500,91 +695,283 @@
 			display: inline-block;
 			width: 90px;
 		}
-		
-		.footer-corporate {
-			width: fit-content;
-			margin: 3rem auto 0 auto;
-		}
 	/* FOOTER SECTION END */
 
 }
 
 @media all and (min-width: 768px) {
+	/* -------------- raiz_main SECTION START  -------------- */
+
+		#raiz_main .content-wrap {
+			width: 729px;
+			top: 37%;
+		}
+
+		#raiz_main .content-wrap img {
+			height: 93px;
+			top: -67px;
+		}
+
+		#raiz_main .title {
+			display: inline-block;
+			padding-right: 2rem;
+			margin-bottom: 0;
+		}
+	
+		#raiz_main h1 {
+			font-size: 10rem;
+		}
+	
+		#raiz_main .sub_title {
+			font-size: 2rem;
+		}
+
+		#raiz_main img {
+			display: inline-block;
+		}
+			
+		#raiz_main .desc {
+			display: inline-block;
+			padding-left: 2rem;
+			text-align: left;
+		}
+	
+		p.accent {
+		  font-size: 2.3rem;
+		  width: auto;
+		}
+	
+		#raiz_main .desc p:nth-child(2) {
+		  font-size: 1.65rem;
+		  width: 508px;
+		}
+
+	/* -------------- raiz_main SECTION END -------------- */
+	
+	/* -------------- raiz-important SECTION START -------------- */
+
+		#raiz-important .inner-wrap {
+			width: 100%;
+		}
+		
+		#raiz-important .inner-wrap-top {
+			width: 100%;
+		}
+	
+		#raiz-important .inner-wrap-bottom {
+			width: 100%;
+		}
+	
+		#raiz-important .important-list-top {
+			margin-top: 15px;
+		}
+	
+		#raiz-important .important-list-bottom {
+			margin-bottom: 15px;
+		}
+		
+		#raiz-important img {
+			width: 100%;
+		}
+
+		#raiz-important h3.title {
+			font-size: 21px;
+			margin-top: 60px;
+		}
+
+		#raiz-important p.desc {
+			font-size: 13px;
+		}
+
+	/* -------------- raiz-important SECTION END -------------- */
 
 	/* -------------- raiz-section SECTION START -------------- */
+		
+		/* ===== web SECTION START ===== */
 
-		.raiz-section-text {
-			padding: 0;
-			background: url('../images/basic/webpage_basic_bg1.png') no-repeat 80%;
-			background-color: #E8E9ED;
-		}
+			.raiz-section-web {
+				background: url('../images/test2/web_basic_img.png') no-repeat;
+			}
 		
-		.raiz-section-p-0 {
-			font-size: 3rem;
-			text-align: center;
-			padding: 6rem 11rem 0 11rem;
-			margin: 0;
-		}
-		
-		.raiz-section-p-1 {
-			font-size: 3rem;
-			text-align: center;
-			margin: 0 29rem 2rem 29rem;
-			background: #6E7379;
-			color: #E8E9ED;
-			width: auto;
-		}
-		
-		.raiz-section-p-2 {
-			font-size: 2rem;
-			padding: 0 10rem;
-			font-weight: bold;
-			margin-bottom: 4rem;
-		}
-		
-		.raiz-section-div {
-			padding-bottom: 6rem;
-		}
-		
-		.raiz-section-p-3 {
-			font-size: 1.95rem;
-			margin: 0.5rem 10rem;
-			padding-left: 2rem;
-			border-left: solid 5px #74747C;
-		}
+			.web-inner-wrap {
+				width: 40%;
+				margin: 0 13rem 0 auto;
+				padding: 20rem 0;
+			}
+			
+			.web-inner-wrap .title-wrap h1 {
+				font-size: 36px;
+			}
+	
+			.web-inner-wrap .sub-title-wrap {
+				font-size: 36px;
+				margin: 0 4rem 4rem 4rem;
+			}
+			
+			.web-inner-wrap .desc {
+				font-size: 19px;
+			}
 
-		.raiz-section-img {
-			display: none;
-			padding: 0;
-		}
-		
-		/* -------------- raiz-section-art SECTION START -------------- */
+			.web-inner-wrap .desc-main {
+				padding: 0 2rem 2rem 2rem;
+			}
+			
+			.web-inner-wrap .desc-sub {
+				margin-bottom: 2rem;
+			}
 
-		.raiz-section-art {
-			background: #B10E23;
-			color: white;
-			margin-top: 5rem;
-		}
-		
-		.raiz-section-art img {
-			padding: 10rem;
-			width: 784px
-		}
-		
-		.raiz-section-art-p-0 {
-			font-size: 2.3rem;
-			margin: 0 0 40px;
-			font-weight: bold;
-		}
-		
-		.raiz-section-art-p-1 {
-			font-size: 1.75rem;
-			margin: 0 0 40px;
-		}
+			.web-desc-body-0 {
+				font-size: 0.915em;
+			}
+			
+			.web-desc-body-1 {
+				font-size: 1em;
+			}
 
-		/* -------------- raiz-section SECTION END -------------- */
+			.web-desc-body-2 {
+				font-size: 1em;
+			}
+
+			.web-desc-body-3 {
+				font-size: 0.915em;
+			}
+			
+			.web-inner-wrap .desc p:nth-child(2) {
+				font-size: 1em;
+			}
+			
+			.web-inner-wrap .desc p:nth-child(3) {
+				font-size: 1em;
+			}
+
+		/* ===== web SECTION END ===== */
+		
+		/* ===== art SECTION START ===== */
+
+			.art-inner-wrap {
+				width: 95%;
+				margin: 23rem auto;
+			}
+
+			.art-inner-wrap .title-img img {
+				width: 88%;
+			}
+
+			.art-inner-wrap .title-wrap h2 {
+				font-size: 24px;
+			}
+
+			.art-inner-wrap .desc {
+				font-size: 18px;
+			}
+			
+			.art-inner-wrap .desc-top {
+				font-size: 18.2px;
+				letter-spacing: 0.1px;
+			}
+	
+		/* ===== art SECTION END ===== */
+
+		/* -------------- raiz-cardlist-top SECTION START -------------- */
+
+			/* ===== app SECTION START ===== */
+
+				.app-inner-wrap img {
+					width: 52%;
+				}
+
+			/* ===== app SECTION END ===== */
+
+			/* ===== maintenance SECTION START ===== */
+
+				.maintenance-inner-wrap {
+					height: 610px;
+				}
+
+				.maintenance-inner-wrap h1 {
+					font-size: 38px;
+				}
+	
+			/* ===== maintenance SECTION END ===== */
+		
+		/* -------------- raiz-cardlist-top SECTION END -------------- */
+		
+		/* -------------- raiz-cardlist-bottom SECTION START -------------- */
+
+			.trademark-inner-wrap .title-img img {
+				width: 23%;
+			}
+			
+			.trademark-inner-wrap .desc-body-0 {
+				letter-spacing: 2px;
+			}
+			
+			.trademark-inner-wrap .desc-body-1 {
+				letter-spacing: 1.9px;
+			}
+			
+			.trademark-inner-wrap .desc-body-2 {
+				letter-spacing: 0.7px;
+			}
+			
+			.trademark-inner-wrap .desc-body-3 {
+				letter-spacing: 1.5px;
+			}
+			
+			.trademark-inner-wrap .desc-body-4 {
+				letter-spacing: 0
+			}
+
+		/* -------------- raiz-cardlist-bottom SECTION END -------------- */
 
 	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* -------------- raiz-edit SECTION START -------------- */
+		
+		#raiz-edit .content-wrap-top {
+			padding-top: 13rem;
+		}
+
+		#raiz-edit .content-wrap-top h1 {
+			padding-bottom: 4rem;
+			font-size: 38px;
+		}
+		
+		#raiz-edit .content-wrap-top .desc {
+			font-size: 18px;
+			padding-bottom: 8rem;
+		}
+		
+		#raiz-edit .content-wrap-top .desc div:nth-child(1) {
+			padding-bottom: 2rem;
+		}
+		
+		#raiz-edit .content-wrap-top .desc div:nth-child(2) {
+			padding-bottom: 2rem;
+		}
+		
+		.divide-line {
+			width: 340px;
+		}
+		
+		#raiz-edit .content-wrap-bottom {
+			padding-top: 8rem;
+		}
+		
+		#raiz-edit .content-wrap-bottom h1 {
+			padding-bottom: 4rem;
+			font-size: 38px;
+		}
+		
+		#raiz-edit .content-wrap-bottom .desc {
+			font-size: 18px;
+		}
+		
+		#raiz-edit .content-wrap-bottom .desc div:nth-child(1) {
+			padding-bottom: 2rem;
+		}
+	
+	/* -------------- raiz-edit SECTION END -------------- */
 	
 	/* CONTACT SECTION START */
 		#google_map {
@@ -604,15 +991,13 @@
 	
 	/* FOOTER SECTION START */
 		.footer-corporate {
-			width: fit-content;
 			margin: 3rem 0 0 36rem;
 		}
 
 		.footer-area {
-			width: fit-content;
 			background: rgba(0, 0, 0, 0.6);
 			margin: 0 auto 22rem auto;
-			padding: 3rem 4rem;
+			padding: 4.2rem 4rem 1.8rem 4rem;
 		}
 		
 		.footer-area>div:nth-child(1) {
@@ -643,121 +1028,251 @@
 }
 
 @media all and (min-width: 992px) {
+	/* -------------- raiz_main SECTION START  -------------- */
+
+		#raiz_main .content-wrap {
+			width: 875px;
+		}
+
+		#raiz_main .content-wrap img {
+			height: 110px;
+			top: -77px;
+		}
+
+		#raiz_main .title {
+			padding-right: 3rem;
+		}
+
+		#raiz_main h1 {
+			font-size: 12rem;
+		}
+
+		#raiz_main .sub_title {
+			font-size: 2.5rem;
+		}
+
+		#raiz_main .desc {
+			padding-left: 3rem;
+		}
+	
+		p.accent {
+		  font-size: 2.7rem;
+		}
+	
+		#raiz_main .desc p:nth-child(2) {
+		  font-size: 1.91rem;
+		  width: 600px;	
+		}
+
+	/* -------------- raiz_main SECTION END -------------- */
+	
+	/* -------------- raiz-important SECTION START -------------- */
+
+		#raiz-important .important-list-top {
+			height: auto;
+			margin-top: 15px;
+		}
+	
+		#raiz-important .important-list-bottom {
+			height: auto;
+			margin-bottom: 15px;
+		}
+		
+		#raiz-important h3.title {
+			font-size: 21px;
+			margin-top: 20px;
+			margin-bottom: 17px;
+		}
+
+		#raiz-important p.desc {
+			font-size: 1em;
+		}
+
+	/* -------------- raiz-important SECTION END -------------- */
 
 	/* -------------- raiz-section SECTION START -------------- */
 
-		.raiz-section-text {
-			padding: 0;
-			background: #E8E9ED;
-		}
-		
-		.raiz-section-p-0 {
-			font-size: 3rem;
-			text-align: center;
-			padding: 6rem 11rem 0 11rem;
-			margin: 0;
-		}
-		
-		.raiz-section-p-1 {
-			font-size: 2.7rem;
-			text-align: center;
-			margin: 0 16.5rem 2rem 16.5rem;
-			background: #6E7379;
-			color: #E8E9ED;
-			width: auto;
-		}
-		
-		.raiz-section-p-2 {
-			font-size: 1.8rem;
-			padding: 0 3.2rem;
-			font-weight: bold;
-		}
-		
-		.raiz-section-div {
-			margin-bottom: 2.7rem;
-			padding-bottom: 0;
-		}
-		
-		.raiz-section-p-3 {
-			font-size: 1.7rem;
-			margin: 0.5rem 5rem;
-			padding-left: 2rem;
-			border-left: solid 5px #74747C;
-		}
+		/* ===== web SECTION START ===== */
 
-		.raiz-section-img {
-			display: block;
-			padding: 0;
-		}
+			.web-inner-wrap {
+				padding: 20rem 0;
+			}
+			
+			.web-inner-wrap .title-wrap h1 {
+				font-size: 45px;
+			}
+
+			.web-inner-wrap .desc-main {
+				padding: 0 5rem 2rem 5rem;
+			}
+			
+			.web-inner-wrap .sub-title-wrap {
+				font-size: 45px;
+				margin: 0 6rem 4rem 6rem;
+			}
+			
+			.web-inner-wrap .desc {
+				font-size: 20px;
+			}
+			
+			.web-desc-body-0 {
+				font-size: 1em;
+			}
+
+			.web-desc-body-1 {
+				font-size: 1.1em;
+			}
+
+			.web-desc-body-2 {
+				font-size: 1.1em;
+			}
+
+			.web-desc-body-3 {
+				font-size: 1.01em;
+			}
+
+		/* ===== web SECTION END ===== */
 		
-		/* -------------- raiz-section-art SECTION START -------------- */
+		/* ===== art SECTION START ===== */
 
-		.raiz-section-art {
-			background: #B10E23;
-			color: white;
-			margin-top: 5rem;
-		}
+			.art-inner-wrap {
+				width: 65%;
+				margin: 15rem 4rem 0 auto;
+			}
+
+			.art-inner-wrap .title-img img {
+				width: 100%;
+			}
+
+			.art-inner-wrap .title-wrap h2 {
+				font-size: 23px;
+			}
+
+			.art-inner-wrap .desc {
+				font-size: 17px;
+			}
+			
+			.art-inner-wrap .desc-top {
+				font-size: 17.2px;
+				letter-spacing: 0.1px;
+			}
+	
+		/* ===== art SECTION END ===== */
 		
-		.raiz-section-art img {
-			padding: 10rem;
-			width: 784px
-		}
+		/* -------------- raiz-cardlist-top SECTION START -------------- */
+
+			/* ===== app SECTION START ===== */
+	
+				.app-inner-wrap {
+					height: 455px;
+					margin-bottom: 0;
+				}
+
+				.app-inner-wrap .title-wrap h1 {
+					font-size: 29px;
+				} 
+				
+				.app-inner-wrap .desc-main {
+					font-size: 19px;
+				}
+
+				.app-inner-wrap .desc-sub {
+					font-size: 15px;
+				}
+	
+			/* ===== app SECTION END ===== */
+	
+			/* ===== maintenance SECTION START ===== */
+	
+				.maintenance-inner-wrap {
+					height: 455px;
+					background: url('../images/test2/web_maintenance_img.png') no-repeat 100%;
+				}
+
+				.maintenance-inner-wrap .title-wrap {
+					padding-top: 28rem;
+				}
+
+				.maintenance-inner-wrap h1 {
+					width: 135px;
+				}
+	
+				.maintenance-inner-wrap .desc {
+					width: 160px;
+					font-size: 13px;
+				}
+
+			/* ===== maintenance SECTION END ===== */
 		
-		.raiz-section-art-p-0 {
-			font-size: 2.3rem;
-			margin: 0 0 40px;
-			font-weight: bold;
-		}
+		/* -------------- raiz-cardlist-top SECTION END -------------- */
 		
-		.raiz-section-art-p-1 {
-			font-size: 1.75rem;
-			margin: 0 0 40px;
-		}
+		/* -------------- raiz-cardlist-bottom SECTION START -------------- */
 
-		/* -------------- raiz-section SECTION END -------------- */
-		
-		/* -------------- raiz-section-multilan SECTION START -------------- */
+			/* ===== multilanguage SECTION START ===== */
 
-		.raiz-section-multilan-div-0 {
-			padding-right: 2.5rem;
-		}
+				.multilan-inner-wrap {
+					margin-bottom: 0;
+					height: 455px;
+					background-size: auto;
+				}
 
-		.raiz-section-multilan-div-2 {
-			padding-left: 2.5rem;
-			margin-top: 0;
-		}
+				.multilan-inner-wrap .title-wrap img {
+					width: 52%;
+				}
 
-		/* -------------- raiz-section-multilan SECTION END -------------- */
-		
-		/* -------------- raiz-section-design SECTION END -------------- */
+			/* ===== multilanguage SECTION END ===== */
 
-		.raiz-section-design-div-0 {
-			padding-right: 2.5rem;
-			margin-top: 0;
-		}
+			/* ===== trademark SECTION START ===== */
 
-		.raiz-section-design-div-1>h1 {
-			font-size: 36px;
-			font-weight: bold;
-		}
-		
-		.raiz-section-design-p-0 {
-			font-size: 2rem;
-			font-weight: bold;
-		}
-		
-		.raiz-section-design-p-1 {
-			font-size: 2rem;
-		}
+				.trademark-inner-wrap {
+					height: 455px;
+				}
+				
+				.trademark-inner-wrap .title-img {
+					padding-top: 6.5rem;
+				}
 
-		.raiz-section-design-div-2 {
-			padding-left: 2.5rem;
-			margin-top: 0;
-		}
+				.trademark-inner-wrap .title-wrap h1 {
+					font-size: 39px;
+				}
+				
+				.trademark-inner-wrap .desc-body-0 {
+					letter-spacing: 2px;
+				}
+				
+				.trademark-inner-wrap .desc-body-1 {
+					letter-spacing: 2px;
+				}
+				
+				.trademark-inner-wrap .desc-body-2 {
+					letter-spacing: 0.8px;
+				}
+				
+				.trademark-inner-wrap .desc-body-3 {
+					letter-spacing: 1.6px;
+				}
+				
+				.trademark-inner-wrap .desc-body-4 {
+					letter-spacing: 0;
+				}
 
-		/* -------------- raiz-section-design SECTION END -------------- */
+			/* ===== trademark SECTION END ===== */
+
+		/* -------------- raiz-cardlist-bottom SECTION END -------------- */
 
 	/* -------------- raiz-section SECTION END -------------- */
+	
+	/* -------------- raiz-portfolio SECTION START -------------- */
+
+		ul {
+			padding: 0 0 0 30px;
+		}
+
+		ul li {
+			text-align: left;
+		}
+
+	/* -------------- raiz-portfolio SECTION END -------------- */
 	
 	/* CONTACT SECTION START */
 		#google_map {
@@ -797,107 +1312,181 @@
 	.container {
 		width: 1280px;
 	}
+
+	/* -------------- raiz-important SECTION START -------------- */
+
+		#raiz-important .important-list-top {
+			height: 400px;
+			margin-top: 0;
+		}
 	
+		#raiz-important .important-list-bottom {
+			height: 400px;
+			margin-bottom: 0;
+		}
+
+	/* -------------- raiz-important SECTION END -------------- */
+
 	/* -------------- raiz-section SECTION START -------------- */
 		
-		.raiz-section-text {
-			padding: 0;
-/*@@@ 			background: #E8E9ED; */
-			background: url('../images/test2/web_basic.png') no-repeat;
-			height: 100%;
-		}
+		/* ===== web SECTION START ===== */
+		
+			.raiz-section-web {
+				background: url('../images/test2/web_basic_img.png') no-repeat 80%;
+			}
+			
+			.web-inner-wrap .title-wrap h1 {
+				font-size: 45px;
+			}
 
-		.raiz-section-p-0 {
-			font-size: 3rem;
-			text-align: center;
-			padding: 11rem 11rem 0 11rem;
-			margin: 0;
-		}
-		
-		.raiz-section-p-1 {
-			font-size: 3rem;
-			text-align: center;
-			margin: 0 23.5rem 2rem 23.5rem;
-			background: #6E7379;
-			color: #E8E9ED;
-			width: auto;
-		}
-		
-		.raiz-section-p-2 {
-			font-size: 2rem;
-			padding: 0 5rem;
-			font-weight: bold;
-		}
-		
-		.raiz-section-div {
-			margin-bottom: 12.7rem;
-			padding-bottom: 0;
-		}
-		
-		.raiz-section-p-3 {
-			font-size: 2rem;
-			margin: 0.5rem 5rem;
-			padding-left: 2rem;
-			border-left: solid 5px #74747C;
-		}
+			.web-inner-wrap {
+				padding: 20rem 5rem;
+			}
+			
+			.web-inner-wrap .sub-title-wrap {
+				font-size: 45px;
+				margin: 0 7rem 4rem 7rem;
+			}
 
-		.raiz-section-img {
-			display: block;
-			padding: 0;
-		}
+			.web-inner-wrap .desc-main {
+				padding: 0 6rem 2rem 6rem;
+			}
+			
+			.web-inner-wrap .desc {
+				font-size: 20px;
+			}
+
+		/* ===== web SECTION END ===== */
+
+		/* ===== art SECTION START ===== */
+
+			.art-inner-wrap {
+				margin: 9rem 1rem 0 auto;
+			}
+
+			.art-inner-wrap .title-img img {
+				width: auto;
+			}
+
+			.art-inner-wrap .title-wrap h2 {
+				font-size: 30px;
+			}
+
+			.art-inner-wrap .desc {
+				font-size: 22px;
+			}
+			
+			.art-inner-wrap .desc-top {
+				font-size: 22.2px;
+				letter-spacing: 0.15px;
+			}
 	
-		/* -------------- raiz-section-art SECTION START -------------- */
-
-		.raiz-section-art {
-			background: #B10E23;
-			color: white;
-			margin-top: 5rem;
-		}
+		/* ===== art SECTION END ===== */
 		
-		.raiz-section-art img {
-			padding: 10rem;
-			width: 784px
-		}
+		/* -------------- raiz-cardlist-top SECTION START -------------- */
+
+			/* ===== app SECTION START ===== */
+	
+				.app-inner-wrap {
+					height: 610px;
+				}
+
+				.app-inner-wrap .title-wrap h1 {
+					font-size: 36px;
+					margin-top: 3rem;
+				}
+				
+				.app-inner-wrap .desc-main {
+					font-size: 20px;
+					margin-top: 3rem;
+					margin-bottom: 3rem;
+				}
+
+				.app-inner-wrap .desc-sub {
+					font-size: 15px;
+				}
+	
+			/* ===== app SECTION END ===== */
+	
+			/* ===== maintenance SECTION START ===== */
+	
+				.maintenance-inner-wrap {
+					height: 610px;
+					background: url('../images/test2/web_maintenance_img.png') no-repeat;
+				}
+
+				.maintenance-inner-wrap .title-wrap {
+					padding-top: 38rem;
+				}
+
+				.maintenance-inner-wrap h1 {
+					width: 140px;
+				}
+	
+				.maintenance-inner-wrap .desc {
+					width: 188px;
+					font-size: 15px;
+				}
+	
+			/* ===== maintenance SECTION END ===== */
 		
-		.raiz-section-art-p-0 {
-			font-size: 3rem;
-			margin: 0 0 40px;
-			font-weight: bold;
-		}
+		/* -------------- raiz-cardlist-top SECTION END -------------- */
 		
-		.raiz-section-art-p-1 {
-			font-size: 2.25rem;
-			margin: 0 0 40px;
-		}
+		/* -------------- raiz-cardlist-bottom SECTION START -------------- */
 
-		/* -------------- raiz-section SECTION END -------------- */
-		
-		/* -------------- raiz-section-multilan SECTION START -------------- */
+			/* ===== multilanguage SECTION START ===== */
+	
+				.multilan-inner-wrap {
+					margin-bottom: 0;
+					height: 610px;
+				}
+				
+				.multilan-inner-wrap .title-wrap img {
+					width: auto;
+				}
+				
+			/* ===== multilanguage SECTION END ===== */
+			
+			/* ===== trademark SECTION START ===== */
+				.trademark-inner-wrap {
+					height: 610px;
+				}
+				
+				.trademark-inner-wrap .title-img {
+					padding-top: 10rem;
+				}
+				
+				.trademark-inner-wrap .title-img img {
+					width: 28%;
+				}
+				
+				.trademark-inner-wrap .title-wrap h1 {
+					font-size: 39px;
+				}
+				
+				.trademark-inner-wrap .desc-body-0 {
+					letter-spacing: 2.1px;
+				}
+				
+				.trademark-inner-wrap .desc-body-1 {
+					letter-spacing: 2.1px;
+				}
+				
+				.trademark-inner-wrap .desc-body-2 {
+					letter-spacing: 0.8px;
+				}
+				
+				.trademark-inner-wrap .desc-body-3 {
+					letter-spacing: 1.7px;
+				}
+				
+				.trademark-inner-wrap .desc-body-4 {
+					letter-spacing: 0;
+				}
+			/* ===== trademark SECTION END ===== */
 
-		.raiz-section-multilan-div-0 {
-			padding-right: 2.5rem;
-		}
+		/* -------------- raiz-cardlist-bottom SECTION END -------------- */
 
-		.raiz-section-multilan-div-2 {
-			padding-left: 2.5rem;
-			margin-top: 0;
-		}
-
-		/* -------------- raiz-section-multilan SECTION END -------------- */
-		
-		/* -------------- raiz-section-design SECTION END -------------- */
-
-		.raiz-section-design-div-0 {
-			padding-right: 2.5rem;
-			margin-top: 0;
-		}
-		.raiz-section-design-div-2 {
-			padding-left: 2.5rem;
-			margin-top: 0;
-		}
-
-		/* -------------- raiz-section-design SECTION END -------------- */
-		
 		/* CONTACT SECTION START */
 			#google_map {
 				height: 849px;

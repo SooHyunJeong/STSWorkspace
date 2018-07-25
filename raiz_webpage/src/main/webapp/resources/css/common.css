@@ -1,6 +1,12 @@
 body {
 	font-family: nanumsquareR;
 	word-break: keep-all;
+	background: rgb(237, 237, 237);
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
 }
 
 .font-eng {
@@ -26,9 +32,12 @@ li {
   color:blue;
 }
 
-.desc {
-  margin-top:40px;
+/* .desc {
   text-align:center;
+} */
+
+.desc-bold {
+  font-weight: bold;
 }
 
 p {
@@ -71,6 +80,10 @@ p {
 		src: url(../font/NanumSquareEB.woff), url(../font/NanumSquareEB.eot), url(../font/NanumSquareEB.ttf);
 	}
 	@font-face{
+		font-family:'NanumSquareB'; 
+		src: url(../font/NanumSquareB.woff), url(../font/NanumSquareB.eot), url(../font/NanumSquareB.ttf);
+	}
+	@font-face{
 		font-family:'NanumSquareR'; 
 		src: url(../font/NanumSquareR.woff), url(../font/NanumSquareR.eot), url(../font/NanumSquareR.ttf);
 	}
@@ -89,6 +102,10 @@ p {
 
 	.nanumsquareEB {
 		font-family: NanumSquareEB, sans-serif;
+	}
+	
+	.nanumsquareB {
+		font-family: NanumSquareB, sans-serif;
 	}
 
 	.nanumsquareR {

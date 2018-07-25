@@ -9,12 +9,14 @@
 		<title>raiz corp.</title>
 		
 		<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+		<!-- Favicon icon -->
+        <link rel="icon" type="image/x-icon" href="${contextPath}/resources/img/favicon.ico"/>
 		
 		<link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 		<link href="${contextPath}/resources/css/jquery.fullpage.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/style.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/common.css" rel="stylesheet">
-    	<link href="${contextPath}/resources/css/contact.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/imagehover.min.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/magnific-popup.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/bicon.min.css" rel="stylesheet">
@@ -25,44 +27,17 @@
 	    <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
     	<script src="${contextPath}/resources/js/scrolloverflow.min.js"></script>
 		<script src="${contextPath}/resources/js/jquery.fullpage.js"></script>
-		<script src="${contextPath}/resources/js/contact/validator.min.js"></script>
-        <script src="${contextPath}/resources/js/contact/contact.js"></script>
         <script src="${contextPath}/resources/js/jquery.magnific-popup.js"></script>
-		
-		<%-- grid-content 관련 js
-		<script src="${contextPath}/resources/js/jquery.vgrid.min.js"></script>
-		<script src="${contextPath}/resources/js/jquery.easing.1.3.js"></script>
-		 --%>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAJLWC6t2OcLmFN6sJ80oSwVUUCYip08&callback=initMap"></script>        
 	</head>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAJLWC6t2OcLmFN6sJ80oSwVUUCYip08&callback=initMap"></script>
 	<script>
 		$(document).ready(function() {
 			$("#fullpage").fullpage({
-				anchors:["raiz_home", "raiz_important", "raiz_section", "raiz_edit", "raiz_communication", "raiz_portfolio", "raiz_contact"],
+				anchors:["raiz_home", "raiz_important", "raiz_section", "raiz_edit", "raiz_portfolio", "raiz_contact"],
 				menu: "#topMenu",
 				navigation: true,
 				scrollOverflow: true
 			});
-			
-			/* grid-content 관련 source
-			//setup
-			var vg = $(".grid-content").vgrid({
-				easing: "easeOutQuint",
-				useLoadImageEvent: true,
-				useFontSizeListener: true,
-				time: 400,
-				delay: 20,
-				wait: 500,
-				fadeIn: {
-					time: 500,
-					delay: 50
-				}
-			});
-
-			$(window).load(function(e){
-				vg.vgrefresh();
-			});
-			 */
 
 			// 포트폴리오 관련 소스 START
 				$(".test-popup-link").magnificPopup({
@@ -75,13 +50,13 @@
 				$(".test-popup-link").click(function() {
 					$("button").css("display", "none");
 
-					$("html, body").css({"overflow": "hidden", "height": "100%"}); // 모달팝업 중 html,body의 scroll을 hidden시킴 
+					/* $("html, body").css({"overflow": "hidden", "height": "100%"}); // 모달팝업 중 html,body의 scroll을 hidden시킴 
 					$("body").on("scroll touchmove mousewheel", function(event) { // 터치무브와 마우스휠 스크롤 방지
 						event.preventDefault();
 						event.stopPropagation();
 						
 						return false;
-					});
+					}); */
 				});
 			// 포트폴리오 관련 소스 END
 
@@ -101,7 +76,7 @@
 						}
 					}
 				});
-	
+
 				$(".popup-with-form").click(function() {
 					$("button").css("display", "none");
 				});
@@ -118,567 +93,437 @@
 				});
 			// CONTACT POP-UP 관련 소스 END
 			
-			// SEND MAIL
-			function sendMail() {
-				alert(11);
-			}
-			
 		});
+
+		// SEND MAIL
+		function sendMail() {
+			var company = $("input[name=company]").val();
+			var name = $("input[name=name]").val();
+			var email = $("input[name=email]").val();
+			var phone = $("input[name=phone]").val();
+			var comments = $("textarea[name=comments]").val();
+
+			if (company == "" || company == null || name == "" || name == null || email == "" || email == null || phone == "" || phone == null || comments == "" || comments == null) {
+				alert("모든항목을 입력해주세요.");
+				return false;
+			}
+
+			if (email.indexOf("@") == -1) {
+				alert("메일주소를 다시 입력해 주세요.");
+				return false;
+			}
+
+			if ($.trim(company) == "" || $.trim(name) == "" || $.trim(email) == "" || $.trim(phone) == "" || $.trim(comments) == "") {
+				alert("공백은 입력할 수 없습니다.");
+				return false;
+			}
+
+			$.ajax({
+				type: "POST",
+				dataType: "text",
+				data : {
+					company : company,
+					name : name,
+					email : email,
+					phone : phone,
+					comments : comments
+				},
+				url : "/webpage/sendmail.do",
+				success : function () {
+					alert("문의 메일을 전송하였습니다.");
+					window.location.reload();
+				},
+				error : function () {
+					alert("문의 메일 전송 실패");
+				}
+			})
+		}
 
 		// Google map apis
 		function initMap() {
-            var location = {lat: 37.488092, lng: 127.034086};
+            var location = {lat: 37.488049, lng: 127.034059};
+            var imagePath = "${contextPath}/resources/images/test2/raiz_location.png";
             var map = new google.maps.Map(document.getElementById("google_map"), {
-            	zoom: 18,
-                center: location
+            	zoom: 15,
+                center: location,
+                scrollwheel: false,
+                draggable: false
             });
 
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map,
+				icon: imagePath
+			});
         }
 	</script>
-	<style>
-		/*
-		.grid-content {
-			overflow: hidden;
-			height: 0;
-			border: 1px solid #eb6100;
-			background-color: #EEEEEE;
- 			background-image: url(./images/vgrid_back.gif);
-			background-repeat: repeat;
-		
-		}
-		.grid-content div {
-			width: 150px;
-			height: auto;
-			border: 1px solid #000000;
-			background-color: #AAAAAA;
-			color: #FFFFFF;
-			margin: 5px;
-			padding: 3px;
-		}
-		
-		.grid-content div h3 {
-			line-height: 1.1em;
-			margin: 0;
-			padding: 0;
-		}
-		.grid-content div p {
-			margin: 0;
-			padding: 0;
-		}
-		*/
-
-	</style>
-	<body>
-
-		<%-- <nav class="navbar navbar-default navbar-fixed-top">
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+		<!------------------------ NAVIGATION AREA ------------------------>
+		<!-- <nav class="navbar navbar-default">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand" style="font-size: 50px;">
-					raiz corp.
-					<img src="${contextPath}/resources/images/logo.png" alt="이지스퍼블리싱 로고">
+				<a href="#" class="navbar-brand" style="font-size: 50px; color: white;">
+					raíz corp.
 				</a>
 			</div>
 			<div class="navbar-collapse collapse" id="topMenu">
 				<ul class="nav navbar-nav">
-					<li data-menuanchor="raiz_one"><a href="#raiz_one">메뉴1</a></li>
-					<li data-menuanchor="raiz_two"><a href="#raiz_two">메뉴2</a></li>						
-					<li data-menuanchor="raiz_three"><a href="#raiz_three">메뉴3</a></li>
-					<li data-menuanchor="raiz_four"><a href="#raiz_four">메뉴4</a></li>
-					<li data-menuanchor="raiz_five"><a href="#raiz_five">메뉴5</a></li>
-			  </ul>
+					<li data-menuanchor="raiz_home"><a href="#raiz_home">메뉴1</a></li>
+					<li data-menuanchor="raiz_important"><a href="#raiz_important">메뉴2</a></li>						
+					<li data-menuanchor="raiz_section"><a href="#raiz_section">메뉴3</a></li>
+					<li data-menuanchor="raiz_edit"><a href="#raiz_edit">메뉴4</a></li>
+					<li data-menuanchor="raiz_portfolio"><a href="#raiz_portfolio">메뉴5</a></li>
+					<li data-menuanchor="raiz_contact"><a href="#raiz_contact">메뉴6</a></li>
+			  	</ul>
 			</div>
-		</nav> --%>	
-		<div class="quick-group" style="right: 30px; bottom: 30px; position: fixed; z-index: 200;">
-			<a href="#test-form" class="popup-with-form" style="color: black; font-weight: bold; padding: 2rem 0; text-decoration: none; outline: none;">
-				<img src="${contextPath}/resources/images/test/envelop.svg" style="background: white; position: relative; left: 34px; top: -10px;">
-				<span style="position: relative; top: 18px; right: 24px;">CONTACT</span>
-			</a>
+		</nav> -->
+
+		<!------------------------ QUICK BUTTON START ------------------------>
+		<div class="quick-group">
+			<div class="btn-go-top" style="right: 110px; bottom: 30px; position: fixed; z-index: 200;">
+				<a href="#raiz_home" style="color: rgb(176, 14, 35); font-weight: bold; text-decoration: none; outline: none; background: white; display: block; width: 70px; text-align: center; position: relative;">
+					<i aria-hidden="true" class="fa fa-caret-up" style="width: 100%; font-size: 45px;"></i>
+					<span style="position: relative; top: -5px; font-size: 10px;">TOP</span>
+				</a>
+			</div>
+			<div class="btn-quick-contact" style="right: 30px; bottom: 30px; position: fixed; z-index: 200;">
+				<a href="#test-form" class="popup-with-form" style="color: white; font-weight: bold; padding: 1.5rem 0 1rem 0; text-decoration: none; outline: none; background: rgb(176, 14, 35); display: block; width: 70px; text-align: center;">
+					<img src="${contextPath}/resources/images/test/envelop.svg" style="background: white; position: relative; width: 42%;">
+					<span style="position: relative; top: 5px; font-size: 10px;">CONTACT</span>
+				</a>
+			</div>
 		</div>
-		
-		<!-- form itself -->
-		<form id="test-form" class="mfp-hide" style="width: 40%; display: block; margin: 0 auto;">
+		<!------------------------ QUICK BUTTON END ------------------------>
+
+		<!------------------------ CONTACT FORM START ------------------------>
+		<div id="test-form" class="mfp-hide" style="width: 40%; display: block; margin: 0 auto;">
 			<div class="form_wrapper">
 				<div class="form_container">
 					<div class="title_container">
 						<h2>상담문의</h2>
 					</div>
 
-					<div class="row clearfix"><!-- 회사명, 이메일, 이름, 연락처,  -->
+					<div class="row clearfix">
 						<div class="col_half">
-							<label>Company</label>
 							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-building"></i></span>
-								<input type="text" name="first_name" placeholder="회사명" required />
+								<input type="text" name="company" placeholder="회사명" required />
 							</div>
 						</div>
 						<div class="col_half">
-							<label>Name</label>
 							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-								<input type="text" name="last_name" placeholder="이름" />
+								<input type="text" name="name" placeholder="이름" required />
 							</div>
 						</div>
 					</div>
 					<div class="row clearfix">
 						<div class="col_half">
-							<label>Email</label>
 							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
 								<input type="email" name="email" placeholder="이메일" required />
 							</div>
 						</div>
 						<div class="col_half">
-							<label>Phone</label>
 							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
-								<input type="tel" name="phone" placeholder="연락처" pattern="[0-9]{10}" />
+								<input type="tel" name="phone" placeholder="연락처" required pattern="[0-9]" />
 							</div>
 						</div>
 					</div>
 					<div class="row clearfix">
 						<div>
-							<label>Comments</label>
 							<div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
 								<textarea cols="46" rows="3" name="comments" style="resize: none;"></textarea>
 							</div>
 						</div>
 					</div>
 					<input class="button" type="submit" value="Sumbit" onclick="sendMail();"/>
-
 				</div>
 			</div>
-		</form>
+		</div>
+		<!------------------------ CONTACT FORM END ------------------------>
 
-		<div id="fullpage">
-<!-- 			<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home" style="background: url('resources/images/main/raiz_main1.png') 95% / 55% no-repeat;">				 -->
-				<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home">
-				<div class="container" style="background: url('resources/images/test2/raiz_main1.png') no-repeat; height: 100%; background-size: cover;" >
-					<h1 class="myraid-boldIt">raíz corp.</h1>
-					<div class="sub_title">[라이즈] 뿌리, 근원</div>
-					<div style="text-align: left; margin-left: 30px;">
-						<p class="accent" style="margin-bottom: 2rem;">우리가 하는 일은 기업의 <span class="accent_imp">첫인상</span>을 설계하는 것입니다.</p>
-						<p style="font-size: 1.91rem;">
-							우리의 일이 좋은 제품과 서비스를 만들어내는 것 만큼이나 중요한 일이라는<br>
-							신념을 바탕으로 책임감을 가지고 극도로 정제된, 무결한 산출물을 만듭니다.
-						</p>
-					</div>
-				</div>
-	    	</div>	
-	
-			<div id="raiz-important" class="raiz-container section" data-anchor="raiz_important">				
+		<!------------------------ MAIN SLIDE START ------------------------>
+		<div id="fullpage">	
+			<!--========== raiz_main SECTION START ==========-->
+			<div id="raiz_main" class="raiz-container section" data-anchor="raiz_home">
 				<div class="container">
-					<div>
-						<h2 style="font-size: 35px; margin-bottom: 5rem;">우리가 중요하게 생각하는 것은,</h2>
+					<div class="content-wrap">
+						<div class="title">
+							<h1 class="myraid-boldIt">raíz</h1>
+							<span class="sub_title">[라이즈] 뿌리, 근원</span>						
+						</div>
+						<img src="${contextPath}/resources/images/test2/cs_line.png">
+						<div class="desc">
+							<p class="accent">우리가 하는 일은 기업의 <span class="accent_imp">첫인상</span>을 설계하는 것입니다.</p>
+							<p>
+								우리의 일이 좋은 제품과 서비스를 만들어내는 것 만큼이나 중요한 일이라는 신념을 바탕으로 책임감을 가지고 극도로 정제된, 무결한 산출물을 만듭니다.
+							</p>
+						</div>
 					</div>
-					<span style="position: relative; top: 4rem; padding-right: 5rem;">
-						<p class="accent" style="margin: 0 0 -10px;">
-							극도로 정제된 카피라이트
-						</p>
-						<p class="font-eng" style="margin: 0 0 20px; font-size: 22px;">
-							Extremely refined copywrite
-						</p>
-						<p>
-							전달하고자 하는 내용이 오롯이 전달될 수 있도록<br>구두점 하나, 단어 하나 하나 정제하고 정제합니다.
-						</p>
-					</span>
-					<span>
-						<img src="${contextPath}/resources/images/svg/language_img.svg" style="width: 100%;">
-					</span>
-					<span style="position: relative; top: 4rem;">
-						<p class="accent" style="margin: 0 0 -10px;">
-							오해의 여지가 없는 코딩
-						</p>
-						<p class="font-eng" style="margin: 0 0 20px; font-size: 22px;">
-							Unmistakable coding
-						</p>
-						<p>
-							기계가 이해할 수 있는 코딩이 아닌,<br>사람이 이해할 수 있는 코딩을 합니다.
-						</p>
-					</span>
-					<div>
-						<p class="accent" style="margin: 0 0 -10px;">
-							트렌드를 초월한 디자인
-						</p>
-						<p class="font-eng" style="margin: 0 0 20px; font-size: 22px;">
-							Design transcends trend
-						</p>
-						<p>
-							트렌드는 끊임 없이 변하지만<br>사람들이 열광하는 것들에는 공통점이 있습니다.
-						</p>
+				</div>
+	    	</div>
+	    	<!--========== raiz_main SECTION END ==========-->
+
+			<!--========== raiz_important SECTION START ==========-->
+			<div id="raiz-important" class="raiz-container section" data-anchor="raiz_important">			
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-top">
+							<div class="inner-wrap">
+								<img src="${contextPath}/resources/images/test2/important_lowprice.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">저렴한 가격</h3>
+									<p class="desc">
+										웹에이전시를 거치지 않아 중간마진이 없으며,<br>프로젝트 전 과정을 완결적으로 진행함으로써<br>프로젝트를 효율적으로 운영하여 가격을 최소화 합니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-top">
+							<div class="inner-wrap">
+								<img src="${contextPath}/resources/images/test2/important_trust.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">기간 엄수</h3>
+									<p class="desc">
+										일시적인 이슈들보다 고객과의 약속과 상호 간의 신뢰를<br>가장 우선시 합니다. 필요에 따라 프로젝트 기간이 변하더라도<br>지속적인 커뮤니케이션을 통해 고객만족을 보장합니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-top">
+							<div class="inner-wrap-top">
+								<img src="${contextPath}/resources/images/test2/important_belief.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">한 번 경험한 고객들이 다시 찾는 기업</h3>
+									<p class="desc">
+										많은 고객분들이 프로젝트 피드백을 통해 프로젝트 과정과<br>결과물 모든 면에서 높은 만족도를 표해주셨습니다.<br>고객의 높은 만족도가 저희 열정의 원천입니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-bottom">
+							<div class="inner-wrap-bottom">
+								<img src="${contextPath}/resources/images/test2/important_communication.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">원활한 커뮤니케이션</h3>
+									<p class="desc">
+										커뮤니케이션은 산출물 만큼이나 중요한 요소입니다.<br>전담 멤버를 배치하여 핫라인을 구축하는 것은 물론,<br>24시간 말씀을 들을 수 있는 다양한 채널이 열려있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-bottom">
+							<div class="inner-wrap">
+								<img src="${contextPath}/resources/images/test2/important_perfect.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">뛰어난 결과물, 완벽한 검수, 사후관리</h3>
+									<p class="desc">
+										무엇보다 가장 중요한 것은 결과물입니다.<br>10년 후에 봐도 자부심을 느낄 수 있는 결과물을 제작합니다.<br>또한 개발 후 3개월 간 무상하자보수 서비스를 보장합니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4 important-list-bottom">
+							<div class="inner-wrap">
+								<img src="${contextPath}/resources/images/test2/important_onestop.png">
+								<div class="text-wrap">
+									<h3 class="title nanumsquareEB">One-stop 시스템</h3>
+									<p class="desc">
+										기획부터 디자인, 개발 그리고 유지보수까지<br>프로젝트 전 과정을 완결적으로 수행함으로써<br>고객에게 최적화된 결과물을 제작합니다.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!--========== raiz_important SECTION END ==========-->
 
-			<%-- <div id="raiz-list" class="section" data-anchor="raiz_three">
-				<div class="row slide">
-					<div class="container">
-						<div style="width: 55%; height: 340px;">
-							<img src="${contextPath}/resources/images/device/web_resp_desktop.png" style="position: relative; width: 42%; top: 50px; left: 120px;">
-							<img src="${contextPath}/resources/images/device/web_resp_notebook.png" style="position: relative; width: 37%; top: 90px; right: 50px;">
-							<img src="${contextPath}/resources/images/device/web_resp_smartphone.png" style="position: relative; width: 9%; top: 103px; right: 110px;">
-						</div>
-						<div style="margin-left: 118px; margin-bottom: 85px;">
-							<h2 style="font-size: 35px;">웹페이지 개발 - <span class="font-eng">Basic</span></h2>
-							<br>
-							<p style="font-size: 1.8rem;">
-								귀사의 사업에 대한 철저한 분석과 이해를 바탕으로,<br>
-								대표님과 고객이 모두 만족하는 심플하고 트렌디한<br>
-								기본형 웹페이지 입니다.
-								<br><br>
-								선명한 사진과 조화로운 색, 뚜렷한 폰트를 기반으로<br>
-								사업의 내용과 특장점을 명확히 전달합니다.
-								<br><br>
-							</p>
-							<p style="font-size: 1.9rem; font-weight: bold;">
-								기획부터 디자인, 개발, 배포까지 완결적으로.<br>
-								필요하다면 사진부터 영상, 그림, 상표제작까지.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row slide" style="background-color:#eee;">            
-					<div class="container art">
-						<div>
-							<img src="${contextPath}/resources/images/art/web_art.png" style="padding-left: 110px; margin-bottom: 50px;">
-						</div>
-						<br>
-						<p style="font-size: 1.8rem;">
-							특별하고 유일무이한,<br>
-							볼수록 매력적인 아트형 웹페이지 입니다.
-						</p>
-						<br>
-						<p style="font-size: 2rem; font-weight: bold;">
-							귀사의 에센스를 추려낸 카피라이트, 카피라이트에 최적화된 삽화(그림) 및 아이콘을<br>
-							내부 전문가들이 직접 기획, 디자인, 제작하여 고객에게 최적화된 '작품'을 제작합니다.
-						</p>
-					</div>
-				</div>
-				<div class="row slide" style="background-color:#eee;">
-					<div class="col-md-8 col-sm-8">
-						<h3>Do it! Node.js 프로그래밍 - 동영상 강의</h3>
-						<p>강사: 정재곤 &nbsp;&nbsp; 강좌수:99 &nbsp;&nbsp; 등록일:2017.03.31</p>
-						<p>《Do it! Node.js 프로그래밍》 개정판 동영상 강의입니다.  </p>
-						<p>저자 홈페이지인 tech-town.org 에서 다운로드받으실 수도 있습니다.</p>
-					</div>
-				</div>
-			</div> --%>
-
-			<!-- <div id="raiz-six" class="raiz-container section" data-anchor="raiz_six" style="background: url('resources/images/comm/multimedia_bg1.png') 0% 0% / cover no-repeat;">
-				<div class="container" style="color: white;">
-					<div>
-						<p style="background: rgba(225, 227, 229, 0.5); width: 40rem; font-size: 4rem; padding: 1rem 2rem;">
-							사진 촬영 및 편집
-						</p>
-						<p style="padding: 1rem 2rem; font-size: 1.7rem;">
-							귀사의 홈페이지에 가장 필요한 사진은 인터넷이 아니라 귀사에 있습니다.<br>
-							좋은 사진 한 장은 귀사의 이미지와 가치를 높일 수 있을 뿐만 아니라,<br>
-							오랫동안 다양한 분야에서 활용할 수 있습니다.
-						</p>
-					</div>
-					<br><br><br>
-					<div>
-						<p style="background: rgba(225, 227, 229, 0.5); width: 40rem; font-size: 4rem; padding: 1rem 2rem;">
-							영상제작
-						</p>
-						<p style="padding: 1rem 2rem; font-size: 1.7rem;">
-							기획의도에 부합하는 정확하고 센스있는 영상을 제작합니다.<br>
-							홈페이지 영상부터, 서비스 소개, 인터뷰까지 1~5분 내외의 영상 촬영 및 편집.
-						</p>
-					</div>
-				</div>
-			</div> -->
-
+			<!--========== raiz_multi SECTION START ==========-->
 			<div id="raiz-section" class="raiz-container section" data-anchor="raiz_section">
 				<div class="container">
-
 					<div class="row raiz-section-web">
-						<div class="raiz-section-text">
-							<p class="raiz-section-p-0">웹페이지 개발</p>
-							<p class="raiz-section-p-1">BASIC</p>
-							<br>
-							<p class="raiz-section-p-2">
-								귀사의 사업에 대한 철저한 분석과 이해를 바탕으로 하여 대표님과 고객이 모두 만족하는 심플하고 트렌디한 기본형 웹페이지 입니다.
-							</p>
-							<br>
-							<div class="raiz-section-div">
-								<p class="raiz-section-p-3">
-									선명한 사진과 조화로운 색, 뚜렷한 폰트를 기반으로 귀사 사업의 내용과 특장점을 명확히 전달합니다.
-								</p>
-								<br>
-								<p class="raiz-section-p-3">
-									기획부터 디자인, 개발 배포까지 완결적으로. 필요하다면 사진부터 영상, 그림, 상표제작까지.
-								</p>							
+						<div class="web-inner-wrap">
+							<div class="title-wrap">
+								<h1 class="nanumsquareEB">웹페이지 개발</h1>
 							</div>
-						</div>
-						<%--@@@ <div class="col-lg-6 col-md-6 raiz-section-img" style="">
-							<img src="${contextPath}/resources/images/test/webpage_basic_bg2.png">
-						</div> --%>
-					</div>
-
-					<div class="row raiz-section-art" style="background: url('resources/images/test2/web_art1.png') no-repeat;">
-						<div class="text-center">
-							<p>
-								<img src="${contextPath}/resources/images/test/webpage_art_1.png">
-							</p>
-							<p class="font-weight-bold raiz-section-art-p-0">
-								특별하고 유일무이한, 볼수록 매력적인 아트형 웹페이지 입니다.
-							</p>
-							<p class="raiz-section-art-p-1">
-								귀사의 에센스를 추려낸 카피라이트, 카피라이트에 최적화된 삽화(그림) 및 아이콘을<br>
-								내부 전문가들이 직접 기획, 디자인, 제작하여 고객에게 최적화된 '작품'을 제작합니다.
-							</p>
+							<div class="sub-title-wrap">
+								<p class="nanumsquareEB">BASIC</p>
+							</div>
+							<div class="desc">
+								<p class="desc-main">
+									<span class="web-desc-body-0">귀사의 사업에 대한 철저한 분석과</span>
+									<span class="web-desc-body-1"> 이해를 바탕으로 하여 대표님과</span>
+									<span class="web-desc-body-2"><span> 고객이 모두 만족하는</span><span class="desc-bold"> 심플하고</span></span>
+									<span class="web-desc-body-3"><span class="desc-bold"> 트렌디한</span> 기본형 웹페이지 입니다.</span>
+								</p>
+								<p class="desc-sub desc-bold">
+									<span>선명한 사진<br>조화로운 색<br>뚜렷한 폰트<br></span>
+								</p>
+								<p class="desc-bold">
+									를 기반으로<br>귀사 사업의 내용과 특장점을<br>명확히 전달합니다.
+								</p>
+							</div>
 						</div>
 					</div>
 
-					<div class="row text-center raiz-section-multilan">
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-0">
-							<img src="${contextPath}/resources/images/test2/app_design_1.png" style="width: 100%;">
-							<%--@@@ <div class="raiz-section-design-div-1">
-								<img src="${contextPath}/resources/images/test/app_design_img1.png">
-								<h1>App UI 디자인</h1>
-								<br>
-								<p class="raiz-section-design-p-0">
-									클라이언트와 사용자.
-								</p>
-								<p class="raiz-section-design-p-1">
-									양 쪽의 관점에서 서비스를 바라보고, 전달해야 하는 내용들의 우선순위를 도출한 후, 가장 중요한 것을 가장 효과적으로 전달할 수 있도록 서비스에 최적화된 디자인을 구현합니다.
-								</p>
-							</div> --%>
-						</div>
-						<!-- @@@ <div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-0">
-							<div class="raiz-section-multilan-div-1">
-								<h3>다국어홈페이지개발</h3>
+					<div class="row raiz-section-art">
+						<div class="art-inner-wrap text-center">
+							<div class="title-img">
+								<img src="${contextPath}/resources/images/test2/web_art_title.png">
 							</div>
-						</div> -->
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-2">
-							<div class="raiz-section-multilan-div-3">
-								<h3>웹페이지유지보수</h3>
+							<div class="title-wrap">
+								<h2 class="nanumsquareEB">특별하고 유일무이한, 볼수록 매력적인 <span class="art-color">아트형 웹페이지</span> 입니다.</h2>
+							</div>
+							<div class="desc">
+								<span class="desc-top">귀사의 에센스를 추려낸 카피라이트, 카피라이트에 최적화된 삽화(그림) 및 아이콘을</span><br>
+								<span>내부 전문가들이 직접 기획, 디자인, 제작하여 고객에게 최적화된 '작품'을 제작합니다.</span>
 							</div>
 						</div>
 					</div>
-					
-					<div class="row text-center raiz-section-design">
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-multilan-div-0">
-							<div class="raiz-section-multilan-div-1">
-								<h3>다국어홈페이지개발</h3>
+
+					<div class="row raiz-cardlist-top">
+						<div class="col-xs-12 col-md-6 col-lg-6">
+						<!-- 455px -->
+							<div class="app-inner-wrap text-center">
+								<div class="title-img">
+									<img src="${contextPath}/resources/images/test2/app_design_img.png">								
+								</div>
+								<div class="title-wrap">
+									<h1 class="nanumsquareEB">App UI 디자인</h1>
+								</div>
+								<div class="desc">
+									<div class="desc-main">
+										클라이언트와 사용자.
+									</div>
+									<div class="desc-sub">
+										양 쪽의 관점에서 서비스를 바라보고,<br>전달해야 하는 내용들의 우선순위를 도출한 후,<br>가장 중요한 것을 가장 효과적으로 전달할 수 있도록<br>서비스에 최적화된 디자인을 구현합니다.								
+									</div>
+								</div>
 							</div>
 						</div>
-						<%-- @@@ <div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-0">
-							<div class="raiz-section-design-div-1">
-								<img src="${contextPath}/resources/images/test/app_design_img1.png">
-								<h1>App UI 디자인</h1>
-								<br>
-								<p class="raiz-section-design-p-0">
-									클라이언트와 사용자.
-								</p>
-								<p class="raiz-section-design-p-1">
-									양 쪽의 관점에서 서비스를 바라보고, 전달해야 하는 내용들의 우선순위를 도출한 후, 가장 중요한 것을 가장 효과적으로 전달할 수 있도록 서비스에 최적화된 디자인을 구현합니다.
-								</p>
-							</div>
-						</div> --%>
-						<div class="col-xs-12 col-md-6 col-lg-6 raiz-section-design-div-2">
-							<div class="raiz-section-design-div-3">
-								<!-- @@@ <h1>상표 개발 & 디자인</h1>
-								<br>
-								<p class="raiz-section-design-p-1">
-									서비스의 본질을 토대로, 고객들에게 어떤 이미지를 각인시키는 것이 효과적일 지 분석한 후 철저한 리서치를 기반으로 디자인&개발 합니다.
-								</p> -->
+						<div class="col-xs-12 col-md-6 col-lg-6">
+							<div class="maintenance-inner-wrap text-center">
+								<div class="title-wrap">
+									<h1 class="nanumsquareEB">유지보수</h1>
+								</div>
+								<div class="desc">
+									사후관리까지 고려하신다면, 모든 프로세스를 완결적으로 <span class="maintenance-desc-sub">수행할 수 있는 라이즈에게.</span>
+								</div>
 							</div>
 						</div>
 					</div>
 					
-					<!-- <div class="row" style="background: url('resources/images/test2/pic_video.png') 0% 0% / cover no-repeat; color: white; margin-top: 5rem; height: 624px;">
-						<div>
-							<p style="background: rgba(225, 227, 229, 0.5); width: 40rem; font-size: 4rem; padding: 1rem 2rem;">
-								사진 촬영 및 편집
-							</p>
-							<p style="padding: 1rem 2rem; font-size: 1.7rem;">
-								귀사의 홈페이지에 가장 필요한 사진은 인터넷이 아니라 귀사에 있습니다.<br>
-								좋은 사진 한 장은 귀사의 이미지와 가치를 높일 수 있을 뿐만 아니라,<br>
-								오랫동안 다양한 분야에서 활용할 수 있습니다.
-							</p>
-						</div>
-						<br><br><br>
-						<div>
-							<p style="background: rgba(225, 227, 229, 0.5); width: 40rem; font-size: 4rem; padding: 1rem 2rem;">
-								영상제작
-							</p>
-							<p style="padding: 1rem 2rem; font-size: 1.7rem;">
-								기획의도에 부합하는 정확하고 센스있는 영상을 제작합니다.<br>
-								홈페이지 영상부터, 서비스 소개, 인터뷰까지 1~5분 내외의 영상 촬영 및 편집.
-							</p>
-						</div>
-					</div> -->
-
-					<!-- <div class="row">
-						
-						<div id="grid-content2" class="grid-content">
-							<div>
-								<h3>AAA</h3>
-								<p><img src="http://dummyimage.com/150x120" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>BBB</h3>
-								<p><img src="http://dummyimage.com/150x60" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div class="wl">
-								<h3>CCC</h3>
-								<p><img src="http://dummyimage.com/150x90" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>DDD</h3>
-								<p><img src="http://dummyimage.com/150x150" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>EEE</h3>
-								<p><img src="http://dummyimage.com/150x120" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>FFF</h3>
-								<p><img src="http://dummyimage.com/150x60" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>GGG</h3>
-								<p><img src="http://dummyimage.com/150x90" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>HHH</h3>
-								<p><img src="http://dummyimage.com/150x150" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>III</h3>
-								<p><img src="http://dummyimage.com/150x120" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
-							</div>
-							<div>
-								<h3>JJJ</h3>
-								<p><img src="http://dummyimage.com/150x60" alt="dummy" /></p>
-								<p><a href="#">DELETE</a></p>
+					<div class="row raiz-cardlist-bottom">
+						<div class="col-xs-12 col-md-6 col-lg-6">
+							<div class="multilan-inner-wrap">
+								<div class="title-wrap">
+									<img src="${contextPath}/resources/images/test2/multilanguage_text.png">
+								</div>
 							</div>
 						</div>
-						
-					</div> -->
-
+						<div class="col-xs-12 col-md-6 col-lg-6">
+							<div class="trademark-inner-wrap text-center">
+								<div class="title-img">
+									<img src="${contextPath}/resources/images/test2/fingerprint_white.png">							
+								</div>
+								<div class="title-wrap">
+									<h1 class="nanumsquareEB">상표 디자인</h1>
+								</div>
+								<div class="desc">
+									<span class="desc-body-0">서비스의 본질을 기반으로</span><br>
+									<span class="desc-body-1">고객들에게 어떤 이미지를</span><br>
+									<span class="desc-body-2">각인시키는 것이 효과적일지</span><br>
+									<span class="desc-body-3">분석한 후 철저한 리서치를</span><br>
+									<span class="desc-body-4">기반으로 디자인&개발 합니다.</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
+			<!--========== raiz_multi SECTION END ==========-->
+
+			<!--========== raiz_edit SECTION START ==========-->
 			<div id="raiz-edit" class="raiz-container section" data-anchor="raiz_edit">
-				<div class="container" style="background: url('resources/images/test2/pic_video.png') no-repeat; background-size: cover; height: 100%;">
-					
-				</div>
-			</div>
-
-			<div id="raiz-communication" class="raiz-container section" data-anchor="raiz_communication">
 				<div class="container">
-					<div class="communication-text">
-						<div style="font-size: 4rem;">
-							커뮤니케이션
+					<div class="content-wrap-top">
+						<div class="title-wrap">
+							<h1 class="nanumsquareEB">사진 촬영 및 편집</h1>
 						</div>
-						<br><br>
-						<p style="font-size: 1.7rem;">
-							원활한 커뮤니케이션은 프로젝트에서 산출물 만큼이나 중요한 요소입니다.<br>
-							전담 멤버를 배치하여 핫라인을 구축하는 것은 물론, 지속적으로 진행과정을 보고드립니다.<br>
-							또한 24시간 언제든 고객님의 말씀을 들을 수 있는 다양한 채널이 열려있습니다.
-						</p>					
+						<div class="desc">
+							<div>귀사의 홈페이지에 가장 필요한 사진은 인터넷이 아니라 내부에 있습니다.</div>
+							<div>좋은 사진 한 장은 귀사의 이미지와 가치를 높일 수 있을 뿐만 아니라,</div>
+							<div>오랫동안 다양한 분야에서 활용할 수 있습니다.</div>
+						</div>
+					</div>
+					<div class="divide-line"></div>
+					<div class="content-wrap-bottom">
+						<div class="title-wrap">
+							<h1 class="nanumsquareEB">영상제작</h1>
+						</div>
+						<div class="desc">
+							<div>기획의도에 부합하는 정확하고 센스있는 영상을 제작합니다.</div>
+							<div>홈페이지 영상부터, 서비스 소개, 인터뷰까지 1~5분 내외의 영상 촬영 및 편집.</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!--========== raiz_edit SECTION END ==========-->
 
+			<!--========== raiz_portfolio SECTION START ==========-->
 			<div id="raiz-portfolio" class="raiz-container section" data-anchor="raiz_portfolio">
 				<div class="container">
-					<div>
-						<h2>포트폴리오</h2>
+					<div class="title-wrap">
+						<h1>포트폴리오</h1>
 					</div>
 					<ul>
-						<li class="col-12 col-md-6 col-lg-4" style="padding: 0;">
+						<li class="col-12 col-md-6 col-lg-4">
 							<figure class="imghvr-fade">
-								<img src="${contextPath}/resources/images/test/pf_evergreen.png" style="width: 100%; opacity: 1;">
+								<img src="${contextPath}/resources/images/test/pf_evergreen.png">
                            		<figcaption>
-	                           		<h4 style="padding: 18.2rem 2rem;">반응형 홈페이지</h4>
-	                           		<a class="test-popup-link" href="${contextPath}/resources/images/test/evergreenC&T_detail.png">WEB</a>
+	                           		<h4>반응형 홈페이지</h4>
+	                           		<a class="test-popup-link" href="${contextPath}/resources/images/test/evergreenC&T_detail.png"></a>
                            		</figcaption>
                            	</figure>
 						</li>
-						<li class="col-12 col-md-6 col-lg-4" style="padding: 0;">
+						<li class="col-12 col-md-6 col-lg-4">
 							<figure class="imghvr-fade">
-								<img src="${contextPath}/resources/images/test/pf_easyon.png" style="width: 100%; opacity: 1;">
+								<img src="${contextPath}/resources/images/test/pf_easyon.png">
                            		<figcaption>
-	                           		<h4 style="padding: 18.2rem 2rem;">BASIC 홈페이지</h4>
+	                           		<h4>BASIC 홈페이지</h4>
 	                           		<a class="test-popup-link" href="${contextPath}/resources/images/test/pf_easyon_detail.png"></a>
                            		</figcaption>
                            	</figure>
 						</li>
-						<li class="col-12 col-md-6 col-lg-4" style="padding: 0;">
+						<li class="col-12 col-md-6 col-lg-4">
 							<figure class="imghvr-fade">
-								<img src="${contextPath}/resources/images/test/pf_zari.png" style="width: 100%; opacity: 1;">
+								<img src="${contextPath}/resources/images/test/pf_zari.png">
                            		<figcaption>
-	                           		<h4 style="padding: 18.2rem 2rem;">APP DESIGN</h4>                           		
+	                           		<h4>APP DESIGN</h4>                           		
                            		</figcaption>
                            	</figure>
 						</li>
 					</ul>
 				</div>
 			</div>
-			
-			<%-- <div id="raiz-member" class="raiz-container section" data-anchor="raiz_member">
-				<div class="container">
-					<div style="font-size: 2.2rem; background: url('${contextPath}/resources/images/member/member_title.png') no-repeat; background-size: 300px; width: 452px; height: 65px; padding: 15px 0 13px 55px;">
-						라이즈 멤버
-					</div>
-					<br><br>
-					<!-- table 이 아니라 부트스트랩 그리드 시스템을 사용해보면 어떨까 -->
-					<table style="width: 100%;">
-					  <tr>
-					    <td rowspan="2" style="padding-left: 55px;">
-					    	<img src="${contextPath}/resources/images/member/member_sm.png">
-					    </td>
-					    <td style="padding-left: 135px;">
-					    	<img src="${contextPath}/resources/images/member/member_danika.png">
-					    </td>
-					    <td rowspan="2" style="padding-left: 80px;">
-					    	<img src="${contextPath}/resources/images/member/member_jay.png">
-					    </td>
-					  </tr>
-					  <tr>
-					    <td style="padding-left: 170px;">
-					    	<img src="${contextPath}/resources/images/member/member_ch.png">
-					    </td>
-					  </tr>
-					</table>
-				</div>
-			</div> --%>
-			
+			<!--========== raiz_portfolio SECTION END ==========-->
+
+			<!--========== raiz_contact SECTION START ==========-->
 			<div id="raiz-contact" class="raiz-container section fp-auto-height" data-anchor="raiz_contact">
 				<div class="container">
-					<div class="card map default">
-	                    <div id="google_map"></div>
-	                    <div class="map-inner">
-	                        <div class="map-pin fadeInLeft">
-	                            <img src="${contextPath}/resources/images/map-pin-sunshine.png" alt="img" class="img-fluid animate-pulse-down">
-	                            <div class='pulse'></div>
-	                        </div>
-	                    </div>
-	
-	<!--                     <div class="contact-front"> -->
-	<%-- 	                	<img src="${contextPath}/resources/images/test/cs_img.png"> --%>
-	<!-- 	                </div> -->
-	                </div>
+	                <div id="google_map"></div>
 	                <!-- End of map -->
 
 					<div class="footer-section">
 						<div style="height: 75px;"></div>
 						<div class="footer-area">
 							<div>
-								고객센터
+								<span>고객센터</span>
 							</div>
+							<img src="${contextPath}/resources/images/test2/cs_line.png" style="width: 10px; height: 75px; position: relative; top: -33px;">
 							<div class="footer-support">
 								<p>
 									<span class="footer-text">문의전화</span>
@@ -700,7 +545,7 @@
 								주식회사 라이즈
 							</p>
 							<p class="footer-info">
-								서울시 가남구 도곡로2길 29, 3F 303
+								서울시 강남구 도곡로2길 29, 3F 303
 							</p>
 							<p class="footer-info">
 								사업자등록번호 564 - 88 - 00759
@@ -715,87 +560,12 @@
 						</div>
 						<div style="height: 100px;"></div>
 					</div>
-					<%-- 
-	                <div class="card contact pattern-bottom">
-	                    <div class="mini-container p-top-125 p-bot-125 p-sm-top-80 p-sm-bot-80">
-	                        <div class="contact-front">
-			                	<img src="${contextPath}/resources/images/test/footer_back.jpg">
-			                </div>
-	                        
-	                        <div class="section-heading m-bot-45 fadeInRight">
-	                            <h2>Contact Us</h2>
-	                            <div class="heading-lines clearfix">
-	                                <span class="line"></span>
-	                                <span class="bi bi-shutter1"></span>
-	                                <span class="line"></span>
-	                            </div>
-	                        </div>
-	                        <!-- End Header -->
-	
-	                        <form action="contact.php" method="POST" class="hornbill-contact-form fadeInRight" id="contact-form" >
-	                            <div class="messages"></div>
-	                            <div class="form-group">
-	                                <input type="text"  name="name" class="form-control input-circle" id="name" placeholder="Your name:" required="required" data-error="Name is required.">
-	                                <div class="help-block with-errors"></div>
-	                            </div>
-	                            <div class="form-group">
-	                                <input type="text" name="email" class="form-control input-circle" id="email" placeholder="Email address:" required="required" data-error="Email address is required.">
-	                                <div class="help-block with-errors"></div>
-	                            </div>
-	                            <div class="form-group">
-	                                <textarea  name="message" class="form-control input-circle" id="message" placeholder="Your message:" required="required" data-error="Please,leave us a message."></textarea>
-	                                <div class="help-block with-errors"></div>
-	                            </div>
-	                            <div class="form-group text-right">
-	                                <button class="btns btn-circle btn-send bg-sharp text-white hover-glass" type="submit">Send</button>
-	                            </div>
-	                        </form>
-	                        
-	                    </div>
-	                </div>
-	                 --%>
 				</div>
 			</div>
-			<!-- 
-			<div id="raiz-footer" class="raiz-container section " data-anchor="raiz_footer">
-				<div class="container" style="color: white;">
-					<div style="height: 374px;"></div>
-					<div style="width: fit-content; background: #5E5E5E;">
-						<span>
-							고객센터
-						</span>
-						<span>
-							<p>문의전화&nbsp;&nbsp;&nbsp;02 6085 0237</p>
-							<p>이메일&nbsp;&nbsp;&nbsp;smhyeong@raizcorp.co.kr</p>
-							<p>오시는길&nbsp;&nbsp;&nbsp;서울시 강남구 도곡로2길 29, 3F 303</p>
-						</span>
-					</div>
-					<div>
-						<p>
-							주식회사 라이즈
-						</p>
-						<p>
-							서울시 가남구 도곡로2길 29, 3F 303
-						</p>
-						<p>
-							사업자등록번호 564 - 88 - 00759
-						</p>
-						<p>
-							e-mail smhyeong@raizcorp.co.kr
-						</p>
-					</div>
-					<div>
-						Copyright &copy; 2018. raizcorp. All rights reserved.
-					</div>
-					<div style="height: 374px;"></div>
-				</div>
-			</div>
- -->
-			<footer class="footer">
-				The site owner is not responsible for uploaded images. You can only upload images for which you own the copyright.
-			</footer>
+			<!--========== raiz_contact SECTION END ==========-->
+
 		</div>
-		
+		<!------------------------ MAIN SLIDE END ------------------------>
 
 	</body>
 </html>
