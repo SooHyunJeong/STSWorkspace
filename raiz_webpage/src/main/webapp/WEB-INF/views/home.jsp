@@ -22,12 +22,15 @@
     	<link href="${contextPath}/resources/css/bicon.min.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/font-awesome.min.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/contact_form.css" rel="stylesheet">
-    	
+    	<link href="${contextPath}/resources/css/jBox.css" rel="stylesheet">
+
     	<script src="${contextPath}/resources/js/jquery-2.2.4.min.js"></script>
 	    <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
     	<script src="${contextPath}/resources/js/scrolloverflow.min.js"></script>
 		<script src="${contextPath}/resources/js/jquery.fullpage.js"></script>
         <script src="${contextPath}/resources/js/jquery.magnific-popup.js"></script>
+        <script src="${contextPath}/resources/js/jBox.js"></script>
+
 	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvAJLWC6t2OcLmFN6sJ80oSwVUUCYip08&callback=initMap"></script>        
 	</head>
 	<script>
@@ -80,19 +83,9 @@
 				$(".popup-with-form").click(function() {
 					$("button").css("display", "none");
 				});
-				
-				// 포트폴리오 SECTION 에 팝업 시 부모창 SCROLL 방지, 해제관련 소스는 magnificPopup.js 쪽에 있음.
-				$(".popup-with-form").click(function() {
-					$("html, body").css({"overflow": "hidden", "height": "100%"}); // 모달팝업 중 html,body의 scroll을 hidden시킴 
-					$("body").on("scroll touchmove mousewheel", function(event) { // 터치무브와 마우스휠 스크롤 방지
-						event.preventDefault();
-						event.stopPropagation();
-						
-						return false;
-					});
-				});
 			// CONTACT POP-UP 관련 소스 END
-			
+
+			new jBox('Image');
 		});
 
 		// SEND MAIL
@@ -485,7 +478,15 @@
 								<img src="${contextPath}/resources/images/test/pf_evergreen.png">
                            		<figcaption>
 	                           		<h4>반응형 홈페이지</h4>
-	                           		<a class="test-popup-link" href="${contextPath}/resources/images/test/evergreenC&T_detail.png"></a>
+<%-- 	                           		<a class="test-popup-link" href="${contextPath}/resources/images/test/evergreenC&T_detail.png"></a> --%>
+									<a href="${contextPath}/resources/images/test/evergreenC&T_detail.png" data-jbox-image="gallery1" class="demo-img"></a>
+									<div class="jBox-container">
+										<div class="img-alt-text"></div>
+										<img src="${contextPath}/resources/images/test/evergreenC&T_detail.png">
+										<i id="prev" class="fa fa-angle-left"></i>
+										<i id="next" class="fa fa-angle-right"></i>
+										<i id="close" class="fa fa-times"></i>
+									</div>
                            		</figcaption>
                            	</figure>
 						</li>
