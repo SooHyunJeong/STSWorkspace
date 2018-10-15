@@ -1,15 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <!DOCTYPE html>
-<html lang="ko">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
 
-        <title>evergreen C&T</title>
+        <title><spring:message code="message.main.head.title"/></title>
 
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
@@ -95,7 +96,7 @@
 			var message = $("#message").val();
 
 			if (name == "" || name == null || email == "" || email == null || tel == "" || tel == null || message == "" || message == null) {
-				alert("필수항목을 입력해주세요.");
+				alert("<spring:message code='message.main.mail.alert01'/>");
 				return false;
 			}
 
