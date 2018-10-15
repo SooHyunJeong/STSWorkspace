@@ -1300,12 +1300,12 @@ ul, ol {
         max-width: 55px;
         margin-top: 50px;
         margin-bottom: 22px; }
-  .map.default #google_map {
+  .map.default #map {
     height: 100%;
     width: 100%; }
   .map.default .map-inner .map-pin {
     top: 23%; }
-  .map.full #google_map {
+  .map.full #map {
     height: 800px;
     width: 100%; }
 
@@ -1456,7 +1456,7 @@ ul, ol {
   .contact-style-three .heading h2 {
     text-transform: capitalize; }
   .contact-style-three .left-info {
-  	z-index: 5;
+  	z-index: 100;
     color: #fff;
     padding: 45px 30px;
     background-color: rgb(0, 125, 140);
@@ -2974,7 +2974,7 @@ body.body-wine .features-list.hover-none .single-feature:hover {
     width: 100%;
     float: none; }
 
-  .map.default #google_map {
+  .map.default #map {
     height: 350px; }
   .map.default .map-inner .map-pin {
     top: 0; }

@@ -6,6 +6,7 @@
     <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="naver-site-verification" content="77ef9fbf88f77fdcb66961860f2306ebe5b404f5"/>
 		<title>raiz corp.</title>
 		
 		<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
@@ -15,7 +16,7 @@
 		
 		<link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 		<link href="${contextPath}/resources/css/jquery.fullpage.css" rel="stylesheet">
-    	<link href="${contextPath}/resources/css/style.css" rel="stylesheet">
+<%--     	<link href="${contextPath}/resources/css/style.css" rel="stylesheet"> --%>
     	<link href="${contextPath}/resources/css/common.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/imagehover.min.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/magnific-popup.css" rel="stylesheet">
@@ -23,6 +24,7 @@
     	<link href="${contextPath}/resources/css/font-awesome.min.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/contact_form.css" rel="stylesheet">
     	<link href="${contextPath}/resources/css/jBox.css" rel="stylesheet">
+    	<link href="${contextPath}/resources/css/preloader_main.css" rel="stylesheet">
 
     	<script src="${contextPath}/resources/js/jquery-2.2.4.min.js"></script>
 	    <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
@@ -35,6 +37,11 @@
 	</head>
 	<script>
 		$(document).ready(function() {
+
+			setTimeout(function() {
+				$("body").addClass("loaded");
+			}, 3000);
+
 			$("#fullpage").fullpage({
 				anchors:["raiz_home", "raiz_important", "raiz_section", "raiz_edit", "raiz_portfolio", "raiz_contact"],
 				menu: "#topMenu",
@@ -84,8 +91,21 @@
 					$("button").css("display", "none");
 				});
 			// CONTACT POP-UP 관련 소스 END
+			
+			
+			var UserAgent = navigator.userAgent;
+			var objLink = document.createElement("link");
 
-			new jBox('Image');
+			objLink.rel = "stylesheet";
+			objLink.type = "text/css";
+
+			if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) {
+				objLink.href = "${contextPath}/resources/css/m_style.css";				
+			} else {
+				objLink.href = "${contextPath}/resources/css/style.css";
+			}
+
+			document.head.appendChild(objLink);
 		});
 
 		// SEND MAIL
@@ -174,19 +194,30 @@
 			  	</ul>
 			</div>
 		</nav> -->
+		<!------------------------ PRELOADER SECTION START ------------------------>
+
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+
+		</div>
+
+		<!------------------------ PRELOADER SECTION END ------------------------>
 
 		<!------------------------ QUICK BUTTON START ------------------------>
 		<div class="quick-group">
-			<div class="btn-go-top" style="right: 110px; bottom: 30px; position: fixed; z-index: 200;">
-				<a href="#raiz_home" style="color: rgb(176, 14, 35); font-weight: bold; text-decoration: none; outline: none; background: white; display: block; width: 70px; text-align: center; position: relative;">
-					<i aria-hidden="true" class="fa fa-caret-up" style="width: 100%; font-size: 45px;"></i>
-					<span style="position: relative; top: -5px; font-size: 10px;">TOP</span>
+			<div class="btn-go-top">
+				<a href="#raiz_home">
+					<i aria-hidden="true" class="fa fa-caret-up"></i>
+					<span>TOP</span>
 				</a>
 			</div>
-			<div class="btn-quick-contact" style="right: 30px; bottom: 30px; position: fixed; z-index: 200;">
-				<a href="#test-form" class="popup-with-form" style="color: white; font-weight: bold; padding: 1.5rem 0 1rem 0; text-decoration: none; outline: none; background: rgb(176, 14, 35); display: block; width: 70px; text-align: center;">
-					<img src="${contextPath}/resources/images/test/envelop.svg" style="background: white; position: relative; width: 42%;">
-					<span style="position: relative; top: 5px; font-size: 10px;">CONTACT</span>
+			<div class="btn-quick-contact">
+				<a href="#test-form" class="popup-with-form">
+					<img src="${contextPath}/resources/images/test/envelop.svg">
+					<span>CONTACT</span>
 				</a>
 			</div>
 		</div>
@@ -202,32 +233,35 @@
 
 					<div class="row clearfix">
 						<div class="col_half">
-							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-building"></i></span>
+							<div class="input_field"><span><img src="${contextPath}/resources/images/svg/fort-awesome-alt-brands.svg" style="width: 70%; position: relative; top: 25%;"></span>
 								<input type="text" name="company" placeholder="회사명" required />
 							</div>
 						</div>
 						<div class="col_half">
-							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+							<div class="input_field"><span><img src="${contextPath}/resources/images/svg/grav-brands.svg" style="width: 80%; position: relative; top: 25%;"></span>
 								<input type="text" name="name" placeholder="이름" required />
 							</div>
 						</div>
 					</div>
 					<div class="row clearfix">
 						<div class="col_half">
-							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+							<div class="input_field"><span><img src="${contextPath}/resources/images/svg/envelope-solid.svg" style="width: 80%; position: relative; top: 22%;"></span>
 								<input type="email" name="email" placeholder="이메일" required />
 							</div>
 						</div>
 						<div class="col_half">
-							<div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+							<div class="input_field"><span><img src="${contextPath}/resources/images/svg/mobile-solid.svg" style="width: 65%; position: relative; top: 15%;"></span>
 								<input type="tel" name="phone" placeholder="연락처" required pattern="[0-9]" />
 							</div>
 						</div>
 					</div>
 					<div class="row clearfix">
 						<div>
-							<div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
-								<textarea cols="46" rows="3" name="comments" style="resize: none;"></textarea>
+							<div class="textarea_field">
+								<%-- <span>
+									<img src="${contextPath}/resources/images/svg/id-card-alt-solid.svg" style="width: 77%; position: relative; top: 20%;">
+								</span> --%>
+								<textarea cols="46" rows="3" name="comments" style="resize: none;" placeholder="내용"></textarea>
 							</div>
 						</div>
 					</div>
@@ -519,16 +553,16 @@
 	                <!-- End of map -->
 
 					<div class="footer-section">
-						<div style="height: 75px;"></div>
+						<div style="height: 76px;"></div>
 						<div class="footer-area">
 							<div>
 								<span>고객센터</span>
 							</div>
-							<img src="${contextPath}/resources/images/test2/cs_line.png" style="width: 10px; height: 75px; position: relative; top: -33px;">
+							<img class="footer-divide-line" src="${contextPath}/resources/images/test2/cs_line.png">
 							<div class="footer-support">
 								<p>
 									<span class="footer-text">문의전화</span>
-									<span><b>02 6085 0237</b></span>
+									<span><b>02<img style="width: 0;"/> 6085<img style="width: 0;"/> 0237</b></span>
 								</p>
 								<p>
 									<span class="footer-text">이메일</span>
@@ -549,7 +583,7 @@
 								서울시 강남구 도곡로2길 29, 3F 303
 							</p>
 							<p class="footer-info">
-								사업자등록번호 564 - 88 - 00759
+								사업자등록번호 564<img style="width: 0;"/> - 88<img style="width: 0;"/> - 00759
 							</p>
 							<p class="footer-info">
 								e-mail smhyeong@raizcorp.co.kr

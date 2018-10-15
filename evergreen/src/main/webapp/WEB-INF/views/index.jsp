@@ -45,7 +45,8 @@
         <script src="${contextPath}/resources/js/jquery.rwdImageMaps.min.js"></script>
         <!-- EndInput -->
 
-        <!-- Google map apis -->
+        <!-- Google map apis
+                     유료로 변경되어 주석처리
         <script>
             function initMap() {
                 var location = {lat: 37.547632, lng: 127.057505};
@@ -57,8 +58,9 @@
 
             }
         </script>
+
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbU7sYwEU66dNJc95Oyuuah-hawghWwa0&callback=initMap"></script>
-        <!-- EndMapApis -->
+        EndMapApis -->
         
     </head>
     <script>
@@ -329,8 +331,8 @@
                     <section class="row">
                         <div>
                             <div>
-                                <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="#map">
-                            	<map id="map" name="map">
+                                <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="#maps">
+                            	<map id="maps" name="map">
 	                            	<area shape="rect" alt="" coords="1154, 816, 1356, 879" href="company_ceo_message.do" target="_self">
                             	</map>
                             </div>
@@ -473,7 +475,7 @@
             <section id="contact" class="contact-section clearfix">
                 <div class="card-group">
                     <div class="card map default">
-                        <div id="google_map"></div>
+                        <div id="map" class="map"></div>
 
                         <div class="map-inner">
                             <div class="map-pin fadeInLeft">
@@ -594,5 +596,153 @@
         </footer>
         <!-- END FOOTER -->
 
+		<!-- Naver map apis -->
+
+	    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=1ck5KznIiqaptD98VNTN&submodules=geocoder"></script>
+	
+	    <!-- EndMapApis -->
+	    <script>
+	   		 var mapOptions = {
+   				center: new naver.maps.LatLng(37.547632, 127.057505), //지도의 초기 중심 좌표
+	            zoom: 11, //지도의 초기 줌 레벨
+	            minZoom: 1, //지도의 최소 줌 레벨
+	            zoomControl: true, //줌 컨트롤의 표시 여부
+	            zoomControlOptions: { //줌 컨트롤의 옵션
+	                position: naver.maps.Position.TOP_RIGHT
+	            },
+	            mapTypeControl: true,
+	            mapTypeControlOptions: {
+	                style: naver.maps.MapTypeControlStyle.BUTTON,
+	                position: naver.maps.Position.TOP_RIGHT
+	            },
+	            zoomControl: true,
+	            zoomControlOptions: {
+	                style: naver.maps.ZoomControlStyle.SMALL,
+	                position: naver.maps.Position.TOP_RIGHT
+	            },
+	            scaleControl: true,
+	            scaleControlOptions: {
+	                position: naver.maps.Position.RIGHT_CENTER
+	            },
+	            logoControl: true,
+	            logoControlOptions: {
+	                position: naver.maps.Position.TOP_LEFT
+	            },
+	            mapDataControl: true,
+	            mapDataControlOptions: {
+	                position: naver.maps.Position.BOTTOM_LEFT
+	            }
+	        };
+		  //지도 생성시에 옵션을 지정할 수 있습니다.
+		    var map = new naver.maps.Map('map', mapOptions);
+
+		    //setOptions 메서드를 통해 옵션을 조정할 수도 있습니다.
+		    map.setOptions("mapTypeControl", true); //지도 유형 컨트롤의 표시 여부
+	
+	
+		    // 지도 인터랙션 옵션
+		    $("#interaction").on("click", function(e) {
+		        e.preventDefault();
+	
+		        if (map.getOptions("draggable")) {
+		            map.setOptions({ //지도 인터랙션 끄기
+		                draggable: false,
+		                pinchZoom: false,
+		                scrollWheel: false,
+		                keyboardShortcuts: false,
+		                disableDoubleTapZoom: true,
+		                disableDoubleClickZoom: true,
+		                disableTwoFingerTapZoom: true
+		            });
+	
+		            $(this).removeClass("control-on");
+		        } else {
+		            map.setOptions({ //지도 인터랙션 켜기
+		                draggable: true,
+		                pinchZoom: true,
+		                scrollWheel: true,
+		                keyboardShortcuts: true,
+		                disableDoubleTapZoom: false,
+		                disableDoubleClickZoom: false,
+		                disableTwoFingerTapZoom: false
+		            });
+	
+		            $(this).addClass("control-on");
+		        }
+		    });
+	
+		    // 관성 드래깅 옵션
+		    $("#kinetic").on("click", function(e) {
+		        e.preventDefault();
+	
+		        if (map.getOptions("disableKineticPan")) {
+		            map.setOptions("disableKineticPan", false); //관성 드래깅 켜기
+		            $(this).addClass("control-on");
+		        } else {
+		            map.setOptions("disableKineticPan", true); //관성 드래깅 끄기
+		            $(this).removeClass("control-on");
+		        }
+		    });
+	
+		    // 타일 fadeIn 효과
+		    $("#tile-transition").on("click", function(e) {
+		        e.preventDefault();
+	
+		        if (map.getOptions("tileTransition")) {
+		            map.setOptions("tileTransition", false); //타일 fadeIn 효과 끄기
+	
+		            $(this).removeClass("control-on");
+		        } else {
+		            map.setOptions("tileTransition", true); //타일 fadeIn 효과 켜기
+		            $(this).addClass("control-on");
+		        }
+		    });
+	
+		    // min/max 줌 레벨
+		    $("#min-max-zoom").on("click", function(e) {
+		        e.preventDefault();
+	
+		        if (map.getOptions("minZoom") === 10) {
+		            map.setOptions({
+		                minZoom: 1,
+		                maxZoom: 14
+		            });
+		            $(this).val(this.name + ': 1 ~ 14');
+		        } else {
+		            map.setOptions({
+		                minZoom: 10,
+		                maxZoom: 12
+		            });
+		            $(this).val(this.name + ': 10 ~ 12');
+		        }
+		    });
+	
+		    //지도 컨트롤
+		    $("#controls").on("click", function(e) {
+		        e.preventDefault();
+	
+		        if (map.getOptions("scaleControl")) {
+		            map.setOptions({ //모든 지도 컨트롤 숨기기
+		                scaleControl: false,
+		                logoControl: false,
+		                mapDataControl: false,
+		                zoomControl: false,
+		                mapTypeControl: false
+		            });
+		            $(this).removeClass('control-on');
+		        } else {
+		            map.setOptions({ //모든 지도 컨트롤 보이기
+		                scaleControl: true,
+		                logoControl: true,
+		                mapDataControl: true,
+		                zoomControl: true,
+		                mapTypeControl: true
+		            });
+		            $(this).addClass('control-on');
+		        }
+		    });
+	
+		    $("#interaction, #tile-transition, #controls").addClass("control-on");
+	    </script>
     </body>
 </html>

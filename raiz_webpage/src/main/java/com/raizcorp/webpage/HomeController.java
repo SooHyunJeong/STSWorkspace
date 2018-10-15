@@ -1,5 +1,7 @@
 package com.raizcorp.webpage;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 import javax.mail.internet.MimeMessage;
@@ -27,9 +29,13 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 
+		logger.debug("home STARTED");
+
+		logger.debug("home ENDED");
+
 		return "home";
 	}
-	
+
 	/**
 	 * Post Controller START
 	 */

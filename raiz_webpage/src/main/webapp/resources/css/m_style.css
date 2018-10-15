@@ -1,0 +1,675 @@
+/* -------------- Quick Button START  -------------- */
+
+	.quick-group .btn-go-top {
+		right: 85px;
+		bottom: 30px;
+		position: fixed;
+		z-index: 200;
+	}
+	
+	.quick-group .btn-go-top a {
+		width: 52px;
+		background: white;
+		position: relative;
+		display: block;
+		text-align: center;
+		color: rgb(176, 14, 35);
+		font-weight: bold;
+		text-decoration: none;
+		outline: none;
+	}
+	
+	.quick-group .btn-go-top i {
+		width: 100%;
+		font-size: 22px;	
+	}
+	
+	.quick-group .btn-go-top span {
+		position: relative;
+		top: -5px;
+		font-size: 10px;
+	}
+	
+	.quick-group .btn-quick-contact {
+		z-index: 200;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+	}
+	
+	.quick-group .btn-quick-contact a {
+		width: 52px;
+		padding: 0.25rem 0;
+		background: rgb(176, 14, 35);
+		display: block;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+		outline: none;
+	}
+	
+	.quick-group .btn-quick-contact img {
+		width: 35%;
+		position: relative;
+		background: white;
+	}
+	
+	.quick-group .btn-quick-contact span {
+		font-size: 10px;
+		position: relative;
+		top: -3px;
+	}
+
+/* -------------- Quick Button END  -------------- */
+
+/* -------------- raiz_main SECTION START  -------------- */
+	
+	#raiz_main .container {
+		background: url('../images/mobile/mainpage_mobile.png') no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	#raiz_main .content-wrap {
+		width: 200px;
+		position: relative;
+		top: 20%;
+		display: block;
+		margin: 0 auto;
+		color: rgb(237, 237, 237);
+	}
+	
+	#raiz_main .content-wrap img {
+		width: 10px;
+		height: 110px;
+		position: relative;
+		top: -77px;
+	}
+
+	#raiz_main .title {
+		display: block;
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	#raiz_main h1 {
+		font-size: 8rem;
+	}
+
+	#raiz_main .sub_title {
+		font-size: 1.6rem;
+		position: relative;
+		top: -20px;
+	}
+	
+	#raiz_main img {
+		display: none;
+	}
+
+	#raiz_main .desc {
+		display: block;
+		padding-left: 0;
+		position: relative;
+		top: -30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	p.accent {
+	  font-size: 1.7rem;
+	  width: 200px;
+	}
+
+	#raiz_main .desc p:nth-child(2) {
+	  font-size: 1.5rem;
+	  width: 200px;
+	}
+
+	div.accent_imp {
+	  font-family: nanumsquareEB;
+	}
+	
+/* -------------- raiz_main SECTION END -------------- */
+
+/* -------------- raiz-important SECTION START -------------- */
+
+	#raiz-important .important-list-top {
+		height: 300px;
+		margin-bottom: 15px;
+	}
+
+	#raiz-important .important-list-bottom {
+		height: 300px;
+		margin-top: 15px;
+	}
+
+	#raiz-important .inner-wrap {
+		width: 300px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: white;
+	}
+
+	#raiz-important .inner-wrap-top {
+		width: 300px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #171C60;
+		color: white;
+	}
+
+	#raiz-important .inner-wrap-bottom {
+		width: 300px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #A80F23;
+		color: white;
+	}
+
+	#raiz-important img {
+		width: 100%;
+	}
+
+	#raiz-important .text-wrap {
+		height: 0;
+		position: relative;
+		top: -135px;
+	}
+
+	#raiz-important .text-wrap h3 {
+		font-size: 19px;
+		margin-top: 45px;
+	}
+	
+	#raiz-important .text-wrap .desc {
+		font-size: 11px;
+	}
+
+/* -------------- raiz-important SECTION END -------------- */
+
+/* -------------- raiz-section SECTION START -------------- */
+
+	#raiz-section {
+		height: 1500px;
+	}
+
+	/* ===== web SECTION START ===== */
+		
+		.raiz-section-web {
+			margin-top: 5rem;
+			background: url('../images/mobile/web_basic_mobile.png') no-repeat;
+		}
+	
+		.web-inner-wrap {
+			width: 262px;
+			height: 667px;
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+			padding: 15rem 0;
+		}
+		
+		.raiz-section-art .title-wrap h1 {
+			font-size: 30px;
+		}
+
+		.sub-title-wrap {
+			font-size: 30px;
+			font-weight: bold;
+			color: #6E7479;
+			background-color: white;
+			margin: 0 2.5rem 4rem 2.5rem;
+		}
+		
+		.web-inner-wrap .desc {
+			font-size: 18px;
+		}
+		
+		.web-inner-wrap .desc-main {
+			padding: 0 1rem 2rem 1rem;
+		}
+		
+		.web-inner-wrap .desc-sub {
+			margin-bottom: 2rem;
+		}
+		
+		.web-desc-body-0 {
+			font-size: 0.8em;
+		}
+		
+		.web-desc-body-1 {
+			font-size: 0.87em;
+		}
+
+		.web-desc-body-2 {
+			font-size: 0.87em;
+		}
+
+		.web-desc-body-3 {
+			font-size: 0.81em;
+		}
+
+		.web-inner-wrap .desc p:nth-child(2) {
+			font-size: 0.8em;
+		}
+		
+		.web-inner-wrap .desc p:nth-child(3) {
+			font-size: 0.8em;
+		}
+
+	/* ===== web SECTION END ===== */
+
+	/* ===== art SECTION START ===== */
+
+		.raiz-section-art {
+			background: url('../images/mobile/web_art_mobile.png') no-repeat;
+			margin-top: 5rem;
+		}
+
+		.art-inner-wrap {
+			height: 667px;
+			margin: 0 auto;
+			padding: 15rem 0;
+		}
+
+		.raiz-section-art .title-img {
+			margin-bottom: 3rem;
+		}
+		
+		.raiz-section-art .title-img img {
+			width: 80%;
+		}
+		
+		.raiz-section-art .title-wrap h2 {
+			font-size: 21px;
+		}
+
+		.raiz-section-art .title-wrap {
+			margin-bottom: 4rem;
+			color: white;
+		}
+
+		.art-color {
+			color: #B3273A;
+		}
+		
+		.art-inner-wrap .desc {
+			font-size: 22px;
+			color: white;
+		}
+		
+		.art-inner-wrap .desc {
+			font-size: 14px;
+			padding: 0 2rem;
+		}
+
+	/* ===== art SECTION END ===== */
+	
+	/* -------------- raiz-cardlist-top SECTION START -------------- */
+
+		.raiz-cardlist-top {
+			margin-top: 5rem;
+		}
+
+		/* ===== app SECTION START ===== */
+
+			.app-inner-wrap {
+				height: 420px;
+				margin-bottom: 30px;
+				background-color: white;
+				min-width: 300px;
+			}
+			
+			.app-inner-wrap .title-img {
+				padding-top: 45px;
+			}
+			
+			.app-inner-wrap img {
+				width: 65%;
+			}
+			
+			.app-inner-wrap .title-wrap h1 {
+				color: black;
+				font-size: 25px;
+			} 
+			
+			.app-inner-wrap .desc {
+				margin: 0 auto;
+			}
+			
+			.app-inner-wrap .desc-main {
+				font-size: 16px;
+				margin-bottom: 1rem;
+			}
+			
+			.app-inner-wrap .desc-sub {
+				font-size: 12px;
+				line-height: 1.2
+			}
+
+		/* ===== app SECTION END ===== */
+
+		/* ===== maintenance SECTION START ===== */
+
+			.maintenance-inner-wrap {
+				background: url('../images/test2/web_maintenance_img.png') no-repeat 100%;
+				height: 420px;
+				min-width: 300px;
+				color: white;
+				background-size: cover;
+			}
+
+			.maintenance-inner-wrap h1 {
+				width: 90px;
+				font-size: 25px;
+				border-width: 3px;
+				border-bottom: 1px solid;
+				padding-bottom: 2rem;
+				margin: 0 auto 2rem auto;
+			}
+
+			.maintenance-inner-wrap .title-wrap {
+				padding-top: 27rem;
+			}
+
+			.maintenance-inner-wrap .desc {
+				width: 170px;
+				margin: 0 auto;
+				font-size: 13px;
+			}
+			
+			.maintenance-desc-sub {
+				letter-spacing: 0.4px;
+			}
+
+		/* ===== maintenance SECTION END ===== */
+	
+	/* -------------- raiz-cardlist-top SECTION END -------------- */
+
+	/* -------------- raiz-cardlist-bottom SECTION START -------------- */
+
+		.raiz-cardlist-bottom {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		/* ===== multilanguage SECTION START ===== */
+
+			.multilan-inner-wrap {
+				background: url('../images/test2/multilanguage_bg.png') no-repeat;
+				height: 420px;
+				min-width: 300px;
+				margin-bottom: 30px;
+				background-size: cover;
+			}
+			
+			.multilan-inner-wrap .title-wrap {
+				text-align: center;
+				padding-top: 6rem;
+			}
+			
+			.multilan-inner-wrap .title-wrap img {
+				width: 220px;
+			}
+			
+		/* ===== multilanguage SECTION END ===== */
+
+		/* ===== trademark SECTION START ===== */
+			.trademark-inner-wrap {
+				height: 420px;
+				min-width: 300px;
+				background-color: #B00E23;
+				color: white;
+			}
+			
+			.trademark-inner-wrap .title-img {
+				padding-top: 6.5rem;
+			}
+			
+			.trademark-inner-wrap .title-img img {
+				width: 30%;
+			}
+			
+			.trademark-inner-wrap .title-wrap h1 {
+				font-weight: bold;
+				font-size: 28px;
+				margin-top: 0;
+				padding-top: 3rem;
+			}
+			
+			.trademark-inner-wrap .desc {
+				font-size: 11px;
+			}
+			
+			.trademark-inner-wrap .desc-body-0 {
+				letter-spacing: 1.2px;
+			}
+			
+			.trademark-inner-wrap .desc-body-1 {
+				letter-spacing: 1.2px;
+			}
+			
+			.trademark-inner-wrap .desc-body-2 {
+				letter-spacing: 0.4px;
+			}
+			
+			.trademark-inner-wrap .desc-body-3 {
+				letter-spacing: 1.1px;
+			}
+			
+			.trademark-inner-wrap .desc-body-4 {
+				letter-spacing: 0
+			}
+			
+		/* ===== trademark SECTION END ===== */
+
+	/* -------------- raiz-cardlist-bottom SECTION START -------------- */
+
+/* -------------- raiz-section SECTION END -------------- */
+
+/* -------------- raiz-edit SECTION START -------------- */
+
+	#raiz-edit .container {
+		background: url('../images/mobile/camera_mobile.png') no-repeat;
+		background-size: cover;
+		height: 100%;
+		color: white;
+	}
+	
+	#raiz-edit .content-wrap-top {
+		width: 244px;
+		padding-top: 7rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#raiz-edit .content-wrap-top h1 {
+		padding-bottom: 3rem;
+		font-size: 28px;
+	}
+	
+	#raiz-edit .content-wrap-top .desc {
+		font-size: 13px;
+		padding-bottom: 4rem;
+	}
+	
+	#raiz-edit .content-wrap-top .desc div:nth-child(1) {
+		padding-bottom: 1.5rem;
+	}
+	
+	#raiz-edit .content-wrap-top .desc div:nth-child(2) {
+		padding-bottom: 1.5rem;
+	}
+	
+	.divide-line {
+		width: 215px;
+		margin: 0 auto;
+		border: 1px solid;
+	}
+	
+	#raiz-edit .content-wrap-bottom {
+		width: 244px;
+		padding-top: 4rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#raiz-edit .content-wrap-bottom h1 {
+		font-size: 28px;
+		padding-bottom: 3rem;
+		margin-top: 0;
+	}
+	
+	#raiz-edit .content-wrap-bottom .desc {
+		font-size: 13px;
+	}
+	
+	#raiz-edit .content-wrap-bottom .desc div:nth-child(1) {
+		padding-bottom: 1.5rem;
+	}
+
+/* -------------- raiz-edit SECTION END -------------- */
+
+/* -------------- raiz-portfolio SECTION START -------------- */
+
+	#raiz-portfolio .container {
+		min-width: 300px;
+	}
+	
+	#raiz-portfolio .container h1 {
+		font-size: 30px;
+	}
+	
+	#raiz-portfolio .title-wrap {
+		width: 135px;
+		text-align: center;
+		border-bottom: solid 1px;
+		margin: 0 auto;
+	}
+
+	#raiz-portfolio ul {
+		padding: 0;
+	}
+
+	#raiz-portfolio ul li {
+		text-align: center;
+		padding: 0;
+	}
+	
+	#raiz-portfolio ul li img {
+		width: 100%;
+		opacity: 1;
+	}
+	
+	#raiz-portfolio ul li h4 {
+		padding: 15.3rem 2rem;
+	}
+
+/* -------------- raiz-portfolio SECTION END -------------- */
+
+/* CONTACT SECTION START */
+	#raiz-contact {
+		background: rgb(237, 237, 237);
+	}
+
+	#google_map {
+		height: 450px;
+		z-index: 10;
+	}
+	
+	.contact {
+		height: 450px;
+		background-color: rgb(237, 237, 237);
+	}
+	
+	.contact .mini-container {
+/* 		padding: 3rem 0; */
+    }
+    
+    .map {
+    	height: auto;
+    }
+    
+    .map .map-inner .map-pin {
+        margin: -85px auto;
+        z-index: 10;
+    }
+    
+    .contact-front {
+    	position: relative;
+    	width: 100%;
+    	height: 35rem;
+    }
+/* CONTACT SECTION END */
+
+/* FOOTER SECTION START */
+	.footer-section {
+		color: white;
+		background: url('../images/mobile/footer_mobile.png') no-repeat;
+	}
+
+	.footer-area {
+		width: 300px;
+		background: rgba(0, 0, 0, 0.6);
+		margin: 0 auto 22rem auto;
+		padding: 3rem 0.5rem;
+	}
+	
+	.footer-area>div:nth-child(1) {
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.footer-area img {
+		display: none;
+	}
+	
+	.footer-support {
+		display: inline-block;
+		font-size: 12px;
+		padding-top: 1rem;
+	}
+
+	.footer-text {
+		text-align: right;
+		padding-right: 1rem;
+		display: inline-block;
+		width: 70px;
+	}
+
+	.footer-corporate {
+		width: 180px;
+		margin: 3rem auto 0 auto;
+		text-align: center;
+	}
+
+	.footer-corporate>p {
+		margin-bottom: 0;
+	}
+
+	.footer-corporate>p:nth-child(1) {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.footer-corporate .footer-info {
+		font-size: 10.5px;
+	}
+	
+	.footer-corporate p:nth-child(3) {
+		letter-spacing: 0.5px;
+	}
+	
+	.footer-corporate p:nth-child(4) {
+		letter-spacing: 0.2px;
+	}
+	
+	.footer-rights {
+		font-size: 10.5px;
+		margin-left: 0;
+		text-align: center;
+	}
+/* FOOTER SECTION END */
