@@ -210,7 +210,7 @@
                             			To be a world best in fine chemistry! Future oriented & High-technology
                             		</p>
                             		<p>
-                            			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in Februra 1998,
+                            			Welcome to visit out homepage Evergreen C&T Corporation. Ever since our company initially established in February 1998,
                             			we have been manufacturing in Optical material (PROCAM<sup class="sup_body">TM</sup>) and Impregnating Sealant for Aluminum Die Cast(EVERSEAL<sup class="sup_body">TM</sup>)
                             			and providing all around world. We founded our own R&D Center in 2007.
                             			<br><br>

@@ -170,7 +170,7 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button">PROCAM<sup class="sup">TM</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
 						    <a href="product_coating_solution.do">Coating Solution</a>
 						    <a href="product_monomer.do">Functional Monomer</a>
@@ -179,7 +179,7 @@
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button">EVERSEAL<sup class="sup">TM</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">TM</sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
 						    <a href="product_impregnation.do">Impregnation</a>
 						    <a href="product_organic_sealant.do">Organic Sealant</a>

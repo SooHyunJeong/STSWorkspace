@@ -5,7 +5,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+<!--         <meta charset="utf-8"> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
@@ -101,12 +102,12 @@
 			}
 
 			if (email.indexOf("@") == -1) {
-				alert("메일주소를 다시 입력해 주세요.");
+				alert("<spring:message code='message.main.mail.alert02'/>");
 				return false;
 			}
 
 			if ($.trim(company) == "" || $.trim(name) == "" || $.trim(email) == "" || $.trim(tel) == "" || $.trim(message) == "") {
-				alert("공백은 입력할 수 없습니다.");
+				alert("<spring:message code='message.main.mail.alert03'/>");
 				return false;
 			}
 
@@ -122,11 +123,11 @@
 					},
 					url : "/mail.do",
 					success : function() {
-						alert("Your message is delivered to our mail box.");	
+						alert("<spring:message code='message.main.mail.alert04'/>");	
 						window.location.reload();
 				},
 				error : function() {
-					alert("Failed to send mail.");
+					alert("<spring:message code='message.main.mail.alert05'/>");
 				}
 			});
     	}
@@ -166,7 +167,7 @@
             <!-- Start Navigation -->
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top hornbill-navbar">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
+                    <a class="navbar-brand js-scroll-trigger" href="/"><spring:message code="message.main.header.menu01"/></a>
 
                 	<span class="open-slide">
 						<a onclick="openSideMenu()">
@@ -181,19 +182,19 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
                             <li class="active nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link" href="/"><spring:message code="message.main.header.menu02"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="research_development.do">R&D</a>
+                                <a class="nav-link" href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/#contact">Contact</a>
+                                <a class="nav-link" href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                             </li>
                         </ul>
                     </div>
@@ -208,58 +209,58 @@
 			<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-                    <a href="/">Home</a>
+                    <a href="/"><spring:message code="message.main.header.menu02"/></a>
                 </li>
                 
                 <li class="nav-item dropdown-sidemenu-1">
-                    <a href="company_ceo_message.do">Company</a>
+                    <a href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                 </li>
                 <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                    <a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                     <ul class="dropdown-menu">
-                    	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                    	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                    	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                    	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                    	<li><a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.sidemenu01"/></a></li>
+                    	<li><a tabindex="-1" href="company_history.do"><spring:message code="message.main.header.sidemenu02"/></a></li>
+                    	<li><a tabindex="-1" href="company_organization.do"><spring:message code="message.main.header.sidemenu03"/></a></li>
+                    	<li><a tabindex="-1" href="company_globaloffice.do"><spring:message code="message.main.header.sidemenu04"/></a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown-sidemenu-1">
-                    <a href="product_coating_solution.do">Product</a>
+                    <a href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                 </li>
                 <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                    <a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                     <ul class="dropdown-menu">
                     	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
+                    		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu05"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                     	</li>
                     	<li class="sidemenu">
-                    		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                    		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu07"/></a>
                     	</li>
                     	<li class="sidemenu">
-                    		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                    		<a tabindex="-1" href="product_monomer.do"><spring:message code="message.main.header.sidemenu08"/></a>
                     	</li>
                     	<li class="sidemenu">
-                    		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                    		<a tabindex="-1" href="product_hydrophobic.do"><spring:message code="message.main.header.sidemenu09"/></a>
                     	</li>
                     	
                     	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                    		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
+                    		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu10"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                     	</li>
                     	<li class="sidemenu">
-                    		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+                    		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu11"/></a>
                     	</li>
                     	<li class="sidemenu">
-    						<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+    						<a tabindex="-1" href="product_organic_sealant.do"><spring:message code="message.main.header.sidemenu12"/></a>
                     	</li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a href="research_development.do">R&D</a>
+                    <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                 </li>
                 <li class="nav-item">
-                    <a href="/#contact">Contact</a>
+                    <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                 </li>
             </ul>
 		</div>
@@ -292,7 +293,7 @@
                                 <img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;">
                             </div>
                             <h3 class="p-bot-10">Long-term know-how</h3>
-                            <p>We have the know-how and the insight<br>into the market that we have been<br>doing business for more than 10 years.</p>
+                            <p><spring:message code="message.main.section.features01"/></p>
                          </div>
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
@@ -300,7 +301,7 @@
                                 <img src="${contextPath}/resources/img/gallery/globe3_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">Global technology</h3>
-                            <p>Clients from many countries<br>recognize and use the<br>performance of our products.</p>
+                            <p><spring:message code="message.main.section.features02"/></p>
                         </div>
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
@@ -308,7 +309,7 @@
                                 <img src="${contextPath}/resources/img/gallery/bond_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">R&D investment</h3>
-                            <p>Since the establishment of R&D center<br>in 2007, we have been continuously<br>investing in technology development.</p>
+                            <p><spring:message code="message.main.section.features03"/></p>
                         </div>
                         
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
@@ -316,7 +317,7 @@
                                 <img src="${contextPath}/resources/img/gallery/shield_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10">Trust in quality</h3>
-                            <p>Evergreen's vision is clear.<br>"Respecting the basic & principle."<br>We think only the best quality.</p>
+                            <p><spring:message code="message.main.section.features04"/></p>
                         </div>
 
                     </div>
@@ -333,7 +334,7 @@
                         <div>
                             <div>
                                 <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="#maps">
-                            	<map id="maps" name="map">
+                            	<map id="maps" name="maps">
 	                            	<area shape="rect" alt="" coords="1154, 816, 1356, 879" href="company_ceo_message.do" target="_self">
                             	</map>
                             </div>

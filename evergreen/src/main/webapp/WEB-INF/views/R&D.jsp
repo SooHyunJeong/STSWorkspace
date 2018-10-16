@@ -160,7 +160,7 @@
 	                    <a href="research_development.do">R&D</a>
 	                </li>
 	                <li class="nav-item">
-	                    <a href="contact.do">Contact</a>
+	                    <a href="/#contact">Contact</a>
 	                </li>
 	            </ul>
 			</div>

@@ -512,7 +512,7 @@ figure {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 1100;
   top: 0;
   right: 0;
   background: #111;
