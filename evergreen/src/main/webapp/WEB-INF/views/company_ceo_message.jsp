@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <!DOCTYPE html>
-<html lang="ko">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,10 +121,10 @@
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
                         <a tabindex="-1" href="company_ceo_message.do">Company</a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        	<li><a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.sidemenu01"/></a></li>
+                    	<li><a tabindex="-1" href="company_history.do"><spring:message code="message.main.header.sidemenu02"/></a></li>
+                    	<li><a tabindex="-1" href="company_organization.do"><spring:message code="message.main.header.sidemenu03"/></a></li>
+                    	<li><a tabindex="-1" href="company_globaloffice.do"><spring:message code="message.main.header.sidemenu04"/></a></li>
                         </ul>
                     </li>
 

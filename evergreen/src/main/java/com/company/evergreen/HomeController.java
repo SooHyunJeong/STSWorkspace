@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +15,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 /**
  * Handles requests for the application home page.
@@ -30,7 +33,26 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index (Locale locale, Model model) {
 		logger.info("Index Start");
+
+		String lang = "en";
+
+		model.addAttribute("lang", lang);
 		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
+	public String index_lang (HttpServletRequest request, Locale locale, Model model) {
+		logger.info("Index_lang Start");
+
+		String lang = request.getParameter("lang");
+
+		if (lang == null || lang.equals("")) {
+			lang = "en";
+		}
+
+		model.addAttribute("lang", lang);
+
 		return "index";
 	}
 	
@@ -70,9 +92,25 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/company_ceo_message.do", method = RequestMethod.GET)
-	public String company_ceo_message (Locale locale, Model model) {
+	public String company_ceo_message (HttpServletRequest request, Model model, @RequestParam(required = false) String locale) {
 		logger.info("Company CEO message Start");
 		
+		HttpSession session = request.getSession();
+		Locale lo = null;
+
+		// 10.18 04:38 locale.mathces 에 nullPointerException 발생. company_ceo_message.do 로 넘어올 때 파라미터 값이 없는데 비교를 하려고해서 발생.
+		
+		//파라미터에 따라서 로케일 생성, 기본은 EN
+		if (locale.matches("en")) {
+			lo = Locale.ENGLISH;
+		} else {
+			lo = Locale.CHINA;
+		}
+
+		System.out.println("Locale : " + lo);
+		
+		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, lo);
+
 		return "company_ceo_message";
 	}
 	

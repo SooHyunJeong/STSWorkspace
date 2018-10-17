@@ -66,6 +66,10 @@
         
     </head>
     <script>
+    	var lang = "${lang}";
+    	
+    	alert("lang : " + lang);
+
     	$(document).ready(function() {
     		$("img[usemap]").rwdImageMaps();
     		
@@ -198,6 +202,13 @@
                             </li>
                         </ul>
                     </div>
+                    
+                    <div>
+<!--                     	<input type="radio" id="en" name="en"><label for="en">ENGLISH</label> -->
+<!--                     	<input type="radio" id="ch" name="ch"><label for="ch">CHINA</label> -->
+						<button onclick="location.href='index.do?lang=en'">ENGLISH</button>
+						<button onclick="location.href='index.do?lang=ch'">CHINA</button>
+                    </div>
                 </div>
             </nav>
             <!-- End of Navigation -->
@@ -274,7 +285,12 @@
                     <div class="row">
                         <div class="fadeIn">
                             <div>
-                            	<img src="${contextPath}/resources/img/gallery/home_1.png" alt="img" class="img-fluid ml-auto mr-auto d-block">
+                           		<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/gallery/home_en.png" alt="img" class="img-fluid ml-auto mr-auto d-block">                            		
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/gallery/ch/home_ch.png" alt="img" class="img-fluid ml-auto mr-auto d-block">
+                           		</c:if>
                             </div>
                         </div>
                     </div>
@@ -292,7 +308,7 @@
                             <div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;">
                             </div>
-                            <h3 class="p-bot-10">Long-term know-how</h3>
+                            <h3 class="p-bot-10"><spring:message code="message.main.section.features05"/></h3>
                             <p><spring:message code="message.main.section.features01"/></p>
                          </div>
 
@@ -300,7 +316,7 @@
                             <div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/globe3_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
-                            <h3 class="p-bot-10">Global technology</h3>
+                            <h3 class="p-bot-10"><spring:message code="message.main.section.features06"/></h3>
                             <p><spring:message code="message.main.section.features02"/></p>
                         </div>
 
@@ -308,7 +324,7 @@
                         	<div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/bond_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
-                            <h3 class="p-bot-10">R&D investment</h3>
+                            <h3 class="p-bot-10"><spring:message code="message.main.section.features07"/></h3>
                             <p><spring:message code="message.main.section.features03"/></p>
                         </div>
                         
@@ -316,7 +332,7 @@
                         	<div class="icon">
                                 <img src="${contextPath}/resources/img/gallery/shield_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
-                            <h3 class="p-bot-10">Trust in quality</h3>
+                            <h3 class="p-bot-10"><spring:message code="message.main.section.features08"/></h3>
                             <p><spring:message code="message.main.section.features04"/></p>
                         </div>
 
@@ -370,8 +386,8 @@
                         <div class="col-md-6">
                             <div class="promo-heading text-lg-left">
                                 <div class="fadeIn procam-div-0">
-                                	<div><h2 class="myriad-bold">PROCAM<sup class="procam-sup">TM</sup></h2></div>
-	                                <p>High Performance Coating Solution<br>High Functional Monomer<br>Super Hydrophobic Solution</p>
+                                	<div><h2 class="myriad-bold"><spring:message code="message.main.section.procam01"/><sup class="procam-sup"><spring:message code="message.main.section.procam02"/></sup></h2></div>
+	                                <p><spring:message code="message.main.section.procam03"/></p>
                                 </div>
                             </div>
                         </div>
@@ -381,25 +397,25 @@
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_hc.jpg" alt="img" class="img-fluid fadeInUp">
                             		<figcaption onclick="Coating_solution();">
-                            			<h4>Hard coating for optical lens</h4>
+                            			<h4><spring:message code="message.main.section.procam04"/></h4>
                             		</figcaption>
                             	</figure>
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_hp.jpg" alt="img" class="img-fluid fadeInUp">
                             		<figcaption onclick="Hydrophobic();">
-                            			<h4>Hydrophobic Chemicals</h4>
+                            			<h4><spring:message code="message.main.section.procam05"/></h4>
                             		</figcaption>
                             	</figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_pm.jpg" alt="img" class="img-fluid fadeInLeft">
                                 	<figcaption onclick="Functional_monomer();">
-                            			<h4>Functional Monomer</h4>
+                            			<h4><spring:message code="message.main.section.procam06"/></h4>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_procam_rnd.jpg" alt="img" class="img-fluid fadeInRight">
                                 	<figcaption onclick="RND();">
-                            			<h4>R&D</h4>
+                            			<h4><spring:message code="message.main.section.procam07"/></h4>
                             		</figcaption>
                                 </figure>
                             </div>
@@ -420,9 +436,8 @@
                         <div class="col-md-6">
                             <div class="everseal-heading text-lg-left">
                                 <div class="fadeIn everseal-div-0">
-                                	<div><h2 class="myriad-bold">EVERSEAL<sup class="everseal-sup">TM</sup></h2></div>
-	                                <p>Organic Sealant for perfect impregnation.<br>Not only used for metal casting but also<br>used for sintered metals, iron casting,<br>
-	                                woods, paper, electronic components<br>and especially aluminum die casting.</p>
+                                	<div><h2 class="myriad-bold"><spring:message code="message.main.section.everseal01"/><sup class="everseal-sup"><spring:message code="message.main.section.everseal02"/></sup></h2></div>
+	                                <p><spring:message code="message.main.section.everseal03"/></p>
                                 </div>
                             </div>
                         </div>
@@ -432,36 +447,36 @@
                             	<figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_imp.jpg" alt="img" class="img-fluid fadeInUp">	                                
                                 	<figcaption onclick="Impregnation();">
-                            			<h4>Impregnation</h4>
+                            			<h4><spring:message code="message.main.section.everseal04"/></h4>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip1000.png" alt="img" class="img-fluid fadeInLeft">
                                 	<figcaption onclick="Organic_sealant();">
-                            			<h5>One-way type</h5>
-                            			<h3>IP-1000</h3>
+                            			<h5><spring:message code="message.main.section.everseal05"/></h5>
+                            			<h3><spring:message code="message.main.section.everseal06"/></h3>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip2000.png" alt="img" class="img-fluid fadeInRight">
                                 	<figcaption onclick="Organic_sealant();">
-                            			<h5>One-way type</h5>
-                            			<h3>IP-2000</h3>
+                            			<h5><spring:message code="message.main.section.everseal05"/></h5>
+                            			<h3><spring:message code="message.main.section.everseal07"/></h3>
                             		</figcaption>
                                 </figure>
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip4000.png" alt="img" class="img-fluid fadeInLeft">
                                 	<figcaption onclick="Organic_sealant();">
-                            			<h5>One-way type</h5>
-                            			<h3>IP-4000</h3>
+                            			<h5><spring:message code="message.main.section.everseal05"/></h5>
+                            			<h3><spring:message code="message.main.section.everseal08"/></h3>
                             		</figcaption>
                                 </figure>
                                 
                                 <figure class="imghvr-fade">
 	                                <img src="${contextPath}/resources/img/gallery/home_everseal_ip7000r.png" alt="img" class="img-fluid fadeInRight">
                                 	<figcaption onclick="Eco_friendly_recycle_features();">
-                            			<h5>Eco-friendly Recycle</h5>
-                            			<h3>IP-7000R</h3>
+                            			<h5><spring:message code="message.main.section.everseal09"/></h5>
+                            			<h3><spring:message code="message.main.section.everseal10"/></h3>
                             		</figcaption>
                                 </figure>
                             </div>
@@ -491,14 +506,14 @@
                     
 	                    <div class="left-info fadeInLeft contact-info">
 	                        <div class="heading m-bot-40">
-	                            <h2>Contact Us</h2>
-	                            <p>Seoul Headquarters, R&D center</p>
+	                            <h2><spring:message code="message.main.section.contact01"/></h2>
+	                            <p><spring:message code="message.main.section.contact02"/></p>
 	                        </div> 
 	                        <ul class="map-info-list">
-	                            <li><span class="bi bi-map-pointer"></span> #1003 IS Biz Tower, 147, Seongsui-ro<br>Seongdonggu, Seoul, Korea<br>04795</li>
-	                            <li><span class="bi bi-phone"></span> +82 2 720 1066</li>
-	                            <li><span class="bi bi-printer"></span> +82 2 720 1069</li>
-	                            <li><span class="bi bi-envelop"></span> info@ievergreen.com</li>
+	                            <li><span class="bi bi-map-pointer"></span><spring:message code="message.main.section.contact03"/></li>
+	                            <li><span class="bi bi-phone"></span><spring:message code="message.main.section.contact04"/></li>
+	                            <li><span class="bi bi-printer"></span><spring:message code="message.main.section.contact05"/></li>
+	                            <li><span class="bi bi-envelop"></span><spring:message code="message.main.section.contact06"/></li>
 	                        </ul>
 	                    </div>
                     </div>
@@ -529,7 +544,7 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group text-center">
-                                    <button class="btn btn-circle btn-send text-white hover-glass" type="submit" onclick="mailSend();">Send</button>
+                                    <button class="btn btn-circle btn-send text-white hover-glass" type="submit" onclick="mailSend();"><spring:message code="message.main.section.contact07"/></button>
                                 </div>
                             </div>
                             
@@ -556,21 +571,21 @@
 			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
                             		</td>
                             		<td class="footer_td">
-		                            	<span class="footer-p-0">evergreen</span>
+		                            	<span class="footer-p-0"><spring:message code="message.main.section.footer01"/></span>
                             		</td>
                             	</tr>
                             	<tr>
                             		<td class="footer_td">
-			                            <span class="footer-p-1">C&T corporation</span>	                            		
+			                            <span class="footer-p-1"><spring:message code="message.main.section.footer02"/></span>	                            		
                             		</td>
                             	</tr>
                             </table>
-                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
-                            <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
-                            <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
-                            <p class="footer-p-3">e. info@ievergreen.com</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer03"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer04"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer05"/></p>
+                            <p class="footer-p-3"><spring:message code="message.main.section.footer06"/></p>
                             <p></p>
-                            <p class="footer-p-2">Copyright 2018. EVERGREEN C&T INC. All rights reserved.</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer07"/></p>
                         </div>
                     </div>
                     <!-- end row -->
@@ -585,7 +600,7 @@
                             <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
                             	<p class="p-bot-10">
 	                            	<i class="fa fa-angle-up"></i><br>
-	                                <span>Go to top</span>
+	                                <span><spring:message code="message.main.section.footer08"/></span>
                             	</p>
                             </a>
                         </div>
