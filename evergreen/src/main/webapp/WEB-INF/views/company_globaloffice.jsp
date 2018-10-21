@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -70,7 +71,7 @@
             <!-- Start Navigation -->
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top hornbill-navbar">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
+                    <a class="navbar-brand js-scroll-trigger" href="/"><spring:message code="message.main.header.menu01"/></a>
 
                 	<span class="open-slide">
 						<a onclick="openSideMenu()">
@@ -85,19 +86,19 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link" href="/"><spring:message code="message.main.header.menu02"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="active nav-link" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="nav-link" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="research_development.do">R&D</a>
+                                <a class="nav-link" href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/#contact">Contact</a>
+                                <a class="nav-link" href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                             </li>
                         </ul>
                     </div>
@@ -110,58 +111,58 @@
 				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/">Home</a>
+                        <a href="/"><spring:message code="message.main.header.menu02"/></a>
                     </li>
                     
                     <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
+                        <a href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                     </li>
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        	<li><a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.sidemenu01"/></a></li>
+                        	<li><a tabindex="-1" href="company_history.do"><spring:message code="message.main.header.sidemenu02"/></a></li>
+                        	<li><a tabindex="-1" href="company_organization.do"><spring:message code="message.main.header.sidemenu03"/></a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do"><spring:message code="message.main.header.sidemenu04"/></a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
-                        <a href="product_coating_solution.do">Product</a>
+                        <a href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                     </li>
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu05"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu07"/></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        		<a tabindex="-1" href="product_monomer.do"><spring:message code="message.main.header.sidemenu08"/></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        		<a tabindex="-1" href="product_hydrophobic.do"><spring:message code="message.main.header.sidemenu09"/></a>
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu10"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                         	</li>
 	                       	<li class="sidemenu">
-	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu11"/></a>
 	                       	</li>
 	                       	<li class="sidemenu">
-				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+				    			<a tabindex="-1" href="product_organic_sealant.do"><spring:message code="message.main.header.sidemenu12"/></a>
 	                       	</li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a href="research_development.do">R&D</a>
+                        <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do">Contact</a>
+                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -171,19 +172,19 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_ceo_message.do'">CEO Message</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_ceo_message.do'"><spring:message code="message.main.header.sidemenu01"/></button>
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_history.do'">History</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_history.do'"><spring:message code="message.main.header.sidemenu02"/></button>
 	                </div>
 	                
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_organization.do'">Organization</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_organization.do'"><spring:message code="message.main.header.sidemenu03"/></button>
 	                </div>
 	                
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'">Global office & Factory</button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='company_globaloffice.do'"><spring:message code="message.main.header.sidemenu04"/></button>
 	                </div>        		
         		</div>
 		    </div>
@@ -252,21 +253,21 @@
 			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
                             		</td>
                             		<td class="footer_td">
-		                            	<span class="footer-p-0">evergreen</span>
+		                            	<span class="footer-p-0"><spring:message code="message.main.section.footer01"/></span>
                             		</td>
                             	</tr>
                             	<tr>
                             		<td class="footer_td">
-			                            <span class="footer-p-1">C&T corporation</span>	                            		
+			                            <span class="footer-p-1"><spring:message code="message.main.section.footer02"/></span>	
                             		</td>
                             	</tr>
                             </table>
-                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
-                            <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
-                            <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
-                            <p class="footer-p-3">e. info@ievergreen.com</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer03"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer04"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer05"/></p>
+                            <p class="footer-p-3"><spring:message code="message.main.section.footer06"/></p>
                             <p></p>
-                            <p class="footer-p-2">Copyright 2018. EVERGREEN C&T INC. All rights reserved.</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer07"/></p>
                         </div>
                     </div>
                     <!-- end row -->
@@ -281,7 +282,7 @@
                             <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
                             	<p class="p-bot-10">
 	                            	<i class="fa fa-angle-up"></i><br>
-	                                <span>Go to top</span>
+	                                <span><spring:message code="message.main.section.footer08"/></span>
                             	</p>
                             </a>
                         </div>

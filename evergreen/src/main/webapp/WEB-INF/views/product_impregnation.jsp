@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -9,7 +10,7 @@
         <meta name="description" content="corporate, creative, general, portfolio, photography, blog, e-commerce, shop, product, gallery, retina, responsive">
         <meta name="author" content="Towhidul-Islam">
         
-        <title>evergreen C&T</title>
+        <title><spring:message code="message.main.head.title"/></title>
         
         <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
         
@@ -69,7 +70,7 @@
             <!-- Start Navigation -->
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top hornbill-navbar">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="/">EVERGREEN</a>
+                    <a class="navbar-brand js-scroll-trigger" href="/"><spring:message code="message.main.header.menu01"/></a>
 
                 	<span class="open-slide">
 						<a onclick="openSideMenu()">
@@ -84,19 +85,19 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto hornbill-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link" href="/"><spring:message code="message.main.header.menu02"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="company_ceo_message.do">Company</a>
+                                <a class="nav-link" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="active nav-link" href="product_coating_solution.do">Product</a>
+                                <a class="active nav-link" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="research_development.do">R&D</a>
+                                <a class="nav-link" href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/#contact">Contact</a>
+                                <a class="nav-link" href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                             </li>
                         </ul>
                     </div>
@@ -109,58 +110,58 @@
 				<a class="btn-close" onclick="closeSideMenu()">&times;</a>
 				<ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/">Home</a>
+                        <a href="/"><spring:message code="message.main.header.menu02"/></a>
                     </li>
                     
                     <li class="nav-item dropdown-sidemenu-1">
-                        <a href="company_ceo_message.do">Company</a>
+                        <a href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                     </li>
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="company_ceo_message.do">Company</a>
+                        <a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.menu03"/></a>
                         <ul class="dropdown-menu">
-                        	<li><a tabindex="-1" href="company_ceo_message.do">CEO Message</a></li>
-                        	<li><a tabindex="-1" href="company_history.do">History</a></li>
-                        	<li><a tabindex="-1" href="company_organization.do">Organization</a></li>
-                        	<li><a tabindex="-1" href="company_globaloffice.do">Global office & Factory</a></li>
+                        	<li><a tabindex="-1" href="company_ceo_message.do"><spring:message code="message.main.header.sidemenu01"/></a></li>
+                        	<li><a tabindex="-1" href="company_history.do"><spring:message code="message.main.header.sidemenu02"/></a></li>
+                        	<li><a tabindex="-1" href="company_organization.do"><spring:message code="message.main.header.sidemenu03"/></a></li>
+                        	<li><a tabindex="-1" href="company_globaloffice.do"><spring:message code="message.main.header.sidemenu04"/></a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown-sidemenu-1">
-                        <a href="product_coating_solution.do">Product</a>
+                        <a href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                     </li>
                     <li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        <a tabindex="-1" href="product_coating_solution.do">Product</a>
+                        <a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.menu04"/></a>
                         <ul class="dropdown-menu">
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">PROCAM<sup class="sup">TM</sup></a>
+                        		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu05"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_coating_solution.do">Coating Solution</a>
+                        		<a tabindex="-1" href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu07"/></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_monomer.do">Functional Monomer</a>
+                        		<a tabindex="-1" href="product_monomer.do"><spring:message code="message.main.header.sidemenu08"/></a>
                         	</li>
                         	<li class="sidemenu">
-                        		<a tabindex="-1" href="product_hydrophobic.do">Hydrophobic</a>
+                        		<a tabindex="-1" href="product_hydrophobic.do"><spring:message code="message.main.header.sidemenu09"/></a>
                         	</li>
                         	
                         	<li class="nav-item dropdown-sidemenu-2 dropdown-submenu">
-                        		<a tabindex="-1" href="product_impregnation.do">EVERSEAL<sup class="sup">TM</sup></a>
+                        		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu10"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></a>
                         	</li>
 	                       	<li class="sidemenu">
-	                       		<a tabindex="-1" href="product_impregnation.do">Impregnation</a>
+	                       		<a tabindex="-1" href="product_impregnation.do"><spring:message code="message.main.header.sidemenu11"/></a>
 	                       	</li>
 	                       	<li class="sidemenu">
-				    			<a tabindex="-1" href="product_organic_sealant.do">Organic Sealant</a>
+				    			<a tabindex="-1" href="product_organic_sealant.do"><spring:message code="message.main.header.sidemenu12"/></a>
 	                       	</li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a href="research_development.do">R&D</a>
+                        <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do">Contact</a>
+                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -170,19 +171,19 @@
         	<div class="fadeIn sub-menu">
         		<div>
 	                <div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'">PROCAM<sup class="sup">TM</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_coating_solution.do'"><spring:message code="message.main.header.sidemenu05"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-1">
-						    <a href="product_coating_solution.do">Coating Solution</a>
-						    <a href="product_monomer.do">Functional Monomer</a>
-						    <a href="product_hydrophobic.do">Hydrophobic</a>
+						    <a href="product_coating_solution.do"><spring:message code="message.main.header.sidemenu07"/></a>
+						    <a href="product_monomer.do"><spring:message code="message.main.header.sidemenu08"/></a>
+						    <a href="product_hydrophobic.do"><spring:message code="message.main.header.sidemenu09"/></a>
 	                   	</div>	                
 	                </div>
 				    
                		<div class="dropdown">
-	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'">EVERSEAL<sup class="sup">TM</sup></button>
+	                   	<button class="dropbtn" type="button" onclick="location.href='product_impregnation.do'"><spring:message code="message.main.header.sidemenu10"/><sup class="sup"><spring:message code="message.main.header.sidemenu06"/></sup></button>
 	                   	<div class="dropdown-content dropbtn-sub-2">
-						    <a href="product_impregnation.do">Impregnation</a>
-						    <a href="product_organic_sealant.do">Organic Sealant</a>
+						    <a href="product_impregnation.do"><spring:message code="message.main.header.sidemenu11"/></a>
+						    <a href="product_organic_sealant.do"><spring:message code="message.main.header.sidemenu12"/></a>
 	                   	</div>	                
 	                </div>
 	                        		
@@ -210,20 +211,16 @@
                             </span>
                             <span class="banner-span-4">
 	                        	<span>
-	                        		It is a kind of sealants for porous materials such as aluminum die casting products mainly used<br> in automobile field.
+	                        		<spring:message code="message.impregnation.section.banner01"/><br><spring:message code="message.impregnation.section.banner02"/>
 	                        	</span>
 	                        	<br><br>
 	                        	<span>
-	                        		Impregnation is in fusing an impregnant into surface of porous materials to fill invisible holes and unintended absences<br>
-	                        		of material. Porosity is unavoidable in the metal casting process but it causes leaks and faulty products.
+	                        		<spring:message code="message.impregnation.section.banner03"/><br><spring:message code="message.impregnation.section.banner04"/>
 	                        	</span>
 	                        	<br><br>
 	                        	<span>
-	                        		Impregnation technology helps to minimize loss due to porosity.<br>
-	                        		The technology is not only used for metal casting but also used for sintered metals, iron casting, woods, paper, electronic<br>
-	                        		components and etc.
+	                        		<spring:message code="message.impregnation.section.banner05"/><br><spring:message code="message.impregnation.section.banner06"/><br><spring:message code="message.impregnation.section.banner07"/>
 	                        	</span>
-	                        	               
                             </span>
                         </div>
                     </section>
@@ -260,21 +257,18 @@
                         <div class="col-imp-1 col-md-6 fadeInUp">
                             <div class="icon p-bot-30">
                                 <span>
-                                	Products made from aluminum alloy are very porous and has rough surfaces because volume
-                                	contraction partially occurs in the cooling process of die casing.
+                                	<spring:message code="message.impregnation.section.impregnating01"/>
                                 </span>
                                 <br>
                                 <span class="impregnating-span-0">
-                                	Impregnation is needed to improve surfaces of ADC products and to prevent the leakage of air,
-                                	gases, oils or liquid sand.
+                                	<spring:message code="message.impregnation.section.impregnating02"/>
                                 </span>
                                 <br><br>
                                 <span class="impregnating-span-0">
-                                	ADC mainly used in automobile industry demands the best impregnation technology.
+                                	<spring:message code="message.impregnation.section.impregnating03"/>
                                 </span>
                                 <span>
-                                	Automobile parts must be completely sealed and given sufficient durability because these parts
-                                	must endure high temperature and pressure.
+                                	<spring:message code="message.impregnation.section.impregnating04"/>
                                 </span>
                             </div>
                         </div>
@@ -304,12 +298,12 @@
 
                         <div class="col-classification-1 col-md-6 fadeInUp">
                             <div class="icon p-bot-30">
-                            	<p class="myriad-bold">Pore Size</p>
+                            	<p class="myriad-bold"><spring:message code="message.impregnation.section.classification01"/></p>
                                 <img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/impregnation_intro9.png" alt="img" class="img-fluid">
                             </div>
                             
                             <div class="icon p-bot-30">
-                            	<p class="myriad-bold">The Shape of Pore</p>
+                            	<p class="myriad-bold"><spring:message code="message.impregnation.section.classification02"/></p>
                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro10.png" alt="img" class="img-fluid">
                             </div>
                         </div>
@@ -351,21 +345,21 @@
 			                        	<img src="${contextPath}/resources/img/gallery/bottom_ci.png" alt="img">
                             		</td>
                             		<td class="footer_td">
-		                            	<span class="footer-p-0">evergreen</span>
+		                            	<span class="footer-p-0"><spring:message code="message.main.section.footer01"/></span>
                             		</td>
                             	</tr>
                             	<tr>
                             		<td class="footer_td">
-			                            <span class="footer-p-1">C&T corporation</span>	                            		
+			                            <span class="footer-p-1"><spring:message code="message.main.section.footer02"/></span>	                            		
                             		</td>
                             	</tr>
                             </table>
-                            <p class="footer-p-2">#1003 IS Biz Tower, 147, Seongsui-ro,</p>
-                            <p class="footer-p-2">Seongdong-gu, Seoul, Korea, 04795 </p>
-                            <p class="footer-p-2">t. 82 2 720 1066&nbsp;&nbsp;&nbsp;f. 82 2 720 1069</p>
-                            <p class="footer-p-3">e. info@ievergreen.com</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer03"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer04"/></p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer05"/></p>
+                            <p class="footer-p-3"><spring:message code="message.main.section.footer06"/></p>
                             <p></p>
-                            <p class="footer-p-2">Copyright 2018. EVERGREEN C&T INC. All rights reserved.</p>
+                            <p class="footer-p-2"><spring:message code="message.main.section.footer07"/></p>
                         </div>
                     </div>
                     <!-- end row -->
@@ -380,7 +374,7 @@
                             <a href="#page_top" class="btn-footer-bottom js-scroll-trigger">
                             	<p class="p-bot-10">
 	                            	<i class="fa fa-angle-up"></i><br>
-	                                <span>Go to top</span>
+	                                <span><spring:message code="message.main.section.footer08"/></span>
                             	</p>
                             </a>
                         </div>

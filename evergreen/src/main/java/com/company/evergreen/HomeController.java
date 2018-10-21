@@ -15,9 +15,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+import org.springframework.web.servlet.LocaleResolver;
 
 /**
  * Handles requests for the application home page.
@@ -26,6 +25,8 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	private LocaleResolver localeResolver;
 	
 	@Autowired
 	private JavaMailSender mailSender;
@@ -92,24 +93,10 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/company_ceo_message.do", method = RequestMethod.GET)
-	public String company_ceo_message (HttpServletRequest request, Model model, @RequestParam(required = false) String locale) {
+	public String company_ceo_message (Model model) {
 		logger.info("Company CEO message Start");
 		
-		HttpSession session = request.getSession();
-		Locale lo = null;
-
-		// 10.18 04:38 locale.mathces 에 nullPointerException 발생. company_ceo_message.do 로 넘어올 때 파라미터 값이 없는데 비교를 하려고해서 발생.
 		
-		//파라미터에 따라서 로케일 생성, 기본은 EN
-		if (locale.matches("en")) {
-			lo = Locale.ENGLISH;
-		} else {
-			lo = Locale.CHINA;
-		}
-
-		System.out.println("Locale : " + lo);
-		
-		session.setAttribute(SessionLocaleResolver.LOCALE_SESSION_ATTRIBUTE_NAME, lo);
 
 		return "company_ceo_message";
 	}
