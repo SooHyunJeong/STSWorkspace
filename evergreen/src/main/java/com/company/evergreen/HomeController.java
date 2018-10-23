@@ -25,8 +25,7 @@ import org.springframework.web.servlet.LocaleResolver;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
-	private LocaleResolver localeResolver;
+	private String lang = "";	
 	
 	@Autowired
 	private JavaMailSender mailSender;
@@ -46,7 +45,7 @@ public class HomeController {
 	public String index_lang (HttpServletRequest request, Locale locale, Model model) {
 		logger.info("Index_lang Start");
 
-		String lang = request.getParameter("lang");
+		lang = request.getParameter("lang");
 
 		if (lang == null || lang.equals("")) {
 			lang = "en";
@@ -60,43 +59,51 @@ public class HomeController {
 	@RequestMapping(value = "/product_coating_solution.do", method = RequestMethod.GET)
 	public String product_coating_solution (Locale locale, Model model) {
 		logger.info("Product coating solution Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "product_coating_solution";
 	}
 	
 	@RequestMapping(value = "/product_monomer.do", method = RequestMethod.GET)
 	public String product_monomer (Locale locale, Model model) {
 		logger.info("Product monomer Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "product_monomer";
 	}
 	
 	@RequestMapping(value = "/product_hydrophobic.do", method = RequestMethod.GET)
 	public String product_hydrophobic (Locale locale, Model model) {
 		logger.info("Product hydrophobic Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "product_hydrophobic";
 	}
 	
 	@RequestMapping(value = "/product_impregnation.do", method = RequestMethod.GET)
 	public String product_impregnation (Locale locale, Model model) {
 		logger.info("Product impregnation Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "product_impregnation";
 	}
 	
 	@RequestMapping(value = "/product_organic_sealant.do", method = RequestMethod.GET)
 	public String product_organic_sealant (Locale locale, Model model) {
 		logger.info("Product organic sealant Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "product_organic_sealant";
 	}
 	
 	@RequestMapping(value = "/company_ceo_message.do", method = RequestMethod.GET)
 	public String company_ceo_message (Model model) {
 		logger.info("Company CEO message Start");
-		
-		
 
 		return "company_ceo_message";
 	}
@@ -111,21 +118,27 @@ public class HomeController {
 	@RequestMapping(value = "/company_organization.do", method = RequestMethod.GET)
 	public String company_organization (Locale locale, Model model) {
 		logger.info("Company Organization Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "company_organization";
 	}
 	
 	@RequestMapping(value = "/company_globaloffice.do", method = RequestMethod.GET)
 	public String company_globaloffice (Locale locale, Model model) {
 		logger.info("Company Globaloffice Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "company_globaloffice";
 	}
 	
 	@RequestMapping(value = "/research_development.do", method = RequestMethod.GET)
 	public String research_development (Locale locale, Model model) {
 		logger.info("Research&Development Start");
-		
+
+		model.addAttribute("lang", lang);
+
 		return "R&D";
 	}
 	

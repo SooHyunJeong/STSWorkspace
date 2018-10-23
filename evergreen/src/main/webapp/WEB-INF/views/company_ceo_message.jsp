@@ -163,7 +163,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>

@@ -160,7 +160,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -198,7 +198,12 @@
 				<div class="container">
 					<section class="row">
 						<div class="fadeIn">
-							<img src="${contextPath}/resources/img/company/organization/companymenu_organization1.png" alt="img" class="img-fluid fadeInUp">
+							<c:if test="${lang == 'en'}">
+	                            <img src="${contextPath}/resources/img/company/organization/company_organization_cover.png" alt="img" class="img-fluid fadeInUp">
+                           	</c:if>
+                           	<c:if test="${lang == 'ch'}">
+                           		<img src="${contextPath}/resources/img/company/organization/ch/company_organization_cover_ch.png" alt="img" class="img-fluid fadeInUp">
+                           	</c:if>
 						</div>
 					</section>
 				</div>
@@ -211,7 +216,12 @@
 					<div class="row">
 						<div class="fadeIn" style="width: 100%;">
 							<div class="organization-div">
-								<img src="${contextPath}/resources/img/company/organization/company_organization.png" alt="img" class="img-fluid fadeInUp">
+								<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/company/organization/company_organization.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/company/organization/ch/company_organization_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
 							</div>
 						</div>
 					</div>

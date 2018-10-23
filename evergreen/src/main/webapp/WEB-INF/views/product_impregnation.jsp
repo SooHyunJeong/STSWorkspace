@@ -161,7 +161,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -203,7 +203,13 @@
                     <section class="row">
                         <div class="fadeIn">
                         	<div>
-		                    	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro0.png" alt="img" class="img-fluid">
+<%-- 		                    	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro0.png" alt="img" class="img-fluid"> --%>
+		                    	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro0.png" alt="img" class="img-fluid">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_intro0_ch.png" alt="img" class="img-fluid">
+                           		</c:if>
 		                    </div>
 
                             <span class="banner-span-3">
@@ -237,7 +243,13 @@
                     <section class="row">
                         <div class="fadeIn">
                             <div class="icon p-bot-30">
-                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_applications0.png" alt="img" class="img-fluid applications-img">
+<%--                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_application.png" alt="img" class="img-fluid applications-img"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/impregnation/impregnation_application.png" alt="img" class="img-fluid applications-img">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_application_ch.png" alt="img" class="img-fluid applications-img">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -251,7 +263,13 @@
             <div id="impregnating">
                 <div class="container">
                     <div class="impregnating-div-0">
-                    	<img src="${contextPath}/resources/img/product/impregnation/impregnation_intro5.png" alt="img" class="img-fluid">
+<%--                     	<img src="${contextPath}/resources/img/product/impregnation/impregnation_adc.png" alt="img" class="img-fluid"> --%>
+                   		<c:if test="${lang == 'en'}">
+                         	<img src="${contextPath}/resources/img/product/impregnation/impregnation_adc.png" alt="img" class="img-fluid">
+                        </c:if>
+                        <c:if test="${lang == 'ch'}">
+                        	<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_adc_ch.png" alt="img" class="img-fluid">
+                        </c:if>
                     </div>
                     <section class="row">
                         <div class="col-imp-1 col-md-6 fadeInUp">
@@ -292,19 +310,37 @@
                     <section class="row">
                         <div class="col-classification-1 col-md-6 fadeInUp">
                             <div class="icon">
-                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro8.png" alt="img" class="img-fluid">
+<%--                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_pore.png" alt="img" class="img-fluid"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/impregnation/impregnation_pore.png" alt="img" class="img-fluid">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_pore_ch.png" alt="img" class="img-fluid">
+                           		</c:if>
                             </div>
                         </div>
 
                         <div class="col-classification-1 col-md-6 fadeInUp">
                             <div class="icon p-bot-30">
                             	<p class="myriad-bold"><spring:message code="message.impregnation.section.classification01"/></p>
-                                <img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/impregnation_intro9.png" alt="img" class="img-fluid">
+<%--                                 <img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/impregnation_poresize.png" alt="img" class="img-fluid"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/impregnation_poresize.png" alt="img" class="img-fluid">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img class="classification-of-pore-img" src="${contextPath}/resources/img/product/impregnation/ch/impregnation_poresize_ch.png" alt="img" class="img-fluid">
+                           		</c:if>
                             </div>
                             
                             <div class="icon p-bot-30">
                             	<p class="myriad-bold"><spring:message code="message.impregnation.section.classification02"/></p>
-                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro10.png" alt="img" class="img-fluid">
+<%--                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_poreshape.png" alt="img" class="img-fluid"> --%>
+                                <c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/impregnation/impregnation_poreshape.png" alt="img" class="img-fluid">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_poreshape_ch.png" alt="img" class="img-fluid">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -320,7 +356,13 @@
                     <section class="row">
                         <div class="fadeIn">
                             <div>
-                                <img src="${contextPath}/resources/img/product/impregnation/impregnation_intro12.png" alt="img" class="img-fluid">
+<%--                                 <img src="${contextPath}/resources/img/product/impregnation/impregnation_process.png" alt="img" class="img-fluid"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/impregnation/impregnation_process.png" alt="img" class="img-fluid">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/impregnation/ch/impregnation_process_ch.png" alt="img" class="img-fluid">
+                           		</c:if>
                             </div>
                         </div>
                     </section>

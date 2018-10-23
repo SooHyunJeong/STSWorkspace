@@ -66,10 +66,6 @@
         
     </head>
     <script>
-    	var lang = "${lang}";
-    	
-    	alert("lang : " + lang);
-
     	$(document).ready(function() {
     		$("img[usemap]").rwdImageMaps();
     		
@@ -206,8 +202,8 @@
                     <div>
 <!--                     	<input type="radio" id="en" name="en"><label for="en">ENGLISH</label> -->
 <!--                     	<input type="radio" id="ch" name="ch"><label for="ch">CHINA</label> -->
-						<button onclick="location.href='index.do?lang=en'">ENGLISH</button>
-						<button onclick="location.href='index.do?lang=ch'">CHINA</button>
+						<!-- <button onclick="location.href='index.do?lang=en'">ENGLISH</button>
+						<button onclick="location.href='index.do?lang=ch'">CHINA</button> -->
                     </div>
                 </div>
             </nav>
@@ -306,7 +302,13 @@
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
                             <div class="icon">
-                                <img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;">
+<%--                                 <img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;"> --%>
+                                <c:if test="${lang == 'en'}">
+									<img src="${contextPath}/resources/img/gallery/home_icon1.png" alt="img" class="img-fluid" style="width: 47%;">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+									<img src="${contextPath}/resources/img/gallery/ch/since1998_ch.png" alt="img" class="img-fluid" style="width: 47%;">
+                           		</c:if>
                             </div>
                             <h3 class="p-bot-10"><spring:message code="message.main.section.features05"/></h3>
                             <p><spring:message code="message.main.section.features01"/></p>
@@ -314,7 +316,7 @@
 
                         <div class="col-lg-4 col-md-6 single-service fadeInUp">
                             <div class="icon">
-                                <img src="${contextPath}/resources/img/gallery/globe3_128px.png" alt="img" class="img-fluid" style="width: 17%;">
+                            	<img src="${contextPath}/resources/img/gallery/globe3_128px.png" alt="img" class="img-fluid" style="width: 17%;">
                             </div>
                             <h3 class="p-bot-10"><spring:message code="message.main.section.features06"/></h3>
                             <p><spring:message code="message.main.section.features02"/></p>
@@ -349,7 +351,12 @@
                     <section class="row">
                         <div>
                             <div>
-                                <img src="${contextPath}/resources/img/gallery/home_vision.png" alt="img" class="img-fluid fadeInUp" usemap="#maps">
+                                <c:if test="${lang == 'en'}">
+									<img src="${contextPath}/resources/img/gallery/home_ceo_message.png" alt="img" class="img-fluid fadeInUp" usemap="#maps">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+									<img src="${contextPath}/resources/img/gallery/ch/home_ceo_message_ch.png" alt="img" class="img-fluid fadeInUp" usemap="#maps">
+                           		</c:if>
                             	<map id="maps" name="maps">
 	                            	<area shape="rect" alt="" coords="1154, 816, 1356, 879" href="company_ceo_message.do" target="_self">
                             	</map>

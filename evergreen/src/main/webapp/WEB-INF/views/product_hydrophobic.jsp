@@ -181,7 +181,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -326,7 +326,13 @@
                         		<h3 class="hydrophobic-chemicals-header myraid-regular"><spring:message code="message.hydrophobic.section.product01"/></h3>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                                <c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/hydrophobic_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/hydrophobic_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -342,7 +348,13 @@
                     <section class="row">
                         <div class="fadeIn">
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table2.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/hydrophobic_vacuumcoating_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/hydrophobic_vacuumcoating_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/hydrophobic_vacuumcoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -358,7 +370,13 @@
                     <section class="row">
                         <div class="fadeIn">
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table3.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/hydrophobic_vacuummaterials_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/hydrophobic_vacuummaterials_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/hydrophobic_vacuummaterials_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -374,7 +392,13 @@
                     <section class="row">
                         <div class="fadeIn">
                             <div>
-                                <img src="${contextPath}/resources/img/product/hydrophobic_table4.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/hydrophobic_vacuumcoating_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                                <c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/hydrophobic_vacuumcoating_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/hydrophobic_vacuumcoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -385,7 +409,6 @@
 
         </main>
         <!-- END MAIN SECTION -->
-
 
         <!-- FOOTER START -->
         <footer class="footer-section">

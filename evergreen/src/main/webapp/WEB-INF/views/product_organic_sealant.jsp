@@ -162,7 +162,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -230,7 +230,13 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ow_2.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/product_everseal_OneWayType_process.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/product_everseal_OneWayType_process.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/product_everseal_OneWayType_process_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -251,7 +257,13 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ow_3.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/product_everseal_OneWayType_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/product_everseal_OneWayType_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/product_everseal_OneWayType_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -272,7 +284,13 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ef_1.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/product_everseal_recycle_process.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/product_everseal_recycle_process.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/product_everseal_recycle_process_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -293,7 +311,13 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_ef_2.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/product_everseal_recycle_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/product_everseal_recycle_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/product_everseal_recycle_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
@@ -314,7 +338,13 @@
                         		</div>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/product/product_everseal_others2.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/product/product_everseal_others_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/product/product_everseal_others_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/product/ch/product_everseal_others_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>

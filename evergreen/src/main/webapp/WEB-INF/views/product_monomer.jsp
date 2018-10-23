@@ -176,7 +176,7 @@
                         <a href="research_development.do"><spring:message code="message.main.header.menu05"/></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.do"><spring:message code="message.main.header.menu06"/></a>
+                        <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
                     </li>
                 </ul>
 			</div>
@@ -315,7 +315,13 @@
                         		<h3 class="product-properties-header myraid-regular"><spring:message code="message.monomer.section.opticalmonomer01"/></h3>
                         	</div>
                             <div>
-                                <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">
+<%--                                 <img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp"> --%>
+                                <c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/monomer/monomer_table.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+                           			<img src="${contextPath}/resources/img/monomer/ch/monomer_table_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>
