@@ -66,6 +66,8 @@
         
     </head>
     <script>
+    	var lang = "${lang}";
+
     	$(document).ready(function() {
     		$("img[usemap]").rwdImageMaps();
     		
@@ -78,7 +80,14 @@
         		
         		$(".sup").css("top", "-4.5px");
         	}
-
+    		
+    		if (lang == "en") {
+    			$("input[value='en']").attr('checked', true);
+    		}
+    		
+    		if (lang == "ch") {
+    			$("input[value='ch']").attr('checked', true);
+    		}
     	})
     	
     	function openSideMenu() {
@@ -198,15 +207,17 @@
                             </li>
                         </ul>
                     </div>
-                    
-                    <div>
-<!--                     	<input type="radio" id="en" name="en"><label for="en">ENGLISH</label> -->
-<!--                     	<input type="radio" id="ch" name="ch"><label for="ch">CHINA</label> -->
-						<!-- <button onclick="location.href='index.do?lang=en'">ENGLISH</button>
-						<button onclick="location.href='index.do?lang=ch'">CHINA</button> -->
-                    </div>
                 </div>
             </nav>
+            <div class="lang_button">
+               	<label for="lang_en" style="cursor: pointer;">
+	               	<input type="radio" id="lang_en" onclick="location.href='index.do?lang=en'" value="en">&nbsp;&nbsp;ENGLISH               	
+               	</label>
+               	<br>
+               	<label for="lang_ch" style="cursor: pointer;">
+               		<input type="radio" id="lang_ch" onclick="location.href='index.do?lang=ch'" value="ch">&nbsp;&nbsp;中文
+               	</label>
+            </div>
             <!-- End of Navigation -->
         </header>
         <!-- END HEADER -->
@@ -268,6 +279,17 @@
                 </li>
                 <li class="nav-item">
                     <a href="/#contact"><spring:message code="message.main.header.menu06"/></a>
+                </li>
+                <li class="nav-item">
+                	<div class="lang_button_side">
+		               	<label for="lang_en" style="cursor: pointer;">
+			               	<input type="radio" id="lang_en" onclick="location.href='index.do?lang=en'" value="en">&nbsp;&nbsp;ENGLISH               	
+		               	</label>
+		               	<br>
+		               	<label for="lang_ch" style="cursor: pointer;">
+		               		<input type="radio" id="lang_ch" onclick="location.href='index.do?lang=ch'" value="ch">&nbsp;&nbsp;中文
+		               	</label>
+		            </div>
                 </li>
             </ul>
 		</div>
@@ -375,7 +397,12 @@
                     <section class="row worldwide-section">
                         <div>
                             <div class="m-top-30 m-sm-top-60">
-                                <img src="${contextPath}/resources/img/gallery/home_global.png" alt="img" class="img-fluid fadeInUp">
+                            	<c:if test="${lang == 'en'}">
+									<img src="${contextPath}/resources/img/gallery/home_global.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                           		<c:if test="${lang == 'ch'}">
+									<img src="${contextPath}/resources/img/gallery/ch/home_global_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </section>

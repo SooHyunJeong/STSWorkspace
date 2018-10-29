@@ -219,21 +219,19 @@
                     <div class="row">
                         <div class="fadeIn">
                             <div>
-                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic1.png" alt="img" class="img-fluid fadeInUp">
-                            	<%-- <c:if test="${lang == 'en'}">
-	                            	<img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic1.png" alt="img" class="img-fluid fadeInUp">
                            		</c:if>
                            		<c:if test="${lang == 'ch'}">
-                           			<img src="${contextPath}/resources/img/product/ch/primercoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
-                           		</c:if> --%>
+                           			<img src="${contextPath}/resources/img/company/global_office&factory/ch/office_domestic1_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
 
-                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic2.png" alt="img" class="img-fluid fadeInUp">
-                            	<%-- <c:if test="${lang == 'en'}">
-	                            	<img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_domestic2.png" alt="img" class="img-fluid fadeInUp">
                            		</c:if>
                            		<c:if test="${lang == 'ch'}">
-                           			<img src="${contextPath}/resources/img/product/ch/primercoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
-                           		</c:if> --%>
+                           			<img src="${contextPath}/resources/img/company/global_office&factory/ch/office_domestic2_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </div>
@@ -247,20 +245,19 @@
                     <div class="row">
                         <div class="fadeIn">
                             <div class="global-office-div">
-                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas1.png" alt="img" class="img-fluid fadeInUp">
-                            	<%-- <c:if test="${lang == 'en'}">
-	                            	<img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas1.png" alt="img" class="img-fluid fadeInUp">
                            		</c:if>
                            		<c:if test="${lang == 'ch'}">
-                           			<img src="${contextPath}/resources/img/product/ch/primercoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
-                           		</c:if> --%>
-                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas2.png" alt="img" class="img-fluid fadeInUp">
-                            	<%-- <c:if test="${lang == 'en'}">
-	                            	<img src="${contextPath}/resources/img/product/primercoating_table.png" alt="img" class="img-fluid fadeInUp">
+                           			<img src="${contextPath}/resources/img/company/global_office&factory/ch/office_overseas1_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
+                            	
+                            	<c:if test="${lang == 'en'}">
+	                            	<img src="${contextPath}/resources/img/company/global_office&factory/office_overseas2.png" alt="img" class="img-fluid fadeInUp">
                            		</c:if>
                            		<c:if test="${lang == 'ch'}">
-                           			<img src="${contextPath}/resources/img/product/ch/primercoating_table_ch.png" alt="img" class="img-fluid fadeInUp">
-                           		</c:if> --%>
+                           			<img src="${contextPath}/resources/img/company/global_office&factory/ch/office_overseas2_ch.png" alt="img" class="img-fluid fadeInUp">
+                           		</c:if>
                             </div>
                         </div>
                     </div>

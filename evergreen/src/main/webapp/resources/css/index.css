@@ -32,6 +32,12 @@ figure {
 	max-width: 100%;	
 }
 
+.lang_button_side {
+	display: block;
+	padding: 30px 10px 10px 30px;
+	color: white;
+}
+
 /* Header Section */
 .navbar {
 	background: rgb(0, 125, 140) !important;
@@ -96,7 +102,7 @@ figure {
 }
 
 .banner-section {
-	margin-top: 64px;
+	margin-top: -4px;
 }
 
 /* Features Section */
@@ -975,7 +981,7 @@ figure {
 	  height: 100%;
 	  width: 0;
 	  position: fixed;
-	  z-index: 10;
+	  z-index: 1100;
 	  top: 0;
 	  right: 0;
 	  background: #111;
@@ -1022,7 +1028,15 @@ figure {
 		flex: 0 0 50%;
 		max-width: 50%;	
 	}
-	
+
+	.lang_button {
+		display: none;
+	}
+
+	.banner-section {
+		margin-top: 64px;
+	}
+
 	/* Header Section */
 	.navbar {
 		background: rgb(0, 125, 140) !important;
@@ -1454,7 +1468,7 @@ figure {
 	  height: 100%;
 	  width: 0;
 	  position: fixed;
-	  z-index: 10;
+	  z-index: 1100;
 	  top: 0;
 	  right: 0;
 	  background: #111;
@@ -1500,6 +1514,22 @@ figure {
 	.col-lg-4 {
 		flex: 0 0 25%;
 		max-width: 25%;	
+	}
+	
+	.lang_button {
+		width: 150px;
+		display: block;
+		color: white;
+		z-index: 1000;
+		position: fixed;
+		float: right;
+		height: 0;
+		top: 17px;
+		right: 0;
+	}
+	
+	.lang_button_side {
+		display: none;
 	}
 	
 	/* Header Section */
@@ -1904,7 +1934,7 @@ figure {
 		flex: 0 0 25%;
 		max-width: 25%;	
 	}
-	
+
 	/* Header Section */
 	.nav-link {
 		padding-right: 0 !important;
